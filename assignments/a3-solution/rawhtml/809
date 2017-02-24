@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar sesión | Podemos</title>
+  <link rel="shortcut icon" href="/assets/favicon-ddbcec07d7820ee9d9c7b86cf00818d2e1d2f8a31d6b6cf732a26d32d5d0a41d.png" type="image/png">
+  <link rel="icon" href="/assets/favicon-ddbcec07d7820ee9d9c7b86cf00818d2e1d2f8a31d6b6cf732a26d32d5d0a41d.png" type="image/png">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" media="all" href="/assets/application-d0ad084d91223fc09e4c96622d5059cd26b2b1db73e46f67b5eec44d164cea2c.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EO+xynzCsRh8o4IxqP420Y1iCd29tRxHG4QA2KGhK3XEECj8gyPA6npE+gcAuNPmmb72AH39WeeOhwyt3tWkUw==" />
+  <meta property="og:title" content="Podemos | Portal de participación" />
+  <meta property="og:image" content="http://podemos.info/wp-content/uploads/2015/03/logo.png" />
+  <meta property="og:description" content="Bienvenido/a al Portal de Participación de Podemos." />
+  <meta name="twitter:title" content="Podemos | Portal de participación" />
+  <meta name="twitter:description" content="Bienvenido/a al Portal de Participación de Podemos." />
+  <meta name="twitter:image" content="http://podemos.info/wp-content/uploads/2015/03/logo.png" />
+
+</head>
+<body class="logged-out">
+  <div class="wrap">
+    <div class="header">
+
+  <div class="header-content">
+
+    <div class="col-h-1a3">
+      <figure class="logo">
+        <a href="/">
+          <h1>
+            <img alt="PODEMOS" src="/assets/logo.podemos-220-w-d708d90e75e64946ace901ff2d99f62696c2900725d9744fe149704cb370a6f3.png" />
+          </h1>
+        </a>
+      </figure>
+    </div><!--col-h-1-->
+
+
+  </div><!--.header-content-->
+</div><!--#header-->
+
+    <div class="content">
+      
+      
+<div class="people-bg">
+  <div class="content-content-home">
+
+    <div class="row">
+      <div class="col-bhome-9a12">
+        <div class="login-box">
+          <form class="new_user" id="new_user" action="/es/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OJeQkGI8vOGLrujb4/ERj0vtCdXoIw3N7v9egjkE9V/saAmmnd3NE41JkO1Lt/S4XzH2CChrSG17/FL3RnB6eQ==" />
+            <fieldset>
+              <legend>
+                Iniciar sesión
+              </legend>
+              <div>
+                <label class="invisible" for="user_login">Correo electrónico o Nº de documento</label>
+                <input autofocus="autofocus" class="input-100" placeholder="Email o Documento (DNI / NIE / Pasaporte)" type="text" name="user[login]" id="user_login" />
+              </div>
+              <div>
+                <label class="invisible" for="user_password">Contraseña</label>
+                <input class="input-100" placeholder="Contraseña" type="password" name="user[password]" id="user_password" />
+              </div>
+
+                <div class="remember">
+                  <label for="user_remember_me">Recordarme</label>
+                  <input name="user[remember_me]" type="hidden" value="0" /><input class="remember checkbox" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+                </div>
+
+              <div class="enter">
+                <input type="submit" name="commit" value="Iniciar sesión" class="button" />
+              </div>
+            </fieldset>
+            <p>
+              <a style="font-size:1.3em;" href="/soporte-votaciones">Ayuda para acceder a votar</a>
+            </p>
+            <p>
+              <a href="/es/users/password/new">He olvidado mi contraseña</a>
+            </p>
+</form>        </div><!--.login-box-->
+      </div><!--.col-b-9a12-->
+
+      <div class="col-bhome-1a6">
+        <article class="intro">
+        <p>Bienvenido/a al Portal de Participación de Podemos.</p>
+        <p><em class="podemos">Podemos</em> nace con la voluntad de construir una forma nueva de hacer política, y para ello estamos construyendo una estructura transparente, ciudadana, abierta, democrática y eficaz. Una organización que responda al impulso democratizador de Podemos, en la que discutamos, debatamos y decidamos entre todos y todas.</p>
+
+          <p class="total">Ya somos
+          <span>
+              480.452
+          </span>
+          personas inscritas.</p>
+          <div class="buttonbox">
+            <a class="button intro-indent" href="/es/users/sign_up">Inscripción</a>
+          </div>
+        </article><!--.intro-->
+
+      </div><!--.col-b-1a3-->
+
+    </div><!--.row-->
+
+  </div><!--.content-content-->
+</div><!--#content-->
+
+    </div>
+    <div class="footer">
+  <div class="footer-content">
+    <div class="row">
+
+      <div class="col-f-1a3">
+        <div class="footer-contact">
+          <h2 class="footer-logo">Podemos</h2>
+          <p>C/ Zurita, 21</p>
+          <p>28012 Madrid</p>
+          <!--<p><a href="/es/preguntas-frecuentes">¿Problemas con la inscripción?</a></p>-->
+          <p><a href="/soporte-votaciones/">¿Problemas con la inscripción?</a></p>
+
+          <!-- nav class="languages">
+            <ul>
+              <li class="lang-castellano">
+                <a class="active" href="/es/users/sign_in">Castellano</a>
+              </li>
+              <li class="lang-catala">
+                <a class="" href="/ca/users/sign_in">Català</a>
+              </li>
+              <li class="lang-euskara">
+                <a class="" href="/eu/users/sign_in">Euskera</a>
+              </li>
+              <li class="lang-galician">
+                <a class="" href="/gl/users/sign_in">Galego</a>
+              </li>
+            </ul>
+          </nav -->
+        </div>
+      </div>
+
+
+       <div class="col-f-4a5">
+        <div class="footer-conoce">
+          <h2>Conoce</h2>
+          <ul>
+            <li>
+              <a href="http://podemos.info/organizacion/">Organización</a>
+            </li>
+            <li>
+              <a href="http://podemos.info/programa/">Programa</a>
+            </li>
+            <li>
+              <a href="https://transparencia.podemos.info/">Transparencia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-f-6a7">
+        <div class="footer-informate">
+          <h2>Colabora</h2>
+          <ul>
+            <li>
+              <a href="https://participa.podemos.info/es/colabora/">Colabora periódicamente</a>
+            </li>
+            <li>
+              <a href="http://crowdfunding.podemos.info/">Crowdfunding</a>
+            </li>
+            <li>
+              <a href="http://tienda.podemos.info/">Tienda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-f-8a9">
+        <div class="footer-participacion">
+          <h2>Participa</h2>
+          <ul>
+            <li>
+              <a href="http://podemos.info/impulsa/">Proyectos IMPULSA</a>
+            </li>
+            <li>
+              <a href="https://plaza.podemos.info/">Plaza 2.0</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-f-10a12">
+        <div class="footer-siguenos">
+          <h2>Síguenos</h2>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/user/CirculosPodemos/">
+                <img alt="YouTube" src="/assets/ico.social45-youtube-on-06f010aaa084ee853f7e9ff2b290861d44f63a63c1b08708dd9d4ef8b2f1373b.png" />
+</a>            </li>
+            <li>
+              <a href="https://www.facebook.com/pages/Podemos/269212336568846">
+                <img alt="Facebook" src="/assets/ico.social45-facebook-on-52db2721ff01b7efb6684bdc0799b6fe81eaf8917e7273ef2ece5e9aa51ed0a6.png" />
+</a>            </li>
+            <li>
+              <a href="https://twitter.com/ahorapodemos">
+                <img alt="Twitter" src="/assets/ico.social45-twitter-on-312c348eeb2f9af6c26d44986a4a8cac71d846b34869eb0740794375eeb9730c.png" />
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!--.row-->
+
+    <div class="row">
+      <div class="col-f-1a12">
+        <ul class="disclaimer-links">
+          <li> <a href="#">2017 podemos.info</a> </li>
+          <li> <a href="/es/privacy-policy">Condiciones de uso, empleo de cookies y política de privacidad</a> </li>
+          <li> <a href="/es/comision-de-garantias-democraticas">|  Comisión de Garantías Democráticas</a> </li>
+          <li> <a href="/pdf/estatutos_de_podemos.pdf">|  Estatutos del partido político PODEMOS</a> </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div class="cookie">
+      Utilizamos cookies propias y de terceros para mejorar nuestros servicios y poder ofrecerle las mejores opciones de uso del sitio web mediante el análisis de sus hábitos de navegación. Si continúa navegando consideramos que acepta su uso. Puede cambiar su uso en cualquier momento mediante los ajustes de su navegador. <a href='/es/privacy-policy'>Para más información pulse aquí para consultar nuestro aviso legal</a>
+
+      <a class="close" id="close_cookie" href="#">X</a>
+    </div>
+
+    <!-- Piwik -->
+<!-- script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//piwik.circulospodemos.info/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 16]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<noscript><p><img src="//piwik.circulospodemos.info/piwik/piwik.php?idsite=16" style="border:0;" alt="" /></p></noscript -->
+<!-- End Piwik Code -->
+<!-- Gooole Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65261297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script src="/assets/application-20e7b9e6318264fbb49573463b2eef3b3dc323994b1bf75437950d31ace75016.js" data-turbolinks-track="true"></script>
+  </div>
+</body>
+</html>

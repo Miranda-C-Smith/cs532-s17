@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en"><head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><title>Correction: TV Ad Projections In Billions 02/06/2017</title><meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="description" content="Correction: TV Ad Projections In Billions - 02/06/2017"><meta name="keywords" content="In the story, &quot;Digital, Programmatic Deals Drive Increase In Local TV Ads&quot; (February 3, Media Daily News), total local TV advertising projections should have been $20.9 billion in 2017 and $24.2 billion in 2020. For local out of home media it will be $1.7 billion in 2017. 02/06/2017"><!-- twitter card --><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@mediapost"><meta name="twitter:url" content="http://www.mediapost.com/publications/article/294561/correction-tv-ad-projections-in-billions.html"><meta name="twitter:title" content="MediaDailyNews: Correction: TV Ad Projections In Billions"><meta name="twitter:description" content="In the story, &quot;Digital, Programmatic Deals Drive Increase In Local TV Ads&quot; (February 3, Media Daily News), total local TV advertising projections should have been $20.9 billion in 2017 and $24.2
+billion in 2020. For local out of home media it will be $1.7 billion in 2017."><!-- end twitter card --><!-- facebook --><meta property="fb:admins" content="503855435" /><meta property="fb:admins" content="500591163" /><meta property="og:url" content="http://www.mediapost.com/publications/article/294561/correction-tv-ad-projections-in-billions.html" /><meta property="og:title" content="Correction: TV Ad Projections In Billions" /><meta property="og:description" content="In the story, &quot;Digital, Programmatic Deals Drive Increase In Local TV Ads&quot; (February 3, Media Daily News), total local TV advertising projections should have been $20.9 billion in 2017 and $24.2
+billion in 2020. For local out of home media it will be $1.7 billion in 2017." /><meta property="og:type" content="website" /><meta property="og:image" content="http://s3.amazonaws.com/static.mediapost.com/publications/images/mp-logo-fb.jpg" /><!-- end faceboook --><meta name="viewport" content="initial-scale=1, maximum-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1"><script src='http://www5.smartadserver.com/config.js?nwid=1909' type="text/javascript"></script><script type="text/javascript">
+    sas.setup({ domain: 'http://www5.smartadserver.com', async: true, renderMode: 0, inSequence: true});
+    //  renderMode define when ads must be rendered :
+    //      - DEFAULT       (0) : as soon as ad is ready
+    //      - READY         (1) : render ads when document is ready
+    //  - ON_DEMAND     (2) : user must call sas.callAds()
+</script><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='/static/js/jquery.min-1.9.1.js' type='text/javascript'%3E%3C/script%3E")); }
+</script><script src="http://s3.amazonaws.com/static.mediapost.com/js/jquery.colorbox-min-1.4.27.js"></script><script>
+    /* Twitter */
+    function tw_click(u, t, article_id, start_shares) {
+        window.open('http://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),'share','toolbar=0,status=0,width=626,height=436');
+        return false;
+    }
+
+    /* Facebook */
+    function fbs_click(u, t, article_id, start_shares) {
+        window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'share','toolbar=0,status=0,width=626,height=436');
+        return false;
+    }
+
+    /* Google+ */
+    function gos_click(u, t, article_id, start_shares) {
+        window.open('https://plus.google.com/share?url='+encodeURIComponent(u),'share','toolbar=0,status=0,width=626,height=436');
+        return false;
+    }
+
+    /* LinkedIn */
+    function lis_click(u, t, article_id, start_shares) {
+        window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(u) + '&title=' + encodeURIComponent(t) + '&summary=' + '&source=', 'share', 'toolbar=0,status=0,width=626,height=436');
+        return false;
+    }
+</script><!-- Comment Subscription JS --><script type="text/javascript">
+        var commentsubscriptionUrl = "/publications/article/commentsubscribe/";
+        
+    </script><script src="http://s3.amazonaws.com/static.mediapost.com/js/commentsubscribe.js"></script><!-- End Comment Subscription JS --><!-- AJAX in appropriate HTML block for commenting --><script>
+
+        // We're using .ajax() instead of .getScript() because getScript() doesn't cache the script
+        // by default.
+        function load_tinymce() {
+            $.ajax({
+                url: "/static/js/tiny_mce.4.1.9/tinymce.min.js",
+                dataType: "script",
+                cache: true,
+                crossDomain: true,
+            }).done(function() {
+                tinyMCE.init({
+                    selector: 'textarea',
+                    theme : 'modern',
+                    menubar : false,
+                    toolbar: 'bold italic bullist numlist blockquote',
+                    forced_root_block: false,
+                });
+            });
+        }
+
+        function call_commentform(articleID) {
+            var commentForm = "#comment-form-" + articleID;
+            var commentFormURL = "/publications/article/" + articleID + "/commentform/"
+
+            return $.ajax({
+                type: "GET",
+                url: commentFormURL,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function(response) {
+                    $(commentForm).html(response.html);
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("body").on("click", ".leave-comment", function(){
+                var articleID = $(this).attr("id").split("-")[2];
+                $(this).hide();
+                call_commentform(articleID).done(function() {
+                    load_tinymce();
+                });
+            });
+
+            $("body").on("click", ".reply", function(event){
+                event.preventDefault();
+                var articleID = $(this).attr("id").split("-")[1];
+                var parentID = $(this).attr("id").split("-")[2];
+                var commentsMain = "#comments-main-" + articleID;
+                var form = "#form-" + articleID;
+                var parentInput = "#id_parent-" + articleID;
+
+                // get comment form; make sure it completes before setting the parent id in the hidden
+                // input field of the loaded form
+                $.when(call_commentform(articleID)).done(function(data) {
+                    $(form).find(parentInput).attr("value", parentID);
+                    load_tinymce();
+                });
+
+                $('html, body').animate({
+                    scrollTop: $(commentsMain).offset().top -70
+                }, 600);
+            });
+        });
+    </script><script src="http://s3.amazonaws.com/static.mediapost.com/publications/js/jquery.waypoints.min-4.0.1.js"></script><script>
+        $(document).ready(function () {
+
+            function readCounter(article_id) {
+                var article_url="http://basie.mediapost.com/article/"+article_id+".jpg";
+                $.ajax({
+                    type: "GET",
+                    url: article_url
+                });
+            }
+
+            function bindArticleWaypoints($item) {
+                $item.waypoint(function (direction) {
+                    if (direction === "down") {
+
+                        // grab es parameters
+                        var es_url = $(this.element).attr("data-url");
+                        var es_title = $(this.element).attr("data-title");
+                        var es_start = $(this.element).attr("data-start");
+                        var es_index = $(this.element).attr("data-index");
+
+                        // destroy waypoint binding and remove element from DOM
+                        this.destroy();
+                        $(this.element).removeClass('article-waypoint');
+
+                        $.ajax({
+                            type: "GET",
+                            url: es_url,
+                            data: {
+                                'initial_article': '294561',
+                                'es_index_start': es_start,
+                                'es_index': es_index,
+                                'utm': 'False',
+                                
+                            },
+                            success: function(html){
+                                $("#wrapper-fluid").append(html);
+                            },
+                            beforeSend: function(){
+                                $('.loader').show();
+                            },
+                            complete: function() {
+                                $('.loader').hide();
+                                findArticleWaypoints();
+                                findReadCounterWaypoints();
+                                findAddressWaypoints();
+                                findWidgetWaypoints()
+                                gaTrack(es_url, es_title);
+                            }
+                        });
+                    }
+                }, {
+                    offset: 'bottom-in-view'
+                });
+            }
+
+            function bindReadCounterWaypoints($item) {
+                $item.waypoint(function (direction) {
+                    if (direction === "down") {
+                        var article_id = $(this.element).attr("data-id");
+
+                        // destroy waypoint binding and remove element from DOM
+                        this.destroy();
+                        $(this.element).removeClass('readcounter-waypoint');
+
+                        readCounter(article_id);
+                    }
+                }, {
+                    offset: 200
+                });
+            }
+
+            function bindAddressWaypoints($item) {
+                $item.waypoint(function (direction) {
+                    if (direction === "down") {
+                        // first, make sure we haven't already set 'prev' data
+                        if ($(this.element).attr("data-prev-url") == '') {
+
+                            // set the prev data based on current location/title
+                            $(this.element).attr("data-prev-url", window.location.pathname);
+                            $(this.element).attr("data-prev-title", document.title);
+                        }
+
+                        // grab "next" data and push it to history/title
+                        var url = $(this.element).attr("data-url");
+                        var title = $(this.element).attr("data-title");
+                        document.title = title;
+                        history.replaceState(null, null, url);
+
+                        $('.widget').addClass('affix');
+                    }
+                    else {
+                        var url = $(this.element).attr("data-prev-url");
+                        var title = $(this.element).attr("data-prev-title");
+
+                        document.title = title;
+                        history.replaceState(null, null, url);
+
+                        $('.widget').removeClass('affix');
+                    }
+                }, {
+                    offset: 200
+                });
+            }
+            
+            function bindWidgetINWaypoints($item) {
+                $item.waypoint(function (direction) {
+                    if (direction === "down") {
+                        $('.widget').removeClass('affix');
+                    }
+                    else {
+                        $('.widget').addClass('affix');
+                    }
+                }, {
+                    offset: 'bottom-in-view'
+                });
+            }
+
+            function findArticleWaypoints() {
+                $(".article-waypoint").each(function() {
+                    bindArticleWaypoints($(this));
+                });
+            }
+
+            function findReadCounterWaypoints() {
+                $(".readcounter-waypoint").each(function() {
+                    bindReadCounterWaypoints($(this));
+                });
+            }
+
+            function findAddressWaypoints() {
+                $(".address-waypoint").each(function() {
+                    bindAddressWaypoints($(this));
+                });
+            }
+            
+            function findWidgetWaypoints() {
+                $(".widget-waypoint").each(function() {
+                    bindWidgetINWaypoints($(this));
+                });
+            }
+            
+            function gaTrack(path, title) {
+              ga('set', { page: path, title: title });
+              ga('send', 'pageview');
+            }
+
+            findArticleWaypoints();
+            findWidgetWaypoints();
+            readCounter(294561); // counts initial request
+
+        });
+    </script><!-- Click counter ajax --><link href="http://s3.amazonaws.com/static.mediapost.com/css/bootstrap.min-3.3.6-custom.css" rel="stylesheet"><!-- FONTS --><link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Cardo:400,700" rel="stylesheet" type="text/css"><script src="http://s3.amazonaws.com/static.mediapost.com/js/bootstrap.min-3.3.6-custom.js"></script><script>
+/* allows mobile safari to show hover and active */
+document.addEventListener("touchstart", function() {},false);
+</script><link href="http://s3.amazonaws.com/static.mediapost.com/publications/css/navbar.css?v=3" rel="stylesheet"><!-- Google Remarketing Tag for MediaPost Site Visitor  --><style> 
+    iframe[name="google_conversion_frame"] { display: none; } 
+</style><script type="text/javascript"> 
+    /* <![CDATA[ */ 
+    var google_conversion_id = 1071024836; 
+    var google_custom_params = window.google_tag_params; 
+    var google_remarketing_only = true; 
+    /* ]]> */ 
+</script><script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script><noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071024836/?value=0&amp;guid=ON&amp;script=0"/></div></noscript><script type="text/javascript">
+//Navbar Scroll Event
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop && st > 40){
+       $('.navbar').addClass('navbar-scroll-custom');
+   } else {
+       $('.navbar').removeClass('navbar-scroll-custom');
+   }
+   lastScrollTop = st;
+});
+</script><link href="http://s3.amazonaws.com/static.mediapost.com/css/footer.css?v=2" rel="stylesheet"><style>
+        .container-fluid{
+            padding-left:0;
+            padding-right:0;
+        }
+    </style><link rel="stylesheet" href="http://s3.amazonaws.com/static.mediapost.com/publications/css/article.css?v=5"><style>
+        a, .sidebar_group ul li a { color: #186cb7; }
+        .subscribe, #subscribe_form { background-color: ; }
+        #subscribe_form input[type="submit"] {
+            background-color: #186cb7;
+            border: 1px solid #186cb7;
+        }
+        .leave-comment{
+            background-color: #186cb7;
+            border: 1px solid #186cb7;
+        }
+    </style><link href="http://s3.amazonaws.com/static.mediapost.com/css/colorbox/colorbox.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><link href="http://s3.amazonaws.com/static.mediapost.com/favicon.ico" rel="shortcut icon"></head><body><nav class="navbar navbar-fixed-top navbar-inverse"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a onclick="ga('send', 'event', 'topmenu', 'click', 'mplogo', 1);"class="navbar-brand" href="/"></a></div><div class="collapse navbar-collapse" id="navbar-collapse-1"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">News<span class="caret"></span></a><ul class="dropdown-menu" id="nav_news"><li><div class="menu"><div class="column"><div class="section"><dl><dt>Featured</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_featured', 1);" href="/publications/garfield-at-large/"><span style="font-weight:700;">Bob Garfield:</span> Garfield at Large</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_featured', 1);" href="/publications/mad-blog/"><b>Barbara Lippert:</b> MadBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_featured', 1);" href="/publications/mediapost-weekend/"><b>MediaPost Week in Review</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_featured', 1);" href="/publications/online-spin/"><b>Online Spin</b></a></dd></dl></div><div class="section"><dl><dt>Current Stories</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_current', 1);" href="/"><span style="font-weight:700;">MediaPost Home</span></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_current', 1);" href="/news/">Today's News</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_current', 1);" href="/opinions/">Today's Opinions</a></dd></dl></div><div class="section"><dl><dt>Agencies &amp;<br>The Agency Business</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/mediaposts-agency-daily/"><span style="font-weight:700;">MAD: MediaPost's Agency Daily</span></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/accounts-on-the-move/">Accounts in Review</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/directories/events/">Events Calendar</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/out-to-launch/">Out to Launch</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/people-on-the-move/">People on the Move</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/mediapsssst/">MEDIApsssst</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/real-mad/">Stan Mack's Real Mad</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_agency', 1);" href="/publications/mad-london/"><span style="font-weight:700;">MAD - London</span></a></dd></dl></div></div><!--/end column--><div class="column"><div class="section"><dl><dt>Online Media, Marketing<br>and Advertising</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/omma-today/"><b>OMMA Today</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/daily-online-examiner/"><b>Daily Online Examiner</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/policyblog/">PolicyBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/email-marketing-daily/"><b>Email Marketing Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/email-insider/">Email Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/eu-email-marketing-daily/"><b>EU Email Marketing Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/email-insider-europe/">Email Insider Europe</a></dd></dl></div><div class="section"><dl><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/mobile-marketing-daily/"><b>MobileMarketingDaily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/moblog/">MoBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/mobileshoptalk/">Mobile Shop Talk</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/mobile-insider/">Mobile Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/search-marketing-daily/"><b>Search Marketing Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/searchblog/">SearchBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/search-insider/">Search Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/social-media-marketing-daily/"><b>Social Media &amp; Marketing Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/the-social-graf/">The Social Graf</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/social-media-insider/">Social Insider</a></dd></dl></div><!--/end section--></div><!--/end column--><div class="column"><div class="section"><dl><dt>Online Media, Marketing<br>and Advertising</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/real-time-daily/"><b>Real-Time Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/rtblog/">RTBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/rtb500/">RTB500</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/programmatic-insider/">Programmatic Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/data-and-targeting-insider/">Data &amp; Targeting Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/video-daily/"><b>Video Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/vidblog/">VidBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/video-critique/">Video Critique</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_online', 1);" href="/publications/video-insider/">Video Insider</a></dd></dl></div><!--/end section--><div class="section"><dl><dt>Publishing &amp; Publishers</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_publishing', 1);" href="/publications/publishers-daily/"><b>Publishers Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_publishing', 1);" href="/publications/the-daily-blog/">The Daily Blog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_publishing', 1);" href="/publications/online-publishing-insider/">Publishing Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_publishing', 1);" href="/publications/supply-side-insider/">Supply Side Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_publishing', 1);" href="/publications/native-insider/">Native Insider</a></dd></dl></div><!--/end section--><div class="section"><dl><dt>Futures</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_futures', 1);" href="/publications/iot-daily/"><b>IoT Daily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_futures', 1);" href="/publications/connected-thinking/">Connected Thinking</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_futures', 1);" href="/publications/vrar-insider/">VR/AR Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_futures', 1);" href="/publications/ai-insider/">AI Insider</a></dd></dl></div><!--/end section--></div><!--/end column--><div class="column"><div class="section"><dl><dt>Media Buying/Planning/Research<br>&amp; The Media</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/mediadailynews/"><b>MediaDailyNews</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/audience-buying-insider/">Audience Buying Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/metrics-insider/">Metrics Insider</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/research-brief/">Research Brief</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/television-news-daily/"><b>TelevisionNewsDaily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/tvblog/">TVBlog</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/tv-watch/">TV Watch</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_media', 1);" href="/publications/tv-everywhere/">TV Everywhere</a></dd></dl></div><!--/end section--><div class="section"><dl><dt>Brand and Product Marketing</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-daily/"><b>MarketingDaily</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-daily-top-of-the-news/">Thom Forbes: Top of the News</a></dd><dt>Engage Target Market Newsletters</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engageaffluent/" style="display:inline;">Affluent,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engageboomers/" style="display:inline;">Boomers,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engagemillennials/" style="display:inline;">Millennials,</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engagehispanics/" style="display:inline;">Hispanics,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engagemen/" style="display:inline;">Men,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engagemoms/" style="display:inline;">Moms,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/engageteens/" style="display:inline;">Teens</a></dd><dt>Industry Sector Newsletters</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-automotive/" style="display:inline;">Automotive,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-causes/" style="display:inline;">Causes,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-cpg/" style="display:inline;">CPG,</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-entertainment/" style="display:inline;">Entertainment,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-green/" style="display:inline;">Green,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-health/" style="display:inline;">Health,</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-politics/" style="display:inline;">Politics,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-sports/" style="display:inline;">Sports,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-travel/" style="display:inline;">Travel</a></dd><dt>Marketing Tools &amp; Strategies</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/content-marketing-insider/" style="display:inline;">Content Marketing,</a><a onclick="ga('send', 'event', 'topmenu', 'click', 'news_brand', 1);" href="/publications/marketing-insider-cross-channel/" style="display:inline;">Cross-Channel</a></dd></dl></div></div><!--/end column--></div><!--/end menu--></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a><ul class="dropdown-menu" id="nav_events"><li><div class="menu"><div class="column"><dl><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_home', 1);" href="/events/" class="home_icon"><b>Events Home</b></a></dd><!--<dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_calendar', 1);" href="/events/2017/" id="calendar_link"><b>2017 Events Calendar</b></a></dd>--><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_calendar', 1);" href="/events/2017/" id="calendar_link"><b>2017 Events Calendar</b></a></dd><dt>Upcoming Events</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/omma-atlanta/">OMMA Atlanta<br /><em>February 22, 2017, Atlanta</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/brandmarketerssummit/">Brand Marketers Summit - Cross-Channel<br /><em>March 7 - 10, 2017, Austin</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/omma-sxsw/">OMMA at SXSW<br /><em>March 11, 2017, TX</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/tvinsidersummit/">TV Insider Summit - The Future of Television Buying<br /><em>March 19 - 22, 2017, AZ</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/marketing-automotive/">Marketing: Automotive<br /><em>April 12, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/marketingautomotiveawards/">Marketing Automotive Awards<br /><em>April 12, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/programmaticinsidersummit/">Data & Programmatic Insider Summit<br /><em>April 23 - 26, 2017, FL</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/searchinsidersummit/">Search Insider Summit<br /><em>April 26 - 29, 2017, FL</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/outfrontforum/">Outfront Forum<br /><em>May 3, 2017, NYC</em></a></dd></dl></div><!--/end column--><div class="column"><br><dl><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/ommabotsandchat/">OMMA Bots & Chat<br /><em>May 16, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/appyawards/">Appy Awards<br /><em>May 16, 2017, NY</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/iotmarketingawards/">IoT Marketing Awards<br /><em>May 17, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/iot-marketing/">IoT Marketing Forum<br /><em>May 17, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/emailinsidersummit/">Email Insider Summit<br /><em>May 31 - June 3, 2017, FL</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/publishinginsidersummit/">Publishing Insider Summit<br /><em>June 4 - 7, 2017, FL</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/emailinsidersummiteurope/">Email Insider Summit Europe<br /><em>June 25 - 28, 2017, TBD</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/searchinsidersummiteurope/">Search Insider Summit Europe<br /><em>June 28 - July 1, 2017, EU</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_upcoming', 1);" href="/digitaloohawards/">Digital Out of Home Awards<br /><em>September 12, 2017, NYC</em></a></dd></dl></div><!--/end column--><div class="column"><dl><dt>Recently Concluded</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/creativemediaawards/">Creative Media Awards<br /><em>January 26, 2017, New York City</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/agencyoftheyear/">Agency of the Year<br /><em>January 25, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/onlineallstars/">Online All Stars<br /><em>January 19, 2017, NY</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/mastersofmediaselling/">Masters of Media Selling<br /><em>January 18 - 19, 2017, NYC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/marketing-politics/">Marketing: Politics<br /><em>January 17, 2017, DC</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/searchinsidersummit/past/">Search Insider Summit<br /><em>December 7 - 10, 2016, UT</em></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_concluded', 1);" href="/emailinsidersummit/past/">Email Insider Summit<br /><em>December 4 - 7, 2016, UT</em></a></dd></dl></div><!--/end column--><div class="column"><dl><dt>More Events</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/contentmarketinginsidersummit/">Content Marketing Insider Summit</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/crosschannelmarketinginsidersummit/">Cross-Channel Marketing Insider Summit</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/futureofmedia/">Future of Media</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/iot-shopping/">IOT: Shopping</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/iot-beacons/">IOT:Beacons</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/marketing-sports/">Marketing Sports: Soccer in America</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/marketing-health/">Marketing: Health</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/mobileinsidersummit/">Mobile Insider Summit</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/advertisingweek/">OMMA at Advertising Week</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommaatinternetweek/">OMMA at Internet Week</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommaattribution/">OMMA Attribution</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommaaudiencebuying/">OMMA Audience Buying</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommaawards/">OMMA Awards</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/omma-chicago/">OMMA Chicago</a></dd></dl></div><div class="column"><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/omma-denver/">OMMA Denver</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/omma-la/">OMMA LA</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommamarketingtech/">OMMA Marketing Tech</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommamcommerce/">OMMA mCommerce</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/omma-miami/">OMMA Miami</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommaprogrammatic/">OMMA Programmatic</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommaprogrammatic-ny/">OMMA Programmatic in New York</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommatv/">OMMA Programmatic TV</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/omma-sf/">OMMA San Francisco</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommasocial/">OMMA Social</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommavideo/">OMMA Video</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/ommavrar/">OMMA VR/AR</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/socialmediainsidersummit/">Social Media Insider Summit</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/thereckoning/">The Reckoning</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'events_more', 1);" href="/videoinsidersummit/">Video Insider Summit</a></dd></div><!--/end column--></div><!--/end menu--></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Awards<span class="caret"></span></a><ul class="dropdown-menu" id="nav_awards"><li><div class="menu"><div class="column"><dl><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/awards/" class="home_icon"><b>Awards Home</b></a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/marketingautomotiveawards/">Marketing Automotive Awards&nbsp;(April 12, 2017, NYC)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/appyawards/">Appy Awards&nbsp;(May 16, 2017, NY)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/iotmarketingawards/">IoT Marketing Awards&nbsp;(May 17, 2017, NYC)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/digitaloohawards/">Digital Out of Home Awards&nbsp;(September 12, 2017, NYC)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/creativemediaawards/">Creative Media Awards&nbsp;(January 26, 2017, New York City)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/agencyoftheyear/">Agency of the Year&nbsp;(January 25, 2017, NYC)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/onlineallstars/">Online All Stars&nbsp;(January 19, 2017, NY)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'awards', 1);" href="/ommaawards/">OMMA Awards&nbsp;(September 26, 2016, NYC)</a></dd></dl></div><!--/end column--></div><!--/end menu--></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Members<span class="caret"></span></a><ul class="dropdown-menu" id="nav_members"><li><div class="menu"><div class="column"><dl><dt>Become A MediaPost Member</dt><div style="font-style:italic;color:#ffffff;padding-left:12px;">Subscribe to your choice of industry specific newsletters, save $100 on conferences, search member directories, comment on stories and more. Free to qualified media, marketing and advertising professionals.</div><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'members_join', 1);" href="/register/">Join Now</a></dd><dt>Member Resources</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'members_directory', 1);" href="/people/">All Member Directory</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'members_manage', 1);" href="/account/">Manage My Account</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'members_manage', 1);" href="/account/subscriptions/">Manage My Subscriptions</a></dd></dl></div><!--/end column--></div><!--/end menu--></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a><ul class="dropdown-menu" id="nav_more"><li><div class="menu"><div class="column"><dl><dt>Additional Resources</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_feedbackloop', 1);" href="/publications/feedback-loop/">Feedback Loop (Comments)</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_jobs', 1);" href="/jobs/">Job Postings</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_researchbriefs', 1);" href="/publications/research-brief/">Research Briefs</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_whitepapers', 1);" href="/whitepapers/">Whitepapers</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_industryevents', 1);" href="/directories/">Industry Events</a></dd><dt>About and Contacts</dt><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_about', 1);" href="/about/">About MediaPost</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_masthead', 1);" href="/publications/masthead/">Contact Editorial</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_privacy', 1);" href="/privacy/">Privacy/Terms</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_mediakit', 1);" href="/mediakit/">Media Kit</a></dd><dd><a onclick="ga('send', 'event', 'topmenu', 'click', 'more_sitemap', 1);" href="/sitemap/">Sitemap</a></dd></dl></div><!--/end column--></div><!--/end menu--></li></ul></li><li class="dropdown"><a class="dropdown-toggle" id="search" data-toggle="dropdown" href="#">Search<span class="caret"></span></a><ul class="dropdown-menu" id="nav_search"><li><div class="menu"><div id="search-box"><form id="pubshomekeywordsearch" name="pubshomekeywordsearch" action="/publications/search/" method="get" onsubmit="ga('send', 'event', 'topmenu', 'click', 'search', 1);"><input id="id_q" class="manageMenu" type="text" name="q" style="width:200px;"><input id="search-submit" type="submit" style="background: url('//s3.amazonaws.com/static.mediapost.com/images/mp_sprites.png') 0 -32px transparent; border:0; width:20px; height:20px; cursor:pointer;" alt="" value=""></form><a onclick="ga('send', 'event', 'topmenu', 'click', 'searchadvanced', 1);" href="/publications/advanced-search/">Advanced Search</a></div></div><!--/end menu--></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Sign in</span><span class="caret"></span></a><ul class="dropdown-menu"><li><div class="menu"><div id="signin_menu" class="common-form standard-form"><form onsubmit="ga('send', 'event', 'topmenu', 'submit', 'signin', 1);" method="post" name='popSigninForm' id="popSigninForm" action="/login/?next=/publications/article/294561/correction-tv-ad-projections-in-billions.html"><input type='hidden' name='csrfmiddlewaretoken' value='GMyERvNKJFr1ISpijkeiDPiBuVlmnmOj' /><p><strong>Username</strong><input id="username" name="username" title="username" tabindex="4" type="text"></p><p><strong>Password</strong><input id="password" name="password" value="" title="password" tabindex="5" type="password"></p><p class="remember"><input value="Sign in" tabindex="7" type="submit"><input id="remember" name="remember_me" value="1" tabindex="6" type="checkbox" checked="checked"><label for="remember">Remember me</label></p><p class="forgot"><a onclick="ga('send', 'event', 'topmenu', 'click', 'password_reset', 1);" class="modal_45_45 cboxElement" href="/password-reset/?modal=1" id="resend_password_link">Forgot your password?</a></p></form></div></div></li></ul></li><li><a onclick="ga('send', 'event', 'topmenu', 'click', 'register', 1);" href="/register/" id="register">Register</a></li><li><a onclick="ga('send', 'event', 'topmenu', 'click', 'advertise', 1);" href="/mediakit/">Advertise</a></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Follow<span class="caret"></span></a><ul class="dropdown-menu social"><li id="twitter_nav_icon"><a onclick="ga('send', 'event', 'topmenu', 'click', 'twitter', 1);" href="https://twitter.com/mediapost"></a></li><li id="facebook_nav_icon"><a onclick="ga('send', 'event', 'topmenu', 'click', 'facebook', 1);" href="https://www.facebook.com/MediaPost"></a></li><li id="linkedin_nav_icon"><a onclick="ga('send', 'event', 'topmenu', 'click', 'linkedin', 1);" href="http://www.linkedin.com/company/mediapost"></a></li></ul></li></ul></div></div></nav><div class="container-fluid" id="wrapper-fluid"><div id="ads_leaderboard" class="container-fluid img-responsive"><div id="row"><div class="ads_leaderboard"><div id="dynamicad_294561_1" ><script>
+    dynamicAd('leaderboard');
+
+    function dynamicAd(position) {
+        /* this rndId has to be used just like this in the Smart+ call or that ad call blows up :shrug: */
+        var rndId = parseInt(Math.random() * 1000000).toString();
+        var smartDiv = document.createElement("div");
+        smartDiv.id = rndId;
+         smartDiv.className = 'ads_leaderboard' 
+        var smartTag = document.createElement("script");
+        $(smartTag).text("sas.call('std', {siteId:100806,pageId:669606,formatId:41713,tagId:" + rndId + "});");
+
+        smartDiv.appendChild(smartTag);
+
+        $('#dynamicad_294561_1').append(smartDiv);
+    }
+</script></div></div></div></div><div class="container" id="article-container"><div class="row"><div id="article_news" class="col-md-8"><div class="header"><a href="/publications/mediadailynews/" id="header_article_mediadailynews"><img src="http://s3.amazonaws.com/static.mediapost.com/publications/images/headers2/article-mediadailynews.png" alt=""></a></div></div><div id="sidebar_subscribe" class="col-md-4"><div id="subscribe_form"><div class="sidebar_title hidden-sm hidden-xs">Subscribe to <em>MediaDailyNews</em></div><form name='subform' id='subform' method="post" action="" onsubmit="ga('send', 'event', 'article', 'submit', 'subscribeform', 1);"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='GMyERvNKJFr1ISpijkeiDPiBuVlmnmOj' /></div><div class="subscribe_email"><label name='inField' for="id_subform-email"></label><input id="id_subform-email" name="subform-email" placeholder="enter your email address" type="text" /></div><input id="id_subform-newsletter" name="subform-newsletter" type="hidden" value="1" /><input type="submit" name="subform" value="Subscribe" id="subscribe" /></form></div></div></div><div class="row" ><div class="col-md-8"><div id="article_headline" class="col-md-11"><h1 id="title">Correction: TV Ad Projections In Billions</h1></div><div id="article_body"><div id="article_body_main" class="col-md-11 article-waypoint" data-title="Kantar Watermark Moves Step Closer To Becoming &#39;UPC Code For Media&#39; 02/20/2017" data-url="/publications/article/295507/kantar-watermark-moves-step-closer-to-becoming-up.html" data-start="9" data-index="0"><ul id="mcs"><li id="meta-in">
+                            
+                                
+                                    by <a onclick="ga('send', 'event', 'article', 'click', 'author', 1);" rel="author" href="/publications/author/3218/wayne-friedman/">Wayne Friedman</a>, 
+                                
+                                February  6, 2017
+                            
+                        </li></ul><!-- Places an ad in the middle of the body of an article -->
+                        In the story, &ldquo;<a href="http://www.mediapost.com/publications/article/294406/digital-programmatic-deals-drive-increase-in-loca.html">Digital, Programmatic Deals Drive Increase In Local TV
+Ads</a>&rdquo; (February 3, <em>Media Daily News</em>), total local TV advertising projections should have been $20.9 billion in 2017 and $24.2 billion in 2020. For local out of home media it will be
+$1.7 billion in 2017.
+                    
+
+                    
+                </div><div id="widget_main" class="col-md-12 widget-waypoint" style="min-height:42px;" data-id="294561"><div class="widget affix" id="widget-294561"><nav class="widget_group"><ul class="widget_tools" ><li id="twitter"><a href="#" title="Share on Twitter" onClick="return tw_click(' ', 'Correction: TV Ad Projections In Billions: In the story, \u0022Digital, Programmatic... http://bit.ly/2kLFrJD', '294561', '1')"><span class="icon"></span></a></li><li class="facebook"><a href="#" title="Share on Facebook" onClick="return fbs_click('http://bit.ly/2kLFrJD', 'Correction: TV Ad Projections In Billions', '294561', '1')"><span class="icon"></span></a></li><li class="linkedin"><a href="#" title="Share on LinkedIn" onClick="return lis_click('http://bit.ly/2kLFrJD', 'Correction: TV Ad Projections In Billions', '294561', '1')"><span class="icon"></span></a></li><li class="email"><a href="/publications/article/294561/email/" data-toggle="modal" data-target="#article_util_modal" class="modal_email"><span class="icon"></span></a></li></ul></nav></div></div></div><!-- email to a friend modal - should be used for anything we want to modal on this page --><div class="modal fade" id="article_util_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false"><div class="modal-dialog"><div class="modal-content"></div></div></div><div id="tags" class="col-md-11"><a onclick="ga('send', 'event', 'article', 'click', 'tag', 1);" href="/publications/tag/advertising/">advertising</a>,
+                    
+                        <a onclick="ga('send', 'event', 'article', 'click', 'tag', 1);" href="/publications/tag/tv/">tv</a></div><div id="comments-container-294561" class="col-md-11"><div style="col-md-11"><button class="leave-comment" id="leave-comment-294561">Comment</button><div class="loader"><center>
+                   Next story loading <img class="loading-image" src="http://s3.amazonaws.com/static.mediapost.com/publications/images/ajax-loader.gif" alt="loading.."></center></div></div><div id="comments-main-294561"><div id="comment-form-294561" style="margin-top:5px;"></div></div></div></div><!--/end article news--><div class="col-md-4 sidebar"><div class="rule"></div><div class="sidebar_group hidden-sm hidden-xs" style="text-align:center;"><!-- position: tower_top --><div id="ads_tower_top" class="advert"><p>advertisement</p><div id="dynamicad_294561_2" ><script>
+    dynamicAd('tower_top');
+
+    function dynamicAd(position) {
+        /* this rndId has to be used just like this in the Smart+ call or that ad call blows up :shrug: */
+        var rndId = parseInt(Math.random() * 1000000).toString();
+        var smartDiv = document.createElement("div");
+        smartDiv.id = rndId;
+        
+        var smartTag = document.createElement("script");
+        $(smartTag).text("sas.call('std', {siteId:100806,pageId:669606,formatId:41714,tagId:" + rndId + "});");
+
+        smartDiv.appendChild(smartTag);
+
+        $('#dynamicad_294561_2').append(smartDiv);
+    }
+</script></div></div></div><div class="sidebar_group hidden-sm hidden-xs"><div class="sidebar_title">More from <em>MediaDailyNews</em></div><ul><li><a onclick="ga('send', 'event', 'article', 'click', 'morefrom', 1);" href="/publications/article/295507/kantar-watermark-moves-step-closer-to-becoming-up.html">Kantar Watermark Moves Step Closer To Becoming &#39;UPC Code For Media&#39;</a></li><li><a onclick="ga('send', 'event', 'article', 'click', 'morefrom', 1);" href="/publications/article/295304/starcom-most-awarded-media-shop-of-2016.html">Starcom Most Awarded Media Shop Of 2016</a></li><li><a onclick="ga('send', 'event', 'article', 'click', 'morefrom', 1);" href="/publications/article/295231/ipg-finds-skipping-skippable-ads-has-become-ingr.html">IPG Finds Skipping &#39;Skippable Ads&#39; Has Become Ingrained Behavior, Offers Solutions</a></li><li><a onclick="ga('send', 'event', 'article', 'click', 'morefrom', 1);" href="/publications/article/295228/comscore-accredited-for-mobile-viewable-impression.html">comScore Accredited For Mobile Viewable Impressions</a></li><li><a onclick="ga('send', 'event', 'article', 'click', 'morefrom', 1);" href="/publications/article/295062/ad-hoc-trust-group-wants-to-be-neutral-ground-w.html">Ad Hoc &#39;Trust&#39; Group Wants To Be Neutral Ground, Will Use UN As Its Venue</a></li></ul></div></div><!--/end sidebar--></div><!--/end row--></div><!-- ONLY DISPLAY DISCOVER AND FOOTER WHEN ES HAS CEASED --></div><!--/end container--><script type="text/javascript">
+            adroll_adv_id = "Q4EPRO3O7RB5TNPMBUAZS3";
+            adroll_pix_id = "KODME3FZVVCSNOEWYZR6UX";
+            /* OPTIONAL: provide email to improve user identification */
+            /* adroll_email = "username@example.com"; */
+            (function () {
+                var _onload = function(){
+                    if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+                    if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+                    var scr = document.createElement("script");
+                    var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+                    scr.setAttribute('async', 'true');
+                    scr.type = "text/javascript";
+                    scr.src = host + "/j/roundtrip.js";
+                    ((document.getElementsByTagName('head') || [null])[0] ||
+                        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+                };
+                if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+                else {window.attachEvent('onload', _onload)}
+            }());
+        </script><!-- Facebook Pixel Code --><script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '1353226008029768'); 
+        fbq('track', 'PageView');
+        </script><noscript><img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=1353226008029768&ev=PageView
+        &noscript=1"/></noscript><!-- End Facebook Pixel Code --><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-332663-5', 'mediapost.com');
+    
+        var dimensionValue = 'guest';
+    
+    ga('set', 'dimension1', dimensionValue);
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    setTimeout("ga('send','event','read','15 seconds')",15000);
+</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1337ba3bce","agent":"","transactionName":"MQFXMBAACxdSUUxdDQhLcxEMAhENXFwXWQsCAFkBFQAXAR1fUVoLAgFBAQEVChYJVl1ABwUQUAA=","applicationID":"3584061,1132078","errorBeacon":"bam.nr-data.net","applicationTime":152}</script></body></html>

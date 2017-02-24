@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta property="og:title" content="ONE PIECE無料連載公式アプリ">
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="ONE PIECE公式アプリで毎日無料連載を読んでます！">
+        <meta property="og:url" content="https://www.shonenjump.com/op/"/>
+        <meta property="og:image" content="https://www.shonenjump.com/op/_image/op_app.png"/>
+        <meta property="og:site_name" content="ONE PIECE無料連載公式アプリ"/>
+        <title>ONE PIECE無料連載公式アプリ</title>
+        
+<script type="text/javascript">
+	var userAgent = navigator.userAgent.toLowerCase();
+	var cid = location.search.substring(1);
+
+	window.onload = function(){
+
+	if (userAgent.indexOf("android") > -1) {
+		// URLスキームを記述（android用、または共通）
+		launch_frame.location.href= "com-access-shxm05://";
+
+	setTimeout(function(){
+		// Google PlayのIDを指定
+		location.href= "market://details?id=com.access_company.android.sh_onepiece&hl=ja";
+	} , 500);
+
+	} else if (userAgent.search(/iphone|ipad|ipod/) > -1) {
+		// URLスキームを記述（iOS用、または共通）
+		if (userAgent.search(/OS 9/i) > -1 || userAgent.search(/OS 10/i) > -1) {
+			location.href= "com-access-shxm05://";
+		} else {
+		launch_frame.location.href= "com-access-shxm05://";
+		}
+	setTimeout(function(){
+		// iTunes StoreのURLを指定
+		location.href= "https://itunes.apple.com/jp/app/one-piece-wu-liao-lian-zai/id994092849?l=ja&ls=1&mt=8";
+	} , 500);
+	} else {
+		// Android・iOS以外でのURLを指定
+		location.href= "https://www.shonenjump.com/j/app/";
+		}
+    }
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63132973-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<!-- <center><img src="_image/op_app.png" width="1024" height="1024"></center> -->
+<div style="width:0; height:0; overflow:hidden;"><iframe id="launch_frame" name="launch_frame"></iframe></div>
+</body>
+</html>

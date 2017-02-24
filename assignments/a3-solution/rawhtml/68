@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it-IT"
+ xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns#">
+<head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes" >
+    <!--[if lt IE 10]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    		<style type="text/css">
+					</style>
+		
+<!-- This site is optimized with the Yoast SEO plugin v3.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Ctm Cagliari, stop all&#039;isolamento di Tuvumannu: dopo 35 anni arriva il bus - Sardiniapost.it</title>
+<link rel="canonical" href="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" />
+<link rel="publisher" href="https://plus.google.com/101281903754943770308/"/>
+<meta property="og:locale" content="it_IT" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ctm Cagliari, stop all&#039;isolamento di Tuvumannu: dopo 35 anni arriva il bus - Sardiniapost.it" />
+<meta property="og:description" content="Il 9 febbraio verrà messo fine ad un problema che coinvolgeva circa 5000 persone residenti nel quartiere di Tuvumannu: l’isolamento. Il Ctm e il Comune hanno scelto di modificare il percorso della linea 20, facendo transitare gli autobus nella Via Castelli, dove sono state installate due nuove fermate all’altezza dei civici 11 e 17. Il nuovo &hellip;" />
+<meta property="og:url" content="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" />
+<meta property="og:site_name" content="Sardiniapost.it" />
+<meta property="article:section" content="Cagliari" />
+<meta property="article:published_time" content="2017-02-06T15:50:12+01:00" />
+<meta property="article:modified_time" content="2017-02-07T09:10:38+01:00" />
+<meta property="og:updated_time" content="2017-02-07T09:10:38+01:00" />
+<meta property="og:image" content="http://www.sardiniapost.it/wp-content/uploads/2017/02/16586749_10211896126620334_1725778128_o.jpg" />
+<meta property="og:image:width" content="1776" />
+<meta property="og:image:height" content="1332" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Il 9 febbraio verrà messo fine ad un problema che coinvolgeva circa 5000 persone residenti nel quartiere di Tuvumannu: l’isolamento. Il Ctm e il Comune hanno scelto di modificare il percorso della linea 20, facendo transitare gli autobus nella Via Castelli, dove sono state installate due nuove fermate all’altezza dei civici 11 e 17. Il nuovo [&hellip;]" />
+<meta name="twitter:title" content="Ctm Cagliari, stop all&#039;isolamento di Tuvumannu: dopo 35 anni arriva il bus - Sardiniapost.it" />
+<meta name="twitter:site" content="@SardiniaPost" />
+<meta name="twitter:image" content="http://www.sardiniapost.it/wp-content/uploads/2017/02/16586749_10211896126620334_1725778128_o.jpg" />
+<meta name="twitter:creator" content="@SardiniaPost" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Sardiniapost.it &raquo; Feed" href="http://www.sardiniapost.it/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sardiniapost.it &raquo; Feed dei commenti" href="http://www.sardiniapost.it/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sardiniapost.it &raquo; Ctm Cagliari, stop all&#8217;isolamento di Tuvumannu: dopo 35 anni arriva il bus Feed dei commenti" href="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/feed/" />
+	<link rel="shortcut icon" href="" />
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.sardiniapost.it\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='validate-engine-css-css'  href='http://www.sardiniapost.it/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css?ver=2.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.sardiniapost.it/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://www.sardiniapost.it/wp-content/themes/noticia/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='http://www.sardiniapost.it/wp-content/themes/noticia/css/flexslider.css?ver=2.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-tabs-css'  href='http://www.sardiniapost.it/wp-content/themes/noticia/css/jquery.ui.tabs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='http://www.sardiniapost.it/wp-content/themes/noticia/css/prettyPhoto.css?ver=3.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='http://www.sardiniapost.it/wp-content/themes/noticia/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-css'  href='http://www.sardiniapost.it/wp-content/themes/noticia/custom.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='redux-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Arimo%3A400%2C700%2C400italic%2C700italic%7CMontserrat%3A400%2C700%7CRoboto%3A400%2C700%7CRoboto+Condensed%3A400&#038;subset=latin&#038;ver=1456593946' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var samAjax = {"ajaxurl":"http:\/\/www.sardiniapost.it\/wp-content\/plugins\/simple-ads-manager\/sam-ajax.php","loadurl":"http:\/\/www.sardiniapost.it\/wp-content\/plugins\/simple-ads-manager\/sam-ajax-loader.php","load":"1","mailer":"0","clauses":"YTo0OntzOjI6IldDIjtzOjE2MDI6IihJRihzYS5hZF91c2VycyA9IDAsIFRSVUUsIChzYS5hZF91c2Vyc191bnJlZyA9IDEpKSkgQU5EICgoc2Eudmlld190eXBlID0gMSkgT1IgKHNhLnZpZXdfdHlwZSA9IDAgQU5EIChzYS52aWV3X3BhZ2VzKzAgJiA2KSkgT1IgKHNhLnZpZXdfdHlwZSA9IDIgQU5EIEZJTkRfSU5fU0VUKDYzNzE4Nywgc2Eudmlld19pZCkpKSBBTkQgSUYoc2Eudmlld190eXBlIDwgMiBBTkQgc2EuYWRfY2F0cyBBTkQgSUYoc2Eudmlld190eXBlID0gMCwgc2Eudmlld19wYWdlcyswICYgNiwgVFJVRSksIEZJTkRfSU5fU0VUKCJjYWdsaWFyaSIsIHNhLnZpZXdfY2F0cykgT1IgRklORF9JTl9TRVQoImNyb25hY2EiLCBzYS52aWV3X2NhdHMpIE9SIEZJTkRfSU5fU0VUKCJpbi1ldmlkZW56YS0xNSIsIHNhLnZpZXdfY2F0cyksIFRSVUUpICBBTkQgSUYoc2Eudmlld190eXBlIDwgMiBBTkQgc2EuYWRfYXV0aG9ycyBBTkQgSUYoc2Eudmlld190eXBlID0gMCwgc2Eudmlld19wYWdlcyswICYgNiwgVFJVRSksIEZJTkRfSU5fU0VUKCJhbmRyZWEtdHJhbW9udGUiLCBzYS52aWV3X2F1dGhvcnMpLCBUUlVFKSAgIEFORCBJRihzYS52aWV3X3R5cGUgPCAyIEFORCBzYS5hZF9jdXN0b21fdGF4X3Rlcm1zIEFORCBJRihzYS52aWV3X3R5cGUgPSAwLCBzYS52aWV3X3BhZ2VzKzAgJiA2LCBUUlVFKSwgRklORF9JTl9TRVQoImNhZ2xpYXJpIiwgc2Eudmlld19jdXN0b21fdGF4X3Rlcm1zKSBPUiBGSU5EX0lOX1NFVCgiY3JvbmFjYSIsIHNhLnZpZXdfY3VzdG9tX3RheF90ZXJtcykgT1IgRklORF9JTl9TRVQoImluLWV2aWRlbnphLTE1Iiwgc2Eudmlld19jdXN0b21fdGF4X3Rlcm1zKSwgVFJVRSkgIEFORCBJRihzYS54X2lkLCBOT1QgRklORF9JTl9TRVQoNjM3MTg3LCBzYS54X3ZpZXdfaWQpLCBUUlVFKSAgQU5EIElGKHNhLnZpZXdfdHlwZSA8IDIgQU5EIHNhLnhfY2F0cyBBTkQgSUYoc2Eudmlld190eXBlID0gMCwgc2Eudmlld19wYWdlcyswICYgNiwgVFJVRSksIChOT1QgRklORF9JTl9TRVQoImNhZ2xpYXJpIiwgc2EueF92aWV3X2NhdHMpKSBBTkQgKE5PVCBGSU5EX0lOX1NFVCgiY3JvbmFjYSIsIHNhLnhfdmlld19jYXRzKSkgQU5EIChOT1QgRklORF9JTl9TRVQoImluLWV2aWRlbnphLTE1Iiwgc2EueF92aWV3X2NhdHMpKSwgVFJVRSkgIEFORCBJRihzYS52aWV3X3R5cGUgPCAyIEFORCBzYS54X2F1dGhvcnMgQU5EIElGKHNhLnZpZXdfdHlwZSA9IDAsIHNhLnZpZXdfcGFnZXMrMCAmIDYsIFRSVUUpLCBOT1QgRklORF9JTl9TRVQoImFuZHJlYS10cmFtb250ZSIsIHNhLnhfdmlld19hdXRob3JzKSwgVFJVRSkgICBBTkQgSUYoc2Eudmlld190eXBlIDwgMiBBTkQgc2EueF9hZF9jdXN0b21fdGF4X3Rlcm1zIEFORCBJRihzYS52aWV3X3R5cGUgPSAwLCBzYS52aWV3X3BhZ2VzKzAgJiA2LCBUUlVFKSwgKE5PVCBGSU5EX0lOX1NFVCgiY2FnbGlhcmkiLCBzYS54X3ZpZXdfY3VzdG9tX3RheF90ZXJtcykpIEFORCAoTk9UIEZJTkRfSU5fU0VUKCJjcm9uYWNhIiwgc2EueF92aWV3X2N1c3RvbV90YXhfdGVybXMpKSBBTkQgKE5PVCBGSU5EX0lOX1NFVCgiaW4tZXZpZGVuemEtMTUiLCBzYS54X3ZpZXdfY3VzdG9tX3RheF90ZXJtcykpLCBUUlVFKSI7czozOiJXQ1QiO3M6MzYyOiIgQU5EIElGKHNhLmFkX3NjaGVkdWxlLCBDVVJEQVRFKCkgQkVUV0VFTiBzYS5hZF9zdGFydF9kYXRlIEFORCBzYS5hZF9lbmRfZGF0ZSwgVFJVRSkgQU5EIElGKHNhLmxpbWl0X2hpdHMsIHNhLmhpdHNfbGltaXQgPiAoU0VMRUNUIElGTlVMTChDT1VOVCgqKSwgMCkgRlJPTSB3cF9zYW1fc3RhdHMgc3MgV0hFUkUgc3MuaWQgPSBzYS5pZCBBTkQgc3MuZXZlbnRfdHlwZSA9IDApLCBUUlVFKSBBTkQgSUYoc2EubGltaXRfY2xpY2tzLCBzYS5jbGlja3NfbGltaXQgPiAoU0VMRUNUIElGTlVMTChDT1VOVCgqKSwgMCkgRlJPTSB3cF9zYW1fc3RhdHMgc3MgV0hFUkUgc3MuaWQgPSBzYS5pZCBBTkQgc3MuZXZlbnRfdHlwZSA9IDEpLCBUUlVFKSI7czozOiJXQ1ciO3M6ODA6IiBBTkQgSUYoc2EuYWRfd2VpZ2h0ID4gMCwgKHNhLmFkX3dlaWdodF9oaXRzKjEwLyhzYS5hZF93ZWlnaHQqMTAwMCkpIDwgMSwgRkFMU0UpIjtzOjQ6IldDMlciO3M6MjI6IkFORCAoc2EuYWRfd2VpZ2h0ID4gMCkiO30=","doStats":"0","container":"sam-container","place":"sam-place","ad":"sam-ad"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/plugins/simple-ads-manager/js/sam-layout.min.js?ver=2.9.8.125'></script>
+<link rel='https://api.w.org/' href='http://www.sardiniapost.it/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.sardiniapost.it/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.sardiniapost.it/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.sardiniapost.it/?p=637187' />
+<link rel="alternate" type="application/json+oembed" href="http://www.sardiniapost.it/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.sardiniapost.it%2Fcronaca%2Fctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.sardiniapost.it/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.sardiniapost.it%2Fcronaca%2Fctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus%2F&#038;format=xml" />
+<meta property="fb:app_id" content="1500363156847928"/><meta property="fb:admins" content="1440027585 693832051"/><style type="text/css" title="dynamic-css" class="options-output">body,.review-box,#bbpress-forums{font-family:Arimo;font-weight:400;font-style:normal;color:#666666;font-size:14px;}.heading label,.comment-respond .comment-reply-title label{font-family:Montserrat;letter-spacing:1px;font-weight:400;font-style:normal;color:#333333;font-size:20px;}.post-list.type-3 .heading label,.post-list.type-1 .heading label,.post-list.type-4 .heading label,.post-list.pictures .heading label{font-family:Montserrat;letter-spacing:0px;font-weight:700;font-style:normal;color:#333333;font-size:30px;}.heading span{font-family:Roboto;text-transform:uppercase;font-weight:400;font-style:normal;color:#999999;font-size:14px;}#footer .widget-title{font-family:Roboto;letter-spacing:3px;font-weight:400;font-style:normal;color:#ffffff;font-size:14px;}span.post-meta,.sidebar-widget.tweets #tweets .date{font-family:Arimo;font-weight:400;font-style:normal;color:#aaaaaa;font-size:11px;}.post-detail .meta span.post-meta{font-family:Arimo;font-weight:400;font-style:normal;color:#666666;}body.single .post-detail p{font-family:Arimo;font-weight:400;font-style:normal;color:#666666;}p.wp-caption-text,body.single p.wp-caption-text{font-family:Arimo;font-weight:400;font-style:normal;color:#aaaaaa;font-size:12px;}.breadcrumb-nav span{font-family:Arimo;font-weight:400;font-style:normal;color:#999999;font-size:12px;}.home-widget article.first .post-title,.home-widget.type-1 article.regular .post-title{font-family:Roboto;line-height:24px;letter-spacing:0.5px;font-weight:700;font-style:normal;color:#333333;font-size:20px;}.home-widget .post-title,#sidebar .post-title,.sidebar-widget .post-title,.footer-widget .post-title,.similar-post .post-title,#footer .post-title,ul.reviews-posts h3,ul.team li .post-title,ul.reviews-posts h3,.gallery-item h2.post-title,#breaking-news .post-title{font-family:Roboto;letter-spacing:0.5px;font-weight:700;font-style:normal;color:#333333;font-size:14px;}.sidebar-left p,.sidebar-left li,.sidebar-left a,.sidebar-left *{font-family:Arimo;letter-spacing:0.5px;font-weight:400;font-style:normal;color:#666666;font-size:14px;}#main .type-slideshow h2.post-title{font-family:Roboto;font-weight:700;font-style:normal;color:#ffffff;font-size:40px;}.breaking-news-title h2{font-family:Roboto;letter-spacing:0.5px;font-weight:700;font-style:normal;color:#ffffff;font-size:22px;}.post-detail h2.sub-title{font-family:Roboto;font-weight:700;font-style:normal;color:#d10b5a;font-size:18px;}.post-detail h1,body.bbpress h1.post-title,h1.post-title{font-family:Roboto;font-weight:700;font-style:normal;color:#000000;font-size:45px;}.post-detail h2.post-title,.post-detail h2{font-family:Roboto;font-weight:700;font-style:normal;color:#000000;font-size:30px;}.post-detail h3{font-family:Roboto;font-weight:700;font-style:normal;color:#000000;font-size:25px;}.post-detail h4{font-family:Roboto;font-weight:700;font-style:normal;color:#000000;font-size:20px;}.post-detail h5{font-family:Roboto;font-weight:400;font-style:normal;color:#000000;font-size:15px;}.post-detail h6{font-family:Roboto;font-weight:400;font-style:normal;color:#000000;font-size:12px;}#top-menu .top-nav li a{font-family:Roboto Condensed;font-weight:400;font-style:normal;font-size:12px;}.main-menu ul li a{font-family:Roboto Condensed;font-weight:400;font-style:normal;font-size:13px;}section#main{background-color:#ffffff;}body,#review-box h2.review-box-header,#review-box .review-item h1,#review-box .review-item h2,#review-box .review-item h3,#review-box .review-item h4,#review-box .review-item h5,#review-box .review-item h6,#review-box .review-final-score h3,#review-box p,#review-box strong,#review-box .review-final-score h4{color:#666666;}#top-menu,.wrapper.header,.wrapper.breaking-news,.wrapper.main-menuz{color:#ffffff;}a{color:#333333;}a:hover{color:#359545;}a:active{color:#333333;}.type-slideshow a{color:#ffffff;}.type-slideshow a:hover{color:#359545;}.type-slideshow a:active{color:#ffffff;}.heading label,.comment-respond .comment-reply-title label{background-color:#ffffff;}.heading .border-bottom,.comment-respond .border-bottom,.tabs-widget ul li.ui-tabs-active a{border-bottom:1px solid #999999;}.sidebar-widget .heading label,.tabs-widget ul li.ui-tabs-active a{border-bottom:1px solid #999999;}.home-widget.type-1 article.regular,.home-widget.type-2 article.hentry,.home-widget.type-4 article.regular,.home-widget.type-5 article.hentry,#sidebar article.hentry,.similar-post article,.sidebar-widget.tweets #tweets li{border-bottom:1px solid #ededed;}#sidebar .warrior_tabs{background-color:#f5f5f5;}#top-menu{background-color:#ededed;}.wrapper.header{background-color:#ffffff;}.wrapper.main-menu{background-color:#202020;}.wrapper.main-menu,.main-menu ul li ul li a{border-top:1px solid #3f3f3f;border-bottom:1px solid #3f3f3f;}.main-menu ul li > a:hover,.main-menu li.current-menu-item > a,.main-menu li.current_page_item > a,.main-menu li.current-post-ancestor > a,.main-menu li.current-menu-parent > a,.main-menu li.current-post-parent > a,.main-menu > li.menu-item-has-children:hover a{background-color:#359545;}.main-menu ul li ul li a{border-top:1px solid #202020;border-bottom:1px solid #202020;}#top-menu .top-nav li a,#top-menu .top-nav li.current-menu-item a,#top-menu .top-nav li.current_page_item a{color:#333333;}#top-menu .top-nav li a:hover,#top-menu .top-nav li.current-menu-item a:hover,#top-menu .top-nav li.current_page_item a:hover{color:#333333;}#top-menu .top-nav li a:active,#top-menu .top-nav li.current-menu-item a:active,#top-menu .top-nav li.current_page_item a:active{color:#333333;}.social li a{color:#ffffff;}.social li a:hover{color:#359545;}.social li a:active{color:#ffffff;}.main-menu ul li a{color:#ffffff;}.main-menu ul li a:hover{color:#ffffff;}.main-menu ul li a:active{color:#ffffff;}.wrapper.breaking-news{background-color:#333333;}ul#breaking-news li a{color:#ffffff;}ul#breaking-news li a:hover{color:#ffee7a;}ul#breaking-news li a:active{color:#ffffff;}.wrapper.breaking-news,.breaking-news .flex-direction-nav a:before{color:#ffffff;}#footer{background-color:#202020;}#footer .footer-widget{color:#ffffff;}#footer .widget-title span{background-color:#3f3f3f;}#footer a{color:#ffffff;}#footer a:hover{color:#cccccc;}#footer a:active{color:#ffffff;}#footer-bottom{background-color:#202020;}#footer-bottom .copyright,#footer-bottom .developer{color:#969696;}#footer-bottom a{color:#ffffff;}#footer-bottom a:hover{color:#ffffff;}#footer-bottom a:active{color:#ffffff;}#footer-bottom{border-top:1px solid #4f4f4f;}form div.input input,form textarea,form input[type="text"],form input[type="email"],form input[type="password"]{background-color:#ffffff;}form div.input input,form textarea,form input[type="text"],form input[type="email"],form input[type="password"]{border:1px solid #cccccc;}form div.input input,form textarea,form input[type="text"],.box-search form,form input[type="email"]{color:#777777;}form input[type="submit"],form button[type="submit"],#bbpress-forums #bbp-search-form input[type="submit"]{background-color:#333333;}form input[type="submit"],form button[type="submit"]{color:#ffffff;}body.blog article.sticky, body.archive article.sticky{background-color:#fbf9e5;}.share-buttons,ul.team li .social-links{border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;}.review-box,#review-box h2.review-box-header,.user-rate-wrap,.review-final-score,.review-summary,.review-stars .review-item,.review-percentage .review-item span{background-color:#ffffff;}.review-box{border:1px solid #dddddd;}.review-percentage .review-item label.block{background-color:#dddddd;}.review-percentage .review-item span span{background-color:#b90606;}</style>    <!-- Google Analytics Nuovo-->
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-35254986-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!-- Google DFP -->
+	<script type='text/javascript'>
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+          '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+      })();
+    </script>
+    <script type='text/javascript'>
+		googletag.cmd.push(function() {
+			var desktopSidebar = googletag.sizeMapping().
+				addSize([1366, 768], [[300, 250], [300, 500], [300, 600]]).
+				addSize([800, 600], [[300, 250], [300, 500], [300, 600]]).
+				addSize([640, 480], []).
+				addSize([0,0], []).
+				build();
+			var mobileSidebar = googletag.sizeMapping().
+				addSize([1366, 768], []).
+				addSize([800, 600], []).
+				addSize([640, 480], [[300, 250], [300, 500], [300, 600]]).				
+				addSize([0,0], [[300, 250], [300, 500], [300, 600]]).
+				build();
+			googletag.defineSlot('/111779345/sardiniapost_all_manchette_dx', [160, 90], 'div-gpt-ad-1462224363022-0').
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_all_manchette_sx', [160, 90], 'div-gpt-ad-1462224363022-1').
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineOutOfPageSlot('/111779345/sardiniapost_all_skin', 'div-gpt-ad-1462224363022-2').
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_01', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-3').
+				defineSizeMapping(desktopSidebar).
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_02', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-4').
+				defineSizeMapping(desktopSidebar).
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_03', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-5').
+				defineSizeMapping(desktopSidebar).
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_04', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-6').
+				defineSizeMapping(desktopSidebar).
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_05', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-7').
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_06', [[300, 250], [300, 500], [300, 600], [300, 120]], 'div-gpt-ad-1462224363022-8').
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_07', [[300, 250], [300, 500], [300, 600], [300, 120]], 'div-gpt-ad-1462224363022-9').
+				setCollapseEmptyDiv(true). 
+				addService(googletag.pubads());
+
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_08_1', [300, 200], 'div-gpt-ad-1462224363022-10').
+				setCollapseEmptyDiv(true).	
+				addService(googletag.pubads());		
+
+			//googletag.defineSlot('/111779345/sardiniapost_homepage_800x75_01', [800, 75], 'div-gpt-ad-1462224363022-11').
+				//setCollapseEmptyDiv(true).
+				//addService(googletag.pubads());
+			//googletag.defineSlot('/111779345/sardiniapost_homepage_800x75_02', [800, 75], 'div-gpt-ad-1462224363022-12').
+				//setCollapseEmptyDiv(true).
+				//addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_mobile_01', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-13').
+				defineSizeMapping(mobileSidebar). 
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_mobile_02', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-14').
+				defineSizeMapping(mobileSidebar). 
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_mobile_03', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-15').
+				defineSizeMapping(mobileSidebar). 
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_mobile_04', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-16').
+				defineSizeMapping(mobileSidebar). 
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+		    googletag.defineSlot('/111779345/sardiniapost_homepage_sidebar_mobile_05', [[300, 600], [300, 250], [300, 500]], 'div-gpt-ad-1462224363022-17').
+				defineSizeMapping(mobileSidebar). 
+				setCollapseEmptyDiv(true).
+				addService(googletag.pubads());
+			// Start ad fetching
+			googletag.enableServices();
+		});
+    </script>    
+    <!-- END Google DFP -->
+</head>
+<body class="single single-post postid-637187 single-format-standard"> 
+	    <!-- /111779345/sardiniapost_all_skin -->
+    <div id='div-gpt-ad-1462224363022-2'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-2'); });
+    </script>
+    </div>   
+    <div class="container">
+	<!-- Start : Header -->
+	<header id="header">
+		<div class="inner">
+			<!-- Start: Top Menu -->
+			<div id="top-menu">
+					<ul id="menu-secondary-nav" class="top-nav"><li id="menu-item-19629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19629"><a href="http://www.sardiniapost.it/chi-siamo/">Chi siamo</a></li>
+<li id="menu-item-11848" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11848"><a href="http://www.sardiniapost.it/wp-admin/">Log In</a></li>
+<li id="menu-item-266674" class="iubenda-white iubenda-embed menu-item menu-item-type-custom menu-item-object-custom menu-item-266674"><a target="_blank" href="//www.iubenda.com/privacy-policy/295442">Privacy</a></li>
+</ul>					<div class="box-search">
+						<ul class="social">
+															<li><a href="https://www.facebook.com/SardiniaPost" target="_blank"><i class="fa fa-facebook"></i></a></li>
+																						<li><a href="https://twitter.com/SardiniaPost" target="_blank"><i class="fa fa-twitter"></i></a></li>
+																						<li><a href="https://plus.google.com/101281903754943770308/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+																													<li><a href="https://www.youtube.com/channel/UCEOQSwI__9wKEVBVOZp5m0Q" target="_blank"><i class="fa fa-youtube"></i></a></li>
+																																											<li><a href="http://www.sardiniapost.it/whatsapp/"><i class="fa fa-whatsapp"></i></a></li>
+								<li>
+                                	<a href="http://www.sardiniapost.it/applicazione-mobile/">
+                                    	<img style="height:16px;" src="http://www.sardiniapost.it/wp-content/themes/noticia/images/apple-icon.png">
+									</a>
+								</li>
+								<li>
+                                	<a href="http://www.sardiniapost.it/applicazione-mobile/">
+		                                <img style="height:16px;" src="http://www.sardiniapost.it/wp-content/themes/noticia/images/google-play-icon.png">
+									</a>
+								</li>
+						</ul>
+						<form method="get" action="http://www.sardiniapost.it">
+							<input type="text" name="s" id="search" value="" placeholder="Cerca ..." />
+						</form>
+					</div>
+			</div>
+			<!-- End: Top Menu -->
+			<div class="wrapper header">
+				<div class="inner">
+					<div id="top-header">
+                    	<div class="manchette-sx">
+                            <!-- /111779345/sardiniapost_all_manchette_sx -->
+                            <div id='div-gpt-ad-1462224363022-1' style='height:90px; width:160px;'>
+                            <script type='text/javascript'>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-1'); });
+                            </script>
+                            </div>
+                        </div>
+						<div id="logo">
+							<a href="http://www.sardiniapost.it/"><img src="http://www.sardiniapost.it/wp-content/uploads/2014/10/logo.png" alt="Sardiniapost.it" /></a>
+						</div>
+                        <div class="manchette-dx">
+                            <!-- /111779345/sardiniapost_all_manchette_dx -->
+                            <div id='div-gpt-ad-1462224363022-0' style='height:90px; width:160px;'>
+                            <script type='text/javascript'>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-0'); });
+                            </script>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper main-menu">
+				<div class="inner">
+                    <div id="nav-mobi">
+                        <div class="flip"></div>
+                        <div class="panel"><div class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-12157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-12157"><a href="http://www.sardiniapost.it">Home</a></li>
+<li id="menu-item-211511" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-211511"><a href="http://www.sardiniapost.it/category/pronto-intervento/">Pronto intervento</a></li>
+<li id="menu-item-16483" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16483"><a href="http://www.sardiniapost.it/category/cronaca/">Cronaca</a></li>
+<li id="menu-item-16484" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16484"><a href="http://www.sardiniapost.it/category/politica/">Politica</a></li>
+<li id="menu-item-16485" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16485"><a href="http://www.sardiniapost.it/category/economia/">Economia</a></li>
+<li id="menu-item-519064" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-519064"><a href="http://www.sardiniapost.it/category/ambiente/">Ambiente</a></li>
+<li id="menu-item-16486" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-16486"><a href="http://www.sardiniapost.it/category/culture/">Culture</a>
+<ul class="sub-menu">
+	<li id="menu-item-16489" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16489"><a href="http://www.sardiniapost.it/category/culture/musica/">Musica</a></li>
+	<li id="menu-item-16490" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16490"><a href="http://www.sardiniapost.it/category/culture/teatro/">Teatro</a></li>
+	<li id="menu-item-16487" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16487"><a href="http://www.sardiniapost.it/category/culture/cinema/">Cinema</a></li>
+	<li id="menu-item-16934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16934"><a href="http://www.sardiniapost.it/eventi-in-sardegna/">Eventi in Sardegna</a></li>
+</ul>
+</li>
+<li id="menu-item-16493" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16493"><a href="http://www.sardiniapost.it/category/multimedia/photogallery/">Photogallery</a></li>
+<li id="menu-item-509295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509295"><a href="http://www.sardiniapost.it/video/">Video</a></li>
+<li id="menu-item-16491" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16491"><a href="http://www.sardiniapost.it/category/inchieste/">Inchieste</a></li>
+<li id="menu-item-16494" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16494"><a href="http://www.sardiniapost.it/category/blog/">Blog</a></li>
+<li id="menu-item-16499" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16499"><a href="http://www.sardiniapost.it/category/sport/">Sport</a></li>
+<li id="menu-item-317358" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-317358"><a href="http://www.sardiniapost.it/category/innovazione/">Innovazione</a></li>
+<li id="menu-item-599082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599082"><a target="_blank" href="http://digital.sardiniapostmagazine.it/sardiniapost/index.jsp">Shop</a></li>
+</ul></div></div>
+                    </div><!--nav-mobi-->
+					<div class="float-wrapper"><ul id="menu-main-nav-1" class="main-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-12157"><a href="http://www.sardiniapost.it">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-211511"><a href="http://www.sardiniapost.it/category/pronto-intervento/">Pronto intervento</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16483"><a href="http://www.sardiniapost.it/category/cronaca/">Cronaca</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16484"><a href="http://www.sardiniapost.it/category/politica/">Politica</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16485"><a href="http://www.sardiniapost.it/category/economia/">Economia</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-519064"><a href="http://www.sardiniapost.it/category/ambiente/">Ambiente</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-16486"><a href="http://www.sardiniapost.it/category/culture/">Culture</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16489"><a href="http://www.sardiniapost.it/category/culture/musica/">Musica</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16490"><a href="http://www.sardiniapost.it/category/culture/teatro/">Teatro</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16487"><a href="http://www.sardiniapost.it/category/culture/cinema/">Cinema</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16934"><a href="http://www.sardiniapost.it/eventi-in-sardegna/">Eventi in Sardegna</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16493"><a href="http://www.sardiniapost.it/category/multimedia/photogallery/">Photogallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509295"><a href="http://www.sardiniapost.it/video/">Video</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16491"><a href="http://www.sardiniapost.it/category/inchieste/">Inchieste</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16494"><a href="http://www.sardiniapost.it/category/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16499"><a href="http://www.sardiniapost.it/category/sport/">Sport</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-317358"><a href="http://www.sardiniapost.it/category/innovazione/">Innovazione</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599082"><a target="_blank" href="http://digital.sardiniapostmagazine.it/sardiniapost/index.jsp">Shop</a></li>
+</ul></div>				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End : Header -->
+	<!-- Start : Main Content -->
+	<section id="main" class="right-sidebar">
+		<div class="inner"><Meta name="EdBlankInTitle" content="- Sardiniapost.it">
+<div id="main-content">
+		
+			<div id="post-637187" class="post-637187 post type-post status-publish format-standard has-post-thumbnail hentry category-cagliari category-cronaca category-in-evidenza-15">
+			<div class="post-detail">
+								<h1 class="post-title"><!-- <EdIndex> -->Ctm Cagliari, stop all&#8217;isolamento di Tuvumannu: dopo 35 anni arriva il bus<!-- </EdIndex> --></h1>
+					<div class="meta">
+					<span class="post-meta date">
+				<i class="fa fa-calendar"></i>
+									6 febbraio 2017							</span>
+				
+				
+					<span class="post-meta cat"><i class="fa fa-folder-open"></i> <a href="http://www.sardiniapost.it/category/cronaca/cagliari/" rel="category tag">Cagliari</a>, <a href="http://www.sardiniapost.it/category/cronaca/" rel="category tag">Cronaca</a>, <a href="http://www.sardiniapost.it/category/in-evidenza-15/" rel="category tag">In evidenza 15</a></span>
+		
+			</div>
+				
+	<!-- AddThis Button BEGIN -->
+	<div class="share-buttons">
+        <div class="social-box">
+            <div class="fb-like" data-href="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" data-layout="box_count" data-action="recommend" data-share="true"></div>
+        </div>
+        <div class="social-box">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" data-via="sardiniapost" data-lang="it" data-count="vertical"></a>
+        </div>                    
+        <div class="social-box">
+            <script type="IN/Share" data-url="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" data-counter="top"></script>
+        </div>
+        <div class="social-box">
+            <div class="g-plusone" data-size="tall" data-href="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/"></div>            
+        </div>
+        <div style="clear:both"></div>
+        <div style="margin-top:15px;">                    
+			<div id='c4493_0_9' class='sam-container sam-place' data-sam='1'></div>		</div>            
+	</div>
+    <div id="fb-root"></div>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+	'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+    <!-- Posiziona questo tag all'interno del tag head oppure subito prima della chiusura del tag body. -->
+    <script src="https://apis.google.com/js/platform.js">
+      {lang: 'it'}
+    </script>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+      lang: it_IT
+    </script>
+      <!-- AddThis Button END -->
+				<div class="detail">
+					<div class="wp-caption alignleft"">
+						                    
+						<a href="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" title="Ctm Cagliari, stop all&#8217;isolamento di Tuvumannu: dopo 35 anni arriva il bus"><img width="372" height="221" src="http://www.sardiniapost.it/wp-content/uploads/2017/02/16586749_10211896126620334_1725778128_o-372x221.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="16586749_10211896126620334_1725778128_o" srcset="http://www.sardiniapost.it/wp-content/uploads/2017/02/16586749_10211896126620334_1725778128_o-372x221.jpg 372w, http://www.sardiniapost.it/wp-content/uploads/2017/02/16586749_10211896126620334_1725778128_o-255x150.jpg 255w" sizes="(max-width: 372px) 100vw, 372px" /></a>					</div>
+					<!-- <EdIndex> --><div id="theContent"><p>Il 9 febbraio verrà messo fine ad un problema che coinvolgeva circa<strong> 5000 persone residenti nel quartiere di Tuvumannu</strong>: l’isolamento. Il <strong>Ctm</strong> e il Comune hanno scelto di modificare il percorso della linea 20, facendo transitare gli autobus nella Via Castelli, dove sono state installate due nuove fermate all’altezza dei civici 11 e 17.</p>
+<p>Il nuovo percorso permetterà ai residenti di raggiungere direttamente il mercato di via Quirra ma soprattutto consentirà una piena integrazione con tutta la rete del trasporto pubblico urbano grazie alle molte possibilità di interscambio con altre importanti linee CTM: nell’area della piazza San Michele con le linee 1, 3, 8, 8A, 9, University Express; in Piazza D’Armi con le linee 8 e 5 e a pochi metri, in Viale Sant’Ignazio, con la linea 10.</p>
+<p>Il problema non è nuovo. Nel 2013 Claudio <strong>Cugusi</strong>, uno dei leader de La Base, depositò un’interrogazione in consiglio comunale dove chiedeva di rompere l’isolamento del rione attraverso un autobus. “Il problema allora era una questione di costi – dice il consigliere comunale –. Anche deviare una linea pubblica di qualche chilometro ha un suo costo. Fortunatamente oggi si sono trovate le risorse”. Ora inizia la sperimentazione della nuova tratta. Roberto <strong>Murru</strong>, presidente del consorzio dei trasporti, ha detto: “Ci aspettiamo che il servizio venga utilizzato dai i residenti di modo da poter rendere definitiva la modifica del percorso”.</p>
+<p>In questi anni sono state tantissime le richieste dei residenti pervenute al consorzio ed al comune. Fino ad oggi i residenti erano costretti a raggiungere le fermate degli autobus in via Is Maglias dopo lunghe camminate in salita. Tra le proposte formulate dai residenti c’era l’istituzione di un servizio navetta di collegamento con il mercato di via Quirra, attivo in alcuni giorni della settimana con mezzi di piccole dimensioni, per consentire alle famiglie di fare la spesa nel principale polo commerciale della zona. Ma il consorzio ha deciso di optare per una soluzione che offra al quartiere una soluzione stabilmente integrata nella rete del servizio urbano generale, piuttosto che un servizio limitato sia come destinazione che come frequenza.</p>
+<p>Gli autobus entreranno in via Castelli da via Is Maglias, dove sono state collocate due fermate, distinte per direzione di marcia, per poi proseguire con il percorso ordinario. I mezzi che operano nella linea sono bus di 12 metri di lunghezza ed avranno una frequenza media nei giorni feriali di 18 minuti. La modifica della linea ha richiesto alcuni interventi sulla viabilità interna del quartiere, che sono stati predisposti dal Comune, ma sarà importante l’apporto degli stessi residenti. “È che non vengano posizionate le automobili negli spazi dedicati agli autobus e nei tratti in curva”, dice Murru. “A breve inizieremo una campagna di comunicazione all’interno del rione per informare della novità ma anche per chiedere un sostegno da parte loro”.</p>
+<p>&#8220;Il bus in via Castelli è un altro intervento importante per la zona&#8221;, ha detto il vice sindaco <strong>Luisa Anna Marras</strong>. &#8220;Dopo la riqualificazione dell&#8217;accesso da via Is Maglias, che da anni era bloccato, le nuove fermate dei mezzi pubblici contribuiranno a rendere ancora più collegato il quartiere con il mercato di via Quirra, con diverse scuole e con il resto della città. Nei prossimi mesi, inoltre, è prevista la sistemazione dello spazio verde che ospita la nicchia votiva tra i palazzi: il progetto è approvato e i lavori aggiudicati”. Non è mancato anche un accenno alla questione del tunnel presente nel rione. “La partita non è semplice&#8221;, ha aggiunto Marras. &#8220;Come Comune lo abbiamo preso in carico da poco tempo. È stato uno degli argomenti della scorsa legislatura. Abbiamo pensato di utilizzarlo per collegare la zona con il resto della città. Ma non basta avere le idee chiare devono essere in sintonia con quanto richiede la regione ed il Ministero con i quali abbiamo una tavolo di lavoro. Oggi il tunnel è diventato un’urgenza”.</p>
+<p><strong>Alessandro Ligas</strong></p>
+</div><!-- </EdIndex> -->
+                    					                    <div class="widget_wysija_cont php_wysija"><div id="msg-form-wysija-php58ab21016215a-1" class="wysija-msg ajax"></div><form id="form-wysija-php58ab21016215a-1" method="post" action="#wysija" class="widget_wysija php_wysija">
+<h4>Per ricevere gli aggiornamenti di Sardiniapost nella tua casella di posta inserisci la tua e-mail nel box qui sotto:</h4>
+
+<p class="wysija-paragraph">
+    
+    
+    	<input type="text" name="wysija[user][firstname]" class="wysija-input validate[required]" title="Nome" placeholder="Nome" value="" />
+    
+    
+    
+    <span class="abs-req">
+        <input type="text" name="wysija[user][abs][firstname]" class="wysija-input validated[abs][firstname]" value="" />
+    </span>
+    
+</p>
+<p class="wysija-paragraph">
+    
+    
+    	<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="Email" placeholder="Email" value="" />
+    
+    
+    
+    <span class="abs-req">
+        <input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+    </span>
+    
+</p>
+<p class="wysija-paragraph">
+	
+	<input type="hidden" name="wysija[field][cf_1]" value="0" />
+    
+    	<label class="wysija-checkbox-label"><input type="checkbox" class="wysija-checkbox validate[required]" name="wysija[field][cf_1]" value="1"  />Ho letto e acconsento l'informativa sulla privacy</label>
+    
+</p>
+<p class="wysija-paragraph"><a href="http://www.iubenda.com/privacy-policy/295442" target="_blank">Informativa privacy Sardiniapost</a></p>
+
+<input class="wysija-submit wysija-submit-field" type="submit" value="Iscriviti" />
+
+    <input type="hidden" name="form_id" value="1" />
+    <input type="hidden" name="action" value="save" />
+    <input type="hidden" name="controller" value="subscribers" />
+    <input type="hidden" value="1" name="wysija-page" />
+
+    
+        <input type="hidden" name="wysija[user_list][list_ids]" value="1" />
+    
+ </form></div>				</div>
+			</div>
+            <div id='c1740_0_70' class='sam-container sam-place' data-sam='1'></div>			<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ --><div class="fb-comments" data-href="http://www.sardiniapost.it/cronaca/ctm-cagliari-stop-allisolamento-tuvumannu-35-anni-arriva-bus/" data-numposts="10" data-width="100%" data-colorscheme="light"></div>			
+
+
+ 
+			
+<div class="similar-post">
+	<div class="heading"><label>Ti potrebbero interessare anche:</label><div class="heading-border"></div></div>
+    <!-- EDINTORNI RELATED - START STEP 2-->
+    <!-- <script type="text/javascript" language="JavaScript" src="http://www.sardiniapost.it/wp-content/themes/noticia/js/edrelatedbox.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="http://www.sardiniapost.it/wp-content/themes/noticia/css/edRelatedBoxCSSV3.css" />
+    <script language='javascript'>
+        var eDintorniRelated_Account='sardiniapost';
+        var eDintorniRelated_Channel='1';
+        var eDintorniRelated_Title_Box='';
+        var eDintorniRelated_Title_Lenght='80';
+        var eDintorniRelated_Img_Default='http://path immagine di default';
+        var eDintorniRelated_SponsorFormat='3';
+    </script>
+    <script src='http://edintorni.net/related/service/widget/' language='javascript'></script>    
+    <!-- EDINTORNI RELATED - END STEP 2-->            
+</div>
+            
+			<div class="clear"></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+<div id="sidebar">
+<div id="widget-text-104" class="widget-1 widget-first widget-odd sidebar-widget row widget_text"><div class="widget-1 widget-first widget-odd inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_01 -->
+<div id='div-gpt-ad-1462224363022-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-3'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-105" class="widget-2 widget-even sidebar-widget row widget_text"><div class="widget-2 widget-even inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_02 -->
+<div id='div-gpt-ad-1462224363022-4'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-4'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-106" class="widget-3 widget-odd sidebar-widget row widget_text"><div class="widget-3 widget-odd inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_03 -->
+<div id='div-gpt-ad-1462224363022-5'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-5'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-107" class="widget-4 widget-even sidebar-widget row widget_text"><div class="widget-4 widget-even inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_04 -->
+<div id='div-gpt-ad-1462224363022-6'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-6'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-115" class="widget-5 widget-odd sidebar-widget row widget_text"><div class="widget-5 widget-odd inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_mobile_03 -->
+<div id='div-gpt-ad-1462224363022-15'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-15'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-116" class="widget-6 widget-even sidebar-widget row widget_text"><div class="widget-6 widget-even inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_mobile_04 -->
+<div id='div-gpt-ad-1462224363022-16'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-16'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-117" class="widget-7 widget-odd sidebar-widget row widget_text"><div class="widget-7 widget-odd inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_mobile_05 -->
+<div id='div-gpt-ad-1462224363022-17'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-17'); });
+</script>
+</div></div>
+		</div></div>        <div id="widget-warrior_recent_posts_1_sp_custom-6" class="widget-8 widget-even sidebar-widget row warrior_recent_posts_1_sp_custom"><div class="widget-8 widget-even inner">		<div class="heading"><div class="title"><label> 
+            <a href="http://www.sardiniapost.it/category/blog/" title=""> 
+                Blogger 
+            </a>
+		 </label></div></div>		<div class="post-wrapper">
+							<article id="post-638694" class="first post-638694 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-enrico-pinna-scatti-di-nervi">
+                						<div class="thumbnail">
+						<a href="http://www.sardiniapost.it/blog/migrante-al-ghetto-la-fotografia-testimonianza-roberto-pili/" title="Stato Migrante: al Ghetto la fotografia di testimonianza di Roberto Pili"><img width="255" height="150" src="http://www.sardiniapost.it/wp-content/uploads/2017/02/DSCF25c32-255x150.jpg" class="attachment-small-thumb-3 size-small-thumb-3 wp-post-image" alt="dscf25c32" srcset="http://www.sardiniapost.it/wp-content/uploads/2017/02/DSCF25c32-255x150.jpg 255w, http://www.sardiniapost.it/wp-content/uploads/2017/02/DSCF25c32-372x221.jpg 372w" sizes="(max-width: 255px) 100vw, 255px" /></a>					</div>
+					                    
+					<div class="detail">
+						<h2 class="post-title"><a href="http://www.sardiniapost.it/blog/migrante-al-ghetto-la-fotografia-testimonianza-roberto-pili/" title="Stato Migrante: al Ghetto la fotografia di testimonianza di Roberto Pili">Stato Migrante: al Ghetto la fotografia di testimonianza di Roberto Pili</a></h2>
+							<div class="meta">
+		<span class="post-meta date">
+			<i class="fa fa-calendar"></i>
+			13 febbraio 2017		</span>
+	</div>
+					</div>
+					<p>Mi piace la fotografia che racconta i fatti mostrando sempre il suo punto di vista. Quella che fa una gran fatica a sopravvivere, soppiantata dall’informazione omologata che, sui giornali di tutto...</p>
+				</article>
+					</div>
+		</div></div><div id="widget-text-108" class="widget-9 widget-odd sidebar-widget row widget_text"><div class="widget-9 widget-odd inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_05 -->
+<div id='div-gpt-ad-1462224363022-7'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-7'); });
+</script>
+</div></div>
+		</div></div><div id="widget-text-124" class="widget-10 widget-last widget-even sidebar-widget row widget_text"><div class="widget-10 widget-last widget-even inner">			<div class="textwidget"><!-- /111779345/sardiniapost_homepage_sidebar_06 -->
+<div id='div-gpt-ad-1462224363022-8'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-8'); });
+</script>
+</div></div>
+		</div></div></div>
+		<div class="clear"></div>
+		</div>
+</section>
+<!-- End : Main Content -->
+<!-- Start : Footer -->
+<footer id="footer" class="clearfix">
+	<div class="inner">
+		<div class="widget-1 widget-first widget-odd one-third"><div id="widget-warrior_facebook-3" class="widget-1 widget-first widget-odd footer-widget facebook"><h3 class="widget-title"><span>Facebook</span></h3>	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FSardiniaPost&colorscheme=dark&width=300&height=270&show_faces=true&stream=false&header=true&show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:270px;" allowTransparency="false"></iframe>
+</div></div><div class="widget-2 widget-last widget-even one-third"><div id="widget-text-92" class="widget-2 widget-last widget-even footer-widget widget_text"><h3 class="widget-title"><span>Sardiniapost</span></h3>			<div class="textwidget">Editore: ICO 2006  S.r.l.
+Via Sonnino 67, 09125 Cagliari (Italia)
+Direttore responsabile: Giovanni Maria Bellu
+P.IVA : 01296560913
+Registrazione: Tribunale di Cagliari, decreto n° 23  del 01.10.2012<br><br> 
+Contatti:
+Per contattare lo staff di sardiniapost.it invia una mail a redazione@sardiniapost.it<br><br></div>
+		</div></div>	</div>
+</footer>
+<!-- End : Footer -->
+<!-- Start : Footer Bottom -->
+<div id="footer-bottom" class="clearfix">
+	<div class="inner">
+		<div class="copyright">Copyright © 2016 Sardiniapost.it | Tutti i diritti riservati | P. Iva 01296560913 | Registrazione: Tribunale di Cagliari, decreto n° 23 del 01.10.2012</div>
+    </div>
+</div>
+<!-- End : Footer Bottom -->
+</div>
+<!-- Start : Scroll to Top -->
+<a id="scroll-top" href="#"><span class="fa fa-chevron-up"></span></a>
+<!-- End : Scroll to Top -->
+<script type="text/javascript">
+	setInterval("my_function();",300000); 
+    function my_function(){
+        window.location = location.href;
+    }
+	var _iub = _iub || [];
+	_iub.csConfiguration = {
+		cookiePolicyId: 295442,
+		siteId: 158900,
+		lang: "it"
+	};
+	(function (w, d) {
+		var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/cookie_solution/iubenda_cs.js"; tag.parentNode.insertBefore(s, tag); };
+		if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; }
+	})(window, document);
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1500363156847928',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/it_IT/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/comment-reply.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/superfish.js?ver=1.4.8'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/jquery.mixitup.min.js?ver=1.5.4'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/jquery.prettyPhoto.js?ver=3.1.5'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/jquery.flexslider.js?ver=2.2.0'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/jquery.backstretch.min.js?ver=2.0.4'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/jquery.flexverticalcenter.js'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/retina.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _warrior = {"bg_body_image":"","enable_animation":"","mobile_top_menu_text":"Top Navigation","mobile_main_menu_text":"Main Navigation"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/themes/noticia/js/functions.js'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-it.js?ver=2.7.5'></script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js?ver=2.7.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":"http:\/\/www.sardiniapost.it\/wp-admin\/admin-ajax.php","loadingTrans":"Caricamento...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.sardiniapost.it/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.7.5'></script>
+<!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&appId=1500363156847928&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type='text/javascript' src="//wurfl.io/wurfl.js"></script>
+
+<script>
+	jQuery( document ).ready(function( $ ) {
+		// Funzione per AD su mobile
+		function singleAdMobile() {
+			var postContainer = $('div.type-post > div.post-detail > div.detail div#theContent');
+			var postWordShowAd = '200';
+			var adContainer	= "";
+			var postContent = postContainer.text();
+			var postWordCount = postContent.replace( /[^\w ]/g, "" ).split( /\s+/ ).length;
+			var postAdToShow = Math.floor(postWordCount/postWordShowAd);
+			for (var i = 1; i <= postAdToShow; i++) {
+				if ( i === 1 ) {
+					adContainer = 
+					'<!-- /111779345/sardiniapost_homepage_sidebar_mobile_01 -->' + 
+						'<div id="div-gpt-ad-1462224363022-13">' + 
+					'</div>'
+					var postAdPosition = postWordShowAd * i;
+					var html = $(postContainer).html().split(" ");			
+					html = html.slice(0, postAdPosition).join(" ") + '</p>' + adContainer + '<p>' + html.slice(postAdPosition).join(" ");
+					$(postContainer).html(html);					
+					
+				} else if ( i === 2 ) {
+					adContainer = 
+					'<!-- /111779345/sardiniapost_homepage_sidebar_mobile_02 -->' + 
+						'<div id="div-gpt-ad-1462224363022-14">' + 
+					'</div>'
+					var postAdPosition = postWordShowAd * i;
+					var html = $(postContainer).html().split(" ");			
+					html = html.slice(0, postAdPosition).join(" ") + '</p>' + adContainer + '<p>' + html.slice(postAdPosition).join(" ");
+					$(postContainer).html(html);
+				} else {
+				}
+			}	
+		}
+		if ( (WURFL.is_mobile) && (WURFL.form_factor === 'Smartphone') ) {		
+			singleAdMobile();
+			var dfps = document.createElement("script");
+			dfps.type = "text/javascript";
+			dfps.innerHTML = "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-13'); });"
+			$("#div-gpt-ad-1462224363022-13").append(dfps);
+
+			var dfps1 = document.createElement("script");
+			dfps1.type = "text/javascript";
+			dfps1.innerHTML = "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462224363022-14'); });"
+			$("#div-gpt-ad-1462224363022-14").append(dfps1);
+		}
+    });
+</script>  		
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9ccfab3ed6","applicationID":"13630174","transactionName":"NFQHNktRCkJYAhENDg0eJAFNWQtfFhIMCgYPVA==","queueTime":0,"applicationTime":1585,"atts":"GBMEQANLGUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced
+Application Monitoring using New Relic
+
+ Served from: www.sardiniapost.it @ 2017-02-20 18:01:53 by W3 Total Cache -->

@@ -1,0 +1,1047 @@
+<!--object(Model_Thread)#30 (34) {
+  ["_has_one":protected]=>
+  array(0) {
+  }
+  ["_belongs_to":protected]=>
+  array(0) {
+  }
+  ["_has_many":protected]=>
+  array(0) {
+  }
+  ["_load_with":protected]=>
+  array(0) {
+  }
+  ["_validation":protected]=>
+  NULL
+  ["_object":protected]=>
+  array(16) {
+    ["id"]=>
+    string(6) "623950"
+    ["url"]=>
+    string(58) "http://raptor.2ch.net/test/read.cgi/livejupiter/1486442583"
+    ["name"]=>
+    string(118) "【日本終了】　韓国政界｢もう日本には我慢ならない。駐日韓国大使も帰国させよう｣ "
+    ["ccount"]=>
+    string(3) "100"
+    ["date_str"]=>
+    string(17) "2017年02月07日"
+    ["date"]=>
+    string(8) "20170207"
+    ["no"]=>
+    string(10) "1486442583"
+    ["res_avg"]=>
+    string(5) "0.000"
+    ["dat_flag"]=>
+    string(1) "X"
+    ["j_flag"]=>
+    string(1) "X"
+    ["ng_flag"]=>
+    string(1) "X"
+    ["zero_flag"]=>
+    string(1) "X"
+    ["disp_flag"]=>
+    string(1) "0"
+    ["delete_flag"]=>
+    string(1) "0"
+    ["created_at"]=>
+    string(19) "2017-02-07 13:54:04"
+    ["updated_at"]=>
+    NULL
+  }
+  ["_changed":protected]=>
+  array(0) {
+  }
+  ["_original_values":protected]=>
+  array(16) {
+    ["id"]=>
+    string(6) "623950"
+    ["url"]=>
+    string(58) "http://raptor.2ch.net/test/read.cgi/livejupiter/1486442583"
+    ["name"]=>
+    string(118) "【日本終了】　韓国政界｢もう日本には我慢ならない。駐日韓国大使も帰国させよう｣ "
+    ["ccount"]=>
+    string(3) "100"
+    ["date_str"]=>
+    string(17) "2017年02月07日"
+    ["date"]=>
+    string(8) "20170207"
+    ["no"]=>
+    string(10) "1486442583"
+    ["res_avg"]=>
+    string(5) "0.000"
+    ["dat_flag"]=>
+    string(1) "X"
+    ["j_flag"]=>
+    string(1) "X"
+    ["ng_flag"]=>
+    string(1) "X"
+    ["zero_flag"]=>
+    string(1) "X"
+    ["disp_flag"]=>
+    string(1) "0"
+    ["delete_flag"]=>
+    string(1) "0"
+    ["created_at"]=>
+    string(19) "2017-02-07 13:54:04"
+    ["updated_at"]=>
+    NULL
+  }
+  ["_related":protected]=>
+  array(0) {
+  }
+  ["_valid":protected]=>
+  bool(true)
+  ["_loaded":protected]=>
+  bool(true)
+  ["_saved":protected]=>
+  bool(false)
+  ["_sorting":protected]=>
+  NULL
+  ["_foreign_key_suffix":protected]=>
+  string(3) "_id"
+  ["_object_name":protected]=>
+  string(6) "thread"
+  ["_object_plural":protected]=>
+  string(7) "threads"
+  ["_table_name":protected]=>
+  string(7) "threads"
+  ["_table_columns":protected]=>
+  array(16) {
+    ["id"]=>
+    array(13) {
+      ["type"]=>
+      string(3) "int"
+      ["min"]=>
+      string(11) "-2147483648"
+      ["max"]=>
+      string(10) "2147483647"
+      ["column_name"]=>
+      string(2) "id"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(3) "int"
+      ["is_nullable"]=>
+      bool(false)
+      ["ordinal_position"]=>
+      int(1)
+      ["display"]=>
+      string(2) "11"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(14) "auto_increment"
+      ["key"]=>
+      string(3) "PRI"
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["url"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(3) "url"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(2)
+      ["character_maximum_length"]=>
+      string(3) "255"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["name"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(4) "name"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(3)
+      ["character_maximum_length"]=>
+      string(3) "255"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["ccount"]=>
+    array(13) {
+      ["type"]=>
+      string(3) "int"
+      ["min"]=>
+      string(11) "-2147483648"
+      ["max"]=>
+      string(10) "2147483647"
+      ["column_name"]=>
+      string(6) "ccount"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(3) "int"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(4)
+      ["display"]=>
+      string(2) "11"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["date_str"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(8) "date_str"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(5)
+      ["character_maximum_length"]=>
+      string(3) "255"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["date"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(4) "date"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(6)
+      ["character_maximum_length"]=>
+      string(3) "255"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["no"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(2) "no"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(7)
+      ["character_maximum_length"]=>
+      string(3) "255"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["res_avg"]=>
+    array(12) {
+      ["type"]=>
+      string(5) "float"
+      ["column_name"]=>
+      string(7) "res_avg"
+      ["column_default"]=>
+      string(5) "0.000"
+      ["data_type"]=>
+      string(6) "double"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(8)
+      ["numeric_scale"]=>
+      string(1) "3"
+      ["numeric_precision"]=>
+      string(1) "7"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["dat_flag"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(8) "dat_flag"
+      ["column_default"]=>
+      string(1) "0"
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(9)
+      ["character_maximum_length"]=>
+      string(1) "1"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["j_flag"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(6) "j_flag"
+      ["column_default"]=>
+      string(1) "X"
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(10)
+      ["character_maximum_length"]=>
+      string(1) "1"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["ng_flag"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(7) "ng_flag"
+      ["column_default"]=>
+      string(1) "X"
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(11)
+      ["character_maximum_length"]=>
+      string(1) "1"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["zero_flag"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(9) "zero_flag"
+      ["column_default"]=>
+      string(1) "X"
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(12)
+      ["character_maximum_length"]=>
+      string(1) "1"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["disp_flag"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(9) "disp_flag"
+      ["column_default"]=>
+      string(1) "0"
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(13)
+      ["character_maximum_length"]=>
+      string(1) "1"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["delete_flag"]=>
+    array(12) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(11) "delete_flag"
+      ["column_default"]=>
+      string(1) "0"
+      ["data_type"]=>
+      string(7) "varchar"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(14)
+      ["character_maximum_length"]=>
+      string(1) "1"
+      ["collation_name"]=>
+      string(15) "utf8_general_ci"
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["created_at"]=>
+    array(10) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(10) "created_at"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(8) "datetime"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(15)
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+    ["updated_at"]=>
+    array(10) {
+      ["type"]=>
+      string(6) "string"
+      ["column_name"]=>
+      string(10) "updated_at"
+      ["column_default"]=>
+      NULL
+      ["data_type"]=>
+      string(8) "datetime"
+      ["is_nullable"]=>
+      bool(true)
+      ["ordinal_position"]=>
+      int(16)
+      ["comment"]=>
+      string(0) ""
+      ["extra"]=>
+      string(0) ""
+      ["key"]=>
+      string(0) ""
+      ["privileges"]=>
+      string(31) "select,insert,update,references"
+    }
+  }
+  ["_updated_column":protected]=>
+  array(2) {
+    ["column"]=>
+    string(10) "updated_at"
+    ["format"]=>
+    string(11) "Y-m-d H:i:s"
+  }
+  ["_created_column":protected]=>
+  array(2) {
+    ["column"]=>
+    string(10) "created_at"
+    ["format"]=>
+    string(11) "Y-m-d H:i:s"
+  }
+  ["_serialize_columns":protected]=>
+  array(0) {
+  }
+  ["_primary_key":protected]=>
+  string(2) "id"
+  ["_primary_key_value":protected]=>
+  string(6) "623950"
+  ["_table_names_plural":protected]=>
+  bool(true)
+  ["_reload_on_wakeup":protected]=>
+  bool(true)
+  ["_db":protected]=>
+  object(Database_MySQL)#34 (6) {
+    ["_connection_id":protected]=>
+    string(40) "ecbb9f29fe2d56ec706d82c2717629b9b92fe206"
+    ["_identifier":protected]=>
+    string(1) "`"
+    ["last_query"]=>
+    string(94) "SELECT `thread`.* FROM `threads` AS `thread` WHERE `id` = '623950' AND `ng_flag` = 'X' LIMIT 1"
+    ["_instance":protected]=>
+    string(7) "default"
+    ["_connection":protected]=>
+    resource(81) of type (mysql link)
+    ["_config":protected]=>
+    array(6) {
+      ["type"]=>
+      string(5) "mysql"
+      ["connection"]=>
+      array(3) {
+        ["hostname"]=>
+        string(9) "localhost"
+        ["database"]=>
+        string(5) "njtms"
+        ["persistent"]=>
+        bool(false)
+      }
+      ["table_prefix"]=>
+      string(0) ""
+      ["charset"]=>
+      string(4) "utf8"
+      ["caching"]=>
+      bool(false)
+      ["profiling"]=>
+      bool(true)
+    }
+  }
+  ["_db_group":protected]=>
+  NULL
+  ["_db_applied":protected]=>
+  array(0) {
+  }
+  ["_db_pending":protected]=>
+  array(0) {
+  }
+  ["_db_reset":protected]=>
+  bool(true)
+  ["_db_builder":protected]=>
+  NULL
+  ["_with_applied":protected]=>
+  array(0) {
+  }
+  ["_cast_data":protected]=>
+  array(0) {
+  }
+  ["_errors_filename":protected]=>
+  string(6) "thread"
+}
+--><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="なんJで100レス以上ついたおもしろスレッドを自動配信するサービス・メディアです。" />
+<meta name="keywords" content="なんJ,2ch,プロ野球,なんでも実況ジュピター, おもしろ, 野球, カッス, チック" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="copyright" content="nanj times" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/style2.css" />
+<title>【日本終了】　韓国政界｢もう日本には我慢ならない。駐日韓国大使も帰国させよう｣  - なんJタイムス</title>
+</head>
+<body>
+
+
+<!--AllStart//-->
+<div id="container">
+
+
+<!--▽header▽-->
+<div id="header_area">
+    <div id="header">
+          <div class="header_title">
+                <h1><a href="/">なんJタイムス</a></h1>
+                なんJで100レス以上ついたおもしろスレッドを自動配信するサービス・メディアです。</div>
+          <div class="header_banner">
+                            <!-- admax -->
+                <script type="text/javascript">
+                var adstir_vars = {
+                  ver    : "4.0",
+                  app_id : "MEDIA-59754f56",
+                  ad_spot: 2,
+                  center : false
+                };
+                </script>
+                <script type="text/javascript" src="http://js.ad-stir.com/js/adstir.js?20130527"></script>
+                <!-- admax -->
+                      </div>
+          <div style="clear:both;"></div>
+    </div>
+    <div id="global">
+          <ul>
+                <li class="global_link"><a href="/">TOP</a></li>
+                <li class="global_link"><a href="/about">アバウト</a></li>
+                <li class="global_link"><a href="http://twitter.com/njtms" target="_blank">twitter</a></li>
+                <li class="global_link"><a href="/new">新着</a></li>
+                <li class="global_link"><a href="/ranking">人気</a></li>
+          </ul>
+          <div id="header_search">
+                <form method="get" action="/search" name="search_form">
+                      <p id="search" style="text-align:right">
+                            <input type="text" name="s" id="header_search_area" value="" />
+                            <input type="submit" name="submit" value="サイト内検索" />
+                      </p>
+                </form>
+          </div>
+          <div style="clear:both;"></div>
+    </div>
+</div>
+<!--△header△-->
+
+<!-- ▽contents▽-->
+<div id="contents">
+    <div id="wrapper"> 
+        <!-- ▽メイン▽ -->
+        <div id="main">
+            <h2>【日本終了】　韓国政界｢もう日本には我慢ならない。駐日韓国大使も帰国させよう｣ </h2>当サイトでのログの公開は終了しました。<br />2chか、ログ保存サイトで閲覧ください。<br />    <script type="text/javascript">
+var adstir_vars = {
+  ver    : "4.0",
+  app_id : "MEDIA-59754f56",
+  ad_spot: 4,
+  center : false
+};
+</script>
+<script type="text/javascript" src="http://js.ad-stir.com/js/adstir.js?20130527"></script>
+
+<!--
+<script type="text/javascript" src="http://adm.shinobi.jp/s/4629d668dc4dc0f3098d8ff694cb2675"></script><br /><br />
+-->
+    <br />    <br />■【日本終了】　韓国政界｢もう日本には我慢ならない。駐日韓国大使も帰国させよう｣ <br /><a href="http://raptor.2ch.net/test/read.cgi/livejupiter/1486442583" rel="nofollow" target="_blank">http://raptor.2ch.net/test/read.cgi/livejupiter/1486442583</a> (2ch.net)<br /><a href="http://raptor.2ch.net/test/read.cgi/livejupiter/1486442583" rel="nofollow" target="_blank">http://raptor.2ch.net/test/read.cgi/livejupiter/1486442583</a> (ログ速)<br /><br /><br />    <script type="text/javascript">
+var adstir_vars = {
+  ver    : "4.0",
+  app_id : "MEDIA-59754f56",
+  ad_spot: 3,
+  center : false
+};
+</script>
+<script type="text/javascript" src="http://js.ad-stir.com/js/adstir.js?20130527"></script>
+    <br />    <br />        </div>
+          <div id="side">
+      <div id="nav">
+    <h3 class="menu">スポンサーサイト</h3>
+
+
+
+    <!-- ▽広告▽ -->
+              <script type="text/javascript">
+        var adstir_vars = {
+          ver    : "4.0",
+          app_id : "MEDIA-59754f56",
+          ad_spot: 5,
+          center : false
+        };
+        </script>
+        <script type="text/javascript" src="http://js.ad-stir.com/js/adstir.js?20130527"></script>
+        <!--
+        <script type="text/javascript" src="http://adm.shinobi.jp/s/3a628ea6c0722e3b9d25d2990ddb69d0"></script>
+        -->
+          <!-- △広告△ -->
+  </div>
+  </div>
+    </div>
+    <div id="right_side">
+      <h3 class="menu">過去のスレッド</h3>
+      <div id="mlog"> 
+        <!-- ▽過去ログ▽ -->
+                                                <strong>2017年02月</strong><br/>
+                        
+                                                                        &nbsp;
+                                                                <a href="/d/20170201">02月01日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170202">02月02日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170203">02月03日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170204">02月04日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170205">02月05日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170206">02月06日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <strong>02月07日</strong>
+                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170208">02月08日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170209">02月09日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170210">02月10日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170211">02月11日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170212">02月12日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170213">02月13日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170214">02月14日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170215">02月15日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170216">02月16日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170217">02月17日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170218">02月18日</a>                            
+                                            <br />
+                                                                                &nbsp;
+                                                                <a href="/d/20170219">02月19日</a>                            
+                                            &nbsp;
+                                                                                                    <a href="/d/20170220">02月20日</a>                            
+                                            <br />
+                                            
+                <br />
+                                                                        <a href="/d/20170101">2017年01月</a><br />
+                    
+                                                        <a href="/d/20161201">2016年12月</a><br />
+                    
+                                                        <a href="/d/20161101">2016年11月</a><br />
+                    
+                                                        <a href="/d/20161001">2016年10月</a><br />
+                    
+                                                        <a href="/d/20160901">2016年09月</a><br />
+                    
+                                                        <a href="/d/20160801">2016年08月</a><br />
+                    
+                                                        <a href="/d/20160701">2016年07月</a><br />
+                    
+                                                        <a href="/d/20160601">2016年06月</a><br />
+                    
+                                                        <a href="/d/20160501">2016年05月</a><br />
+                    
+                                                        <a href="/d/20160401">2016年04月</a><br />
+                    
+                                                        <a href="/d/20160301">2016年03月</a><br />
+                    
+                                                        <a href="/d/20160201">2016年02月</a><br />
+                    
+                                                        <a href="/d/20160101">2016年01月</a><br />
+                    
+                                                        <a href="/d/20151201">2015年12月</a><br />
+                    
+                                                        <a href="/d/20151101">2015年11月</a><br />
+                    
+                                                        <a href="/d/20151001">2015年10月</a><br />
+                    
+                                                        <a href="/d/20150901">2015年09月</a><br />
+                    
+                                                        <a href="/d/20150801">2015年08月</a><br />
+                    
+                                                        <a href="/d/20150701">2015年07月</a><br />
+                    
+                                                        <a href="/d/20150601">2015年06月</a><br />
+                    
+                                                        <a href="/d/20150501">2015年05月</a><br />
+                    
+                                                        <a href="/d/20150401">2015年04月</a><br />
+                    
+                                                        <a href="/d/20150301">2015年03月</a><br />
+                    
+                                                        <a href="/d/20150201">2015年02月</a><br />
+                    
+                                                        <a href="/d/20150101">2015年01月</a><br />
+                    
+                                                        <a href="/d/20141201">2014年12月</a><br />
+                    
+                                                        <a href="/d/20141101">2014年11月</a><br />
+                    
+                                                        <a href="/d/20141001">2014年10月</a><br />
+                    
+                                                        <a href="/d/20140901">2014年09月</a><br />
+                    
+                                                        <a href="/d/20140801">2014年08月</a><br />
+                    
+                                                        <a href="/d/20140701">2014年07月</a><br />
+                    
+                                                        <a href="/d/20140601">2014年06月</a><br />
+                    
+                                                        <a href="/d/20140501">2014年05月</a><br />
+                    
+                                                        <a href="/d/20140401">2014年04月</a><br />
+                    
+                                                        <a href="/d/20140301">2014年03月</a><br />
+                    
+                                                        <a href="/d/20140201">2014年02月</a><br />
+                    
+                                                        <a href="/d/20140101">2014年01月</a><br />
+                    
+                                                        <a href="/d/20131201">2013年12月</a><br />
+                    
+                                                        <a href="/d/20131101">2013年11月</a><br />
+                    
+                                                        <a href="/d/20131001">2013年10月</a><br />
+                    
+                                                        <a href="/d/20130901">2013年09月</a><br />
+                    
+                                                        <a href="/d/20130801">2013年08月</a><br />
+                    
+                                                        <a href="/d/20130701">2013年07月</a><br />
+                    
+                                                        <a href="/d/20130601">2013年06月</a><br />
+                    
+                                                        <a href="/d/20130501">2013年05月</a><br />
+                    
+                                                        <a href="/d/20130401">2013年04月</a><br />
+                    
+                                                        <a href="/d/20130301">2013年03月</a><br />
+                    
+                                                        <a href="/d/20130201">2013年02月</a><br />
+                    
+                                                        <a href="/d/20130101">2013年01月</a><br />
+                    
+                                                        <a href="/d/20121201">2012年12月</a><br />
+                    
+                                                        <a href="/d/20121101">2012年11月</a><br />
+                    
+                                                        <a href="/d/20121001">2012年10月</a><br />
+                    
+                                                        <a href="/d/20120901">2012年09月</a><br />
+                    
+                                                        <a href="/d/20120801">2012年08月</a><br />
+                    
+                                                        <a href="/d/20120701">2012年07月</a><br />
+                    
+                                                        <a href="/d/20120601">2012年06月</a><br />
+                    
+                                                        <a href="/d/20120501">2012年05月</a><br />
+                    
+                                                        <a href="/d/20120401">2012年04月</a><br />
+                    
+                                                        <a href="/d/20120301">2012年03月</a><br />
+                    
+                                                        <a href="/d/20120201">2012年02月</a><br />
+                    
+                            <!-- △過去ログ△ --> 
+      </div>
+    </div><!-- △contents△-->
+
+    <!-- ▽フッター▽ -->
+    <div style="clear:both;"></div>
+    <div id="footer"><a href="/inquiry">お問い合わせ</a> | Copyright© <a href="/">なんJタイムス</a> All Right Reserved</div>
+  </div>
+  <!-- △フッター△ --> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35787086-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src='http://j.sprout-ad.com/js/a.js' type='text/javascript' charset='utf-8'></script>
+</div>
+<!--AllEnd//-->
+
+
+<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+(function($) {
+	$(document).ready(function() {
+		/*
+		Ads Sidewinder
+		by Hamachiya2. http://d.hatena.ne.jp/Hamachiya2/20120820/adsense_sidewinder
+		*/
+		var main = $('#main'); // メインカラムのID
+		var side = $('#side'); // サイドバーのID
+		var wrapper = $('#nav'); // 広告を包む要素のID
+
+		var w = $(window);
+        //alert (wrapper.html());
+		var wrapperHeight = wrapper.outerHeight();
+		var wrapperTop = wrapper.offset().top;
+		var sideLeft = side.offset().left;
+
+		var sideMargin = {
+			top: side.css('margin-top') ? side.css('margin-top') : 0,
+			right: side.css('margin-right') ? side.css('margin-right') : 0,
+			bottom: side.css('margin-bottom') ? side.css('margin-bottom') : 0,
+			left: side.css('margin-left') ? side.css('margin-left') : 0
+		};
+
+		var winLeft;
+		var pos;
+
+		var scrollAdjust = function() {
+			sideHeight = side.outerHeight();
+			mainHeight = main.outerHeight();
+			mainAbs = main.offset().top + mainHeight;
+			var winTop = w.scrollTop();
+			winLeft = w.scrollLeft();
+			var winHeight = w.height();
+			var nf = (winTop > wrapperTop) && (mainHeight > sideHeight) ? true : false;
+			pos = !nf ? 'static' : (winTop + wrapperHeight) > mainAbs ? 'absolute' : 'fixed';
+			if (pos === 'fixed') {
+                //alert("win height:" + winHeight + " / wrapperHeight:" + wrapperHeight);
+				side.css({
+					position: pos,
+					top: 5,
+					bottom: 0,
+					left: sideLeft - winLeft,
+					margin: 0
+				});
+
+			} else if (pos === 'absolute') {
+				side.css({
+					position: pos,
+					top: 5,
+					bottom: '',
+					left: sideLeft,
+					margin: 0
+				});
+
+			} else {
+				side.css({
+					position: pos,
+					marginTop: sideMargin.top,
+					marginRight: sideMargin.right,
+					marginBottom: sideMargin.bottom,
+					marginLeft: sideMargin.left
+				});
+			}
+		};
+
+		var resizeAdjust = function() {
+			side.css({
+				position:'static',
+				marginTop: sideMargin.top,
+				marginRight: sideMargin.right,
+				marginBottom: sideMargin.bottom,
+				marginLeft: sideMargin.left
+			});
+			sideLeft = side.offset().left;
+			winLeft = w.scrollLeft();
+			if (pos === 'fixed') {
+				side.css({
+					position: pos,
+					left: sideLeft - winLeft,
+					margin: 0
+				});
+
+			} else if (pos === 'absolute') {
+				side.css({
+					position: pos,
+					left: sideLeft,
+					margin: 0
+				});
+			}
+		};
+		w.on('load', scrollAdjust);
+		w.on('scroll', scrollAdjust);
+		w.on('resize', resizeAdjust);
+	});
+})(jQuery);
+</script>
+
+
+</html>

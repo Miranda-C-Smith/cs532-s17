@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale = 1.0,user-scalable=yes">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,600,600i&amp;subset=latin-ext" rel="stylesheet">
+<link href="http://www.theconservative.online/fajls/styles.css" rel="stylesheet">
+<script type="text/javascript" src="http://www.theconservative.online/fajls/cssrefresh.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://www.theconservative.online/fajls/fotorama.js"></script>
+<script type="text/javascript" src="http://www.theconservative.online/fajls/jsocial/jsocial.js"></script>
+<link href="http://www.theconservative.online/fajls/jsocial/style.css" rel="stylesheet">
+<script type="text/javascript">
+$().ready(function() { 
+	$("#socialicons").jsocial({
+		highlight: false,
+		buttons: "facebook_horizontal,twitter_horizontal,linkedin_horizontal,googleplus_horizontalmedium"
+	});
+});
+</script> 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55298072-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '224307128031418',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<!-- Standard data -->
+<title>Brexit: Where Next? | The Conservative Online</title>
+<meta name="description" content="Daniel Hannan" />
+<link rel="image_src" href="http://www.theconservative.online/photos/hannan1.jpg"/>
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<!-- <meta name="twitter:site" content="@ACREurope"> -->
+<meta name="twitter:title" content="Brexit: Where Next? | The Conservative Online">
+<meta name="twitter:description" content="Daniel Hannan">
+<meta name="twitter:image" content="http://www.theconservative.online/photos/hannan1.jpg">
+
+<!-- Open Graph data -->
+
+<meta property="og:title" content="Brexit: Where Next? | The Conservative Online" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://theconservative.online/article/brexit_where_next" />
+<meta property="og:image" content="http://www.theconservative.online/photos/hannan1.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="700" />
+<meta property="og:description" content="Daniel Hannan" /> 
+<meta property="og:site_name" content="ARTICLES | The Conservative Online" />
+<meta property="fb:app_id" content="224307128031418" />
+
+</head>
+<body>
+<!-- HEADER MOBILE -->
+<div class="tc-nav-mobile">
+
+<div class="tc-nav-mobile-logo"><a href="http://www.theconservative.online/"><img src="http://www.theconservative.online/fajls/tc2.svg" class="tc-nav-mobile-logo-img"></a></div>
+
+<div class="tc-nav-mobile-button" onclick="openNav()">&#9776;</div>
+
+<div id="tc-nav-mobile" class="tc-nav-mobile-overlay">
+<a href="javascript:void(0)" class="tc-nav-mobile-closebtn" onclick="closeNav()">&times;</a>
+<div class="tc-nav-mobile-overlay-content">
+<a href="http://www.theconservative.online">HOME</a>
+<a href="http://www.theconservative.online/articles">ARTICLES</a>
+<!-- <a href="http://www.theconservative.online/news">NEWS</a> -->
+<!-- <a href="http://www.theconservative.online/videos">VIDEOS</a> -->
+<a href="http://www.theconservative.online/journal">JOURNAL</a>
+<a href="http://www.theconservative.online/about">ABOUT</a>
+</div>
+</div>
+
+</div>
+
+<script>
+function openNav() {document.getElementById("tc-nav-mobile").style.height = "100%";}
+function closeNav() {document.getElementById("tc-nav-mobile").style.height = "0%";}
+</script>
+<!-- // HEADER MOBILE -->
+
+
+
+
+
+<!-- HEADER DESKTOP -->
+<div class="tc-nav-desktop">
+<div class="red">
+
+<div class="kolona-cetvrtina">
+<div class="tc-nav-desktop-logo">
+<a href="http://www.theconservative.online/"><img src="http://www.theconservative.online/fajls/tc2.svg" class="tc-nav-desktop-logo-img"></a>
+</div>
+</div>
+
+<div class="kolona-polovina">
+<div class="tc-nav-desktop-menu">
+<ul>	
+<li><a href="http://www.theconservative.online/articles">ARTICLES</a></li>
+<!-- <li><a href="http://www.theconservative.online/news">NEWS</a></li> -->
+<!-- <li><a href="http://www.theconservative.online/videos">VIDEOS</a></li> -->
+<li><a href="http://www.theconservative.online/journal">JOURNAL</a></li>
+<li><a href="http://www.theconservative.online/about">ABOUT</a></li>
+<li><a href="#" onclick="document.getElementById('subskrajb').style.display='block'" style="cursor:pointer;">SUBSCRIBE</a></li>
+<!-- <li><a href="#" onclick="document.getElementById('donejt').style.display='block'" style="cursor:pointer;">DONATE</a></li> -->
+</ul>
+</div>
+</div>
+
+<div class="kolona-cetvrtina">
+<div class="tc-nav-desktop-social">
+<div class="tc-nav-desktop-search"><a id="SearchMyBtn" class="tc-nav-desktop-icon0"><img src="http://www.theconservative.online/fajls/icon-search.svg" style="cursor:pointer;"></a></div>
+<ul>	
+<li><a href="https://www.twitter.com/conservative_on" class="tc-nav-desktop-icon0" target="_blank"><img src="http://www.theconservative.online/fajls/icon-twitter.svg" class="tc-nav-desktop-social-icon"></a></li>
+<li><a href="https://www.facebook.com/The-Conservative-Online-1381250628573926/" class="tc-nav-desktop-icon0" target="_blank"><img src="http://www.theconservative.online/fajls/icon-facebook.svg" class="tc-nav-desktop-social-icon"></a></li>
+<li><a href="https://www.youtube.com/channel/UCLClhb4Td4J-mV5oQsNAhsg" class="tc-nav-desktop-icon0"target="_blank"><img src="http://www.theconservative.online/fajls/icon-youtube.svg" class="tc-nav-desktop-social-icon"></a></li>
+<li><a href="mailto:editor@theconservative.online" class="tc-nav-desktop-icon0" target="_blank"><img src="http://www.theconservative.online/fajls/icon-mail.svg" class="tc-nav-desktop-social-icon"></a></li>
+<li><a href="http://www.theconservative.online/rss" class="tc-nav-desktop-icon0"><img src="http://www.theconservative.online/fajls/icon-rss.svg" class="tc-nav-desktop-social-icon"></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<!-- SEARCH -->
+<div id="SearchMyModal" class="tc-nav-search-modal">
+<div class="red">
+<div class="tc-nav-search-modal-content">
+<span class="tc-nav-search-close">&times;</span>
+<form class="tc-nav-search-form-search" method="post" action="http://theconservative.online/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="22" />
+<input type="hidden" name="RES" value="" />
+<input type="hidden" name="meta" value="V/NE56J/Nixyy6gN2kR98bEWLlXeLMiiYE149Oae9y9J6ATbAag6G0Af2c1ZUurVu0wsbVYgxJdTVcA2PLpfJotMgQkJOfpxjcbKJTAFhkQts2uypYo1YSbCIaADVqeag2Ow4A+NgsXT1ZpYcr5J9A2oXz3L3xlBRi8nhEmHkpTuOmNsOsLPaNuidalTP6bhk/6YafCjw0XEPoSfw1S0nFJ//xLRkO5/6v6qSiD2+S1s8H/Sz4zFa+QKBEy/LKB2zEQEE6s71le8B3DkI+KWwIye54cjMt6CGI9gm6WBYGOvsyPtwnFM6YDPU3TKLedwTaFiFtnGttFu9tybCwLzYXMrdEmuRAS0rdlQZlYNupaq3Oa2j6E741SV0OaYxhdTwtnY0uBOwO9zrb1CPkYaY7DX5GwTOg/6QgPVEOCpT7qO5eYVdVGBA7ULdnkDuxbK" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="e0995f79c64bc56830b5d7149ae7ec27ec7a6fa6" />
+</div>
+
+
+<input type="text"  value="keywords" onfocus="this.value=''" class="tc-nav-search-form-search-field"  name="keywords" id="keywords">
+<button type="submit" class="tc-nav-search-form-search-button" alt="SEARCH">SEARCH</button>
+</form>
+</div>
+</div>
+</div>
+
+<script>
+var modal = document.getElementById('SearchMyModal');
+var btn = document.getElementById("SearchMyBtn");
+var span = document.getElementsByClassName("tc-nav-search-close")[0];
+btn.onclick = function() {modal.style.display = "block";}
+span.onclick = function() {modal.style.display = "none";}
+window.onclick = function(event) { if (event.target == modal) {modal.style.display = "none"; }
+}
+</script>
+<!-- // SEARCH -->
+
+<!-- // HEADER DESKTOP -->
+
+
+
+
+
+
+
+
+<div id="subskrajb" class="mmodal">
+<div class="modal-content animate">
+<div class="imgcontainer"><span onclick="document.getElementById('subskrajb').style.display='none'" class="close" title="CLOSE">&times;</span></div>
+<div class="container">
+     
+<div style="padding:10px;">
+
+<p class="articles-section-social-1">NEWSLETTER</p>
+
+<div id="mc_embed_signup">
+<form action="//online.us15.list-manage.com/subscribe/post?u=e0a7df472d9639523839614cc&amp;id=242c4b67fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+<p class="mejlcimp-lejbl">The Conservative Online advances free market ideas and centre-right opinion with new content daily. Subscribe online and receive our weekly newsletter</p>
+<input type="email" value="email address" onfocus="this.value=''" name="EMAIL" class="required email mejlcimp-fijld" id="mce-EMAIL">
+</div>
+
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div> 
+ 
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e0a7df472d9639523839614cc_242c4b67fd" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button mejlcimp-batn"></div>
+
+</div>
+</form>
+</div>
+
+</div>
+		
+</div></div></div>
+
+
+
+
+<div id="donejt" class="mmmodal">
+<div class="modal-content animate">
+<div class="imgcontainer"><span onclick="document.getElementById('donejt').style.display='none'" class="close" title="CLOSE">&times;</span></div>
+<div class="container">
+     
+<div style="padding:10px;">
+<p class="articles-section-social-1">DONATE</p><div class="articles-divider-social"></div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="text-align:center;padding-top:20px;">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9HPT6YS8ERNY4">
+<input type="image" src="https://www.paypalobjects.com/en_US/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+		
+</div></div></div>
+
+
+
+
+
+
+<script>var mmodal = document.getElementById('subskrajb');window.onclick = function(event) { if (event.target == mmodal) {mmodal.style.display = "none";} }</script>
+<script>var mmmodal = document.getElementById('donejt');window.onclick = function(event) { if (event.target == mmmodal) {mmmodal.style.display = "none";} }</script>
+<!-- WHITESPACE --><div class="red-full1">
+
+
+
+
+<!-- IF NEWS -->
+
+
+<!-- ARTICLES HEADER -->
+<div class="article-body-image" style="background: url('http://www.theconservative.online/photos/hannan1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+<div class="image-full-overlay"></div><div class="image-full-content-article">
+<h1>Brexit: Where Next?</h1>
+<div class="h-distancer"></div>
+
+<h3>by Daniel Hannan</h3>
+</div></div>
+<!--
+<div class="article-info1">
+<span class="article-info3">This article is originally published by <em>Daniel Hannan</em><span class="newsfeed-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>22.01.2017</span></div> -->
+<!-- // ARTICLES HEADER -->
+
+<!-- ARTICLES BODY -->
+<div class="red"><div class="kolona-cijela">
+
+<div class="article-body">
+
+<p>On 23 June, the British people politely ignored the advice of their political leaders, disregarded months of hectoring, bullying and threats, and voted to leave the EU.</p>
+
+<p>They did so in defiance of all the main parties; of the mega-banks and the multi-nationals; of most trade and professional associations; of the broadcasters; of domestic and international bureaucracies; and of every foreign politician from whom David Cameron or George Osborne could call in a favour.</p>
+
+<p>For once, the phrase &ldquo;against all the odds&rdquo; is precisely apposite. On polling day, the bookmakers gave an implied probability of 18 per cent Leave, 82 per cent Remain. So it&rsquo;s perhaps unsurprising that, as Britain woke to the news on an appropriately sunny Friday morning, even Leave voters felt a sense of numbness, almost of shellshock.</p>
+
+<p>Shall I tell you what that numbness was? It was the mildly vertiginous sense of being back in control again. It was the shock of a convalescent who, after weeks of being bed-ridden, throws open the door and strides into a sunlit garden. The shock of a paroled prisoner, accustomed to being told when to rise, eat and exercise, who suddenly has to make his own decisions.&nbsp;</p>
+
+<p>For as long as almost anyone could remember, British voters had been accustomed to having circumscribed choices placed before them by their political &eacute;lites. On 23 June 2016, they rejected all the options, and instructed their leaders to come up with a different menu.</p>
+
+<blockquote>
+<p>The challenge now is to make Brexit a cordial and a mutually beneficial process, one that brings advantages to all sides.&nbsp;At the end of it, the EU will have lost a bad tenant and gained a good neighbour.</p>
+</blockquote>
+
+<p>Any doubt about the masses-versus-classes nature of the vote was dispelled by the reaction of the losers. Thousands of Remain voters, mainly well-heeled Londoners, marched on Parliament, demanding that MPs ignore the result. Millions signed an online petition for a second referendum. Some corporations hired an expensive law-firm, Mischon de Reya, to attempt to stop the prime minister from initiating withdrawal proceedings without a specific vote in Parliament.</p>
+
+<p>Meanwhile, a number of peers signalled that they would vote to overturn the popular decision. As Baroness Wheatcroft, a former newspaper editor, put it: &ldquo;If it comes to a bill, I think the Lords might actually delay things. There&rsquo;s a majority in the Lords for remaining.&rdquo; &nbsp; Tony Blair openly admitted that the tactic was to string things out for long enough to allow a general election to intervene and, as he hoped, reverse the result.&nbsp;</p>
+
+<p>What we were witnessing was the petulance of political elites who, after years of getting their own way, found themselves unexpectedly checked. Without realising it, they are vindicating one of the chief complaints of Leave campaigners, namely that the EU is intrinsically oligarchic, preferring technocratic rule to popular sovereignty.</p>
+
+<p>Listen to some of the reactions to the vote, not just in Britain, but around the world. Here is the zoologist Richard Dawkins in the highbrow magazine, Prospect:&nbsp;</p>
+
+<p><em>There are stupid, ignorant people in every country but their blameless stupidity mostly doesn&rsquo;t matter because they are not asked to take historically momentous and irrevocable decisions of state.</em>&nbsp;</p>
+
+<p>Here is the normally restrained American publication Foreign Policy:</p>
+
+<p><em>It&rsquo;s time for the elites to rise up against the ignorant masses. Brexit has laid bare the political schism of our time. It&rsquo;s not about the left vs. the right; it&rsquo;s about the sane vs. the mindlessly angry.</em></p>
+
+<p>Here is the cult Slovenian philosopher, Slavoj Žižek:</p>
+
+<p><em>Popular opinion is not always right. Sometimes I think one has to violate the will of the majority.&nbsp;</em></p>
+
+<p>These views, frankly, are at the politer end of the spectrum. On social media, the filters came off, and we saw what some people really thought. Several Remain campaigners exploded with the fury of frustrated toddlers, demanding that the franchise be linked to intelligence tests, raging against the elderly working-class racists whom they imagined had tipped the result, dismissing all opposition as &ldquo;bigotry&rdquo; &ndash; which is deliciously ironic when we recall that the Oxford English Dictionary defines bigotry as &ldquo;intolerance towards those who hold different opinions to oneself&rdquo;. &nbsp;</p>
+
+<p>In their resentment of democracy, these Euro-enthusiasts were revealing a great deal about their world-view. The entire process of European integration has, in a sense, been carried out at the expense of representative government. The EU was conceived as an antidote to what its founders saw as excessive democracy. Having lived through the populism and demagoguery of the 1930s, they were determined to vest supreme power in the hands of unelected officials who would be free to temper and moderate public opinion.</p>
+
+<p>The trouble is that, as the years passed, Eurocrats and their auxiliaries within the member states became downright contemptuous of public opinion. As Jos&eacute; Manuel Barroso, at that time the unelected head of the European Commission, put it in 2010:</p>
+
+<p><em>Governments are not always right. If governments were always right we would not have the situation that we have today. Decisions taken by the most democratic institutions in the world are very often wrong.&nbsp;</em></p>
+
+<p>His successor, Jean-Claude Juncker, was even blunter:</p>
+
+<p><em>There can be no democratic choice against the European Treaties. &nbsp;</em></p>
+
+<p>If you want to understand why people voted to leave, look no further than those words.</p>
+
+<p>We Leavers will, I hope, hold ourselves to a higher democratic standard. We can&rsquo;t disregard the fact that 48 per cent of Britons voted for the status quo. We need to listen to their concerns, both on economic matters and on the other priorities they raised during the campaign, such as continued participation in various EU educational and research programmes. It may well be that, when we leave the EU, we choose to replicate through bilateral deals some of the arrangements that we are currently locked into as members.&nbsp;</p>
+
+<p>We have a mandate to leave the EU, but it is not a mandate to sever all links. A post-EU Britain will not simply relate to the EU as a benign third country in the way that, say, Japan does. Just as Remain voters must accept that Britain voted to quit the EU, so Leave voters must accept that it did so only marginally. Implementing a 52-48 result will mean leaving the EU, but retaining some institutional links with it.&nbsp;</p>
+
+<p>The challenge now is to make Brexit a cordial and a mutually beneficial process, one that brings advantages to all sides. At the end of it, the EU will have lost a bad tenant and gained a good neighbour.</p>
+
+</div>
+
+<!-- ARTICLES SHARE -->
+<br><br>
+<p class="article-author-author">SHARE</p>
+<div id="socialicons" style="margin-left:auto;margin-right:auto;display:block;width:450px;margin-top:-50px;"> </div> 
+<br><br>
+<!-- // ARTICLES SHARE -->
+
+
+</div></div>
+<!-- // ARTICLES BODY -->
+
+
+<!-- // IF NEWS -->
+
+
+
+
+<!-- IF ARTICLES -->
+
+<!-- // IF ARTICLES -->
+
+
+
+
+</div><!-- // WHITESPACE -->
+<div class="tc-footer"><div class="red"><div class="tc-footer-container">
+
+<img src="http://www.theconservative.online/fajls/tc1.svg" class="tc-footer-icon">
+
+<div class="tc-footer-copy">
+<strong>REPRODUCTION RIGHTS</strong> All original content and materials of <em>The Conservative</em> and <em>The Conservative [online]</em> are copyrighted, unless otherwise stated.<br>For permission to republish articles, please contact the Managing Editor at <a href="mailto:editor@theconservative.online">editor@theconservative.online</a>.
+</div>
+
+</div></div></div>
+</body>
+</html>

@@ -1,0 +1,940 @@
+	
+<!DOCTYPE html>
+<!-- bid: 11; env: production -->
+<!-- X-Device-Type Varnish Header Found: YES -->
+<!-- Mobile Detected: NO -->
+<!-- Tablet Detected: NO -->
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 10]>
+<html id="ie10" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:addthis="http://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+
+			
+	<!-- DEFAULTS ************************************************** -->
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAMAUV9XGwEGUlZTBQY="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+	<title>
+		Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns - Shooting Times	</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://www.shootingtimes.com/xmlrpc.php" />
+	<!--[if IE 8]><style type="text/css">img{max-width: none !important;}.BCLvideoWrapper object{width:480px !important;}</style><![endif]-->
+	<!--[if lt IE 9]>
+	<script src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	
+	
+	<!-- STYLES ************************************************** -->
+	
+		
+		<link rel="stylesheet" type="text/css" media="all" href="http://www.shootingtimes.com/wp-content/themes/shootingtimes/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!-- Font Awsome Icons -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The design of the new Model 11-87 Premier also included a large number of additional internal improvements to provide a “fifty percent increase in overall performance endurance,”..."/>
+<link rel="canonical" href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns - Shooting Times" />
+<meta property="og:description" content="The design of the new Model 11-87 Premier also included a large number of additional internal improvements to provide a “fifty percent increase in overall performance endurance,”..." />
+<meta property="og:url" content="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" />
+<meta property="og:site_name" content="Shooting Times" />
+<meta property="article:section" content="Remington History" />
+<meta property="article:published_time" content="2016-08-31T13:31:15+00:00" />
+<meta property="article:modified_time" content="2016-09-09T19:53:26+00:00" />
+<meta property="og:updated_time" content="2016-09-09T19:53:26+00:00" />
+<meta property="og:image" content="http://www.shootingtimes.com/files/2016/08/GAAS-150036-CH8-086.jpg" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="The design of the new Model 11-87 Premier also included a large number of additional internal improvements to provide a “fifty percent increase in overall performance endurance,”..."/>
+<meta name="twitter:title" content="Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns - Shooting Times"/>
+<meta name="twitter:domain" content="Shooting Times"/>
+<meta name="twitter:image:src" content="http://www.shootingtimes.com/files/2016/08/GAAS-150036-CH8-086.jpg"/>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.shootingtimes.com\/","name":"Shooting Times"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2409437-13']);
+				            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel="alternate" type="application/rss+xml" title="Shooting Times &raquo; Remington Timeline: 1987 &#8211; Remington Model 11-87 Autoloading Shotguns Comments Feed" href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/feed/" />
+<link rel='stylesheet' id='socialite-css-css'  href='http://www.shootingtimes.com/wp-content/plugins/wpsocialite/lib/wpsocialite.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gift-guide-css-css'  href='http://www.shootingtimes.com/wp-content/plugins/imo-gift-guide/css/gift-guide.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='network-topics-css-css'  href='http://www.shootingtimes.com/wp-content/plugins/imo-network-topics/css/network-topics.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='buffet-css'  href='http://www.shootingtimes.com/wp-content/plugins/imo-slider/buffet.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sscsf-css-css'  href='http://www.shootingtimes.com/wp-content/plugins/shot-show-cross-site-feed/css/style.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sv-polls-style-css'  href='http://www.shootingtimes.com/wp-content/plugins/sv-polls/sv-polls.css?ver=0.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css-css'  href='http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/plugins/flexslider/flexslider.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gallery-css-css'  href='http://www.shootingtimes.com/wp-content/plugins/osg-gallery/css/style.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='subsmarketing-css'  href='http://www.shootingtimes.com/wp-content/plugins/osg-subs-marketing/css/subsmarketing.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hotfix_stylesheet-css'  href='http://www.shootingtimes.com/hotfix-style.css?ver=1440616456' type='text/css' media='screen' />
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/imo-gift-guide/js/gift-guide.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/imo-network-topics/js/jquery.flexslider.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/imo-network-topics/js/network-topics.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/sv-polls/sv-polls.js?ver=0.0.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var taxonomyTerms = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/imo-json-taxonomy/fakescript.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/jquery.popupoverlay.min.js?ver=4.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var subsmkt_vars = {"homedir":"http:\/\/www.shootingtimes.com\/wp-content\/themes\/shootingtimes","ishome":"","pagename":"","posttype":"post"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/osg-subs-marketing/js/subsmodal.js?ver=4.1.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.shootingtimes.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.shootingtimes.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.shootingtimes.com/?p=11182' />
+<!-- <meta name="NextGEN" version="2.1.43" /> -->
+<meta name="framework" content="Alkivia Framework 0.8" />
+
+<script type="text/javascript">
+var blogid = 11;
+var subsmarketing = {"headline":"LIKE WHAT YOU'RE READING?","offertxt":"Get 12 issues for the low price of <strong>just $8!<\/strong>","coverimg":"http:\/\/securesubs.osgimedia.com\/images\/covers\/com.imo.stmp.170300coverth.png","buttontxt":"Subscribe!","scrollpct":".4","timesday":1,"poptype":"scroll","blogid":"11","orderpage":"http:\/\/subs.shootingtimes.com?opid=561&pkey=","offerid":"561","pkey":"IBPB","reqkey":"gh3vd45","expires":12};
+</script>
+
+    
+    
+    <!-- HEAD INCLUDES ************************************************** -->
+    
+	<script language="javascript" type="text/javascript">
+	function resizeIframe(obj) {
+		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+		obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
+	}
+</script>
+<script type='text/javascript'>
+  (function() {
+    var useSSL = 'https:' == document.location.protocol;
+    var src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+  })();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+var screen;
+var w = window.innerWidth;
+var h = window.innerHeight;
+	googletag.defineSlot('/4930/imo.shootingtimes', [300, 250], '300_btf').setTargeting('pos', ['btf']).addService(googletag.pubads());
+			googletag.defineSlot('/4930/imo.shootingtimes/1', [4, 4], 'teads').addService(googletag.pubads());
+    		googletag.defineSlot('/4930/imo.shootingtimes', [240, 60], 'sponsor').addService(googletag.pubads()); 
+/*
+	googletag.defineSlot('/4930/imo.shootingtimes', [2, 2], 'native').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [564, 252], 'e_commerce_widget').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [2, 2], 'standard_native').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [2, 3], 'vide_native').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [2, 4], 'collection_native').addService(googletag.pubads());
+	
+*/
+		googletag.defineOutOfPageSlot('/4930/imo.shootingtimes','interstitial').addService(googletag.pubads());
+		
+		
+		
+if (w>=1100)
+{
+		googletag.defineSlot('/4930/imo.shootingtimes', [3, 3], 'superheader').addService(googletag.pubads());
+		
+	googletag.defineSlot('/4930/imo.shootingtimes', [[970, 250], [728, 90]], 'billboard').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [[300, 600], [300, 250]], '300_atf').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [728, 90], '728_btf').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes', [648, 110], 'fordWidget').addService(googletag.pubads());
+	googletag.defineSlot('/4930/imo.shootingtimes/SIP/SIPTV',[300, 600],'microsite_video_page').addService(googletag.pubads());
+}
+if (w>=600 && w<=1099)
+{
+	//screen = "tablet";
+    //googletag.defineSlot('/4930/imo.shootingtimes', [1, 1], 'tablet2').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [728, 90], 'leaderboard').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [300, 250], '300_atf').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [728, 90], '728_btf').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [648, 110], 'fordWidget').addService(googletag.pubads());
+	
+	googletag.defineSlot('/4930/imo.shootingtimes/SIP/SIPTV',[300, 250],'microsite_video_page').addService(googletag.pubads());
+}
+if (w<=599)
+{
+	//screen = "mobile";
+    googletag.defineSlot('/4930/imo.shootingtimes', [[320, 100], [320, 50]], '320_atf').addService(googletag.pubads());
+    //googletag.defineSlot('/4930/imo.shootingtimes', [1, 1], 'mobile3').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [300, 250], '300_mobile').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [[320, 100], [320, 50]], '320_btf').addService(googletag.pubads());
+    googletag.defineSlot('/4930/imo.shootingtimes', [320, 200], 'fordWidget').addService(googletag.pubads());
+    
+    googletag.defineSlot('/4930/imo.shootingtimes/SIP/SIPTV',[320, 100],'microsite_video_page').addService(googletag.pubads());
+}
+
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().setTargeting('sect', ['Remington History']).setTargeting('camp', ['']);
+    googletag.pubads().collapseEmptyDivs(); 
+    //googletag.pubads().enableSyncRendering();
+    googletag.enableServices();
+    
+	//console.log(screen);   
+  });
+
+</script>
+<!-- BEGIN Tynt Script -->
+<script type="text/javascript">
+if(document.location.protocol=='http:'){
+ var Tynt=Tynt||[];Tynt.push('bWuPE-RaWr4y-6acwqm_6l');Tynt.i={"ap":"Read more:"};
+ (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+</script>
+<!-- END Tynt Script -->
+<script async src="http://cdn.mediavoice.com/nativeads/script/IMOutdoors/mv_shootime.js"></script>
+
+
+<script src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/dart.js" type="text/javascript"></script>
+<script src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/jquery.jfollow.js" type="text/javascript"></script>
+<script src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/flash_heed.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/snap.js"></script>
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "8031814" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=8031814&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+ 
+<script type='text/javascript' src='http://ads.jetpackdigital.com/sites/shootingtimes/jpd.js'></script>
+</head>
+
+
+<!-- CONTENT ************************************************** -->
+
+<body class="single single-post postid-11182 single-format-standard wpsocialite-scroll" domain="imo.shootingtimes" >
+<div id='interstitial'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('interstitial'); });
+	</script>
+</div>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-left" id="left-drawer">
+        <div>	
+	        <div class="mob-aside-menu">
+	            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="nav-menu-item-7454" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/handguns/"  class="menu-link  main-menu-link">Handguns</a></li><li id="nav-menu-item-7452" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/long-guns/"  class="menu-link  main-menu-link">Long Guns</a></li><li id="nav-menu-item-7453" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/ammo/"  class="menu-link  main-menu-link">Ammo</a></li><li id="nav-menu-item-8394" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/optics/"  class="menu-link  main-menu-link">Optics</a></li><li id="nav-menu-item-8393" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/gear-accessories/"  class="menu-link  main-menu-link">Gear</a></li><li id="nav-menu-item-8395" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/gunsmithing/"  class="menu-link  main-menu-link">Gunsmithing</a></li></ul></div>	        </div>
+	
+	        <div class="menu-subscribe">
+	            <a href="http://subs.shootingtimes.com/?pkey=IBQM" target="_blank" onClick="_gaq.push(['_trackEvent', 'Subscribe', 'Location', 'Mobile Menu']);"><img src="http://www.shootingtimes.com/files/2017/02/ST-tabletmag-260x262.png" alt="Subscribe" /><span>Subscribe Now!</span></a>
+	        </div>
+	        <div class="menu-top-menu-container"><ul id="menu-top-menu" class="menu"><li id="menu-item-8392" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8392"><a href="http://www.shootingtimes.com/video/" >Video</a></li>
+<li id="menu-item-8391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8391"><a href="http://forums.gunsandammo.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://forums.gunsandammo.com']);">Forums</a></li>
+</ul></div>	        <div class="aside-socials">
+	            <strong>Connect</strong>
+	            <div class="socials"><a href="https://www.facebook.com/ShootingTimesMag" class="facebook">Facebook</a><a href="http://twitter.com/ShootingTimesUS" class="twitter">Twitter</a><a href="http://www.shootingtimes.com/feed/" class="rss">RSS</a></div>	        </div>
+
+		</div>
+	</div>
+	</div>
+<div class="fixed-connect">
+	<div class="close"><a href="javascript:void(0);" title="Collapse bottom bar"><img src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/images/ico/close_icon_small.png" alt="Collapse bottom bar"></a>
+	</div>
+	<div class="container">
+					<div class="currentIssue">
+				<div class="journal">
+	                
+			        <img src="http://www.shootingtimes.com/files/2017/02/ST-tabletmag-260x262.png" alt="Subscribe">
+			    </div>
+			</div>
+					<div class="subscribe">
+				    <a href="http://subs.shootingtimes.com/?pkey=IBQ4" target="_blank" onClick="_gaq.push(['_trackEvent', 'Subscribe', 'Location', 'Sticky Footer']);">Subscribe</a>
+	    		</div>
+		<div class="newsletter">
+																	
+			<div class="title">Get The Newsletter</div>
+			
+			<form action="http://cl.exct.net/subscribe.aspx?lid=4080" name="subscribeForm" method="post">
+				<input type="hidden" name="thx" value="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/?utm_source=twitter&utm_medium=social&utm_campaign=remington200&utm_term=firearmsnews&utm_content=remington200#subscribe-success" />
+				<input type="hidden" name="err" value="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/?utm_source=twitter&utm_medium=social&utm_campaign=remington200&utm_term=firearmsnews&utm_content=remington200" />
+				<input type="hidden" name="MID" value="6283180" />
+		        
+
+				<fieldset>
+					<input alt="Email Address" type="text" name="Email Address" size="25" maxlength="100" value="" placeholder="Enter Your Email..." >
+			        <!--<input alt="Third Party" type="checkbox" checked="checked" value="22697" name="interests" id="receive" />
+			        <input type="hidden" name="OptoutInfo" value="">
+			        <div class="opt-in">Yes, I'd like to receive offers from your partners</div>-->
+			        
+					<input type="submit" value="Sign Up" style="margin-left: 20px;" />
+				      
+
+				</fieldset>
+			</form>
+			<script type="text/javascript">
+				var querystring = window.location.search.substring(1);
+				var vars = querystring.split('&');
+				var subsSuccess = window.location.hash.substr(1)
+		
+				if(subsSuccess == "subscribe-success"){
+					alert('Thank you for subscribing to the Shooting Times Newsletter.');
+				}
+				else if(vars[0] == "errorcode=1" || vars[0] == "errorcode=2" || vars[0] == "errorcode=3" || vars[0] == "errorcode=4" || vars[0] == "errorcode=5" || vars[0] == "errorcode=6" || vars[0] == "errorcode=7" || vars[0] == "errorcode=8" || vars[0] == "errorcode=9" || vars[0] == "errorcode=10" || vars[0] == "errorcode=12"){
+					alert('Other');
+				}	
+		
+			</script>
+
+		
+			<div class="follow" style="margin-top: -8px;">
+            	<div class="follow-us">Follow us:</div>
+                <div class="socials"><a href="https://www.facebook.com/ShootingTimesMag" class="facebook">Facebook</a><a href="http://twitter.com/ShootingTimesUS" class="twitter">Twitter</a><a href="http://www.shootingtimes.com/feed/" class="rss">RSS</a></div>			</div>
+				
+		</div>
+		
+	</div>
+</div>
+
+<div id="page" class="snap-content smooth-menu">
+	<div class="imo-superheader">
+			<div id='superheader'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('superheader'); });
+		</script>
+	</div>
+
+	</div>
+		<div id="imo-tophat">
+	<div class="top-bar">
+		<h2>Guns & Ammo Network</h2>
+		<hr>
+	</div>
+	
+	<div class="network-nav">
+		<ul>
+			<li class="ga"><a href="http://bit.ly/1jz4Hzm"><div></div></a></li>
+			<li class="hg"><a href="http://bit.ly/1RUnwZ5"><div></div></a></li>
+			<li class="st-active active"><div></div></li>
+			<li class="rs"><a href="http://bit.ly/1MSvHF5"><div></div></a></li>
+			<li class="sn"><a href="http://bit.ly/1RUnDnl"><div></div></a></li>
+		</ul>
+	</div>
+
+</div>
+	
+	<div class="hfeed wrapper " data-role="content" role="main">
+	    <div class="layout-frame">
+	        <div id="branding" class="header clearfix" role="banner">
+	
+                <div class="clearfix">
+
+                   <a id="open-left" class="open-menu">open menu</a>
+                    <strong class="logo"><a href="http://www.shootingtimes.com/" title="Shooting Times" rel="home"><img src="http://www.shootingtimes.com/wp-content/themes/shootingtimes/images/logo.png" alt="Shooting Times" /></a></strong>
+                    								<a id="comm-mob-menu" class="user-btn" style="display:none;">
+						                     
+						
+                    					<a href="#" class="open-search jq-open-search">search</a>
+					<div id="subscribe-area" class="widget widget_text header-elements">
+						<div class="subscribe-box">
+						    <div class="clearfix">
+						        <div class="journal">
+						        <img src="http://www.shootingtimes.com/files/2017/02/ST-tabletmag-260x262.png" alt="Subscribe">
+						    </div>
+
+						    <div class="subscribe-now">
+								<span>Temporary Price Reduction!</span>
+								<a href="http://subs.shootingtimes.com/?pkey=IBQ1" target="_blank" class="btn-base" onClick="_gaq.push(['_trackEvent', 'Subscribe', 'Location', 'Header Right']);">Subscribe <span>Now!</span></a>
+								<ul class="subscribe-links">
+							        <li><a href="http://subs.shootingtimes.com/gift" target="_blank">Give a Gift <span>&raquo;</span></a></li>
+							        <li><a href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=STM" target="_blank">Subscriber Services <span>&raquo;</span></a></li>
+							    </ul>
+						    </div>
+						    </div>
+						</div>
+					</div>
+
+                        <div class="h-mdl-widget">
+                            <div class="socials-hold">
+                            	<div class="socials"><a href="https://www.facebook.com/ShootingTimesMag" class="facebook">Facebook</a><a href="http://twitter.com/ShootingTimesUS" class="twitter">Twitter</a><a href="http://www.shootingtimes.com/feed/" class="rss">RSS</a></div>							</div>
+                            <div class="h-search-form">
+                                <form role="search" method="get" id="searchform" action="http://www.shootingtimes.com/" >
+    <div class="search-field"  data-role="fieldcontain"><!-- label class="screen-reader-text" for="s">Search for:</label -->
+    <input type="text" placeholder="Search" name="s" id="s" />
+    <input type="submit" id="searchsubmit" value="Search" />
+    </div>
+    </form>                            </div>
+                        </div>
+                                    </div><!-- #branding -->
+	                	<div class="menu-top-menu-container subscribe-left">
+							<ul class="menu">
+								<li class="menu-item"><a href="http://subs.shootingtimes.com/?pkey=IBQ2" target="_blank">Subscribe!</a></li>
+							</ul>
+						</div>
+					<div class="menu-top-menu-container"><ul id="menu-top-menu-1" class="menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8392"><a href="http://www.shootingtimes.com/video/" >Video</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8391"><a href="http://forums.gunsandammo.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://forums.gunsandammo.com']);">Forums</a></li>
+</ul></div>                <!-- #access -->
+
+                    <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="menu"><li id="nav-menu-item-7454" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/handguns/"  class="menu-link  main-menu-link">Handguns</a></li><li id="nav-menu-item-7452" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/long-guns/"  class="menu-link  main-menu-link">Long Guns</a></li><li id="nav-menu-item-7453" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/ammo/"  class="menu-link  main-menu-link">Ammo</a></li><li id="nav-menu-item-8394" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/optics/"  class="menu-link  main-menu-link">Optics</a></li><li id="nav-menu-item-8393" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/gear-accessories/"  class="menu-link  main-menu-link">Gear</a></li><li id="nav-menu-item-8395" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.shootingtimes.com/gunsmithing/"  class="menu-link  main-menu-link">Gunsmithing</a></li></ul></div>                <!-- #access -->
+				</div><!-- #branding -->
+			        <div class="content-banner-section">
+	        	<div class="mob-mdl-banner">
+						<div id='320_atf'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('320_atf'); });
+		</script>
+	</div>
+
+				</div>
+				<div class="mdl-banner">
+						<div id='leaderboard'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('leaderboard'); });
+		</script>
+	</div>
+
+	<div id='billboard'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('billboard'); });
+		</script>
+	</div>
+
+				</div>
+	        </div>
+                <div id="main" class="main clearfix js-responsive-layout">	<div class="special-features">
+		<ul>
+			<li class="home-featured features">
+				<div class="arrow-right"></div>
+				<div class="feat-post">
+		        	<div class="feat-text">
+		        	<h3>
+			        	Special Features		        	</h3>
+		            </div>
+		        </div>
+			</li>
+						    	<li class='home-featured'>
+			            <div class='feat-post'>
+			                <div class='feat-text'>
+			                    <h3><a href='http://www.shootingtimes.com/?p=8856' onclick='_gaq.push(['_trackEvent','Special Features Article','Compensators: Pressure or Gas?','http://www.shootingtimes.com/?p=8856']);'>Compensators: Pressure or Gas?</a></h3>
+			                </div>
+			            </div>
+			        </li>
+			    			    	<li class='home-featured'>
+			            <div class='feat-post'>
+			                <div class='feat-text'>
+			                    <h3><a href='http://www.shootingtimes.com/?p=9962' onclick='_gaq.push(['_trackEvent','Special Features Article','Ultimate .300 Blackout Ammo Test','http://www.shootingtimes.com/?p=9962']);'>Ultimate .300 Blackout Ammo Test</a></h3>
+			                </div>
+			            </div>
+			        </li>
+			    				</ul>
+</div>
+    <div class="inner-main">
+    			<div class="sidebar-area">
+			<div class="sidebar">
+				<div class="widget_advert-widget">
+						<div id='300_atf'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('300_atf'); });
+		</script>
+	</div>
+
+		
+				</div>
+			</div>
+		    	<div id="sidebar" role="complementary">
+		<ul>
+			<div id="subscribe-form-3" class="widget widget_subscribe-form">
+<!-- Magazine sign up  -->
+<div class="block subscribe-form-block" id="store">
+<!-- <div class="subs-header"><h4>Subscribe & Save!</h4><h4></h4></div> -->
+	<div class="subs-header"><h1>Subscribe & Save!</h1></div>
+    <div class="content">
+    	<div class="mag-cover">
+    		<a href="http://subs.shootingtimes.com"><img src='http://www.shootingtimes.com/files/2017/02/ST-tabletmag-260x262.png'></a>
+			<div class="mag-copy">Temporary Price Reduction!</div>
+			<div class="now-ontablets">Now on Tablets!</div>
+    	</div>
+        <div class="subscribeAdMod">
+            <div class="subscribeAdModContent">
+                				    <form method="GET" action="http://subs.shootingtimes.com" target="_blank" onsubmit="_gaq.push(['_trackEvent', 'Subscribe', 'Location', 'Widget']);">
+			    
+                
+                
+                
+                    <input type="hidden" name="pkey" value="IBQ3" />
+                    <div class="subscribe-row">
+                        <input type="text" class="form-text" name="firstname" placeholder="First Name" />
+                    </div>
+                    <div class="subscribe-row">
+                        <input type="text" class="form-text" name="lastname" placeholder="Last Name" />
+                    </div>
+                    <div class="subscribe-row">
+                        <input type="text" class="form-text" name="address" placeholder="Address" />
+                    </div>
+					<div class="subscribe-row">
+                        <input type="text" class="form-text" name="address2" placeholder="Address 2" />
+                    </div>
+                    <div class="subscribe-row">
+                        <input type="text" class="form-text" name="city" placeholder="City" />
+                    </div>
+
+                    <div class="subscribe-row">
+                        <select id="stateDropDown" name="ship_state">
+							<option value=""> State</option><option value="1" >Alabama</option><option value="2" >Alaska</option><option value="52" >Alberta</option><option value="66" >APO/AFP Americas</option><option value="67" >APO/FPO Europe </option><option value="68" >APO/FPO Pacific</option><option value="3" >Arizona</option><option value="4" >Arkansas</option><option value="53" >British Columbia</option><option value="5" >California</option><option value="6" >Colorado</option><option value="7" >Connecticut</option><option value="8" >Delaware</option><option value="9" >District of Columbia</option><option value="10" >Florida</option><option value="11" >Georgia</option><option value="12" >Hawaii</option><option value="13" >Idaho</option><option value="14" >Illinois</option><option value="15" >Indiana</option><option value="16" >Iowa</option><option value="17" >Kansas</option><option value="18" >Kentucky</option><option value="19" >Louisiana</option><option value="20" >Maine</option><option value="54" >Manitoba</option><option value="21" >Maryland</option><option value="22" >Massachusetts</option><option value="23" >Michigan</option><option value="24" >Minnesota</option><option value="25" >Mississippi</option><option value="26" >Missouri</option><option value="27" >Montana</option><option value="28" >Nebraska</option><option value="29" >Nevada</option><option value="55" >New Brunswick</option><option value="30" >New Hampshire</option><option value="31" >New Jersey</option><option value="32" >New Mexico</option><option value="33" >New York</option><option value="56" >Newfoundland</option><option value="34" >North Carolina</option><option value="35" >North Dakota</option><option value="57" >Northwest Territory</option><option value="58" >Nova Scotia</option><option value="65" >Nunavut</option><option value="36" >Ohio</option><option value="37" >Oklahoma</option><option value="59" >Ontario</option><option value="38" >Oregon</option><option value="39" >Pennsylvania</option><option value="60" >Prince Edward</option><option value="64" >Puerto Rico</option><option value="61" >Quebec</option><option value="40" >Rhode Island</option><option value="62" >Saskatchewan</option><option value="41" >South Carolina</option><option value="42" >South Dakota</option><option value="43" >Tennessee</option><option value="44" >Texas</option><option value="45" >Utah</option><option value="46" >Vermont</option><option value="47" >Virginia</option><option value="48" >Washington</option><option value="49" >West Virginia</option><option value="50" >Wisconsin</option><option value="51" >Wyoming</option><option value="63" >Yukon</option>
+                        </select>
+                        	<input type="hidden" name="ship_country" value="US" />
+                        	<input type="text" class="zipCode form-text" name="zip" placeholder="Zip" />
+                    </div>
+
+                    <div class="subscribe-row">
+                        <input type="text" class="form-text" name="our_email" placeholder="Email" />
+                    </div>
+                    <div class="subscribeButton btn-base">
+                        <input type="submit" value="Subscribe" class="submit-button">
+                    </div>
+                </form>
+
+                <div class="subscribeLinks"> <br clear="all" /> </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div><div id="text-19" class="widget widget_text">			<div class="textwidget"><a href="http://bit.ly/2l57Hog" onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://bit.ly']);" target="_blank"><img src="http://www.gunsandammo.com/files/2016/10/300x600remington-timeline.jpg"></a></div>
+		</div>		</ul>
+	</div>
+<div id="responderfollow"></div><div class="sidebar advert"><div class="widget_advert-widget">	<div id='300_btf'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('300_btf'); });
+		</script>
+	</div>
+
+</div><div class="sidebar">
+        
+</div>
+</div></div>		<div id="primary" class="general">
+            <div id="content" class="general-frame" role="main">
+
+                                    <div id="post-11182" class="post-11182 post type-post status-publish format-standard has-post-thumbnail hentry category-remington-history full-post">
+        <span class="cat-feat-label"><a class="category-name-link" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;Category&#39;,&#39;Remington History&#39;]);" href="/remington-history">Remington History</a></span>    <div class="post-header">
+        <h1 class="entry-title">Remington Timeline: 1987 &#8211; Remington Model 11-87 Autoloading Shotguns</h1>
+                <em class="meta-date-author">by <span class="author-item">Shooting Times Online Editors</span>
+        &nbsp;&nbsp;|&nbsp;&nbsp;August 31st, 2016                        </em>
+        <a class="comment-count" href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/#comments"><span class="dsq-postid" rel="11182 http://www.shootingtimes.com/?p=11182">0</span></a>
+
+    </div>
+                        	
+        	
+    <!-- .entry-header -->
+    <div class="entry-content-holder">
+                <div class="entry-content">
+        	    <div class="sponsor">	<div id='sponsor'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('sponsor'); });
+		</script>
+	</div>
+
+</div>
+
+		
+<!-- AddThis Button Begin -->
+<script type="text/javascript">var addthis_product = 'wpp-261';
+var addthis_config = {"data_track_clickback":true};</script><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4dbf0f0a3dc535ce"></script><ul class="wpsocialite social-buttons small"><li><a href="http://www.facebook.com/sharer.php?u=http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/&amp;locale=en_US&amp;t=Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.facebook.com']);" class="socialite facebook-like" data-lang="en_US" data-href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook.</span></a></li><li><a href="http://twitter.com/share" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" class="socialite twitter-share" data-text="Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns" data-url="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" data-count="horizontal" data-lang="en_US" data-via="" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter.</span></a></li><li><a href="https://plus.google.com/share?url=http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://plus.google.com']);" class="socialite googleplus-one" data-size="medium" data-href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li></ul><p>By the 1980s, Remington had become increasingly aware of the need for a 12-gauge autoloading shotgun that could handle both 2 3/4- and three-inch shells interchangeably. This was particularly important for waterfowling where the greater shell capacity required for larger, steel-shot pellets had dramatically increased the use of three-inch Magnum shotshells.</p>
+<p>To meet this need, Remington introduced a new autoloading shotgun in 1987, the Model 11-87 Premier, calling it “the finest, most versatile 12-gauge autoloading shotgun ever made, by us, or anybody else.” This gun incorporated a new Pressure Compensating Gas System that required no manual adjustment for any 12-gauge shotshells, from light 2 3/4-inch loads to three-inch Magnums. The design of the new Model 11-87 Premier also included a large number of additional internal improvements to provide a “fifty percent increase in overall performance endurance,” including a rust- and corrosion-resistant, stainless-steel magazine tube. Vent-rib barrels were standard on all ll-87s except Deer Guns. Initial variations included:</p>
+<p>Model 11-87 Premier came in standard grade with twenty-six-, twenty-eight-, or thirty-inch, vent-rib barrels including the Rem Choke system for $507. A mirror-image left-hand version came with a twenty-eight-inch barrel for $547.</p>
+<p>Model 11-87 Premier Trap featureda straight-line or Monte Carlo comb trap stock dimensions and thirty-inch trap barrel with interchangeable Rem Chokes in Trap Full, Trap Extra Full, and Trap Super Full constrictions. Stocks had satin finish and Tournament-grade checkering.</p>
+<p>Model 11-87 Premier Skeet was offered in 12 gauge with twenty-six-inch barrels including two Rem Chokes in Skeet and Improved Skeet constrictions. Remington Model 11-87 Premier Skeet and Trap models were designed for optimum performance with 12-gauge target loads and set to handle 2 3/4-inch shells only.</p>
+<p>Model 11-87 SP “Special Purpose” 12-gauge guns utilized a non-reflective wood and metal finish practical for hunting where concealment was a factor. A recoil pad and a detachable, padded camouflage sling were standard. Both twenty-six- and thirty-inch, vent-rib barrels included the Rem Choke system. These guns were discontinued in December 1990. Reference to “SP” indicates wood stock, Special Purpose finish.</p>
+<p>Model 11-87 SP Special Purpose Magnum Deer Guns featured the SP wood and metal finish and padded, camo-style carrying sling with quick-detachable (QD) sling swivels. Barrels were twenty-one inches long and came with rifle sights and Remington’s rifled slug choke. These guns were not designed to function with 12-gauge 2 3/4-inch light field or target loads.</p>
+<div id="attachment_11257" style="width: 658px" class="wp-caption aligncenter"><img class="size-full wp-image-11257" src="http://www.shootingtimes.com/files/2016/08/GAAS-150036-CH8-086.jpg" alt="Remington Model 11-87 Premier SC. (Photo Credit: Remington Archives Photo Collection)" width="648" height="300" /><p class="wp-caption-text">Remington Model 11-87 Premier SC. (Photo Credit: Remington Archives Photo Collection)</p></div>
+<p>Subsequent variations of, or additions to, Model 11-87 shotguns included the following:</p>
+<p><em>Model 11-87 Special Purpose Magnum Cantilever Scope Mount Deer Gun (1989)</em> &#8211; This version came with a twenty-one-inch barrel fitted with Remington’s new cantilever scope-mounting system. Integral scope rings and rifled and Improved Cylinder Rem Chokes were included.</p>
+<p><em>Model 11-87 Premier Skeet and Trap Left-Hand Models (1990)</em> &#8211; These mid-year introductions first appeared in the 1991 catalog.</p>
+<p><em>Model 11-87 Premier 175th Anniversary Limited Edition Commemorative (1991)</em> &#8211; Introduced to commemorate Remington’s 175th Anniversary, this special-editon shotgun featured a twenty-eight-inch, vent-rib, Rem Choke barrel and a roll-engraved left receiver panel stamped Remington’s 1816-1991 emblem.</p>
+<p><em>Model 11-87 SPS Special Purpose Magnum (1991)</em> &#8211; This special hunting gun was available with twenty-six- and twenty-eight-inch Rem Choke barrels.</p>
+<p><em>Model 11-87 SPST (Turkey) Special Purpose Magnum (1991)</em> &#8211; A special gun designed for turkey hunting, this variation had a twenty-one-inch barrel and Turkey Extra Full Rem Choke.</p>
+<p><em>Model 11-87 Premier Sporting Clays (1992)</em> &#8211; This version came with a three-quarter-pound weight reduction from the use of new light-contour barrels and a shortened magazine tube and forend. Its competition-style stock was 3/4 inches longer and 1/4 inch higher at the heel. Shooters had a choice of twenty-six- or twenty-eight-inch barrels with 2 3/4-inch chambers, lengthened forcing cones, and matched Rem Choke tubes in five constrictions. It was supplied with a two-barrel, hard gun case.</p>
+<p><em>Model 11-87 Premier LC “Light Contour” Guns (1992)</em> &#8211; These guns incorporated the new, light-contour Rem Choke barrels on all Premier Field specifications. Also introduced were a left-hand action Premier Field shotgun with twenty-eight-inch barrel and a Model 11-87 Premier fully rifled, cantilever mount Deer Gun with satin-finished stock and twenty-one-inch barrel.</p>
+<p><em>Model 11-87 SPS Camo Guns (1993)</em> &#8211; Two models of camo-colored guns were introduced in 1993. Both models had all exterior portions covered with Mossy Oak Bottomland or Greenleaf camouflage patterns. The Model 11-87 SPS-BG “Big Game” Camo (Bottomland) wore a twenty-one-inch, rifle-sighted, Rem Choke barrel. “SPS”indicated Special Purpose gun with synthetic stock. The Model 11-87 SPS-T Turkey Camo (Greenleaf) had a twenty-one-inch, vent-rib Rem Choke barrel. Camo covering changed to Realtree X-tra Brown in 1997.</p>
+<p><em>Model 11-87 SPS (Synthetic) Deer Gun (1993)</em> &#8211; This variation featured a black matte-finish on all metal parts and on the synthetic stocks and forends and a twenty-one-inch fully rifled, rifle-sighted barrel.</p>
+<p><em>Model 11-87 SPS Cantilever Mount Deer Gun (1994)</em> &#8211; This gun wore a black stock and twenty-one-inch, fully rifled barrel with cantilever mount. Also available was the Model 11-87 SPS Cantilever Mount Rem Choke Deer Gun with black stock and twenty-one-inch barrel with cantilever mount and Rem Choke.</p>
+<p><em>Model 11-87 Premier SC NP (Sporting Clays Nickel Plated) (1997)</em> &#8211; This gun featured a nickel-plated receiver decorated with fine-line engraving; thirty-inch, vent-rib, light-contour barrel; and satin-finished stock. In 1998 a twenty-eight-inch barrel was added.</p>
+<p><em>Model 11-87 SPS-T Camo, NWTF (1998)</em> &#8211; This was a special-edition gun saluting the 25th Anniversary of the National Wild Turkey Federation. It was covered with Mossy Oak Break-Up camo and had a twenty-one-inch, vent-rib, Rem Choke barrel fitted with TRUGLOW fiber optic sights.</p>
+<ul class="wpsocialite social-buttons small"><li><a href="http://www.facebook.com/sharer.php?u=http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/&amp;locale=en_US&amp;t=Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.facebook.com']);" class="socialite facebook-like" data-lang="en_US" data-href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook.</span></a></li><li><a href="http://twitter.com/share" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" class="socialite twitter-share" data-text="Remington Timeline: 1987 - Remington Model 11-87 Autoloading Shotguns" data-url="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" data-count="horizontal" data-lang="en_US" data-via="" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter.</span></a></li><li><a href="https://plus.google.com/share?url=http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://plus.google.com']);" class="socialite googleplus-one" data-size="medium" data-href="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li></ul>                       
+                    </div><!-- .entry-content -->
+                
+        <div id="container">
+        	<div id='fordWidget'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('fordWidget'); });
+		</script>
+	</div>
+
+	    	<div id='e_commerce_widget'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('e_commerce_widget'); });
+		</script>
+	</div>
+
+ 
+        </div>  
+	    		    	
+			    			    <div class="paging-posts paging-single-post">
+			        <div class="jq-single-paging-slider">
+			        
+
+
+    <ul class="slides">
+                <li>
+            <div class="paging-post">
+                <div class="paging-post-inner">
+                                        <div class="paging-image">
+                        <a href="http://www.shootingtimes.com/remington-history/remington-timeline-1959-nylon-66-autoloading-rifle/"><img width="200" height="150" src="http://www.shootingtimes.com/files/2016/08/GAAS-150036-CH8-020-200x150.jpg" class="attachment-index-thumb wp-post-image" alt="GAAS-150036-CH8-020" /></a>
+                    </div>
+                                        <div class="paging-post-holder">
+                        
+                        <h3 class="entry-title">
+                            <a href="http://www.shootingtimes.com/remington-history/remington-timeline-1959-nylon-66-autoloading-rifle/" title="Permalink to Remington Timeline: 1959 &#8211; Nylon 66 Autoloading Rifle" rel="bookmark">
+                            	Remington Timeline: 1959 &#8211; Nylon 66 Autoload...							</a>
+                        </h3>
+                      
+                    </div>
+                </div>
+            </div><!-- #post -->
+        </li>
+                <li>
+            <div class="paging-post">
+                <div class="paging-post-inner">
+                                        <div class="paging-image">
+                        <a href="http://www.shootingtimes.com/gear-accessories/newproducts_rm700lv/"><img width="110" height="75" src="http://www.shootingtimes.com/files/2010/09/strm700lvpromo.jpg" class="attachment-index-thumb wp-post-image" alt="strm700lvpromo" /></a>
+                    </div>
+                                        <div class="paging-post-holder">
+                        
+                        <h3 class="entry-title">
+                            <a href="http://www.shootingtimes.com/gear-accessories/newproducts_rm700lv/" title="Permalink to Remington Model 700 LV SF" rel="bookmark">
+                            	Remington Model 700 LV SF							</a>
+                        </h3>
+                      
+                    </div>
+                </div>
+            </div><!-- #post -->
+        </li>
+                <li>
+            <div class="paging-post">
+                <div class="paging-post-inner">
+                                        <div class="paging-image">
+                        <a href="http://www.shootingtimes.com/long-guns/longgun_reviews_rem_16_0507/"><img width="110" height="75" src="http://www.shootingtimes.com/files/2010/09/strem16psh.jpg" class="attachment-index-thumb wp-post-image" alt="strem16psh" /></a>
+                    </div>
+                                        <div class="paging-post-holder">
+                        
+                        <h3 class="entry-title">
+                            <a href="http://www.shootingtimes.com/long-guns/longgun_reviews_rem_16_0507/" title="Permalink to Sixteen And Still Sweet:Remington&#8217;s 16-Gauge Model 870" rel="bookmark">
+                            	Sixteen And Still Sweet:Remington&#8217;s 16-Gauge...							</a>
+                        </h3>
+                      
+                    </div>
+                </div>
+            </div><!-- #post -->
+        </li>
+                <li>
+            <div class="paging-post">
+                <div class="paging-post-inner">
+                                        <div class="paging-image">
+                        <a href="http://www.shootingtimes.com/long-guns/longgun_reviews_st_remingtonmodel12_200908/"><img width="110" height="75" src="http://www.shootingtimes.com/files/2010/09/st_remingtonmodel12_200908-pl.jpg" class="attachment-index-thumb wp-post-image" alt="st_remingtonmodel12_200908-pl" /></a>
+                    </div>
+                                        <div class="paging-post-holder">
+                        
+                        <h3 class="entry-title">
+                            <a href="http://www.shootingtimes.com/long-guns/longgun_reviews_st_remingtonmodel12_200908/" title="Permalink to Remington’s Model 12" rel="bookmark">
+                            	Remington’s Model 12							</a>
+                        </h3>
+                      
+                    </div>
+                </div>
+            </div><!-- #post -->
+        </li>
+                <li>
+            <div class="paging-post">
+                <div class="paging-post-inner">
+                                        <div class="paging-image">
+                        <a href="http://www.shootingtimes.com/long-guns/longgun_reviews_ga_remmodel760_200903/"><img width="110" height="75" src="http://www.shootingtimes.com/files/2010/09/st_remmodel760_200903-pl.jpg" class="attachment-index-thumb wp-post-image" alt="st_remmodel760_200903-pl" /></a>
+                    </div>
+                                        <div class="paging-post-holder">
+                        
+                        <h3 class="entry-title">
+                            <a href="http://www.shootingtimes.com/long-guns/longgun_reviews_ga_remmodel760_200903/" title="Permalink to Remington&#8217;s Model 760 GameMaster" rel="bookmark">
+                            	Remington&#8217;s Model 760 GameMaster							</a>
+                        </h3>
+                      
+                    </div>
+                </div>
+            </div><!-- #post -->
+        </li>
+                </ul>
+
+
+			        </div>
+			    </div>
+		    	    		    	<!-- future promotional area -->
+ 
+			<div class="hr mobile-element"></div>
+	    <div class="entry-meta">
+	        	       
+	               </div><!-- .entry-meta -->
+	</div><!-- #post -->
+                    <div id="comments" class="post-comments-area">
+						<div id="load-comments" class="show-comments" data-shortname="shootingtimesmag">
+							<span class="show-comm-1">Load Comments ( </span><span id="spandisqus" class="disqus-comment-count" data-disqus-url="http://www.shootingtimes.com/remington-history/remington-timeline-1987-remington-model-11-87-autoloading-shotguns/"></span><span class="show-comm-2">)</span>
+						</div>
+						<div id="disqus_thread"></div>
+                    </div>
+
+                    <div class="hr"></div>
+                    	<div class="foot-social clearfix">
+		<strong class="social-title">Like us on Facebook to <span>stay updated !</span></strong>
+		<div class="fb-like" data-href="https://www.facebook.com/ShootingTimesMag" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+		<div class="socials"><a href="https://www.facebook.com/ShootingTimesMag" class="facebook">Facebook</a><a href="http://twitter.com/ShootingTimesUS" class="twitter">Twitter</a><a href="http://www.shootingtimes.com/feed/" class="rss">RSS</a></div>	</div>
+					<a href="#" class="back-top jq-go-top">back to top</a>
+                
+            </div><!-- #content -->
+        </div><!-- #primary -->
+
+    </div>
+<!-- NOT A microsite  -->			</div><!-- #main -->
+			<div class="content-banner-section footer-728">
+	        	<div class="mdl-banner">
+					 	<div id='728_btf'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('728_btf'); });
+		</script>
+	</div>
+
+				</div>
+			</div>
+		</div><!-- .layout-frame -->
+
+		<div id="footer" class="footer" role="contentinfo">
+
+		        <div class="intermedia">
+		            <div class="frame">
+		                <h4>Outdoor Sportsman Group Network</h4>
+		                <div class="foot-columns">
+		                    <div class="f-two-columns">
+		                        <div class="column">
+		                            <h5>Hunt</h5>
+		                            <ul class="intermedia-list">
+		                                <li class="f-p-bowhunting"><a target="_blank" href="http://www.bowhuntingmag.com/"><span>Petersen's Bowhunting</span></a></li>
+		                                <li class="f-na-whitetaile"><a target="_blank" href="http://www.northamericanwhitetail.com/"><span>North American Whitetail</span></a></li>
+		                                <li class="f-gun-dog"><a target="_blank" href="http://www.gundogmag.com/"><span>Gun Dog</span></a></li>
+		                                <li class="f-wildfowl"><a target="_blank" href="http://www.wildfowlmag.com/"><span>Wildfowl</span></a></li>
+		                                <li class="f-bowhunter"><a target="_blank" href="http://www.bowhunter.com/"><span>Bowhunter</span></a></li>
+		                                <li class="f-hunting"><a target="_blank" href="http://www.petersenshunting.com/"><span>Petersen's Hunting</span></a></li>
+		                            </ul>
+		                        </div>
+		                        <div class="column">
+		                            <h5>Shoot</h5>
+		                            <ul class="intermedia-list">
+		                                <li class="f-handguns"><a target="_blank" href="http://www.handgunsmag.com/"><span>Handguns</span></a></li>
+		                                <li class="f-rifleshooter"><a target="_blank" href="http://www.rifleshootermag.com/"><span>Rifleshooter</span></a></li>
+		                                <li class="f-shooting-times"><a target="_blank" href="http://www.shootingtimes.com/"><span>Shooting Times</span></a></li>
+		                                <li class="f-firearms-news"><a target="_blank" href="http://www.shotgunnews.com/"><span>Firearms News</span></a></li>
+		                                <li class="f-guns-and-ammo"><a target="_blank" href="http://www.gunsandammo.com/"><span>Guns &amp; Ammo</span></a></li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		                    <div class="f-two-columns">
+		                        <div class="column column3">
+		                            <h5>Fish</h5>
+		                            <ul class="intermedia-list">
+		                                <li class="f-in-fisherman"><a href="http://www.in-fisherman.com" target="_blank"><span>In-Fisherman</span></a></li>
+		                                <li class="f-fly-fisherman"><a target="_blank" href="http://www.flyfisherman.com"><span>Fly Fisherman</span></a></li>
+		                                <li class="f-florida-sportsman"><a target="_blank" href="http://www.floridasportsman.com/"><span>Florida Sportsman</span></a></li>
+		                                <li class="f-bass-fan"><a target="_blank" href="http://www.bassfan.com/"><span>BassFan</span></a></li>
+		                            </ul>
+		                        </div>
+		                        <div class="column column4">
+		                            <h5>TV & More</h5>
+		                            <ul class="intermedia-list">
+		                            	<li class="f-outdoor-channel"><a target="_blank" href="http://www.outdoorchannel.com/"><span>Outdoor Channel</span></a></li>
+		                            	<li class="f-sportsman-ch"><a target="_blank" href="http://www.thesportsmanchannel.com/"><span>The Sportsman Channel</span></a></li>
+		                            	<li class="f-wfn"><a target="_blank" href="http://www.worldfishingnetwork.com/"><span>World Fishing Network</span></a></li>
+		                                <li class="f-game-and-fish"><a target="_blank" href="http://www.gameandfishmag.com/"><span>Game &amp; Fish</span></a></li>
+		                                <li class="f-imo-store" style="display:none;"><a target="_blank" href="http://store.imoutdoors.com/"><span>The IMO Store</span></a></li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		                </div>
+
+		            </div>
+		        </div>
+		        <div class="f-nav-section clearfix">
+		            <ul class="foot-nav">
+		                <li><a href="http://www.imoutdoors.com/" target="_blank">ABOUT</a></li>
+		                <li><a href="http://www.imoutdoors.com/" target="_blank">ADVERTISE</a></li>
+		                <li><a href="http://www.imoutdoors.com/about/contact" target="_blank">CONTACT</a></li>
+		                <li><a href="http://www.imoutdoors.com/about/careers" target="_blank">CAREERS</a></li>
+						<li><a href="http://www.imoutdoors.com/about/privacy" target="_blank">PRIVACY POLICY</a></li>
+		                <!--<li class="mobile-element-320"><a href="#">SPONSORSHIP/ADVERTISING</a></li>
+		                <li class="mobile-element-320"><a href="#">TERMS OF USE</a></li>
+		                <li class="mobile-element-320"><a href="#">LINK TO US</a></li>
+		            </ul>
+		            <a href="#" class="f-single-link">Conservation Partners</a>-->
+		        </div>
+		        <div class="copyright-section clearfix">
+		            <div class="copyright">
+		                <p>&copy; 2017 Outdoor Sportsman Group. All Rights Reserved</p>
+		            </div>
+		        </div>
+
+			</div><!-- #footer -->
+		</div><!-- .wrapper -->
+	</div><!-- #page -->
+	
+
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/jquery.tipTip.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/breakpoints.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/ezmark/js/jquery.ezmark.min.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/classie.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/helper.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/Smart-jQuery-Brightcove-Video-Plugin/jquery.brightcove-video.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/video-portal.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/script.js"></script>
+    <script type="text/javascript" src="http://www.shootingtimes.com/wp-content/themes/shootingtimes/js/script.js"></script>
+    <link rel="STYLESHEET" type="text/css" href="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/js/plugins/ezmark/css/ezmark.css">
+	<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+
+	<!-- ngg_resource_manager_marker --><script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/wpsocialite/Socialite/socialite.min.js?ver=2.0'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/wpsocialite/wpsocialite.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.shootingtimes.com/wp-includes/js/comment-reply.min.js?ver=4.1.1'></script>
+    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'shootingtimesmag';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+
+<!-- AddThis Button Begin -->
+<script type="text/javascript">var addthis_product = 'wpp-261';
+var addthis_config = {"data_track_clickback":true};</script><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4dbf0f0a3dc535ce"></script><script type='text/javascript' src='http://www.shootingtimes.com/wp-content/plugins/shot-show-cross-site-feed/ss-shoot-cross-site-feed-widget.js?ver=4.1.1'></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+					});
+		function refresh_news_widget(id, speed) {
+			var data = {
+				action: 'news_widget_refresh',
+				id: id
+			};
+
+			jQuery.post('http://www.shootingtimes.com/wp-admin/admin-ajax.php', data, function(response) {
+				if(response == '') return;
+				jQuery('#' + data.id).replaceWith(response);
+				setTimeout(function() {
+					refresh_news_widget(id, speed);
+				}, speed);
+			});
+		}
+		</script>
+				<script type="text/javascript">
+		jQuery(document).ready(function($) {
+					});
+		function refresh_news_widget(id, speed) {
+			var data = {
+				action: 'news_widget_refresh',
+				id: id
+			};
+
+			jQuery.post('http://www.shootingtimes.com/wp-admin/admin-ajax.php', data, function(response) {
+				if(response == '') return;
+				jQuery('#' + data.id).replaceWith(response);
+				setTimeout(function() {
+					refresh_news_widget(id, speed);
+				}, speed);
+			});
+		}
+		</script>
+		
+
+<div id="subs_popinst" style="display:none;">
+<div class="subsmodalback">
+	<div class="subs_popinst_close"><img src="http://www.shootingtimes.com/wp-content/themes/imo-mags-parent/images/close_popup.png" /></div>
+	<div class="subsmodaltitle"><strong>LIKE WHAT YOU'RE READING?</strong></div>
+	<div class="subsmodaloffer">Get 12 issues for the low price of <strong>just $8!</strong></div>
+	<div class="subsmodalcover"><img src="http://securesubs.osgimedia.com/images/covers/com.imo.stmp.170300coverth.png" /></div>
+	<div class="subsmodaltriangle-container"><div class="subsmodaltriangle"></div></div>
+	<div class="subsmodalbtnarea">    <div class="subsmodalbtn" id="subsmodalbtn">Subscribe!    </div>  </div>
+</div>
+</div><!-- close subs_popinst -->
+
+<script type="text/javascript">Socialite.setup({facebook:{lang:'en_US',appId:null},twitter:{lang:'en'},googleplus:{lang:'en'},vkontakte:{apiId:''}});</script>		<div id='teads'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('teads'); });
+		</script>
+	</div>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"270f81f341","applicationID":"2667127","transactionName":"MQFRYxAHXBZXBkIIDghLclQWD10LGRZfDwYKAQ==","queueTime":0,"applicationTime":677,"atts":"HUZSFVgdTxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

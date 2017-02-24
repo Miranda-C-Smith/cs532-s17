@@ -1,0 +1,4856 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+
+<head>
+    <title>네이버TV</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    
+
+
+
+
+
+
+
+
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    
+    <meta name="twitter:image" content="http://tvcast2.phinf.naver.net/20170206_200/tkas8_14863749645050MCYK_JPEG/cff28TUAON78i4_XnxfCSgdPkA_rmcvideo_480P_854_1024_128_07.jpg?type=f880_495_s">
+    
+    
+    <meta property="al:android:url" content="naverplayer://vod_play?minAppVersion=1600&amp;schemeVersion=2&amp;clipNo=1387284">
+    <meta property="al:android:app_name" content="Naver TV">
+    <meta property="al:android:package" content="com.nhn.android.naverplayer">
+    <meta property="al:web:url" content="http://tv.naver.com/v/1387284">
+    
+
+    <meta property="fb:admins" content="100012287952710" />
+    <meta property="fb:app_id" content="232491033870086" />
+
+    <meta property="og:url" content='http://tv.naver.com/v/1387284'>
+    <meta property="og:title" content="우주의 별이 15회 - 네번째 미련">
+    <meta property="og:description" content="세가지색 판타지 - 생동성 연애 | [15세 이상 관람가] 
+
+MBC &times; NAVER TV 콜라보 드라마 &#39;세가지색 판타지&#39; 
+시공초월 감각 로맨스 &lt;우주의 별이&gt; 
+
+매주 월~금요일 밤 11시 59분, 네이버TV에서 새로운 에피소드가 공개됩니다! 
+MBC에서는 매주 목요일 밤 11시 10분에 시청하실 수 있습니다. 
+
+&lt;우주의 별이&gt;는 V LIVE를 통해 미주 및 아시아 일부 지역을 제외한 전세계 133개국에서 시청 가능합니다.">
+    
+    <meta property="og:type" content='video'>
+    
+
+    
+    
+    
+    <meta property="og:video:url" content='https://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=19F889967368A409A0B9C2262953FCCA04AD&outKey=V123cc27d64241c29abf86b50f7eeb131bd20c7632a676094c3206b50f7eeb131bd20&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white'>
+    <meta property="og:video:secure_url" content='https://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=19F889967368A409A0B9C2262953FCCA04AD&outKey=V123cc27d64241c29abf86b50f7eeb131bd20c7632a676094c3206b50f7eeb131bd20&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white'>
+    <meta property="og:video:type" content='text/html'>
+    <meta property="og:video:width" content='1280'>
+    <meta property="og:video:height" content='720'>
+    
+    <meta property="og:video:url" content='https://sstatic-g.rmcnmv.naver.net/resources/flash/NVP_web_player_container.swf?vid=19F889967368A409A0B9C2262953FCCA04AD&outKey=V123cc27d64241c29abf86b50f7eeb131bd20c7632a676094c3206b50f7eeb131bd20&controlBarMovable=true&isAutoPlay=true'>
+    <meta property="og:video:secure_url" content='https://sstatic-g.rmcnmv.naver.net/resources/flash/NVP_web_player_container.swf?vid=19F889967368A409A0B9C2262953FCCA04AD&outKey=V123cc27d64241c29abf86b50f7eeb131bd20c7632a676094c3206b50f7eeb131bd20&controlBarMovable=true&isAutoPlay=true'>
+    <meta property="og:video:type" content='application/x-shockwave-flash'>
+    <meta property="og:video:width" content='1280'>
+    <meta property="og:video:height" content='720'>
+    
+    
+    <meta property="og:video:tag" content='수호'>
+    
+    <meta property="og:video:tag" content='지우'>
+    
+    <meta property="og:video:tag" content='신현수'>
+    
+    <meta property="og:video:tag" content='해령'>
+    
+    <meta property="og:video:tag" content='우주'>
+    
+    <meta property="og:video:tag" content='별이'>
+    
+    <meta property="og:video:tag" content='구세주'>
+    
+    <meta property="og:video:tag" content='연소리'>
+    
+    <meta property="og:video:tag" content='키스'>
+    
+    <meta property="og:video:tag" content='고백'>
+    
+    <meta property="og:video:tag" content='데이트'>
+    
+    
+    
+
+    
+    <meta property="og:image" content='http://tvcast2.phinf.naver.net/20170206_200/tkas8_14863749645050MCYK_JPEG/cff28TUAON78i4_XnxfCSgdPkA_rmcvideo_480P_854_1024_128_07.jpg?type=f880_495'>
+    
+    
+    <meta property="og:article:author" content="세가지색 판타지 - 생동성 연애">
+    
+    
+    <meta property="og:article:author:image" content="http://tvcast1.phinf.naver.net/20170213_262/apjEI_1486956090909xsRwa_JPEG/1486956090887.jpg">
+    
+    
+    <meta property="naver:video:type" content="rmc">
+    <meta property="naver:video:id" content="19F889967368A409A0B9C2262953FCCA04AD">
+    
+
+
+
+
+    <link rel="stylesheet" type="text/css" href='/resources/release/css/tvcast_20170209060108.css'  />
+    <link rel="stylesheet" type="text/css" href='/resources/release/css/contest_20170209060108.css'  />
+    <script type="text/javascript" src="http://img.tvcast.naver.net/pc/js/jindo/jindo.desktop.2_10_0.20160609.min.js"></script>
+    <script type="text/javascript" src='/resources/release/js/clickcr_20170209060108.js'></script>
+    <script type="text/javascript" src='/resources/release/js/tvcast.Common_20170209060108.js'></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src='/resources/release/js/respond/respond.src_20170209060108.js'></script>
+    <![endif]-->
+</head>
+
+
+
+
+
+
+
+
+<body class="    ">
+<div id="u_skip">
+    <a href="#aside" onclick="document.getElementById('aside').tabIndex=-1;document.getElementById('aside').focus();return false;"><span>메인 메뉴로 바로가기</span></a>
+    <a href="#container" id="gnb_goContent" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>본문으로 바로가기</span></a>
+</div>
+<div id="wrap" style="padding-left: 180px;">
+
+
+
+
+
+
+
+
+
+<div id="header">
+    <iframe frameborder="0" scrolling="no" src="about:blank" style="position:absolute;left:0;top:0;width:100%;height:55px;border:none;vertical-align:bottom" title="헤더"></iframe>
+	<div class="header_bg"></div>
+    <div class="header_wrap">
+        <div class="header_content">
+            <h1 class="head_logo">
+                <a href="http://tv.naver.com" class="logo_navertv" onclick="clickcr(this, 'STA.tvcastlogo', '', '', event)" title="NAVERTV">NAVERTV</a>
+            </h1>
+            <div class="head_info">
+                <!-- gnb -->
+                <div class="gnb_wrap">
+                    <div id="gnb">
+                    </div>
+                </div>
+                <!-- //gnb -->
+            </div>
+            <div class="head_search">
+                <!-- search -->
+                <div class="search">
+                    <form id="searchForm">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="input_wrap">
+                                <span class="ipt_srch">
+                                    <label for="searchQuery" class="blind">검색어 입력</label>
+                                    <input id="searchQuery" class="" name="searchQuery" value="" type="text" title="검색어를 입력하세요" style="width:100%" autocomplete="off">
+                                    <!-- TODO : 이미지 경로 수정 필요 -->
+                                    <span class="auto_tx"><a href="#" onclick="return false;" tabindex="2" title="자동완성 펼치기"><img src="http://img.tvcast.naver.net/pc/img/srch_arrow_down4.png" width="5" height="3" id="acButton" title="자동완성 펼치기" alt="자동완성 펼치기"></a></span>
+                                </span>
+                                <a href="javascript:;" tabindex="3" title="검색" id="searchButton" class="btn_search">검색</a>
+
+
+                                <div class="auto_tx_area ly_atcmp wrap" id="acView" style="display:none;">
+                                    <iframe frameborder="0" scrolling="no" src="about:blank" style="position:absolute;left:0;top:0;width:100%;height:100%;border:none;vertical-align:bottom" title="검색폼"></iframe>
+                                    <div class="auto_txt words">
+                                        <ul class="_resultBox">
+                                            <li><a href="#" class="atcmp_keyword" onclick="return false;" title=""><span class="atcmp_keyword_txt">@txt@</span></a></li>
+                                        </ul>
+                                        <ul class="_resultBox">
+                                            <li><a href="#" class="atcmp_keyword" onclick="return false;" title=""><span class="atcmp_keyword_txt">@txt@</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <p class="at_alert _alert" style="display:none;">자동완성 기능이 활성화되었습니다.</p>
+                                    <div class="auto_tx_foorer _footer">
+                                        <a href="#" class="all_result _search" onclick="return false;">전체 검색 결과보기</a>
+                                        <p class="auto_tx_etc">
+                                            <a href="#" class="clse _unuse_btn" onclick="return false;">자동완성 끄기</a>
+                                        </p>
+                                        <img src="http://img.tvcast.naver.net/pc/img/img_atcmp.png" width="268" height="28" class="help _use_guide" style="display:none;position:absolute;bottom:25px;right:4px" alt="기능을 다시 켤 때는 검색창 우측 아이콘을 클릭하세요">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- //search -->
+
+                <div class="link_txt">
+                    <span id="gnbBannerArea" class="txt"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var ghtGnb = {
+		sRequestUrl: 'http://ac.tvcast.naver.com/ac',
+		sAutoComplete: '/resources/release/js/autocomplete/nhn.Autocomplete_20170209060108.js'
+	};
+</script>
+
+
+
+
+
+
+
+
+
+
+<div id="aside" class="side_menu" style="left: 0px;">
+    <iframe frameborder="0" scrolling="no" src="about:blank" style="position:absolute;left:0;top:0;width:100%;height:100%;border:none;vertical-align:bottom" title="왼쪽 메뉴"></iframe>
+    <div class="aside_wrap _sideMenu">
+        <a href="javascript:;" class="btn_folding open" id="menuButton" style="display: none;">
+            <iframe frameborder="0" scrolling="no" src="about:blank" style="position:absolute;left:0;top:6px;height:38px;border:none;vertical-align:bottom" title="메뉴접기 버튼"></iframe>
+            <span>메뉴 접기</span>
+        </a>
+        <div id="menuScrollBox" class="scrollbar">
+            <div class="scrollbar-box">
+                <div class="scrollbar-content">
+                    <div class="menu_top">
+                        <ul>
+                        	<li>
+                        		<a href="http://tv.naver.com/" onClick="clickcr(this, 'mnu.home', '', '', event)">홈</a>
+                        	</li>
+                        	<li>
+	                            <a href="http://tv.naver.com/r/" onClick="clickcr(this, 'mnu.top100', '', '', event)">랭킹</a>
+	                        </li>
+                            <li>
+                                <a href="http://tv.naver.com/t/" onClick="clickcr(this, 'mnu.tvp', '', '', event)">TV방송</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu_theme _exclusiveMenu" id="brandArea">
+                        <h2><a href="/p/webdrama" class="menu_tit">테마<em class="ic ic_new">NEW</em></a></h2>
+                        <ul class="menu _brand" >
+                        </ul>
+                        <a href="javascript:;" class="btn_fold _click" data-event="foldExclusiveMenu">
+                            <span class="_exclusiveMenuFoldState">접기</span>
+                            <em class="bu"></em></a>
+                        </ul>
+                    </div>
+					
+					<div class="menu_ch">
+						<h2 class="menu_tit">MY</h2>
+						<div id="myArea" data-login="false">
+							
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="menu_noresult">
+		<p>관심있는 채널을 <em class="sub">구독</em>하여<br>업데이트 동영상을 받아보세요.</p>
+		<a href="/ch" class="btn_src" onClick="clickcr(this, 'mnu.watch', '', '', event)">
+			<span>채널 탐색하기</span>
+		</a>
+	</div>
+
+
+						</div>
+					</div>
+
+                    <div id="smrBrandArea" class="menu_smr">
+                        <h2 class="menu_tit">방송관</h2>
+                        <ul class="menu _smrBrand"></ul>
+                        <div class="etc">
+							<ul class="menu">
+								<li>
+									<a href="/s/vingo" onClick="clickcr(this, 'mnu.vingo', '', '', event)"><em class="ic_vingo"><img src="http://img.tvcast.naver.net/pc/img/exclusive/ic_vingo4.png" width="67" height="10" alt="TVING TV"></em>실시간 무료</a>
+								</li>
+							</ul>
+						</div>
+                    </div>
+
+                    <div class="menu_bottom">
+                        <ul class="menu">
+                            <li>
+                                <a href="http://tv.naver.com/h/livecenter" onClick="clickcr(this, 'mnu.livetb', '', '', event)">생중계 일정표</a>
+                            </li>
+                            <li>
+                                <a href="/recommend/playlist" onClick="clickcr(this, 'mnu.rcmpl', '', '', event)">추천 재생목록</a>
+                            </li>
+                            <li>
+                                <a href="/play/" onClick="clickcr(this, 'mnu.playleague', '', '', event)">플레이리그</a>
+                            </li>
+                            <li>
+                                <a href="http://nstore.naver.com/broadcasting/home.nhn" onClick="clickcr(this, 'mnu.tvlink', '', '', event)" target="_blank">N스토어<em class="ic ic_bu"></em></a>
+                            </li>
+                            <li>
+                                <a href="/p/notice" onClick="clickcr(this, 'mnu.attention', '', '', event)">공지사항</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 배너영역 -->
+                    <div class="menu_da">
+                        <!-- <a href="/s/contest/webanichallenge/clip" style="display:none;"><img src="http://img.tvcast.naver.net/pc/img/special/contest/da_animation2.jpg" width="138" height="70" alt="웹애니메이션 챌린지 총 상금 1천만원의 기회"></a> -->
+                        <a href="/play/" style="display:none;"><img src="http://img.tvcast.naver.net/pc/img/playleague/da_play.jpg" width="138" height="70" alt="동영상을 쉽고 간단하게 즐길 수 있는 '플레이리그'에서 놀자!"></a>
+                        <a href="http://campaign.naver.com/navertv/" target="_blank" style="display:none;"><img src="http://img.tvcast.naver.net/pc/img/special/navertv_campaign.jpg" width="138" height="70" alt="언제 어디서나 바로 지금 PLAY, NAVERTV"></a>
+                        
+                    </div>
+                    <!-- //배너영역 -->
+                </div>
+            </div>
+
+            <div id="menuScrollBar" class="scrollbar-v" style="float: right;">
+                <div class="scrollbar-button-up"></div>
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb">
+                        <img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-head" alt="scrollbar-head"/>
+                        <img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-body" alt="scrollbar-body"/>
+                        <img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-foot" alt="scrollbar-foot"/>
+                    </div>
+                </div>
+                <div class="scrollbar-button-down"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="container" class="end_container" role="main">
+
+
+<div id="topChannelInfo" class="end_title" >
+    <div class="info_wrap">
+    
+        
+        
+        
+        
+            
+
+
+
+
+
+
+
+
+<!-- 채널 타이틀 -->
+<div class="ch_tit">
+    <a href="http://tv.naver.com/3color" class="ic_ch" onclick="clickcr(this, 'chi.title', '', '', null)">
+         <img
+           src="http://tvcast1.phinf.naver.net/20170213_262/apjEI_1486956090909xsRwa_JPEG/1486956090887.jpg?type=round_96_96"
+           onerror='this.src="http://tvcast2.phinf.naver.net/20161227_13/photoinfra_1482831946369BANUd_PNG/default_round_ch.png?type=round_96_96"'
+           alt="세가지색 판타지 - 생동성 연애"
+           width="31" height="31">
+    	 <span class="mask"></span>
+   	</a>
+   	<h2>
+    	<a href="http://tv.naver.com/3color" onclick="clickcr(this, 'chi.title', '', '', null)" title="세가지색 판타지 - 생동성 연애">
+		세가지색 판타지 - 생동성 연애
+		</a>
+    </h2>
+</div>
+
+<!-- 소셜링크 -->
+<div class="ch_sp">
+    <a href="javascript:;" class="_subscribe btn_subscribe" data-channel-id="3color" data-subscription-count="-1" data-area-code="chi" style="display:none">
+		<span class="txt"><em class="ic"></em>구독</span>
+	</a>
+    <div class="u_likeit_list_module">
+        <a href="javascript:;" class="u_likeit_list_btn u_type_bright" title="채널 좋아요" data-sid="TVCAST_CH" data-did="TVCAST" data-cid="3color" data-likeit="0">
+     	</a>
+	</div>
+   	
+</div>
+<span class="brod_inf">
+	
+		
+		
+		
+			
+		
+	
+	<span class="sub">구독 26,305명</span>
+</span>
+
+ 
+        
+        
+        
+        
+
+        
+    
+    
+   </div>
+</div>
+    
+
+<div class="da_top" id="da_top">
+    <script type="text/javascript" src="http://ad.naver.com/adshow?unit=1237A&cat=DRAMA&chl=3color_universe"></script>
+</div>
+
+
+
+
+<!-- 플레이어 -->
+<div class="player">
+    <div class="player_container">
+        <!-- 플레이어 영역 -->
+        <div class="video_player _player">
+            <div class="video_area">
+                <div id="playerArea" class="video_content">
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+    
+    	
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/resources/release/css/player/vod_guide_20170209060108.css"/>
+
+
+
+
+
+
+    
+        
+        
+            
+            
+            
+            
+            
+        
+    
+
+    
+        
+    
+
+    <div id="object" style="display:none;"></div>
+    <div id="download" style="display:none;"></div>
+
+    
+
+    
+    <div id="player" style="width:100%; height:100%"></div>
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+    
+        
+            
+            
+            <script type="text/javascript" src="http://static-g.rmcnmv.naver.net/resources/js/naver_web_player_2010_pc_min.js?20170221"></script>
+            
+        
+        
+            
+        
+    
+
+    
+    
+
+    <script type="text/javascript" src="/resources/release/js/player/tvcast.PlayLogger_20170209060108.js"></script>
+    <script type="text/javascript" src="/resources/release/js/player/tvcast.pc.PlayTimeLogger_20170209060108.js"></script>
+    <script type="text/javascript" src="/resources/release/js/tvcast.pc.MyPage_20170209060108.js"></script>
+
+    
+
+
+    <script type="text/javascript">
+        var nGapTime = 1487647260690 - new Date().getTime(),
+        isGlobalExpand = !!'';
+        var ghtRmcPlayerControlOption = {
+            visible : {
+                logo : false
+                , expand : true
+                , scrap : false
+            }
+            , clicked : {
+                expand : !!''
+            }
+        };
+        var nowPlayClipNo = "1387284";
+        var isMT = Boolean(false);
+        var isUHD = Boolean(false);
+        var TechType = nhn.rmcnmv.TechType.AUTO;
+        
+        
+			
+        
+			
+        
+
+        if (isMT) {
+            TechType = nhn.rmcnmv.TechType.FLASH;
+        }
+
+        
+
+        var NFM_cookie = jindo.$Cookie().get("NFM_TV");
+        var rmcPlayer = new nhn.rmcnmv.RMCVideoPlayer("19F889967368A409A0B9C2262953FCCA04AD", "V123e682fe0336d18bbd16b50f7eeb131bd204315f5229e9c62fecc7d64241c29abf86b50f7eeb131bd20", 0, 0, "2010", TechType, "http://serviceapi.rmcnmv.naver.com");
+        rmcPlayer.properties.wmode = "window";
+        
+        
+        
+        rmcPlayer.properties.autoPlay = "true";
+        
+        
+
+
+        rmcPlayer.properties.skinName = "tvcast_white";
+        rmcPlayer.properties.coverImageURL = 'http://tvcast2.phinf.naver.net/20170206_200/tkas8_14863749645050MCYK_JPEG/cff28TUAON78i4_XnxfCSgdPkA_rmcvideo_480P_854_1024_128_07.jpg?type=mfullfill_880_495';
+        rmcPlayer.properties.isResizableCoverImage = true;
+        rmcPlayer.properties.hasRelativeMovie = true;
+        rmcPlayer.properties.isP2P = "false";
+        
+        rmcPlayer.properties.callbackHandler = "initCallbackHandler";
+        rmcPlayer.properties.cassiodServiceID = "2010";
+        rmcPlayer.properties.controlBarMovable = true;
+        rmcPlayer.properties.nsc = "tvcast.end";
+        rmcPlayer.properties.jsCallable="true";
+        rmcPlayer.properties.apiAd="http://ad.nmv.naver.com/ad";
+        rmcPlayer.properties.protocol="rtmpe";
+        rmcPlayer.properties.controls = ghtRmcPlayerControlOption;
+        rmcPlayer.properties.advertiseInfo='[{"adSystem":"AMS"}]';
+        rmcPlayer.properties.advertiseUrl="http://ams.rmcnmv.naver.com/item/create/2010/NAVER?ams_ctgr=DRAMA&ams_chnl=3color_universe&ams_videoId=19F889967368A409A0B9C2262953FCCA04AD&ams_cp=1&navervodtype=RMC&unit=1103A&cp=1&st=2885&chl=3color_universe&cat=DRAMA&cl=1387284&svc=tvcast&cc=N&ctry=KR&v_theme=NA&ams_rule=%5B%7B%22type%22%3A%22pre%22%2C%22exposure%22%3Atrue%2C%22replayExposure%22%3Atrue%7D%2C%7B%22type%22%3A%22mid%22%2C%22exposure%22%3Afalse%2C%22replayExposure%22%3Afalse%7D%2C%7B%22type%22%3A%22post%22%2C%22exposure%22%3Afalse%2C%22replayExposure%22%3Afalse%7D%2C%7B%22type%22%3A%22overlay%22%2C%22exposure%22%3Afalse%2C%22timeTable%22%3A%22%22%7D%5D";
+        rmcPlayer.properties.vendor = 'NAVER';
+        rmcPlayer.properties.countryCode = 'KR';
+        rmcPlayer.properties.interfaceLang = 'ko_KR';
+
+        var milliTime = parseInt((new Date().getTime() - nGapTime)/1000, 10);
+        for ( var i = milliTime + 2, nLen = milliTime - 3 ; i > nLen ; i-- ){
+            try{
+                if( window.localStorage.getItem("searchTime") == i ){
+                    rmcPlayer.properties.continuedInfo = window.localStorage.getItem("contInfo");
+                    window.localStorage.removeItem("contInfo");
+                    window.localStorage.removeItem("searchTime");
+                    break;
+                }
+            }catch (e) {}
+        }
+        
+
+
+        
+        if (false) {
+            if(false) {
+                rmcPlayer.setNotAllowPlay('해당 기기에선 재생이 지원되지 않습니다.<br/>양해 부탁드리며 PC에서 감상해주시기 바랍니다.');
+            }
+        }
+
+        
+        rmcPlayer.properties.wmode = "window";
+        rmcPlayer.displayRMCPlayer(document.getElementById("player"));
+        
+
+        
+        if  (false) {
+            var videoPlayer = new VideoPlayer(rmcPlayer, {
+                p2p : true,
+                isGlobal : true,
+                playerLayer : "player",
+                installLayer : "install",
+                notSupportedLayer : "notSupported",
+                macOsNotSupportedLayer : "macOsNotSupported",
+                globalNotSupportedLayer : "globalNotSupported",
+                manualInstallBtn : "manualInstall",
+                cancelInstallBtn : "cancelInstall"
+            });
+
+            videoPlayer.init();
+
+            window.onNVPCassiodRequired = function() {
+                videoPlayer.switchToP2P();
+            }
+
+            window.clickAdvertisement = function(param) {
+                window.open(param);
+            }
+        }
+
+        function playRelationVideo(clipNo) {
+//            if(arguments && arguments[2]){
+//                playOtherClip(clipNo);
+//            }else{
+            location.href = "http://tv.naver.com/v/" + clipNo;
+//            }
+        }
+
+        function diagnosisPopup() {
+            window.open('/special/p2p/help/cassiodDiagnosis','cassiodDiagnosisPopup','width=620,height=502, scrollbars=yes, resizable=yes');
+        }
+
+        function helpPopup() {
+            window.open('https://help.naver.com/support/contents/contents.nhn?serviceNo=705&categoryNo=6030','cassiodHelpPopup','width=1008,height=800, scrollbars=yes, resizable=yes');
+        }
+
+        
+
+        var playLoggerOptions = {
+            apiDomain : 'http://logapi.tvcast.naver.com',
+            clipNo : '1387284',
+            playlistNo : '',
+            beforeClipNo : jindo.$Cookie().get("NTC_BEFORE_CLIP"),
+            device : 'PC'
+        };
+
+        var oPlaybackOrderController = {};
+
+        window.tvcast = (typeof window.tvcast !== "undefined") ? window.tvcast : {};
+        tvcast.PlayLogger = new PlayLogger(playLoggerOptions);
+
+        tvcast.pc.PlayTimeLogger.logPlayTime({
+            apiDomain: 'http://logapi.tvcast.naver.com',
+            rmcObjId: rmcPlayer.properties.objId,
+            clipNo : '1387284',
+            playlistNo: ''
+        });     
+        jindo.$Cookie().remove("NTC_BEFORE_CLIP");
+
+        function initCallbackHandler(sCallbackType) {
+            var playTypeCookie = "",
+                    autoPlayFlag = false;
+
+            try {
+                oPlaybackOrderController = tvcast.pc.ClipEnd.getClipEndPlaylist().getPlaybackOrderController() || null;
+                // 후광고 완료 시
+                /**
+                 *  arguments
+                 *      0 : [String] callbackType
+                 *      1 : [String] flashID
+                 *      2 : [Boolean] isFullscreen
+                 */
+                if (sCallbackType === 'ad_complete') {
+                    playTypeCookie = oPlaybackOrderController.getCurrentType().sCookie;
+                    
+                    if(oPlaybackOrderController.isRepeat()){
+                 	   jindo.$Cookie().set("NTC_BEFORE_CLIP", ghtEnv.nClipNo, 0);
+                	}
+                    
+                    autoPlayFlag = arguments && arguments[2];
+
+                    if ( autoPlayFlag && playTypeCookie == oPlaybackOrderController.TYPE.REPEAT_PLAYLIST.sCookie ) {
+                        getNextClip();
+                    }
+                    else if ( autoPlayFlag && playTypeCookie == oPlaybackOrderController.TYPE.REPEAT_CLIP.sCookie) {
+                        playOtherClip('1387284');
+                    }
+                    else {
+					    oPlaybackOrderController.movePage();				   
+                    }
+                }
+
+                if(sCallbackType == "beginfullscreen"){
+                    if(window.ghtEnv){
+                        window.ghtEnv.beginFullscreen = true;
+                    }
+                }
+                // 다시 보기 선택 시
+                if (sCallbackType === 'replay') {
+                    oPlaybackOrderController.increasePlayCountCookie();
+                    oPlaybackOrderController.moveCurrentPage();
+                }
+            } catch(e) { }
+
+            // 전체화면 종료
+            /**
+             *  arguments
+             *      0 : [String] callbackType
+             *      1 : [String] flashID
+             *      2 : [Boolean] continuedInfo     페이지 갱신 후 플래시쪽에 전달해야할 값.
+             */
+            if (sCallbackType === 'endfullscreen'){
+                if( arguments && arguments[2] ){
+
+                    try {
+                        var timeMilli = parseInt((new Date().getTime() - nGapTime) / 1000, 10);
+                        window.localStorage.setItem("contInfo", arguments[2]);
+                        window.localStorage.setItem("searchTime", timeMilli);
+                    }catch(e){}
+                    
+                    if( ghtEnv.nClipNo != nowPlayClipNo){
+                        location.href= "/v/"+nowPlayClipNo+"/list/"+ghtEnv.nPlaylistNo;
+                    }
+
+                    if(window.ghtEnv) {
+                        window.ghtEnv.beginFullscreen = false;
+                    }
+                }
+            }
+
+            // 재생 완료
+            if (sCallbackType === 'complete') {
+                tvcast.PlayLogger.logCompletePlay();
+            }
+
+            // 재생 시작
+            if (sCallbackType === 'play') {
+                tvcast.PlayLogger.logStartPlay();
+                MyPage.addMyPlaylist('http://tv.naver.com', 'recent', '1387284');
+            }
+        }
+
+        function getNextClip(){
+            continuousPlayList.playIndex++;
+            if(continuousPlayList.list.length <= continuousPlayList.playIndex){
+                continuousPlayList.playIndex = 0;
+            }
+
+            ghtEnv.nNextClipNo = continuousPlayList.list[continuousPlayList.playIndex].clipNo;
+            // ghtEnv.nClipNo=ghtEnv.nNextClipNo;
+
+            if(continuousPlayList.list[continuousPlayList.playIndex].isAdult == "Y" && ghtEnv.isPlayableAuth){
+                rmcPlayer.getElement().closeVideo();
+                location.href= "/v/"+ ghtEnv.nNextClipNo +"/list/"+ghtEnv.nPlaylistNo;
+                return;
+            }
+
+            playOtherClip();
+        }
+        function playOtherClip(clipNo){
+            var clipNo = clipNo || (ghtEnv && ghtEnv.nNextClipNo),
+                    playList = ghtEnv && ghtEnv.nNextPlaylistNo;
+
+            if(clipNo){
+                new jindo.$Ajax("/api/clipPlayInfo/"+ clipNo +"/list/" + playList, {
+                    type : "xhr",
+                    method : "get",
+                    timeout : 2,
+                    onload : function(e){
+                        var retData = e.json();
+                        nowPlayClipNo = clipNo;
+                        
+                        tvcast.PlayLogger.reset(nowPlayClipNo, playList, jindo.$Cookie().get("NTC_BEFORE_CLIP"));
+                        jindo.$Cookie().remove("NTC_BEFORE_CLIP");
+
+                        if (!!retData.smrTrackingData) {
+                            rmcPlayer.properties.externalTrackingData = jindo.$Json(retData.smrTrackingData).toObject();
+                        } else {
+                            rmcPlayer.properties.externalTrackingData = null;
+                        }
+
+                        rmcPlayer.updatePlayInfo(retData.videoId, retData.inKey, {
+                            "advertiseInfo" : retData.advertiseInfo,
+                            "advertiseUrl": retData.advertiseUrl
+                        });
+                        rmcPlayer.getElement().playNewVideo({
+                            "playapi" : rmcPlayer.getPlayAPIUrl(),
+                            "coverImageURL": retData.coverImageUrl
+//                            "advertiseInfo": retData.advertiseInfo,
+//                            "advertiseUrl": retData.advertiseUrl
+                        });
+                    },
+                    onerror : function(){
+                        oPlaybackOrderController && oPlaybackOrderController.movePage();
+                    }
+                }).request();
+
+            }else{
+                oPlaybackOrderController && oPlaybackOrderController.movePage();
+            }
+        }
+
+        
+        function expandPlayer(sIsExpand) {
+            var bIsExpand = isGlobalExpand = sIsExpand === 'true';
+            var ClipEnd = tvcast.pc.ClipEnd;
+            var ClipEndExpand = ClipEnd.getClipEndExpand();
+
+            ClipEndExpand.setExpand(bIsExpand);
+        }
+
+        /**
+         *  미니플레이어 처리.
+         */
+        var videoArea = jindo.$Element(jindo.$$.getSingle(".video_area")),
+            pipCloseBtn = "",
+            hideInterval = 0,
+            clipInfo = jindo.$Element("clipInfoArea"),
+            clipEndDa = jindo.$Element(jindo.$$.getSingle("#banner ._banner")),
+            playerArea = jindo.$Element("playerArea"),
+            clipInfoTop = 0,
+            isCloseByBtn = false,
+            isFixed = false,
+            hideFlag = false,
+            isPlayerDown = isPlayerMove = false,
+            scroll = 0,
+            playerPosGap = {},
+            daMargin = 50,
+            nowPos = {
+                posX : 92,
+                posY : 22
+            },
+            mousePos = {},
+            closeBtnSize = 29,
+            tmpPos = {
+                posX : 92,
+                posY : 22
+            },
+            playerSize = {
+                width : 384,
+                height : 216
+            },
+            browserSize = jindo.$Document().clientSize(),
+            headerHeight = parseInt(jindo.$Element("header").height(), 10),
+            oCookie = jindo.$Cookie(),
+            playerEl = "",
+            isMiniView = false;
+        
+        if (!!videoArea) {
+            pipCloseBtn = jindo.$Element('<a href="#" class="btn_close" style="display:none;">닫기</a>');
+            videoArea.append(pipCloseBtn);
+            pipCloseBtn.attach("click", function(e){
+                e.stopDefault();
+                isCloseByBtn = true;
+                closeMiniPlayer();
+                clickcr(e.srcElement, "pip.close", "", "", e._event);
+            });
+        }
+
+        var resizeBrowser = function(){
+                browserSize = jindo.$Document().clientSize();
+                setPos();
+                nowPos = {
+                    posX : tmpPos.posX,
+                    posY : tmpPos.posY
+                };
+
+                setPosCookies();
+        };
+
+
+        var attachMouseDown = function(e){
+            mousePos = e.pos();
+            isPlayerDown = true;
+        };
+
+        var setPosCookies = function(){
+            oCookie.set("EndPlayer_PosX", ""+nowPos.posX);
+            oCookie.set("EndPlayer_PosY", ""+nowPos.posY);
+        };
+
+        var setPos = function(){
+            if(playerPosGap.posX && playerPosGap.posX != 0){
+                tmpPos = {
+                    posX : nowPos.posX + playerPosGap.posX < 0 ? 0 : nowPos.posX + playerPosGap.posX,
+                    posY : nowPos.posY + playerPosGap.posY < 0 ? 0 : nowPos.posY + playerPosGap.posY
+                };
+            }
+
+            var sumPlayer = {
+                width : browserSize.width - playerSize.width - closeBtnSize,
+                height : browserSize.height - headerHeight - playerSize.height
+            };
+
+            tmpPos = {
+                posX : tmpPos.posX > sumPlayer.width || tmpPos.posX < 0 ? sumPlayer.width : tmpPos.posX,
+                posY : tmpPos.posY > sumPlayer.height || tmpPos.posY < 0 ? sumPlayer.height : tmpPos.posY
+            };
+
+            videoArea.css({
+                "position": "fixed",
+                "right" : tmpPos.posX,
+                "bottom" : tmpPos.posY,
+                "zIndex" : 3001,
+                "paddingRight" : "29px",
+                "background" : "none",
+                "width" : playerSize.width + "px",
+                "height" : playerSize.height + "px",
+                "opacity" : 1
+            });
+
+        };
+        var attachMouseMove = function(e){
+            if(isPlayerDown){
+                isPlayerMove = true;
+                e.stop();
+                playerPosGap = {
+                    posX : mousePos.clientX - e.pos().clientX,
+                    posY : mousePos.clientY - e.pos().clientY
+                };
+
+                setPos();
+
+            }
+        };
+        var attachMouseUp = function(e){
+            if(isPlayerDown && isPlayerMove){
+                e.stop();
+                nowPos = {
+                    posX : tmpPos.posX,
+                    posY : tmpPos.posY
+                };
+                playerPosGap = {
+                    posX : 0,
+                    posY : 0
+                }
+
+                setPosCookies();
+            }
+            isPlayerDown = isPlayerMove = false;
+        };
+
+        function hideUiPlayer(){
+            if(rmcPlayer.toggleIconDisplay) {
+                rmcPlayer.toggleIconDisplay("expand", false);
+                rmcPlayer.toggleIconDisplay("resolution", false);
+                hideFlag = true;
+
+                rmcPlayer.updateLayout();
+            }
+            else if(rmcPlayer.playerType == "flash" && playerEl && playerEl.hideUi) {
+                playerEl.hideUi("expand", false);
+                playerEl.hideUi("resolution", false);
+                hideFlag = true;
+            }
+
+            if(hideInterval && hideFlag){
+                clearInterval(hideInterval);
+                hideInterval = 0;
+            }
+        }
+
+        function closeMiniPlayer(){
+            videoArea.detach({
+                "mousedown": attachMouseDown,
+                "mousemove": attachMouseMove,
+                "mouseup": attachMouseUp
+            });
+            jindo.$Element(window).detach("resize", resizeBrowser);
+
+            clipInfo.css("marginTop", "");
+
+            if(pipCloseBtn) {
+                pipCloseBtn.hide();
+            }
+
+            videoArea.css({
+                "position": "",
+                "right" : "",
+                "bottom" : "",
+                "paddingRight" : "",
+                "zIndex" : "",
+                "width" : "",
+                "height" : "",
+                "left" : "",
+                "background" : "#000"
+            });
+
+            playerArea.css({
+                height : "",
+                backgroundColor:""
+            });
+        }
+
+		/**
+         * 미니 뷰 적용 관련 로직
+         * 멀티트랙, VR360, 채널 홈 - 적용 안함
+         *
+         */
+        jindo.$Element(window).attach('scroll', function(e){
+            if (!!isMT) {
+                return;
+            }
+
+            if(isGlobalExpand || false){
+                return;
+            }
+
+            if(typeof ghtEnv != "undefined" && ghtEnv.sPageName != "clipEnd") {
+                return;
+            }
+
+            scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+
+            if(!playerEl){
+                playerEl = rmcPlayer.getElement();
+            }
+
+            if(!clipInfo){
+                clipInfo = jindo.$Element("clipInfoArea");
+
+                clipInfoTop = clipInfo.offset().top;
+            }
+            if(!clipEndDa){
+                clipEndDa = jindo.$Element(jindo.$$.getSingle("#banner ._banner"));
+            }
+
+            if(!clipInfo || !clipEndDa){
+                return;
+            }
+
+            
+                
+            if (scroll + browserSize.height >= clipEndDa.offset().top + clipEndDa.height() + playerSize.height + daMargin && !isFixed && !isCloseByBtn) {
+                
+                
+            
+
+                isFixed = true;
+                clipInfo.css("marginTop", videoArea.height() + "px");
+                hideInterval = 0;
+                hideFlag = false;
+
+//                    if(playerEl && playerEl.hideUi) {
+//                        hideUiPlayer();
+//                    }else{
+                        hideInterval = setInterval(function(){
+                            hideUiPlayer();
+                        }, 10);
+//                    }
+
+                videoArea.attach({
+                    "mousedown": attachMouseDown,
+                    "mousemove": attachMouseMove,
+                    "mouseup": attachMouseUp
+                });
+
+                nowPos = {
+                    posX : parseInt(oCookie.get("EndPlayer_PosX"), 10) || nowPos.posX,
+                    posY : parseInt(oCookie.get("EndPlayer_PosY"), 10) || nowPos.posY
+                };
+                tmpPos = {
+                    posX : nowPos.posX,
+                    posY : nowPos.posY
+                };
+
+                videoArea.css({
+                    "position": "fixed",
+                    "right" : nowPos.posX,
+                    "bottom" : nowPos.posY,
+                    "paddingRight" : "29px",
+                    "background" : "none",
+                    "zIndex" : 3001,
+                    "width" : playerSize.width + "px",
+                    "height" : playerSize.height + "px",
+                    "opacity" : 1
+                });
+
+                if(!isMiniView){
+                    // 미니플레이어 페이지상 처음 보여질때 한번만 로그수집
+                    clickcr && clickcr("", "pip.open", "", "", "");
+                }
+
+                isMiniView = true;
+
+                if(!pipCloseBtn) {
+//                    pipCloseBtn = jindo.$Element('<a href="#" class="btn_close">닫기</a>');
+//                    videoArea.append(pipCloseBtn);
+//                    pipCloseBtn.attach("click", function(e){
+//                        e.stopDefault();
+//                        isCloseByBtn = true;
+//                        closeMiniPlayer();
+//                        clickcr(e.srcElement, "pip.close", "", "", e._event);
+//                    })
+                }else{
+                    pipCloseBtn.show();
+                }
+                playerArea.css({
+                    height : playerSize.height + "px",
+                    backgroundColor:"#000"
+                });
+
+                jindo.$Element(window).attach("resize", resizeBrowser);
+
+            
+                
+            }else if (scroll + browserSize.height < clipEndDa.offset().top + clipEndDa.height() + playerSize.height + daMargin && isFixed ) {
+                
+                
+            
+
+                isFixed = false;
+                closeMiniPlayer();
+                if(rmcPlayer.toggleIconDisplay){
+                    rmcPlayer.toggleIconDisplay("expand", true);
+                    rmcPlayer.toggleIconDisplay("resolution", true);
+
+                    rmcPlayer.updateLayout();
+                }
+                else if(rmcPlayer.playerType == "flash" && playerEl && playerEl.hideUi){
+                    playerEl.hideUi("expand", true);
+                    playerEl.hideUi("resolution", true);
+                }
+            }
+        });
+
+    </script>
+
+    
+    
+
+
+<script type="text/javascript">
+    var cookieLifeDays = 90;
+    var cookieName = "tvcastDefaultResolution";
+    var cookieDomain = "tv.naver.com";
+    var cookiePath = "/";
+
+//    function setDefaultResolution(resolution) {
+//        var cookie = new $Cookie();
+//        if (cookie.get(cookieName) != null) {
+//            cookie.remove(cookieName);
+//        }
+//        cookie.set(cookieName, resolution, cookieLifeDays, cookieDomain, cookiePath);
+//    }
+
+    function reloadPage() {
+        document.location.reload();
+    }
+</script>
+                    <span class="mask"></span>
+                    <span class="mask2"></span>
+                </div>
+            </div>
+
+                
+                <div id="clipInfoArea" class="video_watch">
+                    
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+
+
+
+
+
+
+	
+	
+
+
+<div class="watch_title ">
+    <h3 class="_clipTitle" title="우주의 별이 15회 - 네번째 미련">우주의 별이 15회 - 네번째 미련</h3>
+    <div class="title_info">
+        <span class="play">
+            <strong class="u_hc">재생수</strong>110,696
+        </span>
+        <em class="bar">|</em>
+        <span class="date"><strong>등록</strong>2017.02.06.</span>   
+		
+        <a href="#comment_focus" class="comment" onclick="clickcr(this, 'inf.reply', '', '')">
+            <strong class="u_hc">댓글</strong>
+            <em class="_commentCount"></em>
+        </a>
+        
+        <a href="javascript:;" class="btn_more _click _clipInfoButton open" data-event="showClipInfo" title="접기">접기</a>
+        
+    </div>
+</div>
+
+<div class="watch_btn">
+    
+    <div class="u_likeit_list_module">
+        <a href="javascript:;" class="u_likeit_list_btn u_type_brigh _button" title="좋아요" data-sid="TVCAST" data-did="TVCAST" data-cid="1387284" data-likeit="0"></a>
+    </div>
+    
+    
+    <a href="javascript:;" class="btn btn_put _click" data-event="setWatchLater" data-clipno="1387284" data-type="current" title="나중에 보기">나중에 보기</a>
+    <div class="pop_toast _currentWatchLaterToast" style="display:none;">
+        <div class="toast_box">
+            <p>'나중에 보기'에 저장되었습니다.</p>
+        </div>
+    </div>
+    
+    
+    <a href="javascript:;" id="spiButton" class="btn btn_splugin naver-splugin _shareButton _click"
+       data-event="share"
+       data-style="type_a"
+       data-url="http://tv.naver.com/v/1387284"
+       data-title="우주의 별이 15회 - 네번째 미련"
+       title="공유">공유
+    </a>
+     
+
+    
+    
+    
+</div>
+
+
+<div class="watch_desc _clipInfo open">
+    <div class="info_box _infoBox">
+        
+        
+        <p class="desc">[15세 이상 관람가] <br><br>MBC × NAVER TV 콜라보 드라마 &#039;세가지색 판타지&#039; <br>시공초월 감각 로맨스 &lt;우주의 별이&gt; <br><br>매주 월~금요일 밤 11시 59분, 네이버TV에서 새로운 에피소드가 공개됩니다! <br>MBC에서는 매주 목요일 밤 11시 10분에 시청하실 수 있습니다. <br><br>&lt;우주의 별이&gt;는 V LIVE를 통해 미주 및 아시아 일부 지역을 제외한 전세계 133개국에서 시청 가능합니다.</p>
+        
+
+        
+        
+        
+        
+        
+        <ul class="list_url out_link">
+            
+            <li>
+                <a href="http://music.naver.com/album/index.nhn?albumId=151516" target="_blank" onclick="clickcr(this, 'inf.outlink', '', '', event)" class="link_box">
+                    <strong class="tag"><em class="ico naver"></em>뮤직</strong>
+                    <span class="txt">&lt;우주의 별이&gt; 15회 삽입곡 - 이소라의 &#039;Track 11&#039; 듣기<em class="bu"></em></span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="http://music.naver.com/album/index.nhn?albumId=1780921" target="_blank" onclick="clickcr(this, 'inf.outlink', '', '', event)" class="link_box">
+                    <strong class="tag"><em class="ico naver"></em>뮤직</strong>
+                    <span class="txt">&lt;우주의 별이&gt; OST - 수호의 &#039;낮에 뜨는 별&#039; 듣기<em class="bu"></em></span>
+                </a>
+            </li>
+            
+        </ul>
+        
+        
+
+        
+        
+        
+
+    </div>
+
+    
+    
+    
+</div>
+
+
+                </div>
+
+            </div>
+            <!-- //플레이어 영역 -->
+
+            
+            <div id="channelInfo" class="video_aside" >
+                <div class="video_ch">
+                    <!-- 채널 타이틀 -->
+                    <div class="ch_tit">
+                        <h2><em class="ic"></em>
+						<span class="_playlistTitle" title="우주의 별이 (32)">
+                            우주의 별이
+                        </span>
+                        </h2>
+                        
+				        	<a href="javascript:;" class="btn_more _click _showPlaylistGroupButton" data-event="showPlaylistGroup" title="회차목록보기">회차목록보기</a>
+				        
+                    </div>
+                    <!-- //채널 타이틀 -->
+                </div>
+                
+                <div id="playlistArea" class="video_list">
+                    
+
+
+
+
+
+
+
+
+<div class="list_tit">
+    <strong class="cnt">
+    	<em>15 / 32</em>
+    </strong>
+    <div class="list_btn">
+        <div class="btn_refresh" >
+            <a href="javascript:;" class="btn default _click _playbackOrderBtn" data-event="changePlaybackOrder" title="">
+            	<em class="ic"></em>
+            </a>
+            <div class="tooltip _playbackOrderTooltip" style="display: none;">
+                <strong class="blind">연속 재생 ON</strong>
+                <p class="blind">연속 재생 기능이 켜져 있습니다.</p>
+                <a href="javascript:;" class="btn_close _click" data-event="closeTooltip" title="닫기">닫기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="list_area">
+    <div class="list_scroll">
+        <div id="playlistClipScrollBox" class="scrollbar _playlistScrollbox">
+            <div class="scrollbar-box">
+                <div class="scrollbar-content">
+                    <ul id="playlistClip" class="item_list type1 ">
+                        
+
+
+
+
+
+
+
+
+
+
+<li >
+    
+    <div id="playlistInfo" data-title="우주의 별이" data-count="32" style="display: none;"></div>
+    
+
+    <div class="inner">
+        <strong class="lank">1</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1397566/list/108608' title="우주의 별이 1회 - 짧은 생에 대한 유일한 기억">
+            <img src="http://tvcast1.phinf.naver.net/20170123_80/Pz742_1485170419432jMs4R_JPEG/08ecSdEEPqo8Tux0eI2t8f24jQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 1회 - 짧은 생에 대한 유일한 기억" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">11:55</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1397566/list/108608' title="우주의 별이 1회 - 짧은 생에 대한 유일한 기억">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 1&#54924; - &#51687;&#51008; &#49373;&#50640; &#45824;&#54620; &#50976;&#51068;&#54620; ..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">331,497</span>
+                <span class="like">7,797</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">2</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1381382/list/108608' title="우주의 별이 2회 - 이승에서 유일한 낙은 &#039;우주신 덕질&#039;">
+            <img src="http://tvcast1.phinf.naver.net/20170117_88/aJcq6_1484630418061EODoT_JPEG/5a4fW8svcqhvC-DNB1Q0heLcSQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 2회 - 이승에서 유일한 낙은 &#039;우주신 덕질&#039;" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">17:08</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1381382/list/108608' title="우주의 별이 2회 - 이승에서 유일한 낙은 &#039;우주신 덕질&#039;">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 2&#54924; - &#51060;&#49849;&#50640;&#49436; &#50976;&#51068;&#54620; &#45209;&#51008; '..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">225,190</span>
+                <span class="like">5,905</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">3</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1381414/list/108608' title="우주의 별이 3회 - 일생의 인연이 우주라며!">
+            <img src="http://tvcast2.phinf.naver.net/20170123_130/RLZkV_1485153207753tM9k9_JPEG/7c2dg6KsujazYIWcETarwwB0cg_rmcvideo_480P_854_1024_128_03.jpg?type=f120_68" alt="우주의 별이 3회 - 일생의 인연이 우주라며!" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">13:28</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1381414/list/108608' title="우주의 별이 3회 - 일생의 인연이 우주라며!">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 3&#54924; - &#51068;&#49373;&#51032; &#51064;&#50672;&#51060; &#50864;&#51452;&#46972;&#47728;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">190,877</span>
+                <span class="like">5,798</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">4</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386798/list/108608' title="우주의 별이 4회 - 기억나는게 우주밖에 없는데">
+            <img src="http://tvcast2.phinf.naver.net/20170119_70/CfTEA_1484795755405jOQYX_JPEG/75c3dfynD4e1wQmlmh4MRZv2eA_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 4회 - 기억나는게 우주밖에 없는데" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">8:04</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386798/list/108608' title="우주의 별이 4회 - 기억나는게 우주밖에 없는데">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 4&#54924; - &#44592;&#50613;&#45208;&#45716;&#44172; &#50864;&#51452;&#48150;&#50640; &#50630;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">175,209</span>
+                <span class="like">4,922</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">5</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386814/list/108608' title="우주의 별이 5회 - 우주, 죽음의 위기에 직면하다">
+            <img src="http://tvcast2.phinf.naver.net/20170126_55/c8z5U_1485358530052uBWTq_PNG/1485358529962.png?type=f120_68" alt="우주의 별이 5회 - 우주, 죽음의 위기에 직면하다" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">5:37</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386814/list/108608' title="우주의 별이 5회 - 우주, 죽음의 위기에 직면하다">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 5&#54924; - &#50864;&#51452;, &#51453;&#51020;&#51032; &#50948;&#44592;&#50640; &#51649;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">159,503</span>
+                <span class="like">4,407</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">6</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1404281/list/108608' title="우주의 별이 6회 - 살아있는 것 같았거든요. 우주 보면.">
+            <img src="http://tvcast2.phinf.naver.net/20170126_265/oKMoE_1485405468721Rsqt4_JPEG/a4b553Zxf8uieht6H4vvGg0Y_Q_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 6회 - 살아있는 것 같았거든요. 우주 보면." width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">9:23</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1404281/list/108608' title="우주의 별이 6회 - 살아있는 것 같았거든요. 우주 보면.">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 6&#54924; - &#49332;&#50500;&#51080;&#45716; &#44163; &#44057;&#50520;&#44144;&#46304;&#50836;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">157,959</span>
+                <span class="like">3,754</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">7</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386868/list/108608' title="우주의 별이 7회 - 일곱 개의 미련, 돌아온 별이">
+            <img src="http://tvcast2.phinf.naver.net/20170119_215/xTfgM_1484798712427V4kot_JPEG/700cvYgNYEJMnMj3kdgZBiBnrA_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 7회 - 일곱 개의 미련, 돌아온 별이" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">7:17</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386868/list/108608' title="우주의 별이 7회 - 일곱 개의 미련, 돌아온 별이">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 7&#54924; - &#51068;&#44273; &#44060;&#51032; &#48120;&#47144;, &#46028;&#50500;&#50728;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">150,457</span>
+                <span class="like">3,551</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">8</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386875/list/108608' title="우주의 별이 8회 - 우주님 구하러 저승에서 왔다고요!">
+            <img src="http://tvcast1.phinf.naver.net/20170119_139/Mou5m_1484798906974MLBnB_JPEG/2fccMWIqOwEz2vNonnkxRFUFfw_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 8회 - 우주님 구하러 저승에서 왔다고요!" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">9:36</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386875/list/108608' title="우주의 별이 8회 - 우주님 구하러 저승에서 왔다고요!">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 8&#54924; - &#50864;&#51452;&#45784; &#44396;&#54616;&#47084; &#51200;&#49849;&#50640;&#49436;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">140,368</span>
+                <span class="like">3,638</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">9</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386987/list/108608' title="우주의 별이 9회 - 지금 이대로 함께 해. 가장 빛나는 순간">
+            <img src="http://tvcast2.phinf.naver.net/20170119_271/bbjQR_1484801402196Kx3HX_JPEG/52f2QBlU-CItFX03VL63U9MJ4A_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 9회 - 지금 이대로 함께 해. 가장 빛나는 순간" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">9:43</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386987/list/108608' title="우주의 별이 9회 - 지금 이대로 함께 해. 가장 빛나는 순간">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 9&#54924; - &#51648;&#44552; &#51060;&#45824;&#47196; &#54632;&#44760; &#54644;. ..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">138,993</span>
+                <span class="like">3,508</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">10</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387027/list/108608' title="우주의 별이 10회 - 환상적이고 꿈 같은 첫 데이트">
+            <img src="http://tvcast1.phinf.naver.net/20170119_23/lYeHQ_1484802056934KAnsi_JPEG/731diNOdI12Q-Qx3drCsYz1h2A_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 10회 - 환상적이고 꿈 같은 첫 데이트" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">9:53</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387027/list/108608' title="우주의 별이 10회 - 환상적이고 꿈 같은 첫 데이트">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 10&#54924; - &#54872;&#49345;&#51201;&#51060;&#44256; &#45000; &#44057;&#51008; &#52395;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">139,980</span>
+                <span class="like">3,571</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">11</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387068/list/108608' title="우주의 별이 11회 - 첫 눈이 올 때까지 꼭 지켜줄게요">
+            <img src="http://tvcast1.phinf.naver.net/20170131_179/KIKdM_1485842243149psf1t_PNG/1485842243066.PNG?type=f120_68" alt="우주의 별이 11회 - 첫 눈이 올 때까지 꼭 지켜줄게요" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">7:51</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387068/list/108608' title="우주의 별이 11회 - 첫 눈이 올 때까지 꼭 지켜줄게요">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 11&#54924; - &#52395; &#45576;&#51060; &#50732; &#46412;&#44620;&#51648; &#44845; ..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">139,106</span>
+                <span class="like">3,382</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">12</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387085/list/108608' title="우주의 별이 12회 - 우주에게 별이란?">
+            <img src="http://tvcast2.phinf.naver.net/20170201_95/HBCtB_1485942636549igvEI_JPEG/dc8cVlW-Lj4p-BDia4ViXkQ_MA_rmcvideo_480P_854_1024_128_10.jpg?type=f120_68" alt="우주의 별이 12회 - 우주에게 별이란?" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">9:30</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387085/list/108608' title="우주의 별이 12회 - 우주에게 별이란?">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 12&#54924; - &#50864;&#51452;&#50640;&#44172; &#48324;&#51060;&#46976;?
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">192,479</span>
+                <span class="like">3,593</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">13</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417794/list/108608' title="우주의 별이 13회 - 혼자 착각하고 좋아한거였어?">
+            <img src="http://tvcast1.phinf.naver.net/20170202_210/DIHYa_1486021875051QRjct_JPEG/7b76Lq4AO8Iz5x7P7wplfpBisw_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 13회 - 혼자 착각하고 좋아한거였어?" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">12:37</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417794/list/108608' title="우주의 별이 13회 - 혼자 착각하고 좋아한거였어?">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 13&#54924; - &#54844;&#51088; &#52265;&#44033;&#54616;&#44256; &#51339;&#50500;&#54620;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">148,486</span>
+                <span class="like">3,011</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">14</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387249/list/108608' title="우주의 별이 14회 - 너 보니까 살 것 같다">
+            <img src="http://tvcast1.phinf.naver.net/20170119_294/vqmOG_1484805176996CWmyo_JPEG/73ff16Oxl-Bn0RiEwi9tEJodkQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 14회 - 너 보니까 살 것 같다" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">14:19</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387249/list/108608' title="우주의 별이 14회 - 너 보니까 살 것 같다">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 14&#54924; - &#45320; &#48372;&#45768;&#44620; &#49332; &#44163; &#44057;&#45796;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">169,315</span>
+                <span class="like">3,003</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li class="on">
+    
+
+    <div class="inner">
+        <strong class="lank">15</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387284/list/108608' title="우주의 별이 15회 - 네번째 미련">
+            <img src="http://tvcast2.phinf.naver.net/20170206_200/tkas8_14863749645050MCYK_JPEG/cff28TUAON78i4_XnxfCSgdPkA_rmcvideo_480P_854_1024_128_07.jpg?type=f120_68" alt="우주의 별이 15회 - 네번째 미련" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">8:37</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387284/list/108608' title="우주의 별이 15회 - 네번째 미련">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 15&#54924; - &#45348;&#48264;&#51704; &#48120;&#47144;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">110,696</span>
+                <span class="like">2,635</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">16</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1397066/list/108608' title="우주의 별이 16회 - 다른 누군가에게 빛이 되어준다는 것">
+            <img src="http://tvcast2.phinf.naver.net/20170206_126/GuiuP_1486375786796u4iar_JPEG/fe25heq_vCnYFjV_xMhGoiwjeg_rmcvideo_480P_854_1024_128_02.jpg?type=f120_68" alt="우주의 별이 16회 - 다른 누군가에게 빛이 되어준다는 것" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">8:59</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1397066/list/108608' title="우주의 별이 16회 - 다른 누군가에게 빛이 되어준다는 것">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 16&#54924; - &#45796;&#47480; &#45572;&#44400;&#44032;&#50640;&#44172; &#48731;&#51060; ..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">104,037</span>
+                <span class="like">2,452</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">17</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387365/list/108608' title="우주의 별이 17회 - 못다 한 인사">
+            <img src="http://tvcast2.phinf.naver.net/20170206_93/Hxu9e_1486380876401Dq4Fu_JPEG/2b89I9tkBE6E9zwoHEen8HTpJg_rmcvideo_480P_854_1024_128_07.jpg?type=f120_68" alt="우주의 별이 17회 - 못다 한 인사" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">11:41</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387365/list/108608' title="우주의 별이 17회 - 못다 한 인사">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 17&#54924; - &#47803;&#45796; &#54620; &#51064;&#49324;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">117,527</span>
+                <span class="like">2,449</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">18</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1430619/list/108608' title="우주의 별이 18회 - 우리 모두 누군가에게는">
+            <img src="http://tvcast1.phinf.naver.net/20170207_192/jXX5K_14864720472554huuo_JPEG/fb70oWrZd2A1yGIdl0Gh1yvfJQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 18회 - 우리 모두 누군가에게는" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">8:15</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1430619/list/108608' title="우주의 별이 18회 - 우리 모두 누군가에게는">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 18&#54924; - &#50864;&#47532; &#47784;&#46160; &#45572;&#44400;&#44032;&#50640;&#44172;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">103,623</span>
+                <span class="like">2,399</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">19</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1430663/list/108608' title="우주의 별이 19회 - 낮에 뜨는 별">
+            <img src="http://tvcast2.phinf.naver.net/20170208_128/Rj0D3_14865380363589GdsB_JPEG/af228tT_FwVhPskBzIa-z3QaYA_rmcvideo_480P_854_1024_128_06.jpg?type=f120_68" alt="우주의 별이 19회 - 낮에 뜨는 별" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">7:00</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1430663/list/108608' title="우주의 별이 19회 - 낮에 뜨는 별">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 19&#54924; - &#45230;&#50640; &#46888;&#45716; &#48324;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">98,254</span>
+                <span class="like">2,340</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">20</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387453/list/108608' title="우주의 별이 20회 - 악연 혹은 인연">
+            <img src="http://tvcast1.phinf.naver.net/20170209_100/SNjHs_1486628856329p67Y0_JPEG/2446C7FUJ-_OMSkO4zQ2RINYXQ_rmcvideo_480P_854_1024_128_09.jpg?type=f120_68" alt="우주의 별이 20회 - 악연 혹은 인연" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">11:38</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387453/list/108608' title="우주의 별이 20회 - 악연 혹은 인연">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; 20&#54924; - &#50501;&#50672; &#54841;&#51008; &#51064;&#50672;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">118,219</span>
+                <span class="like">2,152</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">21</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387485/list/108608' title="우주의 별이 마지막회 - 믿고 또 믿으며 그렇게">
+            <img src="http://tvcast2.phinf.naver.net/20170210_204/zDbmR_14867198241312b7mn_JPEG/27acAaxEpkDJ8bS2bJCdBTU11Q_rmcvideo_480P_854_1024_128_02.jpg?type=f120_68" alt="우주의 별이 마지막회 - 믿고 또 믿으며 그렇게" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">12:44</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387485/list/108608' title="우주의 별이 마지막회 - 믿고 또 믿으며 그렇게">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#47560;&#51648;&#47561;&#54924; - &#48127;&#44256; &#46608; &#48127;&#51004;&#47728; &#44536;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">106,478</span>
+                <span class="like">2,056</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">22</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1404287/list/108608' title="우주의 별이 예고 1 - 우주님, 우주 메리 미?">
+            <img src="http://tvcast2.phinf.naver.net/20170126_175/k5IJB_1485405593553WlPkF_JPEG/528f5hxXivFyXkDpHD-CJlZ-ag_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 예고 1 - 우주님, 우주 메리 미?" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">0:42</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1404287/list/108608' title="우주의 별이 예고 1 - 우주님, 우주 메리 미?">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#50696;&#44256; 1 - &#50864;&#51452;&#45784;, &#50864;&#51452; &#47700;&#47532; ..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">244,913</span>
+                <span class="like">1,663</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">23</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1410472/list/108608' title="우주의 별이 예고 2 - 너 보니까, 살 것 같다">
+            <img src="http://tvcast2.phinf.naver.net/20170130_20/qN18l_1485770188755cnp61_JPEG/10f2NbZN2I9iimgqn1BijPXEvQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 예고 2 - 너 보니까, 살 것 같다" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">0:36</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1410472/list/108608' title="우주의 별이 예고 2 - 너 보니까, 살 것 같다">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#50696;&#44256; 2 - &#45320; &#48372;&#45768;&#44620;, &#49332; &#44163; &#44057;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">85,912</span>
+                <span class="like">1,219</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">24</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417974/list/108608' title="우주의 별이 예고 3 - 낮에 뜨는 별, 널 지키는 별">
+            <img src="http://tvcast1.phinf.naver.net/20170202_106/92sQq_1486025235748V7yjq_JPEG/27d5PrEIh7yWcNBL0j-Dyslf2g_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 예고 3 - 낮에 뜨는 별, 널 지키는 별" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">0:36</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417974/list/108608' title="우주의 별이 예고 3 - 낮에 뜨는 별, 널 지키는 별">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#50696;&#44256; 3 - &#45230;&#50640; &#46888;&#45716; &#48324;, &#45328; &#51648;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">43,851</span>
+                <span class="like">714</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">25</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1368246/list/108608' title="우주의 별이 티저 1 - 지켜줄게 영원히, 사랑해">
+            <img src="http://tvcast2.phinf.naver.net/20170111_128/nuef3_1484137208759E6lIk_JPEG/1b36sod8cECN0p8TxBrFeWgNdQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 티저 1 - 지켜줄게 영원히, 사랑해" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">0:35</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1368246/list/108608' title="우주의 별이 티저 1 - 지켜줄게 영원히, 사랑해">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#54000;&#51200; 1 - &#51648;&#53020;&#51460;&#44172; &#50689;&#50896;&#55176;, &#49324;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">325,181</span>
+                <span class="like">2,947</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">26</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1368305/list/108608' title="우주의 별이 티저 2 - 서로가 주고받는 눈빛">
+            <img src="http://tvcast1.phinf.naver.net/20170111_175/6uWOv_1484138121720poTXw_JPEG/596arlwAIe4B73tNbgkB4hWlcA_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 티저 2 - 서로가 주고받는 눈빛" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">0:25</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1368305/list/108608' title="우주의 별이 티저 2 - 서로가 주고받는 눈빛">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#54000;&#51200; 2 - &#49436;&#47196;&#44032; &#51452;&#44256;&#48155;&#45716; &#45576;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">232,802</span>
+                <span class="like">2,808</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">27</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1383500/list/108608' title="우주의 별이 메이킹 1 - 케미 대폭발 대본 리딩 현장">
+            <img src="http://tvcast1.phinf.naver.net/20170118_185/kJx9E_1484706427428BXw8J_JPEG/bfeaRs-RdMJk6g_NgRnVehOt0A_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 메이킹 1 - 케미 대폭발 대본 리딩 현장" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">3:18</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1383500/list/108608' title="우주의 별이 메이킹 1 - 케미 대폭발 대본 리딩 현장">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 1 - &#52992;&#48120; &#45824;&#54253;&#48156; &#45824;&#48376; ..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">103,248</span>
+                <span class="like">1,899</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">28</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1402511/list/108608' title="우주의 별이 메이킹 2 - 우주의 침대 벗어나는 법">
+            <img src="http://tvcast1.phinf.naver.net/20170125_284/hnDCG_1485338259150ePedw_JPEG/d301G-skwQAMRLqYacKiybfpnQ_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 메이킹 2 - 우주의 침대 벗어나는 법" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">1:45</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1402511/list/108608' title="우주의 별이 메이킹 2 - 우주의 침대 벗어나는 법">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 2 - &#50864;&#51452;&#51032; &#52840;&#45824; &#48279;&#50612;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">63,668</span>
+                <span class="like">1,815</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">29</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1410515/list/108608' title="우주의 별이 메이킹 3 - 우리 우주가 달라졌어요">
+            <img src="http://tvcast2.phinf.naver.net/20170130_287/3dpJF_1485773140560p4PWI_JPEG/d7bbEKV2hSzWMvvGoE6esqjo3Q_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 메이킹 3 - 우리 우주가 달라졌어요" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">3:25</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1410515/list/108608' title="우주의 별이 메이킹 3 - 우리 우주가 달라졌어요">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 3 - &#50864;&#47532; &#50864;&#51452;&#44032; &#45804;&#46972;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">45,828</span>
+                <span class="like">1,501</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">30</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417981/list/108608' title="우주의 별이 메이킹 4 - 우주가 하드캐리해!">
+            <img src="http://tvcast2.phinf.naver.net/20170202_270/CWSyx_1486025330690ngTT6_JPEG/ca6fCp5VgtxUjPHDFn7Jpex06Q_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="우주의 별이 메이킹 4 - 우주가 하드캐리해!" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">3:29</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417981/list/108608' title="우주의 별이 메이킹 4 - 우주가 하드캐리해!">
+                    &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 4 - &#50864;&#51452;&#44032; &#54616;&#46300;&#52880;&#47532;&#54644;..
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">31,336</span>
+                <span class="like">1,061</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">31</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1385197/list/108608' title="세가지색 판타지 - 하이라이트">
+            <img src="http://tvcast1.phinf.naver.net/20170118_229/iKgky_1484734688956W3bgN_JPEG/4d337lbbGiDQBF2Nggo-Y1dieg_rmcvideo_480P_854_1024_128_02.jpg?type=f120_68" alt="세가지색 판타지 - 하이라이트" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">9:19</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1385197/list/108608' title="세가지색 판타지 - 하이라이트">
+                    &#49464;&#44032;&#51648;&#49353; &#54032;&#53440;&#51648; - &#54616;&#51060;&#46972;&#51060;&#53944;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">130,169</span>
+                <span class="like">2,039</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+<li >
+    
+
+    <div class="inner">
+        <strong class="lank">32</strong>
+        <a class="_click thumb" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386804/list/108608' title="세가지색 판타지 - 드라마 토크">
+            <img src="http://tvcast1.phinf.naver.net/20170119_95/wjp5q_1484795906895O0Nnq_JPEG/af240Gm0IFtkhRcJ7KWA8_AHeg_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68" alt="세가지색 판타지 - 드라마 토크" width="120" height="68"
+                 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+            <span class="mask"></span>
+            <em class="time">58:36</em>
+        </a>
+        <dl>
+            <dt>
+                <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386804/list/108608' title="세가지색 판타지 - 드라마 토크">
+                    &#49464;&#44032;&#51648;&#49353; &#54032;&#53440;&#51648; - &#46300;&#46972;&#47560; &#53664;&#53356;
+                </a>
+            </dt>
+            
+            
+            <dd class="info">
+                <span class="hit">206,842</span>
+                <span class="like">775</span>
+            </dd>
+        </dl>
+    </div>
+</li>
+
+                    </ul>
+                    
+					<div class="upnext_box">
+						<ul class="auto_list">
+                   		
+                    	
+                    	
+                    		<li>
+								<a href="/playlist/113299" class="inner" title="생동성 연애" onclick="clickcr(this, 'plt.neplist', '', '', '');">
+									<div class="info">
+										<span class="txt">다음 재생목록</span>
+										<strong class="tit">생동성 연애</strong>
+									</div>
+									<span class="thumb">
+										<img src="http://tvcast1.phinf.naver.net/20170213_275/fO457_14869575572889dGB6_JPEG/58b7s_s65VCiYCr8-9b4aopMsg_rmcvideo_144P_256_100_32_logo.jpg?type=f120_68"
+											 alt="생동성 연애"
+											 width="120" height="68"
+											 onerror="this.src='http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f120_68'">
+										<span class="mask"></span>
+										<!-- 재생목록 -->
+										<span class="play">
+											<em class="ic"></em>
+											<strong class="cnt">13</strong>
+											<span class="bg"></span>
+										</span>
+										<!-- //재생목록 -->
+									</span>
+								</a>
+							</li>
+                    	
+                    	
+						</ul>
+					</div>
+					
+                </div>
+            </div>
+            <div class="scrollbar-v">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb">
+                        <img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-head" alt="scrollbar-head"/>
+                        <img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-body" alt="scrollbar-body"/>
+                        <img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-foot" alt="scrollbar-foot"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+	<div class="list_drop _playlistGroupArea" style="display:none;">
+		<div class="list_tit">
+			<strong class="cnt">재생목록 <em></em></strong>
+			<div class="list_sort" id="playlistGroupSort">
+		    <!-- [D]정렬 선택시 class="btn_sort on" -->
+				<a href="#" class="btn_sort" data-type="btn">최신순<em class="ic"></em></a>
+				<div class="layer" style="display:none">
+					<ul>
+						<li class="on"><a href="#" data-type="latest">최신순</a></li>
+						<li><a href="#" data-type="date">등록일순</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="drop_box">
+			
+			<div id="playlistGroupScrollBox" class="scroll_dropbox scrollbar _playlistScrollbox">
+    			<div class="scrollbar-box">
+					<div class="scrollbar-content _append_content">
+					</div>
+				</div>
+				<div class="scrollbar-v">
+					<div class="scrollbar-track">
+						<div class="scrollbar-thumb">
+							<img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-head" alt="scrollbar-head"/>
+							<img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-body" alt="scrollbar-body"/>
+							<img src="http://img.tvcast.naver.net/pc/img/blank.gif" class="scrollbar-thumb-foot" alt="scrollbar-foot"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+                </div>
+                
+            </div>
+            
+
+            
+            <div id="expandChannelInfo" class="video_high" style="display: none;" >
+                
+
+
+
+
+
+
+
+
+<div class="high_wrap">
+    <div class="video_tit">
+        <div class="tit_area">
+            <h4>
+            	<em class="ic"></em>우주의 별이
+                <em class="cnt">15 / 32</em>
+            </h4>
+
+            <div class="btn_refresh" >
+                <a href="javascript:;" class="btn refresh _click _playbackOrderBtn" data-event="changePlaybackOrder" title="연속재생">연속재생</a>
+                <div class="tooltip _playbackOrderTooltip" style="display: none;">
+                    <strong class="blind">연속 재생 ON</strong>
+                    <p class="blind">연속 재생 기능이 켜져 있습니다.</p>
+                    <a href="javascript:;" class="btn_close _click" data-event="closeTooltip" title="닫기">닫기</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="video_ch">
+            <!-- 채널 타이틀 -->
+            <div class="ch_tit">
+                <a href="http://tv.naver.com/3color" class="ic_ch">
+                    <img
+                            
+                            
+                            
+                            src="http://tvcast2.phinf.naver.net/20161227_13/photoinfra_1482831946369BANUd_PNG/default_round_ch.png?type=round_31_31"
+                            
+                            
+                            data-src="http://tvcast1.phinf.naver.net/20170213_262/apjEI_1486956090909xsRwa_JPEG/1486956090887.jpg?type=round_31_31"
+                            onerror='this.src="http://tvcast2.phinf.naver.net/20161227_13/photoinfra_1482831946369BANUd_PNG/default_round_ch.png?type=round_31_31"'
+                            alt="세가지색 판타지 - 생동성 연애"
+                            width="46" height="46">
+                    <span class="mask"></span>
+                </a>
+                <h2>
+                    <a href="http://tv.naver.com/3color">세가지색 판타지 - 생동성 연애</a>
+                </h2>
+            </div>
+            <!-- //채널 타이틀 -->
+
+            <div class="ch_sp">
+	            <!-- 소셜링크 -->
+	            <a href="javascript:;" class="_subscribe btn_subscribe" data-channel-id="3color" data-subscription-count="-1" data-area-code="chi" style="display:none">
+					<span class="txt"><em class="ic"></em>구독</span>
+				</a>
+                <div class="u_likeit_list_module">
+                    <a href="javascript:;" class="u_likeit_list_btn u_type_bright" title="채널 좋아요" data-sid="TVCAST_CH" data-did="TVCAST" data-cid="3color" data-likeit="0"></a>
+                </div>
+	            <!-- //소셜링크 -->
+		        
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="high_rolling">
+
+  
+  <a href="javascript:;" class="btn_roll left _click" data-event="moveLeft" title="왼쪽으로">왼쪽으로</a>
+  
+
+  <div id="rollingPlaylist" class="high_container">
+    <ul class="item_list type2 _rollingPlaylistClipUnorderedList" style="width:70000px">
+
+      
+      
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+
+      
+        
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387068/list/108608' title="우주의 별이 11회 - 첫 눈이 올 때까지 꼭 지켜줄게요">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170131_179/KIKdM_1485842243149psf1t_PNG/1485842243066.PNG?type=f236_133"
+                                alt="우주의 별이 11회 - 첫 눈이 올 때까지 꼭 지켜줄게요"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">7:51</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387068" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387068/list/108608" title="우주의 별이 11회 - 첫 눈이 올 때까지 꼭 지켜줄게요">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 11&#54924; - &#52395; &#45576;&#51060; &#50732; &#46412;&#44620;&#51648; &#44845; &#51648;&#53020;&#51460;&#44172;&#50836;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">139,106</span>
+                <span class="like">3,382</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387085/list/108608' title="우주의 별이 12회 - 우주에게 별이란?">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170201_95/HBCtB_1485942636549igvEI_JPEG/dc8cVlW-Lj4p-BDia4ViXkQ_MA_rmcvideo_480P_854_1024_128_10.jpg?type=f236_133"
+                                alt="우주의 별이 12회 - 우주에게 별이란?"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">9:30</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387085" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387085/list/108608" title="우주의 별이 12회 - 우주에게 별이란?">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 12&#54924; - &#50864;&#51452;&#50640;&#44172; &#48324;&#51060;&#46976;?
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">192,479</span>
+                <span class="like">3,593</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417794/list/108608' title="우주의 별이 13회 - 혼자 착각하고 좋아한거였어?">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170202_210/DIHYa_1486021875051QRjct_JPEG/7b76Lq4AO8Iz5x7P7wplfpBisw_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 13회 - 혼자 착각하고 좋아한거였어?"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">12:37</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1417794" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1417794/list/108608" title="우주의 별이 13회 - 혼자 착각하고 좋아한거였어?">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 13&#54924; - &#54844;&#51088; &#52265;&#44033;&#54616;&#44256; &#51339;&#50500;&#54620;&#44144;&#50688;&#50612;?
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">148,486</span>
+                <span class="like">3,011</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387249/list/108608' title="우주의 별이 14회 - 너 보니까 살 것 같다">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170119_294/vqmOG_1484805176996CWmyo_JPEG/73ff16Oxl-Bn0RiEwi9tEJodkQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 14회 - 너 보니까 살 것 같다"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">14:19</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387249" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387249/list/108608" title="우주의 별이 14회 - 너 보니까 살 것 같다">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 14&#54924; - &#45320; &#48372;&#45768;&#44620; &#49332; &#44163; &#44057;&#45796;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">169,315</span>
+                <span class="like">3,003</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li class="on">
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387284/list/108608' title="우주의 별이 15회 - 네번째 미련">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170206_200/tkas8_14863749645050MCYK_JPEG/cff28TUAON78i4_XnxfCSgdPkA_rmcvideo_480P_854_1024_128_07.jpg?type=f236_133"
+                                alt="우주의 별이 15회 - 네번째 미련"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">8:37</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387284" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387284/list/108608" title="우주의 별이 15회 - 네번째 미련">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 15&#54924; - &#45348;&#48264;&#51704; &#48120;&#47144;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">110,696</span>
+                <span class="like">2,635</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1397066/list/108608' title="우주의 별이 16회 - 다른 누군가에게 빛이 되어준다는 것">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170206_126/GuiuP_1486375786796u4iar_JPEG/fe25heq_vCnYFjV_xMhGoiwjeg_rmcvideo_480P_854_1024_128_02.jpg?type=f236_133"
+                                alt="우주의 별이 16회 - 다른 누군가에게 빛이 되어준다는 것"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">8:59</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1397066" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1397066/list/108608" title="우주의 별이 16회 - 다른 누군가에게 빛이 되어준다는 것">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 16&#54924; - &#45796;&#47480; &#45572;&#44400;&#44032;&#50640;&#44172; &#48731;&#51060; &#46104;&#50612;&#51456;&#45796;&#45716;..
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">104,037</span>
+                <span class="like">2,452</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387365/list/108608' title="우주의 별이 17회 - 못다 한 인사">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170206_93/Hxu9e_1486380876401Dq4Fu_JPEG/2b89I9tkBE6E9zwoHEen8HTpJg_rmcvideo_480P_854_1024_128_07.jpg?type=f236_133"
+                                alt="우주의 별이 17회 - 못다 한 인사"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">11:41</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387365" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387365/list/108608" title="우주의 별이 17회 - 못다 한 인사">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 17&#54924; - &#47803;&#45796; &#54620; &#51064;&#49324;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">117,527</span>
+                <span class="like">2,449</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1430619/list/108608' title="우주의 별이 18회 - 우리 모두 누군가에게는">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170207_192/jXX5K_14864720472554huuo_JPEG/fb70oWrZd2A1yGIdl0Gh1yvfJQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 18회 - 우리 모두 누군가에게는"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">8:15</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1430619" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1430619/list/108608" title="우주의 별이 18회 - 우리 모두 누군가에게는">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 18&#54924; - &#50864;&#47532; &#47784;&#46160; &#45572;&#44400;&#44032;&#50640;&#44172;&#45716;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">103,623</span>
+                <span class="like">2,399</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1430663/list/108608' title="우주의 별이 19회 - 낮에 뜨는 별">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170208_128/Rj0D3_14865380363589GdsB_JPEG/af228tT_FwVhPskBzIa-z3QaYA_rmcvideo_480P_854_1024_128_06.jpg?type=f236_133"
+                                alt="우주의 별이 19회 - 낮에 뜨는 별"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">7:00</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1430663" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1430663/list/108608" title="우주의 별이 19회 - 낮에 뜨는 별">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 19&#54924; - &#45230;&#50640; &#46888;&#45716; &#48324;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">98,254</span>
+                <span class="like">2,340</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387453/list/108608' title="우주의 별이 20회 - 악연 혹은 인연">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170209_100/SNjHs_1486628856329p67Y0_JPEG/2446C7FUJ-_OMSkO4zQ2RINYXQ_rmcvideo_480P_854_1024_128_09.jpg?type=f236_133"
+                                alt="우주의 별이 20회 - 악연 혹은 인연"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">11:38</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387453" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387453/list/108608" title="우주의 별이 20회 - 악연 혹은 인연">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 20&#54924; - &#50501;&#50672; &#54841;&#51008; &#51064;&#50672;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">118,219</span>
+                <span class="like">2,152</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387485/list/108608' title="우주의 별이 마지막회 - 믿고 또 믿으며 그렇게">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170210_204/zDbmR_14867198241312b7mn_JPEG/27acAaxEpkDJ8bS2bJCdBTU11Q_rmcvideo_480P_854_1024_128_02.jpg?type=f236_133"
+                                alt="우주의 별이 마지막회 - 믿고 또 믿으며 그렇게"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">12:44</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387485" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387485/list/108608" title="우주의 별이 마지막회 - 믿고 또 믿으며 그렇게">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#47560;&#51648;&#47561;&#54924; - &#48127;&#44256; &#46608; &#48127;&#51004;&#47728; &#44536;&#47111;&#44172;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">106,478</span>
+                <span class="like">2,056</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1404287/list/108608' title="우주의 별이 예고 1 - 우주님, 우주 메리 미?">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170126_175/k5IJB_1485405593553WlPkF_JPEG/528f5hxXivFyXkDpHD-CJlZ-ag_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 예고 1 - 우주님, 우주 메리 미?"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">0:42</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1404287" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1404287/list/108608" title="우주의 별이 예고 1 - 우주님, 우주 메리 미?">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#50696;&#44256; 1 - &#50864;&#51452;&#45784;, &#50864;&#51452; &#47700;&#47532; &#48120;?
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">244,913</span>
+                <span class="like">1,663</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1410472/list/108608' title="우주의 별이 예고 2 - 너 보니까, 살 것 같다">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170130_20/qN18l_1485770188755cnp61_JPEG/10f2NbZN2I9iimgqn1BijPXEvQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 예고 2 - 너 보니까, 살 것 같다"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">0:36</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1410472" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1410472/list/108608" title="우주의 별이 예고 2 - 너 보니까, 살 것 같다">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#50696;&#44256; 2 - &#45320; &#48372;&#45768;&#44620;, &#49332; &#44163; &#44057;&#45796;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">85,912</span>
+                <span class="like">1,219</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417974/list/108608' title="우주의 별이 예고 3 - 낮에 뜨는 별, 널 지키는 별">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170202_106/92sQq_1486025235748V7yjq_JPEG/27d5PrEIh7yWcNBL0j-Dyslf2g_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 예고 3 - 낮에 뜨는 별, 널 지키는 별"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">0:36</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1417974" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1417974/list/108608" title="우주의 별이 예고 3 - 낮에 뜨는 별, 널 지키는 별">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#50696;&#44256; 3 - &#45230;&#50640; &#46888;&#45716; &#48324;, &#45328; &#51648;&#53412;&#45716; &#48324;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">43,851</span>
+                <span class="like">714</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1368246/list/108608' title="우주의 별이 티저 1 - 지켜줄게 영원히, 사랑해">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170111_128/nuef3_1484137208759E6lIk_JPEG/1b36sod8cECN0p8TxBrFeWgNdQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 티저 1 - 지켜줄게 영원히, 사랑해"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">0:35</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1368246" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1368246/list/108608" title="우주의 별이 티저 1 - 지켜줄게 영원히, 사랑해">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#54000;&#51200; 1 - &#51648;&#53020;&#51460;&#44172; &#50689;&#50896;&#55176;, &#49324;&#46993;&#54644;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">325,181</span>
+                <span class="like">2,947</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1368305/list/108608' title="우주의 별이 티저 2 - 서로가 주고받는 눈빛">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170111_175/6uWOv_1484138121720poTXw_JPEG/596arlwAIe4B73tNbgkB4hWlcA_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 티저 2 - 서로가 주고받는 눈빛"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">0:25</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1368305" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1368305/list/108608" title="우주의 별이 티저 2 - 서로가 주고받는 눈빛">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#54000;&#51200; 2 - &#49436;&#47196;&#44032; &#51452;&#44256;&#48155;&#45716; &#45576;&#48731;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">232,802</span>
+                <span class="like">2,808</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1383500/list/108608' title="우주의 별이 메이킹 1 - 케미 대폭발 대본 리딩 현장">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170118_185/kJx9E_1484706427428BXw8J_JPEG/bfeaRs-RdMJk6g_NgRnVehOt0A_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 메이킹 1 - 케미 대폭발 대본 리딩 현장"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">3:18</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1383500" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1383500/list/108608" title="우주의 별이 메이킹 1 - 케미 대폭발 대본 리딩 현장">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 1 - &#52992;&#48120; &#45824;&#54253;&#48156; &#45824;&#48376; &#47532;&#46377; &#54788;&#51109;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">103,248</span>
+                <span class="like">1,899</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1402511/list/108608' title="우주의 별이 메이킹 2 - 우주의 침대 벗어나는 법">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170125_284/hnDCG_1485338259150ePedw_JPEG/d301G-skwQAMRLqYacKiybfpnQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 메이킹 2 - 우주의 침대 벗어나는 법"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">1:45</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1402511" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1402511/list/108608" title="우주의 별이 메이킹 2 - 우주의 침대 벗어나는 법">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 2 - &#50864;&#51452;&#51032; &#52840;&#45824; &#48279;&#50612;&#45208;&#45716; &#48277;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">63,668</span>
+                <span class="like">1,815</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1410515/list/108608' title="우주의 별이 메이킹 3 - 우리 우주가 달라졌어요">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170130_287/3dpJF_1485773140560p4PWI_JPEG/d7bbEKV2hSzWMvvGoE6esqjo3Q_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 메이킹 3 - 우리 우주가 달라졌어요"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">3:25</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1410515" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1410515/list/108608" title="우주의 별이 메이킹 3 - 우리 우주가 달라졌어요">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 3 - &#50864;&#47532; &#50864;&#51452;&#44032; &#45804;&#46972;&#51276;&#50612;&#50836;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">45,828</span>
+                <span class="like">1,501</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1417981/list/108608' title="우주의 별이 메이킹 4 - 우주가 하드캐리해!">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170202_270/CWSyx_1486025330690ngTT6_JPEG/ca6fCp5VgtxUjPHDFn7Jpex06Q_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 메이킹 4 - 우주가 하드캐리해!"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">3:29</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1417981" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1417981/list/108608" title="우주의 별이 메이킹 4 - 우주가 하드캐리해!">
+          &#50864;&#51452;&#51032; &#48324;&#51060; &#47700;&#51060;&#53433; 4 - &#50864;&#51452;&#44032; &#54616;&#46300;&#52880;&#47532;&#54644;!
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">31,336</span>
+                <span class="like">1,061</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1385197/list/108608' title="세가지색 판타지 - 하이라이트">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170118_229/iKgky_1484734688956W3bgN_JPEG/4d337lbbGiDQBF2Nggo-Y1dieg_rmcvideo_480P_854_1024_128_02.jpg?type=f236_133"
+                                alt="세가지색 판타지 - 하이라이트"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">9:19</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1385197" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1385197/list/108608" title="세가지색 판타지 - 하이라이트">
+          &#49464;&#44032;&#51648;&#49353; &#54032;&#53440;&#51648; - &#54616;&#51060;&#46972;&#51060;&#53944;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">130,169</span>
+                <span class="like">2,039</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386804/list/108608' title="세가지색 판타지 - 드라마 토크">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170119_95/wjp5q_1484795906895O0Nnq_JPEG/af240Gm0IFtkhRcJ7KWA8_AHeg_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="세가지색 판타지 - 드라마 토크"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">58:36</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1386804" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1386804/list/108608" title="세가지색 판타지 - 드라마 토크">
+          &#49464;&#44032;&#51648;&#49353; &#54032;&#53440;&#51648; - &#46300;&#46972;&#47560; &#53664;&#53356;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">206,842</span>
+                <span class="like">775</span>
+            </span>
+</li>
+          
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1397566/list/108608' title="우주의 별이 1회 - 짧은 생에 대한 유일한 기억">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170123_80/Pz742_1485170419432jMs4R_JPEG/08ecSdEEPqo8Tux0eI2t8f24jQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 1회 - 짧은 생에 대한 유일한 기억"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">11:55</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1397566" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1397566/list/108608" title="우주의 별이 1회 - 짧은 생에 대한 유일한 기억">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 1&#54924; - &#51687;&#51008; &#49373;&#50640; &#45824;&#54620; &#50976;&#51068;&#54620; &#44592;&#50613;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">331,497</span>
+                <span class="like">7,797</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1381382/list/108608' title="우주의 별이 2회 - 이승에서 유일한 낙은 &#039;우주신 덕질&#039;">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170117_88/aJcq6_1484630418061EODoT_JPEG/5a4fW8svcqhvC-DNB1Q0heLcSQ_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 2회 - 이승에서 유일한 낙은 &#039;우주신 덕질&#039;"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">17:08</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1381382" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1381382/list/108608" title="우주의 별이 2회 - 이승에서 유일한 낙은 &#039;우주신 덕질&#039;">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 2&#54924; - &#51060;&#49849;&#50640;&#49436; &#50976;&#51068;&#54620; &#45209;&#51008; '&#50864;&#51452;&#49888; &#45909;..
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">225,190</span>
+                <span class="like">5,905</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1381414/list/108608' title="우주의 별이 3회 - 일생의 인연이 우주라며!">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170123_130/RLZkV_1485153207753tM9k9_JPEG/7c2dg6KsujazYIWcETarwwB0cg_rmcvideo_480P_854_1024_128_03.jpg?type=f236_133"
+                                alt="우주의 별이 3회 - 일생의 인연이 우주라며!"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">13:28</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1381414" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1381414/list/108608" title="우주의 별이 3회 - 일생의 인연이 우주라며!">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 3&#54924; - &#51068;&#49373;&#51032; &#51064;&#50672;&#51060; &#50864;&#51452;&#46972;&#47728;!
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">190,877</span>
+                <span class="like">5,798</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386798/list/108608' title="우주의 별이 4회 - 기억나는게 우주밖에 없는데">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170119_70/CfTEA_1484795755405jOQYX_JPEG/75c3dfynD4e1wQmlmh4MRZv2eA_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 4회 - 기억나는게 우주밖에 없는데"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">8:04</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1386798" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1386798/list/108608" title="우주의 별이 4회 - 기억나는게 우주밖에 없는데">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 4&#54924; - &#44592;&#50613;&#45208;&#45716;&#44172; &#50864;&#51452;&#48150;&#50640; &#50630;&#45716;&#45936;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">175,209</span>
+                <span class="like">4,922</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386814/list/108608' title="우주의 별이 5회 - 우주, 죽음의 위기에 직면하다">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170126_55/c8z5U_1485358530052uBWTq_PNG/1485358529962.png?type=f236_133"
+                                alt="우주의 별이 5회 - 우주, 죽음의 위기에 직면하다"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">5:37</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1386814" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1386814/list/108608" title="우주의 별이 5회 - 우주, 죽음의 위기에 직면하다">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 5&#54924; - &#50864;&#51452;, &#51453;&#51020;&#51032; &#50948;&#44592;&#50640; &#51649;&#47732;&#54616;&#45796;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">159,503</span>
+                <span class="like">4,407</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1404281/list/108608' title="우주의 별이 6회 - 살아있는 것 같았거든요. 우주 보면.">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170126_265/oKMoE_1485405468721Rsqt4_JPEG/a4b553Zxf8uieht6H4vvGg0Y_Q_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 6회 - 살아있는 것 같았거든요. 우주 보면."
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">9:23</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1404281" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1404281/list/108608" title="우주의 별이 6회 - 살아있는 것 같았거든요. 우주 보면.">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 6&#54924; - &#49332;&#50500;&#51080;&#45716; &#44163; &#44057;&#50520;&#44144;&#46304;&#50836;. &#50864;&#51452; &#48372;..
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">157,959</span>
+                <span class="like">3,754</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386868/list/108608' title="우주의 별이 7회 - 일곱 개의 미련, 돌아온 별이">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170119_215/xTfgM_1484798712427V4kot_JPEG/700cvYgNYEJMnMj3kdgZBiBnrA_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 7회 - 일곱 개의 미련, 돌아온 별이"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">7:17</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1386868" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1386868/list/108608" title="우주의 별이 7회 - 일곱 개의 미련, 돌아온 별이">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 7&#54924; - &#51068;&#44273; &#44060;&#51032; &#48120;&#47144;, &#46028;&#50500;&#50728; &#48324;&#51060;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">150,457</span>
+                <span class="like">3,551</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386875/list/108608' title="우주의 별이 8회 - 우주님 구하러 저승에서 왔다고요!">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170119_139/Mou5m_1484798906974MLBnB_JPEG/2fccMWIqOwEz2vNonnkxRFUFfw_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 8회 - 우주님 구하러 저승에서 왔다고요!"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">9:36</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1386875" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1386875/list/108608" title="우주의 별이 8회 - 우주님 구하러 저승에서 왔다고요!">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 8&#54924; - &#50864;&#51452;&#45784; &#44396;&#54616;&#47084; &#51200;&#49849;&#50640;&#49436; &#50772;&#45796;&#44256;&#50836;!
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">140,368</span>
+                <span class="like">3,638</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1386987/list/108608' title="우주의 별이 9회 - 지금 이대로 함께 해. 가장 빛나는 순간">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast2.phinf.naver.net/20170119_271/bbjQR_1484801402196Kx3HX_JPEG/52f2QBlU-CItFX03VL63U9MJ4A_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 9회 - 지금 이대로 함께 해. 가장 빛나는 순간"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">9:43</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1386987" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1386987/list/108608" title="우주의 별이 9회 - 지금 이대로 함께 해. 가장 빛나는 순간">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 9&#54924; - &#51648;&#44552; &#51060;&#45824;&#47196; &#54632;&#44760; &#54644;. &#44032;&#51109; &#48731;&#45208;&#45716;..
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">138,993</span>
+                <span class="like">3,508</span>
+            </span>
+</li>
+          
+            
+            
+
+
+
+
+
+
+
+
+
+<li >
+
+  
+  
+  <a class="_click" data-event="moveAnotherClipByUser" href='http://tv.naver.com/v/1387027/list/108608' title="우주의 별이 10회 - 환상적이고 꿈 같은 첫 데이트">
+    
+    
+      
+
+                <span class="thumb">
+                    
+                    
+                      
+                      
+                        <img
+                                src="http://tvcast1.phinf.naver.net/20161227_263/photoinfra_1482831787654EeESz_PNG/default_clip.png?type=f236_133"
+                                data-src="http://tvcast1.phinf.naver.net/20170119_23/lYeHQ_1484802056934KAnsi_JPEG/731diNOdI12Q-Qx3drCsYz1h2A_rmcvideo_144P_256_100_32_logo.jpg?type=f236_133"
+                                alt="우주의 별이 10회 - 환상적이고 꿈 같은 첫 데이트"
+                                width="236" height="133">
+                      
+                    
+
+                    <span class="mask"></span>
+                    <em class="time">9:53</em>
+                    <span class="btn_my _click" data-event="setWatchLater" data-clipno="1387027" data-type="">나중에 보기</span>
+                </span>
+    </a>
+    <dl>
+      <dt>
+        <a href="http://tv.naver.com/v/1387027/list/108608" title="우주의 별이 10회 - 환상적이고 꿈 같은 첫 데이트">
+          &#50864;&#51452;&#51032; &#48324;&#51060; 10&#54924; - &#54872;&#49345;&#51201;&#51060;&#44256; &#45000; &#44057;&#51008; &#52395; &#45936;&#51060;&#53944;
+        </a>
+      </dt>
+        
+    </dl>
+            <span class="info">
+                <span class="hit">139,980</span>
+                <span class="like">3,571</span>
+            </span>
+</li>
+          
+        
+        
+      
+
+    </ul>
+  </div>
+
+  
+  <a href="javascript:;" class="btn_roll right _click" data-event="moveRight" title="오른쪽으로">오른쪽으로</a>
+  
+
+</div>
+
+
+</div>
+
+            </div>
+            
+
+        </div>
+    </div>
+    <!-- //플레이어 -->
+
+    <div id="content">
+        
+        <div id="empty" style="height:500px"></div>
+    </div>
+
+</div>
+<!-- //ct -->
+
+<div class="pl_layer" id="free_movie_notice" style="display:none;">
+    <iframe src="about:blank" style="position:absolute;left:0;top:0;width:100%;height:100%;border:none" frameborder="0" scrolling="no" title="빈 프레임"></iframe>
+    <div class="layer_wrap">
+        <div class="layer_ct">
+            <div class="layer_pop v2">
+                <div class="layer_box">
+                    <p class="text_notify">
+                        영상 초반에 연령등급 고지되어 있습니다. <br>
+                        항상 확인 후 연령이 이보다 낮으신 경우 <br>
+                        이용을 삼가 주시기 바랍니다.
+                    </p>
+                    <div class="check_section"><input type="checkbox" id="notice_check" name="" class="chk_notify">
+                        <label for="notice_check" class="label_notify">해당 내용을 숙지하였습니다.</label>
+                        <div class="btn_area">
+                            <a href="#" class="btn _click">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/template" id="extraSocialPluginTpl">
+<li id="sharePlayer" class="_spi_cnt_copyurl spi_lnk_share">
+    <div class="splugin_panel">
+        <table border="0" summary="퍼가기 레이어" class="splugin_form">
+            <colgroup>
+                <col width="33px">
+                <col width="179px">
+                <col width="59px">
+                <col width="27px">
+            </colgroup>
+            <tbody>
+            <tr >
+                <th><label for="resolution">크기</label></th>
+                <td>
+                    <div class="select_box _playerSizeSelectBoxArea" id="resolution">
+                        <strong class="sel_btn">
+                            <a href="javascript:;" id="playerSizeSelectBox" class="_playerSizeSelectBox _click" data-event="showPlayerSizeSelectBox" data-width="544">544px * 306px</a>
+                        </strong>
+                        <ul class="ly_lst _playerSizeList">
+                            <li class="on"><a href="javascript:;" class="_click" data-event="setPlayerSize" data-width="544">544px * 306px</a></li>
+                            <li><a href="javascript:;" class="_click" data-event="setPlayerSize" data-width="740">740px * 416px</a></li>
+                            <li><a href="javascript:;" class="_click" data-event="setPlayerSize" data-width="936">936px * 526px</a></li>
+                            <li><a href="javascript:;" class="_click" data-event="setPlayerSize" data-width="1280">1280px * 720px</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <th><label for="clipShareHtmlAutoPlayCheckbox">자동 재생</label></th>
+                <td>
+                <span id="sharePlayerAutoPlay" class="check_box chk_on _clipShareHtmlAutoPlay">
+                    <input type="checkbox" name="" id="clipShareHtmlAutoPlayCheckbox" class="chb _click" data-event="setAutoPlay">
+                    <span></span>
+                </span>
+                </td>
+            </tr>
+            <tr class="code ">
+                <th><label>코드</label></th>
+                <td colspan="3">
+                    
+                    <input id="sharePlayerTagInput" class="input_url _clipShareHtmlInput" name=""  value="{=sharePlayerTag}" title="코드 복사" disabled><a href="javascript:;" id="sharePlayerTagCopyButton" class="btn_copy _clipShareHtmlButton" data-clipboard-text="{=sharePlayerTag}" data-type="clipShareHtml">복사</a>
+                    <div class="panel_notice">
+                        Flash 미지원으로 Object 코드 퍼가기 기능은<br>더 이상 지원되지 않습니다.
+                        <a href="https://help.naver.com/support/contents/contents.nhn?serviceNo=3609&categoryNo=3591"  data-event="helpLink" class="_spi_btn_help _click">도움말</a>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</li>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    var ghtCommentOptions = {
+        "pageName" : "clips", //service.controller init 구분자
+        "cbox" : {
+            isLogin : false // 사용자의 로그인 여부를 true, false 로 지정
+            , isAuth : true // 사용자의 실명인증 여부를 true, false 로 지정
+            , objectUrl : 'http://tv.naver.com/v/1387284' // objectUrl 지정
+            , pwBlockUrl : 'http://commentbox.naver.com/not_available.nhn'
+            , pwReportUrl : 'http://commentbox.naver.com/report.nhn'
+            , profileHome : 'http://commentbox.naver.com/redirect.nhn'
+            , formation : ['count','write','list','page']
+            , commands : ['recommend','discommend','reply','delete','report']
+            , layers : ['profile','naverHelp','bestInfo']
+            , descs : ['policy']
+            , maxDepth: 2
+            , maximumCommentLength : 500
+            , pageSize: 5
+            , paginateSize: 5
+            , useSpan: true
+            , enableMultiLine : true
+            , enableSpotLight : false
+            , useRecommendArea : true
+            , useSortArea : true
+            , sortOptionList : ['newest', 'oldest']
+            , useInfoArea : true
+            , useMobile : true
+        },
+        "cbox_template" : {
+            comment :
+                    '<li class="cbox_comment cbox_thumb_off comment_no_{=commentNo}" >'+
+                    '{if replyLevel > 1} <span class="cbox_bu_subnode">ㄴ</span> {/if}'+
+                    '<div class="cbox_comment_area">'+
+                    '<div class="cbox_info_area">'+
+                    '<div class="cbox_section">'+
+                    '{if config.option(\'usePersonacon\') && personacon}<img class="cbox_personacon sticker" src="{=personacon}"/>{/if}'+
+                    '<span class="cbox_nick_name">{if writerNickName != null && writerNickName != ""}{=writerNickName}{else}{=writerId}{/if}</span>'+
+                    '<span class="cbox_date">{=registeredDate}</span> '+
+                    '{if config.option(\'useSocialComment\') && isMine && (isMe2day || isFacebook || isTwitter)}'+
+                    '{if !(replyLevel > 1 && !isSocialReplyActive)}' +
+                    '<span class="cbox_sns_share">'+
+                    '{if \'true\'== isMe2day}<a href="{js jindo.$S((=config.option(\'urlList\').social.redirectSns)).format((=ticket),(=commentNo),\'ME2DAY\')}" {if !isSocialLinkOpen}onclick="return false;"{/if} class="me2 N=a:CML.me2" target="_blank">미투데이</a>{/if}'+
+                    '{if \'true\'== isFacebook}<a href="{js jindo.$S((=config.option(\'urlList\').social.redirectSns)).format((=ticket),(=commentNo),\'FACEBOOK\')}" {if !isSocialLinkOpen}onclick="return false;"{/if} class="facebook N=a:CML.fb" target="_blank">페이스북</a>{/if}'+
+                    '{if \'true\'== isTwitter}<a href="{js jindo.$S((=config.option(\'urlList\').social.redirectSns)).format((=ticket),(=commentNo),\'TWITTER\')}" {if !isSocialLinkOpen}onclick="return false;"{/if} class="twitter N=a:CML.tw" target="_blank">트위터</a>{/if}'+
+                //'{if \'true\'== isYozm}<a href="{js jindo.$S((=config.option(\'urlList\').social.redirectSns)).format((=ticket),(=commentNo),\'YOZM\')}" {if !isSocialLinkOpen}onclick="return false;"{/if} class="thesedays N=a:CML.yozm" target="_blank">요즘</a>{/if}'+
+                    '</span>'+
+                    '{/if}' +
+                    '{/if}'+
+                    '</div>'+
+                    '<div class="cbox_section2">'+
+                    '</div>'+
+                    '</div>'+
+                    '<div class="cbox_desc_comment">'+
+                    '<p class="cbox_desc" style="word-break:break-all;line-break: all;word-wrap:break-word;">'+
+                    '{=contents}'+
+                    '</p>'+
+                    '</div>'+
+                    '</div>'+
+                    '<ul>'+
+                    '</ul>'+
+                    '</li>',
+            countSimple : '<h3 class="h_comment"><em>{js convertCurrency((=count))}</em><span>개의 댓글</span></h3>',
+            bestInfo : '<span class="cbox_best_info" style="" id="bestInfo">BEST 댓글 운영 기준 안내 <a href="#none"><img src="http://img.tvcast.naver.net/service/img/btn_tip_white.gif" width="14" height="14" title="BEST 댓글 운영 안내 보기" alt="BEST 댓글 운영 안내 보기" border="0"></a></span>',
+            bestInfoLayer :
+                    '<div class="cbox_layer_popup best_info_layer" tier="2" style="top:32px;right:0;display:none">'+
+                    '<strong class="cbox_blind">BEST 댓글 운영 기준 안내 레이어</strong>'+
+                    '<button type="button" class="cbox_close" title="BEST 댓글 운영 기준 안내 레이어 닫기"><span><em>닫기</em></span></button>'+
+                    '<p>타인에게 불쾌감을 주거나 저자의 요청을 <br>받은 경우 베스트 댓글에서 제외될 수 있습니다.</p>'+
+                    '</div>',
+            subNode : '<span class="cbox_bu_subnode">ㄴ</span>',
+            pageArea : '<div class="cbox_paginate"></div>',
+            page : '<a href="#" class="cbox_page{=page} N=a:CML.page,r:{=page}">{=page}</a>',
+            currentPage : '<strong class="cbox_page{=page}">{=page}</strong>',
+            firstPage : '<a class="cbox_pre_end" href="#">맨앞</a>',
+            prevPage : '<a class="cbox_pre N=a:CML.pre" href="#">이전</a>',
+            nextPage : '<a class="cbox_next N=a:CML.next" href="#">다음</a>',
+            lastPage : '<a class="cbox_next_end" href="#">맨뒤</a>',
+
+            userRecommendImgTag : '<img src="http://img.tvcast.naver.net/service/img/ico_best_comment_cn2.png" width="33" height="15" title="네이버 이용자들이 공감한 댓글입니다." alt="네이버 이용자들이 공감한 댓글입니다." class="recommend2">',
+
+            policyDesc :
+                    '<div class="cbox_desc2">'+
+                    '<p><span>주제와 무관한 댓글, 악플은 삭제될 수 있습니다.</span>'+
+                    '<a href="#" target="_blank"></a></p>'+
+                    '</div>',
+
+            replyAreaPage :
+                    '<li class="cbox_comment cbox_thumb_off cbox_pagination">'+
+                    '<p class="cbox_best_paginate">'+
+                    '<a href="#" class="cbox_best_pre">이전 답글</a>'+
+                    '<span class="cbox_best_page"><em><span class="cbox_blind">현재 선택된 페이지 </span> {=curPage}</em>/<em><span class="cbox_blind">전체 페이지 수 </span>{=totalPage}</em></span>'+
+                    '<a href="#" class="cbox_best_next">다음 답글</a>'+
+                    '</p>'+
+                    '</li>',
+
+            spanWriteBox :
+                    '<div class="cbox_txt_area">'+
+                    '<table cellspacing="0" class="cbox_section">'+
+                    '<caption>덧글 입력박스</caption>'+
+                    '<tbody>'+
+                    '<tr>'+
+                    '<td></td>'+
+                    '<td>'+
+                    '<textarea class="cbox_txt_focus_area" cols="80" rows="20" name="" title="댓글 입력창"></textarea>'+
+                    '</td>'+
+                    '<td class="cbox_btn_area N=a:CMW.ok">'+
+                    '<input type="image" src="http://img.tvcast.naver.net/pc/img/btn_wrt_upld.png" alt="등록">'+
+                    '</td>'+
+                    '</tr>'+
+                    '<tr style="display:none;">'+
+                    '<td></td>'+
+                    '<td>'+
+                    '<div class="cbox_desc_area">'+
+                    '</div>'+
+                    '</td>'+
+                    '<td></td>'+
+                    '</tr>'+
+                    '</tbody>'+
+                    '</table>'+
+                    '</div>',
+
+            mobileIcon : '<img src="http://img.tvcast.naver.net/service/img/ico_mobile_white.gif" width="9" height="12" class="ico_mobile"> ',
+            mobileLayer : '<div style="top:26px; left:159px; z-index:30" class="ly_mobile"><em></em></div>'
+        },
+
+        "cbox_create" : ['.cbox_module', 'channel01', '1387284'],
+        "rolling" : [],
+        "realtime" : "jRealTimeTab",
+        "scrollbar" : [
+            "scrollbox"
+        ],
+        "bestMoveTab":"jBestTab",
+        "dropdown" : [
+            { "eventArea":"#jClipendTitle",
+                "eventAreaButton" : ["dt.btn_arrw_down","dt.btn_arrw_up"],
+                "viewArea":"#scrollbox"
+            }]
+    };
+
+    try {
+        if( RollingArray && RollingArray.length != 0  ) {
+            ghtCommentOptions.rolling = ghtCommentOptions.rolling.concat(RollingArray);
+        }
+    } catch(e){
+
+    }
+
+    function convertCurrency(sText) {
+        var sText = sText+"";
+        if(isNaN(parseFloat(sText,10))){
+            return sText;
+        }
+        var nDot = 0,
+                sReturn = "",
+                nDotPosition = sText.indexOf("."),
+                nLastPosition = sText.length;
+
+        if (nDotPosition > -1) {
+            nLastPosition = nDotPosition - 1;
+        }
+
+        //세자리마다 ,찍어 통화형식으로 만들기
+        for (var i = sText.length; i >= 0; i--) {
+            var sChar = sText.charAt(i);
+            if (i > nLastPosition) {
+                sReturn = sChar + sReturn;
+                continue;
+            }
+            if (/[0-9]/.test(sChar)) {
+                if (nDot >= 3) {
+                    sReturn = ',' + sReturn;
+                    nDot = 0;
+                }
+                nDot++;
+                sReturn = sChar + sReturn;
+            }
+        }
+        return sReturn;
+    }
+
+</script>
+
+
+
+
+
+
+    
+    
+    
+
+
+<script type="text/javascript" src='/resources/release/js/jindo.component.LazyLoading_1_10_0.20140220_20170209060108.js'></script>
+<script type="text/javascript" src='/resources/release/js/comment/jindo.desktop.min.ns.2.8.0.commentJ_20170209060108.js'></script>
+<script type="text/javascript" src='/resources/release/js/comment/jindo_component.1.7.0.commentJ_20170209060108.js'></script>
+
+<script>
+    var continuousPlayList = {"list" : [], "playIndex" : 0};
+    
+    continuousPlayList.list.push({
+        clipNo : '1397566',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1381382',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1381414',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1386798',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1386814',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1404281',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1386868',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1386875',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1386987',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387027',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387068',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387085',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1417794',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387249',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387284',
+        isAdult : 'N'
+    });
+    
+    continuousPlayList.playIndex = 14 || 0;
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1397066',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387365',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1430619',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1430663',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387453',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1387485',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1404287',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1410472',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1417974',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1368246',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1368305',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1383500',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1402511',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1410515',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1417981',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1385197',
+        isAdult : 'N'
+    });
+    
+    
+    continuousPlayList.list.push({
+        clipNo : '1386804',
+        isAdult : 'N'
+    });
+    
+    
+</script>
+
+
+
+    
+        
+    
+    
+
+
+<script type="text/javascript">
+
+    var nsc = 'tvcast.end';
+    var ghtEnv = {
+        sPageName : "clipEnd"
+        , nClipNo : 1387284
+        , sPartnerNo : '1'
+        , sStationNo : '2885'
+        , sVideoId : '19F889967368A409A0B9C2262953FCCA04AD'
+        , sSearchKeyword : ''
+        , sChannelId : '3color'
+        , sDisplayChannelId: '3color'
+        , sChannelName : '세가지색 판타지 - 생동성 연애'
+        , sClipNo : '1387284'
+        , sCategoryCodeAsString : 'DRAMA'
+        , nLikeItCount : 2635
+        , sLikeItDomain : 'http://common.like.naver.com'
+        , bIsLogin : false
+        , isPlayableAuth : 'notAdult'
+        , sAccessKey : ''
+        , nPlaylistNo : 108608
+        , sPlaylistType : 'GENERAL'
+        , nNextClipNo : '1397066'
+        , nNextPlaylistNo : '108608'
+        , sContinuousPlayCookieKey : 'NTC_ContPL'
+        , sClipboardSwfUrl : '/resources/swf/clipboard.swf'
+        , sCurrentClipUrl : 'http://tv.naver.com/v/1387284/list/108608'
+        , sNextClipUrl : 'http://tv.naver.com/v/1397066/list/108608'
+        , bIsDescriptionAvailable : true
+        , bIsDescriptionOpened : true
+        , bCommentOpen : false
+        , bIsSmr : false
+        , htComment2Option : {"domain":"http://static.cbox.naver.net","apiDomain":"http://apis.naver.com/commentBox/cbox","login":false,"ticket":"channel01","templateId":"default","objectId":"1387284","language":"ko","country":"KR","pageType":"default","pageSize":20,"indexSize":5,"replyPageSize":5,"cssId":"tvcast","cssUrl":"http://tv.naver.com/resources/release/css/comment/pc_20170209060108.css","id":"cbox_module","likeItId":"1387284","help":"down","groupId":"3color"}
+        , bIsComment2 : true
+        , apiDomain : "http://api.tv.naver.com"
+        , logApiDomain : "http://logapi.tvcast.naver.com"
+        , nstoreFreeMovie : "false"
+    };
+
+    var channelPPL = {};
+
+    window.attachEvent ? window.attachEvent('onload', loadHandler) : window.addEventListener('load', loadHandler, false);
+
+    function loadHandler() {
+        var aLoadJs = new Array();
+
+        aLoadJs.push('http://img.tvcast.naver.net/pc/js/jindo/jindo.component.1_13_0.20140930.min.js');
+        aLoadJs.push('/resources/release/js/lcslog_20170209060108.js');
+        aLoadJs.push('/resources/release/js/tvcast.Namespace_20170209060108.js');
+        aLoadJs.push('/resources/release/js/tvcast.pc.Gnb_20170209060108.js');
+
+        
+        
+        aLoadJs.push('/resources/release/js/clipEnd/tvcast.pc.ClipEnd.all_20170209060108.js');
+        
+        
+        
+        jindo.LazyLoading.load(aLoadJs, function() {
+            tvcast.pc.Gnb = new Gnb();
+            tvcast.pc.ClipEnd = new ClipEnd();
+            tvcast.pc.LikeIt = new LikeIt(ghtEnv);
+            tvcast.pc.Comment = new Comment();
+            tvcast.pc.RecommendStats = new tvcast.RecommendStats({
+                apiDomain : 'http://logapi.tvcast.naver.com'
+                , clipNo : '1387284'
+                , device : 'PC'
+                , brandId : ''});
+            tvcast.pc.Subscription = new Subscription();
+            tvcast.pc.CreatorSubscription = new CreatorSubscription();
+            tvcast.pc.pplCommerce.init(channelPPL);
+        });
+
+        aLoadJs = null;
+    }
+</script>
+
+
+
+
+
+<div class="floating_top">
+    <iframe frameborder="0" src="about:blank" style="position:absolute;left:0;top:0;width:100%;height:100%;border:none;vertical-align:bottom" title="TOP"></iframe>
+    <a href="/" class="btn btn_home" onclick="clickcr(this, 'mov.home', '', '', event)" title="홈">홈</a>
+    <a href="javascript:window.scrollTo(0, 0);" class="btn btn_top" onclick="clickcr(this, 'mov.top', '', '', event)" title="TOP">TOP</a>
+</div>
+
+</div>
+
+
+
+
+
+<div id="footer" style="padding-left: 180px;">
+<ul>
+    <li class="first"><a href="http://www.naver.com/rules/service.html" target="_blank" onClick="clickcr(this, 'fot.agreement', '', '', event);">이용약관</a></li>
+    <li><a href="http://www.naver.com/rules/privacy.html" target="_blank" onClick="clickcr(this, 'fot.privacy', '', '', event);">개인정보처리방침</a></li>
+    <li><a href="http://www.naver.com/rules/disclaimer.html" target="_blank" onClick="clickcr(this, 'fot.disclaimer', '', '', event);">책임의 한계와 법적고지</a></li>
+    <li><a href="https://help.naver.com/support/service/main.nhn?serviceNo=705" target="_blank" onClick="clickcr(this, 'fot.helpdesk', '', '', event);">네이버TV 고객센터</a></li>
+    <li><a href="https://help.naver.com/support/contents/contents.nhn?serviceNo=705&categoryNo=11439" target="_blank" onClick="clickcr(this, 'fot.chopen', '', '', event);">네이버TV 채널 개설</a></li>
+    <li><a href="/play/agreement/tos">플레이리그 이용 및 운영원칙</a></li>
+</ul>
+<p class="info">본 콘텐츠의 저작권은 저작권자에 있으며, 이를 무단으로 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+<address>
+    <a href="http://www.naver.com" class="nhn" target="_blank" onClick="clickcr(this, 'fot.navercorp', '', '', event);">
+        <img src="http://static.naver.net/common/footer/ci_naver.png" width="63" height="11" alt="NAVER">
+    </a>
+    <em>Copyright ©</em>
+    <a href="http://www.navercorp.com" target="_blank" onClick="clickcr(this, 'fot.navercorp', '', '', event);">NAVER Corp.</a>
+    <span>All Rights Reserved.</span>
+</address>
+
+</div>
+
+<div class="dimd" id="layerDimd" style="display:none"></div>
+
+<script type="text/javascript" src="http://img.tvcast.naver.net/mobile/js/splog_m.js"></script>
+<script type="text/javascript">window.BMR.run('http://sp.naver.com/sp');</script>
+<script type="text/javascript">
+	function redirectMobile() {
+		setCookie("NTC_PC_MODE", "false");
+		var sRedirectPcUrl = "";
+		
+		if (location.search === "") {
+			sRedirectPcUrl = 'http://m.tv.naver.com'+ location.pathname;
+		} else {
+			sRedirectPcUrl = 'http://m.tv.naver.com' +
+							  location.pathname +
+	        				  location.search.split("&")[0];
+		}
+		location.href = sRedirectPcUrl;
+	}
+	
+	function setCookie(name, value) {
+		var domain = ".tv.naver.com";
+		var path = "/";
+		document.cookie = name + "=" + value + "; path=" + path + "; domain=" + domain;
+    }
+</script>
+</body>
+</html>

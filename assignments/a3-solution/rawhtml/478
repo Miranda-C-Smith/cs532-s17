@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.ntv-mw .socialContainer.twoCol {
+  position:relative !important;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="icon" type="image/png" href="../../dist/assets/icons/favicon.ico">
+<link href="../../dist/assets/icons/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="../../dist/assets/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="../../dist/assets/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="../../dist/assets/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="../../dist/assets/icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="../../dist/assets/icons/icon-hires.png" rel="icon" sizes="192x192" />
+<link href="../../dist/assets/icons/icon-normal.png" rel="icon" sizes="128x128" />
+<link rel="stylesheet" type="text/css" href="/dist/css_1486390025914/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="/dist/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/angular-touch/angular-touch.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/angular-ui/build/angular-ui.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/waypoints/lib/shortcuts/sticky.min.js"></script>
+<script type="text/javascript"
+        src="/dist/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="/dist/bower_components/moment/min/moment.min.js"></script>
+<script type='text/javascript' src='../../dist/assets/js/ng-infinite-scroll.js'></script>
+<meta property="al:ios:app_name" content="ap-news-app">
+<meta property="al:ios:app_store_id" content="364677107">
+<meta property="al:ios:url" content="https://apnews.com/adeceda1735e4b4391765e42b81de55a">
+
+<meta name="ap-news-app" content="app-id=364677107, app-argument=https://apnews.com/adeceda1735e4b4391765e42b81de55a/Report:-At-least-13,000-hanged-in-Syrian-prison-since-2011?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP">
+<meta property="fb:pages" content="249655421622"/>
+
+<meta name="referrer" content="origin">
+
+<script type="text/javascript">
+    var _sf_async_config = _sf_async_config || {};
+    /** CONFIGURATION START **/
+    _sf_async_config.uid = 11689; // ACCOUNT NUMBER
+    _sf_async_config.domain = 'apnews.com'; // DOMAIN
+    _sf_async_config.flickerControl = false;
+    _sf_async_config.useCanonical = true;
+    /** CONFIGURATION END **/
+    var _sf_startpt = (new Date()).getTime();
+</script>
+<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
+
+<script type='text/javascript'>
+    var environment_type = 'PRODUCTION';
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+    <script type="text/javascript" src="../../dist/assets/js/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="../../dist/assets/js/bootstrap.min.js"></script>
+    <!-- video js -->
+    <link href="//vjs.zencdn.net/5.3/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../dist/assets/js/videojs.ads.css"/>
+    <link rel="stylesheet" href="../../dist/assets/js/videojs.ima.css"/>
+    <title>Report: At least 13,000 hanged in Syrian prison since 2011</title>
+    <meta id="adMetaTags" name="keywords" content="Amnesty International,International News,Middle East,Damascus,AP Top News,Bashar Assad,Syria,Beirut"/>
+    <meta name="description" content="
+              BEIRUT (AP) — Syrian authorities have killed at least 13,000 people since the start of the 2011 uprising in mass hangings at a prison north of Damascus known to detainees as &#34;the "/>
+    <link rel="canonical" href="https://apnews.com/adeceda1735e4b4391765e42b81de55a"/>
+    <link rel="amphtml" href="https://apnews.com/amp/adeceda1735e4b4391765e42b81de55a">
+
+    <!-- OG Tags -->
+    <meta property="og:url" content="https://apnews.com/adeceda1735e4b4391765e42b81de55a/Report:-At-least-13,000-hanged-in-Syrian-prison-since-2011?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP"/>
+    <meta property="og:image" content="https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg"/>
+    <meta property="og:image:width" content="800"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Report: At least 13,000 hanged in Syrian prison since 2011"/>
+    <meta property="og:site_name" content="AP News"/>
+    <meta property="fb:app_id" content="870613919693099"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:description" content="
+              BEIRUT (AP) — Syrian authorities have killed at least 13,000 people since the start of the 2011 uprising in mass hangings at a prison north of Damascus known to detainees as &#34;the "/>
+    <meta property="article:publisher" content="https://www.facebook.com/APNews"/>
+
+    <!-- Twitter Card tags -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:site" content="@ap"/>
+    <meta property="twitter:title" content="Report: At least 13,000 hanged in Syrian prison since 2011"/>
+    <meta property="twitter:description" content="
+              BEIRUT (AP) — Syrian authorities have killed at least 13,000 people since the start of the 2011 uprising in mass hangings at a prison north of Damascus known to detainees as &#34;the "/>
+    <meta property="twitter:image" content="https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg"/>
+    <meta property="twitter:url" content=" https://apnews.com/adeceda1735e4b4391765e42b81de55a"/>
+    <meta name="twitter:image:alt" content="https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg"/>
+
+    <script type="text/javascript">
+        window._taboola = window._taboola || [];
+        _taboola.push(
+                {article: 'auto'}
+        );
+        !function (e, f, u) {
+            e.async = 1;
+            e.src = u;
+            f.parentNode.insertBefore(e, f);
+        }(document.createElement('script'),
+                document.getElementsByTagName('script')[0],
+                '//cdn.taboola.com/libtrc/associatedpress-apnews/loader.js');
+    </script>
+    <script type='text/javascript'>
+      googletag.cmd.push(function(){
+        var isSticked = false;
+        var bottomAdPos;
+        googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+            if (event.slot.getSlotElementId() === "div-gpt-ad-1461247613791-1") {
+              var bottomAd = $("#bottomAd");
+              bottomAdPos = $("#bottomAd").position().top;
+              $(window).scroll(function() {
+                  var windowPos = $(window).scrollTop();
+                  if (windowPos >=  bottomAd.position().top){
+                      if(!isSticked){
+                        bottomAdPos = bottomAd.position().top;
+                        isSticked = true;
+                      }
+                      bottomAd.addClass("stickBottomAd");
+                  }
+                  if(windowPos < bottomAdPos){
+                      bottomAd.removeClass("stickBottomAd");
+                  }
+              });
+             }
+         });
+        googletag.defineSlot('/15786418/APNews/site/article/rectangle1', [[300, 250], [300, 600]], 'div-gpt-ad-1461247613791-1').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+        googletag.defineSlot('/15786418/APNews/site/article/rectangle2', [300, 250], 'div-gpt-ad-1461247613791-2').addService(googletag.pubads());
+      });
+    </script>
+
+    <base href="/">
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var imageClassList = $('.articleImage').prop('classList');
+        if(jQuery.inArray('tallImage',imageClassList) != -1){
+          $('.articleBody .ad-placeholder:nth(0)').remove();
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-19104461-33', 'auto');
+        ga('set', {
+            'dimension1': 'adeceda1735e4b4391765e42b81de55a',
+            'dimension4': "Report: At least 13,000 hanged in Syrian prison since 2011",
+            'dimension8': ''
+        });
+        ga('send', 'pageview');
+
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://apnews.com/adeceda1735e4b4391765e42b81de55a"
+        },
+        "headline": "Report: At least 13,000 hanged in Syrian prison since 2011",
+        "image":{
+            "@type": "ImageObject",
+            "url": "https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg",
+            "height": "607",
+            "width": "800"
+        },
+        "datePublished": "2017-02-07 00:16:00",
+        "dateModified": "2017-02-07 00:16:00",
+        "author": {
+            "@type": "Person",
+            "name": "By SARAH EL DEEB"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Associated Press",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "http://apcontextual.appspot.com/Support/AMPLogo.png",
+              "width": 600,
+              "height": 60
+            }
+        },
+        "description": ""
+      }
+
+
+    </script>
+</head>
+<body ng-app="articleContent" style="background-color: white">
+<script type="text/javascript" src="../../dist/assets/js/socialMedia.js"></script>
+
+<!-- Modal -->
+<div id="imageModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="closeContentModalButton">
+                    <a type="button" data-dismiss="modal">&times;</a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        
+                        <div class="item  active ">
+                            <img src="https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg" alt="None">
+                            <div class="carousel-caption">
+                                
+              <p>
+              COMBO - In this combination of two photos of Omar Alshogre, a 21-year Syrian former detainee, now living in Stockholm, Sweden. The left picture is of Alshogre taken on January 2017 in Stockholm, Sweden. The right picture is of Alshogre in July 2015 in Antakya, Turkey, a month after he got out of Syria's Saydnaya prison, near Damascus. While in detention, Alshogre said he heard men escorted to be hanged and had himself been called for "execution" but was spared after a brief trial. Amnesty published a new report on Tuesday revealing that as many as 13,000 men were hanged in secret in a Syrian prison between 2011 and 2015, as part of a government campaign of extrajudicial executions. The group says for five years, once or twice weekly, groups of up to 50 people were taken out of their prison cells and hanged to death. (Handout by Omar Alshogre via AP)
+            </p>
+            
+                            </div>
+                        </div>
+                        
+                        <div class="item ">
+                            <img src="https://storage.googleapis.com/afs-prod/media/media:36dc782a502647258133e8b4a42ab061/800.jpeg" alt="None">
+                            <div class="carousel-caption">
+                                
+              <p>
+              Lynn Maalouf, deputy director of research at Amnesty International Middle East and North Africa, speaks during an interview with The Associated Press in Beirut, Lebanon, Monday, Feb. 6, 2017. Amnesty International says Syrian authorities killed at least 13,000 people in mass hangings at a prison north of Damascus known to detainees as the &#8220;slaughterhouse.&#8221; The group released a report covering the period from the start of the 2011 uprising until 2015, during which Amnesty says groups of 20 to 50 people were hanged at Saydnaya Prison, once or twice a week, in killings authorized by senior officials, including deputies of President Bashar Assad. (AP Photo/Bilal Hussein)
+            </p>
+            
+                            </div>
+                        </div>
+                        
+                        <div class="item ">
+                            <img src="https://storage.googleapis.com/afs-prod/media/media:b566ec73c61d4fe987210e8df4699ebd/800.jpeg" alt="None">
+                            <div class="carousel-caption">
+                                
+              <p>
+              Lynn Maalouf, deputy director of research at Amnesty International Middle East and North Africa, speaks during an interview with The Associated Press in Beirut, Lebanon, Monday, Feb. 6, 2017. Amnesty International says Syrian authorities killed at least 13,000 people in mass hangings at a prison north of Damascus known to detainees as the &#8220;slaughterhouse.&#8221; The group released a report covering the period from the start of the 2011 uprising until 2015, during which Amnesty says groups of 20 to 50 people were hanged at Saydnaya Prison, once or twice a week, in killings authorized by senior officials, including deputies of President Bashar Assad. (AP Photo/Bilal Hussein)
+            </p>
+            
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Left and right controls -->
+                    
+                    <a class="left carousel-control" href="#imageCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><div class="sr-only carousel-round"> <svg class="carousel-arrow" viewBox="0 0 100 100"><path d="M 25,50 L 60,85 L 65,80 L 35,50  L 65,20 L 60,15 Z" class="arrow"></path></svg> </div></span>
+                    </a>
+                    <a class="right carousel-control" href="#imageCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><div class="sr-only carousel-round"> <svg class="carousel-arrow" viewBox="0 0 100 100"><path d="M 25,50 L 60,85 L 65,80 L 35,50  L 65,20 L 60,15 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg> </div></span>
+                    </a>
+
+                    <ol class="carousel-indicators">
+                        
+                        <li data-target="#imageCarousel" data-slide-to="0" 
+                            class="active" ></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="1" ></li>
+                        
+                        <li data-target="#imageCarousel" data-slide-to="2" ></li>
+                        
+                    </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div page-header></div>
+
+
+<div class="articleView" >
+    <div class="articleContentContainer">
+        <div class="sideRail leftRail" >
+            <div class="fullscreen">
+                <div>
+                    <h4>By SARAH EL DEEB</h4>
+                </div>
+                <div>
+                    <h4 class="updatedString">Feb. 07, 2017</h4>
+                </div>
+            </div>
+            <div class="outerShareContainer">
+                <div class="fbShare socialIcons" data-url="https://apnews.com/adeceda1735e4b4391765e42b81de55a/Report:-At-least-13,000-hanged-in-Syrian-prison-since-2011?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP" data-title="Report: At least 13,000 hanged in Syrian prison since 2011" data-image="https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg"
+     data-member="" data-id="urn:publicid:ap.org:adeceda1735e4b4391765e42b81de55a" data-cardType="">
+    <img src="../../dist/assets/icons/facebook-share.png" class="shareIcon"/>
+</div>
+<div class="tweet socialIcons" data-title="Report: At least 13,000 hanged in Syrian prison since 2011" data-url="https://apnews.com/adeceda1735e4b4391765e42b81de55a"
+     data-member="" data-id="urn:publicid:ap.org:adeceda1735e4b4391765e42b81de55a" data-cardType="">
+    <img src="../../dist/assets/icons/twitter-share.png" class="shareIcon"/>
+</div>
+<div id="mailTo" class="socialIcons" data-url="https://apnews.com/adeceda1735e4b4391765e42b81de55a" data-member=""
+     data-id="urn:publicid:ap.org:adeceda1735e4b4391765e42b81de55a" data-cardType="">
+    <img src="../../dist/assets/icons/email.png" class="shareIcon"/>
+</div>
+<div share-container name="Report: At least 13,000 hanged in Syrian prison since 2011" is-share="false" url="https://apnews.com/adeceda1735e4b4391765e42b81de55a" id="urn:publicid:ap.org:adeceda1735e4b4391765e42b81de55a" short-id="adeceda1735e4b4391765e42b81de55a" type="content" page="card"
+     card-type="" card-title="Report: At least 13,000 hanged in Syrian prison since 2011" member-name=""></div>
+            </div>
+
+            <div class="leftRailTags leftRailTitle">
+                <h4>RELATED TOPICS</h4>
+                <ul>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/AmnestyInternational">Amnesty International</a>
+                    </li>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/apf-mideast">Middle East</a>
+                    </li>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/Damascus">Damascus</a>
+                    </li>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/apf-topnews">AP Top News</a>
+                    </li>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/BasharAssad">Bashar Assad</a>
+                    </li>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/Syria">Syria</a>
+                    </li>
+                    
+                    <li>
+                        <a class="leftRailTagButtons" href="/tag/Beirut">Beirut</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <span class="leftRailTitle">More from</span><br/>
+                <a href="/tag/apf-intlnews"><span class="moreFrom">International News</span></a>
+            </div>
+        </div>
+
+        
+        <div class="articleContent" id="articleContent">
+            <div class="dtTitle">
+                <ul class="topTags">
+                    
+                    <li class="tagsList">
+                        <a href="/tag/AmnestyInternational">Amnesty International</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/apf-mideast">Middle East</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/Damascus">Damascus</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/apf-topnews">AP Top News</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/BasharAssad">Bashar Assad</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/Syria">Syria</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/Beirut">Beirut</a>
+                    </li>
+                    
+                    <li class="tagsList">
+                        <a href="/tag/apf-intlnews">International News</a>
+                    </li>
+                </ul>
+                <div class="dtTitleContainer">
+                    <h4 class="hubPreTitle">International News</h4>
+                    <h1 class="topTitle">Report: At least 13,000 hanged in Syrian prison since 2011</h1>
+                </div>
+            </div>
+            
+            <div class=" articleImage modalImageButton  ">
+                <div class="articleIcons">
+                    
+                    <button data-toggle="modal" class="modalImageButton"><img
+                            src="../../dist/assets/icons/slideshow-story-view.png" class="articleIcon"></button>
+                    
+                    
+                </div>
+                <img class="afkl-lazy-image primaryImage" src="https://storage.googleapis.com/afs-prod/media/media:ef4276f1e60f487cb84b639558b67868/800.jpeg">
+            </div>
+            
+            <script>
+            </script>
+            <article id="contentArea"
+                     class="    ">
+                <div class="mobileTitle">
+                    <ul style="padding: 0">
+                        
+                        <li class="tagsList">
+                            <a href="/tag/AmnestyInternational">Amnesty International</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/apf-mideast">Middle East</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/Damascus">Damascus</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/apf-topnews">AP Top News</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/BasharAssad">Bashar Assad</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/Syria">Syria</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/Beirut">Beirut</a>
+                        </li>
+                        
+                        <li class="tagsList">
+                            <a href="/tag/apf-intlnews">International News</a>
+                        </li>
+                    </ul>
+                    <h3>Report: At least 13,000 hanged in Syrian prison since 2011</h3>
+                </div>
+                <div class="mobile">
+                    <div>
+                        <h6>By SARAH EL DEEB</h6>
+                    </div>
+                    <div>
+                        <h6>Feb. 07, 2017</h6>
+                    </div>
+                </div>
+                <div class="articleBody">
+<p>BEIRUT (AP) &#8212; Syrian authorities have killed at least 13,000 people since the start of the 2011 uprising in mass hangings at a prison north of Damascus known to detainees as "the slaughterhouse," Amnesty International said in a report Tuesday.</p>
+<p>It covers the period from 2011 to 2015, when Amnesty said 20-50 people were hanged each week at Saydnaya Prison in killings authorized by senior Syrian officials, including deputies of President Bashar Assad, and carried out by military police.</p>
+<p>The report referred to the killings as a "calculated campaign of extrajudicial execution."</p>
+<p>Amnesty has recorded at least 35 different methods of torture in Syria since the late 1980s, practices that only increased since 2011, said Lynn Maalouf, deputy director for research at Amnesty's regional office in Beirut.</p><div class="ad-placeholder"></div>
+<p>Other rights groups have found evidence of massive torture leading to death in Syrian detention facilities. In a report last year, Amnesty found that more than 17,000 people have died of torture and ill-treatment in custody across Syria since 2011, an average rate of more than 300 deaths a month.</p>
+<p>Those figures are comparable to battlefield deaths in Aleppo, one of the fiercest war zones in Syria, where 21,000 were killed in the province since 2011.</p>
+<p>"The horrors depicted in this report reveal a hidden, monstrous campaign, authorized at the highest levels of the Syrian government, aimed at crushing any form of dissent within the Syrian population," Maalouf said.</p>
+<p>While the most recent data is from 2015, Maalouf said there is no reason to believe the practice has stopped since then, with thousands more probably killed.</p>
+<p>"These executions take place after a sham trial that lasts over a minute or two minutes, but they are authorized by the highest levels of authority," including the Grand Mufti, a top religious authority in Syria, and the defense minister, she said.</p>
+<p>Syrian government officials rarely comment on allegations of torture and mass killings. In the past, they have denied reports of massacres documented by international human rights groups, describing them as propaganda.</p>
+<p>The chilling accounts in Tuesday's report came from interviews with 31 former detainees and over 50 other officials and experts, including former guards and judges.</p>
+<p>According to the findings, detainees were told they would be transferred to civilian detention centers but were taken instead to another building in the facility and hanged.</p>
+<p>"They walked in the 'train,' so they had their heads down and were trying to catch the shirt of the person in front of them. The first time I saw them, I was horrified. They were being taken to the slaughterhouse," Hamid, a former detainee, told Amnesty.</p>
+<p>Another former detainee, Omar Alshogre, told The Associated Press the guards would come to his cell, sometimes three times a week, and call out detainees by name.</p><div class="ad-placeholder"></div>
+<p>Alshogre said a torture session would begin before midnight in nearby chambers that he could hear.</p>
+<p>"Then the sound would stop, and we would hear a big vehicle come and take them away," said Alshogre, who spent nine months in Saydnaya. Now 21, he lives in Sweden.</p>
+<p>Speaking in an interview from Stockholm via Skype, Alshogre described how he was forced to keep his eyes closed and his back to the guards while they abused or suffocated a cellmate.</p>
+<p>The body often would be left behind, or there would be a pool of blood in the cell for other prisoners to clean up.</p>
+<p>"We can tell from the sound of the prisoner as he dies behind us. He dies a meter away. I don't see anything, but I see with my ears," said Alshogre, who at age 17 moved among nearly 10 detention facilities in Syria for two years before landing in Saydnaya.</p>
+<p>Alshogre survived nine months in the prison, paying his way out in 2015 &#8212; a common practice. He suffered from tuberculosis and his weight fell to 35 kilograms (77 pounds).</p>
+<p>Two cousins detained with him in western Syria didn't survive, dying a year apart in a military intelligence detention facility. The younger one died in Alshogre's arms, deprived of food and so weak he was unable to walk to the bathroom on his own.</p>
+<p>Still, Alshogre said nothing could have prepared him for Saydnaya.</p>
+<p>At one point, Alshogre was called out by his guards "for execution," he said. He was brought before a military trial and told not to raise his gaze at the judge, who asked him how many soldiers he had killed.</p>
+<p>When he said none, the judge spared him.</p>
+<p>Death in Saydnaya was always present, "like the air," Alshogre said.</p>
+<p>Once when he was deprived of food for two days, a cellmate handed him his food ration &#8212; and died days later.</p>
+<p>"This is someone who gave me his life," he said. Another cellmate died of diarrhea, also common in the prison.</p>
+<p>"Death is the simplest thing. It was the most hoped for because it would have spared us a lot: hunger, thirst, fear, pain, cold, thinking," he added.</p>
+<p>"Thinking was so hard. It could also kill," said Alshogre, who keeps a photo of one of his tormentors on the wall of his home.</p>
+</div>
+            </article>
+            
+            <div class="taboolaContainer" id="taboolaContainer">
+                <div id="taboola-below-article-text-links"></div>
+                <div id="taboola-below-article-thumbnails-2nd"></div>
+                <div id="taboola-below-article-thumbnails"></div>
+            </div>
+        </div>
+        
+        <div class="sideRail rightRail">
+            <div class="adUnit" id="div-gpt-ad-1461247613791-2">
+            </div>
+            <script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1461247613791-2');
+                });
+            </script>
+            <div class="rightRailContent" side-feed tag-id="apf-intlnews" content-id="adeceda1735e4b4391765e42b81de55a">
+            </div>
+            <div class="bottomAd" id="bottomAd">
+                <div class="feedAd" id="div-gpt-ad-1461247613791-1">
+                </div>
+            </div>
+            <script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1461247613791-1');
+                });
+            </script>
+        </div>
+        
+
+
+    </div>
+    <div page-footer></div>
+</div>
+<script type="application/javascript" src="/dist/articleContent_1486390026911.js"></script> 
+<script type="application/javascript" src="/dist/contentTemplates_1486390029666/templates.js"></script>
+<script src="//vjs.zencdn.net/5.3/video.min.js"></script>
+<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+<script src="../../dist/assets/js/videojs.ads.js"></script>
+<script src="../../dist/assets/js/videojs.ima.js"></script>
+<script type="application/javascript" src="/dist/articleManager_1486390026911.js"></script> 
+
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push(
+            {flush: true}
+    );
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        window._taboola = window._taboola || [];
+        _taboola.push(
+                {
+                    mode: 'thumbnails-a',
+                    container: 'taboola-below-article-thumbnails',
+                    placement: 'Below Article Thumbnails',
+                    target_type: 'mix'
+                }
+        );
+    });
+
+</script>
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push(
+            {
+                mode: 'organic-thumbnails-a',
+                container: 'taboola-below-article-thumbnails-2nd',
+                placement: 'Below Article Thumbnails 2nd',
+                target_type: 'mix'
+            }
+    );
+</script>
+
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push(
+            {
+                mode: 'organic-text-links-a',
+                container: 'taboola-below-article-text-links',
+                placement: 'Below Article Text Links',
+                target_type: 'mix'
+            }
+    );
+</script>
+<!-- Twitter universal website tag code -->
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('nv0fp',
+        {tw_sale_amount: 0, tw_order_quantity: 0}
+);</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+         src="https://analytics.twitter.com/i/adsct?txn_id=nv0fp&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"/>
+    <img height="1" width="1" style="display:none;" alt=""
+         src="//t.co/i/adsct?txn_id=nv0fp&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"/>
+</noscript>
+<!-- End Twitter universal website tag code -->
+<input id="hiddenTitle" type="hidden" value="Report: At least 13,000 hanged in Syrian prison since 2011">
+<input type="hidden" value="None" id="userAccount">
+<input type="hidden" value="None" id="userToken">
+<input type="hidden" value="https://afs-prod.appspot.com" id="baseAFS">
+<input type="hidden" value="https://storage.googleapis.com/afs-prod/" id="baseGCS">
+<input type="hidden" value="36.850769,-76.285873" id="latLong">
+<input type="hidden" value="va" id="region">
+<input type="hidden" value="norfolk" id="city">
+<input type="hidden" value="US" id="country">
+
+<script type='text/javascript'>
+    var _sf_async_config = _sf_async_config || {};
+    /** CONFIGURATION START **/
+    _sf_async_config.sections = 'intlnews,mideast,topnews';
+    _sf_async_config.authors = 'By SARAH EL DEEB';
+    _sf_async_config.alias = window.location.href;
+
+
+    /** CONFIGURATION END **/
+    (function() {
+      function loadChartbeat() {
+          window._sf_endpt = (new Date()).getTime();
+          var e = document.createElement('script');
+          e.setAttribute('language', 'javascript');
+          e.setAttribute('type', 'text/javascript');
+          e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+
+          document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+          loadChartbeat : function() {
+              oldonload();
+              loadChartbeat();
+          };
+
+      })();
+  </script>
+</body>
+</html>

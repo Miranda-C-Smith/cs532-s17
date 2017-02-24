@@ -1,0 +1,634 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="keywords" content="雨雲レーダー,リアルタイム,ゲリラ豪雨,降水,ナウキャスト">
+<meta name="description" content="全国各地の実況雨雲の動きをリアルタイムでチェックできます。地図上で目的エリアまで簡単ズーム！">
+<meta name = "format-detection" content = "telephone=no">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Yahoo_weather">
+    <meta name="twitter:creator" content="@Yahoo_weather">
+    <meta name="twitter:description" content="全国各地の実況雨雲の動きをリアルタイムでチェックできます。地図上で目的エリアまで簡単ズーム！">
+    <meta name="twitter:domain" content="weather.yahoo.co.jp">
+    <meta name="twitter:app:name:iphone" content="Yahoo!天気">
+    <meta name="twitter:app:name:ipad" content="Yahoo!天気">
+    <meta name="twitter:app:name:googleplay" content="Yahoo!天気">
+    <meta name="twitter:app:url:iphone" content="">
+    <meta name="twitter:app:url:ipad" content="">
+    <meta name="twitter:app:url:googleplay" content="">
+    <meta name="twitter:app:id:iphone" content="521974902">
+    <meta name="twitter:app:id:ipad" content="521974902">
+    <meta name="twitter:app:id:googleplay" content="jp.co.yahoo.android.weather.type1">
+    <meta name="twitter:app:country" content="jp">
+    <meta name="twitter:title" content="雨雲ズームレーダー - Yahoo!天気・災害">
+    <meta name="twitter:image:src" content="https://img-weather.c.yimg.jp/weather/zoomradar/img.png?lat=36.6959562970805&lon=137.2136849&z=9&t=201702080146">
+    <meta property="og:site_name" content="Yahoo!天気・災害">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://img-weather.c.yimg.jp/weather/zoomradar/img.png?lat=36.6959562970805&lon=137.2136849&z=9&t=201702080146">
+    <meta property="og:title" content="雨雲ズームレーダー - Yahoo!天気・災害" />
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://weather.yahoo.co.jp/weather/zoomradar/?lat=36.6959562970805&lon=137.2136849&z=9&t=201702080146" />
+    <meta property="og:description" content="全国各地の実況雨雲の動きをリアルタイムでチェックできます。地図上で目的エリアまで簡単ズーム！" />
+
+    
+
+<!-- SpaceID=0 robot -->
+<link rel="stylesheet" href="//s.yimg.jp/images/weather/radar/rain/css/rainRadar-1.1.3.css?v=2" />
+<title>雨雲ズームレーダー - Yahoo!天気・災害</title>
+
+<!--[if IE]>
+<script type="text/javascript">
+(function () {
+        // for HTML5
+        var els = [
+                'section', 'article', 'hgroup', 'header',
+                'footer', 'nav','aside', 'figure',
+                'mark', 'time', 'ruby', 'rt', 'rp',
+                'figcaption', 'video', 'audio', 'meter', 'progress',
+                'canvas', 'details', 'summary', 'output'
+        ];
+        for (var i=0; i<els.length; i++ ) {
+                document.createElement(els[i]);
+        }
+})();
+</script>
+<![endif]-->
+<link rel="alternate" href="android-app://jp.co.yahoo.android.weather.type1/yjweather/zoomradar?from=appindex" />
+</head>
+
+<body>
+<div id="wrapper">
+
+<!--header start-->
+<div id="header">
+
+<span class="yj-guid"><a name="pagetop" id="pagetop"></a><img src="//s.yimg.jp/images/clear.gif" width="1" height="1" alt="このページの先頭です"></span>
+<span class="yj-skip"><a href="#contents-start"><img src="//s.yimg.jp/images/clear.gif" alt="このページの本文へ" width="1" height="1" ></a></span>
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+
+</div><!-- /#header -->
+<!--header end-->
+
+<!-- contents start-->
+<div id="contents">
+
+<div id="yjMapPanel">
+<div id="mapTab" class="tracked_mods">
+<nav>
+<div id="modeRain" class="selected"><span>雨に関する情報</span></div>
+<div id="modeWeather"><a href="javascript:void(0);">天気・災害</a></div>
+<div id="modeFull"><a href="javascript:void(0);"><img src="//s.yimg.jp/images/clear.gif" alt="全画面表示" width="9" height="10"></a></div>
+</nav>
+</div><!-- /#mapTab -->
+
+<!-- 雨に関する情報 -->
+<div id="rainPanel">
+<!-- #smapModule1 -->
+<div id="smapModule1" class="scroll">
+
+<!-- 検索box -->
+<div id="mdSearch" class="section">
+<form action="javascript:void(0);" method="">
+    <fieldset>
+    <input type="text" value="" id="searchText" name="p" size="27" placeholder="地名や住所を入力">
+    <input type="submit" name="" id="btnSearch" value="検索">
+    </fieldset>
+</form>
+</div><!-- /検索box -->
+
+<div id="mdMyArea" class="section">
+<!-- .cmnHd -->
+<div class="cmnHd"><h3 class="title">マイエリア</h3></div>
+<!-- /.cmnHd -->
+<!-- マイエリア登録ボタン -->
+<div id="myAreaEdit">
+<div class="cmnBtn"><a href="javascript:void(0);" class="btnEdit">マイエリアに登録</a></div>
+<div class="cmnBtn" style="display:none;"><span class="btnEdit disabled">マイエリアに登録</span></div>
+</div>
+<!-- /マイエリア登録ボタン -->
+<!-- マイエリア登録エリア -->
+<div id="myAreaRegist" style="display:none;">
+</div>
+<!-- /マイエリア登録エリア -->
+
+<ul class="myAreaList" id="myAreaList">
+<li>
+<span>マイエリア未登録</span>
+</li>
+<li>
+<span>マイエリア未登録</span>
+</li>
+<li>
+<span>マイエリア未登録</span>
+</li>
+</ul>
+</div>
+<!-- /#mdMyArea -->
+
+<div id="mdSocial" class="section">
+<div class="wrap">
+    <p class="text">このエリアの雨雲ズームレーダーをシェア</p>
+    <ul class="buttonSocial">
+    <li><a class="btnFb" href="javascript:void(0);">Facebookにシェア</a></li><!--
+    --><li><a class="btnTw" href="javascript:void(0);">ツイート</a></li><!--
+    --><li><a class="btnUrlShow" href="javascript:void(0);" id="tglUrlShow">URLを表示</a><a class="btnUrlHide" href="javascript:void(0);" id="tglUrlHide" style="display:none;">URLを非表示</a></li>
+    </ul><!-- /.buttonSocial -->
+    <div id="locationUrl" style="display:none;">
+    <form action="" method="">
+        <p class="urlText">
+            <textarea name="urlText" cols=35 rows=4 id="urlText"></textarea>
+        </p>
+    </form>
+    </div><!-- /#locationUrl -->
+</div>
+</div>
+
+<!-- .weatherAppBnr -->
+<div id="appbnr" class="weatherAppBnr tracked_mods">
+    <a href="//weather.yahoo.co.jp/weather/promo/app/?ref=pc_weather_zoomrader_appad"><img src="">雨雲ズームレーダーが更に便利なYahoo!天気アプリ</a>
+</div>
+<!-- /.weatherAppBnr -->
+
+<div id="mdWarning" class="section tracked_mods">
+<!-- .cmnHd -->
+<div class="cmnHd">
+<h3 class="title">雨に関する警報・注意報</h3>
+</div>
+<!-- /.cmnHd -->
+<div class="issuedText">
+2017年2月21日　12時30分現在</div>
+<div class="cmnTbl2Col">
+<table>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/1a/">道北</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/1b/">道央</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/1c/">道東</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/1d/">道南</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/2/">青森</a></th><td><span class="advisory">大雪</span><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/3/">岩手</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/4/">宮城</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/5/">秋田</a></th><td><span class="advisory">大雪</span><span class="advisory">風雪</span><span class="advisory">雷</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/6/">山形</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/7/">福島</a></th><td><span class="advisory">大雪</span><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/9/">栃木</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/10/">群馬</a></th><td><span class="warning">大雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/15/">新潟</a></th><td><span class="advisory">大雪</span><span class="advisory">風雪</span><span class="advisory">雷</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/17/">石川</a></th><td><span class="advisory">風雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/20/">長野</a></th><td><span class="advisory">大雪</span></td></tr>
+<tr><th><a href="//typhoon.yahoo.co.jp/weather/jp/warn/25/">滋賀</a></th><td><span class="advisory">風雪</span></td></tr>
+</table>
+</div><!-- /.cmnTbl2Col -->
+<div class="subText">大雨、大雪、風雪、洪水、雷のみ掲載</div>
+</div><!-- /#mdWarning -->
+
+
+<div id="mdLiveRainCloud" class="section tracked_mods">
+<!-- .cmnHd -->
+<div class="cmnHd"><h3 class="title">全国の雨雲の動き（実況～6時間後）</h3></div>
+<!-- /.cmnHd -->
+<!-- cmnImgBox -->
+<div class="cmnImgBox">
+<p class="pict">
+<a href="//weather.yahoo.co.jp/weather/jp/raincloud/"><img src="https://hailstorm.c.yimg.jp/im_siggE7KlqZ.N15x8VUbJX.pVqg---t1487646951-x240-y180/weather/raincloud/1487646000/202010-0000-jp0000-20170221120000.gif" border="0" alt="全国の雨雲の動き(実況～6時間後)"></a>
+</p>
+</div>
+<!-- /.cmnImgBox -->
+</div><!-- /#mdLiveRainCloud -->
+
+<div class="panelFooter">
+<div class="subLink">
+    <p><a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a></p>
+    <p><a href="https://feedback.ms.yahoo.co.jp/voc/weather-voc/input">ご意見・ご要望</a> - <a href="https://www.yahoo-help.jp/app/home/p/616/">ヘルプ・お問い合わせ</a></p>
+</div>
+<p class="copyright">
+    <small>(C) 2017 Japan Weather Association All Rights Reserved.</small>
+    <small>(C) 2017 Franklin Japan Corporation. All Rights Reserved.</small>
+    <small>(C) 2017 Yahoo Japan Corporation. All Rights Reserved.</small>
+</p>
+</div><!-- /#panelFooter -->
+
+</div><!-- /#smapModule1 -->
+
+</div><!-- /#rainPanel -->
+
+
+<!-- #weatherPanel -->
+<div id="weatherPanel" style="display:none;">
+
+<!-- #smapModule2 -->
+<div id="smapModule2" class="scroll">
+
+<!-- 防災情報 -->
+<div id="mdDisasterInfo" class="section">
+
+<!-- 防災情報 -->
+<div id="disaster" class="tracked_mods">
+<dl class="yjw_navi yjw_clr yjSt disaster">
+<dt>防災情報</dt>
+<dd class="list-w33"><a href="//typhoon.yahoo.co.jp/weather/jp/warn/">警報・注意報</a></dd>
+<dd class="list-w33"><a href="//typhoon.yahoo.co.jp/weather/rainstorm/">大雨警戒情報</a></dd>
+<dd class="list-w33"><a href="//typhoon.yahoo.co.jp/weather/jp/typhoon/">台風</a></dd>
+    <dd class="list-w33"><a href="//typhoon.yahoo.co.jp/weather/river/">河川水位</a></dd>
+<dd class="list-w20"><a href="//typhoon.yahoo.co.jp/weather/jp/earthquake/">地震</a></dd>
+<dd class="list-w47"><a href="//typhoon.yahoo.co.jp/weather/jp/tsunami/">津波</a></dd>
+<dd class="list-w20"><a href="//typhoon.yahoo.co.jp/weather/jp/volcano/">火山</a></dd>
+<dd class="list-w53"><a href="http://blogs.yahoo.co.jp/FRONT/OFFICIAL/official_list.html?pt=4">自治体の防災情報</a></dd>
+<dd class="list-w47"><a href="//crisis.yahoo.co.jp/evacuation/">避難情報</a></dd>
+<dd class="list-w53"><a href="//crisis.yahoo.co.jp/shelter/map/">避難所マップ</a></dd>
+<dd class="list-w47"><a href="//typhoon.yahoo.co.jp/weather/jp/emergency/">緊急・被害状況</a></dd>
+<dd class="list-w47"><a href="http://emg.yahoo.co.jp/sokuho/column/top/">防災コラム</a></dd>
+<dd class="list-w47"><a href="http://emg.yahoo.co.jp/">防災速報</a></dd>
+</dl>
+</div>
+<!-- /防災情報 -->
+</div>
+<!-- /防災情報 -->
+
+<!-- 天気ガイド -->
+<div id="mdWeatherGuide" class="section">
+
+<!-- 天気ガイド -->
+<div id="wthguid" class="tracked_mods">
+<dl class="yjw_navi yjw_clr yjSt wGuide">
+<dt>天気ガイド</dt>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/">天気予報</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/satellite/">衛星画像</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/chart/">天気図</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/amedas/">アメダス</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/raincloud/">雨雲の動き</a></dd>
+<dd class="list-w67 select">雨雲ズームレーダー</dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/lightning/">落雷情報</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/week/">週間天気</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/long/">長期予報</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/past/">過去の天気</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/wave/">波予測</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/wind/">風予測</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/expo/">指数情報</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/rainsnow/">雨雪判別</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/frost/">霜予測</a></dd>
+<dd class="list-w33"><a href="http://kafun.yahoo.co.jp/">花粉情報</a></dd>
+</dl>
+</div>
+<!-- /天気ガイド -->
+</div>
+<!-- /天気ガイド -->
+
+<!-- レジャー情報 -->
+<div id="mdLeisureInfo" class="section">
+
+<!-- レジャー情報 -->
+<div id="lsrfclty" class="tracked_mods">
+<dl class="yjw_navi yjw_clr yjSt wGuide">
+<dt>レジャー施設</dt>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/airport/">空港</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/golf/">ゴルフ場</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/tsuri/">釣り</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/autocamp/">キャンプ場</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/marine/">マリン</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/baseball/">野球場</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/soccer/">サッカー場</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/amusement/">テーマパーク</a></dd>
+<dd class="list-w33"><a href="//weather.yahoo.co.jp/weather/jp/leisure/horse/">競馬場</a></dd>
+<dd class="list-w100"><a href="http://forecast.tenki.jp/forecast/world/">世界の天気</a>（tenki.jp）</dd>
+</dl>
+</div>
+<!-- /レジャー情報 -->
+</div>
+<!-- /レジャー情報 -->
+
+<div class="panelFooter">
+<div class="subLink">
+    <p><a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a></p>
+    <p><a href="https://feedback.ms.yahoo.co.jp/voc/weather-voc/input">ご意見・ご要望</a> - <a href="https://www.yahoo-help.jp/app/home/p/616/">ヘルプ・お問い合わせ</a></p>
+</div>
+<p class="copyright">
+    <small>(C) 2017 Japan Weather Association All Rights Reserved.</small>
+    <small>(C) 2017 Franklin Japan Corporation. All Rights Reserved.</small>
+    <small>(C) 2017 Yahoo Japan Corporation. All Rights Reserved.</small>
+</p>
+</div><!-- /.panelFooter -->
+
+</div><!-- /#smapModule2 -->
+
+</div><!-- /#weatherPanel -->
+
+<div class="loader" style="display:none;"><img src="//s.yimg.jp/images/map/icon/loader.gif" alt="読み込み中" width="32" height="32" /></div>
+</div><!-- /#yjMapPanel -->
+
+<!-- 地図 -->
+<div id="yjMapMain">
+<section>
+<h2 class="mapTtl">地図</h2>
+<div id="contentMap">
+<!-- 地図面 -->
+<div id="map" style="display:none;"></div>
+<!-- /地図面 -->
+<!-- #controllers -->
+<div id="controllers" style="display:none;">
+    <div class="slideCtrl">
+        <a class="btnPlay" id="btnPlay" href="javascript:void(0);"></a>
+        <a class="btnPrev" id="btnPrev" href="javascript:void(0);"></a>
+        <div class="slideMod">
+        <div class="slideBar" id="ctrlTime">
+                <div class="slideScale" id="timeScale" style="width:255px;"></div>
+                <div class="slidePointer icoCtrlTime" id="timeGrip" style="left:240px"><img src="//s.yimg.jp/images/clear.gif" alt="" width="30" height="19"></div>
+            </div>
+        </div>
+        <a class="btnNext" id="btnNext" href="javascript:void(0);"></a>
+        <div class="slideMod speed">
+            <div class="slideBar" id="ctrlSpeed">
+                <div class="slideScale" id="intervalScale" style="width:0px;"></div>
+                <div class="slidePointer icoCtrlSpeed" id="intervalGrip" style="left:33px"><img src="//s.yimg.jp/images/clear.gif" alt="" width="22" height="22"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #/controllers -->
+<!-- 地図SS -->
+<div id="ydn-bot" style="display: none">
+</div>
+<!-- /.posMapSs -->
+
+<!-- 地図SS -->
+<div id="timeView" style="display:none;">
+</div>
+<div id="noteSwitch" style="display:none;">
+    <p><label>注記表示<input type="checkbox" id="checkboxLabel" name="btnShowLabel" value="注記表示"></label></p>
+</div>
+
+<noscript>
+<!-- .errText -->
+<div class="errText">
+    <p>JavaScriptの設定を「有効」にすると<br>「雨雲ズームレーダー」がご利用いただけます。<br><a href="https://www.yahoo-help.jp/app/noscript">JavaScriptの設定方法</a></p>
+</div>
+<!-- /.errText -->
+</noscript>
+
+</div><!-- /#contentMap -->
+
+<div id="mdAreaSearch" style="display:none;">
+<!-- #areaContent -->
+<div id="areaContent" class="togContent scroll" style="display:none;">
+<!--region-->
+<div class="cmnTtl">北海道</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="44.219090227769" lon="142.32625801953" z="9">道北</a><span class="s">|</span><a href="javascript:void(0);" lat="43.661380935259" lon="143.75997383985" z="9">道東</a><span class="s">|</span><a href="javascript:void(0);" lat="43.19863532408" lon="141.35946114453" z="9">道央</a><span class="s">|</span><a href="javascript:void(0);" lat="42.582882450783" lon="141.60665352734" z="9">道南</a></div>
+<!--/region-->
+<!--region-->
+<div class="cmnTtl">東北</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="40.911521793828" lon="140.73458303594" z="10">青森</a><span class="s">|</span><a href="javascript:void(0);" lat="39.716351314157" lon="141.20444415859" z="10">岩手</a><span class="s">|</span><a href="javascript:void(0);" lat="38.404613560283" lon="140.90205300234" z="10">宮城</a><span class="s">|</span><a href="javascript:void(0);" lat="39.689028462612" lon="140.4100105875" z="10">秋田</a><span class="s">|</span><a href="javascript:void(0);" lat="38.427870284772" lon="140.06664814063" z="10">山形</a><span class="s">|</span><a href="javascript:void(0);" lat="37.403922053739" lon="140.12985371016" z="10">福島</a></div>
+<!--/region-->
+<!--region-->
+<div class="cmnTtl">関東・信越</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="35.569324916461" lon="139.58453960078" z="10">東京</a><span class="s">|</span><a href="javascript:void(0);" lat="35.351410689691" lon="139.49412067031" z="10">神奈川</a><span class="s">|</span><a href="javascript:void(0);" lat="35.925076155236" lon="139.43094928359" z="10">埼玉</a><span class="s">|</span><a href="javascript:void(0);" lat="35.525954326432" lon="140.09836871719" z="10">千葉</a><span class="s">|</span><a href="javascript:void(0);" lat="36.301995701349" lon="140.26001292187" z="10">茨城</a><span class="s">|</span><a href="javascript:void(0);" lat="36.596436647706" lon="139.87525015391" z="10">栃木</a><span class="s">|</span><a href="javascript:void(0);" lat="36.534778790258" lon="138.98121942109" z="10">群馬</a><span class="s">|</span><a href="javascript:void(0);" lat="35.51674747797" lon="138.65359174297" z="10">山梨</a><span class="s">|</span><a href="javascript:void(0);" lat="37.681086655499" lon="138.86116366016" z="10">新潟</a><span class="s">|</span><a href="javascript:void(0);" lat="36.182711381057" lon="138.06554675469" z="10">長野</a></div>
+<!--/region-->
+<!--region-->
+<div class="cmnTtl">北陸・東海・近畿</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="36.838128205227" lon="137.21683776406" z="10">富山</a><span class="s">|</span><a href="javascript:void(0);" lat="36.816927930078" lon="136.73281809922" z="10">石川</a><span class="s">|</span><a href="javascript:void(0);" lat="35.840592546798" lon="136.10637675469" z="10">福井</a><span class="s">|</span><a href="javascript:void(0);" lat="34.955589816554" lon="137.10705028828" z="10">愛知</a><span class="s">|</span><a href="javascript:void(0);" lat="35.788702027014" lon="136.98894726094" z="10">岐阜</a><span class="s">|</span><a href="javascript:void(0);" lat="35.015106687524" lon="138.2511849625" z="10">静岡</a><span class="s">|</span><a href="javascript:void(0);" lat="34.52911701108" lon="136.3768145625" z="10">三重</a><span class="s">|</span><a href="javascript:void(0);" lat="34.590188555915" lon="135.54597349805" z="10">大阪</a><span class="s">|</span><a href="javascript:void(0);" lat="35.077143033972" lon="134.82362242383" z="10">兵庫</a><span class="s">|</span><a href="javascript:void(0);" lat="35.120680713527" lon="135.58267743203" z="10">京都</a><span class="s">|</span><a href="javascript:void(0);" lat="35.217760423997" lon="136.19258677969" z="10">滋賀</a><span class="s">|</span><a href="javascript:void(0);" lat="34.420611950758" lon="135.93445293516" z="10">奈良</a><span class="s">|</span><a href="javascript:void(0);" lat="34.043664055126" lon="135.68451397031" z="10">和歌山</a></div>
+<!--/region-->
+<!--region-->
+<div class="cmnTtl">中国・四国</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="35.340492868728" lon="133.798244375" z="10">鳥取</a><span class="s">|</span><a href="javascript:void(0);" lat="35.01249325012" lon="132.54792818828" z="10">島根</a><span class="s">|</span><a href="javascript:void(0);" lat="34.869250479874" lon="133.86297586719" z="10">岡山</a><span class="s">|</span><a href="javascript:void(0);" lat="34.604666243245" lon="132.71484552891" z="10">広島</a><span class="s">|</span><a href="javascript:void(0);" lat="34.199340556144" lon="131.55604534297" z="10">山口</a><span class="s">|</span><a href="javascript:void(0);" lat="33.849511312614" lon="134.16085260547" z="10">徳島</a><span class="s">|</span><a href="javascript:void(0);" lat="34.20622542145" lon="134.02677150781" z="10">香川</a><span class="s">|</span><a href="javascript:void(0);" lat="33.69102192498" lon="133.06279065937" z="10">愛媛</a><span class="s">|</span><a href="javascript:void(0);" lat="33.385568895585" lon="133.43218684687" z="10">高知</a></div>
+<!--/region-->
+<!--region-->
+<div class="cmnTtl">九州</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="33.524062294548" lon="130.53618052734" z="10">福岡</a><span class="s">|</span><a href="javascript:void(0);" lat="33.226441102392" lon="130.20898409297" z="10">佐賀</a><span class="s">|</span><a href="javascript:void(0);" lat="33.164386031338" lon="129.7416344625" z="10">長崎</a><span class="s">|</span><a href="javascript:void(0);" lat="32.646906185315" lon="130.75816589219" z="10">熊本</a><span class="s">|</span><a href="javascript:void(0);" lat="33.166892467733" lon="131.42849810391" z="10">大分</a><span class="s">|</span><a href="javascript:void(0);" lat="32.141539770819" lon="131.31948968281" z="10">宮崎</a><span class="s">|</span><a href="javascript:void(0);" lat="31.534877871835" lon="130.68228265156" z="10">鹿児島</a></div>
+<!--/region-->
+<!--region-->
+<div class="cmnTtl">沖縄</div>
+<div class="areaLst"><a href="javascript:void(0);" lat="26.492971705882" lon="127.81000135547" z="10">沖縄</a></div>
+<!--/region-->
+</div><!-- /#areaContent -->
+<div class="title togClick"><a href="javascript:void(0);">地名から探す</a><span class="tog rev off">開く</span></div>
+</div><!-- /#mdAreaSearch -->
+
+<!-- エリア情報 -->
+<div id="infoModule" style="display:none;">
+<ul id="infoTog" class="togContent scroll">
+<li><span class="rainCldLv1"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>0～1</li>
+<li><span class="rainCldLv2"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>1～2</li>
+<li><span class="rainCldLv3"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>2～4</li>
+<li><span class="rainCldLv4"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>4～8</li>
+<li><span class="rainCldLv5"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>8～12</li>
+<li><span class="rainCldLv6"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>12～16</li>
+<li><span class="rainCldLv7"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>16～24</li>
+<li><span class="rainCldLv8"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>24～32</li>
+<li><span class="rainCldLv9"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>32～40</li>
+<li><span class="rainCldLv10"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>40～48</li>
+<li><span class="rainCldLv11"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>48～56</li>
+<li><span class="rainCldLv12"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>56～64</li>
+<li><span class="rainCldLv13"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>64～80</li>
+<li><span class="rainCldLv14"><img src="//s.yimg.jp/images/clear.gif" alt="" width="8" height="8"></span>80～</li>
+<li><span>(mm/h)</span></li>
+</ul><!-- /#infoTog -->
+<div class="title togClick"><a href="javascript:void(0);">降水量</a><span class="tog rev on">開く</span></div>
+</div><!-- /#infoModule -->
+<!-- /エリア情報 -->
+
+<!-- スライダーズームコントロール -->
+<div class="zoomDefault" style="display:none;">
+        <a href="javascript:void(0);">日本全図</a>
+</div>
+<!-- /スライダーズームコントロール -->
+
+<!-- 全画面地図を終了ボタン -->
+<div id="closeFull"><a href="javascript:void(0);"><img src="//s.yimg.jp/images/clear.gif" alt="全画面地図を終了する" width="31" height="30" /></a></div>
+<!-- /全画面地図を終了ボタン -->
+
+<div id="fullMessage">
+全画面地図を終了するには、Escキーを押すか、<br />
+画面左上の矢印をクリックしてください。
+</div><!-- /#fullMessage -->
+
+<!-- .mapDisable for modal -->
+<div class="mapDisabled" style="display:none;"></div>
+<!-- /.mapDisable for modal -->
+
+<div id="zPosition" style='display:none;'></div>
+
+</section>
+</div><!-- /#yjMapMain -->
+<!-- /地図 -->
+
+<div id="contents-footer">
+        <span class="yj-guid"><img src="//s.yimg.jp/images/clear.gif" width="1" height="1" alt="本文はここまでです"></span>
+        <span class="yj-skip"><a href="#pagetop"><img src="//s.yimg.jp/images/clear.gif" alt="このページの先頭へ" width="1" height="1"></a></span>
+</div>
+
+</div><!-- /#contents -->
+<!--contents end-->
+
+</div><!-- /#wrapper -->
+
+<div id="loading" style="display:none;">読み込み中...</div>
+
+<script type="text/javascript" src="//s.yimg.jp/images/commerce/js/libs/jquery/core/1.7.1/jquery.min.js"></script>
+<script src="https://map.yahooapis.jp/js/V1/jsapi?appid=1Ill8XWxg66.LmchEbfhtZKOLjy7r0q2yZ0SgtFh7mE7PC2HRdkUFF9eufAVsHRaHV8.GtQ-" type="text/javascript"  charset="UTF-8" ></script>
+<script src="//yads.c.yimg.jp/js/yads.js" type="text/javascript" charset="UTF-8"></script>
+<script src="//yads.c.yimg.jp/js/yads-async.js" type="text/javascript" charset="UTF-8"></script>
+<script src="//s.yimg.jp/images/weather/js/yjw_util-1_0_1-min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="//s.yimg.jp/images/weather/js/zoomradar/yjw_zoomradar_common-1_0_4-min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="//s.yimg.jp/images/weather/js/zoomradar/yjw_zoomradar-2_1_0-min.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+$(function () {
+    $("html").addClass("enabled");
+    $("#map").show();
+    $("#controllers").show();
+    $("#ydn-bot").show();
+    $("#timeView").show();
+    $("#noteSwitch").show();
+    $("#mdAreaSearch").show();
+    $("#infoModule").show();
+    $(".zoomDefault").show();
+    YAHOO.JP.yw.pc.zoomradar.init({appid:"1Ill8XWxg66.LmchEbfhtZKOLjy7r0q2yZ0SgtFh7mE7PC2HRdkUFF9eufAVsHRaHV8.GtQ-",minInterval:500});
+    });
+</script>
+
+<script src="//s.yimg.jp/images/ds/ult/weather/rapidjp-1.0.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var sr = new YAHOO.i13n.JP.simpleRapid();
+var ins = sr.setSpaceid("2079699784");
+sr.setWebWorkerFilePath("//weather.yahoo.co.jp/weather/rapidworker-1.2.js");
+sr.setService("weather");
+sr.setStatus("logout");
+sr.setApptype("web");
+sr.setOpttype("pc");
+sr.setMetakeyword("雨雲レーダー,リアルタイム,ゲリラ豪雨,降水,ナウキャスト");
+
+sr.setPagetype("detail");
+sr.setConttype("zoomrdr");
+sr.setPartner("日本気象協会,フランクリン・ジャパン,ウェザーマップ");
+var tracked_mods = ['msthd'];
+var mods = document.getElementsByClassName("tracked_mods");
+for (var i = 0; i < mods.length; i++) {
+    tracked_mods.push(mods[i].id);  // classがtracked_modsになっている要素のIDを取得する
+}
+sr.setModule(tracked_mods);
+ins = sr.initRapid();
+//-->
+</script>
+
+
+<script src="//s.yimg.jp/images/approach/jslib/deeplink-2.0.5.js"></script>
+<link rel="stylesheet" href="//s.yimg.jp/images/riff/1.1.0/styles/riff-scoped.min.css">
+<link rel="dns-prefetch" href="//approach.yahooapis.jp" />
+
+
+<script>
+(function () {
+    if(typeof YAHOO === 'undefined'){
+        YAHOO = {};
+    }
+    if(typeof YAHOO.JP === 'undefined'){
+        YAHOO.JP = {};
+    }
+    if(typeof YAHOO.JP.yw === 'undefined'){
+        YAHOO.JP.yw = {};
+    }
+
+})();
+
+
+YAHOO.JP.yw.web2app = (function () {
+    var _key = '';
+    var _hasLocalStorage;
+    var _onShow = function() {};
+    var _onHide = function() {};
+
+    var closeFlag = false;
+    var openFlag = false;
+
+    var approach;
+    var option;
+    var aprParams;
+
+    // ローカルストレージが利用できるかの判定
+    if (typeof localStorage === "undefined"
+        || typeof Storage === "undefined"
+        || localStorage instanceof Storage === false) {
+        _hasLocalStorage = false;
+    } else {
+        _hasLocalStorage = true;
+    }
+
+
+
+    return {
+        init : function() {
+
+            approach = new YAHOO.JP.Approach({yjdnEAppId: "524qviatmbwRhaNYUqNL4M2Bm0pUgQ3hyfZvZ8gNw1W8V51e5iaf2yXn5iw2DaxyIqKw9hdpO1M3yslV7WIo8_gPneQ_1GSz9w6niEYXnSo05PY-", testMode: false});
+            option   = YAHOO.JP.Approach.OPT_APP_OPEN | YAHOO.JP.Approach.OPT_STORE_OPEN;
+            aprParams = {};
+            aprParams.ios = {};
+            aprParams.ios.universalLinks = {};
+            aprParams.android = {};
+
+            aprParams.isLoggedInd = true;
+            aprParams.ios.universalLinks.enable = true;
+            aprParams.ios.universalLinks.ignoreFallbackCap = false;
+
+            var event = "touchstart";
+
+            var target = $(".aprch");
+            target.each(function() {
+                $(this).on(event, function() {
+                    var url   = $(this).data("url");
+                    var rd    = $(this).data("rd");
+                    var pos   = $(this).data("pos");
+                    var ylk   = $(this).data("ylk");
+                    var param = $(this).data("param");
+                    var referrer = $(this).data("referrer");
+
+                    var ylks = ylk.split(";");
+                    var id;
+                    $.each(ylks, function(index, element) {
+                        if (element.indexOf("sec:") > -1) {
+                            id = (element.split(":"))[1];
+                        }
+                    });
+
+                    // id指定がない場合はw2aデフォルトのものを使用
+                    if (id === undefined || id.length === 0) {
+                        id = "stcftw2a";
+                    }
+
+                    ins.beaconClick(id, "android", pos);
+
+                    YAHOO.JP.yw.web2app.deepLink(url, referrer, rd, pos, param);
+                    return;
+                });
+            });
+
+        },
+        deepLink : function(url, referrer, rd, pos, param) {
+
+            aprParams.ios.storeUrl = rd;
+            aprParams.android.installReferrer = 'utm_source%3Dyahoo%26utm_medium%3Dweather%26utm_campaign%3D' + referrer;
+            aprParams.params = {};
+            aprParams.params['from'] = referrer;
+            if (param !== null && param.length > 0) {
+                var params = param.split(":");
+                aprParams.params[params[0]] = params[1];
+            }
+
+            approach.replaceAppScheme(url, option, aprParams);
+        }
+    }
+})();
+</script>
+
+
+
+<script src="//s.yimg.jp/images/weather/pc/v2/js/zoomRadarPopup1.0.js" type="text/javascript" charset="UTF-8"></script>
+
+<script type="text/javascript">
+(function() {
+    YAHOO.JP.yw.web2app.init();
+})();
+</script>
+</body>
+</html>

@@ -13,7 +13,7 @@ with open('urlList', 'r') as rfile:
 				actual_url = res.geturl()
 				parsed_uri = urlparse(actual_url)
 				domain = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
-				if(domain != 'https://twitter.com/' and domain != 'https://t.co/'):
+				if(domain != 'https://twitter.com/' and domain != 'https://t.co/' and res.getcode() == '200'):
 						if counter >= 0:
 							print(counter)				
 							counter = counter - 1

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Darwin Beats Music">
+    <meta name="author" content="Darwin Beats Music">
+    <meta name="tag" content="darwin, beats, music">
+
+    <meta name="ROBOTS" content="all">
+    
+    
+    
+            <meta name="apple-itunes-app" content="app-id=1042014280"/>
+        
+
+    <!-- Site title -->
+    <title>DarwinBeats</title>
+
+    <!-- Stylesheet links -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/validationEngine.jquery.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/zion_style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/be_tags.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/my-life-my-rules.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery.tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/modals.css" />
+
+    <!-- Global scripts -->
+    <script type="text/javascript" src="/assets/js/lodash.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.tagsinput.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-ui-1.11.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/assets/js/validate.min.js"></script>
+    <script type="text/javascript" src="/assets/js/form.js"></script>
+	
+    <!-- Google analytics -->
+            <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+            ga('create', 'UA-60402305-1', 'auto'); 
+            ga('send', 'pageview');
+        </script>
+    	
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/sample/logo-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/sample/logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/sample/logo-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/sample/logo-57.png">
+    <link rel="shortcut icon" href="/assets/img/sample/logo.png">
+</head><body>
+
+
+<!-- Header row -->
+<div class="container-wrapper container-wrapper-be-1 container-wrapper-main">
+    
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" style="position: relative !important;" id="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-5">
+						<a class="brand" href="/" title="Darwin Beats Music"><span class="logo"></span></a>
+					</div>
+					<div class="col-xs-7">
+						<ul class="nav nav-user navbar-collapse pull-right nav-user-options">
+															<li><a style="display: block;" href="/about" class="btn btn-lg0">About</a></li>
+								<!-- Login button -->
+								<li><a style="display: block" onclick="loginModal();" class="btn btn-lg0 login-btn">Artist Sign in</a></li>
+													</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Main body divider -->
+<div class="clear"></div>
+<style type="text/css">
+	@keyframes dropInFadeOut {
+		0% { transform: translateY(-20%); opacity: .3; }
+		10% { transform: translateY(0); opacity: 1; }
+		90% { opacity: 1; }
+		100% { opacity: 0; }
+	}
+	#alerts { position: fixed; top: 0; right: 0; pointer-events: none; z-index: 9999; left: 0; }
+	#alerts .alert { animation: dropInFadeOut 5s; opacity: 0; margin: 10px; }
+</style>
+
+<!-- Error messages -->
+<div id="alerts"></div>
+<script type="text/javascript" src="/assets/js/cookie.js"></script>
+<script type="text/javascript">
+$(document).ajaxSuccess(function(e, xhr, settings) {
+    if (settings.success)
+        return;
+
+    if (settings.dataType === 'html') {
+        if (typeof settings.onSuccess === 'function')
+            return settings.onSuccess(xhr.responseText, xhr, settings);
+        else
+            return;
+    }
+
+    var res = xhr.responseJSON;
+    if (!res) {
+        if (xhr.responseText)
+            alertError(xhr.responseText, 'html');
+        else if (xhr.responseText === 'abort')
+            alertError('Cancelled.');
+        else
+            alertError('Unknown error.');
+        if (typeof settings.onError === 'function')
+        	settings.onError(e, xhr, settings);
+    } else if (res.errors && res.errors.length) {
+        res.errors.forEach(alertError);
+        if (typeof settings.onError === 'function')
+        	settings.onError(e, xhr, settings);
+    } else {
+        if (settings.successAlert !== false) {
+            if (res.messages && res.messages.length)
+                res.messages.forEach(alertSuccess);
+            else
+                alertSuccess('Success!');
+        }
+        if (typeof settings.onSuccess === 'function')
+            settings.onSuccess(res, xhr, settings);
+    }
+});
+
+$(document).ajaxError(function(e, xhr, settings, err) {
+    if (settings.error)
+        return;
+    alertError(err);
+
+    if (typeof settings.onError === 'function')
+        settings.onError(e, xhr, settings, err);    
+});
+
+function alertError(err, type) {
+	console.log(err);
+    var alert = $('<div>').addClass('alert alert-danger')[type === 'html' ? 'html' : 'text'](err).appendTo('#alerts');
+    setTimeout(function() { alert.remove(); }, 5000);
+};
+function alertSuccess(msg) {
+    var alert = $('<div>').addClass('alert alert-success').text(msg).appendTo('#alerts');
+    setTimeout(function() { alert.remove(); }, 5000);
+};
+$(function() {
+	var alert = function(msg, type) { return (type == 'success' ? alertSuccess : alertError)(msg); };
+	if (Cookies.get('__messages')) {
+		var messages = Cookies.get('__messages').split('|||');
+		for(var i = 0; i < messages.length; i++)
+			setTimeout(alert(messages[i].replace(/\+/g, ' '), 'success'), i * 250);
+	}
+	if (Cookies.get('__errors')) {
+		var errors = Cookies.get('__errors').split('|||');
+		for(var j = 0; j < errors.length; j++)
+			setTimeout(alert(errors[j].replace(/\+/g, ' '), 'danger'), (i + j) * 250);
+	}
+	Cookies.remove('__messages');
+	Cookies.remove('__errors');
+});
+</script>
+<script type="text/javascript">$('#modal--flash').modal('toggle');</script><!-- Styles -->
+<link rel="stylesheet" type="text/css" href="http://www.darwinbeats.com/assets/css/new-top-bar.css">
+<link rel="stylesheet" type="text/css" href="http://www.darwinbeats.com/assets/css/home.css">
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- Top -->
+<div class="clear"></div>
+<div class="container be-container-home">
+    <div class="col-xs-12 be-container-home-content">
+        <div class="col-xs-12 col-sm-10 col-md-12 col-lg-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-0 col-lg-offset-1  padding-top-30 padding-bottom-30 get-heard-block">
+            <div class="be-font-s18 line-msg">
+                For Artists
+                <hr />
+            </div>
+            <div><h1 class="be-font-custom-42 be-color-ffffff">Get Heard</h1></div>
+            <div class="margin-top-10">
+                <h2 class="be-font-s32 be-color-ffffff">If your music kicks ass, then you're at the right place! Submit your tracks, grow your fanbase, and reach the top of our charts. Easy peasy, and completely free. You can't beat free...</h2>
+                <h2>Why are you still reading this? Sign up already!</h2>
+            </div>
+
+            <div class="open-sign-in padding-top-20">
+                <span class="button btn btn-orange submit-btn be-form-input button-white-round" onclick="registerModal();">ARTIST SIGN UP</span>
+            </div>
+        </div>
+    </div>
+    <span class="scroll-down-block"></span>
+</div>
+
+<!-- Mailing list -->
+<div class="clear"></div>
+<div class="container-wrapper be-bg-white slider-content-block">
+    <div class="container testimonials-block">
+        <div class="testimonials-caption">
+            Testimonials
+        </div>
+        
+        <div id="carousel-testimonials" class="carousel carousel-showmanymoveone">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300" data-border-color="#fff"><p lang="en" dir="ltr">If you guys are looking for new music and artists y&#39;all should deff download <a href="https://twitter.com/DarwinBeats">@DarwinBeats</a> iOS app!!</p>&mdash; Aly$$a (@AlyssaH_Muziq) <a href="https://twitter.com/AlyssaH_Muziq/status/688686756091277312">January 17, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300"><p lang="en" dir="ltr">Just signed up with <a href="https://twitter.com/DBTalents">@DBTalents</a> and I&#39;m diggin the website already! Download the Darwin Beats app ASAP</p>&mdash; D. Wright (@MrWright813) <a href="https://twitter.com/MrWright813/status/689628889279258624">January 20, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300"><p lang="en" dir="ltr">I really love the site <a href="https://twitter.com/DarwinBeats">@darwinbeats</a></p>&mdash; iam_niggarid (@iam_niggarid) <a href="https://twitter.com/iam_niggarid/status/697949817822171137">February 12, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeats">@DarwinBeats</a> thank you for offering your platform for musicians to air their music. :)</p>&mdash; Stephen Vassilev (@Activisor) <a href="https://twitter.com/Activisor/status/701948497378021376">February 23, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeatsApp">@DarwinBeatsApp</a>  *****Writing you now congratulate your services,your free app to include linking to the music&amp;the artist is great,thank you</p>&mdash; adam67 (@dwayneolds67) <a href="https://twitter.com/dwayneolds67/status/709184720614072320">March 14, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeatsApp">@DarwinBeatsApp</a> Great app!</p>&mdash; Ron Thornton (@RonThornton) <a href="https://twitter.com/RonThornton/status/710115907863912448">March 16, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeats">@DarwinBeats</a> sounds like a super cool app!! <a href="https://twitter.com/hashtag/darwinbeats?src=hash">#darwinbeats</a> 💋</p>&mdash; Janey Brown (@JaneyBworld) <a href="https://twitter.com/JaneyBworld/status/716360905823543296">April 2, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeatsApp">@DarwinBeatsApp</a> Just this morning Jú was playing song by <a href="https://twitter.com/EmHarriss">@EmHarriss</a> in car on way to school using your App. Approved by a 13yr old <a href="https://twitter.com/hashtag/GenZ?src=hash">#GenZ</a>!</p>&mdash; CoversByJu (@CoversByJu) <a href="https://twitter.com/CoversByJu/status/717481000113143809">April 5, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeatsApp">@DarwinBeatsApp</a> Checking it out right now.  Very cool!  Indie musicians need more stuff like this!</p>&mdash; Luped Up Records (@LupedUpRecords) <a href="https://twitter.com/LupedUpRecords/status/723642071807045633">April 22, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DBTalents">@DBTalents</a> Cool concept. Content is king after all. Glad Im getting in line towards the front. <a href="https://t.co/TdRDKzgazV">pic.twitter.com/TdRDKzgazV</a></p>&mdash; YoYo Howdy (@yoyohowdy) <a href="https://twitter.com/yoyohowdy/status/774165398325305344">September 9, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/DarwinBeats">@DarwinBeats</a> love your mission!</p>&mdash; Melissa Errico (@melissa_errico) <a href="https://twitter.com/melissa_errico/status/772584712921546753">September 4, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en" data-width="300"><p lang="en" dir="ltr">Definitely going to use  <a href="https://twitter.com/DarwinBeats">@DarwinBeats</a> to promote my music</p>&mdash; dec28th☃️ (@couxper2) <a href="https://twitter.com/couxper2/status/772173053392453632">September 3, 2016</a></blockquote>
+                </div>
+                <div class="item">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Everyone who wants a music career check out <a href="https://twitter.com/DarwinBeats">@DarwinBeats</a> they got a website where you can share your music 😁</p>&mdash; Anna Wolf (@IWillEatYou666) <a href="https://twitter.com/IWillEatYou666/status/807746657890824192">December 11, 2016</a></blockquote>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-testimonials" role="button" data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-testimonials" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('.carousel-showmanymoveone .item').each(function(){
+                var itemToClone = $(this);
+                for (var i=1; i < 6; i++) {
+                    itemToClone = itemToClone.next();
+                    // wrap around if at end of item collection
+                    if (!itemToClone.length) {
+                        itemToClone = $(this).siblings(':first');
+                    }
+                    // grab item, clone, add marker class, add to collection
+                    itemToClone.children(':first-child').clone()
+                        .addClass("cloneditem-"+(i))
+                        .appendTo($(this));
+                }
+            });
+
+        })
+    </script>
+    <div class="container for-listeners-block">
+        <div class="row">
+            <a class="for-listeners-screenshot" href="/appstore" target="_blank"></a>
+            <div class="home-subscribe">
+                <div class="be-font-s18 line-msg">
+                    For listeners
+                </div>
+                <div class="margin-top-20 be-font-s20 sub-caption">
+                    We KICK mainstream music's ASS with our user-curated, indie music discovery app.<br>
+                    Check out our Beta on iPhone.
+                </div>
+                
+                <div class="subscribe-block">
+                    <a class="app-store-link" href="https://geo.itunes.apple.com/us/app/darwinbeats-music/id1042014280?mt=8" target="_blank"></a>
+                    <div class="subscribe-caption">
+                        Want to know the latest about us? Waiting for the Android version?<br>
+                        Put your email below!
+                    </div>
+                    <!-- MailChimp Code  Sign up now and we'll let you know the moment it's ready to go. -->
+                    <div class="be-home-form be-home-subscribe-form">
+                        <form action="/mailchimp" method="post" id="form--mailing-list">
+                            <div class="input-group-mc">
+                                <input type="text" value="" name="name" class="form-control email" id="mce-MMERGE1" placeholder="Name">
+                                <input type="email" value="" name="email" class="form-control email" id="mce-EMAIL" placeholder="Email Address" />
+                                <ul class="subscribe-checkboxes">
+                                    <li>
+                                        <span><input type="checkbox" value="ios" name="group[]" id="mce-group-0"></span>
+                                        <label for="mce-group-0">iOS</label>
+                                    </li>
+                                    <li>
+                                        <span><input type="checkbox" value="android" name="group[]" id="mce-group-1"></span>
+                                        <label for="mce-group-1">Android</label>
+                                    </li>
+                                </ul>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_5ebe-container-home1df1d2aec0cc3d2bfb6b351_c91e5f2380" tabindex="-1" value="" />
+                                </div>
+                                <input type="submit" value="Subscribe" class="button btn btn-orange submit-btn be-form-input"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+
+<!-- Modals -->
+<div class="modal fade be-response-mailchimp">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body" id="mailchimp-modal-text"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-green" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="/assets/js/pages/main.js"></script><!-- Sign in/up modal-->
+<div id="modal--auth" class="modal fade be-response-message-login login-style center">
+	<div class="close-block" data-dismiss="modal">x</div>
+	<div id="tab--login" class="no-close-block">
+		<div class="modal-dialog center-top padding-bottom-20" style="height:70%;">
+			<div id="sign-header" class="be-font-s44 margin-bottom-20 be-font-white center">LOG IN</div>
+			
+			<!-- Social logins -->
+			<div id="social-sing" style="display:block;">
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0 facebook">
+					<a href="/login/social/facebook" class="btn btn-default btn-lg">
+						<span class="fa fa-facebook" aria-hidden="true"></span>
+						<b> with Facebook</b>
+					</a>
+				</div>
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0 twitter">
+					<a href="/login/social/twitter" class="btn btn-default btn-lg">
+						<span class="fa fa-twitter" aria-hidden="true"></span>
+						<b> with Twitter</b>
+					</a>
+				</div>
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0 soundcloud">
+					<a href="/login/social/soundcloud" class="btn btn-default btn-lg">
+						<span class="fa fa-soundcloud" aria-hidden="true"></span>
+						<b> with Soundcloud</b>
+					</a>
+				</div>
+				<div class="be-font-s20 margin-top-20 margin-bottom-20 be-font-ba9a94 center">
+					— or —
+				</div>
+			</div>
+			
+			<!-- Login form -->
+			<form action="/login" id="form--login" name="send" method="post" class="form-horizontal">
+                            				<div class="form-group margin-top-20">
+					  <div class="controls col-xs-12 col-md-offset-0">
+						<input type="email" name="email" class="form-control be-form-input be-form-input-new" placeholder="Email" value="">
+					  </div>
+				</div>
+					
+				<div class="form-group margin-top-30" id="be-home-signup-form-block">
+					  <div class="controls col-xs-12 col-md-offset-0">
+						<input type="password" name="password" size="100" class="form-control be-form-input be-form-input-new" placeholder="Password">
+					  </div>
+				</div>
+
+				<div class="col-xs-6 col-xs-offset-6 text-right margin-bottom-10" id="reset-password-block">
+					<a class="be-font-ba9a94" id="reset-password" onclick="forgotPassword(this);">Forgot Password?</a>
+				</div>
+				
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0">
+					<div class="col-xs-3" id="sing-input" style="padding:0; float:left;">
+						<input class="btn btn-default btn-lg" type="submit" value="LOG IN" style="display:block; float:left;" />
+					</div>
+					<div class="be-font-s18 col-xs-9 be-font-ba9a94 col-xs-offset-0 padding-top-10" style="text-align:left;">
+						<span id="or-text" style="display:inline-block;">or</span>
+						<a class="cursor-pointer margin-left-10" onclick="registerModal();"> Sign up with DarwinBeats</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="tab--register" class="no-close-block">
+		<div class="modal-dialog center-top padding-bottom-20" style="height:70%;">
+			<div id="sign-header" class="be-font-s44 margin-bottom-20 be-font-white center">REGISTER</div>
+			
+			<!-- Social register buttons -->
+			<div id="social-sing" style="display:block;">
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0 facebook">
+					<a href="/register/social/facebook" class="btn btn-default btn-lg fb-signup-button">
+						<span class="fa fa-facebook" aria-hidden="true"></span>
+						<b> with Facebook</b>
+					</a>
+				</div>
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0 twitter">
+					<a href="/register/social/twitter" class="btn btn-default btn-lg twitter-signup-button">
+						<span class="fa fa-twitter" aria-hidden="true"></span>
+						<b> with Twitter</b>
+					</a>
+				</div>
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0 soundcloud">
+					<a href="/register/social/soundcloud" class="btn btn-default btn-lg soundcloud-signup-button">
+						<span class="fa fa-soundcloud" aria-hidden="true"></span>
+						<b> with Soundcloud</b>
+					</a>
+				</div>				
+				
+				<div class="be-font-s20 margin-top-20 margin-bottom-20 be-font-ba9a94 center">
+					— or —
+				</div>				
+			</div>
+				
+			<!-- Regular registration form -->
+			<form action="/register" id="form--register" name="send" method="post" class="form-horizontal">
+				<div class="form-group margin-top-20">
+					  <div class="controls col-xs-12 col-md-offset-0">
+						<input type="email" name="email" class="form-control be-form-input be-form-input-new" placeholder="Email" value="">
+					  </div>
+				</div>
+					
+				<div class="form-group margin-top-30">
+					  <div class="controls col-xs-12 col-md-offset-0">
+						<input type="password" name="password" size="100" class="form-control be-form-input be-form-input-new" placeholder="Password">
+					  </div>
+				</div>
+					
+				<!-- <div class="form-group margin-top-30">
+					  <div class="controls col-xs-12 col-md-offset-0">
+						<input type="password" name="repeat" size="100" class="form-control be-form-input be-form-input-new" placeholder="Repeat">
+					  </div>
+				</div> -->
+					
+				<div class="controls col-xs-12 margin-bottom-20 col-md-offset-0">
+					<div class="col-xs-3" style="padding:0; float:left;">
+						<input class="btn btn-default btn-lg" type="submit" value="REGISTER" style="display:block; float:left;" />
+					</div>
+					<div class="be-font-s18 col-xs-9 be-font-ba9a94 col-xs-offset-0 padding-top-10" style="text-align:left;">
+						<span id="or-text" style="display:inline-block;">or</span>
+						<a class="cursor-pointer margin-left-10" onclick="loginModal();"> Log in</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- Message modals -->
+<div class="modal fade be-response-message-delete-enter-no-verified">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+				<button type="button" id="send-confirmation-email-reset-pw" onclick="mail_verified_send_no_reset_pw()" class="btn btn-green">Send Confirmation Email Again</button>
+				<button type="button" class="btn btn-green" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>	
+<div class="modal fade be-response-message-reset-password">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+            	<div class="failed" id="reset-password-modal-text"></div>
+            </div>
+            <div class="modal-footer">
+				<button type="button" class="btn btn-green" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade be-response-message-delete-enter-email">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form action="" name="email" method="post" accept-charset="utf-8">
+				<div class="modal-body">
+					<div class="success">
+						<p>Enter your email: </p>
+						<p><input type="email" name="email" class="form-control be-form-input be-form-input-white be-color-999999" value="" required /></p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="hidden" name="user_role" value="1">
+						<button type="button" class="btn btn-orange submit-btn be-form-input btn-right minor margin-left-10" data-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-orange submit-btn be-form-input btn-right primary">Create</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="/assets/js/general/auth.js"></script>
+<!-- Styles --> 
+<style type="text/css">
+	.be-container-home{
+		min-height: 50%!important;
+	}
+	.social-list{
+		text-align: right;
+	}
+	.nav-list{
+		text-align: center!important;
+	}
+	.nav-list a{
+		font-size: 14px;
+	}
+
+	@media(max-width: 769px){
+		.social-list{
+			text-align: center;
+		}
+		.nav-list{
+			text-align: center!important;
+		}
+	}
+	@media(max-width: 522px){
+		.social-list li{
+			display: block;
+			margin: auto;
+			text-align: right;
+		}
+		.nav-list{
+			text-align: left!important;
+		}		
+	}	
+	@media(max-width: 991px){
+		.nav-list{
+			text-align: left;
+		}
+	}
+	.tooltip.left .tooltip-arrow {
+ 	   border-left-color: #e75a3f;
+	}	
+</style>
+
+
+<!-- Footer -->
+<div class="clear"></div>
+<footer>
+	<div class="all-new-footer col-sm-12" style="padding: 6px 30px;">
+        <div class="col-md-4 hidden-xs hidden-sm" style="margin-top: 10px; margin-bottom: 4px;">
+			<p style="text-align:left; font-size: 14px;">
+				COPYRIGHT @ 2017 ALL RIGHTS RESERVED
+			</p>            		
+        </div>
+		<div class="col-xs-9 col-md-6">
+			<ul class="nav-list list-inline" style="margin-top: 6px; margin-bottom: 4px;">
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/privacy">Privacy Policy</a></li>
+				<li><a href="/legal">Legal</a></li>
+				<li style="margin: 0;"><a href="/blog">Blog</a></li>
+			</ul>            		
+		</div>
+		<div class="col-xs-3 col-md-2">
+			<ul class="social-list unstyled text-right list-circle-icons list-circle-icons-small" style='margin-bottom:0px;'>
+				<li style='margin-top: 4px;margin-bottom: 0px;'><a href="https://twitter.com/DarwinBeats" target="_blank" title="Follow us on Twitter" data-rel="tooltip" data-toggle="tooltip" data-placement='left' style="width: 32px; padding: 5.5px 5px 5px 5px; height: 32px;"><span class="fa fa-twitter" style="margin-left:-1px; font-size: 23px;"></span></a></li>
+				<li style='margin-top: 4px;margin-bottom: 0px; margin-right: 0px;'><a href="https://facebook.com/DarwinBeatsMusic" target="_blank" title="Like us on Facebook" data-rel="tooltip" data-toggle="tooltip" data-placement='left' style="width: 32px;  padding: 7px 5px 5px 4px; height: 32px;"><span class="fa fa-facebook" style='font-size: 20px;'></span></a></li>
+			</ul>            	
+		</div> 
+		<div class="col-xs-12 hidden-lg hidden-md" style="margin-top: 8px; margin-bottom: 4px;">
+			<p style="text-align:center;">
+				COPYRIGHT @ 2017 ALL RIGHTS RESERVED
+			</p>            		
+		</div>
+	</div>
+	<div class="clear"></div>
+</footer>
+
+<div class="modal fade" id="modal--confirm">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">Confirm</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-green" yes>Yes</button>
+				<button type="button" class="btn btn-red" no>No</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Scripts -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/assets/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="/assets/js/typeahead.min.js"></script>
+
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+	
+
+	</body>
+</html>

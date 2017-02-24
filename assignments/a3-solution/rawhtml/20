@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The page you were looking for doesn't exist (404)</title>
+  <style type="text/css">
+    body { margin: 0; padding: 0;background-color: #fff; color: #666; text-align: center; font-family: helvetica, arial, sans-serif; }
+.dialog {
+max-width: 1170px;
+margin: 0 auto;
+position: relative;
+}
+.header {
+  background: #1e79b3;
+  color: #4689bd;
+  font-size: 120px;
+  line-height: 110px;
+  font-weight: bold;
+  position: relative;
+   }
+.header p {
+  color: #FFF;
+  font-size: 24px;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  width: 500px;
+  left: 50%;
+  bottom: 5px;
+  margin: 0;
+  margin-left: -250px;
+}
+
+.dialog p {
+	margin: 40px auto ;
+	line-height: 1.4;
+	font-size: 18px;
+ text-align: center;
+	}
+
+.center {
+float: left;
+width: 40%;
+margin: 0 4%
+
+}
+
+.left {
+width: 23%;
+float: left;
+margin-right: 3%;
+}
+
+.right {
+width: 20%;
+float: left;
+padding-top: 10px;
+margin-left: 2%;
+margin-right: 2%;
+
+}
+
+.left img, .right img, .bottom img {
+max-width: 100%;
+}
+
+.bottom {
+clear: both;
+width: 40%;
+margin: 0 auto;
+}
+
+.bottom img {margin-top: -40px;}
+
+.button {
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-raidus: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #1e79b3;
+  color: #FFF;
+  text-decoration: none;
+  padding: 8px 20px;
+  display: inline-block;
+  margin-top:5px;
+}
+
+@media screen and (max-width: 992px){
+.header{ font-size: 80px;line-height: 80px;}
+}   
+@media screen and (max-width: 768px){
+.header{ font-size: 60px;line-height: 60px;}
+.header p {font-size: 20px;}
+} 
+
+@media screen and (max-width: 600px){
+.header{ font-size: 50px;line-height: 50px;}
+.header p {font-size: 16px;}
+} 
+
+
+  </style>
+</head>
+
+<body>
+
+<div class="header"> 
+<p>Well, that's embarrassing...</p> 
+NOT FOUND</div>
+
+<div class="dialog">
+
+<div class="left">   
+<img src="http://sessionm-static-sites.s3.amazonaws.com/images/kitten-left.jpg">
+</div>
+
+<div class="center">
+<p>It would appear that a pack of hungry kittens have destroyed this page.</p>
+<p>Try navigating here instead
+<br><a href="/" class="button">Home</a></p>
+
+</div>
+
+<div class="right">
+<img src="http://sessionm-static-sites.s3.amazonaws.com/images/kitten-right.jpg">
+</div>    
+    
+ <div class="bottom">
+   <img src="http://sessionm-static-sites.s3.amazonaws.com/images/kitten-bottom.jpg">
+  </div>  
+
+  </div>
+</body>
+</html>

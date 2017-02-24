@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>International Cricket Council</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/resources/ver/i/elements/favicon.ico" />
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32788426-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,600|Rajdhani:700" rel="stylesheet">
+
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    <link rel="stylesheet" href="/resources/ver/styles/match-centre.css" />
+
+</head>
+<body>
+
+    <!-- 4,211 -->
+
+
+<!-- Retrieves the match status text, if there is one (match has outcome) -->
+<!-- Supports both /fixtures entries and /fixtures/<id>/scoring entries -->
+
+<!-- Requires getBattingTeam, getInningsSummary, isFollowOn -->
+
+
+
+<div id="match-scorer"
+    data-match-id="4211"
+    data-tournament-id="4201"
+    data-script="icc_match-centre"
+    data-widget="match-scorer">
+</div>
+
+<div id="event-cards"
+    class="event-card__container"
+    data-match-id="4211"
+    data-tournament-id="4201"
+    data-script="icc_match-centre"
+    data-widget="event-cards">
+</div>
+
+<nav class="mc-nav t-odi" data-widget="mc-nav" data-script="icc_match-centre">
+	<a href="/" class="mc-nav__btn mc-nav__back">
+		<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-chevron-left"></use></svg>
+		<div class="icn icn-logo-icc-mob"></div>
+	</a>
+	<div class="mc-nav__btn mc-nav__matches-btn js-nav-matches-btn" role="button" tabindex="0"><div class="mc-nav__matches-count js-live-matches-count"></div><span class="long js-live-matches-btn-text">Live Matches</span><span class="short">Matches</span></div>
+	<div class="mc-nav__match-summary">
+		<div class="long">
+			<div class="mc-nav__type">ODI</div>
+			South Africa v Sri Lanka
+			<span class="mc-nav__match">4th ODI</span>
+		</div>
+		<div class="short">SA v SL</div>
+	</div>
+	<div class="mc-nav__btn mc-nav__poll-btn js-nav-poll-btn" role="button" tabindex="0">
+		<span class="mc-nav__poll-btn-txt">Fan Polls</span>
+		<span class="mc-nav__poll-icon">
+            <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-pulse"></use></svg>
+            <span class="mc-nav__poll-questions u-hide js-nav-poll-question-numbers"></span>
+        </span>
+	</div>
+    <div class="mc-share js-share">
+    	<div class="mc-nav__btn mc-nav__share-btn js-share-btn" role="button" tabindex="0">Share<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-share"></use></svg></div>
+        <ul class="mc-share__dropdown">
+            <li class="mc-share__option mc-share__option--twitter js-social-option" data-social-service="twitter" role="button" tabindex="0">
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-twitter"></use></svg>
+            </li>
+            <li class="mc-share__option mc-share__option--facebook js-social-option" data-social-service="facebook" role="button" tabindex="0">
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-facebook"></use></svg>
+            </li>
+            <li class="mc-share__option mc-share__option--google js-social-option" data-social-service="google" role="button" tabindex="0">
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-google"></use></svg>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<main class="mc__content" data-widget="mc" data-match-state="C">
+
+        <nav class="mc__menu mc-menu js-tab-menu">
+        <ul>
+                <li class="mc-menu__item js-menu-item mc-menu__item--overview"
+                    data-tab="#overview"
+                    role="button" tabindex="0"
+                    data-nav-index="0"
+                    style="">Overview</li>
+                <li class="mc-menu__item js-menu-item is-inactive"
+                    data-tab="#scorecard"
+                    role="button" tabindex="0"
+                    data-nav-index="1"
+                    style="">Scorecard</li>
+                <li class="mc-menu__item js-menu-item is-inactive"
+                    data-tab="#hawk-eye"
+                    role="button" tabindex="0"
+                    data-nav-index="2"
+                    style="">Hawk-eye</li>
+                <li class="mc-menu__item js-menu-item "
+                    data-tab="#teams"
+                    role="button" tabindex="0"
+                    data-nav-index="3"
+                    style="">Teams</li>
+                <li class="mc-menu__item js-menu-item "
+                    data-tab="#social"
+                    role="button" tabindex="0"
+                    data-nav-index="4"
+                    style="">Social</li>
+                <li class="mc-menu__item js-menu-item "
+                    data-tab="#match-info"
+                    role="button" tabindex="0"
+                    data-nav-index="5"
+                    style="">Match Info</li>
+        </ul>
+    </nav>
+
+
+    <div id="overview" class="mc__score-panel mc__tab is-hidden">
+
+
+        <section class="scorebox"
+                 data-widget="scorebox"
+                 data-match-state="C"
+                 data-match-id="4211"
+                 data-tournament-id="4201">
+
+            <picture
+    class="scorebox__BG"
+    data-widget="scorebox-bg"
+    data-venue-id="21">
+
+    <source media="(min-width: 1800px)" srcset="/resources/ver/i/bg-elements/mc-bg-large.jpg, /resources/ver/i/bg-elements/mc-bg-large@x2.jpg 2x">
+
+    <source media="(min-width: 1200px)" srcset="/resources/ver/i/bg-elements/mc-bg-medium.jpg, /resources/ver/i/bg-elements/mc-bg-medium@x2.jpg 2x">
+
+    <source media="(min-width: 840px)" srcset="/resources/ver/i/bg-elements/mc-bg-small.jpg, /resources/ver/i/bg-elements/mc-bg-small@x2.jpg 2x">
+
+    <source media="(min-width: 500px)" srcset="/resources/ver/i/bg-elements/mc-bg-medium.jpg, /resources/ver/i/bg-elements/mc-bg-medium@x2.jpg 2x">
+
+    <source srcset="/resources/ver/i/bg-elements/mc-bg-small.jpg, /resources/ver/i/bg-elements/mc-bg-small@x2.jpg 2x">
+
+    <img src="/resources/ver/i/bg-elements/mc-bg-medium.jpg">
+
+</picture>
+
+
+            <div class="js-scorebox-content scorebox__content">
+                <div class="js-scorebox">
+                            <div class="scorebox__summary">
+    <div class="scorebox__type t-odi">ODI</div>
+    <span class="scorebox__tournament-info">South Africa v Sri Lanka 2016<span class="scorebox__divider"></span>4th ODI<span class="scorebox__divider scorebox__divider--last"></span></span>
+    <span class="scorebox__time-venue">Tue 7 February, Newlands, Cape Town, South Africa</span>
+</div>
+
+<div class="scorebox__outcome">
+        South Africa won by 40 runs
+</div>
+<div class="scorebox__teams">
+    <div class="scorebox__team ">
+		<div class="flag-20 flag--home SA"></div>
+		<div class="flag-30 flag--home SA"></div>
+        <div class="scorebox__score match-score">
+            <span class="scorebox__team-name">South Africa</span> -
+    <span class="match-score__runs">
+            367/5
+    </span>
+        <span class="match-score__overs">50/50 ov</span>
+        <span class="match-score__run-rate">RR: 7.34</span>
+        </div>
+    </div>
+    <div class="scorebox__team scorebox__team--loser">
+		<div class="flag-20 flag--home SL"></div>
+		<div class="flag-30 flag--home SL"></div>
+        <div class="scorebox__score match-score">
+            <span class="scorebox__team-name">Sri Lanka</span> -
+    <span class="match-score__runs">
+            327
+    </span>
+        <span class="match-score__overs">48.1/50 ov</span>
+        <span class="match-score__run-rate">RR: 6.78</span>
+        </div>
+    </div>
+</div>
+<div class="scorebox__match-report">
+    
+
+
+
+
+
+</div>
+
+                </div>
+            </div>
+        </section>
+        <div class="commentary u-hide"
+     data-widget="mc-commentary"
+     data-script="icc_match-centre"
+     data-match-id="4211"
+     data-tournament-id="4201">
+
+     <header class="widget__header">
+       <h3 class="widget__title">Match Commentary</h3>
+       <ul class="toggle-nav">
+         <li class="toggle-nav__item js-tab-button is-active" data-filter="commentary">All</li>
+         <li class="toggle-nav__item js-tab-button" data-filter="key-moments">Key Moments</li>
+       </ul>
+     </header>
+
+     <div class="js-chunks-container"></div>
+
+     <footer class="widget__footer u-text-center js-show-more">
+ 		<button type="button" class="btn btn--round btn--arrow-down js-show-more-button" name="button">
+             Show More
+             <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-double-chevron-down"></use></svg>
+         </button>
+         <div class="loader js-loader u-hide"></div>
+ 	</footer>
+
+</div>
+<script charset="utf-8" type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+    </div>
+    <div id="scorecard" class="mc__details-panel mc__tab ">
+<div class="scorecard"
+    data-widget="scorecard"
+    data-match-id="4211"
+    data-tournament-id="4201">
+    <ul class="toggle-nav js-innings-nav scorecard__nav">
+            <li class="toggle-nav__item js-tab-button " role="button" tabindex="0">
+                <span class="u-hide-tablet">SA Innings</span>
+                <span class="u-show-tablet">SA Inns</span>
+            </li>
+            <li class="toggle-nav__item js-tab-button is-active" role="button" tabindex="0">
+                <span class="u-hide-tablet">SL Innings</span>
+                <span class="u-show-tablet">SL Inns</span>
+            </li>
+    </ul>
+        <div class="scorecard__innings-container">
+
+                <div class="scorecard__innings js-innings-tab ">
+                    <div class="wrapper">
+                        <div class="col-12">
+
+                            <div class="scorecard__header u-hide-phablet">
+                                <div class="flag-20 scorecard__team-badge SA"></div>
+                                <h3 class="scorecard__title">South Africa Batting</h3>
+                            </div>
+
+                            <table class="table scorecard__table">
+                                <thead>
+                                    <tr class="table-head">
+                                        <th class="table-head__cell scorecard__head-cell scorecard__head-cell--main">
+                                            <span class="u-hide-phablet">Batsmen</span>
+                                            <span class="u-show-phablet">South Africa Batting</span>
+                                        </th>
+                                        <th class="table-head__cell scorecard__head-cell">R</th>
+                                        <th class="table-head__cell scorecard__head-cell">B</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">4s</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">6s</th>
+                                        <th class="table-head__cell scorecard__head-cell">SR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Hashim Amla</span><span class="scorecard__player-name short">H Amla</span>
+                    <span class="scorecard__dismissal">c Asela Gunaratne b Lahiru Kumara</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">9</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">11.11</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Quinton de Kock</span><span class="scorecard__player-name short">Q de Kock</span>
+                    <span class="scorecard__dismissal">c Upul Tharanga b Sachith Pathirana</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>55</strong></td>
+            <td class="table-body__cell scorecard__cell">46</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">7</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">2</td>
+            <td class="table-body__cell scorecard__cell">119.56</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Francois du Plessis</span><span class="scorecard__player-name short">F du Plessis</span>
+                    <span class="scorecard__dismissal">c Asela Gunaratne b Lahiru Madushanka</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>185</strong></td>
+            <td class="table-body__cell scorecard__cell">141</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">16</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">3</td>
+            <td class="table-body__cell scorecard__cell">131.20</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">AB de Villiers</span><span class="scorecard__player-name short">AB de Villiers</span>
+                    <span class="scorecard__dismissal">b Sachith Pathirana</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>64</strong></td>
+            <td class="table-body__cell scorecard__cell">62</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">4</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">103.22</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">JP Duminy</span><span class="scorecard__player-name short">JP Duminy</span>
+                    <span class="scorecard__dismissal">c Kusal Mendis b Lahiru Kumara</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>20</strong></td>
+            <td class="table-body__cell scorecard__cell">22</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">2</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">90.90</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body scorecard__highlighted-row">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Farhaan Behardien</span><span class="scorecard__player-name short">F Behardien</span>
+                    <span class="scorecard__not-out">NOT OUT</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>36</strong></td>
+            <td class="table-body__cell scorecard__cell">20</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">4</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">1</td>
+            <td class="table-body__cell scorecard__cell">180.00</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body scorecard__highlighted-row">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Wayne Parnell</span><span class="scorecard__player-name short">W Parnell</span>
+                    <span class="scorecard__not-out">NOT OUT</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">1</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">100.00</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main">
+                <span class="scorecard__player-name long">Dwaine Pretorius</span><span class="scorecard__player-name short">D Pretorius</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>-</strong></td>
+            <td class="table-body__cell scorecard__cell">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell">-</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main">
+                <span class="scorecard__player-name long">Imran Tahir</span><span class="scorecard__player-name short">I Tahir</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>-</strong></td>
+            <td class="table-body__cell scorecard__cell">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell">-</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main">
+                <span class="scorecard__player-name long">Kagiso Rabada</span><span class="scorecard__player-name short">K Rabada</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>-</strong></td>
+            <td class="table-body__cell scorecard__cell">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell">-</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main">
+                <span class="scorecard__player-name long">Tabraiz Shamsi</span><span class="scorecard__player-name short">T Shamsi</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>-</strong></td>
+            <td class="table-body__cell scorecard__cell">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">-</td>
+            <td class="table-body__cell scorecard__cell">-</td>
+        </tr>
+
+
+                                    <tr class="table-body scorecard__table-body">
+                                        <td class="table-body__cell scorecard__cell table-body__cell--main">
+                                            <span class="scorecard__fixed-title"><strong>Extras</strong></span> <span class="scorecard__detailed">(nb 1, w 4)</span>
+                                        </td>
+                                        <td class="table-body__cell scorecard__cell"><strong>5</strong></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                    </tr>
+                                    <tr class="table-body scorecard__table-body scorecard__table-body--dark">
+                                        <td class="table-body__cell scorecard__cell table-body__cell--main"><span class="scorecard__fixed-title"><strong>Total</strong></span> <span class="scorecard__detailed">(<strong>5</strong> wickets, <strong>50</strong> overs)</span></td>
+                                        <td class="table-body__cell scorecard__cell"><strong>367</strong></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table scorecard__table scorecard__fow">
+                                <thead>
+                                    <tr class="table-body scorecard__table-body">
+                                        <th class="table-head__cell scorecard__head-cell scorecard__head-cell--main">Fall of Wickets</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="table-body__cell scorecard__cell table-body__cell--main">
+                                    <p>        1-3 (H Amla, 1.5 ov)
+,         2-103 (Q de Kock, 16.2 ov)
+,         3-240 (AB de Villiers, 36.1 ov)
+,         4-287 (JP Duminy, 43.3 ov)
+,         5-361 (F du Plessis, 49.2 ov)
+</p>
+                                    </td></tr>
+                                </tbody>
+                            </table>
+
+                            <div class="scorecard__header u-hide-phablet">
+                                <div class="flag-20 scorecard__team-badge SL"></div>
+                                <h3 class="scorecard__title">Sri Lanka Bowling</h3>
+                            </div>
+                            <table class="table scorecard__table">
+                                <thead>
+                                    <tr>
+                                        <th class="table-head__cell scorecard__head-cell scorecard__head-cell--main">
+                                            <span class="u-hide-phablet">Bowlers</span>
+                                            <span class="u-show-phablet">Sri Lanka Bowling</span>
+                                        </th>
+                                        <th class="table-head__cell scorecard__head-cell">O</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">M</th>
+                                        <th class="table-head__cell scorecard__head-cell">R</th>
+                                        <th class="table-head__cell scorecard__head-cell">W</th>
+                                        <th class="table-head__cell scorecard__head-cell">Econ</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">Dots</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Nuwan Kulasekara</span><span class="short">N Kulasekara</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">10</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">74</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">7.40</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">21</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Lahiru Kumara</span><span class="short">L Kumara</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">7</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">73</td>
+            <td class="table-body__cell scorecard__cell"><strong>2</strong></td>
+            <td class="table-body__cell scorecard__cell">10.42</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">14</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Lahiru Madushanka</span><span class="short">L Madushanka</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">10</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">69</td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">6.90</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">19</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Dhananjaya de Silva</span><span class="short">D de Silva</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">3</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">18</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">6.00</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">8</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Lakshan Sandakan</span><span class="short">L Sandakan</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">8</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">62</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">7.75</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">11</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Sachith Pathirana</span><span class="short">S Pathirana</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">10</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">55</td>
+            <td class="table-body__cell scorecard__cell"><strong>2</strong></td>
+            <td class="table-body__cell scorecard__cell">5.50</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">14</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Asela Gunaratne</span><span class="short">A Gunaratne</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">2</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">16</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">8.00</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">3</td>
+        </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scorecard__innings js-innings-tab is-active">
+                    <div class="wrapper">
+                        <div class="col-12">
+
+                            <div class="scorecard__header u-hide-phablet">
+                                <div class="flag-20 scorecard__team-badge SL"></div>
+                                <h3 class="scorecard__title">Sri Lanka Batting</h3>
+                            </div>
+
+                            <table class="table scorecard__table">
+                                <thead>
+                                    <tr class="table-head">
+                                        <th class="table-head__cell scorecard__head-cell scorecard__head-cell--main">
+                                            <span class="u-hide-phablet">Batsmen</span>
+                                            <span class="u-show-phablet">Sri Lanka Batting</span>
+                                        </th>
+                                        <th class="table-head__cell scorecard__head-cell">R</th>
+                                        <th class="table-head__cell scorecard__head-cell">B</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">4s</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">6s</th>
+                                        <th class="table-head__cell scorecard__head-cell">SR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Niroshan Dickwella</span><span class="scorecard__player-name short">N Dickwella</span>
+                    <span class="scorecard__dismissal">c Farhaan Behardien b Dwaine Pretorius</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>58</strong></td>
+            <td class="table-body__cell scorecard__cell">47</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">9</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">123.40</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Upul Tharanga</span><span class="scorecard__player-name short">WU Tharanga</span>
+                    <span class="scorecard__dismissal">c JP Duminy b Wayne Parnell</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>119</strong></td>
+            <td class="table-body__cell scorecard__cell">90</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">11</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">7</td>
+            <td class="table-body__cell scorecard__cell">132.22</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Kusal Mendis</span><span class="scorecard__player-name short">K Mendis</span>
+                    <span class="scorecard__dismissal">c Quinton de Kock b Wayne Parnell</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>29</strong></td>
+            <td class="table-body__cell scorecard__cell">34</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">3</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">85.29</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Sandun Weerakkody</span><span class="scorecard__player-name short">S Weerakkody</span>
+                    <span class="scorecard__dismissal">c Wayne Parnell b Imran Tahir</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>58</strong></td>
+            <td class="table-body__cell scorecard__cell">51</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">7</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">1</td>
+            <td class="table-body__cell scorecard__cell">113.72</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Dhananjaya de Silva</span><span class="scorecard__player-name short">D de Silva</span>
+                    <span class="scorecard__dismissal">lbw Kagiso Rabada</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>5</strong></td>
+            <td class="table-body__cell scorecard__cell">14</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">35.71</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Asela Gunaratne</span><span class="scorecard__player-name short">A Gunaratne</span>
+                    <span class="scorecard__dismissal">c Hashim Amla b Kagiso Rabada</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>38</strong></td>
+            <td class="table-body__cell scorecard__cell">31</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">3</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">1</td>
+            <td class="table-body__cell scorecard__cell">122.58</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Nuwan Kulasekara</span><span class="scorecard__player-name short">N Kulasekara</span>
+                    <span class="scorecard__dismissal">lbw Imran Tahir</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">2</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">50.00</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Sachith Pathirana</span><span class="scorecard__player-name short">S Pathirana</span>
+                    <span class="scorecard__dismissal">c Quinton de Kock b Dwaine Pretorius</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">3</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">33.33</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Lahiru Madushanka</span><span class="scorecard__player-name short">L Madushanka</span>
+                    <span class="scorecard__dismissal">c Dwaine Pretorius b Wayne Parnell</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>6</strong></td>
+            <td class="table-body__cell scorecard__cell">8</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">1</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">75.00</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body scorecard__highlighted-row">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Lahiru Kumara</span><span class="scorecard__player-name short">L Kumara</span>
+                    <span class="scorecard__not-out">NOT OUT</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">7</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">14.28</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body ">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <span class="scorecard__player-name long">Lakshan Sandakan</span><span class="scorecard__player-name short">L Sandakan</span>
+                    <span class="scorecard__dismissal">b Wayne Parnell</span>
+            </td>
+            <td class="table-body__cell scorecard__cell"><strong>1</strong></td>
+            <td class="table-body__cell scorecard__cell">2</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">50.00</td>
+        </tr>
+
+
+                                    <tr class="table-body scorecard__table-body">
+                                        <td class="table-body__cell scorecard__cell table-body__cell--main">
+                                            <span class="scorecard__fixed-title"><strong>Extras</strong></span> <span class="scorecard__detailed">(w 3, lb 7)</span>
+                                        </td>
+                                        <td class="table-body__cell scorecard__cell"><strong>10</strong></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                    </tr>
+                                    <tr class="table-body scorecard__table-body scorecard__table-body--dark">
+                                        <td class="table-body__cell scorecard__cell table-body__cell--main"><span class="scorecard__fixed-title"><strong>Total</strong></span> <span class="scorecard__detailed">(<strong>all out</strong>, <strong>48.1</strong> overs)</span></td>
+                                        <td class="table-body__cell scorecard__cell"><strong>327</strong></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                        <td class="table-body__cell scorecard__cell u-hide-phablet"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table scorecard__table scorecard__fow">
+                                <thead>
+                                    <tr class="table-body scorecard__table-body">
+                                        <th class="table-head__cell scorecard__head-cell scorecard__head-cell--main">Fall of Wickets</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="table-body__cell scorecard__cell table-body__cell--main">
+                                    <p>        1-139 (N Dickwella, 16.1 ov)
+,         2-203 (K Mendis, 27.2 ov)
+,         3-216 (WU Tharanga, 29.1 ov)
+,         4-228 (D de Silva, 33.5 ov)
+,         5-307 (A Gunaratne, 43.4 ov)
+,         6-308 (N Kulasekara, 44.1 ov)
+,         7-317 (S Weerakkody, 44.6 ov)
+,         8-325 (S Pathirana, 45.6 ov)
+,         9-325 (L Madushanka, 46.4 ov)
+,         10-327 (L Sandakan, 48.1 ov)
+</p>
+                                    </td></tr>
+                                </tbody>
+                            </table>
+
+                            <div class="scorecard__header u-hide-phablet">
+                                <div class="flag-20 scorecard__team-badge SA"></div>
+                                <h3 class="scorecard__title">South Africa Bowling</h3>
+                            </div>
+                            <table class="table scorecard__table">
+                                <thead>
+                                    <tr>
+                                        <th class="table-head__cell scorecard__head-cell scorecard__head-cell--main">
+                                            <span class="u-hide-phablet">Bowlers</span>
+                                            <span class="u-show-phablet">South Africa Bowling</span>
+                                        </th>
+                                        <th class="table-head__cell scorecard__head-cell">O</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">M</th>
+                                        <th class="table-head__cell scorecard__head-cell">R</th>
+                                        <th class="table-head__cell scorecard__head-cell">W</th>
+                                        <th class="table-head__cell scorecard__head-cell">Econ</th>
+                                        <th class="table-head__cell scorecard__head-cell u-hide-phablet">Dots</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Wayne Parnell</span><span class="short">W Parnell</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">9.1</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">58</td>
+            <td class="table-body__cell scorecard__cell"><strong>4</strong></td>
+            <td class="table-body__cell scorecard__cell">6.32</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">23</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Dwaine Pretorius</span><span class="short">D Pretorius</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">9</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">1</td>
+            <td class="table-body__cell scorecard__cell">55</td>
+            <td class="table-body__cell scorecard__cell"><strong>2</strong></td>
+            <td class="table-body__cell scorecard__cell">6.11</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">27</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">JP Duminy</span><span class="short">JP Duminy</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">1</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">12</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">12.00</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">4</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Kagiso Rabada</span><span class="short">K Rabada</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">8</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">50</td>
+            <td class="table-body__cell scorecard__cell"><strong>2</strong></td>
+            <td class="table-body__cell scorecard__cell">6.25</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">22</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Imran Tahir</span><span class="short">I Tahir</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">10</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">76</td>
+            <td class="table-body__cell scorecard__cell"><strong>2</strong></td>
+            <td class="table-body__cell scorecard__cell">7.60</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">23</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Tabraiz Shamsi</span><span class="short">T Shamsi</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">10</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">60</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">6.00</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">30</td>
+        </tr>
+
+
+        <tr class="table-body scorecard__table-body">
+            <td class="table-body__cell scorecard__cell table-body__cell--main scorecard__cell--main ">
+                <div class="scorecard__player-name"><span class="long">Farhaan Behardien</span><span class="short">F Behardien</span></div>
+            </td>
+            <td class="table-body__cell scorecard__cell">1</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">0</td>
+            <td class="table-body__cell scorecard__cell">9</td>
+            <td class="table-body__cell scorecard__cell"><strong>0</strong></td>
+            <td class="table-body__cell scorecard__cell">9.00</td>
+            <td class="table-body__cell scorecard__cell u-hide-phablet">2</td>
+        </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+
+    </div>
+    <div id="hawk-eye" class="mc__details-panel mc__tab is-hidden">
+        <div class="wrapper">
+  <div class="col-12">
+
+    <section data-widget="hawk-eye" data-script="icc_match-centre"
+        data-match-id="4211"
+        data-tournament-id="4201">
+
+        <header class="hawkeyeHeader">
+            <h3 classname="viewLabel" class="viewLabel">Trajectory Viewer</h3>
+            <a class="filter"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-cog"></use></svg></a>
+            <a class="camera"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-tv"></use></svg></a>
+        </header>
+
+        <div class="hawkeye">
+
+            <div class="featureCntr">
+                <div id="wrapper">
+                    <div id="scroller">
+                        <ul id="thelist" class="featureCarousel">
+                            <li class="traj" data-graph-name="Trajectory Viewer">
+                                <div classname="viewLabel" class="viewLabel hidden">Trajectory Viewer</div>
+                                <div class="returnLive" style="display: none;"><a>Return to Latest Over</a></div>
+                                <div class="graphCntr">
+                                    <div class="background layer">
+                                        <div style="width: 100%; padding-top: 53%; background-image: url(http://dynamic.pulselive.com/test/client/india-times/i/hawkeye/CF06-behind-stumps.png); background-size: 100%;">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="ww" data-graph-name="Wagon Wheel">
+                                <div classname="viewLabel" class="viewLabel hidden">Wagon Wheel</div>
+                            </li>
+
+                            <li class="pitchmap split" data-graph-name="Pitch Map">
+                                <div classname="viewLabel" class="viewLabel hidden">Pitch Map</div>
+                                <div class="keyCntr">
+                                    <div class="key">
+                                        <ul>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey white"></div>
+                                                <div>Wicket</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey red"></div>
+                                                <div>Dot Ball</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey blue"></div>
+                                                <div>1-3 runs</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey yellow"></div>
+                                                <div>Boundary</div>
+                                            </li>
+                                        </ul>
+                                    </div><!-- END key -->
+                                </div>
+                            </li>
+
+                            <li class="beehive" data-graph-name="Beehive Placement">
+                                <div classname="viewLabel" class="viewLabel hidden">Beehive Placement</div>
+                                <div class="keyCntr">
+                                    <div class="key">
+
+                                        <ul>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey white"></div>
+                                                <div>Wicket</div></li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey red"></div>
+                                                <div>Dot Ball</div></li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey blue"></div>
+                                                <div>Offside 1-3 runs</div></li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey lightBlue"></div>
+                                                <div>Offside Boundary</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey yellow"></div>
+                                                <div>Legside 1-3 runs</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey orange"></div>
+                                                <div>Legside Boundary</div>
+                                            </li>
+                                        </ul>
+
+                                    </div><!-- END key -->
+                                </div>
+                            </li>
+
+                            <li class="run-rate" data-graph-name="Run Rate">
+                                <div classname="viewLabel" class="viewLabel hidden">Run Rate</div>
+                            </li>
+
+                            <li class="bowl-speeds" data-graph-name="Bowl Speeds">
+                                <div classname="viewLabel" class="viewLabel hidden">Bowl Speeds</div>
+                            </li>
+
+                            <li class="pitchmap split" data-graph-name="Speed Pitch Map">
+                                <div classname="viewLabel" class="viewLabel hidden">Speed Pitch Map</div>
+                                <div class="keyCntr">
+                                    <div class="key">
+
+                                        <ul>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey blue"></div>
+                                                <div>0-90 KM/H</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey yellow"></div>
+                                                <div>90-130 KM/H</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey orange"></div>
+                                                <div>130-140 KM/H</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey red"></div>
+                                                <div>140+ KM/H</div>
+                                            </li>
+                                        </ul>
+
+                                    </div><!-- END key -->
+                                </div>
+                            </li>
+
+                            <li class="partnerships" data-graph-name="Partnerships">
+                                <div classname="viewLabel" class="viewLabel hidden">Partnerships</div>
+                            </li>
+
+                            <li class="pitchmap split" data-graph-name="Variable Bounce">
+                                <div classname="viewLabel" class="viewLabel hidden">Variable Bounce</div>
+                                <div class="keyCntr">
+                                    <div class="key">
+
+                                        <ul>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey white"></div>
+                                                <div>Wicket</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey red"></div>
+                                                <div>Above Stumps</div>
+                                            </li>
+                                            <li>
+                                                <div class=" "></div>
+                                                <div class="colorKey blue"></div>
+                                                <div>Stump Height</div>
+                                            </li>
+                                        </ul>
+
+                                    </div><!-- END key -->
+                                </div>
+                            </li>
+
+                            <li class="runs-per-over" data-graph-name="Runs Per Over">
+                                <div classname="viewLabel" class="viewLabel hidden">Runs Per Over</div>
+                            </li>
+                            <li class="worms" data-graph-name="Worms">
+                                <div classname="viewLabel" class="viewLabel hidden">Worms</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END featreCntr -->
+            <div id="graph-info" class="trajDescription vControlWrap">
+                <div class="vControl">
+                    <div id="traj-description" class="status">&nbsp;</div>
+                </div>
+            </div>
+
+            <div id="pulseGraphing" class="pulseGraphing"></div>
+
+            <div class="cameraMenu" style="display: none;">
+                <div class="content">
+                    <ul>
+                        <li class="stumps active"><a><span class="thumb"></span><span class="tag">Stumps</span></a></li>
+                        <li class="slip"><a><span class="thumb"></span><span class="tag">Slip</span></a></li>
+                        <li class="last bowler"><a><span class="thumb"></span><span class="tag">Bowler</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="filterPanelOverlay">
+                <div id="filterPanelCntr" class="">
+                  <div id="defaultFilterCntr" class="filterPanel hidden">
+                      <div class="content">
+                      <div class="defaultFilter">
+                        <h1 class=""></h1>
+                        <div class="defaultFilterContent">
+                          <div class="selectCntr">
+                            <div class='filterLabel'>Innings</div>
+                            <select style="" class="inningsSelect" name="" id=""></select>
+                          </div>
+
+                          <div class="selectCntr">
+                            <div class='filterLabel'>Bowler</div>
+                            <select style="" class="bowlerSelect" name="" id=""></select>
+                          </div>
+
+                         <div class="selectCntr">
+                            <div class='filterLabel'>Batsman</div>
+                           <select class="batsmanSelect"></select>
+                         </div>
+                       </div>
+                      <div class="cl"></div>
+                      </div>
+                    </div> <div class="close"><a class="confirmButton btn">Apply</a></div>
+                  </div>
+
+                  <div id="noOptionsFilterCntr" class="filterPanel hidden">
+                    <div class="content">
+                      <div class="defaultFilter">
+                        <h1 class=""></h1>
+                        <div class="defaultFilterContent">
+                          <h3 class="">No options available for this feature.</h3>
+                        </div><!-- END content -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="inningsFilterCntr" class="filterPanel hidden">
+                      <div class="content">
+                      <div class="defaultFilter">
+                        <h1 class=""></h1>
+                        <div class="defaultFilterContent">
+                          <div class="selectCntr">
+                            <div class='filterLabel'>Innings</div>
+                            <select style="" class="inningsSelect" name="" id=""></select>
+                          </div>
+                       </div>
+                      <div class="cl"></div>
+                      </div>
+                      </div> <div class="close"><a class="confirmButton">Apply</a></div>
+                  </div>
+
+                  <div id="latestOverFilterCntr" class="filterPanel hidden" style="display:none;">
+                      <div class="content">
+                       <div class="trajPanel">
+                        <div class="menu">
+                            <ul>
+                                <!--<li class="left active"><a>Latest Over</a></li>-->
+                                <li class="left"><a>All Balls</a></li>
+                                <li class="right"><a>Wickets</a></li>
+                            </ul>
+                        </div>
+                        <div id="traj-description2" class=""></div>
+                       </div>
+                     </div> <!-- END content -->
+                  </div>
+
+                  <div id="wicketsFilterCntr" class="filterPanel hidden">
+                      <div class="content">
+                       <div class="trajPanel">
+                        <div class="menu">
+                            <ul>
+                                <!--<li class="left"><a>Latest Over</a></li>-->
+                                <li class="left"><a>All Balls</a></li>
+                                <li class="right active"><a>Wickets</a></li>
+                            </ul>
+                        </div>
+                        <div class="trajWickets">
+                            <div class="selectCntr">
+                             <select style="" class="inningsSelect" name="" id=""></select>
+                            </div>
+                            <div class="content">
+                              <ul></ul>
+                            </div>
+                       </div>
+                       </div>
+                     </div> <!-- END content -->
+                  </div>
+
+                  <div id="findABallFilterCntr" class="filterPanel hidden">
+                      <div class="content">
+                       <div class="trajPanel">
+                        <div class="menu">
+                            <ul>
+                                <!--<li class="left"><a>Latest Over</a></li>-->
+                                <li class="left active"><a>All Balls</a></li>
+                                <li class="right"><a>Wickets</a></li>
+                            </ul>
+                            <div class="cl"></div>
+                        </div>
+                        <div class="trajMenuContent">
+                          <div class="selectCntr">
+                            <div class='filterLabel'>Innings</div>
+                            <select style="" class="inningsSelect" name="" id=""></select>
+                          </div>
+                            <div class="selectCntr">
+                              <div class='filterLabel'>Bowler</div>
+                              <select style="" class="bowlerSelect" name="" id=""></select>
+                            </div>
+
+                              <div class="selectCntr">
+                                <div class='filterLabel'>Over</div>
+                                <select style="" class="overSelect" name="" id=""></select>
+                              </div>
+
+                              <div class="selectCntr">
+                                <div class='filterLabel'>Ball</div>
+                                <select style="" class="ballSelect" name="" id=""></select>
+                              </div>
+
+                          </div>
+                       <div class="cl"></div>
+                       </div>
+                     </div> <!-- END content -->
+                     <div class="close"><a class="confirmButton btn">Apply</a></div>
+                  </div>
+
+                </div>
+            </div>
+
+            <div id="hawkeye-nav" class="featureList"></div>
+
+        </div>
+
+    </section>
+    <!-- END hawkeyeContent -->
+
+  </div>
+</div>
+
+    </div>
+    <div id="teams" class="mc__details-panel mc__tab is-hidden">
+
+<div class="mc-teams" data-widget="mc-teams" data-script="icc_match-centre"
+    data-match-id="4211"
+    data-tournament-id="4201">
+
+
+        <div class="mc-teams__column col-6 js-team-list">
+    <div class="mc-teams__header">
+        <div class="flag-15 mc-teams__flag SA"></div><span class="mc-teams__team-name"><span class="long">South Africa</span><span class="short">SA</span> Playing XI</span>
+    </div>
+    <ul class="mc-team-list mc-team-list--playing-xi">
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">Q de Kock</span>
+                <span class="mc-team-list__player-name long">Quinton de Kock</span>
+                    <span class="mc-team-list__badge mc-team-list__badge--wicket">WKT</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">H Amla</span>
+                <span class="mc-team-list__player-name long">Hashim Amla</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">F du Plessis</span>
+                <span class="mc-team-list__player-name long">Francois du Plessis</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">AB de Villiers</span>
+                <span class="mc-team-list__player-name long">AB de Villiers</span>
+                    <span class="mc-team-list__badge mc-team-list__badge--captain">CPT</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">JP Duminy</span>
+                <span class="mc-team-list__player-name long">JP Duminy</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">F Behardien</span>
+                <span class="mc-team-list__player-name long">Farhaan Behardien</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">W Parnell</span>
+                <span class="mc-team-list__player-name long">Wayne Parnell</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">D Pretorius</span>
+                <span class="mc-team-list__player-name long">Dwaine Pretorius</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">I Tahir</span>
+                <span class="mc-team-list__player-name long">Imran Tahir</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">K Rabada</span>
+                <span class="mc-team-list__player-name long">Kagiso Rabada</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">T Shamsi</span>
+                <span class="mc-team-list__player-name long">Tabraiz Shamsi</span>
+            </li>
+    </ul>
+        </div>
+        <div class="mc-teams__column col-6 js-team-list">
+    <div class="mc-teams__header">
+        <div class="flag-15 mc-teams__flag SL"></div><span class="mc-teams__team-name"><span class="long">Sri Lanka</span><span class="short">SL</span> Playing XI</span>
+    </div>
+    <ul class="mc-team-list mc-team-list--playing-xi">
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">N Dickwella</span>
+                <span class="mc-team-list__player-name long">Niroshan Dickwella</span>
+                    <span class="mc-team-list__badge mc-team-list__badge--wicket">WKT</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">S Weerakkody</span>
+                <span class="mc-team-list__player-name long">Sandun Weerakkody</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">K Mendis</span>
+                <span class="mc-team-list__player-name long">Kusal Mendis</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">WU Tharanga</span>
+                <span class="mc-team-list__player-name long">Upul Tharanga</span>
+                    <span class="mc-team-list__badge mc-team-list__badge--captain">CPT</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">D de Silva</span>
+                <span class="mc-team-list__player-name long">Dhananjaya de Silva</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">A Gunaratne</span>
+                <span class="mc-team-list__player-name long">Asela Gunaratne</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">S Pathirana</span>
+                <span class="mc-team-list__player-name long">Sachith Pathirana</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">N Kulasekara</span>
+                <span class="mc-team-list__player-name long">Nuwan Kulasekara</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">L Madushanka</span>
+                <span class="mc-team-list__player-name long">Lahiru Madushanka</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">L Kumara</span>
+                <span class="mc-team-list__player-name long">Lahiru Kumara</span>
+            </li>
+            <li class="mc-team-list__player">
+                <span class="mc-team-list__player-name short">L Sandakan</span>
+                <span class="mc-team-list__player-name long">Lakshan Sandakan</span>
+            </li>
+    </ul>
+        </div>
+</div>
+
+
+    </div>
+    <div id="social" class="mc__details-panel mc__tab is-hidden">
+            <section class="widget social-feed-wall" data-stream-id="9c1f2a42-482f-4ff1-a9d4-57b12c1ed496" data-item-extra-classes="col-6 col-12-phab uniform-grid__section" data-limit="8" data-loadmore="true" data-widget="social-feed" data-script="icc_social-feed">
+        <div class="widget__header">
+            <h3 class="widget__title"></h3>
+        </div>
+        <div class="u-negative-wrapper">
+            <div class="js-social-feed-content uniform-grid"></div>
+        </div>
+        <footer class="widget__footer u-text-center js-show-more">
+    		<button type="button" class="btn btn--round btn--arrow-down js-show-more-button" name="button">
+                Show More
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-double-chevron-down"></use></svg>
+            </button>
+            <div class="loader js-loader u-hide"></div>
+            <p class="social-feed__end-message js-end-message u-hide">No more social posts to display</p>
+    	</footer>
+    </section>
+
+    </div>
+    <div id="match-info" class="mc__details-panel mc__tab is-hidden">
+
+    <section class="match-info"
+        data-script="icc_match-centre" data-widget="mc-match-info"
+        data-match-id="4211"
+        data-tournament-id="4201">
+
+        <div class="match-info__details">
+            <ul>
+                <li class="match-info__detail">
+                    <span class="match-info__label">Toss:</span>
+                    <span class="match-info__info js-toss">South Africa, who chose to bat</span>
+                </li>
+                <li class="match-info__detail">
+                    <span class="match-info__label">Venue:</span>
+                    <span class="match-info__info">Newlands, Cape Town</span>
+                </li>
+                    <li class="match-info__detail">
+                        <span class="match-info__label">Umpires:</span>
+                        <span class="match-info__info">Adrian Holdstock, Richard Illingworth, Richard Kettleborough, Shaun George</span>
+                    </li>
+                    <li class="match-info__detail">
+                        <span class="match-info__label">Match Referee:</span>
+                        <span class="match-info__info">Sir Richie Richardson</span>
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="match-info__notes match-notes js-notes">
+
+                    <div class="match-notes__innings">
+                        <h3 class="match-notes__innings-title"><span class="flag-15 match-notes__flag SA"></span>South Africa Innings</h3>
+                        <ul class="match-notes__details">
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Powerplay 1 - 59 runs, 1 wicket</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 50 runs in 8.5 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">2nd Wicket: 50 runs in 43 balls (Quinton de Kock 32, Francois du Plessis 18)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Powerplay 2 - 202 runs, 2 wickets</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Qunton de Kock: 50 off 40 balls (6 x fours, 2 x sixes)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 100 runs in 15.3 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">2nd Wicket: 100 runs in 86 balls (Quinton de Kock 53, Francois du Plessis 47)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Francois du Plessis: 50 off 46 balls (8 x fours)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 150 runs in 24.3 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">3rd Wicket: 50 runs in 52 balls (Francois du Plessis 22, AB de Villiers 28)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 200 runs in 31.5 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">3rd Wicket: 100 runs in 95 balls (Francois du Plessis 51, AB de Villiers 49)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">AB de Villiers: 50 off 51 balls (3 x fours)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Francois du Plessis: 100 off 89 balls (11 x fours)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 250 runs in 38.1 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Powerplay 3 - 106 runs, 2 wickets</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Francois du Plessis: 150 off 129 balls (14 x fours)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 300 runs in 45.2 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">5th Wicket: 50 runs in 23 balls (Francois du Plessis 32, Farhaan Behardien 19)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">South Africa: 350 runs in 48.2 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Innings Break: South Africa - 367/5 in 50 overs</span>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="match-notes__innings">
+                        <h3 class="match-notes__innings-title"><span class="flag-15 match-notes__flag SL"></span>Sri Lanka Innings</h3>
+                        <ul class="match-notes__details">
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Powerplay 1 - 100 runs, 0 wicket</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sri Lanka: 50 runs in 4.5 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">1st Wicket: 50 runs in 29 balls (Niroshan Dickwella 17, Upal Tharanga 31)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Upal Tharanga: 50 off 25 balls (5 x fours, 4 x sixes)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sri Lanka: 100 runs in 9.4 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">1st Wicket: 100 runs in 58 balls (Niroshan Dickwella 29, Upal Tharanga 65)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Powerplay 2 - 172 runs, 4 wickets</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Niroshan Dickwella: 50 off 40 balls (8 x fours)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sri Lanka: 150 runs in 19.3 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Upal Tharanga: 100 off 73 balls (9 x fours, 7 x sixes)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">2nd Wicket: 50 runs in 46 balls (Upal Tharanga 27, Kusal Mendis 23</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sri Lanka: 200 runs in 25.5 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sri Lanka: 250 runs in 37.1 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Powerplay 3 - 55 runs, 6 wickets</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">5th Wicket: 50 runs in 43 balls (Sandun Weerakkody 31, Asela Gunaratne 19)</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sri Lanka: 300 runs in 43.1 overs</span>
+                                </li>
+                                <li class="match-notes__detail">
+                                    <span class="match-notes__note">Sandun Weerakkody: 50 off 46 balls (5 x fours, 1 x six)</span>
+                                </li>
+                        </ul>
+                    </div>
+        </div>
+    </section>
+
+    </div>
+</main>
+
+<div data-script="icc_match-centre" data-widget="mc-poll" data-gameweek="" class="">
+    <div class="poll js-question-container">
+        <header class="poll__header js-matchWeekPollButton">
+            Fan Polls
+            <div class="poll__header__icon">
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-pulse"></use></svg>
+                <span class="poll__header__count u-hide js-poll-question-number"></span>
+            </div>
+            <a href="#" class="poll__header__close js-options-close-btn">
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-close"></use></svg>
+            </a>
+        </header>
+
+        <div class="poll__content">
+            <div class="js-options-container u-hide">
+                <div class="js-option-render-container"></div>
+                <div class="branding-strip"></div>
+            </div>
+
+            <div class="js-all-questions-container"></div>
+        </div>
+    </div>
+</div>
+
+<div data-script="icc_match-centre"
+    data-widget="mc-live-matches"
+    data-tournament-type="I,WI"
+    class="live-matches wrap-fixtures-abridged js-live-matches">
+    <div class="live-matches__content">
+        <header class="live-matches__header">
+            <h3 class="widget__title js-header-match-count"></h3>
+            <div class="live-matches__close js-close" tabindex="0" role="button"> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-close"></use></svg></div>
+        </header>
+        <div class="js-live-match-container"></div>
+    </div>
+    <div class="live-matches__underlay js-underlay"></div>
+</div>
+
+
+
+    <!-- Script includes -->
+    <!-- Polyfill service provided by the FT - https://github.com/Financial-Times/polyfill-service -->
+    <!-- <script src="//cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+
+    <!-- FastClick speeds up click bindings on touch screens by the FT - https://github.com/ftlabs/fastclick -->
+    <script src="/resources/ver/bower/fastclick/lib/fastclick.js"></script>
+    <script src="/resources/ver/bower/underscore/underscore-min.js"></script>
+    <script src="/resources/ver/bower/moment/min/moment.min.js"></script>
+    <script src="/resources/ver/bower/svg4everybody/dist/svg4everybody.min.js"></script>
+
+    <script src="/resources/ver/bower/pulse-js/dist/pulse.js"></script>
+    <script src="/resources/ver/bower/pulse-cricket-js/dist/pulse-cricket.js"></script>
+    <script src="/resources/ver/scripts/main.js"></script>
+    <script src="/resources/ver/widgets/common.js"></script>
+
+    <!--[if IE]> -->
+    <script type="text/javascript">
+        svg4everybody();
+    </script>
+    <!-- <![endif]-->
+</body>
+</html>

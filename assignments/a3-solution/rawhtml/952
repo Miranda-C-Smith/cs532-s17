@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    
+    <title>Intel's Atom C2000 chips are bricking products – and it's not just Cisco hit • The Register    </title>
+    
+    <meta property="og:title" content="Intel's Atom C2000 chips are bricking products – and it's not just Cisco hit" />
+    <meta property="og:image" content="https://regmedia.co.uk/2017/02/06/shutterstock_intel_chips_scaled.jpg?x=1200&y=794"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/" />
+    <meta property="og:description" content="Chipzilla and Switchzilla won't confirm connection but the writing is on the wall" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheRegister">
+    <meta name="news_keywords" content="Intel, Cisco">
+
+
+    <link rel="canonical" href="https://www.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/"><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/"><link rel="amphtml" href="https://www.theregister.co.uk/AMP/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/">
+    <script>
+        var RegArticle={id:185642,pf:0,af:0,bms:0,cat:'news',ec:[],kw:[['intel','Intel'],['cisco','Cisco']],short_url:'http://reg.cx/2rZW',cp:0,noads:[],author:'Thomas Claburn',vid:0}
+    </script>
+    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Arimo:400%7CArimo:700">
+<link rel=stylesheet type="text/css" href="/css_picker/default/9e912907835c48ca1c9d121eae924be461cf3122/design.css">
+
+    <style>
+        #sec-data-centre
+ a,
+        #sub-sec-none a {
+          font-weight: bold;
+        }
+    </style>
+    <link rel=alternate type="application/atom+xml" href="/headlines.atom" title="The Register: whole site">
+    
+    
+    <script src="/design_picker/d5ebce2c873ee1e0ed75a97c2aa2b7e3a6d10981/javascript/_.js"></script>
+    <script>
+      if (Math.floor(Math.random()*100)<90) var Reg__adct = 's-sync';
+      else var Reg__adct = 's-async'; 
+      if ($.cookie('test_ct') == 's-sync') var Reg__adct = 's-sync';
+      if ($.cookie('test_ct') == 's-async') var Reg__adct = 's-async'; 
+      if (window.Reg__adct == 's-async') {
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+          var gads = document.createElement("script");
+          gads.async = true;
+          gads.type = "text/javascript";
+          gads.src = "//www.googletagservices.com/tag/js/gpt.js";
+          var node = document.getElementsByTagName("script")[0];
+          node.parentNode.insertBefore(gads, node);
+        })();
+      } else {
+        document.write('<scr' + 'ipt src="//www.googletagservices.com/tag/js/gpt.js"></scr' + 'ipt>');
+      }
+    </script>
+    
+    <script src="https://nir.regmedia.co.uk/?g=c&amp;g=sa&amp;s=c/dc.front"></script>
+    
+    <script>
+      if (window.Reg__adct == 's-async') {
+        googletag.cmd.push(function() {
+          init_gpt('reg_datacentre/front');
+        });
+      } else {
+        init_gpt('reg_datacentre/front');
+      }
+    </script>
+
+
+    <link rel="SHORTCUT ICON" type="image/x-icon" href="/favicon.ico">
+    <link rel=search href="https://search.theregister.co.uk/">
+    <link rel=search type="application/opensearchdescription+xml" title="El Reg Search" href="/Design/page/search.osd">
+    <link rel=apple-touch-icon href="/Design/graphics/icons/vulture_black_60_trans.png">
+
+</head>
+<body  data-pagetype='Story' data-pagenum=0>
+<div id=page>
+    <div id=topbar class="alt_colour dcl">
+        <div class=login></div>
+        <ul>
+            <li><a href="http://www.mcubed.london/" target=_blank title="Minds Mastering Machines - The ML and AI Conference">M³</a></li>
+            <li><a href="http://www.continuouslifecycle.london" target=_blank title="Continuous Lifecycle London 2017">CLL</a></li>
+            <li><a href="https://whitepapers.theregister.co.uk/events/list" title="Webcasts and Events from The Register">Events</a></li>
+            <li><a href="https://whitepapers.theregister.co.uk/" title="Whitepapers and tech resources from The Register">Whitepapers</a></li>
+            <li><a href="http://www.nextplatform.com/" title="High-end computing in-depth">The Next Platform</a></li>
+        </ul>
+    </div>
+        <div id=ad-oop-spot class=adu>
+        <script>
+            show_gpt('ad-oop-spot');
+        </script>
+    </div>
+    
+    <div id=ad-ldr-spot class=adu>
+        <script>
+            show_gpt('ad-ldr-spot');
+        </script>
+        <noscript>
+            <a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6978/reg_datacentre/front&amp;sz=728x90%7C970x90%7C970x250&amp;tile=2&amp;c=22WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D2%26unitname%3Dwww_top_leader%26pos%3Dtop%26test%3D0" target="_blank">
+                <img src="https://pubads.g.doubleclick.net/gampad/ad?iu=/6978/reg_datacentre/front&amp;sz=728x90%7C970x90%7C970x250&amp;tile=2&amp;c=22WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D2%26unitname%3Dwww_top_leader%26pos%3Dtop%26test%3D0" alt="">
+            </a>
+        </noscript>
+    </div>
+
+    <div id=masthead>
+        <a href="https://www.theregister.co.uk/" id=logo>
+            <img src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icons/reg_logo.svg" width=330 height=63 alt="The Register® — Biting the hand that feeds IT">
+        </a>
+        <div id=follow_btns_top>
+            <a class=tweet_link href="https://twitter.com/intent/user?screen_name=theregister" title="Follow us on twitter" target=_blank>
+                <img width="18" height="18" alt="Twitter" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/twitter.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/twitter.svg">
+            </a>
+            <a href="https://www.facebook.com/VultureCentral" title="Like us on Facebook" target=_blank class=fbook>
+                <img width="18" height="18" alt="Facebook" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/facebook.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/facebook.svg">
+            </a>
+            <a href="https://google.com/+theregister" title="Follow us on Google+" target=_blank class=gplus>
+                <img width="18" height="18" alt="G+" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/google_plus.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/google_plus.svg">
+            </a>
+            <a href="https://www.linkedin.com/company/the-register" title="Follow us on LinkedIn" target=_blank class=linkin>
+                <img width="18" height="18" alt="LinkedIn" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/linkedin.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/linkedin.svg">
+            </a>
+        </div>
+    </div>
+        <div id=site_nav class=static>
+        <nav id=top_nav class=dcl>
+            <a href="https://www.theregister.co.uk/" class=nav_vulture data-nav=".front_nav" data-name="Home">
+                <img width="21" height="17" alt="Home" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/vulture.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/vulture.svg" class=black_vulture>
+                <img width="21" height="17" alt="Home" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/vulture_white.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/vulture_white.svg" class=white_vulture>
+            </a>
+            <a href="/data_centre/" id=sec-data-centre data-nav=".data_cent_nav" data-name="Data_centre">
+                Data Center
+            </a>
+            <a href="/software/" id=sec-software data-nav=".software_nav" data-name="Software">
+                Software
+            </a>
+            <a href="/security/" id=sec-security data-nav=".sec_nav" data-name="Security">
+                Security
+            </a>
+            <a href="/transformation/" id=sec-transformation data-nav=".trans_nav" data-name="Transformation">
+                Transformation
+            </a>
+            <a href="/devops/" id=sec-devops data-nav=".devops_nav" data-name="DevOps">
+                DevOps
+            </a>
+            <a href="/business/" id=sec-business data-nav=".bus_nav" data-name="Business">
+                Business
+            </a>
+            <a href="/personal_tech/" id=sec-personal_tech data-nav=".pers_nav" data-name="Personal Tech">
+                Personal Tech
+            </a>
+            <a href="/science/" id=sec-science data-nav=".sci_nav" data-name="Science">
+                Science
+            </a>
+            <a href="/emergent_tech/" id=sec-emergent-tech data-nav=".emer_nav" data-name="Emergent Tech">
+                Emergent Tech
+            </a>
+            <a href="/bootnotes/" id=sec-bootnotes data-nav=".bootnotes_nav" data-name="Bootnotes">
+                Bootnotes
+            </a>
+
+            <a href="https://search.theregister.co.uk/" class=nav_search data-name="Search">
+                <img class="black_search_icon" width="18" height="18" alt="search" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icons/search.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icons/search.svg">
+            </a>
+        </nav>
+        <form id=search_form action="https://search.theregister.co.uk/" method=GET>
+            <input type=text name=q id=q placeholder="Search site">
+            <img class="white_search_icon" width="18" height="18" alt="search" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icons/search_white.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icons/search_white.svg">
+        </form>
+        <div id=nav_pop>
+            <div class=front_nav>
+                <ul class="sub_nav alt_colour dcl">
+                    <li data-name="Alerts">
+                        <a href="https://account.theregister.co.uk/alert/?create=1">
+                            Alerts
+                        </a>
+                    </li>
+                    <li data-name="Newsletters">
+                        <a href="https://account.theregister.co.uk/register/?product=theregister_newsletter">
+                            Newsletters
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/21/java_python_ftp_code_vulnerable/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/21/giant_bug_destroys_city_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Java and Python have unpatched firewall-crossing FTP SNAFU</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/intel_reveals_optane_will_need_a_7thgen_core_and_a_pccentric_launch/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/20/optane_ready_logo.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Intel reveals Optane will need a 7th-gen core and a PC-centric launch</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/bullshit_detection_university_course/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/07/10/wagyu_bull.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>BS Detection 101 becomes actual University subject</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/nz_court_rules_us_can_seize_kim_dotcom_after_all/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/01/23/jail_teaser.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>NZ High Court rules US can extradite Kim Dotcom after all</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=data_cent_nav>
+                <ul class="sub_nav alt_colour dcl">
+                    <li id=sub-sec-servers data-name="Servers">
+                        <a href="/data_centre/servers/" title="Enterprise server news, analysis and opinion">
+                            Servers
+                        </a>
+                    </li>
+                    <li id=sub-sec-hpc data-name="HPC">
+                        <a href="/data_centre/hpc/" title="High Performance Computing news, analysis and opinion">
+                            HPC
+                        </a>
+                    </li>
+                    <li id=sub-sec-cloud data-name="Cloud">
+                        <a href="/data_centre/cloud/" title="Cloud news, analysis and opinion">
+                            Cloud
+                        </a>
+                    </li>
+                    <li id=sub-sec-storage data-name="Storage">
+                        <a href="/data_centre/storage/" title="Enterprise Storage news, analysis and opinion">
+                            Storage
+                        </a>
+                    </li>
+                    <li id=sub-sec-networks data-name="Networks">
+                        <a href="/data_centre/networks/" title="Networks news, analysis and opinion">
+                            Networks
+                        </a>
+                    </li>
+                    <li id=sub-sec-virtualization data-name="Virtualisation">
+                        <a href="/data_centre/virtualization/" title="Virtualization news, analysis and opinion">
+                            Virtualization
+                        </a>
+                    </li>
+                    <li id=sub-sec-bofh data-name="Bofh">
+                        <a href="/data_centre/bofh/" title="BOFH">
+                            BOFH
+                        </a>
+                    </li>
+                </ul>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/intel_reveals_optane_will_need_a_7thgen_core_and_a_pccentric_launch/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/20/optane_ready_logo.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Intel reveals Optane will need a 7th-gen core and a PC-centric launch</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/the_stunted_physical_san_market_sakac_blesses_wikibon_server_san_prescience/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/08/24/crystal_ball_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>The stunted physical SAN market – Dell man gives Wikibon forecasts his blessing</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/hpe_not_saying_simplivity_getting_proliant_server_hardware/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/08/22/simplivity_omnicubes.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Surprise! HPE says nothing about ProLiant server hardware for SimpliVity OmniCubes</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/draastic_times_call_for_draastic_measures_in_vmwares_cloud/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/07/14/ddos_876334.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>DraaS-tic times call for DraaS-tic measures in VMware's cloud</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=software_nav>
+                <div class=sub_nav></div>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/bullshit_detection_university_course/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/07/10/wagyu_bull.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>BS Detection 101 becomes actual University subject</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/sap_indirect_access_diageo/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/20/arm_wrestling_photo_via_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Ditching your call centre for an app? Be careful not to get SAP-slapped</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/streetmap_founder_kate_sutton_google_lawsuit/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/20/streetmap_ordnance_survey_2.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>'At least I can walk away with my dignity' – Streetmap founder after Google lawsuit loss</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/microsoft_graph_database_the_big_difference/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/17/solo_pilot_photo_via_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Love lambda, love Microsoft's Graph Engine. But you fly alone</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=sec_nav>
+                <div class=sub_nav></div>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/21/java_python_ftp_code_vulnerable/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/21/giant_bug_destroys_city_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Java and Python have unpatched firewall-crossing FTP SNAFU</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/is_your_child_a_hacker_liverpudlian_parents_handed_cyber_checklist/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/11/02/hacker.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Is your child a hacker? Liverpudlian parents get warning signs checklist</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/android_auto_app_insecurity/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/02/03/sad_android.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Beeps, roots and leaves: Car-controlling Android apps create theft risk</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/connected_car_in_the_secondhand_lot_dont_buy_it_if_youre_not_hacksavvy/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/20/used_car_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Connected car in the second-hand lot? Don't buy it if you're not hack-savvy</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=trans_nav>
+                <div class=sub_nav></div>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/hyperconverged_market_gets_hypercompetitive/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/06/25/race_horse.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Hyperconverged market gets hyper-competitive as new riders enter field</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/16/cloud_industry_body_sets_up_new_data_protection_code/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/10/27/europe.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Cloud industry body sets up new data protection code</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/10/world_tech_spend_2017/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/10/20/earth_portrait_teaser.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>World to spend US$2.4 TRILLION on tech in 2017</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/09/gov_dusts_off_yearlate_digital_strategy/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/07/05/shutterstock_whitehall.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Brought to you by UK.gov: 'Most ambitious programme of change of any government anywhere in the world'</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=devops_nav>
+                <div class=sub_nav></div>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/16/gitlab_responds/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/08/24/bomb.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>GitLab invokes the startup defence to explain data loss woes</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/14/digitalocean_takes_a_load_off/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/09/30/shutterstock_data.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>With nearly 1m users on its books, DigitalOcean touts load balancers</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/10/continuous_lifecycle_more_speakers/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/01/24/view_qe_ii.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Continuous Lifecycle London: More workshops, more speakers</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/09/engineers_should_ditch_silicon_valley_for_austin/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/09/austin.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Why software engineers should ditch Silicon Valley for Austin</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=bus_nav>
+                <ul class="sub_nav alt_colour dcl">
+                    <li id=sub-sec-policy data-name="Policy">
+                        <a href="/business/policy/" title="Policy News, analysis and opinion">
+                            Policy
+                        </a>
+                    </li>
+                    <li id=sub-sec-channel data-name="The Channel">
+                        <a href="/business/channel/" title="The Channel news, analysis and opinion">
+                            The Channel
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/21/oz_government_opens_critical_infrastructure_protection_consultation/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/21/sulphur_crested_cockatoo_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Australia commences critical infrastructure protection consultation</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/software_glitch_worsened_south_australian_blackouts/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/06/30/wind_turbine2_image_via_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Software glitch, not wind farms, blacked out 60,000 in South Australia</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/nz_court_rules_us_can_seize_kim_dotcom_after_all/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/01/23/jail_teaser.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>NZ High Court rules US can extradite Kim Dotcom after all</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/bt_and_virgin_claim_broadband_tax_will_cost_13bn/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/09/07/handshake.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>BT and Virgin Media claim 'broadband' tax will cost £1.3bn</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=pers_nav>
+                <div class=sub_nav></div>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/iphone_8_to_3d_selfies_rodent_defibrillator/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/17/rodent-defib.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Huge if true: iPhone 8 will feature 3D selfies, rodent defibrillator</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/nokia_3310_tech_revival/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/17/shutterstock_248763730.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Nokia's 3310 revival – what's NEXT? Vote now</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/14/standards_oz_might_send_powerwalls_outdoors/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/05/01/tesla_power_wall.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Standards Australia might send Tesla's PowerWalls outside</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/14/hmd_nokia_nostalgia/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/14/nokia_3210.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Vinyl, filofaxes – why not us too, pleads Nokia</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=sci_nav>
+                <ul class="sub_nav alt_colour dcl">
+                    <li id=sub-sec-spb data-name="SPB">
+                        <a href="/science/special_projects_bureau/">
+                            SPB
+                        </a>
+                    </li>
+                    <li id=sub-sec-geek data-name="Geeks_guide">
+                        <a href="/science/geeks_guide/">
+                            Geek's Guide
+                        </a>
+                    </li>
+                </ul>
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/19/spacex_iss_launch_succeeds/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/05/06/spacex-landed.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>SpaceX blasts back into the rocket trucking business</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/18/nasa_juno_update/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/17/jupiter_flyby.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Jun-OH-NO! NASA's Jupiter probe in busted helium-valve drama</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/dead_cockroaches_magnets/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/16/mad_scientist.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Dead cockroaches make excellent magnets – now what are we supposed to do with this info?</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/16/palomar_survey_spots_3hourold_supernova/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/03/22/exploding_star_nasa.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Baby supernova spotted, just three hours old and a real cutie</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=emer_nav>
+                <ul class="sub_nav alt_colour dcl">
+                    <li id=sub-sec-artificial-intelligence data-name="Artificial Intelligence">
+                        <a href="/emergent_tech/artificial_intelligence/" title="Artificial Intelligence">
+                            Artificial Intelligence
+                        </a>
+                    </li>
+                    <li id=sub-sec-internet-of-things data-name="Internet of Things">
+                        <a href="/emergent_tech/internet_of_things/" title="Internet of Things">
+                            Internet of Things
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/nz_firm_tucks_into_us_27m_on_the_back_of_vr_hologram_promise/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/17/shutterstock_beyonce_knowles.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>NZ firm tucks into $27m on the back of VR 'hologram' promise</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/20/watson_cancerbusting_trial_on_hold_after_damning_audit_report/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/09/29/medical_873465345.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Watson can't cure cancer ... or all the stuff that breaks IT projects</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/errors_in_centrelinks_debt_recovery_system_were_inevitable_as_in_all_complex_systems/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/07/20/australian_money_shutterstock.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Errors in Australia's Centrelink debt recovery system were inevitable</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/machine_learning_graphical_eye_candy/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/16/graphcore_resnet_50_graph_extract_950.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>What does a complex AI model look like? Here's some Friday eye candy from UK biz Graphcore</h5>
+                    </a>
+                </div>
+            </div>
+            <div class=bootnotes_nav>
+                <ul class="sub_nav alt_colour dcl">
+                    <li id=sub-sec-stob data-name="Verity_stob">
+                        <a href="/bootnotes/stob/" title="Verity Stob">
+                            Verity Stob
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class=story_row>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/a_webcam_is_not_so_much_a_leering_eye_as_the_barrel_of_a_gun/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2015/09/07/metal_gear_solid_v_the_phantom_pain.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>A webcam is not so much a leering eye as the barrel of a gun</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/17/fake_brews_walmart_sued_craft_beer_fraud/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/17/walmartcatsawaybeer.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>FAKE BREWS: America rocked by 'craft beer' scandal allegations</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/16/nul_points_for_ukraines_eurovision_ticketing_site_fail/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2017/02/16/shuttersrtock_conchita_wurst_cologne_pride.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Nul points for Ukraine's Eurovision ticket site fail</h5>
+                    </a>
+                    <a class="story_link" href="https://www.theregister.co.uk/2017/02/14/kings_college_ring_study/">
+                            <img src="https://regmedia.co.uk/2016/04/14/dl.gif" alt="" width=198 height=131 data-delay_url="https://regmedia.co.uk/2016/05/16/lord_of_the_rings_ring.jpg?x=198&amp;y=131&amp;crop=1">
+                        <h5>Kings College London bods recruit members for penis ring study</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id=story_rhs_more>
+        <div id=tags>
+            <h4>More like this</h4>
+            <ul>
+                <li>
+                    <a href="/Tag/intel">Intel</a>
+                </li>
+                <li>
+                    <a href="/Tag/cisco">Cisco</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+        <div id="crumb_trail">
+            
+            <a href="/data_centre/" class="dcl sub_sec">
+                <h4>Data Centre</h4>
+            </a>
+                    </div>
+
+    <div id=main-col>
+        <div id="article"  data-cat='news'>
+
+            <div class="article_head ">
+                
+                <h1>Intel's Atom C2000 chips are bricking products – and it's not just Cisco hit</h1>
+                
+                <h2>Chipzilla and Switchzilla won't confirm connection but the writing is on the wall</h2>
+                
+
+                            <img src="https://regmedia.co.uk/2017/02/06/shutterstock_intel_chips_scaled.jpg?x=648&amp;y=348&amp;crop=1" alt="" width=648 height=348 class="article_img">
+
+    <div id=social_btns class="alt_colour dcl">
+        <a href="https://www.reddit.com/submit?url=https://www.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/&title=Intel%27s%20Atom%20C2000%20chips%20are%20bricking%20products%20%E2%80%93%20and%20it%27s%20not%20just%20Cisco%20hit" target=_blank class=reddit_btn>
+            <div class=circ>
+                <img width=18 height=18 src=/Design/graphics/icon/reddit.png srcset=/Design/graphics/icon/reddit.svg alt="reddit">
+            </div>
+        </a>
+        <a href="https://twitter.com/share?text=Intel%27s%20Atom%20C2000%20chips%20are%20bricking%20products%20%E2%80%93%20and%20it%27s%20not%20just%20Cisco%20hit&amp;url=https://www.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/&amp;via=theregister" class=twit>
+            <div class=circ>
+                <img width=18 height=18 src=/Design/graphics/icon/twitter.png srcset=/Design/graphics/icon/twitter.svg alt="Twitter">
+            </div>
+        </a>
+        <div class=faceb>
+            <div class=circ>
+                <img width=18 height=18 src=/Design/graphics/icon/facebook.png srcset=/Design/graphics/icon/facebook.svg alt="Facebook">
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/&amp;title=Intel%27s%20Atom%20C2000%20chips%20are%20bricking%20products%20%E2%80%93%20and%20it%27s%20not%20just%20Cisco%20hit&amp;summary=Chipzilla%20and%20Switchzilla%20won%27t%20confirm%20connection%20but%20the%20writing%20is%20on%20the%20wall" class=linkedin_social>
+            <div class=circ>
+                <img width=18 height=18 src=/Design/graphics/icon/linkedin_alt.png srcset=/Design/graphics/icon/linkedin_alt.svg alt="linkedin">
+            </div>
+        </a>
+    </div>
+
+
+                <div class="byline">
+                    
+                    <span class="dateline">
+                        6 Feb 2017 at 22:34,
+                    </span>
+                    
+                    
+                        <a href="/Author/3190" title="Read more by this author" class="alt_colour dcl">Thomas Claburn</a>
+                    
+                    <script>tweet_btn()</script>
+                </div>
+            </div>
+            <div id="body">
+                
+                <p><strong class="trailer">Updated</strong> Intel's Atom C2000 processor family has a fault that effectively bricks devices, costing the company a significant amount of money to correct. But the semiconductor giant won't disclose precisely how many chips are affected nor which products are at risk.</p>
+                <p>On its Q4 2016 earnings call earlier this month, chief financial officer Robert Swan <a target="_blank" rel="nofollow" href="http://seekingalpha.com/article/4040411-intel-intc-q4-2016-results-earnings-call-transcript?part=single">said</a> a product issue limited profitability during the quarter, forcing the biz to set aside a pot of cash to deal with the problem.</p>
+                <div class="article_side_content not_moved">
+                    <div id="article-mpu-container">
+
+                    </div>
+                </div>
+                
+                <p>"We were observing a product quality issue in the fourth quarter with slightly higher expected failure rates under certain use and time constraints, and we established a reserve to deal with that," he said. "We think we have it relatively well-bounded with a minor design fix that we're working with our clients to resolve."</p>
+                <p>Coincidentally, Cisco last week <a target="_blank" href="https://www.theregister.co.uk/2017/02/03/cisco_clock_component_may_fail/">issued an advisory warning</a> that several of its routing, optical networking, security and switch products sold prior to November 16, 2016 contain a faulty clock component that is likely to fail at an accelerated rate after 18 months of operation.</p>
+                <p>Cisco at the time declined to name the supplier of that component. When asked on Monday whether Intel supplied the faulty electronics, a Cisco spokesperson told that <i>The Register</i> that the networking giant does not intend to publicly name the supplier.</p>
+                <p>Intel indicated in a January 2017 revision of its <a target="_blank" rel="nofollow" href="https://www-ssl.intel.com/content/dam/www/public/us/en/documents/specification-updates/atom-c2000-family-spec-update.pdf">Atom C2000 family documentation</a> that the chip line contains a clock flaw. Errata note AVR.54, titled "System May Experience Inability to Boot or May Cease Operation," explains that the Atom C2000 Low Pin Count bus clock outputs (LPC_CLKOUT0 and LPC_CLKOUT1) may stop functioning. Permanently.</p>
+                <p>An Intel spokesperson in an email to <i>The Register</i> characterized the issue as "a degradation of a circuit element under high use conditions at a rate higher than Intel’s quality goals after multiple years of service."</p>
+                <p>"If the LPC clock(s) stop functioning the system will no longer be able to boot," Intel's documentation explains.</p>
+                <p>This consequence is precisely what Cisco says may happen to its devices given enough time. "Once the component has failed, the system will stop functioning, will not boot, and is not recoverable," Cisco's advisory states.</p>
+                <p><i>The Register</i> asked Intel whether it could confirm that Cisco's advisory could be attributed to an Intel component. Intel said it could not confirm or deny whether its chip issue is the one affecting Cisco gear, citing a policy of not commenting on customers. We note that the affected Cisco ASA 55xx products use Intel's Atom C2000 system-on-chips at least.</p>
+                <h3>Radio silence</h3>
+                <p>We asked Intel to provide specific details about when it began and stopped shipping Intel Atom C2000 processors with faulty clock outputs. Intel declined to comment. The official errata says the B0 stepping of C2xxx Atoms are vulnerable to failure, and these parts began shipping in 2013. The specific SKUs are:</p>
+                <blockquote>C2308, C2338, C2350, C2358, C2508, C2518, C2530, C2538, C2550, C2558, C2718, C2730, C2738, C2750, and C2758.</blockquote>
+                <p>We asked Intel how many affected Atom C2000 chips have been shipped and how much fixing the issue will cost the company. Intel declined to comment.</p>
+                <p>Intel did, however, provide some insight on how the Atom C2000 flaw might be addressed. "A board level workaround exists for the existing production stepping of the product which resolves the issue," a company spokesperson said in an email. "Additionally, Intel will implement and validate a minor silicon fix in a new product stepping that resolves this issue."</p>
+                <p>Many other technology vendors make products with Intel Atom C2000 processors, including Dell and Synology. <i>The Register</i> pinged Dell via email, and it was not immediately available for comment.</p>
+                <p>People with Synology DS1815+ storage boxes have been <a target="_blank" rel="nofollow" href="https://forum.synology.com/enu/viewtopic.php?f=7&amp;t=119727">reporting complete hardware failures</a>; the DS1815+ is powered by an Intel Atom C2538.</p>
+                <p>Other vendors using Atom C2000 chips include Asrock, Aaeon, HP, Infortrend, Lanner, NEC, Newisys, Netgate, Netgear, Quanta, Supermicro, and ZNYX Networks. The chipset is aimed at networking devices, storage systems, and microserver workloads. If you know of any affected or failed gear, please <a href="mailto:tclaburn@theregister.com">let us know</a>.</p>
+                <p>According to this Intel data-sheet [<a target="_blank" rel="nofollow" href="http://www.intel.com/content/dam/www/public/us/en/documents/datasheets/atom-c2000-microserver-datasheet.pdf">PDF</a>], LPC_CLKOUT0 and LPC_CLKOUT1 are driven by the processor to provide <a target="_blank" rel="nofollow" href="http://www.intel.com/design/chipsets/industry/lpc.htm">essential timing signals</a> to hardware on the board, including the boot ROM. If these signals stop ticking, the rest of the electronics stops, too. ®</p>
+                <h3>Updated to add at 14:29 UTC, February 7</h3>
+                <p>Synology told <i>The Reg</i> it was "investigating this issue together with Intel," saying it would "provide more detailed information in the week as it becomes available."</p>
+                <p>It added: "At this time Synology has not seen any indication that this issue has caused an increase in failure rates for DiskStation or RackStation models equipped with Intel Atom C2000 series processors. However once additional information is available, Synology will post an advisory on this topic.</p>
+                <p>"In the meantime it is still safe to continue to use your device, however should you encounter any issues these will be handled via our support teams and all the devices are still covered under the standard warranty provided with all our units. Technical Support can be reached via <a target="_blank" rel="nofollow" href="https://www.synology.com/ticket/">www.synology.com/ticket</a>."</p>
+                <h3>Updated to add at 15:36 UTC, February 7</h3>
+                <p>Synology subsequently asked to have its statement above revised to omit any mention of Intel.</p>
+                <h3>Updated to add at 18:23 UTC, February 8</h3>
+                <p>Once again, Synology has been in touch, seemingly now able to use the I word, to say: "Intel has recently notified Synology regarding the issue of the processor’s increased degradation chance of a specific component after heavy, prolonged usage.</p>
+                <p>"Synology has not currently seen any indication that this issue has caused an increase in failure rates for DiskStation or RackStation models equipped with Intel Atom C2000 series processors compared to other models manufactured in the same time frame not equipped with the affected processors."</p>
+                
+            </div>
+
+
+            <div id=article_body_btm>
+                <div id="tips_or_corrections">
+                    <a href="mailto:corrections@theregister.co.uk?subject=%5Bcorrection%5D%20Intel%27s%20Atom%20C2000%20chips%20are%20bricking%20products%20%E2%80%93%20and%20it%27s%20not%20just%20Cisco%20hit&amp;body=re:%20http%3A%2F%2Fwww.theregister.co.uk/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/"
+                        title="Spotted an error or have a tip? Let us know.">
+                        Tips and corrections
+                    </a>
+                </div>
+                
+                <div class="comments ">
+                    <a class="reg_btn count" title="View comments on this article" href="https://forums.theregister.co.uk/forum/1/2017/02/06/cisco_intel_decline_to_link_product_warning_to_faulty_chip/">
+                        <span>96</span>
+                        Comments
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+
+        <div id="read_more_on">
+            <h3>More from The Register</h3>
+
+            <div class=row>
+                <div class="story">
+                    <a href="/2017/02/20/intel_reveals_optane_will_need_a_7thgen_core_and_a_pccentric_launch/">
+                        <div class="story_grid_img">
+                            <img src="https://regmedia.co.uk/2017/02/20/optane_ready_logo.jpg?x=198&amp;y=131&amp;crop=1" alt="Optane-ready logo" width=198 height=131>
+                        </div>
+                        <h4>Intel reveals Optane will need a 7th-gen core and a PC-centric launch</h4>
+                        <div class=standfirst>
+                            Blah
+                        </div>
+                        <div class="time_comments">
+                            <div class=comments>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="story">
+                    <a href="/2017/01/04/optane_arrives_at_ces/">
+                        <div class="story_grid_img">
+                            <img src="https://regmedia.co.uk/2017/01/04/shutterstock_oil_refinery2.jpg?x=198&amp;y=131&amp;crop=1" alt="Oil refinery - engineer checks fuel mix. Photo by Shutterstock" width=198 height=131>
+                        </div>
+                        <h4>Regular or premium? Intel pumps out Optane memory at CES</h4>
+                        <div class=standfirst>
+                            <span class=trailer>CES 2017</span>
+                            Just a dash to Kaby Lake splash
+                        </div>
+                        <div class="time_comments">
+                            <div class=comments>
+                                20 Comments
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="story">
+                    <a href="/2017/01/27/intel_q4_fy2016_next_year_flat_oh_dear/">
+                        <div class="story_grid_img">
+                            <img src="https://regmedia.co.uk/2016/06/24/facepalm2_photo_via_shutterstock.jpg?x=198&amp;y=131&amp;crop=1" alt="Facepalm2, photo via Shutterstock" width=198 height=131>
+                        </div>
+                        <h4>Intel's Q4 was 'terrific' and 'record setting' says CEO as profits dip</h4>
+                        <div class=standfirst>
+                            How's that sacking 12,000 people thing going, Bri?
+                        </div>
+                        <div class="time_comments">
+                            <div class=comments>
+                                3 Comments
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class=row>
+                <div class="story">
+                    <a href="/2017/02/01/apple_weaning_off_of_intel/">
+                        <div class="story_grid_img">
+                            <img src="https://regmedia.co.uk/2015/11/13/chips.jpg?x=198&amp;y=131&amp;crop=1" alt="CHiPs" width=198 height=131>
+                        </div>
+                        <h4>Apple weans itself off Intel with 'more ARM chips' for future Macs</h4>
+                        <div class=standfirst>
+                            Cook bakes up another Chipzilla-free component for fruity computers &#8211; report
+                        </div>
+                        <div class="time_comments">
+                            <div class=comments>
+                                32 Comments
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="story">
+                    <a href="/2016/06/27/intel_security_possible_sale/">
+                        <div class="story_grid_img">
+                            <img src="https://regmedia.co.uk/2016/06/20/sale.jpg?x=198&amp;y=131&amp;crop=1" alt="sale" width=198 height=131>
+                        </div>
+                        <h4>Intel mulls sale of Intel Security – reports</h4>
+                        <div class=standfirst>
+                            <span class=trailer>Opinion</span>
+                            The game done changed
+                        </div>
+                        <div class="time_comments">
+                            <div class=comments>
+                                6 Comments
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="story">
+                    <a href="/2016/11/18/google_intel_cloud_alliance/">
+                        <div class="story_grid_img">
+                            <img src="https://regmedia.co.uk/2016/05/19/google_photo_by_lightpoet_via_shutterstock.jpg?x=198&amp;y=131&amp;crop=1" alt="Google, photo by lightpoet via Shutterstock " width=198 height=131>
+                        </div>
+                        <h4>Google gently leads Intel into its cloud: This is for your own good</h4>
+                        <div class=standfirst>
+                            All is well, rejoice, rejoice, let's get into the white 'n' fluffy
+                        </div>
+                        <div class="time_comments">
+                            <div class=comments>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id=whitepapers>
+            <h3>
+                <a href="http://whitepapers.theregister.co.uk/" class=dcl>Whitepapers</a>
+            </h3>
+
+            <a class=story href="http://whitepapers.theregister.co.uk/paper/view/5395/overcoming-the-obstacles-to-the-all-flash-datacenter?td=s-uu">
+                <img src="/design_picker/4ee431b84ac2d23c13376f753522acd7ecbb9b47/graphics/icon/whitepaper_book.png" alt="PDF Icon" width=55 height=55>
+                <h4>Overcoming the Obstacles to the All Flash Datacenter</h4>
+                <div class=standfirst>
+                    The top 6 challenges that can slow your adoption of all flash technology, and show you how to overcome them.
+                </div>
+            </a>
+
+            <a class=story href="http://whitepapers.theregister.co.uk/paper/view/5531/work-and-the-modern-content-platform?td=s-uu">
+                <img src="/design_picker/4ee431b84ac2d23c13376f753522acd7ecbb9b47/graphics/icon/whitepaper_book.png" alt="PDF Icon" width=55 height=55>
+                <h4>Work and the modern content platform</h4>
+                <div class=standfirst>
+                    For tech leaders ready to improve the way they manage information.
+                </div>
+            </a>
+
+            <a class=story href="http://whitepapers.theregister.co.uk/paper/view/5460/gdpr-centralise-unstructured-data-governance-across-on-premises-and-cloud?td=s-uu">
+                <img src="/design_picker/4ee431b84ac2d23c13376f753522acd7ecbb9b47/graphics/icon/whitepaper_book.png" alt="PDF Icon" width=55 height=55>
+                <h4>GDPR: Centralise Unstructured Data Governance across On-Premises and Cloud</h4>
+                <div class=standfirst>
+                    CIOs are also struggling to balance their desire for consolidation and centralised management with the need to meet the GDPR deadline and solve the immediate operational challenges.
+                </div>
+            </a>
+
+            <a class=story href="http://whitepapers.theregister.co.uk/paper/view/5425/build-scalable-and-secure-public-cloud-services?td=s-uu">
+                <img src="/design_picker/4ee431b84ac2d23c13376f753522acd7ecbb9b47/graphics/icon/whitepaper_book.png" alt="PDF Icon" width=55 height=55>
+                <h4>Build scalable and secure public cloud services</h4>
+                <div class=standfirst>
+                    Scalability, flexibility, and efficiency are essential to differentiating your business.
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id=right-col>
+                            <div id=ad-mu1-spot class=adu>
+                        <script>
+                            show_gpt('ad-mu1-spot');
+                        </script>
+                        <noscript>
+                            <a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6978/reg_datacentre/front&amp;sz=300x250%7C300x600%7C300x1050&amp;tile=3&amp;c=33WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D3%26unitname%3Dwww_top_mpu%26pos%3Dtop%26test%3D0" target="_blank">
+                                <img src="https://pubads.g.doubleclick.net/gampad/ad?iu=/6978/reg_datacentre/front&amp;sz=300x250%7C300x600%7C300x1050&amp;tile=3&amp;c=33WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D3%26unitname%3Dwww_top_mpu%26pos%3Dtop%26test%3D0" alt="">
+                            </a>
+                        </noscript>
+                    </div>
+
+<div id=hot>
+    <h3>Most read</h3>
+    <ol>
+        <li>
+            <a href="https://www.theregister.co.uk/2017/02/20/linux_4_10_released/">
+                            <img src="https://regmedia.co.uk/2015/06/18/linux_tux_cloud_648.jpg?x=88&amp;y=58&amp;crop=1" alt="linux_tux_cloud_648" width=88 height=58>
+                <h4>Oh happy day! Linus Torvalds has given the world Linux 4.10
+                </h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.theregister.co.uk/2017/02/20/streetmap_founder_kate_sutton_google_lawsuit/">
+                            <img src="https://regmedia.co.uk/2017/02/20/streetmap_ordnance_survey_2.jpg?x=88&amp;y=58&amp;crop=1" alt="A screenshot of Streetmap's output Ordnance Survey map info" width=88 height=58>
+                <h4>'At least I can walk away with my dignity' – Streetmap founder after Google lawsuit loss
+                </h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.theregister.co.uk/2017/02/20/google_project_zero_discloses_microsoft_bug_again/">
+                            <img src="https://regmedia.co.uk/2016/11/01/shutterstock_214674865.jpg?x=88&amp;y=58&amp;crop=1" alt="shutterstock_popcorn_cat" width=88 height=58>
+                <h4>Google bellows bug news after Microsoft sails past fix deadline
+                </h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.theregister.co.uk/2017/02/20/connected_car_in_the_secondhand_lot_dont_buy_it_if_youre_not_hacksavvy/">
+                            <img src="https://regmedia.co.uk/2017/02/20/used_car_shutterstock.jpg?x=88&amp;y=58&amp;crop=1" alt="Used car on laptop" width=88 height=58>
+                <h4>Connected car in the second-hand lot? Don't buy it if you're not hack-savvy
+                </h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.theregister.co.uk/2017/02/20/reflections_on_one_very_very_strange_year_at_uber/">
+                            <img src="https://regmedia.co.uk/2015/12/02/wall_unicorn.jpg?x=88&amp;y=58&amp;crop=1" alt="" width=88 height=58>
+                <h4>In colossal shock, Uber alleged to be wretched hive of sexism, craven managerial ass-covering
+                </h4>
+            </a>
+        </li>
+    </ol>
+</div>
+        <div id=ad-btn-spot class=adu>
+            <script>
+                show_gpt('ad-btn-spot');
+            </script>
+            <noscript>
+                <a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6978/reg_datacentre/front&amp;sz=300x100%7C300x250&amp;tile=4&amp;c=44WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D4%26unitname%3Dwww_mid_mpu%26pos%3Dmid%26test%3D0" target="_blank">
+                    <img src="https://pubads.g.doubleclick.net/gampad/ad?iu=/6978/reg_datacentre/front&amp;sz=300x100%7C300x250&amp;tile=4&amp;c=44WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D426unitname%3Dwww_mid_mpu%26pos%3Dmid%26test%3D0" alt="">
+                </a>
+            </noscript>
+        </div>
+
+        <div id=ad-mu2-spot class=adu>
+            <script>
+                show_gpt('ad-mu2-spot');
+            </script>
+            <noscript>
+                <a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6978/reg_datacentre/front&amp;sz=300x250&amp;tile=5&amp;c=55WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D5%26unitname%3Dwww_btm_mpu%26pos%3Dbtm%26test%3D0" target="_blank">
+                    <img src="https://pubads.g.doubleclick.net/gampad/ad?iu=/6978/reg_datacentre/front&amp;sz=300x250&amp;tile=5&amp;c=55WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D5%26unitname%3Dwww_btm_mpu%26pos%3Dbtm%26test%3D0" alt="">
+                </a>
+            </noscript>
+        </div>
+
+
+
+        <div id=spotlight>
+            <h3>Spotlight</h3>
+            <a href="https://www.theregister.co.uk/2017/02/15/speaking_in_tech_episode_248/" class="story">
+                            <img src="https://regmedia.co.uk/2017/02/15/shutterstock_parachute_woman2.jpg?x=88&amp;y=47&amp;crop=1" alt="Woman parachutes off..." width=298 height=160 title="Podcast: Dumping a mainframe – now that's another story" data-stand_url="https://regmedia.co.uk/2017/02/15/shutterstock_parachute_woman2.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>Speaking in Tech: There must be 50 ways to leave your cloud provider</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/15/hutchison_s_3uk_and_google_push_35_ghz_on_both_sides_of_the_pond/" class="story">
+                            <img src="https://regmedia.co.uk/2015/01/23/cell_tower_shutterstock.jpg?x=88&amp;y=47&amp;crop=1" alt="Cell tower, view from below. Image by Shutterstock.com " width=298 height=160 title="Analysis: Broaderband fight" data-stand_url="https://regmedia.co.uk/2015/01/23/cell_tower_shutterstock.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>Hutchison's 3UK and Google push 3.5 GHz on both sides of the pond</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/14/what_nsx_means_to_vmware/" class="story">
+                            <img src="https://regmedia.co.uk/2017/02/09/couple_on_phones_photo_via_shutterstock.jpg?x=88&amp;y=47&amp;crop=1" alt="Couple on phones photo via Shutterstock" width=298 height=160 title="Sysadmin Blog: Software-defined networking? Time for an open relationship" data-stand_url="https://regmedia.co.uk/2017/02/09/couple_on_phones_photo_via_shutterstock.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>It's <i>over</i>? Pat Gelsinger's post vSphere VMware NSX-T opportunity</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/09/hurding_pets_to_cattle_in_the_cloud/" class="story">
+                            <img src="https://regmedia.co.uk/2017/02/08/surprised_cat_photo_via_shutterstock.jpg?x=88&amp;y=47&amp;crop=1" alt="Surprised cat photo via shutterstock" width=298 height=160 title="Four paws bad! Time to break the emotional attachment" data-stand_url="https://regmedia.co.uk/2017/02/08/surprised_cat_photo_via_shutterstock.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>Cattle that fail, not pets that purr – the future of servers</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/08/dailymotions_object_storage_odyssey/" class="story">
+                            <img src="https://regmedia.co.uk/2015/11/30/openio_ceo_laurent_denel.jpg?x=88&amp;y=47&amp;crop=1" alt="Openio_CEO_Laurent_Denel" width=298 height=160 title="Case study: From Isilon to Scality to OpenIO and ARM-powered nano-nodes" data-stand_url="https://regmedia.co.uk/2015/11/30/openio_ceo_laurent_denel.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>Small but perfectly formed: Dailymotion's object storage odyssey</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/06/where_does_cisco_go_from_here/" class="story">
+                            <img src="https://regmedia.co.uk/2016/09/21/mergers_acquisitions_buyout_shutterstock.jpg?x=88&amp;y=47&amp;crop=1" alt="" width=298 height=160 title="Analysis: A Trump-repatriated cash pile could give the borg acquisition hunger pangs" data-stand_url="https://regmedia.co.uk/2016/09/21/mergers_acquisitions_buyout_shutterstock.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>Hobbled by partners Dell and NetApp, where does Cisco go from here?</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/03/micron_working_on_nextgeneration_xpoint/" class="story">
+                            <img src="https://regmedia.co.uk/2017/02/03/coldmanwithcoat.jpg?x=88&amp;y=47&amp;crop=1" alt="" width=298 height=160 title="New memory, quad-level cell flash, and increased layering" data-stand_url="https://regmedia.co.uk/2017/02/03/coldmanwithcoat.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text>You better layer up, Micron's working on next-generation XPoint</h4>
+            </a>
+            <a href="https://www.theregister.co.uk/2017/02/03/bofh_2016_episode_/" class="story">
+                            <img src="https://regmedia.co.uk/2017/02/02/shouting_at_laptop_2_via_shutterstock.jpg?x=88&amp;y=47&amp;crop=1" alt="shouting at laptop 2 via shutterstock.jpg" width=298 height=160 title="Episode 1: Letting go never felt so good" data-stand_url="https://regmedia.co.uk/2017/02/02/shouting_at_laptop_2_via_shutterstock.jpg?x=298&amp;y=160&amp;crop=1">
+                <h4 class=text><abbr title="Bastard Operator from Hell">BOFH</abbr>: Password HELL. For you, mate, not for me</h4>
+            </a>
+        </div>
+
+<div id=sponlinks>
+<h3>Sponsored links</h3>
+<ul>
+        <li><a target=_blank href="http://forms.theregister.co.uk/studies/s201701/?td=tl">All-Flash Arrays - A flash of brilliance or just a flash in the pan? Have your say in our reader survey</a></li>
+        <li><a target=_blank href="https://account.theregister.co.uk/register/?product=theregister_newsletter">
+Sign up to The Register to receive newsletters and alerts</a>
+</li>
+</ul>
+</div>
+
+    </div>
+    <div id=boot>
+        
+        <div id=ad-tlr-spot class=adu>
+            <script>show_gpt('ad-tlr-spot');</script>
+            <noscript>
+                <a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6978/reg_datacentre/front&amp;sz=728x90%7C970x90&amp;tile=6&amp;c=66WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D6%26unitname%3Dwww_btm_leader%26pos%3Dbtm%26test%3D0" target="_blank">
+                    <img src="https://pubads.g.doubleclick.net/gampad/ad?iu=/6978/reg_datacentre/front&amp;sz=728x90%7C970x90&amp;tile=6&amp;c=66WKu1qcCoyKoAAJbehx8AAAIn&amp;t=ct%3Dns%26unitnum%3D6%26unitname%3Dwww_btm_leader%26pos%3Dbtm%26test%3D0" alt="">
+                </a>
+            </noscript>
+        </div>
+
+    </div>
+
+<script>facebook_sdk();</script>
+    <div id=footer>
+
+        <div class="social alt_colour dcl">
+            <h4>Follow us</h4>
+            <div id=follow_btns>
+                <a id="follow_us_twitter" href="https://twitter.com/intent/user?screen_name=theregister" title="Follow us on twitter" target=_blank class=twit>
+                    <div class="circ">
+                        <img width="18" height="18" alt="Twitter" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/twitter.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/twitter.svg">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/VultureCentral" title="Like us on Facebook" target=_blank class=fbook>
+                    <div class="circ">
+                        <img width="18" height="18" alt="Facebook" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/facebook.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/facebook.svg">
+                    </div>
+                </a>
+                <a href="https://plus.google.com/+theregister" title="Follow us on Google+" target=_blank class=gplus>
+                    <div class="circ">
+                        <img width="18" height="18" alt="G+" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/google_plus.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/google_plus.svg">
+                    </div>
+                </a>
+                <a href="https://www.theregister.co.uk/Design/page/feeds.html" title="Follow our RSS" target=_blank class=rss_feed>
+                    <div class="circ">
+                        <img width="18" height="18" alt="feeds" src="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/rss.png" srcset="/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/graphics/icon/rss.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="foot_list more_us alt_colour dcl">
+            <h4>More content</h4>
+            <ul>
+                <li><a href="https://account.theregister.co.uk/register/?product=theregister_newsletter">Subscribe to newsletter</a></li>
+                <li><a href="https://www.theregister.co.uk/Popular/">Top 20 stories</a></li>
+                <li><a href="https://www.theregister.co.uk/Week/">Week’s headlines</a></li>
+                <li><a href="https://www.theregister.co.uk/Archive/">Archive</a></li>
+                <li><a href="https://whitepapers.theregister.co.uk/events/list">Webcasts</a></li>
+            </ul>
+        </div>
+
+        <div class="foot_list alt_colour dcl">
+            <h4>About us</h4>
+            <ul>
+                <li><a href="https://www.theregister.co.uk/about/company/privacy/">Privacy</a></li>
+                <li class=last><a href="https://www.theregister.co.uk/about/company/">Company info</a></li>
+                <li><a target=_blank href="http://media.theregister.co.uk/">Advertise with us</a></li>
+                <li><a href="https://www.theregister.co.uk/about/company/republishing/">Syndication</a></li>
+                <li><a href="https://www.theregister.co.uk/about/company/contact/">Send us news tips</a></li>
+
+            </ul>
+        </div>
+
+        <div class=reg_foot>
+            <h4><a href="https://www.theregister.co.uk/" class=dcl>The Register</a></h4>
+            <div class=copyr>
+                Biting the hand that feeds IT © 1998–2017
+
+            </div>
+            <div class=foot_desc>
+                Independent news, views, opinions and reviews on the latest in the IT industry. Offices in London, San Francisco and Sydney.
+            </div>
+        </div>
+        <noscript><img src="/Design/graphics/std/transparent_pixel.png" alt="no-js"></noscript>
+    </div>
+
+    <div id=end_scripts>
+
+
+
+
+
+
+    <script>
+        $(function() {
+            if ($('#whitepapers .story').length) {
+                var ab_set = {
+                    view_tracking:  'true',
+                    click_tracking: 'true',
+                    click_target:   '#whitepapers a.story',
+                    group:          'F (rows six stories)',
+                    name:           'AB: Whitepapers 2015'
+                };
+                track_bucket_user(ab_set);
+            }
+        });
+    </script>        <script>
+            googletag.cmd.push(function() { 
+                var abt1 = '<img src="https://go.theregister.co.uk/k/abt_';
+                var abt2 = '" width=1 height=1 alt="">';
+                var ch = 0;
+                $('.adu').each(function(i) {
+                    ch += $(this).height();
+                });
+                if (ch == 0 && !ad_free()) {
+                    $('body #end_scripts').append(abt1 + 'b' + abt2);
+                    $('#ad-mu1-spot,#ad-mu2-spot').after('<iframe src="https://dda.regmedia.co.uk/research/mpu.html?20160317" width=300 height=255 frameborder=0 style="border:1px solid #CCC"></iframe>');
+                }
+                else {
+                    $('body #end_scripts').append(abt1 + 'a' + abt2);
+                }
+            });
+        </script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-33330076-1', 'theregister.co.uk', { 'allowLinker': true });
+            ga('require', 'linker');
+            ga('linker:autoLink', ['channelregister.co.uk']);
+            ga('require', 'displayfeatures');
+            ga('set', 'dimension2', (typeof RegArticle != 'undefined') ? RegArticle.author : '');
+            ga('set', 'dimension3', (typeof RegSection != 'undefined') ? RegSection : '');
+            ga('set', 'dimension4', (typeof RegArticle != 'undefined' ? (RegArticle.pf ? 'p' : (RegArticle.cp ? 'c' : 'a')) : 'i'));
+            ga('set', 'dimension5', (typeof RegArticle != 'undefined') ? RegArticle.cat : '');
+            ga('set', 'dimension6', (typeof RegArticle != 'undefined') ? RegArticle.ads : '');
+            ga('send', 'pageview');
+        </script>
+
+        <script>
+            (function() {
+            var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script');
+            s.type='text/javascript';
+            s.async=true;
+            s.src='https://s.dpmsrv.com/dpm_812ed4562d3211363a7b813aa9cd2cf042b63bb2.min.js';
+            h.appendChild(s);
+            })();
+        </script>
+
+
+
+    <script>
+        $(function() { set_bucket_group(262) });
+    </script>
+        <div id="fb-root"></div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Content-Language" content="ja">
+        <link href="http://twimaker.com/img/twimaker.ico" type="image/x-icon" rel="icon" /><link href="http://twimaker.com/img/twimaker.ico" type="image/x-icon" rel="shortcut icon" />        <meta name="keywords" content="脳内メーカー,Twitter,診断,解析,ツイッター" lang="ja" />
+        <title>twimaker</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />        <link rel="stylesheet" href="http://code.jquery.com/ui/1.7.3/themes/cupertino/jquery-ui.css" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        <script type="text/javascript">
+            var REF = "ai_bomb";
+            var WEB_ROOT = 'http://twimaker.com/';
+            var gAction = "login";
+            var gUserId = ''; 
+            var gProtected = ''; 
+            var gScreenName = ''; 
+            var gFriendsCursor = '';
+            var gFollowersCursor = '';
+        </script>
+        <style>
+                #tooltip{
+                        position:absolute;
+                        z-index:9999;
+                        color:#fff;
+                        font-size:16px;
+                        width:250px;
+                }
+                #tooltip .tipHeader{
+                        height:8px;
+                }
+                #tooltip .tipHeader{
+                        margin-bottom:-6px;
+                }
+                #tooltip .tipBody{
+                        background-color:#000;
+                        padding:5px 5px 5px 5px;
+                }
+                #tooltip .tipFooter{
+                        height:8px;
+                }
+        </style>
+    </head>
+    <body>
+                <link rel="stylesheet" type="text/css" href="/css/userinfo.css" /><link rel="stylesheet" type="text/css" href="/css/result.css" /><script type="text/javascript" src="/js/functions/high.chart.js"></script><script type="text/javascript" src="/js/functions/chart.js"></script><script type="text/javascript" src="/js/functions/utility.js"></script><script type="text/javascript" src="/js/functions/dialog.js"></script><script type="text/javascript" src="/js/classes/twitter.api.js"></script><script type="text/javascript" src="/js/classes/twit.anaysis.js"></script><script type="text/javascript" src="/js/classes/twimaker.api.js"></script><script type="text/javascript" src="/js/classes/twi.msg.js"></script><script type="text/javascript" src="/js/classes/treasure.js"></script><script type="text/javascript" src="/js/brain.meter.ui.js"></script><script type="text/javascript">
+        REF = 'ai_bomb'
+</script>
+<div id="container">
+	<div id="header_logo"></div>
+<!--	<div id="header_logo">
+			</div>
+-->
+<div id="twimaker_description">
+	<div id="login_btn" style="margin-top: 10px;">
+		<a href="/users/auth_twitter"><img src="/img/main/login.png" border="0" alt="" /></a>	</div>
+</div>
+<script type="text/javascript" src="/js/animation_bg.js"></script><div id="login_form">
+	<form id="twi_form">
+		<input type="hidden" id="name_text" name="name" size="20"/>
+	</form>
+</div>
+<div class="clear"></div>
+<div id="loader"></div>
+<!-- ここに結果 -->
+<div class="results" style="display: none;">
+	<div id="result_left">
+		<!--グラフ-->
+		<div id="inclining">
+			<div id="inclining_head"></div>
+			<div id="chart_div" style="width: 480px; height: 350px; margin-bottom:10px;"></div>
+		</div>
+		<!--スコア-->
+				<div class="score_part" scorename="early_morning">
+			<div class="title"><img src="/img/main/descriptions/early_morning.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">朝に多くツイートをしています</br>早起きはいいことですのでぜび続けましょう</div>
+		</div>
+				<div class="score_part" scorename="daytime">
+			<div class="title"><img src="/img/main/descriptions/daytime.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">お昼に多くツイートをしています</br>食事しながらTwitterは控えましょうね</div>
+		</div>
+				<div class="score_part" scorename="relax">
+			<div class="title"><img src="/img/main/descriptions/relax.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">まったりとした時間をよく過ごしているようです</br>暇な時はTLをよく見ているはずです</div>
+		</div>
+				<div class="score_part" scorename="night">
+			<div class="title"><img src="/img/main/descriptions/night.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">夜に多くツイートをしています</br>仕事、学校の疲れはTwitterで癒しましょう</div>
+		</div>
+				<div class="score_part" scorename="midnight">
+			<div class="title"><img src="/img/main/descriptions/midnight.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">貴方は夜行性です</br>早く寝るように心がけましょう</div>
+		</div>
+				<div class="score_part" scorename="wide">
+			<div class="title"><img src="/img/main/descriptions/wide.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">広めることが大好きな貴方</br>もっとリツイートしましょう</div>
+		</div>
+				<div class="score_part" scorename="follower">
+			<div class="title"><img src="/img/main/descriptions/follower.png" alt="" /></div>
+			<div class="numbers">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="description_head">この数値が高い場合</div>
+			<div class="description">友達とよく話しています</br>リプライが多めです</div>
+		</div>
+			</div>
+	<div id="result_right">
+		<!--脳内-->
+		<div id="brain">
+                <div id="brain_image">
+                        <div class="area"></div>
+                        <div class="description">
+                                <table>
+                                      <tr>
+                                          <td class="left"><img class="boader" name=""  src="" width="45px" /></td>
+                                          <td class="right">@<span class="name">twimaker</span>さんの</br><span class="strength">脳内イメージ</span></td>
+                                      </tr>
+                                </table>
+                        </div>
+                </div>
+		</div>
+		<!--ランキング-->
+		<div id="ranking">
+			<div class="title">ランキング</div>
+						<div class="user">
+				<div class="rank"><img src="/img/main/ranking/tiar1.png" alt="" /></div>
+				<div class="icon"><img class="twitter_icon boader" src="http://pbs.twimg.com/profile_images/795859683756032001/vP17r9A-_normal.png" name="shusui0593" /></div>
+				<div class="name" name="shusui0593">@shusui0593</div>
+				<div class="point"><span style="font-size:20px">45714330</span>pt</div>
+			</div>
+						<div class="user">
+				<div class="rank"><img src="/img/main/ranking/tiar2.png" alt="" /></div>
+				<div class="icon"><img class="twitter_icon boader" src="http://pbs.twimg.com/profile_images/608797922537291776/QbSI9dI7_normal.png" name="T_negi_G" /></div>
+				<div class="name" name="T_negi_G">@T_negi_G</div>
+				<div class="point"><span style="font-size:20px">41805145</span>pt</div>
+			</div>
+						<div class="user">
+				<div class="rank"><img src="/img/main/ranking/tiar3.png" alt="" /></div>
+				<div class="icon"><img class="twitter_icon boader" src="http://pbs.twimg.com/profile_images/831915105172402176/vtCUd7SJ_normal.jpg" name="_149_" /></div>
+				<div class="name" name="_149_">@_149_</div>
+				<div class="point"><span style="font-size:20px">31050750</span>pt</div>
+			</div>
+					</div>
+		<div id="user_info">
+			<div class="title"></div>
+			<div class="rank">
+				<span class="content"></span>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+</div>
+<!-- 結果はここまで -->
+<!--<div id="description"></div>-->
+<div id="tweetBox"></div>
+<div id="message"></div>
+<div id="fb-root"></div>
+</div>
+    </body>
+        <script src="http://connect.facebook.net/ja_JP/all.js"></script>
+</html>

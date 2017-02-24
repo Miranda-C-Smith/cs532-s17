@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+<head>
+<title>Melon</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=medium-dpi"/>
+<meta name="format-detection" content="telephone=no" />
+<meta property="og:title" content="Melon">
+<meta property="og:image" content="http://cdnimg.melon.co.kr/resource/mobile40/cds/common/image/melon.png">
+<meta property="og:url" content="http://m.app.melon.com/landing/photo.htm?artistId=227595&photoId=22759505&type=pht&ref=twitter&snsGate=Y"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="음악이 필요한 순간, 멜론">
+<link rel="apple-touch-icon-precomposed" href="http://cdnimg.melon.co.kr/resource/mobile40/cds/common/image/mobile_apple_120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://cdnimg.melon.co.kr/resource/mobile40/cds/common/image/mobile_apple_180x180.png">
+<link rel="shortcut icon" type="image/x-icon" href="http://cdnimg.melon.co.kr/resource/mobile40/cds/common/image/favicon.ico">
+<script type="text/javascript">
+
+var s6Ua = navigator.userAgent.toLocaleLowerCase();
+var meta = document.createElement('meta');
+meta.name = "viewport";
+if(s6Ua.indexOf('sm-g920') > -1){
+	meta.content ='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=medium-dpi';
+}else{
+	meta.content ='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width';
+}
+document.getElementsByTagName('head')[0].appendChild(meta);
+</script>
+
+<link rel="stylesheet" type="text/css" href="/resource/mobile40/cds/common/css/melon.css?tm=2017020300" />
+
+<!-- 댓글 css  -->
+<link rel="stylesheet" type="text/css" href="/resource/mobile40/cds/common/css/review.css?tm=2016092613" />
+
+<!-- 채널 css -->
+
+<!-- 아티스트 css -->
+
+<!-- 곡 css -->
+
+<!-- 영상 css -->
+
+<!-- 앨범css -->
+
+<!-- 메인 css -->
+
+<!-- 이벤트 css -->
+
+<!-- 원음전용관 css -->
+
+<!-- 랜딩 css -->
+<link rel="stylesheet" type="text/css" href="/resource/mobile40/cds/landing/css/landing.css?tm=2016083018" />
+	
+		 
+
+
+<!-- 라이브 css -->
+
+
+<!-- 뮤직스토리 css -->
+
+
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/comment.js"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/melon_player_apps.js?tm=2016122814"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/common.js?tm=201702201720"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/touch.js"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/touchSwipe.js"></script>
+<script type="text/javascript" src="/resource/script/members/common/authCookie.js?tm=2016083018"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/slider.js"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/uiscript.js?tm=20170201"></script>
+<script type="text/javascript" src="/resource/mobile40/cds/common/js/jquery.ba-bbq.min.js"></script>
+
+<!-- 뮤직스토리 상세 > 포토에는 iscroll-zoom.js가 필요 하다. -->
+
+	
+	
+		<script type="text/javascript" src="/resource/mobile40/cds/common/js/iscroll.js"></script>
+	
+
+
+
+	<script type="text/javascript" src="/resource/mobile40/cds/common/js/pvlog.js?tm=2016110718"></script>
+
+
+<!-- 검색 css -->
+
+
+<script type="text/javascript">
+//2016.04.15 KKJ pvlog에서 POC_ID를 사용하여 선 조회하도록 변경함.
+var httpWww = "";
+var httpsWww = "";
+var POC_ID = getCookie("POC"); //POC_ID 기본값을 쿠키에서 가져와서 세팅 (160721:choiyg)
+var UA_TYPE_CODE = "";
+var ANDROID_VERSION = "";
+
+$(document).ready(function() {
+	POC_ID = getCookie("POC");
+	if(POC_ID == "" || typeof POC_ID == "undefined" || POC_ID == "XXXX" || POC_ID == "STON"){
+		$.ajax({
+			async:false,
+			url: '/common/useragent_info.json',
+			dataType: 'json',
+			error: function(request, status, error) {},
+			success: function(data){
+				setCookie("POC", data.pocId, 10, "/", ".melon.com");
+			}
+
+		});
+		POC_ID = getCookie("POC");
+	}
+});
+</script>
+
+
+</head>
+
+<body class="photo_viewer">
+
+<!-- 공통헤더 -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	if(POC_ID == 'AS40' || POC_ID == 'IS40'){
+		$('#header').remove();
+		$('.global_header').css('margin-top', '0');
+	}
+});
+</script>
+
+	
+	
+		<!-- //포토 -->
+		<header id="header" class="transparent">
+			<div class="global_header">
+				<h1 class="header_title link">
+					
+						
+						
+							<a href="javascript:goDetail('artist','227595');" class="singer">지아 </a>
+						
+					
+				</h1>
+				<a href="#" class="menu_side sprite menu hide">전체메뉴</a>
+				<a href="javascript:goMain();" class="go_home sprite hide">멜론 홈으로</a>
+				<a href="#" class="search_side sprite search hide">검색열기</a>
+			</div><!-- //.global-header -->
+		</header>
+	
+	
+
+
+<aside id="side_menu" class="side_menu">
+	<div class="header">
+		<a href="http://m.app.melon.com/support/appInstallGuide.htm" class="sprite install hide">앱설치</a>
+		<button type="button" class="sprite close hide">닫기</button>
+	</div>
+	<div class="account">
+	<!-- 유저 정보 스크립트로 그린다. -->
+		<div class="thumb">
+			<a href="javascript:;" onclick="javascript:goMyProfile();" id="sideUserdtl">
+				<span class="img" style="background-image:none;"></span>
+			</a>
+		</div>
+		<p class="nickname" id="sideUserNickName"><a href='javascript:loginSubmit();'>로그인하세요</a></p>
+	</div>
+	<div class="scroll">
+		<div class="inner">
+
+			<div class="my_menu">
+				<div class="row">
+					<div class="goods" onclick="javascript:goMyProfile();">
+						<p id="sideUserGoods">내 스타일에 맞는 이용권은?</p>
+					</div>
+					<div class="btn"><a id="sideUserGoodsBtn" href="http://m.melon.com/buy/pamphlet/promotion.htm" class="my_buy sprite hide">이용권구매</a></div>
+				</div>
+				<div class="row">
+					<div class="grade" onclick="javascript:goMyProfile();">
+						<p id="myGrade">
+							회원등급<span>로그인 후 확인하세요</span>
+						</p>
+					</div>
+					<div class="btn"><a href="http://m.event.melon.com/event/vipview/index.htm" class="my_vip sprite hide">VIP혜택관</a></div>
+				</div>
+			</div>
+			<nav class="main_menu">
+				<ul>
+					<li><a href="javascript:void(null);" onclick="javascript:goMainMenu(0);" class="menu_item" id="menu_item0"><i class="sprite home"></i>멜론홈</a></li>
+					<li><a href="javascript:void(null);" onclick="javascript:goMainMenu(1);" class="menu_item" id="menu_item1"><i class="sprite newmusic"></i>최신음악</a></li>
+					<li><a href="javascript:void(null);" onclick="javascript:goMainMenu(2);" class="menu_item" id="menu_item2"><i class="sprite chart"></i>멜론차트</a></li>
+					<li><a href="javascript:void(null);" onclick="javascript:goMainMenu(3);" class="menu_item" id="menu_item3"><i class="sprite tv"></i>뮤직비디오</a></li>
+					<li><a href="javascript:void(null);" onclick="javascript:goMusicstoryMenu(0);" class="menu_item" id="menu_item4"><i class="sprite musicstory"></i>멜론매거진</a></li>
+					<li><a href="javascript:void(null);" onclick="javascript:goMusicAwardMenu();" class="menu_item" id="menu_item5"><i class="sprite awards"></i>멜론뮤직어워드</a></li>
+<!-- 					<li><a href="javascript:goMainMenu(5);" class="menu_item" id="menu_item6"><i class="sprite ticket"></i>티켓</a></li> -->
+<!-- 					<li><a href="javascript:goMainMenu(4);" class="menu_item" id="menu_item7"><i class="sprite shopping"></i>쇼핑</a></li> -->
+					<li><a href="javascript:void(null);" onclick="javascript:goEventMenu(0);" class="menu_item" id="menu_item8"><i class="sprite event"></i>이벤트</a></li>
+				</ul>
+				<h2 class="title">멜론 패밀리</h2>
+				<ul>
+					<li><a href="javascript:goFamilyApp('ticket');" class="menu_item"><i class="sprite ticket"></i>멜론 티켓</a></li>
+<!-- 					<li><a href="javascript:goFamilyApp('shopping');" class="menu_item"><i class="sprite shopping"></i>멜론 쇼핑</a></li> -->
+					<li><a href="javascript:goFamilyApp('aztalk');" class="menu_item"><i class="sprite aztalk"></i>멜론 아지톡</a></li>
+					<li><a href="javascript:goFamilyApp('songroom');" class="menu_item"><i class="sprite songroom"></i>멜론 쇼윙</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</aside><!-- //.side-menu -->
+<script type="text/javascript">
+var MOBILE_EVENT_DOMAIN = "http://m.event.melon.com";
+var MOBILE_MAIN_DOMAIN = "http://m.app.melon.com";
+
+function goMainMenu(menuNum) {
+	console.log("call goMainMenu " + (new Date()).getMilliseconds());
+	
+	var searchString = window.location.href;
+	if(searchString.indexOf("/mobile4web/main_list.htm") != -1 || searchString.indexOf("melon.com/index.htm") != -1){
+		$('body').removeClass('is_side_menu_open');
+		setCookieMain('mainSlider', menuNum );
+		slider[0].go_page(menuNum);
+	}else{
+		switch (menuNum) {
+		  case 0    : setCookieMain('mainSlider', 0 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#0";
+		        break;
+		  case 1    : setCookieMain('mainSlider', 1 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#1";
+		        break;
+		  case 2    : setCookieMain('mainSlider', 2 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#2";
+		        break;
+		  case 3    : setCookieMain('mainSlider', 3 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#3";
+	        	break;
+		  case 4    : setCookieMain('mainSlider', 4 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#4";
+          		break;          
+		  case 5    : setCookieMain('mainSlider', 5 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#5";
+          		break;
+		  default   : setCookieMain('mainSlider', 6 );
+		  			  window.location.href = MOBILE_MAIN_DOMAIN + "/index.htm#6";
+		        break;
+		}
+	}
+}
+
+function goFamilyApp(familyAppName) {
+	console.log("call goFamilyApp " + (new Date()).getMilliseconds());
+	
+	var searchString = window.location.href;
+	if(searchString.indexOf("/mobile4web/main_list.htm") != -1 || searchString.indexOf("melon.com/index.htm") != -1){
+		$('body').removeClass('is_side_menu_open');
+		//setCookieMain('mainSlider', menuNum );
+		//slider[0].go_page(menuNum);
+	}
+	
+	var scheme 	= "";
+	var linkUrl	= "";
+	
+	switch (familyAppName) {
+	  case "ticket"	:
+		  	scheme		= "melonticket://action";
+	    	linkUrl		= "http://m.ticket.melon.com";
+	        break;
+	  case "shopping" :
+			scheme 		= "melonshopping://action";
+			linkUrl		= "http://m.store.melon.com/index.htm";
+	        break;
+	  case "aztalk"	:
+		  	scheme		= "aztalkapp://openMain?memberKey=&osInfo=&originAppInfo=";
+		  	linkUrl		= "http://aztalk.melon.com";			  	
+	        break;
+	  case "songroom" :
+		  	scheme		=  (POC_ID == "IS20") ? "melonShowwing://exec?" : "showwing://root/" ;
+			linkUrl		= "http://m.app.melon.com/serviceintro/showwing_guide.htm";
+        	break;
+	 default : 
+	        break;
+	}
+	
+	appLaunch( scheme, linkUrl, false, true );
+}
+
+function goEventMenu(menuNum) {
+	
+	var searchString = window.location.href;
+	if(searchString.indexOf("/cds/promotion") != -1 || searchString.indexOf("melon.com/event/") != -1){
+		$('body').removeClass('is_side_menu_open');
+		setCookieMain('eventSlider', menuNum );
+// 		slider[0].go_page(menuNum);
+		switch (menuNum) {
+		  case 0    : setCookieMain('eventSlider', menuNum );
+		  			  window.location.href = MOBILE_EVENT_DOMAIN+"/event/index.htm?cpId="+POC_ID;
+		        break;
+		  case 1    : setCookieMain('eventSlider', menuNum );
+			  		  window.location.href = MOBILE_EVENT_DOMAIN+"/event/my/index.htm?memberKey=" + getMemberKey()+"&cpId="+POC_ID;
+		        break;
+		}
+	}else{
+		switch (menuNum) {
+		  case 0    : setCookieMain('eventSlider', menuNum );
+		  			  window.location.href = MOBILE_EVENT_DOMAIN+"/event/index.htm?cpId="+POC_ID;
+		        break;
+		  case 1    : setCookieMain('eventSlider', menuNum );
+			  		  window.location.href = MOBILE_EVENT_DOMAIN+"/event/my/index.htm?memberKey=" + getMemberKey()+"&cpId="+POC_ID;
+		        break;
+		}
+	}
+}
+
+function goMusicstoryMenu(menuNum) {
+    var searchString = window.location.href;
+    setCookieMain('mstoryMainSlider', menuNum );
+    if(searchString.indexOf("/musicstory") != -1){
+        $('body').removeClass('is_side_menu_open');
+        slider[0].go_page(menuNum);
+    }else{
+        window.location.href = MOBILE_MAIN_DOMAIN + "/musicstory/index.htm";
+    }
+}
+
+function goMusicAwardMenu() {
+	window.location.href = MOBILE_MAIN_DOMAIN + "/melonaward/timeline.htm";
+}
+
+//================ 히스토리백 구현관련 추가 ================
+//쿠키 생성
+function setCookieMain(cName, cValue){
+	var ExpDate = new Date();
+	ExpDate.setTime(ExpDate.getTime() + 1000*60*30);
+    cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+	cookies += ';expires=' + ExpDate.toGMTString() + ';';
+    document.cookie = cookies; 
+}
+
+//쿠키 가져오기
+function getCookieMain(cName) {
+    cName = cName + '=';
+    var cookieData = document.cookie;
+    var start = cookieData.indexOf(cName);
+    var cValue = '';
+    if(start != -1){
+    	start += cName.length;
+    	var end = cookieData.indexOf(';', start);
+    	if(end == -1)end = cookieData.length;
+    	cValue = cookieData.substring(start, end);
+    }else{
+		return 0;
+	}
+	return unescape(cValue);
+}
+
+//쿠키 삭제하기
+function delCookieMain(cName){
+	var ExpDate = new Date();
+	ExpDate.setTime(ExpDate.getTime());
+    cookies = cName + '=; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+	cookies += ';expires=' + ExpDate.toGMTString() + ';';
+	document.cookie = cookies;
+}
+
+//로그인 공통
+function loginSubmit(){
+	var searchString = window.location.href;
+	if(!isMelonLogin()) {
+		if(searchString.indexOf("/cds/promotion") != -1 || searchString.indexOf("melon.com/event/index.htm") != -1){
+			// 앱버전 검증
+			try {
+				if( appVerCompare(4,0,0) ){
+				   	if(POC_ID == "AS40"){
+				   		appLaunch('melonapp://setting/melonlogin','',false);
+				   	} else if(POC_ID == "IS40") {
+				   		appLaunch('melonapp://setting/melonlogin','',false);
+				   	} else {
+				   		location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+				   	}
+				}else{
+					var curUrl = encodeURIComponent(document.location.href);
+					location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+				}
+			} catch(e) {
+				var currappVer = navigator.userAgent.toLowerCase();
+				if(currappVer.indexOf(";") > -1 ){
+					var tempNa = currappVer.split(";");
+					if ( tempNa.length > 0 ) {
+						currappVer = tempNa[tempNa.length -2];
+						if (currappVer.indexOf("4.") > -1 ) {
+							if(POC_ID == "AS40"){
+						   		appLaunch('melonapp://setting/melonlogin','',false);
+						   	} else if(POC_ID == "IS40") {
+						   		appLaunch('melonapp://setting/melonlogin','',false);
+						   	} else {
+						   		location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+						   	}
+						}else{
+							var curUrl = encodeURIComponent(document.location.href);
+							location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+						}
+					}
+				}
+			}
+			
+		}else{
+			if (POC_ID == "AS40"){
+				window.melonapp.requestCommand('LoginNeed', '', '', '');
+			}
+			else if (POC_ID == "IS40")
+			{
+				location.href = "meloniphone://M4001";
+			}else{
+				$("#loginForm").attr("action", "/muid/login/mobile2/login_inform.htm").submit();
+			}
+		}
+		return;
+	}
+}
+
+function goMyProfile(){
+	var searchString = window.location.href;
+	if(!isMelonLogin()) {
+		if(searchString.indexOf("/cds/promotion") != -1 || searchString.indexOf("melon.com/event/index.htm") != -1){
+			
+			// 앱버전 검증
+			try {
+				if( appVerCompare(4,0,0) ){
+				   	if(POC_ID == "AS40"){
+				   		appLaunch('melonapp://setting/melonlogin','',false);
+				   	} else if(POC_ID == "IS40") {
+				   		appLaunch('melonapp://setting/melonlogin','',false);
+				   	} else {
+				   		location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+				   	}
+				}else{
+					var curUrl = encodeURIComponent(document.location.href);
+					location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+				}
+			} catch(e) {
+				var currappVer = navigator.userAgent.toLowerCase();
+				if(currappVer.indexOf(";") > -1 ){
+					var tempNa = currappVer.split(";");
+					if ( tempNa.length > 0 ) {
+						currappVer = tempNa[tempNa.length -2];
+						if (currappVer.indexOf("4.") > -1 ) {
+							if(POC_ID == "AS40"){
+						   		appLaunch('melonapp://setting/melonlogin','',false);
+						   	} else if(POC_ID == "IS40") {
+						   		appLaunch('melonapp://setting/melonlogin','',false);
+						   	} else {
+						   		location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+						   	}
+						}else{
+							var curUrl = encodeURIComponent(document.location.href);
+							location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+						}
+					}
+				}
+			}
+			
+		}else{
+			if (POC_ID == "AS40"){
+				window.melonapp.requestCommand('LoginNeed', '', '', '');
+			}
+			else if (POC_ID == "IS40")
+			{
+				location.href = "meloniphone://M4001";
+			}else{
+				var curUrl = encodeURIComponent(document.location.href);
+				location.href="https://member.melon.com/muid/mobile/login/login_inform.htm?returnPage="+ curUrl;
+			}
+		}
+		return;
+	}else{
+		location.href="http://m.app.melon.com/commerce/mypage/myinfo/mobile2/myinfo_informMyInfoView.htm";
+	}
+}
+
+//================ 히스토리백 구현관련 추가 ================
+</script>
+
+<!--// 공통헤더 -->
+
+<div class="photo_wrapper">
+	<span class="img" style="background-image: url(http://cdnimg.melon.co.kr/cm/photo/images/000/227/59/505/22759505_1000.jpg/melon/quality/80/optimize);"></span>
+</div><!-- //.photo_wrapper -->
+<script type="text/javascript">
+
+$(document).ready(function() {
+	if('' == '0'){
+		alert("삭제된 컨텐츠입니다.");
+		location.href ="http://m.app.melon.com";
+		return;
+	}
+});
+
+$( window ).load( function(){
+	var pvParam = "ref=twitter&pvmenuid=1000000487&contstype=N10004&contsid=22759505";
+	//3.0 APP이 라면 
+	if('Y' == 'Y'){
+		if(POC_ID == "IS20"){
+			var param1 = "22759505";
+			var param2 = "227595";
+			appLaunch("meloniphone://photoDetail?photoId=" + param1 + "&artistId=" + param2 + "&" + pvParam,"", false);
+		}else if(POC_ID == "AS20"){
+			appLaunch("melonapp://details/photo/22759505?" + pvParam,"", false);
+		}	
+	}
+});
+
+</script>
+
+<!-- 로그 엘리먼트 영역-->
+<div style="display:none !important;" data-logging="http://log.melon.com/pv?log=@CR2@%5E@CR3@%5E@CR4@%5E%5E1000000487%5E@CR1@%5EW202%5EN10004%5E22759505%5E%5E%5E%5E%5E%5E%5E" menu-id="1000000487"></div>
+<!-- 로그 엘리먼트 영역-->
+
+<!-- 아티스트 팝업 -->
+
+
+<!-- 아티스트 선택 -->
+
+	<!-- //아티스트 선택 -->
+<!--// 아티스트 팝업 -->
+
+<form id="appsActionFrm" name="appsActionFrm" method="post" action="/cds/common/android2/apps_play.json">
+	<input type="hidden" name="menuId" />
+	<input type="hidden" name="items" />
+	<input type="hidden" name="ctype" />
+</form>
+
+ </body>
+</html>

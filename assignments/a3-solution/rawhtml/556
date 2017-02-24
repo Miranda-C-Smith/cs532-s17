@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+var gomez={
+gs: new Date().getTime(),
+acctId:"D3FD89",
+grpId:"Escenic",
+grpId1:"kcm",
+grpId2:window.location.hostname,
+grpId3:"nation_world",
+pgId:"story-detail",
+wrate:1
+};
+</script>
+<script type='text/javascript'>
+(function(){var a=window;a.dT_?a.console&&a.console.log("Duplicate agent injection detected, turning off redundant initConfig."):window.dT_||(window.dT_={cfg:"cors=1|async=1|tp=500,50,5,1,10|reportUrl=//mcclatchy.dynatracesaas.com/dynaTraceMonitor|agentUri=//mcclatchy.dynatracesaas.com/dtagent_23jpqrstxz_6000500041014.js|auto=#AUTO#|domain=#DOMAIN#|rid=RID_#REQUEST_ID#|rpid=#RESPONSE_ID#"})})();(function(){function s(){var a=0;try{a=window.performance.timing.navigationStart+Math.floor(window.performance.now())}catch(b){}return 0>=a?(new Date).getTime():a}function Z(a,b){return $(a,b)}function l(a,b){for(var c=1;c<arguments.length;c++)a.push(arguments[c])}function v(a,b){return parseInt(a,b||10)}function E(a){try{if(w)return w[a]}catch(b){}return null}function F(a,b){try{window.sessionStorage.setItem(a,b)}catch(c){}}function m(a,b){var c=-1;b&&(a&&a.indexOf)&&(c=a.indexOf(b));return c}function G(a){document.cookie=
+a+'="";path=/'+(d.domain?";domain="+d.domain:"")+"; expires=Thu, 01-Jan-70 00:00:01 GMT;"}function H(a){a=encodeURIComponent(a);var b=[];if(a)for(var c=0;c<a.length;c++){var k=a.charAt(c),d=aa[k];d?l(b,d):l(b,k)}return b.join("")}function x(a,b,c){b||0==b?(b=(""+b).replace(/[;\n\r]/g,"_"),b="DTSA"===a.toUpperCase()?H(b):b,a=a+"="+b+";path=/"+(d.domain?";domain="+d.domain:""),c&&(a+=";expires="+c.toUTCString()),document.cookie=a):G(a)}function r(a){var b,c,k,d=document.cookie.split(";");for(b=0;b<
+d.length;b++)if(c=m(d[b],"="),k=d[b].substring(0,c),c=d[b].substring(c+1),k=k.replace(/^\s+|\s+$/g,""),k===a)return"DTSA"===a.toUpperCase()?decodeURIComponent(c):c;return""}function I(a){return/^[0-9A-Za-z_$\+\/\.\-\*%\|]*$/.test(a)}function J(){var a=r(K);return a&&I(a)?a:""}function L(a){a=a||J();var b={sessionId:null,serverId:null};if(a){var c=m(a,"|"),d=a;-1!==c&&(d=a.substring(0,c));c=m(d,"$");-1!==c?(b.sessionId=d.substring(c+1),b.serverId=d.substring(0,c)):b.sessionId=d}return b}function ba(a){return L(a).serverId}
+function ca(a){if(a)return L(a).sessionId;if(a=e.gSC()){var b=a.indexOf("|");-1!==b&&(a=a.substring(0,b))}return a}function M(a,b){return Math.floor(Math.random()*(b-a+1))+a}function N(a){var b=window.crypto||window.msCrypto,c;if(b)c=new Int8Array(a),b.getRandomValues(c);else{c=[];for(b=0;b<a;b++)c.push(M(0,O))}a=[];for(b=0;b<c.length;b++){var d=Math.abs(c[b]%O),d=9>=d?String.fromCharCode(d+48):String.fromCharCode(d+55);a.push(d)}return a.join("")}function P(a){return document.getElementsByTagName(a)}
+function Q(a){var b=a.length;if("number"===typeof b)a=b;else{for(var b=0,c=2048;a[c-1];)b=c,c+=c;for(var d=7;1<c-b;)d=(c+b)/2,a[d-1]?b=d:c=d;a=a[d]?c:b}return a}function da(){var a=d.csu,a=(a.indexOf("dbg")==a.length-3?a.substr(0,a.length-3):a)+"_"+d.app+"_Store";try{if(y){var b=y.getItem(a);if(b){for(var a={},c=b.split("|"),b=0;b<c.length;b++){var e=c[b].split("=");2==e.length&&(a[e[0]]=decodeURIComponent(e[1]))}if(!d.lastModification||parseInt(a.lastModification.substr(0,13),10)>=parseInt(d.lastModification.substr(0,
+13),10))for(var q in a)a.hasOwnProperty(q)&&("config"==q?z(a[q]):d[q]=a[q])}}}catch(g){}}function z(a){a=a.split("|");for(var b=0;b<a.length;b++){var c=m(a[b],"=");-1===c?d[a[b]]="1":d[a[b].substring(0,c)]=a[b].substring(c+1,a[b].length)}}function ea(a,b){if(a){var c=/([a-zA-Z]*)[0-9]{0,3}_[a-zA-Z_0-9]*_[0-9]+/g.exec(a);if(c&&c.length){var k=c[0];d.csu=c[1];c=k.split("_");d.legacy="1";d.featureHash=c[1];d.dtVersion=e.version[0]+""+e.version[1]}}b&&z(b);c=location.hostname;k=d.domain;c=c&&k?c==k||
+-1!==c.indexOf("."+k,c.length-("."+k).length)?!0:!1:!0;c||(delete d.domain,d.domainOverride="true")}function fa(){return K}function ga(){return ha}function ia(){return ja}function A(a){d[a]=0>m(d[a],"#"+a.toUpperCase())?d[a]:""}function ka(){return t}function R(a,b){for(var c=S(b),d=!1,e=0;e<c.length;e++)c[e].frameId===t&&(c[e].actionId=a,d=!0);d||l(c,{frameId:t,actionId:a});T(c)}function T(a,b){var c="";if(a){for(var c=[],d=0;d<a.length;d++)0<d&&0<c.length&&l(c,"p"),l(c,a[d].frameId),l(c,"h"),l(c,
+a[d].actionId);c=c.join("")}c||(c="-");x(B,c)}function S(a){var b=r(B),c=[];if(b&&"-"!==b)for(var b=b.split("p"),d=0;d<b.length;d++){var e=b[d].split("h");if(2===e.length&&e[0]&&e[1]){var g=e[0],f;if(!(f=a)){f=g.split("_");f=v(f[0]);var h=s()%C;h<f&&(h+=C);f=f+9E5>h}f&&l(c,{frameId:g,actionId:e[1]})}}return c}function U(){var a=r(u);if(!a||""==a||a.length&&a.length!=V)a=E(u),a&&a.length==V||(W=!0,a=s()+N(la));var b=a,c=new Date;c.setFullYear(c.getFullYear()+2);x(u,b,c);F(u,b);return a}function ma(){return W}
+var g=window;if(!g.dT_||!g.dT_.cfg||"string"!=typeof g.dT_.cfg||g.dT_.initialized)g.console&&g.console.log("Initconfig not found or agent already initialized! This is an injection issue.");else{var $=window.setTimeout,w=window.sessionStorage,e={version:[6,5,4,"1014"],cfg:window.dT_&&window.dT_.cfg,ica:1};e.version[3]=parseInt(e.version[3],10);window.dT_=e;e.agentStartTime=s();e.nw=s;e.apush=l;e.st=Z;var O=32,aa={"!":"%21","~":"%7E","*":"%2A","(":"%28",")":"%29","'":"%27",$:"%24",";":"%3B",",":"%2C"};
+e.gSSV=E;e.sSSV=F;e.pn=v;e.iVSC=I;e.io=m;e.dC=G;e.sC=x;e.esc=H;e.gSId=ba;e.gDtc=ca;e.gSC=J;e.gC=r;e.cRN=M;e.cRS=N;e.gEL=Q;e.gEBTN=P;var d={reportUrl:"dynaTraceMonitor",initializedModules:"",csu:"dtagent",domainOverride:"false",dataDtConfig:e.cfg},y;try{y=window.localStorage}catch(na){}if(-1==m(d.dataDtConfig,"#CONFIGSTRING")&&(z(d.dataDtConfig),A("domain"),A("auto"),A("app"),(g=d.agentUri)&&-1<m(g,"_")))g=/([a-zA-Z0-9]*)[0-9]*_([a-zA-Z0-9]*)_[0-9]*/.exec(g),d.csu=g[1],d.featureHash=g[2],d.dtVersion=
+e.version[0]+""+e.version[1];var g=P("script"),X=Q(g);if(0<X)for(var h,Y=d.csu+"_bootstrap.js",D=0;D<X;D++)if(h=g[D],h.attributes){var n=h.attributes.getNamedItem("data-dtconfig");h=h.src;if(n){ea(h,n.value);break}if((n=h&&h.indexOf(Y))&&0<=n)n=n+Y.length+5,d.app=h.length>n?h.substr(n):"Default%20Application"}da();try{var f=d.ign;if(f&&RegExp(f).test(window.location.href)){document.dT_=window.dT_=null;return}}catch(oa){}var B="dtPC",K="dtCookie",ha="x-dtPC",ja="x-dtReferer";e.gSCN=fa;e.gPCHN=ga;e.gRHN=
+ia;e.pageContextCookieName=B;e.latencyCookieName="dtLatC";e.cfg=d;var C=6E8,t=e.agentStartTime%C+"_"+v(1E3*Math.random());e.gFId=ka;e.frameId=t;R(1);e.gPC=S;e.cPC=R;e.sPC=T;var p;try{p=w.getItem("dtDisabled")}catch(pa){}!d.auto&&(!d.legacy&&!p)&&(f=d.agentname||d.csu||"dtagent",f=r("dtUseDebugAgent")?d.debugName||f+"dbg":d.name||f,p=d.agentUri||d.agentLocation+"/"+f+"_"+d.featureHash+"_"+d.buildNumber,d.async?(f=document.createElement("script"),f.setAttribute("src",p),d.async&&f.setAttribute("defer",
+"true"),f.setAttribute("crossorigin","anonymous"),p=document.getElementsByTagName("script")[0],p.parentElement.insertBefore(f,p)):document.write('<script type="text/javascript" src="'+p+'">\x3c/script>'));var u="rxVisitor",la=32,V=45,W=!1;U();e.iNV=ma;e.gVID=U}})();
+</script>
+<!-- paywall disabled -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falcons hire Steve Sarkisian as new offensive coordinator | The Kansas City Star</title>
+<meta name="copyright" content="Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed."/>
+<meta name="expires" content="Feb 21, 2017 11:26 PM"/>
+<meta name="keywords" content="FBN, Falcons, Sarkisian"/>
+<meta name="news_keywords" content="FBN, Falcons, Sarkisian"/>
+<meta name="allow-comments" content="true"/>
+<meta name="description" content="The Atlanta Falcons have hired Steve Sarkisian as their new offensive coordinator, quickly filling the role after Kyle Shanahan left to become head coach of the San Francisco 49ers."/>
+<meta name="title" content="Falcons hire Steve Sarkisian as new offensive coordinator | The Kansas City Star"/>
+<meta name="googlebot" content="noodp, noarchive"/>
+<meta name="google-site-verification" content="78fVR1x_WUC9-DpXgQlPgksKYDAk0f5HpLyJU5bO7Do"/>
+<link rel="amphtml" href="https://kansascity.relaymedia.com/amp/news/nation-world/article131225894.html">
+<meta property="og:title" content="Falcons hire Steve Sarkisian as new offensive coordinator"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.kansascity.com/news/nation-world/article131225894.html"/>
+<meta property="og:description" content="The Atlanta Falcons have hired Steve Sarkisian as their new offensive coordinator, quickly filling the role after Kyle Shanahan left to become head coach of the San Francisco 49ers."/>
+<meta property="og:image" content="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/LANDSCAPE_1140/Falcons-Sarkisian_Football_39505.jpg"/>
+<meta property="og:site_name" content="kansascity"/>
+<meta property="fb:app_id" content="219382471553758"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="KCStar">
+<meta name="twitter:title" content="Falcons hire Steve Sarkisian as new offensive coordinator">
+<meta name="twitter:description" content="The Atlanta Falcons have hired Steve Sarkisian as their new offensive coordinator, quickly filling the role after Kyle Shanahan left to become head coach of the San Francisco 49ers.">
+<meta name="twitter:image" content="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/LANDSCAPE_1140/Falcons-Sarkisian_Football_39505.jpg">
+<meta name="msapplication-TileImage" content="http://www.kansascity.com/static/theme/kansascity/base/ico/windowsmetro-144.png"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.kansascity.com/static/theme/kansascity/base/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.kansascity.com/static/theme/kansascity/base/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.kansascity.com/static/theme/kansascity/base/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://www.kansascity.com/static/theme/kansascity/base/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="http://www.kansascity.com/static/theme/kansascity/base/ico/favicon.png">
+<link href="http://www.kansascity.com/static/theme/kansascity-2020/base/css/main-1.0.99-235b3bc.css?sVer=1.0.99-235b3bc" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://www.kansascity.com/static/js/html5shiv.js?sVer=1.0.99-235b3bc"></script>
+<script src="http://www.kansascity.com/static/js/respond.min.js?sVer=1.0.99-235b3bc"></script>
+<script type="text/javascript" src="http://www.kansascity.com/static/js/mi-scripts/pollyfill.js?sVer=1.0.99-235b3bc"></script>
+<![endif]-->
+<script type="text/javascript" src="http://www.kansascity.com/static/js/jquery-1.10.2.min.js?sVer=1.0.99-235b3bc"></script>
+<script type="text/javascript" src="http://www.kansascity.com/static/js/mi-wf-site-1.0.99-235b3bc-min.js"></script>
+<script type="text/javascript">
+mi.pageInfo.setConf({
+'marketInfo.pagelevel':'story',
+'marketInfo.careerbuilder.mxjobsrchcriteria_rawwords':'outside+sales',
+'wufoo.formID':'',
+'publication.mediadomain':'media.kansascity.com',
+'headerDateDisplay':'true',
+'accuweather.apiKey':'2ce96fe9da724185a27db1e6a3ecf580',
+'marketInfo.application_version':'1.0.99-235b3bc',
+'marketInfo.logoAltText':'The Kansas City Star',
+'marketInfo.allow_ads':'true',
+'pressPlus.package.printAndDigital.price':'$1.60/week',
+'nativo.story.placements':'840263,745264,844404',
+'marketInfo.pagelevel_informational':'false',
+'marketInfo.addcities':'Overland Park, Independence, Lawrence, Liberty, Lee s Summit',
+'marketInfo.staticDirectory':'MCI',
+'marketInfo.state_abbreviation':'MO',
+'marketInfo.devDirectory':'',
+'publication.domain':'KansasCity.com',
+'accuweather.partnerCode':'MCCLATCHY',
+'marketInfo.domain':'kansascity',
+'facebook.app.id':'219382471553758',
+'marketInfo.classads.homefinderUrl':'',
+'marketInfo.clipped_taxonomy':'News/National',
+'nativo.video.placements':'869340,869339',
+'marketInfo.careerbuilder.lr':'CBCB_KC',
+'accuweather.locationString':'Kansas City',
+'marketInfo.adretargeting.kill_list':["simpli.fi"],
+'marketInfo.webmaster_email':'kcsfeedback@kansascity.com',
+'pressPlus.package.printAndDigital.url':'https://estar.kcstar.com/special',
+'marketInfo.phone':'816-234-4636',
+'marketInfo.sourcelevel':'nationworld',
+'pressPlus.zone':'NB4fWW8JF-ov1ET5hFYO1e',
+'olive.localBrand':'E-Star',
+'marketInfo.carsSEO':'',
+'marketInfo.shortURL':'nationworld',
+'marketInfo.carsAFF':'kansascity',
+'legacy.siteName':'kansascity',
+'wishabi.apiKey':'3daeea236cece48f',
+'marketInfo.viewsizes':[{"Large":[1200,600]},{"Medium":[992,300]},{"Small":[768,300]},{"Extra-Small":[0,0]}],
+'findnsave.tracking':'findnsave',
+'classads.homefinderUrl':'http://www.homefinder.com/KS/Kansas-City/',
+'pressPlus.package.digitalOnly.price':'$0.95/month',
+'legacy.affiliateId':'kc001164',
+'accuweather.dev':'false',
+'marketInfo.state':'Missouri',
+'marketInfo.siteId':'81',
+'marketInfo.county':'Jackson County',
+'marketInfo.allow_nativo':'true',
+'marketInfo.adsizes':{"outofpage":{},"default":{"None":[],"970x90":[970,90],"Billboard Flex":[[960,30],[970,30],[970,90],[970,250]],"960x30":[960,30],"728x90":[728,90],"600x250":[600,250],"500x300":[500,300],"468x60":[468,60],"336x280":[336,280],"320x450":[320,450],"320x50":[320,50],"300x600":[300,600],"Flex Ad":[[300,250],[300,600]],"Welcome Ad":[[300,250],[300,600],[550,480],[600,500]],"300x250":[300,250],"300x100":[300,100],"300x75":[300,75],"300x50":[300,50],"240x400":[240,400],"234x60":[234,60],"216x36":[216,36],"180x150":[180,150],"168x28":[168,28],"160x600":[160,600],"160x90":[160,90],"146x60":[146,60],"120x600":[120,600],"120x240":[120,240],"120x20":[120,20],"Rising Star":[500,300]},"floorboard":{"None":[],"285x70":[285,70]},"wallpaper":{"None":[],"1600x600":[1600,600]}},
+'marketInfo.careerbuilder.s_freshness':'30',
+'wishabi.bodyId':'4570',
+'classads.carsUrl':'http://www.cars.com/?aff=kansascity',
+'marketInfo.name':'The Kansas City Star',
+'marketInfo.location':'Kansas City',
+'marketInfo.region':'',
+'classads.apartmentsUrl':'http://www.apartments.com/Missouri/Kansas-City',
+'marketInfo.code':'KCM',
+'pressPlus.package.digitalOnly.url':'https://estar.kcstar.com/plus',
+'marketInfo.market_identifier':'KCM.site_kansascity',
+'wf.resource.static.rootUrl':'http://www.kansascity.com/static/',
+'financialContent.account':'kansascity',
+'marketInfo.followLinks':'1',
+'marketInfo.networkid':'7675',
+'marketInfo.product':'site',
+'wishabi.navId':'1058',
+'marketInfo.classads.apartmentsUrl':'http://www.apartments.com/Missouri/Kansas-City',
+'marketInfo.careerbuilder.s_rawwords':'CustomField3:KCSTARTJ',
+'marketInfo.street_address':'1729 Grand Blvd., Kansas City, MO 64108',
+'accuweather.locationKey':'329441',
+'pressPlus.localBrand':'Star+',
+'marketInfo.taxonomy':'News/National///',
+'marketInfo.city':'Kansas City',
+});
+</script>
+<script type="text/javascript" >
+mi_Ads.env.create();
+</script>
+<script type="text/javascript" src="http://ad.crwdcntrl.net/5/c=7436/pe=y/callback=extractPid" async></script>
+<script type="text/javascript" src="https://cdn.optimizely.com/js/5967330005.js"></script>
+<script type="text/javascript" src="http://c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try {
+amznads.getAds('3108'); } catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+try {
+amznads.setTargetingForGPTAsync('amznslots');
+} catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+var _prx = window._prx || [];
+_prx.push(['cfg.SetNoAutoStart']);
+</script>
+<script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
+<script type="text/javascript">
+var mistats = mistats || {};
+mistats.pagelevel="Story";
+mistats.cmsid="Story: 131225894";
+mistats.pagename="Story: 131225894|Falcons hire Steve Sarkisian as new offensive coordinator";
+mistats.taxonomy="News|National|||";
+mistats.channel="Nation & World";
+mistats.contentsource="The_Associated_Press|By PAUL NEWBERRY AP Sports Writer";
+mistats.pubdate="2017/02/07";
+mistats.moddate="2017/02/07 H17";
+mistats.keywords="FBN Falcons Sarkisian";
+</script>
+<script type='text/javascript' src='http://media.kansascity.com/misites/ksc/kansascity.js'></script>
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5" async></script>
+</head>
+<body>
+<!-- Powered by Escenic Content Engine and Widget Framework. http://escenic.com -->
+<div class=" " >
+<script type="text/javascript">
+var $window = $window || $(window);
+var $document = $document || $(document);
+function hidePhotoTitle() {
+if( $(document.getElementById("top-galleries")).height() === 0) {
+$(document.getElementById("top-photos-carousel")).hide();
+} if($(document.getElementById("top-galleries-with-counter")).height() === 0) {
+$(document.getElementById("top-photos-carousel")).hide();
+console.log('found');
+}
+}
+$window.on("load", hidePhotoTitle);
+</script>
+<script src="http://scripts.kansascity.com/widgets/market/market.kc.opt.js"></script>
+</div>
+<div class="">
+<header class=" " role="banner">
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-oop-1" adtype="outofpage" pkg="None" data-ad-policy="onPageLoad"
+articleId="131225894" ></div>
+</div>
+</div>
+<!--
+Widget ID: Feature Master with title feature master masthead top:
+Referenced feature mi.masterConfig.searchBarType, which was empty. Attempting fall-back value.
+-->
+<div id="masthead-container"
+>
+<div class="container">
+<div class="masthead-row">
+<div id="masthead-main"
+>
+<div id="masthead-logo"
+>
+<a href="http://www.kansascity.com/" target="_top"><img src="http://www.kansascity.com/static/images/kansascity/logo-lg.png" alt="The Kansas City Star | KansasCity.com" class="img-responsive center-block"></a>
+</div>
+<div id="quick-nav"
+class="hidden-xs">
+<ul class=" nav navbar-nav">
+<li>
+<a href="/news/#navlink=navbar">
+News
+</a>
+</li>
+<li>
+<a href="/sports/#navlink=navbar">
+Sports
+</a>
+</li>
+<li>
+<a href="/news/business/#navlink=navbar">
+Business
+</a>
+</li>
+<li>
+<a href="/living/liv-columns-blogs/chow-town/#navlink=navbar">
+Food
+</a>
+</li>
+</ul>
+<div id="site-search-lg" class="visible-lg">
+<form action="/search/" class="form-inline" id="site-search" role="search">
+<input type="text" name="q" class="form-control" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</div>
+<div id="search-icon-sm-md" class="site-search dropdown visible-md visible-sm">
+<a href="#" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+<li class="input-group">
+<form action="/search/" class="form-inline" id="site-search" role="search">
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Widget ID: Feature Master with title feature master masthead switch:
+Referenced feature mi.masterConfig.masthead-extra, which was empty. Attempting fall-back value.
+-->
+<div id="masthead-ad"
+class="visible-md visible-lg">
+<div>
+<div class="ad-widget" id="div-gpt-ad-2" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="None"
+defaultsize="Large"
+Small = "None"
+Medium = "234x60"
+Extra-Small = "None"
+Large = "234x60"
+articleId="131225894"
+></div>
+</div>
+</div>
+</div>
+<div id="main-nav-container"
+>
+<div class="weather-container hidden-xs">
+<div class="miWeather">
+<a href="/weather">
+<div class="miWeatherCurrent">
+<div class="mi-weather-alert"></div>
+</div>
+</a>
+</div>
+</div>
+<div id="login-subscribe"
+class="hidden-xs">
+<ul class=" paywall-links">
+<li>
+<a href="/activate">
+Sign In
+</a>
+</li>
+<li>
+<a href="http://kcsoffers.com/">
+Subscribe
+</a>
+</li>
+</ul>
+</div>
+<div id="main-nav"
+>
+<nav class="navbar navbar-default " role="navigation" >
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="navbar-collapse-1" class="navbar-collapse collapse">
+<div id="search-icon-xs" class="site-search dropdown visible-xs">
+<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+<li class="input-group">
+<form action="/search/" class="form-inline" id="site-search" role="search">
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+</ul>
+</div>
+<div class="weather-container visible-xs">
+<div class="miWeather">
+<a href="/weather">
+<div class="miWeatherCurrent">
+<div class="mi-weather-alert"></div>
+</div>
+</a>
+</div>
+</div>
+<ul class=" paywall-links">
+<li>
+<a href="/activate">
+Sign In
+</a>
+</li>
+<li>
+<a href="http://kcsoffers.com/">
+Subscribe
+</a>
+</li>
+</ul>
+<ul class=" nav navbar-nav">
+<li>
+<a href="/#navlink=subnav">
+Home
+</a>
+</li>
+<li>
+<a href="/customer-service/#navlink=subnav">
+Customer Service
+</a>
+</li>
+<li>
+<a href="http://www.legacy.com/obituaries/kansascity/#navlink=subnav">
+Obituaries
+</a>
+</li>
+<li class="nav-divider"> </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>News <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/news/#navlink=subnav">All News</a></li>
+<li><a href="/news/local/#navlink=subnav">Local news</a></li>
+<li><a href="/news/local/crime/#navlink=subnav">Crime</a></li>
+<li><a href="/news/government-politics/#navlink=subnav">Politics</a></li>
+<li><a href="/news/local/news-columns-blogs/the-buzz/#navlink=subnav">The Buzz</a></li>
+<li><a href="/news/local/news-columns-blogs/c-w-gusewelle/#navlink=subnav">C. W. Gusewelle</a></li>
+<li><a href="/news/nation-world/#navlink=subnav">Nation &amp; World</a></li>
+<li><a href="/news/local/community/joco-913/#navlink=subnav">913</a></li>
+<li><a href="/news/local/community/816-north/#navlink=subnav">816 North</a></li>
+<li><a href="http://homicide.kansascity.com/#navlink=subnav">Homicide KC</a></li>
+<li><a href="http://mingle.kansascity.com/#navlink=subnav">Community Faces</a></li>
+<li><a href="/opinion/opn-columns-blogs/mary-sanchez/#navlink=subnav">Mary Sanchez</a></li>
+<li><a href="/news/local/news-columns-blogs/eyewitness/#navlink=subnav">Eyewitness</a></li>
+<li><a href="/news/weird/#navlink=subnav">Weird News</a></li>
+<li><a href="/news/video/#navlink=subnav">Video</a></li>
+<li><a href="/news/galleries/#navlink=subnav">Photos</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Sports <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/sports/#navlink=subnav">All Sports</a></li>
+<li><a href="/sports/nfl/kansas-city-chiefs/#navlink=subnav">Chiefs</a></li>
+<li><a href="/sports/mlb/kansas-city-royals/#navlink=subnav">Royals</a></li>
+<li><a href="/sports/mlb/kansas-city-royals/royals-photos-videos/#navlink=subnav">Royals photos</a></li>
+<li><a href="/sports/mls/sporting-kc/#navlink=subnav">Sporting KC</a></li>
+<li><a href="/sports/mls/fc-kansas-city/#navlink=subnav">FC Kansas City</a></li>
+<li><a href="/sports/college/big-12/university-of-kansas/#navlink=subnav">Kansas</a></li>
+<li><a href="/sports/college/sec/university-of-missouri/#navlink=subnav">Missouri</a></li>
+<li><a href="/sports/college/big-12/kansas-state/#navlink=subnav">K-State</a></li>
+<li><a href="/sports/high-school/#navlink=subnav">High School</a></li>
+<li><a href="/sports/scores-stats/#navlink=subnav">Scores &amp; Stats</a></li>
+<li><a href="/sports/nascar-auto-racing/#navlink=subnav">NASCAR</a></li>
+<li><a href="/sports/outdoors/#navlink=subnav">Outdoors</a></li>
+<li><a href="/sports/nba/#navlink=subnav">NBA</a></li>
+<li class="dropdown-header">Blogs & Columns</li>
+<li><a href="/sports/spt-columns-blogs/k-zone/#navlink=subnav">K Zone</a></li>
+<li><a href="/sports/spt-columns-blogs/judging-the-royals/#navlink=subnav">Judging the Royals</a></li>
+<li><a href="/sports/spt-columns-blogs/red-zone/#navlink=subnav">Red Zone</a></li>
+<li><a href="/sports/spt-columns-blogs/the-full-90/#navlink=subnav">The Full 90</a></li>
+<li><a href="/sports/spt-columns-blogs/campus-corner/#navlink=subnav">Campus Corner</a></li>
+<li><a href="/sports/spt-columns-blogs/for-petes-sake/#navlink=subnav">For Pete&#039;s Sake</a></li>
+<li><a href="/sports/spt-columns-blogs/sam-mellinger/#navlink=subnav">Sam Mellinger</a></li>
+<li><a href="/sports/spt-columns-blogs/vahe-gregorian/#navlink=subnav">Vahe Gregorian</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Politics <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 200px;">
+<li><a href="/news/politics-government/#navlink=subnav">Politics</a></li>
+<li><a href="/news/politics-government/election/#navlink=subnav">Elections</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Opinion <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/opinion/#navlink=subnav">All Opinion</a></li>
+<li><a href="/opinion/editorials/#navlink=subnav">Editorials</a></li>
+<li><a href="/opinion/letters-to-the-editor/#navlink=subnav">Letters to the Editor</a></li>
+<li><a href="/opinion/opn-columns-blogs/colleen-nelson/#navlink=subnav">Colleen Nelson</a></li>
+<li><a href="/opinion/opn-columns-blogs/derek-donovan/#navlink=subnav">Derek Donovan</a></li>
+<li><a href="/opinion/opn-columns-blogs/dave-helling/#navlink=subnav">Dave Helling</a></li>
+<li><a href="/opinion/opn-columns-blogs/melinda-henneberger/#navlink=subnav">Melinda Henneberger</a></li>
+<li><a href="/opinion/opn-columns-blogs/steve-kraske/#navlink=subnav">Steve Kraske</a></li>
+<li><a href="/opinion/opn-columns-blogs/mary-sanchez/#navlink=subnav">Mary Sanchez</a></li>
+<li><a href="/opinion/readers-opinion/guest-commentary/#navlink=subnav">Guest commentary</a></li>
+<li><a href="/opinion/opn-columns-blogs/syndicated-columnists/#navlink=subnav">Syndicated columnists</a></li>
+<li><a href="/opinion/letters-to-the-editor/submit-a-letter/#navlink=subnav">Submit a Letter</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Entertainment <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/entertainment/#navlink=subnav">Entertainment</a></li>
+<li><a href="http://www.inkkc.com/#navlink=subnav">Ink</a></li>
+<li><a href="http://events.kansascity.com/#navlink=subnav">Events</a></li>
+<li><a href="/entertainment/arts-culture/#navlink=subnav">Arts &amp; Culture</a></li>
+<li><a href="/entertainment/music-news-reviews/#navlink=subnav">Music</a></li>
+<li><a href="/entertainment/ent-columns-blogs/back-to-rockville/#navlink=subnav">Back to Rockville</a></li>
+<li><a href="/entertainment/comics/#navlink=subnav">Comics</a></li>
+<li><a href="/entertainment/ent-columns-blogs/stargazing/#navlink=subnav">Stargazing</a></li>
+<li><a href="/entertainment/games-puzzles/#navlink=subnav">Puzzles &amp; Games</a></li>
+<li><a href="/entertainment/movies-news-reviews/#navlink=subnav">Movies</a></li>
+<li><a href="/entertainment/horoscopes/#navlink=subnav">Horoscopes</a></li>
+<li><a href="/entertainment/performing-arts/#navlink=subnav">Arts</a></li>
+<li><a href="/entertainment/tv/#navlink=subnav">TV</a></li>
+<li><a href="/entertainment/restaurants/#navlink=subnav">Restaurants</a></li>
+<li><a href="/entertainment/books/#navlink=subnav">Books</a></li>
+<li><a href="http://scripts.kansascity.com/tvdata/kanctydig.pdf#navlink=subnav">Star TV listings</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Business <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/news/business/#navlink=subnav">All Business</a></li>
+<li><a href="/news/business/biz-columns-blogs/cityscape/#navlink=subnav">Cityscape</a></li>
+<li><a href="/news/business/development/#navlink=subnav">Development</a></li>
+<li><a href="/news/business/workplace/#navlink=subnav">Workplace</a></li>
+<li><a href="/news/business/personal-finance/#navlink=subnav">Personal Finance</a></li>
+<li><a href="/news/business/national-international/#navlink=subnav">National/International</a></li>
+<li><a href="/news/business/technology/#navlink=subnav">Technology</a></li>
+<li><a href="/news/business/biz-columns-blogs/kids-money/#navlink=subnav">Kids &amp; Money</a></li>
+<li><a href="http://projects.kansascity.com/2014/downtown/#navlink=subnav">Project: Downtown KC&#039;s revival</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Living <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/living/#navlink=subnav">All Living</a></li>
+<li><a href="/living/liv-columns-blogs/chow-town/#navlink=subnav">Chow Town</a></li>
+<li><a href="/living/food-drink/#navlink=subnav">Eat &amp; Drink</a></li>
+<li><a href="/living/home-garden/#navlink=subnav">House &amp; Home</a></li>
+<li><a href="/living/liv-columns-blogs/jenee-osterheldt/#navlink=subnav">Jenee Osterheldt</a></li>
+<li><a href="/living/liv-columns-blogs/kc-gardens/#navlink=subnav">KC Gardens</a></li>
+<li><a href="/living/advice-columns/#navlink=subnav">Advice columns</a></li>
+<li><a href="/living/religion/#navlink=subnav">Faith</a></li>
+<li><a href="/living/travel/#navlink=subnav">Travel</a></li>
+<li><a href="/living/family/#navlink=subnav">Family</a></li>
+</ul>
+</li>
+<li class="nav-divider"> </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Apps & Mobile <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 400px;">
+<li><a href="/sports/spt-columns-blogs/k-zone/article11169599.html#navlink=subnav">True Blue app</a></li>
+<li><a href="/sports/spt-columns-blogs/red-zone/article28700575.html#navlink=subnav">Red Zone Extra</a></li>
+<li><a href="/mobile/#navlink=subnav">Star news apps</a></li>
+<li><a href="/sports/mls/sporting-kc/article20421912.html#navlink=subnav">Extra Time KC</a></li>
+<li><a href="/site-services/e-edition/#navlink=subnav">E-Star</a></li>
+</ul>
+</li>
+<li class="nav-divider"> </li>
+<li>
+<a href="http://findnsave.kansascity.com/#navlink=subnav">
+Shopping
+</a>
+</li>
+<li>
+<a href="/cars/#navlink=subnav">
+Cars
+</a>
+</li>
+<li>
+<a href="/site-services/contests-promotions/#navlink=subnav">
+Contests
+</a>
+</li>
+<li>
+<a href="http://www.careerbuilder.com/?sc_cmp2=JS_Nav_Home&lr=CBCB_KC#navlink=subnav">
+Jobs
+</a>
+</li>
+<li>
+<a href="http://www.startmoonlighting.com/mni/The-Kansas-City-Star/?utm_source=The-Kansas-City-Star&utm_medium=navweblink&utm_campaign=MNI#navlink=subnav">
+Moonlighting
+</a>
+</li>
+<li>
+<a href="/homes/#navlink=subnav">
+Homes
+</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>All Classifieds <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 680px;">
+<li><a href="http://kansascitystar.adperfect.com/#navlink=subnav">Place an ad</a></li>
+<li><a href="/classified-ads/#navlink=subnav">All Classifieds</a></li>
+</ul>
+</li>
+<li>
+<a href="http://spaceskc.com/#navlink=subnav">
+Spaces KC
+</a>
+</li>
+<li>
+<a href="http://www.kcweddings.com/#navlink=subnav">
+KC Weddings
+</a>
+</li>
+<li class="nav-divider"> </li>
+<li>
+<a href="/customer-service/contact-us/#navlink=subnav">
+Contact us
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var language = "en-us";
+var mast_options = {
+language: language,
+locationKey: mi.pageInfo.getConf('accuweather.locationKey'),
+locationString: mi.pageInfo.getConf('accuweather.locationString'),
+isDevEnv: mi.pageInfo.getConf('accuweather.dev'),
+publicationUrl: 'http://www.kansascity.com/',
+iconPath: 'static/images/widgets/weather/2020/',
+detail: 'false'
+};
+var windowSize = jQuery(window).width();
+if (windowSize > 767) {
+jQuery(".mi-weather-alert").populateWeatherAlert("description", mast_options);
+}
+jQuery(".miWeatherCurrent").populateCurrentWeather(mast_options);
+</script>
+<style type="text/css">
+/* Navigation Menu-specific styles */
+/* @media screen and (min-width: 1200px) {
+#masthead-container .dropdown:hover .dropdown-menu {
+display: block; } }
+*/
+</style>
+<script type="text/javascript">
+/*
+var $window = $window || $(window);
+var $nav = $(document.getElementById("main-nav-container"));
+var $toggle = $nav.find(".navbar-header").find(".navbar-toggle");
+var $dropdown = $(".dropdown");
+var $navbarNav = $nav.find(".navbar-nav");
+var $navbarDropdown = $navbarNav.find(".dropdown-menu");
+if ( location.hostname.split('.')[ 1 ] === "elnuevoherald" || language === "es" ) {
+$toggle.prepend('<span class="nav-label hidden-xs">Secciones</span>');
+$dropdown.find(".form-control").attr('placeholder', 'Búsqueda');
+}
+else {
+// add Menu label to nav toggle for small and up
+$toggle.prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+}
+$dropdown.children('a').attr('data-target', '#');
+// Make subnav same height as main nav
+$(document.getElementById('navbar-collapse-1')).on('shown.bs.collapse', function () {
+var navHeight = $navbarNav.height();
+$navbarDropdown.css("min-height", navHeight + "px");
+});
+*/
+if (location.hostname.split('.')[1] == 'elnuevoherald') {
+jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Secciones</span>');
+jQuery('.dropdown .form-control').attr('placeholder','Búsqueda');
+} else {
+// add Menu label to nav toggle for small and up
+jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+}
+jQuery('.dropdown > a').attr('data-target','#');
+// Make dropdowns work on hover at large breakpoint
+jQuery(function() {
+jQuery("#masthead-container .dropdown").hover(
+function(){ if ($(window).width() > 1200) { $(this).addClass('open') } },
+function(){ if ($(window).width() > 1200) { $(this).removeClass('open') } }
+);
+});
+// Make subnav same height as main nav
+$('#navbar-collapse-1').on('shown.bs.collapse', function () {
+var nav_height = jQuery("#main-nav .navbar-nav").height();
+jQuery("#main-nav .navbar-nav .dropdown-menu").css( "min-height", nav_height + "px" );
+}); </script>
+</header>
+<div class="container " >
+<div id="leaderboard-ad"
+class="ad border-bottom">
+<div class="visible-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-3" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="b"
+defaultsize="Large"
+Small = "None"
+Medium = "None"
+Extra-Small = "320x50"
+Large = "None"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-4" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="d"
+defaultsize="Large"
+Small = "728x90"
+Medium = "728x90"
+Extra-Small = "None"
+Large = "728x90"
+articleId="131225894"
+></div>
+</div>
+</div>
+</div>
+</div>
+<section class="container story " role="main">
+<div id="story-header"
+>
+<h1 class="heading section-main-heading link">
+<a href="http://www.kansascity.com/news/nation-world/">
+Nation & World
+</a>
+</h1>
+<p
+class="published-date">
+February 7, 2017 5:26 PM
+</p>
+<h1
+class="title">
+Falcons hire Steve Sarkisian as new offensive coordinator
+</h1>
+</div>
+<div class="row
+story-rail-wrapper">
+<div class="wide-rail">
+<div class="story-gallery ">
+<div id="slick-gallery-container-29504122"
+class="mi-slick-gallery-container clearfix" style="visibility: hidden;">
+<div class="preroll-container" data-uniqueID="29504122">
+<!--"Gallery pre-roll turned off as page level is: story . Must be: gallery" -->
+<script type="text/javascript">
+$(function () {
+$(document).trigger("slickgallery.init", [
+29504122,
+2,
+{
+}
+]);
+});
+</script>
+<div class="slick-gallery">
+<div class="gallery-item image">
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/FREE_320/Falcons-Sarkisian_Football_39505.jpg" data-width-320></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/FREE_480/Falcons-Sarkisian_Football_39505.jpg" data-width-480></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/FREE_640/Falcons-Sarkisian_Football_39505.jpg" data-width-640></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/FREE_768/Falcons-Sarkisian_Football_39505.jpg" data-width-768></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/FREE_960/Falcons-Sarkisian_Football_39505.jpg" data-width-960></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/3semof/picture131236249/ALTERNATES/FREE_1140/Falcons-Sarkisian_Football_39505.jpg" data-width-1140></span>
+<img alt="FILE - In this Jan. 9, 2017 file photo, Alabama offensive coordinator Steve Sarkisian stands on the sidelines during the second half of the NCAA college football playoff championship game against Clemson in Tampa, Fla. The Atlanta Falcons have hired Sarkisian as their new offensive coordinator. The move was announced Tuesday, Feb. 7 less than 24 hours after Kyle Shanahan left to become head coach of SF 49ers." title="FILE - In this Jan. 9, 2017 file photo, Alabama offensive coordinator Steve Sarkisian stands on the sidelines during the second half of the NCAA college football playoff championship game against Clemson in Tampa, Fla. The Atlanta Falcons have hired Sarkisian as their new offensive coordinator. The move was announced Tuesday, Feb. 7 less than 24 hours after Kyle Shanahan left to become head coach of SF 49ers." />
+<div class="caption">
+<span class="caption-text">
+FILE - In this Jan. 9, 2017 file photo, Alabama offensive coordinator Steve Sarkisian stands on the sidelines during the second half of the NCAA college football playoff championship game against Clemson in Tampa, Fla. The Atlanta Falcons have hired Sarkisian as their new offensive coordinator. The move was announced Tuesday, Feb. 7 less than 24 hours after Kyle Shanahan left to become head coach of SF 49ers.
+</span>
+<span class="photographer">David J. Phillip, File</span>
+<span class="credits">AP Photo</span>
+</div>
+</div>
+<div class="gallery-item image">
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/t0fbib/picture131294654/ALTERNATES/FREE_320/Falcons_Football_86324.jpg" data-width-320></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/t0fbib/picture131294654/ALTERNATES/FREE_480/Falcons_Football_86324.jpg" data-width-480></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/t0fbib/picture131294654/ALTERNATES/FREE_640/Falcons_Football_86324.jpg" data-width-640></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/t0fbib/picture131294654/ALTERNATES/FREE_768/Falcons_Football_86324.jpg" data-width-768></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/t0fbib/picture131294654/ALTERNATES/FREE_960/Falcons_Football_86324.jpg" data-width-960></span>
+<span class="test-temp" data-src="http://www.mcclatchy-wires.com/incoming/t0fbib/picture131294654/ALTERNATES/FREE_1140/Falcons_Football_86324.jpg" data-width-1140></span>
+<img alt="Atlanta Falcons head coach Dan Quinn speaks during a press conference at the team&#39;s practice facility, Tuesday, Feb. 7, 2017, in Flowery Branch, Ga." title="Atlanta Falcons head coach Dan Quinn speaks during a press conference at the team&#39;s practice facility, Tuesday, Feb. 7, 2017, in Flowery Branch, Ga." />
+<div class="caption">
+<span class="caption-text">
+Atlanta Falcons head coach Dan Quinn speaks during a press conference at the team&#39;s practice facility, Tuesday, Feb. 7, 2017, in Flowery Branch, Ga.
+</span>
+<span class="photographer">Atlanta Journal-Constitution via AP</span>
+<span class="credits">Branden Camp</span>
+</div>
+</div>
+</div>
+</div>
+<div class="gallery-counter-container">
+<div class="gallery-counter">
+<span class="current-slide-number">1</span> of 2
+</div>
+</div>
+<div class="caption-toggle">i</div>
+<div class="current-caption"></div>
+</div>
+</div>
+<div id="story-body-items"
+>
+<div
+class="byline element-spacing-small">
+<span class="ng_byline_name">By PAUL NEWBERRY </span><span class="ng_byline_credit">AP Sports Writer</span>
+</div>
+<div class="share-tools-wrapper">
+<!--
+Widget ID: Feature Master with title feature master share buttons:
+Referenced feature mi.masterConfig.shareButtons, which was empty. Attempting fall-back value.
+-->
+<ul class="share-icons">
+<li class="facebook">
+<a class="facebook-share" title="Share on Facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.kansascity.com/news/nation-world/article131225894.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-facebook"></div>
+</li>
+<li class="twitter">
+<a title="Share on Twitter" href="https://twitter.com/share?text=Falcons%20hire%20Steve%20Sarkisian%20as%20new%20offensive%20coordinator&url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-twitter"></div>
+</li>
+<li class="email">
+<a href="mailto:?subject=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator&body=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html"></a>
+<div class="glyphicon glyphicon-envelope"></div>
+</li>
+<li class="more" onClick="return true">
+<ul class="share-options">
+<li class="linked-in"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html&title=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator"><span class="glyphicon glyphicon-linkedin"></span>LinkedIn</a></li>
+<li class="google"><a title="Share on Google Plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"><span class="glyphicon glyphicon-google-plus"></span>Google+</a></li>
+<li class="pinterest"><a href="http://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html&description=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator&media=http%3a%2f%2fwww.mcclatchy-wires.com%2fincoming%2f3semof%2fpicture131236249%2fALTERNATES%2fLANDSCAPE_1140%2fFalcons-Sarkisian_Football_39505.jpg"><span class="glyphicon glyphicon-pinterest-p"></span>Pinterest</a></li>
+<li class="reddit"><a href="http://www.reddit.com/submit?url=http://www.kansascity.com/news/nation-world/article131225894.html"><span class="glyphicon glyphicon-reddit"></span>Reddit</a></li>
+<li class="print"><a href="javascript:window.print();"><span class="glyphicon glyphicon-print"></span>Print</a></li>
+<li class="reprints"><a href="http://www.mcclatchyreprints.com">Order Reprint of this Story</a></li>
+</ul>
+<div class="glyphicon glyphicon-share"></div>
+</li>
+</ul>
+</div>
+<div class="ndn_embed" id="ndn-video-player-1" data-config-distributor-id="90470" data-config-width="100%" data-config-height="9/16w"></div>
+<div class="dateline-storybody">
+<span
+class="dateline">
+FLOWERY BRANCH, Ga.
+</span>
+<div id="story-target" class="clearfix">
+<div id="content-body-16193705-131225894"
+>
+<p>After only one game as Alabama's offensive coordinator, Steve Sarkisian is heading to the NFL.</p><p>To work with MVP quarterback Matt Ryan and the league's highest-scoring offense, no less.</p><p>Less than 24 hours after Kyle Shanahan left to become head coach of the San Francisco 49ers , the Falcons announced Tuesday that Sarkisian would be his replacement.</p><p>The stunning move came with Sarkisian less than a month into what was to be his first full season running Alabama's offense, a job he took over for the national championship game in place of Lane Kiffin . But Falcons coach Dan Quinn said he's had his eye on Sarkisian since last spring, figuring it was only a matter of time before Shanahan moved on to a team of his own.</p><p>&quot;I knew how good Kyle is,&quot; Quinn said. &quot;I wanted to make sure I had contingency plans in place.&quot;</p><p>The two have known each other since Sarkisian coached at Washington and Quinn was Seattle's defensive coordinator. Sarkisian stopped by Atlanta last year to check out the Falcons' offseason workouts, as well as training camp.</p><p>Even though Sarkisian has only one year of pro experience, Quinn expects a smooth transition for the new coordinator, who is familiar with many of the wide zone blocking schemes that worked so well for Atlanta on its way to the Super Bowl.</p><p>&quot;We love the way we attack,&quot; Quinn said. &quot;It took a lot of work to put that system in place. We have a real emphasis on the personnel and how we can feature the guys in that system. So it's very important that we stay consistent with that.&quot;</p><p>Sarkisian will certainly have plenty of weapons at his disposal.</p><p>Ryan threw for 4,944 yards and 38 touchdowns to become the first Falcons player to win the MVP award . Julio Jones is one of the league's top receivers, an All-Pro who caught 83 passes for 1,409 yards. Devonta Freeman earned Pro Bowl recognition with his second straight 1,000-yard rushing season, teaming with Tevin Coleman to give Atlanta a dynamic backfield pairing. In all, 13 players caught touchdown passes, an NFL record.</p><p>In addition to five years as Washington's coach, the 42-year-old Sarkisian held the same job at Southern Cal. But he was fired by the Trojans during the 2015 season when officials said he showed up in no condition to lead practice following an embarrassing public display at a pep rally where he appeared to be intoxicated. He later sought treatment for alcoholism.</p><p>Quinn said he has no concerns about Sarkisian's personal life.</p><p>&quot;We went through the process, obviously, to check and make sure everything would align with our organization, in terms of cultures and values,&quot; Quinn said. &quot;He's done a fantastic job. There were zero hesitations, zero limitations.&quot;</p><p>Sarkisian spent most of last season as an offensive analyst for Alabama. When Kiffin was hired as the head coach at Florida Atlantic, Sarkisian was designated as his replacement.</p><p>Kiffin was planning to stay with the Crimson Tide through the College Football Playoff and, indeed, he coached in the Peach Bowl victory over Washington. Then, without much of an explanation, he left early for his new job and Sarkisian took over for the title game against Clemson, with only a week to prepare.</p><p>Alabama squandered a 10-point lead heading to the fourth quarter and lost 35-31 on a touchdown pass with one second remaining .</p><p>The Falcons certainly know how that feels. They let a 25-point lead slip away in the Super Bowl, losing to the New England Patriots 34-28 in overtime .</p><p>&quot;We appreciate all Coach Sarkisian did for our program during his time here,&quot; Alabama coach Nick Saban said in a statement. &quot;He is an outstanding coach, and we wish him the best in his new role as Atlanta's offensive coordinator. As always, when we have an opening on our staff, we will use it as an opportunity to go out and hire the best coach available.&quot;</p><p>Quinn said he spoke with Saban on Monday about his interest in hiring Sarkisian.</p><p>An agreement was quickly reached.</p><p>&quot;This is something I approached Nick about first, before I reached out to Sark. He said, 'Yeah, I understand what you have to do for your organization,'&quot; Quinn said. &quot;In typical Nick fashion, he nailed it like a complete pro. I'm fortunate we have that good of a relationship.&quot;</p><p>___</p><p>Follow Paul Newberry on Twitter at www.twitter.com/pnewberry1963 . His work can be found at http://bigstory.ap.org/content/paul-newberry .</p>
+</div>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+// Removing empty paragraphs first
+$("#content-body-16193705-131225894 p").filter(function () {
+var html = $.trim($(this).html());
+if (html == '' || html == '&nbsp;')
+return true;
+}).remove();
+// Taking a subset of paragraphs using offset and maximum
+var offset = 1;
+var max = -1;
+if (offset > 1) {
+$("#content-body-16193705-131225894").children().slice(0, offset - 1).remove();
+}
+if (max > -1) {
+$("#content-body-16193705-131225894").children().slice(max).remove();
+}
+// Show dateline field at the beginning of the first paragraph
+var showDateline = false;
+var datelineStr = "FLOWERY BRANCH, Ga.";
+if (offset <= 1 && showDateline == true && datelineStr != "") {
+var firstChild = $("#content-body-16193705-131225894").children().get(0);
+if ("P" == firstChild.nodeName.toUpperCase()) {
+$(firstChild).prepend("<span>" + datelineStr + " - </span>");
+}
+else {
+$(firstChild).before("<span>" + datelineStr + "</span>");
+}
+}
+});
+</script>
+</div>
+</div>
+<div class="ndn_embed" id="ndn-video-player-2" data-config-distributor-id="90470" data-config-width="100%" data-config-height="9/16w"></div>
+<div id="related-gallery"
+class="reorder_story-target_2 reorder">
+</div>
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-5" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="None"
+defaultsize="Large"
+Small = "336x280"
+Medium = "336x280"
+Extra-Small = "336x280"
+Large = "336x280"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_6 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-6" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="c"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_11 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-7" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="e"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_16 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-8" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="f"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+</div>
+<div id="story-related"
+class="story-related element-spacing-large">
+<h1 >
+Related content
+</h1>
+<div id="related-links" >
+</div>
+</div>
+<script type="text/javascript">
+var $storyRelated = $(document.getElementById('story-related'));
+if ($storyRelated.find('article').length === 0) {
+$storyRelated.hide();
+}
+</script>
+<div class="share-tools-wrapper visible-sm visible-xs element-spacing-medium">
+<!--
+Widget ID: Feature Master with title feature master share buttons:
+Referenced feature mi.masterConfig.shareButtons, which was empty. Attempting fall-back value.
+-->
+<ul class="share-icons">
+<li class="facebook">
+<a class="facebook-share" title="Share on Facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.kansascity.com/news/nation-world/article131225894.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-facebook"></div>
+</li>
+<li class="twitter">
+<a title="Share on Twitter" href="https://twitter.com/share?text=Falcons%20hire%20Steve%20Sarkisian%20as%20new%20offensive%20coordinator&url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-twitter"></div>
+</li>
+<li class="email">
+<a href="mailto:?subject=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator&body=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html"></a>
+<div class="glyphicon glyphicon-envelope"></div>
+</li>
+<li class="more" onClick="return true">
+<ul class="share-options">
+<li class="linked-in"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html&title=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator"><span class="glyphicon glyphicon-linkedin"></span>LinkedIn</a></li>
+<li class="google"><a title="Share on Google Plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"><span class="glyphicon glyphicon-google-plus"></span>Google+</a></li>
+<li class="pinterest"><a href="http://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html&description=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator&media=http%3a%2f%2fwww.mcclatchy-wires.com%2fincoming%2f3semof%2fpicture131236249%2fALTERNATES%2fLANDSCAPE_1140%2fFalcons-Sarkisian_Football_39505.jpg"><span class="glyphicon glyphicon-pinterest-p"></span>Pinterest</a></li>
+<li class="reddit"><a href="http://www.reddit.com/submit?url=http://www.kansascity.com/news/nation-world/article131225894.html"><span class="glyphicon glyphicon-reddit"></span>Reddit</a></li>
+<li class="print"><a href="javascript:window.print();"><span class="glyphicon glyphicon-print"></span>Print</a></li>
+<li class="reprints"><a href="http://www.mcclatchyreprints.com">Order Reprint of this Story</a></li>
+</ul>
+<div class="glyphicon glyphicon-share"></div>
+</li>
+</ul>
+</div>
+<div class="more-stories-link">
+<a href="http://www.kansascity.com/news/nation-world/">
+Nation & World
+</a>
+</div>
+<h2 class='heading'>Suggested for you</h2>
+<div id="exchange-embed-widget-dfcf0"></div>
+<script>
+$(document).ready(function(){
+var divElem ="exchange-embed-widget-dfcf0"; 
+var aggr = new Aggrego(document.getElementById(divElem), "dfcf06a1ae4cb6c5e6c61db143473c5a");
+aggr.init();
+});
+</script>
+<div id="commenting-container"
+class="commenting-container
+element-spacing-large">
+<h1 class="heading">
+Comments
+</h1>
+<!--
+Widget ID: Feature Master with title feature master comments:
+Referenced feature mi.masterConfig.comments, which was empty. Attempting fall-back value.
+-->
+<script>
+if($("meta[property='fb:app_id']").length === 1 && $("meta[name='allow-comments']").prop("content") === "true") {
+mi.commenting = new mi.Commenting();
+mi.commenting.setConf( {
+accountName: mi.pageInfo.getConf('marketInfo.domain'),
+fbapp_id: mi.pageInfo.getConf('facebook.app.id'),
+fb_comment_div: {'data-width': '100%'}
+});
+$(document).ready(function() {
+mi.commenting.display();
+});
+} else {
+$(document).ready(function() {
+var disabledText = 'Comments have been disabled for this story.';
+$("#commentingStage").prepend("<p><strong>" + disabledText + "</strong></p>");
+});
+}
+</script>
+<div id="commentingStage"
+>
+</div>
+</div>
+</div>
+<div id="nativoArticlePage"
+>
+</div>
+</div>
+<div class="narrow-rail">
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-9" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="b"
+defaultsize="Large"
+Small = "300x250"
+Medium = "Flex Ad"
+Extra-Small = "None"
+Large = "Flex Ad"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+<div id="video-widget"
+class="headline-list">
+<h1 class="heading link">
+<a href="http://www.kansascity.com/video/">
+Videos
+</a>
+</h1>
+<section >
+<div class="teaser ">
+<div class="container-133841034" id="container-133841034"> <script type="text/javascript">
+if ( typeof wpsCSS === 'undefined' ) {
+var wpsCSS = document.createElement('link');
+wpsCSS.href = '/wps/build/wps-css/theme-a4b418e126.kansascity.css';
+wpsCSS.rel = 'stylesheet';
+wpsCSS.type = 'text/css';
+document.getElementsByTagName('head')[ 0 ].appendChild(wpsCSS);
+}
+</script> <div class="wf-wps-side-bar"> <div class="mi-video-sidebar-widget" id="video-detail-133841034-1487647761914"> <div id="video-container-133841034-1487647761914"> <div class="video-media" data-id="133841034" data-index> <div id="player-133841034-1487647761914" class="player" data-id="133841034"> <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: url('http://www.kansascity.com/news/local/tgx97y-ellen/alternates/LANDSCAPE_560/ellen') no-repeat center center; background-size: cover;"> </div> </div> <div class="mi-video-utilty-bar share-icons "> <a class="facebook-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> <span class="utility-text">facebook</span> </a> <a class="twitter-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> <span class="utility-text">twitter</span> </a> <a class="email-share mi-video-utility-item" href="" title="Share by Email"> <span class="jw-icon jw-icon-email"></span> <span class="utility-text">email</span> </a> <a class="mi-video-share-btn mi-video-utility-item" title="Share"> <span class="jw-icon jw-icon-share"></span> <span class="utility-text">Share</span> </a> </div> <div class="clearfix"></div> <div id="mi-video-overlay-133841034-1487647761914" class="mi-video-custom-overlay-wrap" style="display:none;"> <div class="mi-video-eos-wrap"> <h3 class="mi-video-overlay-title">More Videos</h3> <div class="mi-video-eos"> <div class="mi-overlay-item" data-index="0"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/83gygo-TRUMP-PROTEST-0004-SLK-20170220F.JPG/alternates/LANDSCAPE_200/TRUMP%20PROTEST%200004%20SLK%2020170220F.JPG" alt="Hundreds protest Trump at ‘Not My President’ rally in Kansas City"> <span class="duration">1:08</span> </div> <div class="media-desc"> <h4 class="video-title">Hundreds protest Trump at ‘Not My President’ rally in Kansas City</h4> </div> <div class="svg-timer-wrap"> <svg class="svg-timer" viewbox="0 0 34 34"> <g> <circle class="svg-timer-circle" cx="15" cy="17" r="15.9" transform="rotate(-90 16 16)"></circle> <text class="svg-timer-text" x="17" y="24"></text> </g> </svg> <a class="svg-timer-pause" href="javascript:void(0)"> <span class="glyphicon glyphicon-pause"></span> Pause </a> </div> </div> <div class="mi-overlay-item" data-index="1"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/uqnh8c-GetImageContent1.jpg/alternates/LANDSCAPE_200/GetImageContent%5B1%5D.jpg" alt="Retracing the fatal route driven by Yordano Ventura before his Jeep crash"> <span class="duration">5:21</span> </div> <div class="media-desc"> <h4 class="video-title">Retracing the fatal route driven by Yordano Ventura before his Jeep crash</h4> </div> </div> <div class="mi-overlay-item" data-index="2"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/o6num6-GetImageContent5.jpg/alternates/LANDSCAPE_200/GetImageContent%5B5%5D.jpg" alt="Royals coach recalls challenges in developing Yordano Ventura and his final days "> <span class="duration">2:51</span> </div> <div class="media-desc"> <h4 class="video-title">Royals coach recalls challenges in developing Yordano Ventura and his final days </h4> </div> </div> <div class="mi-overlay-item" data-index="3"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/ix9ksx-GetImageContent2.jpg/alternates/LANDSCAPE_200/GetImageContent%5B2%5D.jpg" alt="Raul Hernandez says grandson Yordano Ventura 'had no fear'"> <span class="duration">1:03</span> </div> <div class="media-desc"> <h4 class="video-title">Raul Hernandez says grandson Yordano Ventura 'had no fear'</h4> </div> </div> <div class="mi-overlay-item" data-index="4"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/k6jg4a-GetImageContent1.jpg/alternates/LANDSCAPE_200/GetImageContent%5B1%5D.jpg" alt="Animated map of Yordano Ventura's route before crashing his Jeep"> <span class="duration">0:56</span> </div> <div class="media-desc"> <h4 class="video-title">Animated map of Yordano Ventura's route before crashing his Jeep</h4> </div> </div> <div class="mi-overlay-item" data-index="5"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/sports/mlb/kansas-city-royals/k9tepg-Yordano-Venturas-youth-coach-Miguel-Gomez-He-had-a-big-heart/alternates/LANDSCAPE_200/Yordano%20Ventura%27s%20youth%20coach%20Miguel%20Gomez%3A%20%27He%20had%20a%20big%20heart%27" alt="Yordano Ventura's youth coach Miguel Gomez: 'He had a big heart'"> <span class="duration">0:49</span> </div> <div class="media-desc"> <h4 class="video-title">Yordano Ventura's youth coach Miguel Gomez: 'He had a big heart'</h4> </div> </div> <div class="mi-overlay-item" data-index="6"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/yr0ks6-Ventura-DR-021517-JAT-351F.JPG/alternates/LANDSCAPE_200/Ventura%20DR%20021517%20JAT%20351F.JPG" alt="Marisol Hernandez remembers her son Yordano Ventura"> <span class="duration">0:31</span> </div> <div class="media-desc"> <h4 class="video-title">Marisol Hernandez remembers her son Yordano Ventura</h4> </div> </div> <div class="mi-overlay-item" data-index="7"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/s4lj6p-GetImageContent9.jpg/alternates/LANDSCAPE_200/GetImageContent%5B9%5D.jpg" alt="Childhood friend on the pressure Yordano Ventura felt after leaving hometown"> <span class="duration">1:12</span> </div> <div class="media-desc"> <h4 class="video-title">Childhood friend on the pressure Yordano Ventura felt after leaving hometown</h4> </div> </div> <div class="mi-overlay-item" data-index="8"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/kilxqt-analysiskey/alternates/LANDSCAPE_200/analysiskey" alt="Analysis: Kansas 67, Baylor 65"> <span class="duration">13:21</span> </div> <div class="media-desc"> <h4 class="video-title">Analysis: Kansas 67, Baylor 65</h4> </div> </div> <div class="mi-overlay-item" data-index="9"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.kansascity.com/latest-news/qp72fo-CainPerezBackswing022017.jpg/alternates/LANDSCAPE_200/CainPerezBackswing022017.jpg" alt="Royals catcher Salvador Perez gets hit by Lorenzo Cains backswing"> <span class="duration">0:40</span> </div> <div class="media-desc"> <h4 class="video-title">Royals catcher Salvador Perez gets hit by Lorenzo Cains backswing</h4> </div> </div> </div> </div> <div class="mi-video-share-wrap"> <span class="mi-video-close-share jw-icon jw-icon-close"></span> <h3 class="mi-video-overlay-title">Share Video</h3> <ul class="share-icons video"> <li class="embed"> <div class="form-group"> <label>Video link:</label> <input class="mi-share-link" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> <div class="form-group"> <label>Embed code:</label> <input class="overlay-embed-share" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> </li> <li class="facebook"> <a class="facebook-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> facebook </a> </li> <li class="twitter"> <a class="twitter-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> twitter </a> </li> <li class="email"> <a class="email-share" href=""> <span class="jw-icon jw-icon-email"></span> email </a> </li> </ul> </div> </div> </div> <div class="video-details"> <time class="published-date timeago hidden">9 hours ago</time> <h2 class="title video-title"> <a href="http://www.kansascity.com/news/politics-government/article133841034.html">Kansas girl appears on 'The Ellen DeGeneres Show' for Presidents Day</a> </h2> </div> </div> <div id="playlist-133841034-1487647761914"> <div class="mi-playlist-sidebar"> <a class="playlist-item" href="#0" data-index="0"> <div class="media posterframe-wrapper"> <img src="http://www.kansascity.com/news/local/tgx97y-ellen/alternates/LANDSCAPE_200/ellen" alt="Kansas girl appears on 'The Ellen DeGeneres Show' for Presidents Day"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">1:21</span> </div> <div class="media-desc"> <time class="published-date hidden">9 hours ago</time> <h4 class="title video-title">Kansas girl appears on 'The Ellen DeGeneres Show' for Presidents Day</h4> </div> </a> <a class="playlist-item" href="#1" data-index="1"> <div class="media posterframe-wrapper"> <img src="" alt="He has a new face, one that had belonged to another man"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">4:30</span> </div> <div class="media-desc"> <time class="published-date hidden">11 hours ago</time> <h4 class="title video-title">He has a new face, one that had belonged to another man</h4> </div> </a> <a class="playlist-item" href="#2" data-index="2"> <div class="media posterframe-wrapper"> <img src="http://www.kansascity.com/news/nation-world/national/oi9ae1-Screen_Shot_2017-02-19_at_2.54.01_PM.png/alternates/LANDSCAPE_200/Screen_Shot_2017-02-19_at_2.54.01_PM.png" alt="Sinkhole swallows two cars with passengers inside"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">1:09</span> </div> <div class="media-desc"> <time class="published-date hidden">12 hours ago</time> <h4 class="title video-title">Sinkhole swallows two cars with passengers inside</h4> </div> </a> </div> </div> </div> </div> <script type="text/javascript">
+if ( typeof allowAds === 'undefined' ) {
+var allowAds = true;
+}
+if ( typeof wpsConfig === 'undefined' ) {
+var wpsConfig = {
+baseUrl: '/wps/source/scripts/src',
+urlArgs: 'misv=2115a9c',
+paths: {
+'fastdom': '../libs/fastdom.min',
+'moment': '../libs/moment.min',
+'jwplayer': ['https://d12j9jiosu7f.cloudfront.net/jwplayer-7.8.7/jwplayer',
+'../libs/jwplayer'],
+'flickity': '../libs/flickity.pkgd.min'
+},
+waitSeconds: 0
+};
+var wpsRequire = requirejs.config(wpsConfig);
+}
+wpsRequire([ 'video' ], function ( video ) {
+return video({"id":"133841034","url":"http://www.kansascity.com/news/politics-government/article133841034.html","asset_type":"videoIngest","title":"Kansas girl appears on 'The Ellen DeGeneres Show' for Presidents Day","publication":"kansascity","home":"/web/v1/sections/2595","modified_date":1487638318,"published_date":1487615101,"credit":"The Kansas City Star","keywords":"Kansas, girl Macey, Hensley, cute, Ellen, show, Degeneres, president, expert, day, holiday, meet, Council Grove","dateline":"","thumbnail":"http://www.kansascity.com/news/local/tgx97y-ellen/alternates/LANDSCAPE_768/ellen","photographer":"Leah Becerra","duration":81,"media_id":"iVoJieTU","href":"/web/v1/content/133841034","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133841034%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=133841034&eid=133841034&pl="}],"byline":"","template_type":"","leadtext":[{"text":"At age 7, Macey Hensley from Council Grove, Kansas knows more about U.S. presidents than most people. She’s gotten to know things about the country’s newest president, too. This video includes footage from The Ellen DeGeneres Show and music by Kevin MacLeod \"Bit Quest\" / CC BY 3.0."}],"sources":[{"height":360,"mime_type":"video/mp4","mrid":"binary/2017/2/20/18/1437582013143-p5k4ma/Ellen 0220_1-1487616274233.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/18/1437582013143-p5k4ma/Ellen%200220_1-1487616274233.mp4","width":640},{"height":720,"mime_type":"video/mp4","mrid":"binary/2017/2/20/18/1437580321678-6bjrso/Ellen 0220_1-1487616274723.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/18/1437580321678-6bjrso/Ellen%200220_1-1487616274723.mp4","width":1280},{"height":0,"mime_type":"application/x-mpegURL","mrid":"binary/2017/2/20/18/art_133841034/Ellen_0220_1.m3u8","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/18/art_133841034/Ellen_0220_1.m3u8","width":0}],"videos":[{"id":"133841034","url":"http://www.kansascity.com/news/politics-government/article133841034.html","duration":"1:21","image":"http://www.kansascity.com/news/local/tgx97y-ellen/alternates/LANDSCAPE_768/ellen","title":"Kansas girl appears on 'The Ellen DeGeneres Show' for Presidents Day","description":"Kansas girl appears on 'The Ellen DeGeneres Show' for Presidents Day <span class=\"title-duration\">1:21</span>","displayDescription":"At age 7, Macey Hensley from Council Grove, Kansas knows more about U.S. presidents than most people. She’s gotten to know things about the country’s newest president, too. This video includes footage from The Ellen DeGeneres Show and music by Kevin MacLeod \"Bit Quest\" / CC BY 3.0.","videographer":"Leah Becerra","credit":"The Kansas City Star","published":1487615101,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/18/1437582013143-p5k4ma/Ellen%200220_1-1487616274233.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/18/1437580321678-6bjrso/Ellen%200220_1-1487616274723.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/18/art_133841034/Ellen_0220_1.m3u8"}],"mediaid":"iVoJieTU","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133841034%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=133841034&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133841034%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133813649","url":"http://www.kansascity.com/living/health-fitness/article133813649.html","duration":"4:30","title":"He has a new face, one that had belonged to another man","description":"He has a new face, one that had belonged to another man <span class=\"title-duration\">4:30</span>","displayDescription":"The first face transplant performed at Mayo Clinic is providing a man from Wyoming a second chance at a normal life after he was disfigured by a gunshot in a suicide attempt a decade ago. He now has the face of another man who took his own life.","videographer":"","credit":"AP, Mayo Clinic, Lilly Ross, Andy Sandness, LifeSource","published":1487607697,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/15/1437582013143-p5k4ma/20170217_AP_Facetransplant-1487607691341.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/15/1437580321678-6bjrso/20170217_AP_Facetransplant-1487607693344.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/15/art_133813649/20170217_AP_Facetransplant.m3u8"}],"mediaid":"zY76yXIP","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dhealth_fitness%26id%3D133813649%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FLifestyle%2FHealthMedFit&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=health_fitness&id=133813649&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dhealth_fitness%26id%3D133813649%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FLifestyle%2FHealthMedFit&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133809759","url":"http://www.kansascity.com/news/nation-world/national/article133809759.html","duration":"1:09","image":"http://www.kansascity.com/news/nation-world/national/oi9ae1-Screen_Shot_2017-02-19_at_2.54.01_PM.png/alternates/LANDSCAPE_768/Screen_Shot_2017-02-19_at_2.54.01_PM.png","title":"Sinkhole swallows two cars with passengers inside","description":"Sinkhole swallows two cars with passengers inside <span class=\"title-duration\">1:09</span>","displayDescription":"A massive sinkhole in the Studio City section of Los Angeles swallowed two vehicles as Southern California wrestled with a huge Pacific storm. The passengers of the two cars survived.","videographer":"","credit":"AP","published":1487604902,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/15/1437582013143-p5k4ma/sinkhole-1487604900276.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/15/1437580321678-6bjrso/sinkhole-1487604900871.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/20/15/art_133809759/sinkhole.m3u8"}],"mediaid":"KwcZqL08","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133809759%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=133809759&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133809759%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}}],"endscreen":[{"id":"133940439","url":"http://www.kansascity.com/news/politics-government/article133940439.html","duration":"1:08","image":"http://www.kansascity.com/latest-news/83gygo-TRUMP-PROTEST-0004-SLK-20170220F.JPG/alternates/LANDSCAPE_768/TRUMP%20PROTEST%200004%20SLK%2020170220F.JPG","title":"Hundreds protest Trump at ‘Not My President’ rally in Kansas City","description":"Hundreds protest Trump at ‘Not My President’ rally in Kansas City <span class=\"title-duration\">1:08</span>","displayDescription":"Hundreds of Kansas City residents protested President Donald Trump on Monday at a Not My President rally near the Country Club Plaza. The rally, like past events, became a lighting rod for a host of complaints about Trump and was organized by a local mother and daughter with a Facebook page.","videographer":"Shane Keyser","credit":"The Kansas City Star","published":1487641341,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/21/1/1437582013143-p5k4ma/43ea111f-3f38-4a68-b53b-02c37324b1a9-1487641338977.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/21/1/1437580321678-6bjrso/43ea111f-3f38-4a68-b53b-02c37324b1a9-1487641339407.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/21/1/art_133940439/43ea111f_3f38_4a68_b53b_02c37324b1a9.m3u8"}],"mediaid":"utqGvgMw","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133940439%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=133940439&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133940439%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133524784","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133524784.html","duration":"5:21","image":"http://www.kansascity.com/latest-news/uqnh8c-GetImageContent1.jpg/alternates/LANDSCAPE_768/GetImageContent%5B1%5D.jpg","title":"Retracing the fatal route driven by Yordano Ventura before his Jeep crash","description":"Retracing the fatal route driven by Yordano Ventura before his Jeep crash <span class=\"title-duration\">5:21</span>","displayDescription":"","videographer":"Jill Toyoshiba, Monty Davis and Neil Nakahodo","credit":"The Kansas City Star","published":1487458902,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/3/1437582013143-p5k4ma/Ventura%20drive%20final-1487467806583.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/3/1437580321678-6bjrso/Ventura%20drive%20final-1487467809483.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/3/art_133524784/Ventura_drive_final.m3u8"}],"mediaid":"Ifwrl6Z4","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133524784%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133524784&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133524784%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133482674","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133482674.html","duration":"2:51","image":"http://www.kansascity.com/latest-news/o6num6-GetImageContent5.jpg/alternates/LANDSCAPE_768/GetImageContent%5B5%5D.jpg","title":"Royals coach recalls challenges in developing Yordano Ventura and his final days ","description":"Royals coach recalls challenges in developing Yordano Ventura and his final days <span class=\"title-duration\">2:51</span>","displayDescription":"","videographer":"Jill Toyoshiba and Monty Davis","credit":"The Kansas City Star","published":1487461204,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/0/1437582013143-p5k4ma/1_Victor_Baez_02192017-1487468096133.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/0/1437580321678-6bjrso/1_Victor_Baez_02192017-1487468096725.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/0/art_133482674/1_Victor_Baez_02192017.m3u8"}],"mediaid":"0oRZU8j5","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133482674%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133482674&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133482674%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133481189","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133481189.html","duration":"1:03","image":"http://www.kansascity.com/latest-news/ix9ksx-GetImageContent2.jpg/alternates/LANDSCAPE_768/GetImageContent%5B2%5D.jpg","title":"Raul Hernandez says grandson Yordano Ventura 'had no fear'","description":"Raul Hernandez says grandson Yordano Ventura 'had no fear' <span class=\"title-duration\">1:03</span>","displayDescription":"","videographer":"Jill Toyoshiba and Monty Davis","credit":"The Kansas City Star","published":1487461921,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/0/1437582013143-p5k4ma/1_Raul_Hernandez_02192017-1487468515689.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/0/1437580321678-6bjrso/1_Raul_Hernandez_02192017-1487468516475.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/0/art_133481189/1_Raul_Hernandez_02192017.m3u8"}],"mediaid":"d5lRWIoz","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133481189%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133481189&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133481189%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133516669","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133516669.html","duration":"0:56","image":"http://www.kansascity.com/latest-news/k6jg4a-GetImageContent1.jpg/alternates/LANDSCAPE_768/GetImageContent%5B1%5D.jpg","title":"Animated map of Yordano Ventura's route before crashing his Jeep","description":"Animated map of Yordano Ventura's route before crashing his Jeep <span class=\"title-duration\">0:56</span>","displayDescription":"","videographer":"Neil Nakahodo ","credit":"The Kansas City Star","published":1487460661,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/2/1437582013143-p5k4ma/Yordano%20map%202-1487467969713.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/2/1437580321678-6bjrso/Yordano%20map%202-1487467970170.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/2/art_133516669/Yordano_map_2.m3u8"}],"mediaid":"AR7kl95s","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133516669%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133516669&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133516669%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133644794","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133644794.html","duration":"0:49","image":"http://www.kansascity.com/sports/mlb/kansas-city-royals/k9tepg-Yordano-Venturas-youth-coach-Miguel-Gomez-He-had-a-big-heart/alternates/LANDSCAPE_768/Yordano%20Ventura%27s%20youth%20coach%20Miguel%20Gomez%3A%20%27He%20had%20a%20big%20heart%27","title":"Yordano Ventura's youth coach Miguel Gomez: 'He had a big heart'","description":"Yordano Ventura's youth coach Miguel Gomez: 'He had a big heart' <span class=\"title-duration\">0:49</span>","displayDescription":"","videographer":"Monty Davis and Jill Toyoshiba","credit":"The Kansas City Star","published":1487467176,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/19/1/1437582013143-p5k4ma/1_Miguel_gomez_02192017-1487467585459.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/19/1/1437580321678-6bjrso/1_Miguel_gomez_02192017-1487467585853.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/19/1/art_133644794/1_Miguel_gomez_02192017.m3u8"}],"mediaid":"Wx9aoaoZ","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133644794%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133644794&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133644794%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133639054","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133639054.html","duration":"0:31","image":"http://www.kansascity.com/latest-news/yr0ks6-Ventura-DR-021517-JAT-351F.JPG/alternates/LANDSCAPE_768/Ventura%20DR%20021517%20JAT%20351F.JPG","title":"Marisol Hernandez remembers her son Yordano Ventura","description":"Marisol Hernandez remembers her son Yordano Ventura <span class=\"title-duration\">0:31</span>","displayDescription":"","videographer":"Jill Toyoshiba and Monty Davis","credit":"The Kansas City Star","published":1487466275,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/19/0/1437582013143-p5k4ma/1e72b2bb-20b5-4224-893f-8ab226a76400-1487467711331.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/19/0/1437580321678-6bjrso/1e72b2bb-20b5-4224-893f-8ab226a76400-1487467712094.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/19/0/art_133639054/1e72b2bb_20b5_4224_893f_8ab226a76400.m3u8"}],"mediaid":"fX1x0RtK","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133639054%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133639054&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133639054%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133505369","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133505369.html","duration":"1:12","image":"http://www.kansascity.com/latest-news/s4lj6p-GetImageContent9.jpg/alternates/LANDSCAPE_768/GetImageContent%5B9%5D.jpg","title":"Childhood friend on the pressure Yordano Ventura felt after leaving hometown","description":"Childhood friend on the pressure Yordano Ventura felt after leaving hometown <span class=\"title-duration\">1:12</span>","displayDescription":"","videographer":"Jill Toyoshiba and Monty Davis","credit":"The Kansas City Star","published":1487461518,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/1/1437582013143-p5k4ma/1_Abel_Padilla_02192017-1487468322887.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/1/1437580321678-6bjrso/1_Abel_Padilla_02192017-1487468323208.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/1/art_133505369/1_Abel_Padilla_02192017.m3u8"}],"mediaid":"pWLs7MxW","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133505369%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133505369&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133505369%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133617759","url":"http://www.kansascity.com/sports/college/big-12/university-of-kansas/article133617759.html","duration":"13:21","image":"http://www.kansascity.com/latest-news/kilxqt-analysiskey/alternates/LANDSCAPE_768/analysiskey","title":"Analysis: Kansas 67, Baylor 65","description":"Analysis: Kansas 67, Baylor 65 <span class=\"title-duration\">13:21</span>","displayDescription":"KU beat reporter Jesse Newell recapped the Jayhawks' road victory over Baylor on Feb. 18, 2017, on Facebook Live. ","videographer":"Jesse Newell","credit":"The Kansas City Star","published":1487457472,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/22/1437582013143-p5k4ma/10000000_1848147758787495_2799218396565078016_n-1487457459339.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/22/1437580321678-6bjrso/10000000_1848147758787495_2799218396565078016_n-1487457461750.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/18/22/art_133617759/10000000_1848147758787495_2799218396565078016_n.m3u8"}],"mediaid":"PdZMFqdL","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Duniversity_of_kansas%26id%3D133617759%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FCollege%2FCollege&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=university_of_kansas&id=133617759&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Duniversity_of_kansas%26id%3D133617759%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FCollege%2FCollege&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133934549","url":"http://www.kansascity.com/sports/mlb/kansas-city-royals/article133934549.html","duration":"0:40","image":"http://www.kansascity.com/latest-news/qp72fo-CainPerezBackswing022017.jpg/alternates/LANDSCAPE_768/CainPerezBackswing022017.jpg","title":"Royals catcher Salvador Perez gets hit by Lorenzo Cains backswing","description":"Royals catcher Salvador Perez gets hit by Lorenzo Cains backswing <span class=\"title-duration\">0:40</span>","displayDescription":"While taking part in live pitching at spring training on Monday, Kansas City Royals Lorenzo Cain clipped catcher Salvador Perez on the helmet with his backswing.","videographer":"John Sleezer","credit":"The Kansas City Star","published":1487638696,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/21/0/1437582013143-p5k4ma/2a4e4d09-d5b9-440f-b381-052c9db797cc-1487638695232.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/21/0/1437580321678-6bjrso/2a4e4d09-d5b9-440f-b381-052c9db797cc-1487638695865.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/21/0/art_133934549/2a4e4d09_d5b9_440f_b381_052c9db797cc.m3u8"}],"mediaid":"bWnejylG","ads":[{"publication":"kansascity","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133934549%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=kansas_city_royals&id=133934549&eid=133841034&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dkansas_city_royals%26id%3D133934549%26eid%3D133841034%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FKCM.site_kansascity%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}}],"pageType":"detail-page"}, {"wpsInclude":true,"wpsArea":"side_bar","autoPlay":false,"pubName":"kansascity","embed":false,"cacheBust":"2115a9c","iterator":1,"uniqueID":"133841034-1487647761914","paywallEnabled":true,"baseTemplate":"video"});
+});
+</script> </div>
+</div>
+</section>
+<div class="clearfix footer element_spacing_large">
+<p class="readmore">
+<a href="http://www.kansascity.com/video/">
+View more video
+</a>
+</p>
+</div>
+</div>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-10" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="c"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div id="market-widget-1"
+class="element-spacing-medium">
+</div>
+<div class="element-spacing-medium">
+<!--
+Widget ID: Feature Master with title feature master more stories:
+Referenced feature mi.masterConfig.moreStories, which was empty. Attempting fall-back value.
+-->
+<section id="more-stories-widget"
+class="headline-list element_spacing_large">
+<h1 class="heading link">
+<a href="http://www.kansascity.com/news/nation-world/">
+Nation & World
+</a>
+</h1>
+<article class="politics_government media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.kansascity.com/news/politics-government/article133869489.html#wgt=trending">
+McMaster, new NSA, known as intellectual warrior not afraid to challenge authority
+</a>
+</h2>
+</div>
+</article>
+<article class="immigration_refugees media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.kansascity.com/news/nation-world/immigration-refugees/article133926214.html#wgt=trending">
+Trump lawyers battling over how far they can go in new travel ban for 7 Muslim nations
+</a>
+</h2>
+</div>
+</article>
+<article class="health_fitness media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.kansascity.com/living/health-fitness/article133814744.html#wgt=trending">
+Teen suicide attempts fell as same-sex marriage became legal
+</a>
+</h2>
+</div>
+</article>
+<article class="politics_government media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.kansascity.com/news/politics-government/article133911144.html#wgt=trending">
+Publisher cancels Milo Yiannopoulos book 'Dangerous'
+</a>
+</h2>
+</div>
+</article>
+<article class="national media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.kansascity.com/news/nation-world/national/article133848359.html#wgt=trending">
+Police say newly freed gang member killed California officer
+</a>
+</h2>
+</div>
+</article>
+</section>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-11" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="e"
+defaultsize="Large"
+Small = "300x250"
+Medium = "Flex Ad"
+Extra-Small = "None"
+Large = "Flex Ad"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+<section class="element_spacing_large ndn">
+<script async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+<h1 class="heading">Nation & World Videos</h1>
+<div class="center-block ndn_embed text-center" data-config-widget-id="18140" data-config-type="VideoLauncher/Slider300x250" data-config-tracking-group="90470"></div>
+<script async type="text/javascript">var _informq = _informq || []; _informq.push(['embed']);</script>
+</section>
+</div>
+<div >
+</div>
+<!--
+Widget ID: Feature Master with title feature master extra ads story:
+Referenced feature mi.masterConfig.extraAdsStory, which was empty. Attempting fall-back value.
+-->
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-12" adtype="default" data-ad-policy="onPageLoad" atf="n"
+oom="y"
+pkg="None"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-13" adtype="default" data-ad-policy="onPageLoad" atf="n"
+oom="y"
+pkg="None"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="131225894"
+></div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/*
+look for elements with classes in the format of
+reorder_<id of target container element>_<position>
+e.g. reorder_story-target_3 would be moved after
+the 3rd child element of #story-target.
+If there aren't enough child elements,
+(e.g., targeting the 7th element of a 4-paragraph story)
+jQuery won't move it.
+*/
+var $document = $document || $(document);
+var reorderRegEx = /\breorder_([a-z0-9\-]+)_(\d+)/;
+var reorderFunc = function ( index, element ) {
+var classes = element.className;
+var parts = reorderRegEx.exec(classes);
+$(document.getElementById(parts[1])).find('>div>:nth-child(' + parts[2] + ')').after(element);
+};
+$('.reorder').each(reorderFunc);
+$document.ready(function () {
+// And now actually show the related content, if we should.
+// Except this actually hides it if we should. ¯\_(ツ)_/¯
+if ( $("#related-gallery").children().length == 0 ) {
+$("#related-gallery").hide();
+} });
+</script>
+<script type="text/javascript">
+var $window = $window || $(window);
+var $document = $document || $(document);
+var isSticky = false;
+$document.ready(function() {
+var $shareTools = $('.share-tools-wrapper');
+var $commentingContainer = $(document.getElementById("commenting-container"));
+var $storyBody = $(document.getElementById("story-body-items"));
+var stickyTools = function () {
+var scrollTop = $window.scrollTop(),
+storyBodyTop = $storyBody.offset().top - 50,
+commentingTop = $commentingContainer.offset().top;
+/* Check if user scrolls to the share tools but grab it 50px early
+* to accommodate the top: 50px CSS once sticky'd (this eliminates
+* the slight jump in the beginning).
+*/
+if ( isSticky === false && scrollTop > storyBodyTop && scrollTop < commentingTop ) {
+isSticky = true;
+return $shareTools.toggleClass('sticky-tools');
+}
+if ( isSticky === true && ( scrollTop >= commentingTop || scrollTop < storyBodyTop ) ) {
+isSticky = false;
+return $shareTools.toggleClass('sticky-tools'); }
+};
+stickyTools();
+$window.on("scroll", stickyTools);
+//Story Numberlines
+var rearrangeHighline = function() {
+var $this = $(this);
+var $leadIn = $this.find('.ng_number_leadin').detach();
+$this.wrapInner('<span></span>');
+$this.prepend($leadIn);
+};
+$('.highline-number').find('p').each(rearrangeHighline);
+});
+</script>
+</section>
+<div class="container " >
+<div class="ad ad-sense">
+<div>
+<div class="ad-widget" id="div-gpt-ad-14" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="m"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "300x250"
+Large = "300x250"
+articleId="131225894"
+></div>
+</div>
+</div>
+</div>
+<footer class=" " >
+<div class="container">
+<div class="ad">
+<div>
+<div class="ad-widget" id="div-gpt-ad-15" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="None"
+defaultsize="Large"
+Small = "728x90"
+Medium = "728x90"
+Extra-Small = "300x250"
+Large = "728x90"
+articleId="131225894"
+></div>
+</div>
+</div>
+</div>
+<div id="footer"
+>
+<header id="footer-logo"
+>
+<div class="container text-center">
+<a href="http://www.kansascity.com/" target="_top"><img src="http://www.kansascity.com/static/images/kansascity/logo-sm.png" alt="The Kansas City Star | KansasCity.com" class="img-responsive"></a>
+</div>
+</header>
+<div class="container hidden-xs">
+<div class="row " >
+<div class="col-sm-12 ">
+<div id="footer-columns"
+>
+<div class="row " id="footer-menu-columns">
+<div class="col-sm-3 footer-column border-right border-xs-remove-right">
+<h2 class="heading">
+<a href="http://#collapseOne">
+Subscriptions
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="http://kcsoffers.com/#navlink=mi_footer">
+Digital Subscriptions
+</a>
+</li>
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-cst-01.sh/custservice/web/login.html?siteid=KCM#navlink=customer-service" target="_blank">
+Home Delivery
+</a>
+</li>
+<li>
+<a href="/site-services/e-edition/#navlink=mi_footer">
+E-Star
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column border-lg-right">
+<h2 class="heading">
+<a href="http://#collapseTwo">
+Site Information
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="/customer-service/#navlink=mi_footer">
+Customer Service
+</a>
+</li>
+<li>
+<a href="/customer-service/about-us/#navlink=mi_footer">
+About Us
+</a>
+</li>
+<li>
+<a href="/customer-service/contact-us/#navlink=mi_footer">
+Contact Us
+</a>
+</li>
+<li>
+<a href="http://www.kcstarsie.com/">
+Newspapers in Education
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column border-right border-xs-remove-right">
+<h2 class="heading">
+<a href="http://#collapseThree">
+Social, Mobile & More
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="http://www.facebook.com/kansascitystar" target="_blank">
+Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/KCStar" target="_blank">
+Twitter
+</a>
+</li>
+<li>
+<a href="http://www.kansascity.com/mobile/" target="_blank">
+Mobile apps and E-Star
+</a>
+</li>
+<li>
+<a href="http://2save.mobi/go/site/offer/signup.jsp?code=74" target="_blank">
+Mobile Alerts
+</a>
+</li>
+<li>
+<a href="/site-services/newsletters/newsletter-signups/#navlink=mi_footer">
+Newsletters
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column">
+<h2 class="heading">
+<a href="http://#collapseFour">
+Advertising
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="http://www.kcstaradvertising.com" target="_blank">
+Advertising information
+</a>
+</li>
+<li>
+<a href="http://www.kcstaradvertising.com/display" target="_blank">
+Print
+</a>
+</li>
+<li>
+<a href="http://www.kcstaradvertising.com/kansascitycom" target="_blank">
+Digital
+</a>
+</li>
+<li>
+<a href="http://kansascitystar.adperfect.com" target="_blank">
+Place a Classified
+</a>
+</li>
+<li>
+<a href="http://kansascity.dealsaver.com/#navlink=mi_footer" target="_blank">
+Local Deals
+</a>
+</li>
+<li>
+<a href="http://findnsave.kansascity.com/#navlink=mi_footer" target="_blank">
+Shopping
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row " id="footer-legal">
+<ul class=" footer-menu-legal">
+<li>
+<a href="/site-services/legal/copyright/#navlinks=footer" target="_top">
+Copyright
+</a>
+</li>
+<li>
+<a href="/site-services/legal/commenting-policy/#navlinks=footer" target="_top">
+Commenting Policy
+</a>
+</li>
+<li>
+<a href="/site-services/legal/privacy-policy/#navlink=mi_footer" target="_top">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/site-services/legal/terms-of-service/#navlink=mi_footer" target="_top">
+Terms of Service
+</a>
+</li>
+</ul>
+<script>
+jQuery('#footer #footer-columns .heading > a').each(function(){ $(this).attr('href',$(this).attr('href').split('//')[1]);})
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordion"
+class="visible-xs panel-group">
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseOne">
+Subscriptions
+</a>
+</h2>
+</div>
+<div id="collapseOne"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="http://kcsoffers.com/#navlink=mi_footer">
+Digital Subscriptions
+</a>
+</li>
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-cst-01.sh/custservice/web/login.html?siteid=KCM#navlink=customer-service" target="_blank">
+Home Delivery
+</a>
+</li>
+<li>
+<a href="/site-services/e-edition/#navlink=mi_footer">
+E-Star
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseTwo">
+Site Information
+</a>
+</h2>
+</div>
+<div id="collapseTwo"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="/customer-service/#navlink=mi_footer">
+Customer Service
+</a>
+</li>
+<li>
+<a href="/customer-service/about-us/#navlink=mi_footer">
+About Us
+</a>
+</li>
+<li>
+<a href="/customer-service/contact-us/#navlink=mi_footer">
+Contact Us
+</a>
+</li>
+<li>
+<a href="http://www.kcstarsie.com/">
+Newspapers in Education
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseThree">
+Social, Mobile & More
+</a>
+</h2>
+</div>
+<div id="collapseThree"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="http://www.facebook.com/kansascitystar" target="_blank">
+Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/KCStar" target="_blank">
+Twitter
+</a>
+</li>
+<li>
+<a href="http://www.kansascity.com/mobile/" target="_blank">
+Mobile apps and E-Star
+</a>
+</li>
+<li>
+<a href="http://2save.mobi/go/site/offer/signup.jsp?code=74" target="_blank">
+Mobile Alerts
+</a>
+</li>
+<li>
+<a href="/site-services/newsletters/newsletter-signups/#navlink=mi_footer">
+Newsletters
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseFour">
+Advertising
+</a>
+</h2>
+</div>
+<div id="collapseFour"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="http://www.kcstaradvertising.com" target="_blank">
+Advertising information
+</a>
+</li>
+<li>
+<a href="http://www.kcstaradvertising.com/display" target="_blank">
+Print
+</a>
+</li>
+<li>
+<a href="http://www.kcstaradvertising.com/kansascitycom" target="_blank">
+Digital
+</a>
+</li>
+<li>
+<a href="http://kansascitystar.adperfect.com" target="_blank">
+Place a Classified
+</a>
+</li>
+<li>
+<a href="http://kansascity.dealsaver.com/#navlink=mi_footer" target="_blank">
+Local Deals
+</a>
+</li>
+<li>
+<a href="http://findnsave.kansascity.com/#navlink=mi_footer" target="_blank">
+Shopping
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseFive">
+More
+</a>
+</h2>
+</div>
+<div id="collapseFive"
+class="panel-collapse collapse">
+<div class="panel-body">
+<script>
+jQuery('#footer #accordion .heading > a').attr({'data-toggle':'collapse','data-parent':'#accordion'}).each(function(){ $(this).attr('href',$(this).attr('href').split('//')[1]);})
+</script>
+<ul class=" footer-menu-legal">
+<li>
+<a href="/site-services/legal/copyright/#navlinks=footer" target="_top">
+Copyright
+</a>
+</li>
+<li>
+<a href="/site-services/legal/commenting-policy/#navlinks=footer" target="_top">
+Commenting Policy
+</a>
+</li>
+<li>
+<a href="/site-services/legal/privacy-policy/#navlink=mi_footer" target="_top">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/site-services/legal/terms-of-service/#navlink=mi_footer" target="_top">
+Terms of Service
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968074018;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/968074018/?value=0&guid=ON&script=0"/>
+</div>
+</noscript>
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-16" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="a"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x75"
+Large = "None"
+articleId="131225894"
+></div>
+</div>
+</div>
+<div id="floorboard"
+class="hidden-xs">
+<div>
+<div id="floorboard_outer">
+<div id="floorTagWrapper" style="display:none;">
+<div class="ad-widget" id="div-gpt-ad-17" adtype="floorboard" atf="y" pkg="a"
+defaultsize="Large" data-ad-policy="onPageLoad"
+Small='285x70'
+Medium='285x70'
+Extra-Small='None'
+Large='285x70'
+articleId='131225894'
+></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- Render Footer from Escenic or WPS based on switch-->
+<script type="text/javascript">
+/* Front end properties configured in nursery */
+var FrontEndConfig = {"media.jwplayer.script.location":"http://static.mcclatchyinteractive.com/escenic/jwplayer-7.1.4/jwplayer.js","media.jwplayer.hls.mimeTypes":"vnd.apple.mpegURL,application/x-mpegURL","audioPlayer":"mediaelement","media.jwplayer.sharing.enabled":"true","videoPlayer":"jwplayer","media.jwplayer.options.primary":"html5","media.jwplayer.ga.enabled":"true ","media.jwplayer.hls.enabled":"true","media.jwplayer.key":"tTakaWDwaA/5t6sLfLhYBB4EfEa1ETrJDYnTPw=="};
+if (typeof(FrontEndConfig) == 'undefined') {
+FrontEndConfig = {};
+}
+FrontEndConfig.rootURL = "http://www.kansascity.com/";
+/* Client-side device detection */
+var WFClientTypeDef = {"extraSmall":"(max-width: 767px)","medium":"(min-width: 992px) and (max-width: 1199px)","large":"(min-width: 1200px)","small":"(min-width: 768px) and (max-width: 991px)"};
+var imageSizes = [80, 160, 200, 320, 400, 480, 560, 640, 720, 768, 960, 1080, 1140];
+$(function(){
+$.each(FrontEndConfig, function(key, value) {
+/* Regular properties other than JW Player setup options
+are being processed here */
+if (key.indexOf('media.jwplayer.options') < 0) {
+FrontEndConfig[key] = WFUtils.parseStringToJSONObject(value);
+}
+});
+});
+</script>
+<script type="text/javascript"
+src="http://www.kansascity.com/static/js/wps-wf-site-1.0.99-235b3bc-min.js"></script>
+<script type="text/javascript" >
+mi_Ads.env.init();
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var clientDT = new Date().getTime();
+document.write('<img style="display:none;" src="http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&ctxId=2628&contextPath=2414-2579-2628-&pubId=4&cat=&meta=read-wirestory&objId=131225894&type=article&title=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator&url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html&amp;clientDT=' + clientDT + '" alt="" width="1" height="1"/>');
+//]]>
+</script>
+<noscript>
+<div>
+<img src="http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=2628&amp;contextPath=2414-2579-2628-&amp;pubId=4&amp;cat=&amp;meta=read-wirestory&amp;objId=131225894&amp;type=article&amp;title=Falcons+hire+Steve+Sarkisian+as+new+offensive+coordinator&amp;url=http%3a%2f%2fwww.kansascity.com%2fnews%2fnation-world%2farticle131225894.html" alt="one pixel graphics" width="1" height="1"/>
+</div>
+</noscript>
+<script>
+var trackerConfig = null;
+if (typeof {} != 'object') {
+trackerConfig = '{}';
+trackerSend = 'send';
+}
+else {
+trackerConfig = {};
+if (!trackerConfig.hasOwnProperty('name')) {
+trackerConfig.name = 'wf';
+}
+trackerSend = trackerConfig.name + '.send';
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3858463-15', trackerConfig);
+ga(trackerSend, 'pageview');
+</script>
+<script type="text/javascript">
+/*Device width fix for Windows Phone 8 and IE 10*/
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+</script>
+<script type="text/javascript">
+mi.pageInfo.setConf("chartbeat.uid", 62447);
+</script>
+<div id="mistatstag" style="display:none;">
+<script type="text/javascript" src="http://media.kansascity.com/mistats/products/escenic_s_code.js"></script>
+<script type="text/javascript" src="http://media.kansascity.com/mistats/products/escenic.js"></script>
+<script type="text/javascript" src="http://media.kansascity.com/mistats/finalizestats.js"></script>
+</div>
+<!-- Lotame Tracking Tag -->
+<script src="http://tags.crwdcntrl.net/c/7440/cc.js?ns=_cc7440" id="LOTCC_7440"></script>
+<script>_cc7440.bcp();</script>
+</body>
+</html>

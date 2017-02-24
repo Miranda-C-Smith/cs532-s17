@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="BIGO LIVE ，broadcast , live ,fashion">
+    <meta name="keywords" content="BIGO LIVE ，broadcast , live ,fashion">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-itunes-app" content="app-id=" />
+    <link rel="apple-touar-icon" sizes="114x114" href="" />
+    <title>BIGO LIVE</title>
+    <!-- 自定义样式 start -->
+    <link href="https://mobile.bigo.tv/assets/live/v1.1/css/pc.css" rel="stylesheet">
+    <!-- 自定义样式 end -->
+</head>
+<body>
+<div class="header">
+    <h1 class="logo"><a href="https://www.bigo.tv/index_pc.html">BIGO LIVE</a></h1>
+    <div class="app-group">
+        <div class="tips-group">
+            <span class="btn-app">Get the App</span>
+            <div class="tips-download">
+                <ul class="app-list">
+                    <li><a target="_blank" href="https://itunes.apple.com/app/id1077137248" class="ios"></a> </li>
+                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=sg.bigo.live" class="android"></a> </li>
+                </ul>
+                <div class="qr">
+                    <img src="https://mobile.bigo.tv/assets/live/img/download.png" alt="BIGO LIVE"/>
+                    <p>Scan QR to download</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="main">
+        <div class="live-container">
+            <div class="cover">
+                <h1>Live Ended</h1>
+                <div class="live-time">
+                    <i class="icon-time"></i>
+                    <span class="timer"></span>
+                </div>
+
+                <div class="profile-icon">
+                    <img class="end-pic" src="https://mobile.bigo.tv/assets/live/img/bigo.png"/>
+                    <!--<span class="icon-verify"></span>-->
+                </div>
+                <h3 class="end-name"></h3>
+
+                <div class="room-data">
+                    <div class="room-view">
+                        <span class="num"></span>
+                        <span class="name">VIEWERS</span>
+                    </div>
+
+                    <!--<div class="room-hearts">-->
+                    <!--<span class="num"></span>-->
+                    <!--<span class="name">HEARTS</span>-->
+                    <!--</div>-->
+                </div>
+                <div class="hot-group">
+                    <div class="hot-hd">
+                        <h3>Hot Live</h3>
+                    </div>
+                    <div class="hot-wrap">
+                        <ul class="hot-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slogan"></div>
+        </div>
+    </div>
+    <script src="https://mobile.bigo.tv/assets/live/v1.1/js/jquery-1.10.2.min.js"></script>
+    <script src="https://mobile.bigo.tv/assets/live/v1.1/js/hot.js"></script>
+    <script src="https://mobile.bigo.tv/assets/live/v1.1/js/end.js"></script>
+    <script src="https://mobile.bigo.tv/assets/live/v1.1/js/jquery.bxslider.js"></script>
+    <script>
+        (function(){
+            $(".tips-group").hover(function(){
+                $(".tips-download").fadeIn("fast");
+            },function(){
+                $(".tips-download").fadeOut("fast");
+            });
+
+            var slideWidth =$('.live-container').width();
+            $('.bx-viewport').width(slideWidth);
+
+        })()
+    </script>
+</body>
+</html>

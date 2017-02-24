@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>タ○タルーレットキャンペーン | McDonald's</title>
+<meta name="keywords" content="マクドナルド,キャンペーン,タツタ,タルタ">
+<meta name="description" content="タツタが先か？タルタが先か？タ○タルーレットキャンペーン リツイート×アカウントフォローでマックカード2,000円分が100名に当たる！">
+<link rel="canonical" href="http://w.mdj.jp/hakt">
+<meta property="og:title" content="タ○タルーレットキャンペーン | McDonald's">
+<meta property="og:description" content="タツタが先か？タルタが先か？タ○タルーレットキャンペーン リツイート×アカウントフォローでマックカード2,000円分が100名に当たる！">
+<meta property="og:image" content="http://img.mcdonalds.co.jp/sp/chickentatsuta/cmp/ogimage.jpg">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://img.mcdonalds.co.jp/sp/chickentatsuta/cmp/">
+<meta property="og:site_name" content="Welcome to McDonald's Japan">
+<link rel="stylesheet" type="text/css" href="http://img.mcdonalds.co.jp/common/css/cmn_layout.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://img.mcdonalds.co.jp/common/css/cmn_style.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+<script type="text/javascript" src="http://img.mcdonalds.co.jp/common/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://img.mcdonalds.co.jp/common/js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="http://img.mcdonalds.co.jp/common/js/google_pulus.js"></script>
+<script type="text/javascript" src="http://img.mcdonalds.co.jp/common/js/common.js"></script>
+<script type="text/javascript" src="js/chickentatsuta.js"></script>
+<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+  var uA = window.navigator.userAgent;
+  var cUrl = window.location.href;
+  var pMeter = window.location.search; // 追加
+  var anchor = window.location.hash; // 追加
+  if (cUrl.indexOf('co.jp') != -1 || cUrl.indexOf('mdj.jp') != -1) {
+    if (uA.indexOf('Android') > 0 || uA.indexOf('A1_07') > 0 || uA.indexOf('SC-01C') > 0) {
+      // Android
+    } else if (uA.indexOf('iPhone') > 0 || uA.indexOf('iPad') > 0 || uA.indexOf('iPod') > 0) {
+      // iOS
+    } else {
+      // PC
+      location.href = 'http://www.mcdonalds.co.jp/campaign/chickentatsuta/cmp/index.html' + pMeter + anchor; // 追加
+    }
+  };
+});
+</script>
+<script type="text/javascript">
+// クリカブルマップズレ対応
+	$(function(){
+	  $('img[usemap]').rwdImageMaps();
+	});
+</script>
+</head>
+<body id="gDef">
+  <div id="wrapper">
+    <header id="header">
+      <div class="headerTop">
+        <h1>
+          <a href="http://sp.mdj.jp/">
+            <img src="/common/images/header/logo01.png" width="44" height="31" alt="I'm lovin' it">
+          </a>
+        </h1>
+        <a href="#sideMenu" class="btn_all">
+          <img src="/common/images/header/btn_side_menu01.png" width="19" height="16" alt="">
+        </a>
+      </div>
+      <nav id="gNavi">
+      </nav>
+    </header>
+
+	<div id="wrapperIn"><!-- コンテンツここから -->
+
+
+		<div id="main-area">
+
+			<div class="main_img">
+				<img src="./img/tatsuta_main01.jpg" alt="期間限定　タツタが先か？タルタが先か？　名作チキンタツタ　新作チキンタルタ">
+			</div>
+            
+			<!-- ルーレット関連ここから -->
+                       
+			<div class="main_img clearfix">              
+                <table>
+                    <tr>
+                    <td><a onclick="showimg1()"><img src="./img/roulette_left.gif" id="rlt_start00" alt="タツタが先か？タルタが先か？ タ○タルーレット
+                悩めるあなたのために、ルーレットをご用意いたしました。
+                スタートボタンをクリックすると、タツタとタルタ、どちらを先に食べるべきかをルーレットが教えてくれます。
+                是非お試しください。" border="0"></a><img src="./img/roulette_left02.gif" id="rlt_start01" alt="タツタが先か？タルタが先か？ タ○タルーレット
+                悩めるあなたのために、ルーレットをご用意いたしました。
+                スタートボタンをクリックすると、タツタとタルタ、どちらを先に食べるべきかをルーレットが教えてくれます。
+                是非お試しください。" border="0"></td>
+                    <td><a onclick="showimg1()"><img src="./img/roulette00c.gif" id="rlt00" alt="○"></a><img src="./img/roulette01c.gif" id="rlt01" alt=""><a onclick="showimg1()"><img src="./img/roulette02c.gif" id="rlt02" alt="ツ"><img src="./img/roulette03c.gif" id="rlt03" alt="ル"></a></td>
+                  </tr>
+                </table>
+                <map name="Map2">
+					<area shape="rect" coords="87,247,236,294" onclick="showimg1()">
+				</map>
+			</div>
+            
+            <!-- ルーレット関連ここまで -->
+            
+			<div class="clsd">
+				<img src="./img/closed01.png"alt="終了しました">
+			</div>
+            
+			<div class="main_img half_tone">
+				<img src="./img/tatsuta_sub01.gif"alt="タ○タルーレットキャンペーン
+                リツイート×アカウントフォローでマックカード2,000円分が100名に当たる！
+                タツタ？タルタ？それともアタッタ？？？
+マクドナルド公式Twitterアカウント（＠McdonaldsJapan）に投稿された" border="0" usemap="#Map3"タ○タルーレット"のツイート（#タツタかタルタか）を公式リツイートすると、マクドナルドのキャンペーン返信用アカウント（@Love_McD）より、ルーレットの結果が@返信で届きます。「アタッタヨ」がでたらマックカードプレゼント！チキンタツタ、チキンタルタの発売まで１日１回挑戦可能！">
+                <map name="Map3">
+                  <area shape="rect" coords="290,172,443,192" href="http://twitter.com/mcdonaldsJapan" target="_blank">
+                </map>
+			</div>
+                       
+			<div class="main_img half_tone">
+				<img src="./img/tatsuta_sub02.gif" alt="●参加方法　キャンペーン期間：2017年2月3日（金）11：00～2月7日（火）23:59
+                STEP1　Twitterでマクドナルド公式Twitterアカウント（@McDonaldsJapan）をフォロー
+                STEP2　@McDonaldsJapanが投稿する、「#タツタかタルタか」ハッシュタグが付いた投稿のどれかを公式リツイート。
+                公式リツイートいただいた方の中から抽選で、マックカード2,000 円分を100名様にプレゼント" border="0" usemap="#Map">
+                <map name="Map">
+                  <area shape="rect" coords="177,186,371,206" href="http://twitter.com/mcdonaldsJapan" target="_blank">
+                  <area shape="rect" coords="87,319,263,341" href="http://twitter.com/mcdonaldsJapan" target="_blank">
+                </map>
+			</div>
+            
+			<div class="main_right half_tone">
+				<a href="#gDef">ページトップへ </a>
+			</div>
+            
+			<dl class="r_text half_tone">
+				<dt><img src="./img/tatsuta_title01.gif" alt="●応募資格・条件"></dt>
+				<dd>・Twitterアカウントをお持ちであること。 <br> 
+					・Twitterアカウント「<a href="http://twitter.com/mcdonaldsJapan" target="_blank">@McDonaldsJapan</a>」をフォローしていること。 <br> 
+					※キャンペーン対象ツイートをリツイートする前に「<a href="http://twitter.com/mcdonaldsJapan" target="_blank">@McDonaldsJapan</a>」をフォローしてください。リツイート後のフォローの場合、当選時のダイレクトメッセージが届かないため、当選権利が無効となります。<br> 
+					・キャンペーンハッシュタグ（#タツタかタルタか）が付いた投稿を１つ以上ツイッターで公式リツイートすること。<br> 
+					・フィーチャーフォンでの応募はできません。<br>  
+                    ※13歳以下は保護者の方がご応募ください。<br> 
+                    ※ご応募はTwitterからのみとなります。郵送によるご応募は受け付けておりません。<br> 
+                    ※Twitterアカウントをお持ちでない方は、Twitterサイト（<a href="http://twitter.com" target="_blank">http://twitter.com</a>）にてアカウントを取得してください。<br> 
+                    ※ご応募は、日本国内にお住まいの方に限らせていただきます。<br> 
+                    ※日本マクドナルド社員、アルバイト、および関係者は応募できません。</dd>
+			</dl>
+            
+			<dl class="r_text half_tone">
+				<dt class="h30"><img src="./img/tatsuta_title02.gif" alt="●抽選・当選発表について"></dt>
+                <dd>・ご応募いただいた方の中から、厳正なる抽選の上、当選者を決定いたします。当選者へは、当選後3日以内にTwitterのダイレクトメッセージにてご連絡いたします。<br>
+                    ・キャンペーン終了から5日以内にご返答いただけない場合は、当選を辞退されたものとさせていただきます。<br>
+                    ・当選された方へのマックカードの発送は2月中旬を予定しております。<br>
+                    ・以下の場合、ご応募は無効となりますのでご注意ください。<br>
+                    (1)キャンペーン期間中および当選通知までに「<a href="http://twitter.com/mcdonaldsJapan" target="_blank">@McDonaldsJapan</a>」のTwitterアカウントのフォローをはずしている場合<br>
+                    (2)応募ツイートを削除されていた場合<br>
+                    (3)アカウントを非公開にされている場合<br>
+                    (4)Twitterを退会されていた場合<br>
+                    (5)ツイート内に指定のハッシュタグがない場合<br>
+                    ・抽選は、運営事務局が行います。<br>
+                    ・当選や抽選の基準についてはお答えできませんのでご了承ください。<br>
+                    ・同時期に開催されている他のキャンペーンとは重複して当選できない場合があります。<br>
+                    ・応募は１日1回、最大5回応募が可能となります。<br>
+                    ・当選はお１人様１回限りになります。</dd>
+			</dl>
+            
+			<dl class="r_text half_tone">
+				<dt class="h30"><img src="./img/tatsuta_title03.gif" alt="●その他の注意事項"></dt>                
+				<dd>本キャンペーンに応募される方は、必ず以下をお読みいただき、ご同意の上でご応募ください。ご応募いただいた方は、本規約に同意いただいたものとさせていただきます。<br>
+                    ・本キャペーンの当選に関して、本キャンペーン運営事務局からご連絡をさせていただく場合がございます。<br>
+                    ・適切な運用を行うために運営事務局が必要と判断した場合に限り、本キャンペーンの応募条件変更などの対応をとることができるものとさせていただきます。<br>
+                    ・通信機器、通信回線、Twitterのシステム障害、瑕疵等により本キャンペーンの提供が中断もしくは遅延し、または誤送信もしくは欠陥が生じた場合の応募者が被った損害について、日本マクドナルドはその責任を負わないものとします。<br>
+                    ・サイトの利用、利用停止もしくは利用が不能になったことによる損害（Twitter等、各種Webサービスのサーバダウン等による損害も含みます。）について、日本マクドナルドはその責任を負わないものとします。<br>
+                    ・Twitterのルールとポリシーに反する不正なアカウント（架空のアカウント取得、他者へのなりすまし、複数のアカウントの所持など）を利用して応募があった場合、運営事務局の判断により当該アカウントからの応募を無効とさせていただく場合がございます。<br>
+                    ・応募者は、ユーザーアカウント(Twitter ID)を管理する責任を負うものとします。<br>
+                    ・応募者が、有償無償を問わず、ユーザーアカウント(Twitter ID)を第三者に譲渡・貸与・質入れし、または利用することを禁じます。<br>
+                    ・当選のご連絡を受けた場合であっても、本規約にご了承頂けない場合や本規約の規定に違反する場合などは、当選を無効とする場合がございます。<br>
+                    ・キャンペーン内容は予告なく変更させていただく場合がございます。<br>
+                    ・対象ツイートを公式リツイートしていただくと、返信は1時間以内に届く予定です。ただし、技術的な問題等で返信が遅れる場合もございます。予めご了承いただけますようお願いいたします。<br><br>
+
+                    個人情報の取り扱いについて<br>
+                    当選されたお客様からご提供いただいた個人情報は、賞品の発送にのみ利用します。<br>
+                    その他の利用目的については日本マクドナルドグループの個人情報保護方針に記載しておりますので、<a href="http://www.mcdonalds.co.jp/privacy/index.html">こちら</a>からご覧ください。<br>
+                    =======================<br>
+                    主催<br>
+                    日本マクドナルド株式会社<br>
+                    〒163-1339<br>
+                    東京都新宿区西新宿6-5-1　新宿アイランドタワー<br>
+                    =======================<br>
+                    運営事務局<br>
+                    マクドナルドキャンペーン事務局<br>
+                    <a href="mailto:campaign@sp.mdj.jp">campaign@sp.mdj.jp</a><br>
+                    受付時間　9:00～17:00<br>
+                    =======================</dd>
+			</dl>
+            
+			<div class="main_right">
+				<a href="#gDef">ページトップへ </a>
+			</div>
+
+			<!-- コンテントここまで -->
+		<!-- /main-area --></div>
+
+	<!-- /wrapperIn --></div>
+    
+<!-- /wrapper --></div>
+
+  <footer id="footer">
+    <p id="btnPc"><a href="http://www.mcdonalds.co.jp/">PCサイトへ</a></p>
+    <ul id="footerSns">
+      <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="none">ツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+      <li class="facebook">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      </li>
+      <li class="google"><g:plusone size="medium" annotation="none"></g:plusone></li>
+    </ul>
+    <ul id="footerLinks">
+      <li><a href="http://sp.mdj.jp/Info/cservice/r/">ご意見・ご要望</a></li>
+      <li><a href="http://sp.mdj.jp/Info/privacy/r/">個人情報保護方針</a></li>
+      <li><a href="http://sp.mdj.jp/Info/policy/r/">サイト利用規約</a></li>
+    </ul>
+    <p id="copyright">&copy; McDonald's</p>
+  <!-- /footer --></footer>
+
+<aside id="sideMenu">
+  <a href="http://sp.mdj.jp/"><img src="/common/images/side/logo01.gif" width="61" height="49" alt="i'm lovin'it" class="logo"></a>
+  <nav>
+  </nav>
+</aside>
+
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-TJV7WW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-TJV7WW');
+</script>
+</body>
+</html>
