@@ -1,0 +1,722 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<title>ガールズシンフォニー～少女交響詩～ - オンラインゲーム - DMM GAMES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta name="description" content="ガールズシンフォニー～少女交響詩～の公式トップページです。DMMGAMESが贈る、期待の新作遂に登場！音楽の女神ミューズによって作られた美しい世界ハルモニア。この世界では『音楽』が力を持ち、人々の生活に豊穣をもたらしていた。しかしその力を独占しようとする存在…" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta http-equiv="content-style-type" content="text/css" >
+<meta http-equiv="content-script-type" content="text/javascript" >
+<meta name="Slurp" content="NOYDIR" >
+
+<link href="/css/base.css?1493014828" media="screen" rel="stylesheet" type="text/css" >
+<link href="/css/www.dmm.com.netgame.css?1493188074" media="screen" rel="stylesheet" type="text/css" >
+<link href="/css/fancybox.css?1421132216" media="screen" rel="stylesheet" type="text/css" >
+<link href="/css/netgame/application.css?1489023593" media="screen" rel="stylesheet" type="text/css" >
+<link href="/css/netgame/application-adjust.css?1491875837" media="screen" rel="stylesheet" type="text/css" >
+<link href="http://p.dmm.com/p/general/apple-touch-icon.png" rel="apple-touch-icon" >
+<link href="http://p.dmm.com/p/general/apple-touch-icon.png" rel="apple-touch-icon-precomposed" >
+<link href="http://www.dmm.com/netgame_s/symphony/" rel="canonical" >
+<script type="text/javascript" src="/js/library/jquery_1_8_3/jquery-1.8.3.min.js?1358679782"></script>
+<script type="text/javascript" src="/js/bugfix.js?1421734015"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js?1306488093"></script>
+<script type="text/javascript" src="/js/jquery.easing.js?1293506672"></script>
+<script type="text/javascript" src="/js/fancybox.js?1333586857"></script>
+<script type="text/javascript" src="/js/mbox.js?1334307974"></script>
+<script type="text/javascript" src="/js/netgame/tab-change.js?1492074325"></script>
+<script type="text/javascript" src="/js/netgame/ntg-plugin.js?1397014094"></script>
+<script type="text/javascript" src="/js/netgame/ntg-alert.js?1438824377"></script>
+<script type="text/javascript" src="/js/localize_welcome.js?1461295284"></script>
+<script type="text/javascript" src="/js/netgame/application.js?1464839089"></script>
+<script type="text/javascript" src="/js/common/set_tracking.js?1472622208"></script>
+<script type="text/javascript">
+    //<!--
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+$(function() {
+    $('#w').dNtgApplication();
+});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    $(function() {
+
+    $("#game-play-top").off("click").on("click", function() {
+        gapush({
+            category : "Game_Regist_OLG",
+            action   : "\u30ac\u30fc\u30eb\u30ba\u30b7\u30f3\u30d5\u30a9\u30cb\u30fc\uff5e\u5c11\u5973\u4ea4\u97ff\u8a69\uff5e",
+            label    : "UP"
+        });
+
+        runGame({
+            appId        : "750145",
+            notification : Number($("#a1").prop("checked")),
+            myapp        : Number($("#a2").prop("checked"))
+        });
+        return false;
+    });
+
+    $("#game-regist-top").off("click").on("click", function() {
+        gapush({
+            category : "Account_Regist",
+            action   : "\u30ac\u30fc\u30eb\u30ba\u30b7\u30f3\u30d5\u30a9\u30cb\u30fc\uff5e\u5c11\u5973\u4ea4\u97ff\u8a69\uff5e",
+            label    : "UP"
+        });
+
+        memberRegist({
+            appId        : "750145",
+            trigger      : "up",
+            notification : Number($("#a1").prop("checked")),
+            myapp        : Number($("#a2").prop("checked"))
+        });
+        return false;
+    });
+
+});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    $(function() {
+
+    $("#game-play-bottom").off("click").on("click", function() {
+        gapush({
+            category : "Game_Regist_OLG",
+            action   : "\u30ac\u30fc\u30eb\u30ba\u30b7\u30f3\u30d5\u30a9\u30cb\u30fc\uff5e\u5c11\u5973\u4ea4\u97ff\u8a69\uff5e",
+            label    : "DOWN"
+        });
+
+        runGame({
+            appId        : "750145",
+            notification : Number($("#a3").prop("checked")),
+            myapp        : Number($("#a4").prop("checked"))
+        });
+        return false;
+    });
+
+    $("#game-regist-bottom").off("click").on("click", function() {
+        gapush({
+            category : "Account_Regist",
+            action   : "\u30ac\u30fc\u30eb\u30ba\u30b7\u30f3\u30d5\u30a9\u30cb\u30fc\uff5e\u5c11\u5973\u4ea4\u97ff\u8a69\uff5e",
+            label    : "DOWN"
+        });
+
+        memberRegist({
+            appId        : "750145",
+            trigger      : "down",
+            notification : Number($("#a3").prop("checked")),
+            myapp        : Number($("#a4").prop("checked"))
+        });
+        return false;
+    });
+
+});
+    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    
+!function(a,b,c,d,e,f,g,h,i,j,k){g="DMMi3Object",h=a[g],a[g]=e,h&&(a[e]=a[h]),
+a[e]=a[e]||function(){i=arguments[arguments.length-1],"function"==typeof i&&setTimeout(
+function(b,c){return function(){a[e].q.length>b&&c()}}(a[e].q.length,i),f),a[e].q.push(
+arguments)},a[e].q=a[e].q||[],a[e].t=f,j=b.createElement(c),k=b.getElementsByTagName(c)[0],
+j.async=1,j.src=d,j.charset="utf-8",k.parentNode.insertBefore(j,k),a[e].s=~~new Date
+}(window,document,"script","//stat.i3.dmm.com/latest/js/dmm.tracking.min.js","i3",2000);
+
+    i3("init", "i3_kxw6oj");
+    i3("create");
+    i3("send", "view", "page");
+    //-->
+</script>
+
+
+<script src="/js/s_code_dummy.js"></script>
+<script src="/js/mbox.js"></script><script>
+  var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-31336-1'],
+    ['_setDomainName', '.dmm.com'],
+    ['_setCampaignCookieTimeout', 2592000000],
+    ['_trackPageview']
+  );
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<script type="text/javascript"><!--
+(function() {
+if (!window['Marketing']) { window.Marketing = {}; }
+var j={"host":"www.dmm.com","device":"pc"};
+window.Marketing.Gateway = { getParam: function(k) { if (!k) { return j; } return j[k]; } };
+})();
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({"dtm":{"viewLayout":"pc","isForeign":0}});
+--></script>
+<script src="//www.dmm.com/js/marketing/conf.js"></script>
+</head>
+
+<body name="dmm_main">
+<script src="/js/marketing/gtm.js"></script>
+
+<div id="translate_welcome_div"></div>
+<script type="text/javascript">
+  document.getElementById('translate_welcome_div').setAttribute('id', 'welcome');
+</script>
+
+
+<div id="w">
+
+
+<div id="main-ntg" class="page-application d-rst application-750145">
+
+    <div id="dmm_ntgnavi">
+    <ul class="navi_left">
+        <li class="dmm_top mg-l12"><a href="/top/"><img src="http://p.dmm.com/p/netgame/navi/dmm_logo.gif" alt="DMM.com" /></a></li>
+        <li class="ntg_top"><a href="/netgame/"><span>DMM GAMESトップ</span></a></li>
+    </ul>
+
+    <ul class="navi_right">
+        <li class="btn-sns-twitter">
+            <div><a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-text="ガールズシンフォニー～少女交響詩～" data-url="http://www.dmm.com/netgame_s/symphony/" data-hashtags="DMMOLG" data-count="none">ツイート</a></div>
+        </li>
+
+                <li><a href="https://www.dmm.com/my/-/register/">新規会員登録</a></li>
+        <li><a href="/my/=/path=Sg9VTQFXDFdnFh5LSlsWXw4LTxk_/">ログイン</a></li>
+            </ul>
+
+    <div class="clear"></div>
+</div>
+
+    <div id="area-application-menu" class="d-area">
+    <ul>
+                <li class="menu01">
+                        <a class="on"><span>トップ</span></a>
+                    </li>
+                <li class="menu02">
+                        <a href="/netgame_s/symphony/intro/"><span>ゲーム説明</span></a>
+                    </li>
+                <li class="menu03">
+                        <a href="/netgame_s/symphony/gallery/"><span>ギャラリー</span></a>
+                    </li>
+                <li class="menu04">
+                        <a href="/netgame_s/symphony/community/"><span>コミュニティ</span></a>
+                    </li>
+                <li class="menu05">
+                        <a href="/netgame_s/symphony/support/"><span>サポート</span></a>
+                    </li>
+            </ul>
+</div>
+
+<div id="area-application-top" class="d-area">
+    <div class="box-application-top"></div>
+</div>
+
+
+    <div id="area-application-content" class="d-area">
+
+        
+<div class="bt-play bt-playtop">
+
+    
+        <div class="bt-regist">
+        <a href="javascript:void(0)" id="game-play-top"><span>Game Start</span></a>
+    </div>
+    
+    <div class="checkbox">
+        <span><input id="a1" name="notification" type="checkbox" checked><label for="a1">お知らせを受け取る</label></span>
+        <span><input id="a2" name="myapp" type="checkbox" checked><label for="a2">プロフィール等に表示する</label></span>
+        <p><a href="/rule/=/category=onlinegame_service/" target="_blank">利用規約（※必読）</a>に同意の上、ゲームを開始</p>
+    </div>
+
+    
+</div>
+
+
+                
+        <div class="ntg-appdetail">
+
+            <div class="ntg-detailbox-left">
+    <img src="http://pics.dmm.com/freegame/app/750145/200.gif" alt="ガールズシンフォニー～少女交響詩～" class="ntg-thmb" />
+
+    <dl class="box-appinfo">
+        <dt>ジャンル</dt>
+                <dd>
+                        <a href="http://games.dmm.com/ranking?genre=1" class="ntg-tx-genre">RPG</a>
+                    </dd>
+        
+        <dt>対応環境</dt>
+        <dd class="box-device">
+            <ul>
+                                                <li>
+                    <img src="http://p.dmm.com/p/netgame/common/ico/ico_pc.png" alt="" />
+                    <span>パソコン</span>
+                </li>
+                            </ul>
+        </dd>
+
+        <dt>登録者数</dt>
+                <dd>20万人以上</dd>
+            </dl>
+
+    <dl class="box-appinfo box-tag">
+        <dt>登録タグ</dt>
+                <dd>
+                        <a href="http://games.dmm.com/ranking?tagid=65" class="ntg-tx-tag">DMM GAMES</a>
+                        <a href="http://games.dmm.com/ranking?tagid=12" class="ntg-tx-tag">ファンタジー</a>
+                    </dd>
+        
+        
+            </dl>
+
+                        <div class="box-community">
+                <div class="capt-community"><span>公式コミュニティ</span></div>
+                <div class="community-comments">
+                    <ul>
+                                    <li>
+                            <a href="/netgame/community/-/topic/detail/=/cid=3811/tid=40757" >
+                                <p class="mg-b3 bold tx-link">雑談2[512]</p>
+                                                <img src="http://pics.dmm.com/freegame/profile/m/male1/male1_sp.jpg" alt="" class="tmb"  >
+                                    <div class="comment-balloon">
+                                        <p class="tx-comment">この子のスキルなんて読むんでしょうか?</p>
+                                        <p class="tx-date">10時間前</p>                                    </div>
+                                            </a>
+                        </li>
+                                    <li>
+                            <a href="/netgame/community/-/topic/detail/=/cid=3811/tid=35756" >
+                                <p class="mg-b3 bold tx-link">運営からのお知らせ[179]</p>
+                                                <img src="http://img-freegames.dmm.com/user/b/3/b33984d49403142057a7421ab75a7086/1/sp.jpg" alt="" class="tmb"  >
+                                    <div class="comment-balloon">
+                                        <p class="tx-comment">【5月2日メンテナンスのお知らせ】いつも「ガ...</p>
+                                        <p class="tx-date">18時間前</p>                                    </div>
+                                            </a>
+                        </li>
+                                    <li>
+                            <a href="/netgame/community/-/topic/detail/=/cid=3811/tid=35758" >
+                                <p class="mg-b3 bold tx-link">不具合報告1[574]</p>
+                                                <img src="http://pics.dmm.com/freegame/profile/m/male1/male1_sp.jpg" alt="" class="tmb"  >
+                                    <div class="comment-balloon">
+                                        <p class="tx-comment">プレゼントボックスを2～3週間ほど開けていな...</p>
+                                        <p class="tx-date">22時間前</p>                                    </div>
+                                            </a>
+                        </li>
+                                    <li>
+                            <a href="/netgame/community/-/topic/detail/=/cid=3811/tid=40318" >
+                                <p class="mg-b3 bold tx-link">楽友募集[166]</p>
+                                                <img src="http://pics.dmm.com/freegame/profile/m/male1/male1_sp.jpg" alt="" class="tmb"  >
+                                    <div class="comment-balloon">
+                                        <p class="tx-comment">ID:973285860楽友になったくれる方...</p>
+                                        <p class="tx-date">04/29 16:33</p>                                    </div>
+                                            </a>
+                        </li>
+                                    <li>
+                            <a href="/netgame/community/-/topic/detail/=/cid=3811/tid=35760" >
+                                <p class="mg-b3 bold tx-link">質問・攻略1[36]</p>
+                                                <img src="http://img-freegames.dmm.com/user/3/8/38819494159e1d02da0e1dd92fc0d55a/1/sp.jpg" alt="" class="tmb"  >
+                                    <div class="comment-balloon">
+                                        <p class="tx-comment">ついに、ついにやったよん!　勝利した爽快感サ...</p>
+                                        <p class="tx-date">04/20 19:04</p>                                    </div>
+                                            </a>
+                        </li>
+                                </ul>
+                    <div class="right pd-6">
+                        <a href="/netgame/community/-/commu/detail/=/id=3811" class="arrow">もっと見る</a>
+                    </div>
+                    <!--/community-info-->
+                </div>
+            </div> 
+                
+    
+    <a href="/netgame_s/symphony/support/" class="ntg-bt-support"><span>サポート情報</span></a>
+</div>
+
+            <div class="ntg-detailbox-right">
+                <p class="ntg-ttl-detail">ガールズシンフォニー～少女交響詩～</p>
+
+                
+                                <div class="ntg-area-slide">
+
+                    <div class="main-slide">
+                        <ul class="slide slide-stage">
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-1.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-2.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-3.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-4.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-5.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-6.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-7.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-8.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-9.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-10.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-11.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-12.jpg" alt="" /></li>
+                                                    </ul>
+
+                        <div class="slide controller">
+                            <a href="#" class="prev"></a>
+                            <a href="#" class="next"></a>
+                        </div>
+                    </div>
+
+                    <div class="thmb thmb-stage">
+                        <ul>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-1.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-2.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-3.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-4.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-5.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-6.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-7.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-8.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-9.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-10.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-11.jpg" alt="" /></li>
+                                                        <li><img src="http://pics.dmm.com/freegame/app/750145/750145jp-12.jpg" alt="" /></li>
+                                                    </ul>
+                    </div>
+                    <div class="thmb controller">
+                        <a href="#" class="prev"></a>
+                        <a href="#" class="next"></a>
+                    </div>
+                </div>
+                
+
+                <div class="ntg-area-detail-top">
+                                        <div class="ntg-box-detailtx">
+                        <p>DMMGAMESが贈る、期待の新作遂に登場！<br />
+<br />
+音楽の女神ミューズによって作られた美しい世界ハルモニア。<br />
+この世界では『音楽』が力を持ち、人々の生活に豊穣をもたらしていた。<br />
+<br />
+しかしその力を独占しようとする存在が現れ、世界は一変した。<br />
+科学貴族階級『文明ギルド』は『音楽』が引き起こす超常的な力を悪用し、<br />
+音楽を愛する人々を虐殺。圧政を強い、世界は恐怖に陥れられた。<br />
+<br />
+『文明ギルド』に対抗できるのは、少女演奏家と音精（ニュムパ）を率いる指揮者(コンダクター)のみ。<br />
+今、ひとりの指揮者(コンダクター)が世界を救う――。<br />
+<br />
+美しい楽器のキャラクター達が活躍する思考型本格RPG<br />
+ワンボタンで簡単操作！<br />
+自分だけの楽団を率いて戦略を駆使しながら戦うシステムはまさに新感覚！<br />
+<br />
+信頼を深めて築き上げる彼女たちとの【交響曲】<br />
+一致団結して迫りくる文明ギルドの一団に立ち向かおう！</p>
+                                                <p class="sub">提供：株式会社DMM.comラボ</p>
+                    </div>
+                    
+                                        <div class="ntg-box-info">
+                        <p class="ntg-ttl-info">新着情報</p>
+                        <ul>
+                                                        <li>
+                                <a href="#750145-3580" id="750145-3580">
+                                    <span class="tx-ttl">期間限定イベント「イースター狂騒曲」開催中！</span>
+                                    <span class="tx-data">2017/04/26</span>
+                                    <span class="tx-info">期間限定イベント「イースター狂騒曲」開催中！
+イベントに参…</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="#750145-3481" id="750145-3481">
+                                    <span class="tx-ttl">期間限定イベント「桜色ガヴォット」開催中！</span>
+                                    <span class="tx-data">2017/04/12</span>
+                                    <span class="tx-info">期間限定イベント「桜色ガヴォット」開催中！
+イベントに参加…</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                                                <p class="ntg-morelist"><a href="/netgame_s/symphony/intro/" class="arrow">もっと見る</a></p>
+                                            </div>
+
+                                        <div id="pop750145-3580">
+                        <div id="pop-back" style="display:none;"></div>
+
+                        <div id="box-application-popup" style="display:none;">
+                            <p class="ttl">期間限定イベント「イースター狂騒曲」開催中！<span><img src="http://p.dmm.com/p/netgame/common/bt/bt_ntgpop_close.png" alt="" /></span></p>
+                            <div class="inner"><p>期間限定イベント「イースター狂騒曲」開催中！<br />
+イベントに参加して「☆☆☆　ジナ・ヘンデル」をGETしよう！</p></div>
+                        </div>
+                    </div>
+                                        <div id="pop750145-3481">
+                        <div id="pop-back" style="display:none;"></div>
+
+                        <div id="box-application-popup" style="display:none;">
+                            <p class="ttl">期間限定イベント「桜色ガヴォット」開催中！<span><img src="http://p.dmm.com/p/netgame/common/bt/bt_ntgpop_close.png" alt="" /></span></p>
+                            <div class="inner"><p>期間限定イベント「桜色ガヴォット」開催中！<br />
+イベントに参加して「☆☆☆　フランソワーズ・グノー」をGETしよう！</p></div>
+                        </div>
+                    </div>
+                    
+                                    </div>
+            </div>
+
+        </div>
+
+        
+<div id="bt-playbtm-slide">
+    <div class="bt-play bt-playbtm">
+
+        
+                <div class="bt-regist">
+            <a href="javascript:void(0)" id="game-play-bottom"><span>Game Start</span></a>
+        </div>
+        
+        <div class="checkbox">
+            <span><input id="a3" name="notification" type="checkbox" checked="checked" /><label for="a3">お知らせを受け取る</label></span>
+            <span><input id="a4" name="myapp" type="checkbox" checked="checked" /><label for="a4">プロフィール等に表示する</label></span>
+            <p><a href="/rule/=/category=onlinegame_service/" target="_blank">利用規約（※必読）</a>に同意の上、ゲームを開始</p>
+        </div>
+
+        
+    </div>
+
+</div>
+
+
+        
+
+        <input id="i3_opnd" type="hidden" value="" />
+        <input id="i3_vwtp" type="hidden" value="pc" />
+
+        <div class="d-area ntg-area-recommendlist" id="ntg-recommend-data" style="display:none;">
+            <div class="ntg-recommendlist-inner ntg-game-recommendlist" id="ntg-recommend-item-data" style="display:none;">
+                <div class="d-capt">
+                    <h2 class="ntg-headline"><span>このゲームで遊んでいる人はこんなゲームも遊んでいます</span></h2>
+                </div>
+                <div class="d-sect">
+                    <div class="d-item">
+                        <div class="ntg-cardlist-col5">
+                            <ul>
+                                <li id="recommend-data-item-template">
+                                    <a name="recommend_item_link" href="javascript:void(0);" css="cord-disable">
+                                        <div class="thumb">
+                                            <img name="recommend_item_thumb" src="" alt="">
+                                        </div>
+                                        <div class="ntg-ttl-cardlist ellipsis-row01">
+                                            <span class="tx-ttl" name="recommend_item_title"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /ntg-cardlist-col5 -->
+                        </div>
+                        <!-- /d-item -->
+                    </div>
+                    <!-- /d-sect -->
+                </div>
+                <!-- /ntg-recommendlist-inner -->
+            </div>
+            <!-- /ntg-area-recommendlist -->
+
+            <div class="ntg-recommendlist-inner ntg-you-recommendlist" id="ntg-recommend-user-data" style="display:none;">
+                <div class="d-capt">
+                    <h2 class="ntg-headline"><span>あなたにおすすめのゲーム</span></h2>
+                </div>
+                <div class="d-sect">
+                    <div class="d-item">
+                        <div class="ntg-cardlist-col5">
+                            <ul>
+                                <li id="recommend-data-user-template">
+                                    <a name="recommend_user_link"  href="javascript:void(0);" css="cord-disable">
+                                        <div class="thumb">
+                                            <img name="recommend_user_thumb" src="" alt="">
+                                        </div>
+                                        <div class="" name="recommend_new_icon">
+                                            <span class="tx-ttl" name="recommend_user_title"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /ntg-cardlist-col5 -->
+                        </div>
+                        <!-- /d-item -->
+                    </div>
+                    <!-- /d-sect -->
+                </div>
+                <!-- /ntg-recommendlist-inner -->
+            </div>
+            <!-- /ntg-area-recommendlist -->
+
+
+        </div>
+
+<script type="text/javascript">
+function clickRecommend(event) {
+    var item = event.data;
+    item.rank = item.rank.toString(10);
+    item.track_id = item.track_id.toString(10);
+    i3("create", "clickRec");
+    i3("clickRec.set", "detail", {
+        via_info: "recommend",
+        via_option: item.track_id,
+        via_view_rank: item.rank
+    });
+    i3("clickRec.add", "detail", {
+        app_id: item.app_id
+    });
+    i3("clickRec.send", "click", "recommend", function(){
+        window.open = item.link;
+    });
+}
+
+//<![CDATA[
+$(function() {
+    var recommend_area = $("#ntg-recommend-data");
+    var recommend_item_area = $("#ntg-recommend-item-data");
+    var recommend_user_area = $("#ntg-recommend-user-data");
+
+    var viewRecommend  = function(recommends) {
+        try {
+            if (!recommends || 0 == recommends.length) {
+                recommend_item_area.remove();
+                return false;
+            }
+            if ("string" == typeof recommends) {
+                recommends = JSON.parse(recommends);
+            }
+            if (0 == recommends.length) {
+                recommend_item_area.remove();
+                return false;
+            }
+            tracking_id = recommends[0].track_id;
+            item_cnt    = recommends.length;
+            i3("create", "rec");
+            i3("rec.set", "recommend", {
+                type: tracking_id,
+                hit_count: item_cnt,
+                page_number: 1,
+                limit: item_cnt,
+                show_count: item_cnt
+            });
+            recommend_item_area.show();
+            var recommend_template = $("#recommend-data-item-template");
+            for (var i = 0; i < recommends.length; i ++) {
+                i3("rec.add", "recommend", {app_id: recommends[i].app_id});
+                var recommend_item = recommend_template.clone();
+                recommend_item.removeAttr("id");
+                recommend_item.find("img[name=recommend_item_thumb]").attr({
+                    "src" : recommends[i].image,
+                    "alt" : recommends[i].title,
+                });
+                recommend_item.find("a[name=recommend_item_link]").attr({
+                    "href" : recommends[i].link,
+                });
+                recommend_item.find("span[name=recommend_item_title]").text(recommends[i].title);
+                recommend_item.click(recommends[i], clickRecommend);
+                recommend_item_area.find("ul").append(recommend_item);
+            }
+            i3("rec.send", "show", "recommend");
+            recommend_template.remove();
+            recommend_area.show();
+        } catch(e) {
+            recommend_item_area.remove();
+        }
+    };
+
+
+    var viewUserRecommend  = function(recommends) {
+
+        try {
+
+            if (!recommends || 0 == recommends.length) {
+                recommend_user_area.remove();
+                return false;
+            }
+            if ("string" == typeof recommends) {
+                recommends = JSON.parse(recommends);
+            }
+            if (0 == recommends.length) {
+                recommend_user_area.remove();
+                return false;
+            }
+
+            tracking_id = recommends[0].track_id;
+            item_cnt    = recommends.length;
+            i3("create", "rec");
+            i3("rec.set", "recommend", {
+                type: tracking_id,
+                hit_count: item_cnt,
+                page_number: 1,
+                limit: item_cnt,
+                show_count: item_cnt
+            });
+            recommend_user_area.show();
+            var recommend_template = $("#recommend-data-user-template");
+            for (var i = 0; i < recommends.length; i ++) {
+                i3("rec.add", "recommend", {app_id: recommends[i].app_id});
+                var recommend_item = recommend_template.clone();
+                recommend_item.removeAttr("id");
+                recommend_item.find("img[name=recommend_user_thumb]").attr({
+                    "src" : recommends[i].image,
+                    "alt" : recommends[i].title,
+                });
+                recommend_item.find("a[name=recommend_user_link]").attr({
+                    "href" : recommends[i].link,
+                });
+                if(recommends[i].newgame == 'new') {
+                    recommends[i].newgame = 'ntg-ttl-cardlist ellipsis-row01 new';
+                } else {
+                    recommends[i].newgame = 'ntg-ttl-cardlist ellipsis-row01';
+                }
+                recommend_item.find("div[name=recommend_new_icon]").attr({
+                    "class" : recommends[i].newgame,
+                });
+                recommend_item.find("span[name=recommend_user_title]").text(recommends[i].title);
+                recommend_item.click(recommends[i], clickRecommend);
+                recommend_user_area.find("ul").append(recommend_item);
+            }
+            i3("rec.send", "show", "recommend");
+            recommend_template.remove();
+            recommend_area.show();
+        } catch(e) {
+            recommend_user_area.remove();
+        }
+    };
+
+    var title_url = "symphony";
+
+    $.ajax({
+        type  : "POST",
+        url   : "/netgame_s/" + title_url + "/ajax-getrecommend/",
+        data  : {
+            "app_id" : 750145,
+            "lang"   : navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage),
+            "type"   : "item"
+        },
+        dataType : "json"
+    })
+    .done(viewRecommend)
+    .fail(function() {
+        recommend_item_area.remove();
+    });
+
+    $.ajax({
+        type  : "POST",
+        url   : "/netgame_s/" + title_url + "/ajax-getrecommend/",
+        data  : {
+        	"app_id" : 750145,
+            "lang" : navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage),
+            "type" : "user"
+        },
+        dataType : "json"
+    })
+    .done(viewUserRecommend)
+    .fail(function() {
+        recommend_user_area.remove();
+    });
+
+});
+//]]>
+</script>
+        <p class="copyright">Copyright &copy; since 1998 DMM All Rights Reserved.</p>
+    </div>
+
+    <p id="page-top"><a href="#w"><img src="http://p.dmm.com/p/netgame/application/common/ico/ico_pagetop.png" width="60" height="60" alt="pagetop" /></a></p>
+
+</div></div>
+
+</body>
+</html>

@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="content-language" content="ja" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no">
+<meta name="twitter:widgets:csp" content="on">
+<meta name="application-name" content="診断メーカー" />
+<meta name="inmobi-site-verification" content="3f6fe1a75171a7913172b6f0698ecd64">
+<link rel="stylesheet" href="https://d1br91wyosz8a9.cloudfront.net/t/bootstrap/css/bootstrap.min.css?v=133c6aa">
+<link rel="stylesheet" href="https://d1br91wyosz8a9.cloudfront.net/css2/mq.css?v=133c6aa" type="text/css">
+<link rel="stylesheet" href="https://d1br91wyosz8a9.cloudfront.net/t/font-awesome-4.7.0/css/font-awesome.min.css?v=133c6aa">
+<link rel="stylesheet" href="https://d1br91wyosz8a9.cloudfront.net/css2/im_if_pc.css?v=133c6aa" type="text/css">
+<!--[if lt IE 9]>
+<link href="https://d1br91wyosz8a9.cloudfront.net/css2/pc.css?v=133c6aa"type="text/css" media="all" />
+<![endif]-->
+<title>フレンズしんだんだね！</title>
+<meta name="keywords" content="フレンズしんだんだね！,占い,診断">
+<meta name="description" content="たーのしー！！※あんまりいい結果は出てこないよ！ - 診断メーカー">
+<link rel="canonical" href="https://shindanmaker.com/701908">
+<meta property="fb:app_id" content="147796168636285">
+<style type="text/css">
+#imobile_adspotdiv1 {
+      padding: 0 !important;
+}
+
+.share_btn_table td {
+  padding: 4px 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.share_btn_block{
+  padding: 5px 3px;
+  height: 55px;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 100%;
+  vertical-align: top !important;
+}
+
+.share_btn{
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  height: 40px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 5px;
+  line-height: 100%;
+}
+
+.share_facebook {
+  padding-top: 8px;
+  font-size: 24px;  
+  width: 40px;
+  background-color: rgba(59,89,152,0.9);
+  color: white;
+}
+.share_facebook:hover, .share_facebook:active{
+  background-color: rgba(59,89,152,1);
+}
+
+
+.share_googleplus{
+  width: 40px;
+  padding-top: 12px;
+  width: 40px;
+  font-size: 18px;  
+  background-color: rgba(221,75,57,0.8);;
+  color: white;
+}
+.share_googleplus:hover, .share_googleplus:active{
+  color: white;
+  background-color: rgba(221,75,57,1);;
+}
+
+.share_btn:hover{
+  color: white;
+}
+
+.share_twitter {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;  
+  background-color: rgba(0,132,180,.8);
+  border-color: rgba(0,132,180,.8);
+  color: white;
+}
+
+.share_twitter:hover{
+  background-color: #0084B4;
+  border-color: #0084B4;
+}
+
+.share_mixi{
+  width: 40px;
+  padding-top: 12px;
+  width: 40px;
+  font-size: 15px;  
+  background-color: rgba(209,173,90,0.8);
+  color: white;
+  font-family: sans-serif;
+}
+
+.share_mixi:hover, .share_mixi:active{
+  color: white;
+  background-color: rgba(209,173,90,1);
+}
+
+.share_tweetat{
+  padding: 14px 5px 0 5px;
+  font-size: 12px;
+  background-color: #EFEFEF;
+  border: 1px #BBB solid;
+  color: #555;
+  font-family: sans-serif;
+}
+.share_tweetat:hover,.share_tweetat:active{
+  color: #000;
+  background-color: #DDDDDD;
+}
+
+.share_tweetat_pc{
+  padding-top: 14px;
+  font-size: 10px;
+  background-color: #EFEFEF;
+  border: 1px #BBB solid;
+  color: #555;
+  font-family: sans-serif;
+}
+.share_tweetat_pc:hover,.share_tweetat_pc:active{
+  color: #000;
+  background-color: #DDDDDD;
+}
+
+.share_otherbtn{
+  padding-top: 12px;
+  font-size: 15px;  
+  background-color: #FEFEFE;
+  border: 1px #DDD solid;
+  color: #777;
+  width: 40px;  
+}
+.share_otherbtn:hover,.share_tweetat:active{
+  color: #000;
+  background-color: #DDDDDD;
+}
+
+
+.share_haiku{
+  width: 40px;
+  padding-top: 15px;
+  width: 40px;
+  font-size: 11px;  
+  background-color: rgba(186,105,103,0.8);
+  color: white;
+  font-family: sans-serif;
+}
+.share_haiku:hover, .share_haiku:active{
+  color: white;
+  background-color: rgba(186,105,103,1);
+}
+
+.share_ameba{
+  width: 40px;
+  padding-top: 16px;
+  width: 40px;
+  font-size: 10px;  
+  background-color: rgba(30,165,254,0.7);
+  color: white;
+}
+
+.share_ameba:hover,.share_ameba:active{
+  background-color: rgba(30,165,254,1);
+}
+  
+#share_fixed_block{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    height: 50px;
+    text-align: center;
+}
+</style>
+
+<meta http-equiv="Content-script-Type" content="text/javascript">
+<meta name="google-site-verification" content="X99m3OnReUiPifbvdXGQSFZzLdsUzvoOLRoRz86PuzQ">
+<meta name="globalsign-domain-verification" content="fIcp0hJ3oOp4Zbd3UW7b10RfNsy7QvhqoS5g89DbQi" />
+<link rel="shortcut icon" href="https://d22xqp4igu9v8d.cloudfront.net/img/favicon.ico">
+<link rel="alternate" media="handheld" href="https://shindanmaker.com/701908">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-19089743-3','shindanmaker.com');
+ga('send', 'pageview');
+ga('create', 'UA-19089743-2', 'shindanmaker.com', {
+      'name': 'SecondTracker'
+      });
+ga('SecondTracker.send', 'pageview');
+</script>
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+var Slot_sm_pc_head_728x90, Slot_sm_pc_foot_728x90, Slot_sm_pc_foot_left_336x280, Slot_sm_pc_foot_right_336x280;
+googletag.cmd.push(function() {
+var mapping = googletag.sizeMapping().
+addSize([340,0], [336,280]).
+addSize([0,0],[[300,250]]).
+build();
+Slot_sm_pc_head_728x90 = googletag.defineSlot('/5794834/sm_pc_head_728x90', [728, 90], 'div-gpt-ad-1352514192773-6').addService(googletag.pubads());
+Slot_sm_pc_foot_728x90 = googletag.defineSlot('/5794834/sm_pc_foot_728x90', [728, 90], 'div-gpt-ad-1352514192773-0').addService(googletag.pubads());
+Slot_sm_pc_foot_left_336x280 = googletag.defineSlot('/5794834/sm_pc_foot_left_336x280', [336, 280], 'div-gpt-ad-1352514192773-2').addService(googletag.pubads());
+Slot_sm_pc_foot_right_336x280 = googletag.defineSlot('/5794834/sm_pc_foot_right_336x280', [336, 280], 'div-gpt-ad-1352514192773-4').addService(googletag.pubads());
+googletag.pubads().disableInitialLoad();
+googletag.pubads().setTargeting('abtest',[String(Math.floor(Math.random() * 10))]);
+googletag.enableServices();
+});
+</script>
+</head>
+<body>
+
+
+<div id="header_menu">
+<div class="container">
+
+  <div class="pull-left">
+  <a href="/"><img class="header_menu_logo" style="width: 128px" src="https://d1br91wyosz8a9.cloudfront.net/img/logo_head.png" alt="診断メーカー"></a>
+  </div>
+
+  <div class="pull-right">
+    <ul class="header_menu_menulist">
+    <li class="header_menu_menulist_menu"><a title="つくる" class="header_menu_menulink" href="/c/make"><span class="glyphicon glyphicon-edit menu-icon"></span><span class="menu-text">つくる</span></a></li>
+    <li class="header_menu_menulist_menu"><a title="人気診断" class="header_menu_menulink" href="/c/list?mode=hot"><span class="glyphicon glyphicon-list menu-icon"></span><span class="menu-text">人気診断</span></a></li>
+    <li class="header_menu_menulist_menu"><a title="作者" class="header_menu_menulink" href="/c/authorslist?mode=hot"><span class="glyphicon glyphicon-user menu-icon"></span><span class="menu-text">作者</span></a></li>
+    <li class="header_menu_menulist_menu"><a title="つぶやき" class="header_menu_menulink" href="/c/timeline"><span class="glyphicon glyphicon-comment menu-icon"></span><span class="menu-text">つぶやき</span></a></li>
+            <li class="header_menu_menulist_menu"><a title="ログイン" href="/c/login" class="header_menu_menulink" ><span class="glyphicon glyphicon-log-in menu-icon"></span><span class="menu-text">ログイン</span></a></li>
+    	    </ul>
+    </div>
+</div>
+</div>
+	
+
+
+
+<div class="container">
+
+<div class="wrap1">
+<div class="wrap2">
+<!-- google_ad_section_start --> 
+<div class="main1">
+<div class="main2">
+<div id="sm_pc_head_728x90_bl" class="ads_header_pc"><div class="ads_728">
+<!-- sm_pc_head_728x90 -->
+<div id='div-gpt-ad-1352514192773-6' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1352514192773-6');
+googletag.pubads().refresh([Slot_sm_pc_head_728x90]);
+});
+</script>
+</div>
+</div></div>
+
+
+<div class="shindantitle_block">
+  
+
+  
+	<div class="shindantitle2">
+	<h1><a href="/701908">フレンズしんだんだね！</a></h1>
+	</div>
+
+	<div class="shindandescription">
+	たーのしー！！
+
+※あんまりいい結果は出てこないよ！		
+	</div>
+
+	<div class="shindanstats">
+    <ul class="inlinelist">
+		<li><b>82,738</b>人が診断</li>
+	<li>結果パターン<b>10</b>通り</li>
+	<li><b>診断結果日替わり</b></li>
+	  </ul>
+
+        <div class="row">
+      <div class="col-xs-12" style="text-align: left;">
+    	<span class="shindanlabel"><a class="favlabel" href="/701908/fav"><span class="favmark">★</span>11</a></span>
+    	</div>
+
+    	    </div>
+
+
+  </div>
+</div>
+
+
+
+
+  
+	
+  
+<div class="shindanform">
+<div class="shindanform_label">診断したい名前を入れて下さい</div><form id="form" name="enter" method="post" action="/701908" enctype="multipart/form-data"><input class="input-lg shindanuser" type="text" autocomplete="off" name="u" maxlength="255" value="" placeholder="名無しのF">
+<input id="shindan_submit" type="submit" class="btn btn-primary btn-lg" value="診断する">
+</form>
+</div> 
+	
+
+
+
+
+
+    <div class="normal_main">
+      <div style="margin: 0 auto; text-align: center; max-width: 728px;">
+        <div class="row">
+          <div class="col-sm-6">
+          <div style="padding: 10px; text-align: center;"><!-- sm_pc_foot_left_336x280 -->
+<div id='div-gpt-ad-1352514192773-2' style='width:336px; height:280px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1352514192773-2');
+googletag.pubads().refresh([Slot_sm_pc_foot_left_336x280]);
+});
+</script>
+</div>
+</div></div>
+    <div class="col-sm-6">
+          <div style="padding: 10px; text-align: center;"><div><!-- sm_pc_foot_right_336x280 -->
+<div id='div-gpt-ad-1352514192773-4' style='width:336px; height:280px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1352514192773-4');
+googletag.pubads().refresh([Slot_sm_pc_foot_right_336x280]);
+});
+</script>
+</div>
+</div></div>
+          </div></div>
+        </div>
+      </div>
+
+<div class="shindanpage_list_block">
+<div class="title2 borderradius_top_5px">
+<h2>HOT診断</h2>
+</div>
+<div class="index_block_inner">
+<ul class="index_block_inner_shindanlist_s">
+  <li>
+  <span>1位&nbsp;</span><a class="shindanlink" href="/720780">◯◯するまで出られない部屋</a>    <span class="index_block_inner_desc">
+  貴方が閉じ込められた部屋はどんな部屋でしょうか  </span>
+    </li>
+  <li>
+  <span>2位&nbsp;</span><a class="shindanlink" href="/181589">あなたの名前の隠された意味</a>    <span class="index_block_inner_desc">
+  あなたの名前に隠された意味を調べます。他の診断もどうぞ→http://shindanmak...  </span>
+    </li>
+  <li>
+  <span>3位&nbsp;</span><a class="shindanlink" href="/720312">あなたの正しい取説</a>    <span class="index_block_inner_desc">
+  あなたの正しい取り扱い説明方法を診断します　。アイコン診断もどぞhttps://shind...  </span>
+    </li>
+  <li>
+  <span>4位&nbsp;</span><a class="shindanlink" href="/720739">あなたが助けてといったら誰か来てくれるかな？</a>    <span class="index_block_inner_desc">
+  あなたを助けてくれたのは…  </span>
+    </li>
+  <li>
+  <span>5位&nbsp;</span><a class="shindanlink" href="/719224">同棲してる2人の日常</a>    <span class="index_block_inner_desc">
+  みんなの推しcpが同棲する妄想を見せろくださいよろしく。ケンカップル好きが作ったので他の系...  </span>
+    </li>
+</ul>
+
+
+  
+  
+  
+ 
+  </div>
+  <div class="index_readmore">
+  <a href="/c/list?mode=hot" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>  </div>
+
+  </div>
+
+  
+
+  
+
+  
+<div class="alert alert-info normal_block">
+<i class="fa fa-info-circle" aria-hidden="true"></i> <a class="alert-link" href="/c/aboutapp">診断メーカーを装ったアプリ連携にご注意下さい</a>
+</div>
+
+<div class="shindanpage_list_block">
+<div class="title2 borderradius_top_5px">
+<h2>PICKUP診断</h2>
+</div>
+<div class="index_block_inner">
+<ul class="index_block_inner_shindanlist_s">
+  <li><span>1位&nbsp;</span><a class="shindanlink" href="/720780">◯◯するまで出られない部屋</a><span class="index_block_inner_desc">貴方が閉じ込められた部屋はどんな部屋でしょうか</span>
+    </li>
+  <li><span>2位&nbsp;</span><a class="shindanlink" href="/720739">あなたが助けてといったら誰か来てくれるかな？</a><span class="index_block_inner_desc">あなたを助けてくれたのは…</span>
+    </li>
+  <li><span>3位&nbsp;</span><a class="shindanlink" href="/720795">～あなたが王様になった国の決まり～</a><span class="index_block_inner_desc">あなたが王様になった国ではどんな決まり事が作られたのかな？</span>
+    </li>
+  <li><span>4位&nbsp;</span><a class="shindanlink" href="/720765">さよならも言えないまま、君は永遠の夢を見る。</a><span class="index_block_inner_desc">覚めることのない夢は、別れの言葉を奪い去る。/タグまで入れて全文と思ってください。作者の診...</span>
+    </li>
+  <li><span>5位&nbsp;</span><a class="shindanlink" href="/720737">あなたが今しなければならないこと</a><span class="index_block_inner_desc">今すべき事は何？大事なこと？くだらないこと？</span>
+    </li>
+</ul>
+
+  
+  
+
+
+  </div>
+
+  <div class="index_readmore">
+  <a href="/c/list?mode=pickup" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>  </div>
+  
+  </div>
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+  
+  <div class="shindanpage_list_block">
+  <div class="title2 borderradius_top_5px">
+  <h2>新着診断</h2>
+  </div>
+  
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <a class="shindanlink" href="/720847">ネスカフェアンバサダーー</a><span class="index_block_inner_desc">テテンテン↑テ↓テン</span></li>
+      <li>
+      <a class="shindanlink" href="/720846">ひろしの日記のみんなとデートしたったー</a><span class="index_block_inner_desc">ひろしの日記の誰かとあなたがデートしました。
+行き先と、デートしたキャラに言われたりされた...</span></li>
+      <li>
+      <a class="shindanlink" href="/720844">俺がガンダムだㅤ</a><span class="index_block_inner_desc">君はガンダムになれるか</span></li>
+      <li>
+      <a class="shindanlink" href="/720842">うるせーーー！！！</a><span class="index_block_inner_desc">うるせーーー！！！</span></li>
+      <li>
+      <a class="shindanlink" href="/720840">DJみたいに選曲しったー</a><span class="index_block_inner_desc">今日の1曲を紹介する診断です。youtubeにあるMVを貼ってもいいかも。</span></li></ul>
+  </div>
+        <div style="font-size: 1.1em; padding: 0 10px 0 20px;">
+      <!-- i-mobile for PC client script -->
+      <script type="text/javascript">
+          imobile_pid = "15621"; 
+          imobile_asid = "373316"; 
+          imobile_width = 300; 
+          imobile_height = 72;
+          imobile_option = {
+               type: "infeed_inline",
+          };
+          imobile_infeed = {
+              num: "1",
+          };
+      </script>
+      <script type="text/javascript" src="//spdeliver.i-mobile.co.jp/script/ads.js?20101001"></script>
+      </div>
+  
+  
+  <div class="index_readmore">
+  <a href="/c/list" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>  </div>
+
+  </div>
+
+
+
+
+  
+
+
+
+  
+    <div class="shindanpage_list_block">
+    <div class="title2 borderradius_top_5px">
+    <h2>各ランキング</h2>
+    </div>
+
+    <div>
+
+      <!-- Nav tabs -->
+      <div style="padding: 10px 15px 0 15px;">
+      <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#lastyear" aria-controls="lastyear" role="tab" data-toggle="tab">1年前</a></li>
+                <li role="presentation"><a href="#lastmonth" aria-controls="lastmonth" role="tab" data-toggle="tab">先月</a></li>
+                <li role="presentation"><a href="#thismonth" aria-controls="thismonth" role="tab" data-toggle="tab">今月</a></li>
+                <li role="presentation"><a href="#yesterday1" aria-controls="yesterday1" role="tab" data-toggle="tab">昨日</a></li>
+              </ul>
+      </div>
+
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+      
+        <div role="tabpanel"  class="tab-pane active" id="lastyear">
+          
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <a class="shindanlink" href="/619660">種族が変わりました！　さてあなたは？</a><span class="index_block_inner_desc">「人間」以外になる、さて、あなたはどうでしょうか？　日替わりです。ほんのり能力と種族増やし...</span></li>
+      <li>
+      <a class="shindanlink" href="/619807">あなたを最終形態にしてみた</a><span class="index_block_inner_desc">潜在能力を出し切ってやろう。</span></li>
+      <li>
+      <a class="shindanlink" href="/619348">神があなたに与え過ぎたもの</a><span class="index_block_inner_desc">神「返してもらうか…」（●＝あなたのセリフ）</span></li>
+      <li>
+      <a class="shindanlink" href="/619544">あなたという王が創世した国</a><span class="index_block_inner_desc">もしあなたが王様だったら
+どんな世界ができるでしょう
+兵力追加しました</span></li>
+      <li>
+      <a class="shindanlink" href="/619762">あなたの天使レベル</a><span class="index_block_inner_desc">６項目（容姿、性格、歌声、寝顔、匂い、知性）の天使レベルをそれぞれ「０～１０」で診断します...</span></li></ul>
+  </div>          
+
+          
+          <div class="index_readmore">
+          <a href="/c/list?mode=daily&y=2016&m=5&d=2" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>          </div>
+        </div>
+
+
+
+
+    
+        <div role="tabpanel"  class="tab-pane" id="lastmonth">
+          
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <a class="shindanlink" href="/616238">あなたの黒の組織でのコードネーム</a><span class="index_block_inner_desc">あこがれの黒の組織に加盟！！はたしてコードネームは！？（※実在のお酒の商品名を使用）</span></li>
+      <li>
+      <a class="shindanlink" href="/715408">あなたの人生を適当にまとめてみた</a><span class="index_block_inner_desc">アバウトに【】こちらもどうぞ［あなたの声優はこの人！］→https://shindanma...</span></li>
+      <li>
+      <a class="shindanlink" href="/617605">あなたは変態なのか</a><span class="index_block_inner_desc">あなたは変態なのでしょうか？</span></li>
+      <li>
+      <a class="shindanlink" href="/643921">あなたの🍒スケベ度😎ランク🍌</a><span class="index_block_inner_desc">あなたのスケベ度を見てみましょう！１２種類　（ガリガリ君を食べる）██═ ガリガリ君 ██...</span></li>
+      <li>
+      <a class="shindanlink" href="/719224">同棲してる2人の日常</a><span class="index_block_inner_desc">みんなの推しcpが同棲する妄想を見せろくださいよろしく。ケンカップル好きが作ったので他の系...</span></li></ul>
+  </div>          
+
+          
+          <div class="index_readmore">
+          <a href="/c/list?mode=monthly&y=2017&m=4" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>          </div>
+        </div>
+
+
+
+
+    
+        <div role="tabpanel"  class="tab-pane" id="thismonth">
+          
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <a class="shindanlink" href="/387457">立てば○○　座れば○○　歩く姿は○○○</a><span class="index_block_inner_desc">立てば芍薬　座れば牡丹　歩く姿は百合の花</span></li>
+      <li>
+      <a class="shindanlink" href="/720312">あなたの正しい取説</a><span class="index_block_inner_desc">あなたの正しい取り扱い説明方法を診断します　。アイコン診断もどぞhttps://shind...</span></li>
+      <li>
+      <a class="shindanlink" href="/181589">あなたの名前の隠された意味</a><span class="index_block_inner_desc">あなたの名前に隠された意味を調べます。他の診断もどうぞ→http://shindanmak...</span></li>
+      <li>
+      <a class="shindanlink" href="/619148">オフパコ超会議！！</a><span class="index_block_inner_desc">オフパコ相手を募れ</span></li>
+      <li>
+      <a class="shindanlink" href="/719224">同棲してる2人の日常</a><span class="index_block_inner_desc">みんなの推しcpが同棲する妄想を見せろくださいよろしく。ケンカップル好きが作ったので他の系...</span></li></ul>
+  </div>          
+
+          
+          <div class="index_readmore">
+          <a href="/c/list?mode=monthly" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>          </div>
+        </div>
+
+
+
+
+    
+        <div role="tabpanel"  class="tab-pane" id="yesterday1">
+          
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <a class="shindanlink" href="/387457">立てば○○　座れば○○　歩く姿は○○○</a><span class="index_block_inner_desc">立てば芍薬　座れば牡丹　歩く姿は百合の花</span></li>
+      <li>
+      <a class="shindanlink" href="/720312">あなたの正しい取説</a><span class="index_block_inner_desc">あなたの正しい取り扱い説明方法を診断します　。アイコン診断もどぞhttps://shind...</span></li>
+      <li>
+      <a class="shindanlink" href="/181589">あなたの名前の隠された意味</a><span class="index_block_inner_desc">あなたの名前に隠された意味を調べます。他の診断もどうぞ→http://shindanmak...</span></li>
+      <li>
+      <a class="shindanlink" href="/619148">オフパコ超会議！！</a><span class="index_block_inner_desc">オフパコ相手を募れ</span></li>
+      <li>
+      <a class="shindanlink" href="/719224">同棲してる2人の日常</a><span class="index_block_inner_desc">みんなの推しcpが同棲する妄想を見せろくださいよろしく。ケンカップル好きが作ったので他の系...</span></li></ul>
+  </div>          
+
+          
+          <div class="index_readmore">
+          <a href="/c/list?mode=daily" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>          </div>
+        </div>
+
+
+
+
+          </div>
+    </div>
+    </div>
+  
+
+
+
+
+
+  
+  <div class="shindanpage_list_block">
+  <div class="title2 borderradius_top_5px">
+  <h2>お気に入りHOT</h2>
+  </div>
+  
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <a class="shindanlink" href="/719493">３段階で恋に落ちる</a><span class="index_block_inner_desc">ときめいたしゅんかん
+※名前にはキャラ名やCP名など。日替わりです。
+（2017/04/2...</span></li>
+      <li>
+      <a class="shindanlink" href="/719224">同棲してる2人の日常</a><span class="index_block_inner_desc">みんなの推しcpが同棲する妄想を見せろくださいよろしく。ケンカップル好きが作ったので他の系...</span></li>
+      <li>
+      <a class="shindanlink" href="/612963">いいねの数だけ◯◯に何かが起こる</a><span class="index_block_inner_desc">お絵かきのお題になればと思います。
+キャラやCPの名前を入れてお題に挑戦してみてね。
+診断...</span></li>
+      <li>
+      <a class="shindanlink" href="/521617">二人の初めての夜は。</a><span class="index_block_inner_desc">名前のまんまです。二人の初夜がどんな風になるのか。好きなCP名か「○○と□□」と名前をいれ...</span></li>
+      <li>
+      <a class="shindanlink" href="/585979">愛してると伝えたら</a><span class="index_block_inner_desc">君は一体どうするのか。とりあえず今後の目標は結果数200です。こそこそと増やしていきます。...</span></li></ul>
+  </div>
+  <div class="index_readmore">
+  <a href="/c/list?mode=favhot" class="btn btn-default btn-xs" ><span class="glyphicon glyphicon-chevron-right"></span> もっと見る</a>  </div>
+
+  </div>
+  
+
+
+
+
+
+<div class="shindanpage_list_block">
+<div class="title2 borderradius_top_5px">
+<h2>前後の診断</h2>
+</div>
+<div style="padding-bottom: 10px;">
+
+  <div class="index_block_inner">
+    <ul class="index_block_inner_shindanlist_s">
+      <li>
+      <span class="glyphicon glyphicon-chevron-left"></span> <a class="shindanlink" href="/701906">刀剣乱舞ログインボイスチャレンジ</a><span class="index_block_inner_desc">刀剣乱舞にログインしてください。誰のボイスでしたか？あなたへの明日のミッションが決まりまし...</span></li>
+      <li>
+      <span class="glyphicon glyphicon-chevron-left"></span> <a class="shindanlink" href="/701907">自己紹介しちゃうよ</a><span class="index_block_inner_desc">フォロワーのみんなに自己紹介しよう！</span></li>
+      <li>
+      <a class="shindanpage_rank_title" href="/701908">フレンズしんだんだね！</a><span class="index_block_inner_desc">たーのしー！！
+
+※あんまりいい結果は出てこないよ！</span></li>
+      <li>
+      <span class="glyphicon glyphicon-chevron-right"></span> <a class="shindanlink" href="/701909">・｡・</a><span class="index_block_inner_desc">・｡・</span></li>
+      <li>
+      <span class="glyphicon glyphicon-chevron-right"></span> <a class="shindanlink" href="/701910">あなたの種族値をスカウったー</a><span class="index_block_inner_desc">クリリンのことかあああああーーーー！！！</span></li></ul>
+  </div></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="make">
+<a href="/c/make" class="btn btn-primary btn-lg" ><span class="glyphicon glyphicon-edit"></span> 診断を作る</a>　あなたのオリジナル診断をつくろう！</div>
+</div></div>
+
+
+
+</div></div></div>
+<div class="foot">
+
+
+
+
+
+
+<div class="footmenu">
+
+<div id="sm_pc_foot_728x90_bl" style="margin: -10px auto 10px auto;"><div class="ads_728">
+<!-- sm_pc_foot_728x90 -->
+<div id='div-gpt-ad-1352514192773-0' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1352514192773-0');
+googletag.pubads().refresh([Slot_sm_pc_foot_728x90]);
+});
+</script>
+</div>
+</div></div>
+
+
+
+
+<div class="row" style="margin:0;">
+<div class="col-sm-4"><div class="footmenu_col">
+
+
+
+<h4>MENU</h4>
+<ul>
+<li><a href="/">診断メーカーTOP</a></li>
+<li><a href="/c/make">診断を作る</a></li>
+<li><a href="/c/timeline">みんなのつぶやき</a></li>
+<li><a href="/c/about">サイトについて(Q&amp;A)</a></li>
+<li><a href="/c/ads">広告掲載について</a></li><li><a href="/c/secure">セキュア(SSL/TLS)通信について</a></li><li><a href="/c/aboutapp">アプリ連携について</a></li><li><a href="https://shindanmaker.blogspot.com/" target="_blank">お知らせブログ</a> <i class="fa fa-external-link" aria-hidden="true"></i></li>
+<li><a href="/c/login">ログイン</a></li>
+</ul>
+
+
+
+<div class="clearfix"></div>
+</div></div>
+<div class="col-sm-4"><div class="footmenu_col">
+<h4>診断一覧</h4>
+<ul>
+<li><a href="/c/list">新着</a></li>
+<li><a href="/c/list?mode=hot">HOT診断</a></li>
+<li><a href="/c/list?mode=pickup">PICKUP診断</a></li>
+<li><a href="/c/list?mode=daily">日別ランキング</a></li>
+<li><a href="/c/list?mode=monthly">月別ランキング</a></li>
+<li><a href="/c/list?mode=favhot">お気に入りHOT</a></li>
+<li><a href="/c/list?mode=fav">お気に入り</a></li>
+<li><a href="/c/list?mode=chart">チャート系診断</a></li>
+<li><a href="/c/list?mode=pic">画像系診断</a></li>
+<li><a href="/c/list?mode=mov">動画系診断</a></li>
+<li><a href="/c/list?mode=1">総合ランキング</a></li>
+<li><a href="/c/theme">人気のテーマ</a></li>
+</ul>
+
+<div class="clearfix"></div>
+
+
+</div></div>
+
+<div class="col-sm-4"><div class="footmenu_col">
+<h4>診断検索</h4>
+<form action="/c/list" method="GET">
+<table>
+<tr>
+<td>
+<input type="hidden" name="mode" value="search">
+<input class="form-control" type="text" maxlength="60" id="q" name="q" placeholder="キーワード">
+</td>
+<td>
+<input type="submit" class="btn btn-default btn-sm" value="検索">
+</td>
+</tr>
+</table>
+</form>
+</div></div>
+
+<div class="col-sm-4">
+<div class="footmenu_col">
+<h4>作者</h4>
+<ul>
+<li><a href="/c/authorslist?mode=hot">HOT</a></li>
+<li><a href="/c/authorslist?mode=daily">日別</a></li>
+<li><a href="/c/authorslist">総合ランキング</a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<div style="margin-bottom: 10px;"></div>
+<div class="footmenu_col"><h4>SNSアカウント</h4>
+<ul>
+    <li><a href="https://twitter.com/shindanmaker" target="_blank">Twitter</a></li>
+    <li><a href="https://www.facebook.com/shindanmaker" target="_blank">Facebook</a></li>
+    <li><a href="http://page.mixi.jp/view_page.pl?page_id=199693" target="_blank">mixi</a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<div style="margin-bottom: 10px;"></div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+  
+
+
+
+
+	<div style="text-align: center; margin: 10px 0;">
+	
+	<a class="btn btn-xs btn-info" href="https://twitter.com/intent/follow?screen_name=shindanmaker"><i class="fa fa-twitter"></i> @shindanmakerをフォロー</a>
+	
+			</div>
+
+
+<script src="https://d1br91wyosz8a9.cloudfront.net/t/jquery-1.11.3.min.js?v=133c6aa"></script>
+<script src="https://d1br91wyosz8a9.cloudfront.net/t/bootstrap/js/bootstrap.min.js?v=133c6aa"></script>
+<script>
+$(function() {
+  $('#btn-gototop').click(function() {
+    // スクロール
+    $('html,body').animate({scrollTop: 0}, 500, 'swing');
+  });
+});
+</script>
+
+
+<div class="container">
+<div style="text-align: right; padding: 5px 10px 10px 0; font-weight: bold;">
+<button id="btn-gototop" class="btn btn-default btn-xs">
+<i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 上へ戻る</button>
+<span style="cursor: pointer; color: #666;"></span>
+</div>
+</div>
+
+<div class="foot2">
+<ul style="padding:0;"><li>日本語</li><li><a href="//en.shindanmaker.com" rel="nofollow">English</a></li><li><a href="//cn.shindanmaker.com" rel="nofollow">中文</a></li><li><a href="//kr.shindanmaker.com" rel="nofollow">한국의</a></li><li><a href="//o.shindanmaker.com" rel="nofollow">Other</a></li></ul></div>
+<div class="foot3" style="padding-bottom: 65px;">© 2017 診断メーカー ® All Rights Reserved.
+
+</div>
+
+
+
+
+
+<!-- google_ad_section_end --> 
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    ga('send', 'event', 'Action', 'Before_3', '', { nonInteraction: true });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+$(window).bind("unload",function(){});
+function toggle(t){
+  $(t).toggle("fast");
+}
+window.twttr = (function (d,s,id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+  js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+
+twttr.ready(function (twttr) {
+  twttr.events.bind('tweet',function(){
+    ga('send', 'event', 'Action', 'Share_3', 'Twitter');
+  });
+});
+
+$("[data-toggle=popover]").popover();
+$("[data-toggle=tooltip]").tooltip();
+
+function UpdateOffsetTop(){ }
+
+      $(document).ready(function(){
+UpdateOffsetTop();
+});
+
+
+
+
+
+function SendEventGa(eventCategory,eventAction,eventLabel){
+  
+  if(eventAction === undefined){
+    eventAction = "";
+  }
+
+  if(eventLabel === undefined){
+    eventLabel = "";
+  }
+
+  if(eventCategory !== undefined) {
+    ga('send', 'event', eventCategory, eventAction, eventLabel);
+  }
+}
+</script>
+
+
+<!-- Twitter universal website tag code -->
+<script type="text/javascript">
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nxboz');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+</body>
+</html>

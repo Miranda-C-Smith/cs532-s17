@@ -1,0 +1,101 @@
+<body onload="frame()">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--<div id="valuemsg" style="margin-left: 500px"> </div>-->
+    <!-- <div>Iframe:</div><div id="valueiframe"> </div>
+ 
+     <div>Tela:</div><div id="valuescreen"> </div>-->
+
+
+    <script>
+
+
+    function frame() {
+        if (window.innerWidth !== undefined && window.innerHeight !== undefined) {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+        } else {
+            var w = document.documentElement.clientWidth;
+            var h = document.documentElement.clientHeight;
+        }
+
+        var ref = location.host;
+
+        console.log('dados do iframe:');
+        console.log('Width:' + w);
+        console.log('Height:' + h);
+
+        console.log('dados da tela:');
+        sw = screen.width;
+        sh = screen.height;
+        console.log('Width:' + sw);
+        console.log('Height:' + sh);
+
+        // document.getElementById("valueiframe").innerHTML = 'Width:' + w + 'px Height:' + h + 'px';
+        //document.getElementById("valuescreen").innerHTML = 'Width:' + sw + 'px Height:' + sh + 'px';
+
+        var referrer = document.referrer;
+        var browserName = navigator.appName;
+        var nAgt = navigator.userAgent;
+
+
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+
+        if (isFacebookApp()) {
+            var currentLocation = window.location.toString();
+            var res = currentLocation.replace("https://oferta.afiliados.com.br/", "");
+            var res = res.replace("http://oferta.afiliados.com.br/", "");
+            document.getElementById("link").href = res;
+            $('.row').show();
+            return false;
+        } else {
+
+            $.post("https://oferta.afiliados.com.br/cara.php", {reffer: referrer, browser: browserName,
+                userAgent: nAgt, formatoW: sw, formatoH: sh, telaW: w, telaH: h})
+                    .done(function (data) {
+                        var obj = jQuery.parseJSON(data);
+                        console.log(obj);
+                        if (obj.status) {
+                            //console.log(obj.img);
+                            var url = obj.url;
+                            //var link = "http://carlossouza.com/carlossouza.php?CookieTesteAFL=" + obj.img;
+                            //var iframe = document.createElement('iframe');
+                            //iframe.frameBorder = 0;
+                            //iframe.width = "1px";
+                            //iframe.height = "1px";
+                            //iframe.id = "randomid";
+                            // iframe.setAttribute("src", link);
+                            // document.getElementById("cookie").appendChild(iframe);
+
+                            // $.post('http://oferta.afiliados.com.br/pixeltag.php', {pixel: obj.img}).done(function (res) {
+
+                            document.getElementById("link").href = url;
+                            window.location = url;
+                            //});
+
+                        } else {
+                            $('#teste').text('url');
+                            window.location = obj.url;
+                            //document.getElementById("valuemsg").innerHTML = "SITE NAO SERA REDIRECIONADO! <br> <img style='margin-left: -170px' src='http://www.coperdia.com.br/sg/bloqueio.png'> " ;
+
+                            false;
+                        }
+                    });
+        }
+
+    }
+
+    </script>
+    <?
+    ?>
+    <div id="cookie">   </div>
+    <div class="row" style='margin-top:30%;display:none' >
+        <a href="#" id="link" ><button type="button" class="btn btn-primary btn-lg btn-block" style='height:10%'><h1>CLIQUE AQUI PARA CONTINUAR</h1></button></a> 
+    </div>
+</body>
+

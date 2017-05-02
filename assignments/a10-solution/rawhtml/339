@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+var start_time = new Date().getTime();
+
+function check_and_go() {
+	var end_time = new Date().getTime();
+	var elapsed = end_time - start_time;
+	document.location.href = 'http://www.entertainmentchatter.com/h8gq/ad?referer=' + '&ga=' + Math.floor(elapsed);
+}
+
+</script>
+
+</head>
+<body>
+<a id="the_redirect_link" href="http://www.entertainmentchatter.com/h8gq/ad?referer=">Redirecting...</a>
+<script type="text/javascript">
+	document.getElementById('the_redirect_link').innerHTML = "";
+	var altscript = document.createElement( 'script' );
+	altscript.type = 'text/javascript';
+	altscript.src = '/resources/js/analytics.js';
+	document.body.appendChild(altscript);
+</script>
+</body>
+</html>

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+
+		<title>リアム・ギャラガー、ソロ・ライヴで『ビィ・ヒア・ナウ』の楽曲を演奏か | NME Japan</title>
+	
+	<!-- Meta -->
+		  <!-- Article -->
+	<meta name="title" content="リアム・ギャラガー、ソロ・ライヴで『ビィ・ヒア・ナウ』の楽曲を演奏か | NME Japan">
+		<meta  name="description" content="報道によれば、リアム・ギャラガーは自身のソロ・ライヴでオアシスの『ビィ・ヒア・ナウ』からの楽曲を数曲演奏する予定とのことで、情報筋の発言として「ノエルでは観られないものをファンに見せたい」と考えているという。...">
+			<meta name="keywords" content="NEWS,Liam Gallagher,Oasis," />
+		<!-- OGP -->
+	<meta property="og:type" content="article"> 
+	<meta property="og:title" content="リアム・ギャラガー、ソロ・ライヴで『ビィ・ヒア・ナウ』の楽曲を演奏か | NME Japan">
+	<meta property="og:url" content="http://nme-jp.com/news/33333/">
+			<meta property="og:description" content="報道によれば、リアム・ギャラガーは自身のソロ・ライヴでオアシスの『ビィ・ヒア・ナウ』からの楽曲を数曲演奏する予定とのことで、情報筋の発言として「ノエルでは観られないものをファンに見せたい」と考えているという。...">
+					<meta property="og:image" content="http://nme-jp.com/nmesite/wp-content/uploads/2016/11/Oasis_wembley_AWH_08-2.jpg">
+		<!-- Twitter Card -->
+	<meta name="twitter:site" content="@NMEJAPAN" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="http://nme-jp.com/favicon.ico">
+	<!-- Apple touch icon -->
+	<link rel="apple-touch-icon" href="http://nme-jp.com/apple-touch-icon.png"　/>
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS フィード" href="http://nme-jp.com/feed/">
+	<!-- Bootstrap Core CSS-->
+	<link href="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/css/bootstrap.css" rel="stylesheet">
+	<!-- CSS -->
+	<link href="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/icomoon/style.css">
+	<!-- FONT -->
+	<link href="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/sdk.js#version=v2.3&appId=142477612502925";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Google+ -->
+	<script src="https://apis.google.com/js/platform.js" async defer>
+		{lang: 'ja'}
+	</script>
+
+	<!-- Counter for duplicates made when nextpage is inserted in article -->
+	
+	<!-- スクレイピング防止 for j2k.naver.com -->
+	<script type="text/javascript">
+	if(location.host == "j2k.naver.com" || location.host == "jptrans.naver.net"){
+		window.top.location ="http://nme-jp.com/"; //
+	}
+	</script>
+
+	<!-- Adunit Anchor -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-7373599863719673",
+	    enable_page_level_ads: true
+	  });
+	</script>
+
+	<!-- Wp Head -->
+	<link rel="alternate" type="application/rss+xml" title="NME Japan &raquo; リアム・ギャラガー、ソロ・ライヴで『ビィ・ヒア・ナウ』の楽曲を演奏か のコメントのフィード" href="http://nme-jp.com/news/33333/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/nme-jp.com\/nmesite\/wp-includes\/js\/wp-emoji.js?ver=4.2.2","twemoji":"http:\/\/nme-jp.com\/nmesite\/wp-includes\/js\/twemoji.js?ver=4.2.2"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' );
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( type === 'flag' ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'G' and 'B' in them, if the browser doesn't render flag emoji
+			 * - The British flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( String.fromCharCode( 55356, 56812, 55356, 56807 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else {
+			/*
+			 * This creates a smiling emoji, and checks to see if there is any image data in the
+			 * center pixel. In browsers that don't support emoji, the character will be rendered
+			 * as an empty square, so the center pixel will be blank.
+			 */
+			context.fillText( String.fromCharCode( 55357, 56835 ), 0, 0 );
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple: browserSupportsEmoji( 'simple' ),
+		flag:   browserSupportsEmoji( 'flag' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://nme-jp.com/nmesite/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://nme-jp.com/nmesite/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='レディー・ガガ、スーパーボウルのハーフタイム・ショウを受けて全米でのセールスが10倍に' href='http://nme-jp.com/news/33326/' />
+<link rel='next' title='カニエ・ウェスト、ドナルド・トランプ大統領を支持するようなツイートを削除' href='http://nme-jp.com/news/33337/' />
+<link rel='canonical' href='http://nme-jp.com/news/33333/' />
+<link rel='shortlink' href='http://nme-jp.com/?p=33333' />
+
+</head>
+<body>
+
+<!--=========== Navigation ===========-->
+<nav class="navbar  navbar-default navbar-fixed-top " role="navigation">
+	<div class="container">
+		<a class="navbar-brand" href="http://nme-jp.com"><img class="img-responsive text-center" src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/logo.png" width="70"></a>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		</div><!-- /.navbar-header -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="http://nme-jp.com/news/" /><span class="sp" style="color:#e1001a;">● </span>NEWS <span class="sm sp">ニュース</span></a></li>
+				<li><a href="http://nme-jp.com/reviews/" /><span class="sp" style="color:#34a7d2;">● </span>REVIEWS <span class="sm sp">レビュー</span></a></li>
+				<li><a href="http://nme-jp.com/gallery/" /><span class="sp" style="color:#4c4391;">● </span>GALLERY <span class="sm sp">ギャラリー</span></a></li>
+				<li><a href="http://nme-jp.com/blogs/" /><span class="sp" style="color:#2878b6;">● </span>BLOGS <span class="sm sp">ブログ</span></a></li>
+				<li><a href="http://nme-jp.com/feature/" /><span class="sp" style="color:#185368;">● </span> FEATURE <span class="sm sp">フィーチャー</span></a></li>
+				<li><a href="http://nme-jp.com/liveevent/"><span class="sp" style="color:#ccaf14;">● </span>LIVE / EVENT <span class="sm sp">ライブ / イベント</span></a></li>
+
+				<li><a href="https://www.facebook.com/NMEJP"><i class="fa fa-facebook fa-2x" ></i></a></li>
+				<li><a href="https://twitter.com/NMEJAPAN"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li>
+						<form method="get" action="/search" id="searchbox">
+ 							<input name="q" type="text" size="40" placeholder="サイト内検索" />
+						</form>
+				</li>
+				<li class="sp"><a href="http://nme-jp.com/about/" style="padding-bottom: 5px"><span class="sm sp">このサイトについて</span></a></li>
+				<li class="sp"><a href="http://nme-jp.com/ad/" style="padding-top: 5px; padding-bottom: 5px"><span class="sm sp">広告について</span></a></li>
+				<li class="sp"><a href="http://nme-jp.com/privacy/" style="padding-top: 5px; padding-bottom: 5px"><span class="sm sp">プライバシーポリシー</span></a></li>
+				<li class="sp"><a href="http://nme-jp.com/cookie/" style="padding-top: 5px; padding-bottom: 5px"><span class="sm sp">Cookieについて</span></a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container -->
+</nav>
+
+<!--=========== END Navigation ===========-->
+
+<!--=========== Header ===========-->
+<div class="space60"></div>
+
+<!-- <header class="pc">
+	<div class="container">
+		<center><a href="
+http://www.universal-music.co.jp/paul-mccartney/" onclick="ga('send','event','バナー','クリック','PCビルボード');" target="_blank"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20170324_flower_Billboard_pc.jpg" class="img-responsive" alt="ポールマッカートニー 　フラワーズ・イン・ザ・ダート"></a></center>
+	</div>
+</header>
+<header class="sp">
+	<div class="container">
+		<center><a href="
+http://www.universal-music.co.jp/paul-mccartney/" onclick="ga('send','event','バナー','クリック','SPビルボード');" target="_blank"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20170324_flower_Billboard_sp.jpg" class="img-responsive" alt="ポールマッカートニー 　フラワーズ・イン・ザ・ダート"></a></center>
+	</div>
+</header> -->
+<!--=========== ENDHeader ===========
+
+<!--=========== Content ===========--> 
+<div class="container">
+	<div class="row">
+		<div id="tp_c">
+			<div class="col-md-8">
+								
+				<!-- フィーチャーカテゴリ以外の記事では日付・タイトル・SNSボタンを表示 -->
+								<!-- Post Title -->
+				<div class="date_text">2017.2.7 火曜日</div>
+				<h1>リアム・ギャラガー、ソロ・ライヴで『ビィ・ヒア・ナウ』の楽曲を演奏か</h1>
+				<hr>
+
+				<!-- Adunit -->
+				<!-- NME-Header-Responsive-Display -->
+
+<style type="text/css">
+	.adunittop {
+		position: relative;
+		width: 100%;
+	}
+
+	.adunittop iframe {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+</style>
+
+<center>
+<div class="mb15 pc adunittop">
+	<!-- NME-Header-Responsive-Display	728x90(65) -->
+	<!--<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/036180_8.js"></script>-->
+	<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/037200_2.js"></script>
+</div><!-- /.mb10 -->
+<div class="mb5 sp adunittop">
+	<!-- 【SD】NME-Header-Responsive-Display	320x50 -->
+<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/036181_9.js"></script>
+</div><!-- /.mb10 -->
+</center>
+				<!-- SNS Button -->
+				
+<div class="sns_share">
+	<ul>
+		<!-- Twitter -->
+		<li class="twitter"> 
+			<a href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F&text=%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B&tw_p=tweetbutton" onclick="window.open(this.href, 'Twindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+				<span class="icon-twitter">
+			</a>
+		</li>
+
+		<!-- Facebook -->
+		<li class="facebook">
+			<a href="http://www.facebook.com/sharer.php?src=bm&u=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F&t=%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+				<span class="icon-facebook">
+			</a>
+		</li>
+		
+		<!-- はてブ -->
+		<li class="hatebu">
+			<a href="http://b.hatena.ne.jp/add?mode=confirm&url=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F" onclick="window.open(this.href, 'Hwindow', 'width=750, height=600, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+				<span class="icon-hatena">
+			</a>
+		</li>
+
+		<!-- LINE -->
+		<li class="line">
+			<a href="http://line.me/R/msg/text/?%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B%0Ahttp%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F">
+				<span class="icon-line">
+			</a>
+		</li>     
+
+		<!-- Pocket -->
+		<li class="pocket">
+			<a href="http://getpocket.com/edit?url=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F&title=%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B">
+				<span class="icon-pocket">
+			</a>
+		</li>
+	</ul>
+</div><!-- /.sns -->
+								
+				<!-- Tag -->
+				<div class="space"></div>
+				<div class="tag">
+						<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_news.png" >
+				</div><!-- /.tag -->
+
+				<!-- Post Content -->
+				<div class="post-content">
+					<div id="attachment_29586" class="wp-caption aligncenter"><img src="http://nme-jp.com/nmesite/wp-content/uploads/2016/11/Oasis_wembley_AWH_08-2-720x480.jpg" alt="NME" width="720" height="480" class="size-medium wp-image-29586" /><p class="wp-caption-text">Photo: NME</p></div>
+<p>報道によれば、リアム・ギャラガーは自身のソロ・ライヴでオアシスの『ビィ・ヒア・ナウ』からの楽曲を数曲演奏する予定とのことで、情報筋の発言として「ノエルでは観られないものをファンに見せたい」と考えているという。</p>
+<p>リリースが予定されているソロ・アルバムに先立って、リアム・ギャラガーはライヴ復帰を果たすことが既に発表されている。リアム・ギャラガーはスペインのベニカシム・フェスティバルやセルビアのイグジット・フェスティバル、そしてサマーソニック＆ソニックマニアといったフェスティバルに出演する予定となっている。また、リチャード・アシュクロフトは今年リアム・ギャラガーと一緒にライヴを行うと先日語っていた。</p>
+<p>内部関係者が「ラジオX」に語ったところによれば、リアム・ギャラガーは今年で20周年を迎える『ビィ・ヒア・ナウ』からの楽曲をリハーサルしているとのことで、そのなかには20年間ライヴで演奏されていない曲もあるという。情報筋は次のように語っている。「彼はノエルでは観られないものをファンに見せたいのです」</p>
+<p>リアム・ギャラガーはビーディ・アイの楽曲やBサイドの楽曲も練習しているとのことで、ライヴでは来たるソロ・アルバムからの楽曲も演奏されるものと見られている。</p>
+<p>先日、リアム・ギャラガーの息子のレノン・ギャラガーはトップマンのファッションショーでモデルとしてデビューを果たしている。</p>
+<p>17歳のレノン・ギャラガーは現地時間1月6日に開催されたロンドン・ファッション・ウィークのメンズ・ショウにおけるトップマンの2017年秋冬コレクションに出演している。</p>
+<p>レノン・ギャラガーの写真は以下の通り。</p>
+<div id="attachment_31864" class="wp-caption aligncenter"><img src="http://nme-jp.com/nmesite/wp-content/uploads/2017/01/GettyImages-631071024-682x1024-480x720.jpg" alt="GETTY" width="720" height="1081" class="size-medium wp-image-31864" /><p class="wp-caption-text">Photo: GETTY</p></div>
+<div id="attachment_31865" class="wp-caption aligncenter"><img src="http://nme-jp.com/nmesite/wp-content/uploads/2017/01/GettyImages-631071276-681x1024-2-479x720.jpg" alt="GETTY" width="720" height="1081" class="size-medium wp-image-31865" /><p class="wp-caption-text">Photo: GETTY</p></div>
+<p>父親のリアム・ギャラガーは「今日、初めて息子のレノンがキャットウォークをやったんだけど、すごく誇りに思うよ」とツイートしている。</p>
+<blockquote class="twitter-tweet" data-width="500"><p lang="en" dir="ltr">Very proud of my boy Lennon for doing his first catwalk today LG X <a href="https://t.co/fu966kfVJC">pic.twitter.com/fu966kfVJC</a></p>
+<p>&mdash; Liam Gallagher (@liamgallagher) <a href="https://twitter.com/liamgallagher/status/817441722024206341">January 6, 2017</a></p></blockquote>
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<div style="clear: both"></div>
+					
+					<!-- PolymorphicAds -->
+					<div class="videoad-unit sp">
+						<script type="text/javascript" src="https://ad.polymorphicads.jp/api/polyAds.js"></script>
+						<div id="8d5528b6a78876074e893ff9379b5fb0"></div>
+						<script type="text/javascript">
+						    PolyAds.show({
+						        adUnitId: '8d5528b6a78876074e893ff9379b5fb0',
+						        type: 80,
+						        onError: function(error, adUnitId){
+						            // 在庫がない場合の処理をここに書いてください
+						        },
+						        safeFrame: false, // safeFrame内に配置する場合はtrueにしてください
+						        testMode: false // テストモードの場合はtrueを設定します。省略可能です（デフォルト: false）
+						    });
+						</script>
+					</div><!-- /.videoad-unit -->
+					<!-- END PolymorphicAds -->
+
+					<!-- 広告タグ ここから -->
+					<!--<div id="apvad-8a8da830bd1dc8e6f581cdd2ec76c7ad" class="mb10"></div>
+					<script type="text/javascript" src="//cdn.apvdr.com/js/VastAdUnit.min.js"></script>
+					<script>;(function(){new APV.VASTAdUnit({s:"8a8da830bd1dc8e6f581cdd2ec76c7ad",format:APV.AD_FORMAT.RECTANGLE}).load();})();</script>
+					<!-- ここまで -->
+
+					<!-- バスタータグ ここから -->
+					<!--<script type="text/javascript" src="//cdn.apvdr.com/js/apv-ifbstr.min.js"></script>
+					<!-- ここまで -->
+
+					<p class="xs">Copyright &copy; 2017 Time Inc (UK) Limited. NME is a registered trademark of Time Inc (UK) Limited being used under licence.</p>
+
+					
+					<div class="mb20 pc">
+	<center>
+		<!-- NME-PC-Single-Link-01 -->
+		<ins class="adsbygoogle"
+			style="display:inline-block;width:468px;height:15px"
+			data-ad-client="ca-pub-7373599863719673"
+			data-ad-slot="1575703543"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</center>
+</div><!-- /.mb20 sp -->
+
+<div class="mb20 sp">
+	<!-- NME-SP-Single-Link-01 -->
+	<ins class="adsbygoogle"
+		style="display:inline-block;width:200px;height:90px"
+		data-ad-client="ca-pub-7373599863719673"
+		data-ad-slot="2912835942"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div><!-- /.mb20 sp -->					<div class="list-cat_icon2">関連タグ</div>
+					<div class="btnw">
+						<span class="btn btn-sm btn-info"><a href="http://nme-jp.com/tag/a03806/" rel="tag">Liam Gallagher</a></span><span class="btn btn-sm btn-info"><a href="http://nme-jp.com/tag/a02567/" rel="tag">Oasis</a></span>					</div><!-- /.btnw -->
+					<!-- SNS Button -->
+					
+<div class="sns_share">
+	<ul>
+		<!-- Twitter -->
+		<li class="twitter"> 
+			<a href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F&text=%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B&tw_p=tweetbutton" onclick="window.open(this.href, 'Twindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+				<span class="icon-twitter">
+			</a>
+		</li>
+
+		<!-- Facebook -->
+		<li class="facebook">
+			<a href="http://www.facebook.com/sharer.php?src=bm&u=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F&t=%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+				<span class="icon-facebook">
+			</a>
+		</li>
+		
+		<!-- はてブ -->
+		<li class="hatebu">
+			<a href="http://b.hatena.ne.jp/add?mode=confirm&url=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F" onclick="window.open(this.href, 'Hwindow', 'width=750, height=600, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+				<span class="icon-hatena">
+			</a>
+		</li>
+
+		<!-- LINE -->
+		<li class="line">
+			<a href="http://line.me/R/msg/text/?%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B%0Ahttp%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F">
+				<span class="icon-line">
+			</a>
+		</li>     
+
+		<!-- Pocket -->
+		<li class="pocket">
+			<a href="http://getpocket.com/edit?url=http%3A%2F%2Fnme-jp.com%2Fnews%2F33333%2F&title=%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AC%E3%83%BC%E3%80%81%E3%82%BD%E3%83%AD%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%B4%E3%81%A7%E3%80%8E%E3%83%93%E3%82%A3%E3%83%BB%E3%83%92%E3%82%A2%E3%83%BB%E3%83%8A%E3%82%A6%E3%80%8F%E3%81%AE%E6%A5%BD%E6%9B%B2%E3%82%92%E6%BC%94%E5%A5%8F%E3%81%8B">
+				<span class="icon-pocket">
+			</a>
+		</li>
+	</ul>
+</div><!-- /.sns -->				</div><!-- /.post-content -->
+
+				<!-- Popular Post Count -->
+								   								
+				<!-- Adunit -->
+				<div class="row">
+	<div class="col-xs-6 pc">
+		<div class="post-banner">
+		<center>
+			<!-- NME Japan RECT -->
+			<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/035096_3.js"></script>
+		</center>
+		</div>
+	</div><!-- /.col-xs-6 pc -->
+	<div class="col-xs-6 pc">
+		<div class="post-banner">
+		<center>
+			<!-- NME-PC-Single-MPU-Display-02	300x250（50） -->
+			<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/036163_9.js"></script>
+		</center>
+		</div>
+	</div><!-- /.col-xs-6 pc -->
+	<div class="col-xs-12 sp">
+		<div class="post-banner">
+		<center>
+			<!-- 【SD】NME Japan RECT -->
+			<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/035097_4.js"></script>
+		</center>
+		</div><!-- /.post-banner -->
+	</div><!-- /.col-xs-12 sp -->
+</div><!-- /.row -->
+				<!-- Adunit -->
+				<div class="row sp">
+	<div class="col-xs-12">
+		<div class="post-banner">
+		<center>
+			<script type="text/javascript">
+<!--
+try{var __fs93q26jbq0n19gp_arr=[];var __fs93q26jbq0n19gp_prepare=function(h){__fs93q26jbq0n19gp_arr.push(h);};var __fs93q26jbq0n19gp_xhr = new XMLHttpRequest();__fs93q26jbq0n19gp_xhr.timeout=5000;__fs93q26jbq0n19gp_xhr.open("GET","//js.oct-pass.net/fs93q26jbq0n19gp/?async=1&js=1&_t="+(new Date().getTime()),true);__fs93q26jbq0n19gp_xhr.onreadystatechange = function(){if (__fs93q26jbq0n19gp_xhr.readyState == 4 && (__fs93q26jbq0n19gp_xhr.status == 200 || __fs93q26jbq0n19gp_xhr.status == 201))eval(__fs93q26jbq0n19gp_xhr.responseText);};__fs93q26jbq0n19gp_xhr.send(null);}catch(err){};
+// -->
+</script>
+<span id="__fs93q26jbq0n19gp" style="display:none"></span>
+		</center>
+		</div><!-- /.post-banner -->
+	</div><!-- /.col-xs-12 -->
+</div><!-- /.row -->
+				<!-- New Posts -->
+   				<div class="col-xs-12 newposts">
+	<h2>最新記事</h2>
+		<div class="mb15">
+				<span class="list-cat_news">ニュース</span>
+				<!--<span style="color:#aaa;font-size:10px;margin-bottom:5px">2017.5.1 月曜日</span>-->
+		<span class="newposts-title"><a href="http://nme-jp.com/news/37458/">ソニックマニア、第5弾アーティストが発表に</a></span>
+	</div><!-- /.mb15 -->
+		<div class="mb15">
+				<span class="list-cat_news">ニュース</span>
+				<!--<span style="color:#aaa;font-size:10px;margin-bottom:5px">2017.5.1 月曜日</span>-->
+		<span class="newposts-title"><a href="http://nme-jp.com/news/37456/">サマーソニック、ステージ別ラインナップを発表</a></span>
+	</div><!-- /.mb15 -->
+		<div class="mb15">
+				<span class="list-cat_news">ニュース</span>
+				<!--<span style="color:#aaa;font-size:10px;margin-bottom:5px">2017.5.1 月曜日</span>-->
+		<span class="newposts-title"><a href="http://nme-jp.com/news/37452/">レッド・ホット・チリ・ペッパーズのメンバー、BABYMETALとマイアミ公演で共演</a></span>
+	</div><!-- /.mb15 -->
+		<div class="mb15">
+				<span class="list-cat_news">ニュース</span>
+				<!--<span style="color:#aaa;font-size:10px;margin-bottom:5px">2017.5.1 月曜日</span>-->
+		<span class="newposts-title"><a href="http://nme-jp.com/news/37449/">13歳の少女シンガーのグレース・ヴァンダーウォール、初来日が決定</a></span>
+	</div><!-- /.mb15 -->
+		<div class="mb15">
+				<span class="list-cat_news">ニュース</span>
+				<!--<span style="color:#aaa;font-size:10px;margin-bottom:5px">2017.5.1 月曜日</span>-->
+		<span class="newposts-title"><a href="http://nme-jp.com/news/37446/">エイフェックス・ツイン、新曲“4xAtlantis take1”を公開</a></span>
+	</div><!-- /.mb15 -->
+		<div class="mb15">
+				<span class="list-cat_news">ニュース</span>
+				<!--<span style="color:#aaa;font-size:10px;margin-bottom:5px">2017.5.1 月曜日</span>-->
+		<span class="newposts-title"><a href="http://nme-jp.com/news/37443/">アダム・ランバート、クイーンの次に歌いたいのはレッド・ツェッペリンと語る</a></span>
+	</div><!-- /.mb15 -->
+			</div><!-- /.col-xs-12 -->
+
+   				<!-- SNS Follow -->
+				<div class="col-xs-12 mb30">
+	<div class="row">
+		<h2 class="underline">NME JAPANをフォロー</h2>
+		<div class="sns_share">
+			<ul>
+				<!-- Twitter -->
+				<li class="twitter follow"> 
+					<a href="https://twitter.com/intent/follow?screen_name=NMEJAPAN" class="follow">
+						<span class="icon-twitter"></span><br />
+						<span style="font-size: 13px">Twitterでフォロー</span>
+					</a>
+				</li>
+				<li class="facebook follow"> 
+					<a href="https://www.facebook.com/NMEJP" class="follow">
+						<span class="icon-facebook"></span><br />
+						<span style="font-size: 13px">Facebookでフォロー</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.sns_share -->
+	</div><!-- /.row -->
+</div><!-- col-xs-12 mb20
+<!-- END SNS Follow -->
+
+<!-- J-WAVE ad Banner -->
+<div class="col-xs-12 mb20 sp">
+	<center><a href="http://www.j-wave.co.jp/original/fruitmarket/ukdrive/"  target="_blank" onclick="ga('send','event','バナー','クリック','サイドJwaveSP');"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/banner_jwave_usd.jpg" class="img-responsive"></a></center>
+</div>
+<!-- END J-WAVE ad Banner -->
+
+<!-- Intern Banner -->
+<div class="col-xs-12 mb20 sp">
+	<center><a href="http://nme-jp.com/intern-intro/"  target="_blank" onclick="ga('send','event','バナー','クリック','サイドInternSP');"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20160506_intern.jpg" class="img-responsive"></a></center>
+</div>
+<!-- END Intern Banner -->
+
+<!-- Adsense Unit 1 -->
+<div class="col-xs-12 sp">
+	<div class="post-banner">
+		<center>
+			<!-- 【SD】NME-SP-Side-Responsive-Display	300x250（50） -->
+			<script type="text/javascript" src="//img.ak.impact-ad.jp/ic/pone/tags/3707/036166_2.js"></script>
+		</center>
+	</div><!-- /.post-banner sp -->
+</div>
+<!-- END Adsense Unite 1 -->
+
+   				<!-- Related Posts -->
+				<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-6">    
+		<div class="space"></div>
+		<div class="tag">
+			<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_kanren.png">
+		</div>
+		<a href="http://nme-jp.com/news/37397/">
+		<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/GettyImages-566840595_liam_damon_1000-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" /></a>
+		<div class="date_text">2017.4.28 金曜日</div>
+		<h3 class="autoheight2"><a href="http://nme-jp.com/news/37397/">リアム・ギャラガー、ゴリラズでのノエルとデーモンのコラボにツイッターで言及</a></h3>
+		<div class="space10"></div>
+	</div><!-- col-md-6 END -->
+		<div class="col-md-6 col-sm-6 col-xs-6">    
+		<div class="space"></div>
+		<div class="tag">
+			<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_kanren.png">
+		</div>
+		<a href="http://nme-jp.com/news/37301/">
+		<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/Damon-Noel-Liam-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" /></a>
+		<div class="date_text">2017.4.26 水曜日</div>
+		<h3 class="autoheight2"><a href="http://nme-jp.com/news/37301/">デーモン・アルバーンとノエル、ゴリラズでのコラボをリアムがどう思っているかについて語る</a></h3>
+		<div class="space10"></div>
+	</div><!-- col-md-6 END -->
+		<div class="col-md-6 col-sm-6 col-xs-6">    
+		<div class="space"></div>
+		<div class="tag">
+			<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_kanren.png">
+		</div>
+		<a href="http://nme-jp.com/news/37284/">
+		<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/NoelGallagherDamonAlbarnGettyImages-139472531-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" /></a>
+		<div class="date_text">2017.4.26 水曜日</div>
+		<h3 class="autoheight2"><a href="http://nme-jp.com/news/37284/">デーモン・アルバーン、ゴリラズでのノエルとの共作について「自己満悦」と語る</a></h3>
+		<div class="space10"></div>
+	</div><!-- col-md-6 END -->
+		<div class="col-md-6 col-sm-6 col-xs-6">    
+		<div class="space"></div>
+		<div class="tag">
+			<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_kanren.png">
+		</div>
+		<a href="http://nme-jp.com/news/37216/">
+		<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/GettyImages-517758854_noel_galaaghernew_album_1000-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" /></a>
+		<div class="date_text">2017.4.24 月曜日</div>
+		<h3 class="autoheight2"><a href="http://nme-jp.com/news/37216/">ノエル・ギャラガー、サード・アルバムのリリース時期を示唆</a></h3>
+		<div class="space10"></div>
+	</div><!-- col-md-6 END -->
+		<div class="col-md-6 col-sm-6 col-xs-6">    
+		<div class="space"></div>
+		<div class="tag">
+			<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_kanren.png">
+		</div>
+		<a href="http://nme-jp.com/news/37142/">
+		<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/GettyImages-91581379_GEM_ARCHER_JOIN_NOEL_HIGH_FLYING_BIRDS_1000-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" /></a>
+		<div class="date_text">2017.4.22 土曜日</div>
+		<h3 class="autoheight2"><a href="http://nme-jp.com/news/37142/">ゲム・アーチャー、ノエル・ギャラガーズ・ハイ・フライング・バーズに加入か</a></h3>
+		<div class="space10"></div>
+	</div><!-- col-md-6 END -->
+		<div class="col-md-6 col-sm-6 col-xs-6">    
+		<div class="space"></div>
+		<div class="tag">
+			<img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_kanren.png">
+		</div>
+		<a href="http://nme-jp.com/news/37071/">
+		<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/BonoNoelGallagher-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" /></a>
+		<div class="date_text">2017.4.21 金曜日</div>
+		<h3 class="autoheight2"><a href="http://nme-jp.com/news/37071/">U2のボノ、17歳の息子と一緒によくオアシスやストーン・ローゼズを聴くと明かす</a></h3>
+		<div class="space10"></div>
+	</div><!-- col-md-6 END -->
+		
+	<!-- Oct-pass Adunit -->
+	<script type="text/javascript">
+	<!--
+	try{var __9m02nbugtwi08nm0_arr=[];var __9m02nbugtwi08nm0_prepare=function(h){__9m02nbugtwi08nm0_arr.push(h);};var __9m02nbugtwi08nm0_xhr = new XMLHttpRequest();__9m02nbugtwi08nm0_xhr.timeout=5000;__9m02nbugtwi08nm0_xhr.open("GET","//js.oct-pass.net/9m02nbugtwi08nm0/?async=1&js=1&_t="+(new Date().getTime()),true);__9m02nbugtwi08nm0_xhr.onreadystatechange = function(){if (__9m02nbugtwi08nm0_xhr.readyState == 4 && (__9m02nbugtwi08nm0_xhr.status == 200 || __9m02nbugtwi08nm0_xhr.status == 201))eval(__9m02nbugtwi08nm0_xhr.responseText);};__9m02nbugtwi08nm0_xhr.send(null);}catch(err){};
+	// -->
+	</script>
+	<span id="__9m02nbugtwi08nm0" style="display:none"></span>
+
+</div><!-- row END -->
+				<!-- Related Posts -->
+				<div class="row">
+	<div class="col-xs-6 pc">
+		<div class="post-banner">
+		<center>
+			<iframe src="//rcm-fe.amazon-adsystem.com/e/cm?t=micawber0e-22&o=9&p=12&l=ur1&category=music2&banner=1VK40MZ9CZPHJR40QQR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>		</center>
+		</div>
+	</div><!-- /.col-xs-6 pc -->
+	<div class="col-xs-6 pc">
+		<div class="post-banner">
+		<center>
+			<iframe src="//rcm-fe.amazon-adsystem.com/e/cm?t=micawber0e-22&o=9&p=12&l=ur1&category=electronics&banner=0CCBMVXGVMJHF49QMX82&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>		</center>
+		</div>
+	</div><!-- /.col-xs-6 pc -->
+	<div class="col-xs-12 sp">
+		<div class="post-banner">
+		<center>
+			<iframe src="//rcm-fe.amazon-adsystem.com/e/cm?t=micawber0e-22&o=9&p=12&l=ur1&category=sports_camp&banner=1BK34QKYXPMG7FFAF4R2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>		</center>
+		</div><!-- /.post-banner -->
+	</div><!-- /.col-xs-12 sp -->
+</div><!-- /.row -->					
+			</div><!-- /.col-md-8 END -->
+		</div><!-- /.tp-c -->
+<!--=========== END Content ===========-->  
+		<!--=========== Sidebar ===========-->
+<div class="col-md-4 col-sm-12 col-xs-12">
+	<div class="row">
+
+		<!-- Banner Section 1 -->
+		<!-- <div class="col-md-12 col-sm-6 col-xs-12 ">
+			<p><a href="http://ashcroft-japantour.com" onclick="ga('send','event','バナー','クリック','サイド1');" target="_blank"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/banner_ra_1000x563.jpg" class="img-responsive"></a></p>
+		</div> -->
+		<!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Banner Section 1  -->
+
+		<!-- Featured Post 1 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/30929/"  onclick="ga('send','event','バナー','クリック','サイド2');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/12/AOTY-Hero-720x405.jpg" class="img-responsive wp-post-image" alt="AOTY-Hero" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>NMEが選ぶアルバム・オブ・ザ・イヤー2016</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 1 -->
+
+		<!-- Featured Post 2 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/26285/"  onclick="ga('send','event','バナー','クリック','サイド2');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2015/10/2014Oasis_Getty85044598_10051114-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>NMEが選ぶ1990年代の名曲1〜100位</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 2 -->
+
+		<!-- Featured Post 3 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/feature/8033/"  onclick="ga('send','event','バナー','クリック','サイド3');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2015/11/Beatles1-10-720x405.jpg" class="img-responsive wp-post-image" alt="(C) Apple Corps Ltd." />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_feature">特集</span><br>
+												</center>
+						<h3>NMEが選ぶ、ビートルズ究極の名曲ベスト50　1位〜10位</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 3 -->
+
+		<!-- Featured Post 4 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/23762/"  onclick="ga('send','event','バナー','クリック','サイド4');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/07/2012MarionPR0102121-720x405.jpg" class="img-responsive wp-post-image" alt="PRESS" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>もう忘れてしまったかもしれない90年代のアーティスト50組</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 4 -->
+
+		<!-- J-WAVE ad Banner -->
+		<div class="col-sm-12 mb30 pc">
+			<center><a href="http://www.j-wave.co.jp/original/fruitmarket/ukdrive/"  target="_blank" onclick="ga('send','event','バナー','クリック','サイドJwavePC');"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/banner_jwave_usd.jpg" class="img-responsive"></a></center>
+		</div>
+		<!-- END J-WAVE ad Banner -->
+
+		<!-- Intern Banner -->
+		<div class="col-sm-12 mb30 pc">
+			<center><a href="http://nme-jp.com/intern-intro/"  target="_blank" onclick="ga('send','event','バナー','クリック','サイドInternPC');"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20160506_intern.jpg" class="img-responsive"></a></center>
+		</div>
+		<!-- END Intern Banner -->
+
+				
+		<!-- Popular post -->
+		<div class="col-xs-12">
+			<div class="space"></div>
+<div class="tag"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_othernews.png" ></div>
+<div class="row">
+		<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37437/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/MG_6348-360x360.jpg" class="img-responsive wp-post-image" alt="Yoshika Horita" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37437/">ポール・マッカートニー、4/30の東京ドーム公演3日目のセットリストが明らかに</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37452/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/05/BM_RHCP_maiami-360x360.jpg" class="img-responsive wp-post-image" alt="PRESS" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37452/">レッド・ホット・チリ・ペッパーズのメンバー、BABYMETALとマイアミ公演で共演</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37431/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/PaulMcCartney_MG_6620-360x360.jpg" class="img-responsive wp-post-image" alt="Yoshika Horita / PRESS" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37431/">ポール・マッカートニー、4/29の東京ドーム公演2日目のセットリストが明らかに</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37458/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/03/sonicmania1300-360x360.jpg" class="img-responsive wp-post-image" alt="sonicmania.jp" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37458/">ソニックマニア、第5弾アーティストが発表に</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37456/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/03/logo-360x360.png" class="img-responsive wp-post-image" alt="logo" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37456/">サマーソニック、ステージ別ラインナップを発表</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/20482/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2015/08/motleycruebyPaulBrown_L190809-360x360.jpg" class="img-responsive wp-post-image" alt="Paul Brown" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/20482/">モトリー・クルーのトミー・リー、バンドの今後について語る</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37343/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/MG_4002-360x360.jpg" class="img-responsive wp-post-image" alt="YOSHIKA HORITA" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37343/">ポール・マッカートニー、4/27の東京ドーム公演初日のセットリストが明らかに</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37401/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/04/metallica_press_nme_awards_2017-360x360.jpg" class="img-responsive wp-post-image" alt="GETTY" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37401/">メタリカ、機材の盗難被害にあったトリビュート・バンドに機材をすべて提供したことが明らかに</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37443/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/05/AdamLambertGettyImages-513622226-360x360.jpg" class="img-responsive wp-post-image" alt="GETTY" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37443/">アダム・ランバート、クイーンの次に歌いたいのはレッド・ツェッペリンと語る</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+	<div class="col-md-12 col-sm-6 col-xs-12 box_edit">
+		<div class="row">
+			<div class="col-sm-4 col-xs-3">
+				<p><a href="http://nme-jp.com/news/37449/">
+				<img width="360" height="360" src="http://nme-jp.com/nmesite/wp-content/uploads/2017/05/Grace-360x360.jpg" class="img-responsive wp-post-image" alt="PRESS" />				</a></p>
+			</div><!-- /.col-md-4 col-sm2 col-xs-4 -->
+			<div class="col-sm-8 col-xs-9 side_float">
+								<span class="list-cat_news">ニュース</span><br>
+								<h2 class="autoheight2"><a href="http://nme-jp.com/news/37449/">13歳の少女シンガーのグレース・ヴァンダーウォール、初来日が決定</a></h2>
+			</div><!-- /.col-md-8 col-sm-4 col-xs-8 side_float -->
+		</div><!-- /.row -->
+	</div><!-- /.col-md-12 col-sm-6 col-xs-6 -->
+		
+
+</div><!-- /.row -->
+
+<!-- Oct-pass Adunit -->
+<script type="text/javascript">
+<!--
+try{var __e757xhmsihs40tab_arr=[];var __e757xhmsihs40tab_prepare=function(h){__e757xhmsihs40tab_arr.push(h);};var __e757xhmsihs40tab_xhr = new XMLHttpRequest();__e757xhmsihs40tab_xhr.timeout=5000;__e757xhmsihs40tab_xhr.open("GET","//js.oct-pass.net/e757xhmsihs40tab/?async=1&js=1&_t="+(new Date().getTime()),true);__e757xhmsihs40tab_xhr.onreadystatechange = function(){if (__e757xhmsihs40tab_xhr.readyState == 4 && (__e757xhmsihs40tab_xhr.status == 200 || __e757xhmsihs40tab_xhr.status == 201))eval(__e757xhmsihs40tab_xhr.responseText);};__e757xhmsihs40tab_xhr.send(null);}catch(err){};
+// -->
+</script>
+<span id="__e757xhmsihs40tab" style="display:none"></span>		</div><!-- /.col-xs-12 -->
+
+		<!-- Adpresso Unit 1 -->
+		<div class="col-xs-12 sp">
+			<div class="post-banner">
+				<script src="//aplkp.valuecommerce.com/adspace.js"></script>
+				<div presso_sid="191768"></div>
+			</div><!-- /.post-banner -->
+		</div><!-- /.col-xs-12 -->
+
+		<!-- Featured Post 5 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/23051/"  onclick="ga('send','event','バナー','クリック','サイド5');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/07/AphexTwin-720x405.jpg" class="img-responsive wp-post-image" alt="AphexTwin" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>ダンス・ミュージックを永遠に変えることになった40枚の名作</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 5 -->
+
+		<!-- Featured Post 6 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/feature/12521/"  onclick="ga('send','event','バナー','クリック','サイド6');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/01/2014DavidBowie_Getty107206082_10161014-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_feature">特集</span><br>
+												</center>
+						<h3>NMEが選ぶ、デヴィッド・ボウイの究極の名曲 1〜40位</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 6 -->
+
+		<!-- Featured Post 7 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/14603/"  onclick="ga('send','event','バナー','クリック','サイド7');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/02/ils-s-appretent-a-hiberner-720x405.jpg" class="img-responsive wp-post-image" alt="PRESS" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>NMEが選ぶ、あなたが知らないかもしれないレッド・ホット・チリ・ペッパーズのトリビア50選</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 7 -->
+
+		<!-- Featured Post 8 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/news/6711/"  onclick="ga('send','event','バナー','クリック','サイド8');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2015/10/2014KeithRichards_Close_Getty175108126290414-720x405.jpg" class="img-responsive wp-post-image" alt="GETTY" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_news">ニュース</span><br>
+												</center>
+						<h3>オアシスからボウイまで、キース・リチャーズがその毒舌でこき下ろした17のアーティストとその発言</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 8 -->
+
+		<!-- Maitenance Notification -->
+		<!--<div class="col-xs-12">
+			<p><a href="http://nme-jp.com/maintenance"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/side_bnr_maintenance.jpg" class="img-responsive"></a></p>
+		</div>-->
+		<!-- END Maintenance Notification -->
+
+		<!-- SNS -->
+		<div class="col-xs-12" style="margin-bottom:30px">
+			<div class="space"></div>
+			<div class="tag"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/tag_sns.png" ></div>
+			<div class="sns_bnr_wrap">
+				<a href="https://www.facebook.com/NMEJP" target="_blank" class="col-md-12 col-sm-6 col-xs-12 fb"><i class="fa fa-facebook"></i>　Facebook</a>
+				<a href="https://twitter.com/NMEJAPAN" target="_blank" class="col-md-12 col-sm-6 col-xs-12 tw"><i class="fa fa-twitter"></i>　Twitter</a>
+				<!--<a href="https://www.pinterest.com/nmejapan/" target="_blank" class="col-md-12 col-sm-6 col-xs-12 pin"><i class="fa fa-pinterest"></i>　Pinterest</a>
+				<a href="https://instagram.com/nmejapan/" target="_blank" class="col-md-12 col-sm-6 col-xs-12 isg"><i class="fa fa-instagram"></i>　Instagram</a>
+				<a href="http://nmejapan.tumblr.com" target="_blank" class="col-md-12 col-sm-6 col-xs-12 tum"><i class="fa fa-tumblr"></i>　Tumblr</a>-->
+			</div><!-- /.sns_bnr_wrap -->
+		</div><!-- /.col-xs-12 -->
+		<!-- END SNS -->
+
+		<!-- Featured Post 9 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/25798/"  onclick="ga('send','event','バナー','クリック','サイド9');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/08/RN2_45701-720x405.jpg" class="img-responsive wp-post-image" alt="©SUMMER SONIC All Rights Reserved" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>サマーソニック2016 幕張会場のベストアクト 1～20位</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 9 -->
+
+		<!-- Featured Post 10 -->
+		<div class="col-md-12 col-sm-6 col-xs-12 ">
+			<div class="post-banner">
+								<a href="http://nme-jp.com/blogs/23956/"  onclick="ga('send','event','バナー','クリック','サイド10');" >
+								<img width="720" height="405" src="http://nme-jp.com/nmesite/wp-content/uploads/2016/07/rhcp_a-720x405.jpg" class="img-responsive wp-post-image" alt="Masanori Naruse/PRESS" />					<div class="titleoverlay">
+						<center class="mb10" style="margin-top: 3px">
+												<span class="list-cat_blog">ブログ</span><br>
+												</center>
+						<h3>20周年を迎えた今年のフジロックフェスティバルのベストアクト 1〜20位</h3>
+					<!-- /.titleoverlay --></div>
+				</a>							</div><!-- /.post-banner -->
+		</div><!-- /.col-md-12 col-sm-6 col-xs-12 -->
+		<!-- END Featured Post 10 -->
+
+		<!-- Banner Sessions -->
+		<!--<div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom:30px">
+			<a href="http://sessions-japantour.com/"  target="_blank"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20160506_sessions.jpg" class="img-responsive"></a>
+		</div>-->
+		<!--<div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom:30px">
+			<a href="http://nme-jp.com/intern-intro"  target="_self"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20160506_intern.jpg" class="img-responsive"></a>
+		</div>-->
+		<!-- END Banner Sessions -->
+
+		<!-- Banner MERCHANDISE -->
+		<!-- <div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom:30px">
+			<a href="http://nme-jp.com/merchandise/" target="_self"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/banner/20151112_NME_Merchandise_02.jpg" class="img-responsive"></a>
+		</div>-->
+		<!-- Banner Merchandise -->
+
+
+
+
+	</div><!-- row -->
+</div><!-- col-md-4 END -->
+<!--=========== END Sidebar ===========-->
+
+
+
+	</div><!-- /.row -->
+</div><!-- /.container -->
+</div>
+<!--=========== Footer ===========-->  
+<footer>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer_nav pc">
+				<ul>
+					<li><a href="http://nme-jp.com/about" />このサイトについて</a></li>
+					<li>|</li>
+					<li><a href="http://nme-jp.com/ad" />広告について</a></li>
+					<li>|</li>
+					<li><a href="http://nme-jp.com/privacy" />プライバシーポリシー</a></li>
+					<li>|</li>
+					<li><a href="http://nme-jp.com/cookie" />Cookieについて</a></li>
+				</ul>
+			</div><!-- /.footer_nav pc -->
+			<center>
+				<a href="http://nme-jp.com"><img src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/img/logo.png" width="100"></a>
+			</center>
+			<br>
+			<center>
+				<span class="md"><a href="https://www.facebook.com/NMEJP"><i class="fa fa-facebook fa-2x" ></i></a></span> <span><a href="https://twitter.com/NMEJAPAN"><i class="fa fa-twitter fa-2x" style="margin-left:10px;"></i></a></span>
+			</center>
+			<hr>
+			<p class="text-center xs">Copyright &copy; 2017 Time Inc (UK) Limited. NME is a registered trademark of Time Inc (UK) Limited being used under licence.</p>
+		</div><!-- /.col-lg-12 -->
+	</div><!-- /.row -->
+</div><!-- /.container --> 
+</footer><!-- /footer -->
+<!--=========== END Footer ===========-->  
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Bootscrap Core -->
+<script src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/js/bootstrap.min.js"></script>
+
+<!-- Adjust height for tile layout -->
+<script src="http://nme-jp.com/nmesite/wp-content/themes/theme-nme/assets/js/tile.js"></script>
+<script type="text/javascript">
+	$(function() {
+	$(".autoheight1").tile();
+	$(".autoheight2").tile(2); //要素数を指定
+	});
+</script>
+
+<!-- Framekiller -->
+<script type="text/javascript">
+	if(top != self) top.location.replace(location);
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63988983-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bac384c695","applicationID":"10038200","transactionName":"MQEGYxRWXxEAWhIKXwhLJVQSXl4MTkoPDVcKAQ==","queueTime":0,"applicationTime":759,"atts":"HUYFFVxMTB8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="確定申告をせず、かつ水辺にいる者を襲う海の悪魔「税金ザメ（タックス・シャーク）登場！">
+<meta name="keywords" content="確定申告,対策,青色申告,白色申告,税金,会計,freee,クラウド会計">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.6, user-scalable=1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="確定申告パニック『TAX SHARK（タックス・シャーク）』公式サイト │ freee">
+<meta property="og:description" content="確定申告をせず、かつ水辺にいる者を襲う海の悪魔「税金ザメ（タックス・シャーク）登場！">
+<meta property="og:url" content="https://www.freee.co.jp/special/tax-shark/">
+<meta property='og:image' content='https://bhb-cdn.com/tax-shark/image/ogp.jpg'>
+<meta content='https://www.freee.co.jp/special/tax-shark/' name='twitter:url'>
+<meta content='確定申告パニック『TAX SHARK（タックス・シャーク）』公式サイト │ freee' name='twitter:title'>
+<meta content='https://bhb-cdn.com/tax-shark/image/ogp.jpg' name='twitter:image'>
+<meta content='summary_large_image' name='twitter:card'>
+
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+var ua = navigator.userAgent.toLowerCase();
+// iPhone
+var iPhone_flg = (ua.indexOf('iphone') > -1);
+// iPad
+var iPad_flg = (ua.indexOf('ipad') > -1);
+// Android
+var android_flg = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
+// Android Tablet
+var android_tab_flg = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') === -1);
+var pc_flg =(ua.indexOf('iphone') === -1) && (ua.indexOf('ipad') === -1) && (ua.indexOf('android') === -1) && (ua.indexOf('mobile') === -1);
+ 
+if(iPhone_flg) {
+	$(".box_pc").css({display:"none"});
+	$(".box_pctab").css({display:"none"});
+	$(".box_tab").css({display:"none"});
+	var css = document.createElement('link');
+	css.rel = 'stylesheet';
+	css.href = 'css/sp/style.css?2';
+	css.type = 'text/css';
+	document.head.appendChild(css);
+}
+if(android_flg) {
+    $(".box_pc").css({display:"none"});
+	$(".box_pctab").css({display:"none"});
+	$(".box_tab").css({display:"none"});
+	var css = document.createElement('link');
+	css.rel = 'stylesheet';
+	css.href = 'css/sp/style.css?2';
+	css.type = 'text/css';
+	document.head.appendChild(css);
+}
+if(iPad_flg) {
+	$(".box_pc").css({display:"none"});
+	$(".box_sp").css({display:"none"});
+	var css = document.createElement('link');
+	css.rel = 'stylesheet';
+	css.href = 'css/tab/style.css?2';
+	css.type = 'text/css';
+	document.head.appendChild(css);
+}
+if(android_tab_flg) {
+	$(".box_pc").css({display:"none"});
+	$(".box_sp").css({display:"none"});
+	var css = document.createElement('link');
+	css.rel = 'stylesheet';
+	css.href = 'css/tab/style.css?2';
+	css.type = 'text/css';
+	document.head.appendChild(css);
+}
+if(pc_flg) {
+	$(".box_sp").css({display:"none"});
+	$(".box_sptab").css({display:"none"});
+	$(".box_tab").css({display:"none"});
+	var css = document.createElement('link');
+	css.rel = 'stylesheet';
+	css.href = 'css/style.css?2';
+	css.type = 'text/css';
+	document.head.appendChild(css);
+}
+
+</script>
+
+<link href="https://bhb-cdn.com/tax-shark/image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<style>
+	body {
+		background: #000;
+	}
+	</style>
+
+<title>確定申告パニック『TAX SHARK（タックス・シャーク）』公式サイト │ freee</title>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRC4W5 "
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="fb-root"></div>
+
+
+<!-- wrapper -->
+<div class="wrapper">
+	
+	<!-- first -->
+	<div id="first" class="box_pc">
+		<p class="close">閉じる</p>
+		<div class="youtube">
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/2hsOEQm8W9A?rel=0&autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	<!-- mainTitle -->
+	<div id="mainTitle">
+		<div class="box">
+			<h1>タックスシャーク</h1>
+			<p class="subTxt">死にたくなければ申告だ！</p>
+			<p class="numTxt">2017.03.15〆切迫る</p>
+			<span class="box_pc">		<ul class="social">
+		    <li class="twitter"><a href="//twitter.com/share" class="twitter-share-buttoon" data-text="確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！" data-hashtags="" data-count="vertical" data-url="https://www.freee.co.jp/special/tax-shark/" data-lang="ja">ツイート</a></li>
+			<li class="facebook"><div class="fb-share-button" data-href="https://www.freee.co.jp/special/tax-shark/" data-width="70" data-layout="box_count" data-action="recommend" data-show-faces="false" data-share="false " data-size="large"></div></li>
+			<li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://www.freee.co.jp/special/tax-shark/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a></li>
+			<li class="google"><div class="g-plusone" data-size="tall" data-href="https://www.freee.co.jp/special/tax-shark/"></div></li>
+			<li class="pocket"><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en" data-save-url="https://www.freee.co.jp/special/tax-shark/"></a></li>
+			<li class="line"><a href="//line.me/R/msg/text/?確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！%0D%0Ahttps://www.freee.co.jp/special/tax-shark/"><img src="https://bhb-cdn.com/tax-shark/image/social-line.png" width="36" height="60"></a></li>
+		</ul></span>
+		</div>
+		<div class="bg">
+			<div class="money"></div>
+			<div class="splash_front"></div>
+			<div class="shark"></div>
+			<div class="eat_people"></div>
+			<div class="splash_back"></div>
+		</div>
+	</div>
+	
+	<!-- sp_trailer -->
+	<div id="trailer" class="box_sptab">
+				<ul class="social">
+		    <li class="twitter"><a href="//twitter.com/share" class="twitter-share-buttoon" data-text="確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！" data-hashtags="" data-count="vertical" data-url="https://www.freee.co.jp/special/tax-shark/" data-lang="ja">ツイート</a></li>
+			<li class="facebook"><div class="fb-share-button" data-href="https://www.freee.co.jp/special/tax-shark/" data-width="70" data-layout="box_count" data-action="recommend" data-show-faces="false" data-share="false " data-size="large"></div></li>
+			<li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://www.freee.co.jp/special/tax-shark/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a></li>
+			<li class="google"><div class="g-plusone" data-size="tall" data-href="https://www.freee.co.jp/special/tax-shark/"></div></li>
+			<li class="pocket"><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en" data-save-url="https://www.freee.co.jp/special/tax-shark/"></a></li>
+			<li class="line"><a href="//line.me/R/msg/text/?確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！%0D%0Ahttps://www.freee.co.jp/special/tax-shark/"><img src="https://bhb-cdn.com/tax-shark/image/social-line.png" width="36" height="60"></a></li>
+		</ul>		<h2 class="trailer">TRAILER</h2>
+		<div class="youtube">
+		<iframe width="853" height="480" src="//www.youtube.com/embed/2hsOEQm8W9A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=”allowfullscreen”></iframe>
+		</div>
+	</div>
+	
+	<!-- nav -->
+	<nav class="box_pc">
+		<p class="logo"><a href="https://www.freee.co.jp/kakuteishinkoku/?referral=special-tax-shark"><img src="https://bhb-cdn.com/tax-shark/image/logo_freee_w.png?" width="70"/></a></p><ul class="nav">
+			<li class="mainTitle"><a href="#mainTitle">TOP</a></li>
+			<li class="story"><a href="#story">STORY</a></li>
+			<li class="chara"><a href="#chara">CHARACTER</a></li>
+			<li class="trailer_pc"><a href="#trailer_pc">TRAILER</a></li>
+			<li class="freee"><a href="#freee">FREEE?</a></li>
+		</ul>	<ul class="social_mini">
+		    <li class="twitter"><a href="//twitter.com/share" class="twitter-share-buttoon" data-text="確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！" data-hashtags="" data-count="horizontal" data-url="https://www.freee.co.jp/special/tax-shark/" data-lang="ja">ツイート</a></li>
+			<li class="facebook"><div class="fb-share-button" data-href="https://www.freee.co.jp/special/tax-shark/" data-width="70" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false " data-size="small"></div></li>
+	</ul>
+    	</nav>
+	
+		
+	<!-- story -->
+	<div id="story">
+		<div class="box">
+			<h2>STORY</h2>
+			<p class="tit box_pctab">確定申告をせず、かつ水辺にいる者を襲う<br>海の悪魔、それが「<ruby><rb>税金ザメ</rb><rp>（</rp><rt>タックス・シャーク</rt><rp>）</rp></ruby>」</p>
+			<p class="tit box_sp">確定申告をせず、かつ水辺にいる者を襲う海の悪魔、それが「<ruby><rb>税金ザメ</rb><rp>（</rp><rt>タックス・シャーク</rt><rp>）</rp></ruby>」</p>
+			<p class="txt box_pc">５人の若者がバカンスで訪れたビーチは、なんと凶悪ザメ「タックス・シャーク」の巣であった。<br>やがて全員が「確定申告をしていない」という事実が判明。<br>しかも、今日は確定申告の最終期限日、３月１５日…。<br><br><strong>―生き残る方法はただ一つ。税務署が閉まる前に申告書を提出せよ！</strong></p>
+			<p class="txt box_tab">５人の若者がバカンスで訪れたビーチは、<br>なんと凶悪ザメ「タックス・シャーク」の巣であった。<br>やがて全員が「確定申告をしていない」という事実が判明。<br>しかも、今日は確定申告の最終期限日、３月１５日…。<br><br><strong>―生き残る方法はただ一つ。税務署が閉まる前に申告書を提出せよ！</strong></p>
+			<p class="txt box_sp">５人の若者がバカンスで訪れたビーチは、なんと凶悪ザメ「タックス・シャーク」の巣であった。やがて全員が「確定申告をしていない」という事実が判明。<br>しかも、今日は確定申告の最終期限日、３月１５日…。<strong>―生き残る方法はただ一つ。税務署が閉まる前に申告書を提出せよ！</strong></p>
+		</div>
+	</div>
+	
+	<!-- shark -->
+	<div id="shark">
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask top box_sptab"><polygon points="20,0 20,20 -0.5,0 "/></svg>
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask top box_pc"><polygon points="20,0 20,20 0,0 "/></svg>
+		<div class="box">
+			<h2>TAX SHARK</h2>
+			<ul id="sharkList">
+							<li><p class="tit">タックス目</p>
+					<span class="pointer box_pc"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 330 150' >
+							<path class=st0' d='M20.5,110.5c-11,0-20,9-20,20c0,11,9,20,20,20s20-9,20-20C40.5,119.5,31.5,110.5,20.5,110.5z M20.5,148.5 c-9.9,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S30.4,148.5,20.5,148.5z M20.5,116.5c-7.7,0-14,6.3-14,14s6.3,14,14,14 s14-6.3,14-14S28.2,116.5,20.5,116.5z'/>
+							<path class='st1' d='M330,1H139L21,131'/>
+						</svg></span>
+					<span class="pointer box_sptab"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 24 24' >
+	<path d='M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z'/>
+	</svg></span>
+					<p class="btn">LOOK MORE<svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 30 40'>
+					<path class="st0" d="M0,0v40h30V0H0z M11.5,24.5v-10l8,5L11.5,24.5z"/></svg></p>
+				</li>
+							<li><p class="tit">タックス背ビレ</p>
+					<span class="pointer box_pc"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 330 90' >
+							<path class='st0' d='M308.5,45.5c-11,0-20,9-20,20c0,11,9,20,20,20c11,0,20-9,20-20C328.5,54.5,319.5,45.5,308.5,45.5z M308.5,83.5c-9.9,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S318.4,83.5,308.5,83.5z M308.5,51.5c-7.7,0-14,6.3-14,14 s6.3,14,14,14s14-6.3,14-14S316.2,51.5,308.5,51.5z'/>
+							<path class='st1' d='M2.5,4.8h224.8l81.7,60'/>
+						</svg></span>
+					<span class="pointer box_sptab"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 24 24' >
+	<path d='M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z'/>
+	</svg></span>
+					<p class="btn">LOOK MORE<svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 30 40'>
+					<path class="st0" d="M0,0v40h30V0H0z M11.5,24.5v-10l8,5L11.5,24.5z"/></svg></p>
+				</li>
+							<li><p class="tit">タックス歯</p>
+					<span class="pointer box_pc"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 280 200'>
+								<path class='st1' d='M292,197H103.6L22,24'/>
+								<path class='st0' d='M22,2.5c-11,0-20,9-20,20c0,11,9,20,20,20c11,0,20-9,20-20C42,11.5,33,2.5,22,2.5z M22,40.5
+			c-9.9,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S31.9,40.5,22,40.5z M22,8.5c-7.7,0-14,6.3-14,14s6.3,14,14,14s14-6.3,14-14
+			S29.7,8.5,22,8.5z'/>
+						</svg></span>
+					<span class="pointer box_sptab"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 24 24' >
+	<path d='M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z'/>
+	</svg></span>
+					<p class="btn">LOOK MORE<svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 30 40'>
+					<path class="st0" d="M0,0v40h30V0H0z M11.5,24.5v-10l8,5L11.5,24.5z"/></svg></p>
+				</li>
+							<li><p class="tit">タックス胃</p>
+					<span class="pointer box_pc"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 380 210'>
+								<path class='st0' d='M23,2.5c-11,0-20,9-20,20c0,11,9,20,20,20c11,0,20-9,20-20C43,11.5,34,2.5,23,2.5z M23,40.5
+			c-9.9,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S32.9,40.5,23,40.5z M23,8.5c-7.7,0-14,6.3-14,14s6.3,14,14,14s14-6.3,14-14
+			S30.7,8.5,23,8.5z'/>
+			<path class='st1' d='M377,207H188.6L23,24'/>
+						</svg></span>
+					<span class="pointer box_sptab"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 24 24' >
+	<path d='M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z'/>
+	</svg></span>
+					<p class="btn">LOOK MORE<svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 30 40'>
+					<path class="st0" d="M0,0v40h30V0H0z M11.5,24.5v-10l8,5L11.5,24.5z"/></svg></p>
+				</li>
+							<li><p class="tit">タックス胸ビレ</p>
+					<span class="pointer box_pc"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 330 150'>
+							<path class='st1' d='M22.5,2.5h204.8L309,128.1'/>
+							<path class='st0' d='M308.5,108.5c-11,0-20,9-20,20c0,11,9,20,20,20c11,0,20-9,20-20C328.5,117.5,319.5,108.5,308.5,108.5z M308.5,146.5c-9.9,0-18-8.1-18-18s8.1-18,18-18s18,8.1,18,18S318.4,146.5,308.5,146.5z M308.5,114.5c-7.7,0-14,6.3-14,14 s6.3,14,14,14s14-6.3,14-14S316.2,114.5,308.5,114.5z'/>
+						</svg></span>
+					<span class="pointer box_sptab"><svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 24 24' >
+	<path d='M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z'/>
+	</svg></span>
+					<p class="btn">LOOK MORE<svg preserveAspectRatio='none' x='0px' y='0px' viewBox='0 0 30 40'>
+					<path class="st0" d="M0,0v40h30V0H0z M11.5,24.5v-10l8,5L11.5,24.5z"/></svg></p>
+				</li>
+						</ul>
+			
+			<table class="shak_prof">
+							<tr><th>体長&nbsp;:&nbsp;</th><td>約7m</td>
+							<tr><th>体重&nbsp;:&nbsp;</th><td>約2400kg</td>
+							<tr><th>主食&nbsp;:&nbsp;</th><td>確定申告をしておらず、<br> かつ水辺にいる者</td>
+						</table>
+		</div>
+				<div class="overlay" id="overlay1">
+			<dl><dt>タックス目</dt><dd>300km先の獲物が「青色か白色か」を瞬時に判別することができる。その他の色は認識できない。<p class="close btn">CLOSE</p></dd></dl>
+			<div class="bg"></div>
+			<p class="close ico">閉じる</p>
+		</div>
+				<div class="overlay" id="overlay2">
+			<dl><dt>タックス背ビレ</dt><dd>「税」と読める傷があるのが特徴。<br>「消費税」なのか「固定資産税」なのかで専門家の間で揉めている。<p class="close btn">CLOSE</p></dd></dl>
+			<div class="bg"></div>
+			<p class="close ico">閉じる</p>
+		</div>
+				<div class="overlay" id="overlay3">
+			<dl><dt>タックス歯</dt><dd>どんな獲物でも噛み砕く金色に輝く歯を「減価償却」で配分をして費用計上しているようだ。<p class="close btn">CLOSE</p></dd></dl>
+			<div class="bg"></div>
+			<p class="close ico">閉じる</p>
+		</div>
+				<div class="overlay" id="overlay4">
+			<dl><dt>タックス胃</dt><dd>強烈な胃酸で確定申告の期限を破る者を溶かすが、「還付申告」の者は何故か溶けないらしい。<p class="close btn">CLOSE</p></dd></dl>
+			<div class="bg"></div>
+			<p class="close ico">閉じる</p>
+		</div>
+				<div class="overlay" id="overlay5">
+			<dl><dt>タックス胸ビレ</dt><dd>極上のフカヒレとして美食家の羨望の的。調理等を職としていれば「経費」として計上できる。<p class="close btn">CLOSE</p></dd></dl>
+			<div class="bg"></div>
+			<p class="close ico">閉じる</p>
+		</div>
+			</div>
+	
+	<!-- chara -->
+	<div id="chara">
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask top box_sptab"><polygon points="20.5,0 0,20 0,0"/></svg>
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask top box_pc"><polygon points="20,0 0,20 0,0"/></svg>
+		<h2>character</h2>
+				<div class="box chara1">
+			<div class="cont">
+				<dl class="txt">
+					<dt>ジョナサン</dt>
+					<dd>今年から確定申告を始める予定の申告初心者。freeeに会員登録するなど気合十分に見えるが、内心は「3月になるまでは何もしなくて大丈夫だろう…」と油断しまくっている。しかし彼のような平凡な男だからこそ、伸びしろがあるというもの。タックス・シャークとの戦いの中で、期待通りたくましく成長していく。</dd>
+				</dl>
+				<!--<ul class="btn">
+									<li class="next btnChara2"><span>ケリー</span></li>
+								</ul>-->
+			</div>
+		</div>
+				<div class="box chara2">
+			<div class="cont">
+				<dl class="txt">
+					<dt>ケリー</dt>
+					<dd>ジョナサンの恋人。ボケっとしがちな彼を引っ張る姐さん女房気質だが、数字の話題にはめっぽう弱く、確定申告にはできれば一生関わらないで生きていこうと思っている。そんな彼女の態度が、まさかこのような惨劇を招くことになろうとは……。</dd>
+				</dl>
+				<!--<ul class="btn">
+									<li class="prev btnChara1"><span>ジョナサン</span></li><li class="next btnChara3"><span>ウィンストン</span></li>
+								</ul>-->
+			</div>
+		</div>
+				<div class="box chara3">
+			<div class="cont">
+				<dl class="txt">
+					<dt>ウィンストン</dt>
+					<dd>タックス・シャークの出現したビーチで、貸しボート屋のバイトとして働く気性の荒い男。10年前にダイビング用品の領収書を残して消息を絶った両親とタックス・シャークは、何か関連があるのではと思っている。最後にはタックス・シャークを見張り小屋に引きつけ、床に撒いたガソリンに火をつけて爆死。</dd>
+				</dl>
+				<!--<ul class="btn">
+									<li class="prev btnChara2"><span>ケリー</span></li><li class="next btnChara4"><span>ゾーイ</span></li>
+								</ul>-->
+			</div>
+		</div>
+				<div class="box chara4">
+			<div class="cont">
+				<dl class="txt">
+					<dt>ゾーイ</dt>
+					<dd>確定申告とは縁遠い不動産王の娘。「世界はわたしのためにある」という傍若無人な性格のため、周囲とのトラブルが絶えないが、タックス・シャークに襲われているところをジョナサン達に救い出されたことで他人との協調を学んでいく。ブチ切れた彼女がタックス・シャークにまたがるシークェンスは、作品屈指の名場面。</dd>
+				</dl>
+				<!--<ul class="btn">
+									<li class="prev btnChara3"><span>ウィンストン</span></li><li class="next btnChara5"><span>グジョンセン</span></li>
+								</ul>-->
+			</div>
+		</div>
+				<div class="box chara5">
+			<div class="cont">
+				<dl class="txt">
+					<dt>グジョンセン</dt>
+					<dd>実は最初から死んでいる、<br>幽霊。</dd>
+				</dl>
+				<!--<ul class="btn">
+									<li class="prev btnChara4"><span>ゾーイ</span></li>
+								</ul>-->
+			</div>
+		</div>
+				
+		<ul id="charaList">
+						<li class="btnChara1"><img src="https://bhb-cdn.com/tax-shark/image/chara/thu_chara1.jpg"/><span class="txt">ジョナサン</span></li>			<li class="btnChara2"><img src="https://bhb-cdn.com/tax-shark/image/chara/thu_chara2.jpg"/><span class="txt">ケリー</span></li>			<li class="btnChara3"><img src="https://bhb-cdn.com/tax-shark/image/chara/thu_chara3.jpg"/><span class="txt">ウィンストン</span></li>			<li class="btnChara4"><img src="https://bhb-cdn.com/tax-shark/image/chara/thu_chara4.jpg"/><span class="txt">ゾーイ</span></li>			<li class="btnChara5"><img src="https://bhb-cdn.com/tax-shark/image/chara/thu_chara5.jpg"/><span class="txt">グジョンセン</span></li>		</ul>
+	
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask bottom box_pc"><polygon points="20,20 0,20 0,0"/></svg>
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask bottom box_sptub"><polygon points="20.5,20 0,20 0,0"/></svg>
+	</div>
+	
+	<!-- sp_gallery -->
+	<div id="gallery" class="box_sptab">
+		<div class="box">
+			<h2>GALLERY</h2>
+			<ul class="galleryList">
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>			</ul>
+			<p class="btn_prev">prev</p>
+			<p class="btn_next">next</p>
+			<ul class="thumbnailList" id="thumbnailList">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+							</ul>
+		</div>
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask bottom"><polygon points="20,0 -0.5,20 20,20"/></svg>
+	</div>
+
+	<!-- trailer -->
+	<div id="trailer_pc" class="box_pc">
+		<div class="box">
+			<h2 class="trailer">TRAILER</h2>
+			<div class="youtube"><iframe width="853" height="480" src="https://www.youtube.com/embed/2hsOEQm8W9A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+			<h2 class="gallery">GALLERY</h2>
+			<ul class="galleryList">
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>			</ul>
+			<p class="btn_prev">prev</p>
+			<p class="btn_next">next</p>
+			<ul class="thumbnailList">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+							</ul>
+		</div>
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask bottom"><polygon points="20,0 0,20 20,20"/></svg>
+	</div>
+	
+	<div class="shark_anime"></div>
+	
+	<!-- freee -->
+	<div id="freee">
+		<div class="box">
+			<h2>freee</h2>
+			<p class="copy">freeeで楽々確定申告</p>
+			<p class="sub">無料から使えるクラウド会計ソフト『freee』を利用してタックス・シャークから逃れよう</p>
+			
+			<ul class="freeeList">
+									<li><dl class="txt">
+						<dt><span>スマホで簡単操作！</span></dt>
+						<dd>１年間でためてしまった領収書も、いちいち手入力する必要無し。<br><span class='red'>freeeならスマホで領収書の写真を撮るだけで自動で仕訳してくれるぞ。<br></span>さらに医療費控除や社会保険料控除系などの「控除の入力系」も簡単にできるんだ。</dd>
+					</dl></li>
+									<li><dl class="txt">
+						<dt><span>質問に答えるだけ！</span></dt>
+						<dd>面倒な操作はほぼ不要。<br><span class='red'>◯か×かの質問に答えていくだけで必要な情報の入力が完成</span>し、そのまま確定申告書類が作れるぞ。</dd>
+					</dl></li>
+									<li><dl class="txt">
+						<dt><span>会計知識が無くてもOK</span></dt>
+						<dd>そして何より、<span class='red'>会計や経理の知識が全く無くてもfreeeを使える</span>のが利点だ。<br>しかもWEBからの申告も簡単に出来るから、タックス・シャークが近づけないところから簡単に申告できる！</dd>
+					</dl></li>
+							</ul>
+		</div>
+	</div>
+	
+	<div id="last">
+	<svg preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 20 20" class="mask top box_sptub"><polygon points="20.5,0 0,20 0,0"/></svg>
+	
+		<div class="box">
+			<p class="tit">タックスシャーク</p>
+			<p class="txt">３月１５日　提出期限締め切り</p>
+			<a href="https://www.freee.co.jp/kakuteishinkoku/?referral=special-tax-shark" target="_blank" class="btn">今すぐfreeeを試してみる</a>
+					<ul class="social">
+		    <li class="twitter"><a href="//twitter.com/share" class="twitter-share-buttoon" data-text="確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！" data-hashtags="" data-count="vertical" data-url="https://www.freee.co.jp/special/tax-shark/" data-lang="ja">ツイート</a></li>
+			<li class="facebook"><div class="fb-share-button" data-href="https://www.freee.co.jp/special/tax-shark/" data-width="70" data-layout="box_count" data-action="recommend" data-show-faces="false" data-share="false " data-size="large"></div></li>
+			<li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://www.freee.co.jp/special/tax-shark/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a></li>
+			<li class="google"><div class="g-plusone" data-size="tall" data-href="https://www.freee.co.jp/special/tax-shark/"></div></li>
+			<li class="pocket"><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en" data-save-url="https://www.freee.co.jp/special/tax-shark/"></a></li>
+			<li class="line"><a href="//line.me/R/msg/text/?確定申告をしない人間に「税金ザメ」が牙を剥く！ 本格パニック予告映像が堂々公開！%0D%0Ahttps://www.freee.co.jp/special/tax-shark/"><img src="https://bhb-cdn.com/tax-shark/image/social-line.png" width="36" height="60"></a></li>
+		</ul>			<ul class="logoList">
+				<li><a href="http://bhb.co.jp/" target="_blank"><img src="https://bhb-cdn.com/tax-shark/image/logo_bhb_w.png" width="100"/></a></li>
+				<li><a href="https://www.freee.co.jp/" target="_blank"><img src="https://bhb-cdn.com/tax-shark/image/logo_freee_w.png" width="250"/></a></li>
+				<li><a href="http://buddha-108.com/" target="_blank"><img src="https://bhb-cdn.com/tax-shark/image/logo_buddha_w.png" width="70"/></a></li>
+			</ul>
+			<span class="top box_sptab"><a href="#">上へ戻る</a></span>
+			<span class="close box_pc">最初に戻る</span>
+			<footer>
+			<small class="box_pctab">Copyright © <a href="https://www.freee.co.jp/" target="_blank">freee K.K.</a> All Rights Reserved. Produced by <a href="http://bhb.co.jp/" target="_blank">バーグハンバーグバーグ</a></small>
+			<small class="box_sp">Copyright © <a href="https://www.freee.co.jp/" target="_blank">freee K.K.</a> All Rights Reserved.<br> Produced by <a href="http://bhb.co.jp/" target="_blank">バーグハンバーグバーグ</a></small></footer>
+		</div>	
+	</div>
+	
+</div>
+</body>
+<script src="js/widgetoon.js"></script>
+<script src="js/jquery.transit.min.js"></script>
+<script type="text/javascript">
+
+//shareCount
+(function (w, d) {
+		var s, e = d.getElementsByTagName("script")[0],
+			a = function (u, i) {
+				if (!d.getElementById(i)) {
+					s = d.createElement("script");
+					s.src = u;
+					s.async = 1;
+					if (i) {s.id = i;}
+					e.parentNode.insertBefore(s, e);
+				}
+			};
+		 a("//apis.google.com/js/platform.js");
+		 a("//b.st-hatena.com/js/bookmark_button_wo_al.js");
+		 a("//platform.twitter.com/widgets.js","twitter-wjs");
+		 a("//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=1400115353603518&version=v2.5","facebook-likeboutton");
+		 a("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js");
+		 a("//widgets.getpocket.com/v1/j/btn.js");
+		 a("//media.line.me/js/line-button.js");
+		
+	})(this,document);
+//TwitterCount
+widgetoon_main();
+	
+</script>
+<script type="text/javascript">
+var ua = navigator.userAgent.toLowerCase();
+// iPhone
+var iPhone_flg = (ua.indexOf('iphone') > -1);
+// iPad
+var iPad_flg = (ua.indexOf('ipad') > -1);
+// Android
+var android_flg = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') > -1);
+// Android Tablet
+var android_tab_flg = (ua.indexOf('android') > -1) && (ua.indexOf('mobile') === -1);
+var pc_flg =(ua.indexOf('iphone') === -1) && (ua.indexOf('ipad') === -1) && (ua.indexOf('android') === -1) && (ua.indexOf('mobile') === -1);
+ 
+if(iPhone_flg) {
+	$(".box_pc").css({display:"none"});
+	$(".box_pctab").css({display:"none"});
+	$(".box_tab").css({display:"none"});
+	var script = document.createElement('script');
+	script.src = 'js/sp/script.js?2';
+	document.body.appendChild(script);
+}
+if(android_flg) {
+    $(".box_pc").css({display:"none"});
+	$(".box_pctab").css({display:"none"});
+	$(".box_tab").css({display:"none"});
+	var script = document.createElement('script');
+	script.src = 'js/sp/script.js?2';
+	document.body.appendChild(script);
+}
+if(iPad_flg) {
+	$(".box_pc").css({display:"none"});
+	$(".box_sp").css({display:"none"});
+	var script = document.createElement('script');
+	script.src = 'js/tab/script.js?2';
+	document.body.appendChild(script);
+}
+if(android_tab_flg) {
+	$(".box_pc").css({display:"none"});
+	$(".box_sp").css({display:"none"});
+    var script = document.createElement('script');
+	script.src = 'js/tab/script.js?2';
+	document.body.appendChild(script);
+}
+if(pc_flg) {
+	$(".box_sp").css({display:"none"});
+	$(".box_sptab").css({display:"none"});
+	$(".box_tab").css({display:"none"});
+	var script = document.createElement('script');
+	script.src = 'js/script.js?2';
+	document.body.appendChild(script);
+}
+
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-PRC4W5');</script>
+<!-- End Google Tag Manager -->
+
+
+</html>
+<script type="text/javascript">
+(function() {
+    var canonicals = document.querySelectorAll("link[rel='canonical']");
+
+    if (canonicals != null && canonicals.length > 0) {
+        var parser = document.createElement("a");
+
+        [].map.call(canonicals, function(canonical) {
+            parser.href = canonical.href;
+            parser.protocol = "https:";
+            canonical.href = parser.href;
+        });
+    } else if (location.protocol === "http:") {
+        var canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        canonical.href = location.href.replace(/^http:/, "https:");
+
+        var head = document.querySelector("head");
+        head.appendChild(canonical);
+    }
+}).call(this);
+</script>

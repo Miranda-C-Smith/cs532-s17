@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta property="og:url" content="https://www.hotbody.com/store" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.hotbody.com/store/includes/images/store_hdr.gif" />
+  <meta property="og:title" content="Welcome to the Hot Body store! | Hot Body" />
+  <meta property="og:site_name" content="Hot Body" />
+  <meta property="og:description" content="The Best Men&#039;s Magazine on the Web" />
+  <title>Welcome to the Hot Body store! | Hot Body</title>
+  <link rel="shortcut icon" href="https://www.hotbody.com/store/favicon.png" />
+  <link type="text/css" rel="stylesheet" media="all" href="https://www.hotbody.com/store/includes/cart-style.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="https://www.hotbody.com/store/includes/colorbox.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="https://www.hotbody.com/store/includes/custom-style.css" />
+  <script type="text/javascript" src="/store/includes/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="/store/includes/connected_modal.js"></script>
+  <script type="text/javascript" src="/store/includes/connected_addresses.js"></script>
+  <script type="text/javascript" src="/store/includes/connected_messages.js"></script>
+  <script type="text/javascript" src="/store/includes/colorbox/jquery.colorbox.js"></script>
+  <script type="text/javascript" src="/store/includes/connected_colorbox.js"></script>
+  <script type="text/javascript">var MIN_LENGTH = 3;
+$(document).ready(function() {
+  $("#connected_search_box_ac").keyup(function() {
+    var keyword = $("#connected_search_box_ac").val();
+    if (keyword.length >= MIN_LENGTH) {
+      $('#connected_search_box_ac_results').show();
+      $.get("/store/connectedcart_search_autocomplete.php", {keyword: keyword}).done(function(data) {
+        $('#connected_search_box_ac_results').html('');
+        var results = jQuery.parseJSON(data);
+        $(results).each(function(key, value) {
+          $('#connected_search_box_ac_results').append('<div class="connected_search_box_ac_results_item">' + value + '</div>');
+        })
+        $('.connected_search_box_ac_results_item').click(function() {
+          var text = $(this).contents(":not(:empty)").first().text();
+          $('#connected_search_box_ac').val(text);
+        })
+      });
+    }
+    else {
+      $('#connected_search_box_ac_results').html('');
+    }
+  });
+  $("#connected_search_box_ac").blur(function() {
+    $("#connected_search_box_ac_results").fadeOut(500);
+  })
+  .focus(function() {
+    $("#connected_search_box_ac_results").show();
+  });
+});</script></head>
+<body class="connected-body-cart">
+  <div id="wrap"><div id="inner-wrap">  <div class="connected-header-wrap">    <div class="connected-header-top">      <div class="connected-header-top-left"><a href="https://www.hotbody.com/hb_home.htm"><img class="connected-logo-img" src="/store/includes/images/logo.png" alt="" style="max-height: 55px; max-width: 325px;" /></a></div>      <div class="connected-header-top-right">        <div class="connected-header-top-right-totals">          <div class="connected-header-top-right-totals-items"><div class="connected-header-top-right-totals-items-p">Total items: 0</div></div>          <div class="connected-header-top-right-totals-price"><div class="connected-header-top-right-totals-price-p">Total price: $0.00</div></div>        </div>        <div class="connected-header-top-right-actions"><div class="aligncenter display-button"><a title="View Your Shopping Cart" class="button" href="/store/connectedcart_show_cart.php">View Cart</a></div><div class="aligncenter display-button"><a title="Log in" class="button" href="/store/connectedloginform.php">Log in</a></div>        </div>      </div>    </div>  </div><div id="navbar"><ul id="nav"><li class="connected-menu-li connected-menu-li-0"><a href="/store/index.php">Home</a></li><li class="connected-menu-li connected-menu-li-1"><a href="#null">Categories</a><ul><li class="connected-menu-li connected-menu-li-2"><a href="/store/connectedcart_show_cat.php?catid=2">Autograph 8x10</a></li><li class="connected-menu-li connected-menu-li-3"><a href="/store/connectedcart_show_cat.php?catid=22">Calendars</a></li><li class="connected-menu-li connected-menu-li-4"><a href="/store/connectedcart_show_cat.php?catid=4">Competition DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-5"><a href="/store/connectedcart_show_cat.php?catid=6">DVD</a></li><li class="connected-menu-li connected-menu-li-6"><a href="/store/connectedcart_show_cat.php?catid=8">Hall of Fame DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-7"><a href="/store/connectedcart_show_cat.php?catid=25">Hot Body Collectibles through CafePress</a></li><li class="connected-menu-li connected-menu-li-8"><a href="/store/connectedcart_show_cat.php?catid=24">Lip Gloss</a></li><li class="connected-menu-li connected-menu-li-9"><a href="/store/connectedcart_show_cat.php?catid=10">Other</a></li><li class="connected-menu-li connected-menu-li-10"><a href="/store/connectedcart_show_cat.php?catid=23">Quick Strips DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-11"><a href="/store/connectedcart_show_cat.php?catid=13">Sexy World DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-12"><a href="/store/connectedcart_show_cat.php?catid=14">Sneaky Preview DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-13"><a href="/store/connectedcart_show_cat.php?catid=15">Sneaky Special DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-14"><a href="/store/connectedcart_show_cat.php?catid=16">Special Offer</a></li><li class="connected-menu-li connected-menu-li-15"><a href="/store/connectedcart_show_cat.php?catid=17">T-Shirts</a></li><li class="connected-menu-li connected-menu-li-16"><a href="/store/connectedcart_show_cat.php?catid=20">Video Magazine DVD / VHS</a></li><li class="connected-menu-li connected-menu-li-17"><a href="/store/connectedcart_show_cat.php?catid=26">Videos Out Of Stock</a></li></ul></li><li class="connected-menu-li connected-menu-li-18"><a href="https://www.hotbody.com/faq.htm">F.A.Q.</a><li><li class="connected-menu-li connected-menu-li-19"><a href="https://www.hotbody.com/store/connectedpages.php?id=orderbyphone">Order By Phone</a><li><li class="connected-menu-li connected-menu-li-20"><a href="https://www.hotbody.com/store/connectedpages.php?id=shipping">Shipping</a><li><li class="connected-menu-li connected-menu-li-21"><a href="https://www.hotbody.com/contact.htm">Terms</a><li></ul><div id="connected_search_box"><input type="text" value="" placeholder="SEARCH" id="connected_search_box_ac" /><div id="connected_search_box_ac_results"></div></div></div><div class="clearfix"></div><h2 class="connected-heading">Welcome to the Hot Body store!</h2><div class="connected-top-product-item"><img src="/store/connected_product_images/71694.jpg" /><a href="/store/connectedcart_show_product.php?productid=71694">Totally Nude Teachers Contest DVD</a></div><div class="connected-top-product-item"><img src="/store/connected_product_images/11609.jpg" /><a href="/store/connectedcart_show_product.php?productid=11609">Ultimate Thong-a-Thon DVD</a></div><div class="connected-top-product-item"><img src="/store/connected_product_images/3152.jpg" /><a href="/store/connectedcart_show_product.php?productid=3152">Slam Bang Cheerleader Challenge VHS</a></div><div class="connected-top-product-item"><img src="/store/connected_product_images/51341.gif" /><a href="/store/connectedcart_show_product.php?productid=51341">Nissa II</a></div><div class="connected-top-product-item"><img src="/store/connected_product_images/11617.jpg" /><a href="/store/connectedcart_show_product.php?productid=11617">Sexy Fantasy Showdown DVD</a></div><div class="connected-top-product-item"><img src="/store/connected_product_images/41747.jpg" /><a href="/store/connectedcart_show_product.php?productid=41747">SS: Spicy Latinas 2 DVD</a></div><div class="clearfix"></div>  </div>  <div id="footerbg">
+    <div id="footer">
+      <div class="footertop">
+        <p>&copy; 2017 <a href="/store/index.php" title="Hot Body">Hot Body</a> &middot; All Rights Reserved</p>
+      </div>
+      <div class="footerbottom">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

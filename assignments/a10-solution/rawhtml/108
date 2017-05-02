@@ -1,0 +1,722 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>マンガワン</title>
+<meta name="description" content="小学館が贈る新コミックアプリ「マンガワン」の公式サイト。日本最大級のコミックサイト“裏サンデー”発のオリジナルまんがや、新旧名作が毎日更新！">
+<meta name="keywords" content="裏サンデー,少年サンデー,クラブサンデー,WEBまんが,WEB漫画,MangaONE,マンガワン">
+
+<!-- facebook -->
+<meta property="og:title" content="マンガワン">
+<meta property="og:type" content="website">
+<meta property="og:description" content="マンガワンとは小学館発の新コミックアプリです。日本最大級のWEBコミックサイト“裏サンデー”のオリジナル作品や、『MAJOR』など新旧の名作がいつでもどこでも読めます。">
+<meta property="og:url" content="http://manga-one.com/">
+<meta property="og:image" content="http://urasunday.com/images/mangaone/ogp.jpg">
+<meta property="og:site_name" content="マンガワン">
+<!-- facebook -->
+
+<link href="./css/index.css" rel="stylesheet" type="text/css">
+<link href="./css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="./css/slick.css" rel="stylesheet" type="text/css">
+<link href="./css/slick-theme.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="http://manga-one.com/favicon.ico"> 
+
+<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script type="text/javascript" src="./js/mangaone_ranking.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#links a.colorbox").colorbox();
+	$("#newsBox article.news a").colorbox({
+		inline:true,
+		maxWidth:"80%",
+		maxHeight:"80%"
+	});
+	$("#links a.contact").colorbox({
+		iframe:true,
+		width:"60%",
+		height:"80%"
+	});
+
+	var imgs = ["centerimg1.png", "centerimg2.png", "centerimg3.png"];
+	var rand = Math.floor( Math.random()*imgs.length);
+	$('#animation').attr("src", "./images/"+imgs[rand]);
+	$('#animation').each(function(){
+		$(this).addClass("fadeInDown");
+	});
+
+	var i = 0, newsMax = 4;
+	for (; i<$("#newsBox article.news").length && i<newsMax; i++) {
+		$("#newsBox article.news").eq(i).show();
+	}
+	$("#newsBox div.newsmore a").click(function(){
+		$("#newsBox div.newsmore").fadeOut(200);
+		for (; i<$("#newsBox article.news").length; i++) {
+			$("#newsBox article.news").eq(i).show(200);
+		}
+	});
+});
+</script>
+<!--[if lt IE 9]>
+<script src="./js/html5.js"></script>
+<script src="./js/ie9.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- facebook -->
+
+<header>
+	<div>
+	<ul class="clearfix">
+		<li style="float: left;">
+			<img src="./images/logo.png" width="246" height="53" alt="マンガワン">
+		</li>
+		<li style="float: right;">
+			<ul class="clearfix" style="width: 270px">
+				<li style="float: left; width: 114px;">
+					<a href="https://play.google.com/store/apps/details?id=jp.co.comic.mangaone" target="_blank" alt="Google play"><img src="./images/gp_button.png" height="40" width="114"></a>
+				</li>
+				<li style="float: right; width: 135px;">
+					<a href="https://itunes.apple.com/jp/app/mangaone-mangawan-mei-ri-geng/id774618503" target="_blank" alt="App Store"><img src="./images/as_button.png" height="40" width="135"></a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+	</div>
+</header>
+
+<div class="line3">
+	小学館発のコミックアプリ！オリジナル作品や『MAJOR』など新旧の名作が毎日更新！
+<!-- /line --></div>
+<div id="top">
+	<img class="center" id="animation" src="./images/centerimg1.png" height="170" width="170">
+	<ul class="main clearfix">
+		<li class="left">
+			<div class="background">
+			</div>
+			<div class="front">
+			</div>
+		</li>
+		<li class="right">
+			<div class="background">
+			</div>
+			<div class="front">
+			</div>
+		</li>
+	</ul>
+<!-- /top --></div>
+<div class="line">
+	<br>
+<!-- /line --></div>
+
+<div id="contents">
+	<ul class="ranking clearfix">
+		<li class="rank1">
+			<img class="tab" src="./images/tab0.png">
+			<div class="rankline"><br></div>
+			<p></p>
+			<div class="more">
+				<a href="javascript:void(0);" class="rankmore"><img src="./images/more.png" height="35" width="150"></a>
+			</div>
+		</li>
+		<li class="rank2">
+			<img class="tab" src="./images/tab0.png">
+			<div class="rankline"><br></div>
+			<p></p>
+			<div class="more">
+				<a href="javascript:void(0);" class="rankmore"><img src="./images/more.png" height="35" width="150"></a>
+			</div>
+		</li>
+	</ul>
+<!-- /contents --></div>
+
+<div id="newsBox">
+	<img class="news" src="./images/news.png" height="40" width="300">
+	<div class="newsline"><br></div>
+	<article class="news"><a href="#newsdetail24">・2016/07/13 600万ダウンロードを突破しました！</a></article>
+	<article class="news"><a href="#newsdetail23">・2016/05/10 『秘密のレプタイルズ』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail22">・2016/05/10 『ヘビのたまご』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail21">・2016/05/10 『仁義アルパカ』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail20">・2016/05/10 『マンガワンオリジナル少女マンガ』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail19">・2016/05/10 『LiLy』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail18">・2016/05/02 500万ダウンロードを突破しました！</a></article>
+	<article class="news"><a href="#newsdetail17">・2016/04/24 マンガワンショップがＯＰＥＮいたしました！</a></article>
+	<article class="news"><a href="#newsdetail16">・2016/04/04『ホイッスル！』リバイバル連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail15">・2016/04/04『サンリオ男子』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail14">・2016/03/25『しのびがたき』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail13">・2016/03/23 『名探偵コナン　vs黒ずくめの男たち』掲載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail12">・2016/03/14 マンガワン連載投稿トーナメント２回戦を開始しました。</a></article>
+	<article class="news"><a href="#newsdetail11">・2016/03/10 『ゼルダの伝説　完全版セレクション』掲載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail10">・2016/02/22 400万ダウンロードを突破しました！</a></article>
+	<article class="news"><a href="#newsdetail9" >・2016/02/19 『邪神の花嫁』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail8" >・2016/02/10 TVCMを開始しました！</a></article>
+	<article class="news"><a href="#newsdetail7" >・2016/02/10 300万ダウンロードを突破しました！</a></article>
+	<article class="news"><a href="#newsdetail6" >・2016/01/30 『岳』『BLUE GIANT』の掲載を開始しました。</a></article>
+	<article class="news"><a href="#newsdetail5" >・2016/01/26 マンガワン連載投稿トーナメントを開始しました。</a></article>
+	<article class="news"><a href="#newsdetail4" >・2016/01/17 週刊ビッグコミックスピリッツ作品の掲載を開始しました。</a></article>
+	<article class="news"><a href="#newsdetail3" >・2016/01/07 『まめはペットで、美少女で。』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail2" >・2016/01/06 『放課後Ageha』連載開始しました。</a></article>
+	<article class="news"><a href="#newsdetail1" >・2016/01/01 公式サイトをリニューアルしました。</a></article>
+
+	<div class="newsmore">
+		<a href="javascript:void(0);"><img src="./images/more.png" height="35" width="150"></a>
+	</div>
+
+<!-- /newsBox --></div>
+
+<div id="inlineBox">
+
+
+
+<section id="newsdetail24" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/07/13
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		600万ダウンロードを突破しました！</h3>
+	<p>
+		
+		マンガワンはおかげさまで600万ダウンロードを突破しました。(7/13時点)<br>
+		今後もマンガワンをよろしくお願いいたします。	
+</p>
+</section>
+<!-- /newsdetail24 -->
+
+<section id="newsdetail18" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/05/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		500万ダウンロードを突破しました！
+	</h3>
+	<p>
+		
+マンガワンはおかげさまで500万ダウンロードを突破しました。(5/3時点)<br>
+今後もマンガワンをよろしくお願いいたします。
+
+</p>
+</section>
+<!-- /newsdetail18 -->
+
+<section id="newsdetail19" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/05/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『LiLy』連載開始しました。
+	</h3>
+	<p>
+		
+微粒子レベルでHなメイドコメディー!!　えびさわまよ先生の『LiLy』が連載開始しました。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/149.jpg"  width="300"><br>
+隔週月曜日更新となります。
+
+</p>
+</section>
+<!-- /newsdetail19 -->
+
+<section id="newsdetail20" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/05/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『マンガワンオリジナル少女マンガ』連載開始しました。
+	</h3>
+	<p>
+		
+総選挙の上位作品達が集結！　『マンガワンオリジナル少女マンガ』が連載開始しました。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/150.jpg"  width="300"><br>
+毎週火曜日更新となります。
+
+</p>
+</section>
+<!-- /newsdetail20 -->
+
+<section id="newsdetail21" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/05/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『仁義アルパカ』連載開始しました。
+	</h3>
+	<p>
+		
+アルパカとやくざのほんわかコメディ　ぶしやま先生の『仁義アルパカ』が連載開始しました。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/151.jpg"  width="300"><br>
+毎週水曜日更新となります。
+
+</p>
+</section>
+<!-- /newsdetail21 -->
+
+<section id="newsdetail22" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/05/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『ヘビのたまご』連載開始しました。
+	</h3>
+	<p>
+		
+少年達の英雄譚　たぬキつネこ先生の『ヘビのたまご』が連載開始しました。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/152.jpg"  width="300"><br>
+隔週木曜日更新となります。
+
+</p>
+</section>
+<!-- /newsdetail22 -->
+
+<section id="newsdetail23" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/05/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『秘密のレプタイルズ』連載開始しました。
+	</h3>
+	<p>
+		
+ガールズLovesレプタイルズ　鯨川リョウ先生の『秘密のレプタイルズ』が連載開始しました。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/153.jpg"  width="300"><br>
+隔週金曜日更新となります。
+
+</p>
+</section>
+<!-- /newsdetail23 -->
+
+
+<section id="newsdetail17" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/04/24
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		マンガワンショップがＯＰＥＮいたしました！
+	</h3>
+	<p>
+		
+マンガワンＳＨＯＰがついにＯＰＥＮ！<br>
+マンガワン連載作品のオリジナルグッズを限定で販売いたします！<br>
+<br>
+<a href="http://mangaone-shop.com/" target="_blank" style="color: #1F0105; text-decoration: underline;">公式サイト</a>
+
+</p>
+</section>
+<!-- /newsdetail17 -->
+<section id="newsdetail16" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/04/04
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『ホイッスル！』リバイバル連載開始しました。
+	</h3>
+	<p>
+		
+樋口大輔先生の傑作サッカーコミック『ホイッスル！』をリバイバル連載開始しました。<br>
+最終話掲載の翌日に樋口先生の新連載が開始します。<br>
+お楽しみに！<br>
+
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/139.jpg"  width="300">
+</p>
+<!-- /newsdetail16 --></section>
+<section id="newsdetail15" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/04/04
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『サンリオ男子』連載開始しました。
+	</h3>
+	<p>
+		
+Sho-comiプレゼンツ『サンリオ男子』連載開始しました。<br>
+隔週月曜更新、全4回となります。<br>
+<br>
+<a href="http://www.sanrio.co.jp/special/sdan/" target="_blank" style="color: #1F0105; text-decoration: underline;">サンリオ男子公式サイト</a>
+<br>
+<a href="https://twitter.com/sdan_sanrio" target="_blank" style="color: #1F0105; text-decoration: underline;">サンリオ男子公式ツイッター</a>
+<br>
+
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/138.jpg"  width="300">
+</p>
+<!-- /newsdetail15 --></section>
+<section id="newsdetail14" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/03/25
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『しのびがたき』連載開始しました。
+	</h3>
+	<p>
+		
+飛田ニキイチ先生の刀光剣影の闘いの物語『しのびがたき』が連載開始しました。<br>
+<br>
+毎週金曜日更新となります。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/134.jpg"  width="300">
+</p>
+<!-- /newsdetail14 --></section>
+<section id="newsdetail13" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/03/23
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『名探偵コナン　vs黒ずくめの男たち』掲載開始しました。
+	</h3>
+	<p>
+		
+名探偵コナン公式アプリ化を記念して、『名探偵コナン　vs黒ずくめの男たち』のセレクションを4/17まで毎日掲載いたします。<br>
+<img src="http://tokyosakura.tokyo-cdn.com/tools/jpeg/event/647.jpg"  width="300">
+</p>
+<!-- /newsdetail13 --></section>
+<section id="newsdetail12" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/03/14
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		マンガワン連載投稿トーナメント２回戦を開始しました。
+	</h3>
+	<p>
+		
+新人漫画家さんの登竜門、「マンガワン連載投稿トーナメント2016」2回戦を開始しました。<br>
+<br>
+ぜひアプリインストールのうえ、投票をお願いいたします。<br>
+詳しくは<a href="http://api.manga-one.com/api2/urasunday/post/rule.php" target="_blank" style="color: #1F0105; text-decoration: underline;">こちら</a>
+</p>
+<!-- /newsdetail12 --></section>
+<section id="newsdetail11" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/03/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『ゼルダの伝説　完全版セレクション』掲載開始しました。
+	</h3>
+	<p>
+		
+『ゼルダの伝説』漫画版の完全版発売を記念して、「ゼルダの伝説完全版セレクション」を隔週月曜日に更新いたします。<br>
+<br>
+好評連載中の「ゼルダの伝説　トワイライトプリンセス」と合わせてお楽しみください。<br>
+詳しくは<a href="http://www.dreamnews.jp/press/0000128150/" target="_blank" style="color: #1F0105; text-decoration: underline;">こちら</a>
+</p>
+<!-- /newsdetail11 --></section>
+<section id="newsdetail10" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/02/22
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		400万ダウンロードを突破しました！
+	</h3>
+	<p>
+		
+マンガワンはおかげさまで400万ダウンロードを突破しました。<br>
+これを記念して、ライフプレゼントキャンペーンを行います。<br>
+今後もマンガワンをよろしくお願いいたします。<br>
+<img src="http://tokyosakura.tokyo-cdn.com/tools/jpeg/event/601.jpg"  width="300">
+	</p>
+<!-- /newsdetail10 --></section>
+<section id="newsdetail9" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/02/19
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『邪神の花嫁』連載開始しました。
+	</h3>
+	<p>
+		
+Cheese!プレゼンツ『邪神の花嫁』を連載開始しました。<br>
+隔週金曜日更新となります。応援よろしくお願いいたします。<br>
+<img src="http://webarena.tokyo-cdn.com/tools/jpeg/125.jpg"  width="300">
+	</p>
+<!-- /newsdetail9 --></section>
+<section id="newsdetail8" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/02/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		TVCMを開始しました！
+	</h3>
+	<p>
+
+本日よりTVCMの放送を開始しました。<br>
+<br>
+CM動画は以下からも視聴いただけます。<br>
+<a href="https://youtu.be/AsVJF3I9WpI" target="_blank" style="color: #1F0105; text-decoration: underline;">相撲編</a><br>
+<a href="https://youtu.be/nST3fi9B6oE " target="_blank" style="color: #1F0105; text-decoration: underline;">女性経営者編</a><br>
+<br>
+今後もマンガワンをよろしくお願いいたします。
+
+
+
+</p>
+<!-- /newsdetail8 --></section>
+<section id="newsdetail7" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/02/10
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		300万ダウンロードを突破しました！
+	</h3>
+	<p>
+		
+マンガワンはおかげさまで300万ダウンロードを突破しました。(2/3時点)<br>
+<br>
+これを記念して以下の作品の期間限定全巻掲載をおこないます。<br>
+<br>
+『らんま1/2』高橋留美子  2/10〜2/28<br>
+『ふしぎ遊戯』渡瀬悠宇  2/18〜2/28<br>
+『今日から俺は‼︎」  2/24〜3/13  <br>
+<br>
+今後もマンガワンをよろしくお願いいたします。<br>
+</p>
+<!-- /newsdetail7 --></section>
+<section id="newsdetail6" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/01/30
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『岳』『BLUE GIANT』の掲載を開始しました。
+	</h3>
+	<p>
+		
+石塚真一先生の大ヒット作<br>
+『岳』<br>
+『BLUE GIANT』<br>
+ビッグコミック連載中の２作品を１話から毎週掲載いたします。<br>
+<img src="http://tokyosakura.tokyo-cdn.com/tools/jpeg/event/555.jpg"  width="300">
+	</p>
+<!-- /newsdetail6 --></section>
+<section id="newsdetail5" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/01/26
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		マンガワン連載投稿トーナメントを開始しました。
+	</h3>
+	<p>
+新人漫画家さんの登竜門、「マンガワン連載投稿トーナメント2016」１回戦を開始しました。<br>
+<br>
+今までに裏サンデーにて数々の漫画家を輩出してきた賞がマンガワンにて生まれ変わります。<br>
+連載第１話が投稿され、読者投票によって上位作品が勝ち残りとなります。<br>
+優勝作品は即連載！<br>
+ぜひアプリインストールのうえ、投票をお願いいたします。<br>
+<br>
+詳しくは<a href="http://api.manga-one.com/api2/urasunday/post/rule.php" target="_blank" style="color: #101010; text-decoration: underline">こちら</a>
+</p>
+<!-- /newsdetail5 --></section>
+<section id="newsdetail4" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/01/17
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		週刊ビッグコミックスピリッツ作品の掲載を開始しました。
+	</h3>
+	<p>
+		週刊ビッグコミックスピリッツ連載の４作品を最新話１話前まで全話掲載いたします。<br>
+		毎週日曜日に１話ずつ更新されます。<br><br>
+		【掲載作品】<br>
+		『トクサツガガガ』<br>
+		『土竜の唄』<br>
+		『忘却のサチコ』<br>
+		『しあわせアフロ田中』
+	</p>
+<!-- /newsdetail4 --></section>
+<section id="newsdetail3" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/01/07
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『まめはペットで、美少女で。』を連載開始しました。
+	</h3>
+	<p>
+		Sho-comiプレゼンツ『まめはペットで、美少女で。』を連載開始しました。<br>
+		毎月７日、２２日更新となります。<br>
+		<img src="http://tokyosakura.tokyo-cdn.com/tools/jpeg/event/486.jpg"  width="300">
+	</p>
+<!-- /newsdetail3 --></section>
+<section id="newsdetail2" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/01/06
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		『放課後Ageha』連載開始しました。
+	</h3>
+	<p>
+		Sho-comiプレゼンツ『放課後Ageha』を連載開始しました。<br>
+		毎月６日、２１日更新となります。<br>
+		<img src="http://tokyosakura.tokyo-cdn.com/tools/jpeg/event/487.jpg"  width="300">
+	</p>
+<!-- /newsdetail2 --></section>
+<section id="newsdetail1" style="width: 640px;margin: 10px;text-align:left;">
+	<span style="font-size: 0.9rem;">
+		2016/01/01
+	</span>
+	<h3 style="font-weight: bold;margin: 5px 0;">
+		公式サイトをリニューアルしました。
+	</h3>
+	<p>
+
+	</p>
+<!-- /newsdetail1 --></section>
+<!-- /inlineBox --></div>
+
+<style>
+div#gameBox {
+    width: 985px;
+    margin: 90px auto 80px auto;
+    padding-right: -5px;
+    text-align: left;
+}
+div#gameBox img.game {
+    margin-left: 5px;
+}
+</style>
+
+<!-- gameBox -->
+<div id="gameBox">
+<img class="game" src="./images/game.png" height="40" width="300">
+
+<div style="width:960px; margin: 0 auto;">
+<a href="https://mobpsycho100-puzzle.com/" target="_blank"><img src="./images/ms_banner_160926.png"  width="950"></a>
+</div>
+
+
+</div>
+<!-- gameBox -->
+
+
+
+<style>
+div#shopBox {
+    width: 985px;
+    margin: 90px auto 80px auto;
+    padding-right: -5px;
+    text-align: left;
+}
+div#shopBox img.shop {
+    margin-left: 5px;
+}
+</style>
+
+<!-- shopBox -->
+<div id="shopBox">
+<img class="shop" src="./images/shop.png" height="40" width="300">
+
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/tags?tag=%E3%83%A2%E3%83%96%E3%82%B5%E3%82%A4%E3%82%B3100" target="_blank"><img src="./images/ms_banner_160722.jpg"  width="950"></a>
+</div>
+
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/tags?tag=Helck" target="_blank"><img src="./images/ms_banner_160717.jpg"  width="950"></a>
+</div>
+
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/pages/clctart/index.html" target="_blank"><img src="./images/ms_banner_160702.jpg"  width="950"></a>
+</div>
+
+<!--
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/products/detail/34" target="_blank"><img src="./images/ms_banner_160621.png"  width="950"></a>
+</div>
+
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/products/detail/33" target="_blank"><img src="./images/ms_banner_160616.jpg"  width="950"></a>
+</div>
+
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/tags?tag=IT%27S%20MY%20LIFE" target="_blank"><img src="./images/ms_banner_160606.jpg"  width="950"></a>
+</div>
+-->
+
+<div style="width:960px; margin: 0 auto;">
+<a href="http://mangaone-shop.com/products/detail/18" target="_blank"><img src="./images/ms_banner_160604.png"  width="950"></a>
+</div>
+
+
+</div>
+<!-- shopBox -->
+
+<style>
+div#tvcmBox {
+    width: 985px;
+    margin: 90px auto 80px auto;
+    padding-right: -5px;
+    text-align: left;
+}
+div#tvcmBox img.tvcm {
+    margin-left: 5px;
+}
+</style>
+
+<!-- tvcmBox -->
+<div id="tvcmBox">
+<img class="tvcm" src="./images/tvcm.png" height="40" width="300">
+
+<ul class="clearfix" style=" margin-left: 5px">
+<!--<li style="width: 495px; float: left;"></li>-->
+<li style="width: 480px; float: left;"><iframe width="480" height="270" src="https://www.youtube.com/embed/JOVMwwJfb4E?rel=0" frameborder="0" allowfullscreen></iframe></li>
+</ul>
+
+</div>
+<!-- tvcmBox -->
+
+<div id="slideBox">
+	<img class="event" src="./images/event.png" height="40" width="300">
+	<div class="eventline"><br></div>
+	<div class="slides">
+	</div>
+<!-- /slideBox --></div>
+
+<div class="line2">
+	<br>
+<!-- /line --></div>
+<div id="links">
+	<ul class="clearfix">
+		<li><a href="./images/contents01.png" class="colorbox">マンガワンとは</a></li>
+		<li><a href="./images/contents03.png" class="colorbox">投票システム</a></li>
+		<li><a href="./images/contents04.png" class="colorbox">閲覧システム</a></li>
+		<li><a href="./images/contents10.png" class="colorbox">全巻イッキ読み</a></li>
+		<li><a href="https://api.manga-one.com/api2/urasunday/contact.php" class="contact">お問い合わせ</a></li>
+	</ul>
+<!-- /links --></div>
+
+<footer>
+	<ul class="buttons clearfix">
+		<li class="social">
+			<ul class="sns clearfix">
+				<li class="fb">
+					<fb:like send="false" layout="button" width="150" show_faces="false"></fb:like>
+				</li>
+				<li class="tw">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-hashtags="マンガワン">ツイート</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</li>
+			</ul>
+		</li>
+		<li class="shops">
+			<ul class="app clearfix">
+				<li class="gp">
+					<a href="https://play.google.com/store/apps/details?id=jp.co.comic.mangaone" target="_blank" alt="Google play"><img src="./images/gp_button.png" height="40" width="114"></a>
+				</li>
+				<li class="as">
+					<a href="https://itunes.apple.com/jp/app/mangaone-mangawan-mei-ri-geng/id774618503" target="_blank" alt="App Store"><img src="./images/as_button.png" height="40" width="135"></a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="copy">Copyright © Shogakukan inc.</div>
+</footer>
+
+</body>
+</html>

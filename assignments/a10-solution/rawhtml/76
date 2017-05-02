@@ -1,0 +1,968 @@
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="ja"
+  data-page-id="title-title"
+  data-is-use-ko=""
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="「℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』」を今すぐ視聴できます。みどころ・あらすじも併せて確認。DVDをレンタルせずに高画質な動画をみませんか？<31日間無料トライアル実施中!!>" />
+<meta name="keywords" content="℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』,動画,視聴,あらすじ" />
+<link rel="canonical" href="http://video.unext.jp/title/SID0026938"/>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?t=20151022" />
+<link rel="apple-touch-icon" href="http://video.unext.jp/apple-touch-icon.png?t=20151015"/>
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="「℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』」の動画視聴・あらすじ | U-NEXT" />
+<meta property="og:image" content="http://imgc.nxtv.jp/img/info/tit/00026/SID0026938.png" />
+<meta property="og:url" content="http://video.unext.jp/title/SID0026938" />
+<meta property="og:description" content="【セットリスト】Kiss me 愛してる、ベーグルにハム&チーズ、夏 DOKI リップスティック、悲しきヘブン、Crazy 完全な大人、たどり着いた女戦士、アダムとイブのジレンマ、ザ☆トレジャーボックス 　　ほか" />
+<meta property="og:site_name" content="U-NEXT＜ユーネクスト＞" />
+<meta property="og:locale" content="ja_JP" />
+
+
+
+<meta property="fb:admins" content="100007482434935" />
+<meta property="fb:app_id" content="1615543762065866" />
+
+
+
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:site" content="@watch_UNEXT" />
+<meta name="twitter:title" content="2日間にわたって行われた℃-ute初武道館ライブ！！" />
+<meta name="twitter:image" content="http://imgc.nxtv.jp/img/info/tit/00026/SID0026938.png" />
+<meta name="twitter:url" content="http://video.unext.jp/title/SID0026938" />
+
+
+
+<title>「℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』」の動画視聴・あらすじ | U-NEXT</title>
+
+<script>
+  var unx = unx || {};
+  unx.preinit = {
+    'env' : {"isMobile":false,"isTablet":false,"isPC":true,"isWebView":false,"isAndroid":false,"isIOS":false,"isChrome":false,"isIE11":false,"isEdge":false,"isSafari":false,"isTV":false,"isFeaturePhone":false,"isPlayOnSilverlight":true,"isPlayOnDrmtoday":false,"isPlayOnHttps":false}
+  };
+</script>
+
+  <script src="/static/js/dist/base.min.js?rev=20170501154148"></script>
+
+
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+
+  
+  <link rel="stylesheet" href="/static/css/dist/all.min.css?rev=20170501154148">
+
+
+
+
+</head>
+<body>
+
+<div class="app-container js-app-container">
+
+<script>
+  unx.hasSearchUi = true;
+</script>
+
+<header class="lay-gnav">
+  
+  <div class="gnav__overlay js-gnav__overlay"></div>
+
+    
+  <div class="search__overlay js-search__overlay"></div>
+
+  
+  
+  <div class="search__form js-search__form">
+
+    <div class="search__box">
+      <a class="search__btn--close js-search__btn--close"><span class="ico unx-ico-close"></span></a>
+      <input type="text" class="search__field js-search__field" placeholder="検索ワードを入力..." autocomplete="off">
+      <a class="search__btn js-search__btn"><span class="ico unx-ico-c_search2"></span></a>
+    </div>
+
+    <!-- ko if:searchWord() === '' -->
+    <div class="search__genre-box js-search__genre-box">
+      <!-- ko if:genres().length > 0 -->
+      <ul class="ui-list-vertical mt-32" data-bind="foreach:genres">
+        <li class="ui-list-vertical__item--dark-bg">
+          <div class="ui-listmenu--dark-bg">
+            <a class="ui-listmenu__link--dark-bg js-search__genre-link" data-bind="attr:{'data-genre':$data.code, 'data-genreName':$data.name, 'data-genredisplaycode':$data.display_code}">
+              <div class="ui-listmenu__title fs-l" data-bind="text:$data.name"></div>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- /ko -->
+    </div>
+
+    <div class="search__category-box js-search__category-box">
+      <!-- ko if:categories[currentGenre()] != null -->
+      <a class="ui-listmenu__link--dark-bg mt-32 js-back-genre__btn js-search__category-link">
+        <div class="ui-listmenu--dark-bg">
+          <span class="ico unx-ico-keyboard-backspace"></span>
+        </div>
+      </a>
+      <ul class="ui-list-vertical" data-bind="foreach:categories[currentGenre()]()">
+        <li class="ui-list-vertical__item--dark-bg">
+          <div class="ui-listmenu--dark-bg">
+            <a class="ui-listmenu__link--dark-bg js-search__category-link"
+               data-bind="attr:{href:'/browse/genre/'+unx.key.searchVM.currentGenre()+'/' + $data.code + '?an_trans=search'}">
+              <div class="ui-listmenu__title fs-l" data-bind="text:$data.name"></div>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- /ko -->
+    </div>
+    <!-- /ko -->
+
+    <!-- ko if:searchWord() !== '' -->
+    <div class="js-search__results search__results-box">
+      <h2 class="ui-hd--2 fc-white mt-32">タイトルとの一致</h2>
+      <!-- ko if:titles().length > 0 -->
+      <div class="search__results">
+        <ul class="ui-list-vertical">
+          <!-- ko foreach: titles -->
+          <li class="ui-list-vertical__item--dark-bg">
+            <div class="ui-listmenu--dark-bg">
+              <a class="ui-listmenu__link--dark-bg js-search__keyword-link" data-bind="attr:{href:'/title/'+$data.title_code+'?an_trans=search'}">
+                <div class="ui-listmenu__title fs-l" data-bind="text:$data.title_name"></div>
+              </a>
+            </div>
+          </li>
+          <!-- /ko -->
+          <li class="ui-list-vertical__item--dark-bg">
+            <div class="ui-listmenu--dark-bg">
+              <a class="ui-listmenu__link--dark-bg js-search__keyword-link  js-search__jump-result ta-r"
+                 data-bind="searchByFreeWordUrl:['/freeword?full=1&type=&order=recommend&filter=&query=' + encodeURIComponent(searchWord())]">
+                <div class="fc-white" data-bind="text:'すべて(' + resultNum() + '件)'"></div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /ko -->
+
+      <!-- ko if:titles().length <= 0 -->
+      <div class="search__results">
+        <ul class="ui-list-vertical">
+          <li class="ui-list-vertical__item--dark-bg">
+            <div class="ph-16 pv-8 fc-white">
+              該当する検索結果がありません
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /ko -->
+
+
+      <h2 class="ui-hd--2 fc-white mt-32">キャスト・スタッフとの一致</h2>
+      <!-- ko if:persons().length > 0 -->
+      <div class="search__results">
+        <ul class="ui-list-vertical" data-bind="foreach:persons">
+          <li class="ui-list-vertical__item--dark-bg">
+            <div class="ui-listmenu--dark-bg">
+              <a class="ui-listmenu__link--dark-bg js-search__keyword-link"
+                data-bind="attr:{href:'/browse/person/' + $data.code + '?an_trans=search'}">
+                <div class="ui-listmenu__title fs-l" data-bind="text:$data.name"></div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /ko -->
+
+      <!-- ko if:persons().length <= 0 -->
+      <div class="search__results">
+        <ul class="ui-list-vertical">
+          <li class="ui-list-vertical__item--dark-bg">
+            <div class="ph-16 pv-8 fc-white">
+              該当する検索結果がありません
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /ko -->
+    </div>
+    <!-- /ko -->
+
+  </div><!-- /.search__form -->
+  
+  
+
+  <a class="gnav__link--search js-gnav__link--search" title="ジャンル・カテゴリ・フリーワードから一覧検索できます。">
+    <span class="gnav__text--search">一覧から探す</span>
+    <span class="ico unx-ico-c_search2 gnav__link-icon--search js-gnav__link-icon--search"></span>
+    <span class="ico unx-ico-close gnav__link-icon--close js-gnav__link-icon--close none"></span>
+  </a>
+  
+  <div class="lay-gnav__inner js-lay-gnav__inner">
+    <div class="lay-gnav__scrollhack">
+      <ul class="gnav__menus">
+        <li class="gnav__menu--nav">
+          <a class="gnav__menu-link--nav js-gnav__menu-link--nav"><span class="ico unx-ico-menu"></span></a>
+        </li>
+        <li class="gnav__menu--logo">
+          <a class="gnav__menu-link--logo" href="/">
+            <span class="ico unx-ico-logo-text gnav__icon--unext"></span>
+          </a>
+        </li>
+
+                <li class="gnav__menu--search">
+          <a class="gnav__menu-link--search js-gnav__menu-link--search"><span class="ico unx-ico-c_search2"></span></a>
+        </li>
+              </ul><!-- /.gnav__menus -->
+
+      <nav class="gnav js-gnav">
+        <div class="" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+          <ul class="gnav__list--settings">
+                          <!-- 未ログイン 表示 -->
+              <li class="gnav__item" itemprop="name">
+                                <a class="gnav__link--signup" href="/feature/welcome/" onclick="ga('send', 'event', 'link-signup', 'click', 'global-nav');" itemprop="url">無料でお試し</a>
+                              </li>
+              <li class="gnav__item" itemprop="name">
+                <a class="gnav__link  jsui-ripple" href="/login" itemprop="url"><div class="jsui-ripple__effect"></div>ログイン</a>
+              </li>
+              <li class="gnav__item">
+                <a class="gnav__link  jsui-ripple" href="/about"><div class="jsui-ripple__effect"></div>U-NEXTの想い</a>
+              </li>
+              <li class="gnav__item">
+                <a class="gnav__link  jsui-ripple" href="/introduction"><div class="jsui-ripple__effect"></div>サービス・料金</a>
+              </li>
+                      </ul><!-- /.gnav__list -->
+
+                      <ul class="gnav__list--genre">
+              <li class="gnav__item" itemprop="name">
+                <a class="gnav__link  jsui-ripple" href="/ranking" itemprop="url"><div class="jsui-ripple__effect"></div>ランキング</a>
+              </li>
+                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/movie" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  洋画
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/japanesemovie" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  邦画
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/foreigntvseries" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  海外ドラマ
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/asiatvseries" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  韓流・アジアドラマ
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/japanesetvseries" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  国内ドラマ
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/anime" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  アニメ
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/kids" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  キッズ
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/documentary" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  ドキュメンタリー
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/music" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  音楽・アイドル
+                  </a>
+                </li>
+                                                              <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/genre/variety" itemprop="url"><div class="jsui-ripple__effect"></div>
+                  バラエティ
+                  </a>
+                </li>
+                                                            <li class="gnav__item" itemprop="name">
+                  <a class="gnav__link  jsui-ripple" href="/adultconfirm" itemprop="url"><div class="jsui-ripple__effect"></div>その他&nbsp;<span class="ico unx-ico-c_heart fc-adult"></span></a>
+                </li>
+                            <li class="gnav__icon"><span class="ico unx-ico-c_play"></span></li>
+            </ul><!-- /.gnav__list -->
+
+                        <ul class="gnav__list">
+              <li class="gnav__item" itemprop="name">
+                <a class="gnav__link  jsui-ripple" href="http://unext.bookplace.jp/titlebook/3/0/0/1/0/2" target="_blank" itemprop="url"><div class="jsui-ripple__effect"></div>雑誌</a>
+              </li>
+              <li class="gnav__item" itemprop="name">
+                <a class="gnav__link  jsui-ripple" href="http://unext.bookplace.jp/home/pickup" target="_blank" itemprop="url"><div class="jsui-ripple__effect"></div>コミック・書籍</a>
+              </li>
+              <li class="gnav__icon"><span class="ico unx-ico-c_books"></span></li>
+            </ul><!-- /.gnav__list -->
+            <ul class="gnav__list">
+              <li class="gnav__item" itemprop="name">
+                <a class="gnav__link  jsui-ripple" href="/usen" itemprop="url"><div class="jsui-ripple__effect"></div>スマホでUSEN</a>
+              </li>
+              <li class="gnav__icon"><span class="ico unx-ico-c_headphone"></span></li>
+            </ul><!-- /.gnav__list -->
+            
+            
+                              </div>
+      </nav><!-- /.gnav -->
+    </div>
+  </div><!-- /.lay-gnav__inner -->
+</header><!-- /.lay-gnav -->
+
+<script>
+  
+  
+  unx.key = unx.key || {};
+  
+  unx.key.genre = [{"code":"MNU0000131","display_code":"MNU0000018","name":"\u6d0b\u753b\u4e00\u89a7"},{"code":"MNU0000132","display_code":"MNU0000035","name":"\u90a6\u753b\u4e00\u89a7"},{"code":"MNU0000133","display_code":"MNU0000050","name":"\u6d77\u5916\u30c9\u30e9\u30de\u4e00\u89a7"},{"code":"MNU0000134","display_code":"MNU0000063","name":"\u97d3\u6d41\u30fb\u30a2\u30b8\u30a2\u30c9\u30e9\u30de\u4e00\u89a7"},{"code":"MNU0000135","display_code":"MNU0000076","name":"\u56fd\u5185\u30c9\u30e9\u30de\u4e00\u89a7"},{"code":"MNU0000136","display_code":"MNU0000001","name":"\u30a2\u30cb\u30e1\u4e00\u89a7"},{"code":"MNU0000137","display_code":"MNU0000090","name":"\u30ad\u30c3\u30ba\u4e00\u89a7"},{"code":"MNU0000832","display_code":"DOCUMENT","name":"\u30c9\u30ad\u30e5\u30e1\u30f3\u30bf\u30ea\u30fc\u4e00\u89a7"},{"code":"MNU0000833","display_code":"MUSIC_IDOL","name":"\u97f3\u697d\u30fb\u30a2\u30a4\u30c9\u30eb\u4e00\u89a7"},{"code":"MNU0000138","display_code":"MNU0000102","name":"\u30d0\u30e9\u30a8\u30c6\u30a3\u4e00\u89a7"},{"code":"MNU0000139","display_code":"MNU0000117","name":"\u30cf\u30ea\u30a6\u30c3\u30c9\u30b9\u30bf\u30b8\u30aa"},{"code":"MNU0000140","display_code":"MNU0000124","name":"\u30c6\u30ec\u30d3\u5c40"},{"code":"MNU0000834","display_code":"NEWS_SPORTS","name":"\u30cb\u30e5\u30fc\u30b9\u30fb\u30b9\u30dd\u30fc\u30c4"}];
+</script>
+
+
+
+  <div class="lay-main js-lay-main">
+    <div class="lay-main__inner">
+
+
+
+
+
+<div id="js-pause-notice"></div>
+
+
+
+<div class="ttl-keyart">
+  <div class="ttl-keyart__inner">
+    <div class="ttl-keyart__thumb">
+              <img src="/static/img/loading1200-500.png" data-src="//imgc.nxtv.jp/img/info/titspot/00026/SID0026938_fhds.png?output-quality=40&output-format=jpg" alt="" class="ttl-keyart__thumbImg--fhs" data-img-size="fhs"/>
+        <img src="/static/img/loading.png" data-src="//imgc.nxtv.jp/img/info/titspot/00026/SID0026938_fwxga.png?output-quality=40&output-format=jpg" alt="" class="ttl-keyart__thumbImg--hvgaw" data-img-size="hvgaw"/>
+      
+      <a href="/play/SID0026938/ED00138849?ps=0"
+        class="ttl-keyart__play-btn  jsui-fadezoom" rel="nofollow">
+        <div class="ttl-keyart__info">
+          <div class="ui-episode__icon ttl-keyart__icon-wrap mb-8">
+            <span class="ico  unx-ico-c_play2  ttl-keyart__icon  jsui-fadezoom__effect"></span>
+          </div>
+          <div>再生</div>
+          <div></div>
+          <div>142分</div>
+        </div>
+      </a>
+    </div>
+    <!-- /.ttl-keyart__thumb -->
+
+    
+    
+
+  </div>
+  <!-- /.ttl-keyart__inner -->
+</div>
+<!-- /.ttl-keyart -->
+
+<div class="simple-box  mt-16">
+  <div class="responsive-ph--tab">
+    <div class="clearfix">
+      <div class="ttl-keyart__subinfo">
+
+        <div>
+          
+          
+          
+                  </div>
+
+        <div>
+          <h1 class="fs-m  w-full  onelinetext  fc-black-strong">℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』</h1>
+        </div>
+
+        <div class="mt-8">
+          <div class="in-block  va-m  mr-4">
+            <span><span class="ico unx-ico-star ui-item-v__rate-icon"></span><span class="ico unx-ico-star ui-item-v__rate-icon"></span><span class="ico unx-ico-star ui-item-v__rate-icon"></span><span class="ico unx-ico-star ui-item-v__rate-icon"></span><span class="ico unx-ico-star ui-item-v__rate-icon"></span></span>
+          </div>
+
+          
+          
+          
+                                
+          
+                                        </div>
+
+        <div>
+          <div class="in-block  va-m  mr-4">
+              <span class="ui-payment-badge">見放題</span>
+
+
+          </div>
+
+                  </div>
+
+        <div>
+                  </div>
+        <!-- /.ttl-section -->
+      </div>
+
+      <div class="ui-sns__btns-box float-r" style="width:112px;">
+        <ul class="ui-sns__btns">
+          <li class="ui-sns__item">
+            <a href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=http://video.unext.jp/title/SID0026938&amp;title=℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』・ユーネクスト" target="_blank" class="ui-sns__btn ui-sns__btn--hatena">
+              <i class="ico unx-ico-hatena ui-sns__btn-icon"></i>
+            </a>
+          </li>
+          <li class="ui-sns__item">
+            <a href="http://twitter.com/share?url=http://video.unext.jp/title/SID0026938?utm_source=twitter%26utm_medium=social%26utm_campaign=nonad-sns&amp;text=「℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』」をU-NEXTで視聴&amp;count=horizontal&amp;via=watch_UNEXT&amp;hashtags=ユーネクスト" onclick="window.open('http://twitter.com/share?url=http://video.unext.jp/title/SID0026938?utm_source=twitter%26utm_medium=social%26utm_campaign=nonad-sns&amp;text=「℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』」をU-NEXTで視聴&amp;count=horizontal&amp;via=watch_UNEXT&amp;hashtags=ユーネクスト', 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" class="ui-sns__btn ui-sns__btn--twitter">
+              <i class="ico unx-ico-twitter ui-sns__btn-icon"></i>
+            </a>
+          </li>
+          <li class="ui-sns__item">
+            <a href="http://www.facebook.com/sharer.php?u=http://video.unext.jp/title/SID0026938?utm_source=facebook%26utm_medium=social%26utm_campaign=nonad-sns&amp;t=℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』・ユーネクスト" onclick="window.open('http://www.facebook.com/sharer.php?u=http://video.unext.jp/title/SID0026938?utm_source=facebook%26utm_medium=social%26utm_campaign=nonad-sns&amp;t=℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』・ユーネクスト','フェイスブック','width=450,height=300') ; return false ;" class="ui-sns__btn ui-sns__btn--facebook">
+              <i class="ico unx-ico-facebook ui-sns__btn-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="simple-box  mt-32">
+
+  <div>
+    <div class="responsive-ph--tab">
+      
+            <div class="fs-l  fc-black-strong">2日間にわたって行われた℃-ute初武道館ライブ！！</div>
+            
+            <div class="ttl-summary__label"><span class="ico unx-ico-info fc-theme"></span> 見どころ</div>
+      <div class="fs-m  mt-4">武道館を夢見てきた彼女達の夢が叶った瞬間！武道館の大きさに負けないパフォーマンス力！</div>
+            
+            <div class="ttl-summary__label"><span class="ico unx-ico-assignment fc-theme"></span> ストーリー</div>
+      <div class="fs-m  mt-4">【セットリスト】Kiss me 愛してる、ベーグルにハム&チーズ、夏 DOKI リップスティック、悲しきヘブン、Crazy 完全な大人、たどり着いた女戦士、アダムとイブのジレンマ、ザ☆トレジャーボックス 　　ほか</div>
+            
+            <div class="ttl-summary__label"><span class="ico unx-ico-assignment fc-theme"></span> ここがポイント！</div>
+      <div class="fs-m  mt-4">℃-uteオフィシャルホームページ http://www.helloproject.com/c-ute/</div>
+      <!-- /.relative -->
+          </div>
+  </div>
+  <!-- /.ttl-section -->
+
+  
+  <div>
+    <div class="responsive-ph--tab">
+      <div class="fs-s  fc-black-weak  mt-32  ta-r">
+        <span>2017年12月14日 23:59まで配信</span>
+        
+              </div>
+          </div>
+  </div>
+
+
+
+    <!-- /.ttl-section -->
+</div>
+<!-- /.simple-box -->
+
+
+<div class="simple-box">
+
+  
+
+      <div class="ttl-section">
+      <h2 class="fs-l fc-black-strong responsive-ph--tab">キャスト・スタッフ</h2>
+      <ul class="ui-list-vertical mt-16">
+                  <li class="ui-list-vertical__item">
+            <article>
+              <a href="/browse/person/PRN0142475?an_trans=title" class="block  jsui-ripple">
+                <div class="jsui-ripple__effect"></div>
+                <div class="ttl-cast">
+                  <div class="ttl-cast__role">
+                    出演
+                  </div>
+                  <div class="ttl-cast__character  fc-black-weak">
+                                      </div>
+                  <div class="ttl-cast__person">
+                    ℃-ute
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+        
+      
+      </ul>
+
+    </div>
+  
+
+  
+</div>
+
+
+
+
+<footer class="lay-ftr">
+
+  <div class="ftr-l-mark">
+    <p class="ftr-l-mark__icon">このエルマークは、レコード会社・映像製作会社が提供するコンテンツを示す登録商標です。 RIAJ70024001</p>
+  </div>
+  <!-- /.ftr-l-mark -->
+
+  <div class="ftr-bottom">
+    <div class="ftr-copyright">&copy; 2015 U-NEXT Co., Ltd. All Rights Reserved.</div>
+    <a href="https://inside.unext.jp/" class="ftr-sitemap__link">inside U-NEXT </a>
+    <a href="/sitemap" class="ftr-sitemap__link">サイトマップ</a>
+  </div>
+  <!-- /.ftr-bottom -->
+</footer>
+<!-- /.lay-ftr -->
+
+
+
+    </div><!-- /.lay-main__inner -->
+  </div><!-- /.lay-main -->
+
+
+
+
+</div>
+<!-- /.app-container -->
+
+
+  
+<script type="text/html" id="tpl-title--list-collection">
+  <div class="ui-item-wrap--list-collection">
+    <article class="ui-item-v--list-collection  js-list-collect__item">
+      <a class="ui-item-v__link" data-bind="attr:{href:'/title/'+$data.title_code}">
+        <div class="ui-item-v__thumb-wrap--list-collection">
+
+          <div class="ui-item-v__thumb--list-collection js-preload-img"
+            data-bind="attr:{
+              'style':'background-image:url(' + unx.util.ko.getAkamaiImgUrl({imgUrl:$data.thumbnail.standard, quality:20, resize:'480:270'}) + ')',
+              'data-preload-img':[unx.util.ko.getAkamaiImgUrl({imgUrl:$data.thumbnail.tspt_fhds, quality:40}), unx.util.ko.getAkamaiImgUrl({imgUrl:$data.thumbnail.tspt_fwxga, quality:40})]
+            }">
+
+            <!-- ko if:$data.isnew -->
+              <div class="ui-item-v__thumb-badge--new4list">
+                <div class="ui-new-badge">New</div>
+              </div>
+            <!-- /ko -->
+
+            <!-- ko if:unx.util.ko.checkDispPaymentSymbol($data.payment_badge_list) -->
+              <div class="ui-item-v__thumb-badge--point4list"></div>
+            <!-- /ko -->
+          </div>
+
+          <div class="ui-item-v__hover-info  js-list-collect__item-hover">
+            <span class="ui-item-v__update-weekday" data-bind="text:unx.util.ko.getUpdateWeekday({idx:$data.update_of_week})"></span><!--
+            --><!-- ko if: $data.update_of_week >= 0 && $data.last_episode != ''--><span class="fs-ss fc-white"> | </span><!-- /ko --><!--
+            --><span class="ui-item-v__title-count" data-bind="text:$data.last_episode"></span>
+            <div class="ui-item-v__name-thumb--list-collection" data-bind="text:$data.title_name"></div>
+          </div>
+        </div>
+        <!-- /.ui-item-v__thumb-wrap -->
+
+        <div class="ui-item-v__caption1">
+          <div class="ui-item-v__info">
+            <div class="float-l" data-bind="template:{name:'tpl-payment_badges'}"></div>
+            <div class="float-r">
+              <!-- ko if:$data.isnew -->
+              <div class="ui-new-badge">New</div>
+              <!-- /ko -->
+            </div>
+          </div>
+          <!-- /.ui-item-v__info -->
+
+
+          <!-- ko if:$data.sakuhin_comment -->
+            <!-- ko if:$data.sakuhin_comment==='' -->
+            <p class="ui-item-v__catch" data-bind="text:$data.catchphrase"></p>
+            <!-- /ko -->
+            <!-- ko ifnot:$data.sakuhin_comment==='' -->
+            <p class="ui-item-v__catch" data-bind="text:$data.sakuhin_comment"></p>
+            <!-- /ko -->
+          <!-- /ko -->
+          <!-- ko ifnot:$data.sakuhin_comment -->
+          <p class="ui-item-v__catch" data-bind="text:$data.catchphrase"></p>
+          <!-- /ko -->
+
+
+          <div class="cf mt-4">
+            <ul class="ui-item-v__info2-items">
+              <!-- ko if: $data.production_year!='' -->
+              <li class="ui-item-v__info2-item"><div style="line-height:18px;" data-bind="text:$data.production_year+'年'"></div></li>
+              <!-- /ko -->
+
+              <!-- ko if: $data.has_subtitle==true || $data.has_dub==true -->
+              <li class="ui-item-v__info2-item">
+                <div class="ui-playmode-icon">
+                  <!-- ko if: $data.has_subtitle==true -->字<!-- /ko --><!--
+                  --><!-- ko if: $data.has_subtitle==true && $data.has_dub==true -->・<!-- /ko --><!--
+                  --><!-- ko if: $data.has_dub==true -->吹<!-- /ko -->
+                </div>
+              </li>
+              <!-- /ko -->
+            </ul>
+            <!-- /.ui-item-v__info2-items -->
+
+            <div class="ui-item-v__rate-wrap" data-bind="template:{name:'tpl-title_rate'}"></div>
+            <!-- /.ui-item-v__rate-wrap -->
+          </div>
+        </div>
+        <!-- /.ui-item-v__caption1 -->
+
+        <div class="ui-item-v__caption2">
+          <div class="ui-item-v__name" data-bind="text:$data.title_name"></div>
+          <div>
+            <div class="ui-item-v__rate-wrap--list-collection" data-bind="template:{name:'tpl-title_rate'}"></div>
+
+            <!-- ko if: $data.has_subtitle==true || $data.has_dub==true -->
+            <div class="ui-playmode-icon">
+              <!-- ko if: $data.has_subtitle==true -->字<!-- /ko --><!--
+              --><!-- ko if: $data.has_subtitle==true && $data.has_dub==true -->・<!-- /ko --><!--
+              --><!-- ko if: $data.has_dub==true -->吹<!-- /ko -->
+            </div>
+            <!-- /ko -->
+          </div>
+
+          <div style="line-height:14px;">
+            <span class="fs-ss fc-black-weak" data-bind="text:unx.util.ko.getUpdateWeekday({idx:$data.update_of_week})"></span><!--
+            --><!-- ko if: $data.update_of_week >= 0 && $data.last_episode != ''-->&emsp;<!-- /ko --><!--
+            --><span class="fs-ss fc-black-weak" data-bind="text:$data.last_episode"></span>
+          </div>
+
+          <!-- ko if: $data.sakuhin_comment != null -->
+            <!-- ko if: $data.sakuhin_comment == '' -->
+              <div class="ui-item-v__catch--list-collection"
+                data-bind="text:$data.catchphrase,
+                           css:($data.update_of_week >= 0 || $data.last_episode != '') ? 'has-update-week' : ''"></div>
+            <!-- /ko --><!-- ko ifnot: $data.sakuhin_comment == '' -->
+              <div class="ui-item-v__catch--list-collection"
+                data-bind="text:$data.sakuhin_comment,
+                           css:($data.update_of_week >= 0 || $data.last_episode != '') ? 'has-update-week' : ''"></div>
+            <!-- /ko -->
+          <!-- /ko --><!-- ko ifnot: $data.sakuhin_comment != null -->
+            <div class="ui-item-v__catch--list-collection"
+              data-bind="text:$data.catchphrase,
+                         css:($data.update_of_week >= 0 || $data.last_episode != '') ? 'has-update-week' : ''"></div>
+          <!-- /ko -->
+        </div>
+        <!-- /.ui-item-v__caption2 -->
+      </a>
+      <!-- /.ui-item-v__link -->
+
+
+      <!-- ko if:$parent.isSelectorMode!=null && $parent.isSelectorMode() -->
+        <!-- ko if:$data.isSelected() -->
+        <a class="ui-item-selector js-ui-item-selector is-selected">
+          <span class="ico unx-ico-check ui-item-selector__icon"></span>
+        </a>
+        <!-- /ko -->
+
+        <!-- ko ifnot:$data.isSelected() -->
+        <a class="ui-item-selector js-ui-item-selector">
+          <span class="ico unx-ico-check ui-item-selector__icon"></span>
+        </a>
+        <!-- /ko -->
+      <!-- /ko -->
+    </article>
+  </div>
+  <!-- /.ui-item-wrap -->
+</script>
+
+  
+<script type="text/html" id="tpl-payment_badges">
+  <!-- ko if:$data.payment_badge_list.length > 0 -->
+  <span class="ui-payment-badge" data-bind="text:unx.util.ko.getPyamentBadge($data.payment_badge_list)"></span>
+  <!-- /ko -->
+
+  <!-- ko if:$data.nfree_badge -->
+    <span class="ui-payment-badge" data-bind="text:$data.nfree_badge"></span>
+  <!-- /ko -->
+</script>
+
+
+  
+<script type="text/html" id="tpl-title_rate">
+  <div data-bind="html: unx.util.ko.generateStar($data.rate)"></div>
+</script>
+
+
+  
+<script type="text/html" id="tpl-title_breadcrumbs">
+  <!-- ko if:$data.breadcrumb -->
+  <li class="ui-item-v__tags-item">
+    <a data-bind="attr:{href:'/list/'+$data.breadcrumb.genre.code}" class="ui-item-v__tag-link">
+      <span data-bind="text:$data.breadcrumb.genre.name"></span>
+    </a>
+  </li>
+  <li class="ui-item-v__tags-item">
+    <a data-bind="attr:{href:'/list/'+$data.breadcrumb.production_year}" class="ui-item-v__tag-link">
+      <span data-bind="text:$data.breadcrumb.production_year"></span>
+    </a>
+  </li>
+  <li class="ui-item-v__tags-item">
+    <a data-bind="attr:{href:'/list/'+$data.breadcrumb.category.conde}" class="ui-item-v__tag-link">
+      <span data-bind="text:$data.breadcrumb.category.conde"></span>
+    </a>
+  </li>
+  <!-- /ko -->
+</script>
+
+  
+<script type="text/html" id="tpl-title_cast">
+  <a data-bind="attr:{href:'//unext.jp/'+code}" class="ui-item-v__table-link">
+    <span data-bind="text:name"></span>(<!-- ko text:count --><!-- /ko -->)
+  </a>
+</script>
+
+
+
+<div class="jsui-toast  jsui-toast">
+  <div class="jsui-toast__panel  jsui-toast__panel">
+    <div class="jsui-toast__msgbox  cell">
+      <span class="ico unx-ico-check  jsui-toast__icon  pr-8  va-m"></span>
+      <span class="jsui-toast__msg  va-m"></span>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  
+  var unx = unx || {};
+  unx.usrinfo = unx.usrinfo || {};
+  
+  unx.usrinfo = {
+   isLogin: false  };
+
+  unx.ganalytics = unx.ganalytics || {};
+  unx.ganalytics.setDimension = function() {
+    ga('set', 'dimension1', 'false');
+  }
+</script>
+
+
+<!--[if lte IE8]>
+<script src="/static/lib/jquery-1.11.2.min.js?rev=20170501154148"></script><![endif]-->
+
+
+  
+  <script src="/static/js/dist/all.min.js?rev=20170501154148"></script>
+
+
+<script type="text/javascript">
+  
+  !function(t,e){if(void 0===e[t]){e[t]=function(){e[t].clients.push(this),this._init=[Array.prototype.slice.call(arguments)]},e[t].clients=[];for(var r=function(t){return function(){return this["_"+t]=this["_"+t]||[],this["_"+t].push(Array.prototype.slice.call(arguments)),this}},s=["addRecord","set","trackEvent","trackPageview","ready"],n=0;n<s.length;n++){var i=s[n];e[t].prototype[i]=r(i)}var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//s3.amazonaws.com/td-cdn/sdk/td-1.2.0.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)}}("Treasure",this);
+  
+</script>
+
+<script type="text/javascript">
+  var unx = unx || {};
+  unx.td = {};
+
+  unx.td.writeKey = '5561/009da378c9fb9a70e621669e98a06e16d25041ef';
+  unx.td.database = 'unext_log_db';
+
+  unx.td.userData = {};
+
+  
+  
+  var td = new Treasure({
+    writeKey: unx.td.writeKey,
+    database: unx.td.database
+  });
+  td.set('page_transition_log', unx.td.userData);
+  td.trackPageview('page_transition_log');
+  
+</script>
+
+
+<script src="/static/analytics/analytics.unext.js?rev=20170501154148"></script>
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "「℃-ute武道館コンサート2013『Queen of J-POP～たどり着いた女戦士～』」の動画視聴・あらすじ"
+}
+</script>
+<script type="text/html" id="tpl-msg-pause">
+<div class="jsui-slidedownanime" id="js-pause-notice__inner">
+  <div style="background-color: rgba(229,9,20,.7);">
+    <div class="p-16">
+      <div class="ui-hd--2">
+        <span class="ico unx-ico-c_infor fc-white"></span>
+        <span class="ph-8  fc-white">お客様の支払い方法が無効になっています。</span>
+      </div>
+
+      <div class="mt-16">
+        <div class="fc-white">サービスのご利用にあたって、新たに有効な支払い方法をご登録ください。</div>
+        <div class="fc-white"><a href="/setting/payment/show" class="td-un  fc-white">支払い方法を登録</a></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</script>
+
+<script>
+
+;(function($) {
+  var elmParent = document.getElementById('js-pause-notice'),
+      elmNotice = document.getElementById('tpl-msg-pause'),
+      ajaxUrl   = '/api/1/contract/otherfuncflag'+'?t='+new Date().getTime();
+
+  $.ajax({
+    type: 'GET',
+    url: ajaxUrl,
+    data: {},
+    success: function(res){
+      if (res.pause_flag == true) {
+        elmParent.innerHTML = elmNotice.innerHTML;
+        elmParent.querySelector('#js-pause-notice__inner').classList.add('show');
+      }
+    }
+  });
+}(jQuery));
+
+</script>
+
+<!--  Product page tag ---->
+<script type="text/javascript">
+;(function(){
+  window.addEventListener('load', function() {
+    ;(function(){
+      var criteoApp = {};
+
+      criteoApp.param = {
+        'pushed' : false
+      }
+
+      criteoApp.CONST = {
+        'TITLE_CODE' : 'SID0026938',
+        'CHECK_URL'  : '/feature/common/json/ad_tag.json',
+        'SCRIPT_URL' : '//static.criteo.net/js/ld/ld.js'
+      }
+
+      criteoApp.verification = function() {
+        var _self = this;
+        $.get(_self.CONST.CHECK_URL, function(res){
+          for (var i = 0; i < res.data.length; i++) {
+            if (_self.CONST.TITLE_CODE == res.data[i].id) {
+              _self.loadCriteo();
+            }
+          }
+        });
+      }
+
+      criteoApp.loadCriteo = function() {
+        var _self = this,
+            e = document.createElement("script");
+        e.src = _self.CONST.SCRIPT_URL;
+        e.async = true;
+        e.onload = e.onreadystatechange = _self.pushCriteo();
+        document.body.appendChild(e);
+      }
+
+      criteoApp.pushCriteo = function() {
+        var _self = this;
+
+        if (_self.param.pushed) return;
+        _self.param.pushed = true;
+
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+          {
+            event: "setAccount",
+            account: 11619
+          },
+          {
+            event: "setHashedEmail",
+            email: ""
+          },
+          {
+            event: "setSiteType",
+            type: "d"
+          },
+          {
+            event: "viewItem",
+            item: "SID0026938",
+            user_segment: "2"
+          }
+        );
+      }
+
+      criteoApp.init = function() {
+        var _self = this;
+        _self.verification();
+      }
+
+      criteoApp.init();
+
+    }());
+  });
+}());
+</script>
+
+
+
+  <!-- facebook -->
+  <div id="fb-root"></div>
+  <script>
+    window.addEventListener('load', function() {
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1615543762065866',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s); js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/ja_JP/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    });
+  </script>
+
+  <!-- twitter -->
+  <script>
+    window.addEventListener('load', function() {
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+        return t;
+      }(document, "script", "twitter-wjs"));
+    });
+  </script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"06aabe30ae","applicationID":"13892338","transactionName":"NAMGYUBWXkpQUkdYCQ1JMUdbGFlXVVRLHxYLFg==","queueTime":0,"applicationTime":191,"atts":"GEQFFwhMTUQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

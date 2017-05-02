@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!--[if lt IE 10 ]>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="old-ie no-js">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://classtechtips.com/xmlrpc.php" />
+	<!--[if IE]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<title>How-To Compose Your Own Score for Spark Video with GarageBand - Class Tech Tips</title>
+<script type="text/javascript">
+function createCookie(a,d,b){if(b){var c=new Date;c.setTime(c.getTime()+864E5*b);b="; expires="+c.toGMTString()}else b="";document.cookie=a+"="+d+b+"; path=/"}function readCookie(a){a+="=";for(var d=document.cookie.split(";"),b=0;b<d.length;b++){for(var c=d[b];" "==c.charAt(0);)c=c.substring(1,c.length);if(0==c.indexOf(a))return c.substring(a.length,c.length)}return null}function eraseCookie(a){createCookie(a,"",-1)}
+function areCookiesEnabled(){var a=!1;createCookie("testing","Hello",1);null!=readCookie("testing")&&(a=!0,eraseCookie("testing"));return a}(function(a){var d=readCookie("devicePixelRatio"),b=void 0===a.devicePixelRatio?1:a.devicePixelRatio;areCookiesEnabled()&&null==d&&(createCookie("devicePixelRatio",b,7),1!=b&&a.location.reload(!0))})(window);
+</script>
+<!-- This site is optimized with the Yoast SEO plugin v3.7.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="When would students use GarageBand with Spark Video? Check out these easy tips for getting started with two favorite tools!"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://classtechtips.com/2017/02/07/garageband-with-spark-video/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How-To Compose Your Own Score for Spark Video with GarageBand - Class Tech Tips" />
+<meta property="og:description" content="When would students use GarageBand with Spark Video? Check out these easy tips for getting started with two favorite tools!" />
+<meta property="og:url" content="http://classtechtips.com/2017/02/07/garageband-with-spark-video/" />
+<meta property="og:site_name" content="Class Tech Tips" />
+<meta property="article:publisher" content="https://www.facebook.com/classtechtips" />
+<meta property="article:section" content="Chromebook" />
+<meta property="article:published_time" content="2017-02-07T11:44:41-04:00" />
+<meta property="article:modified_time" content="2017-04-12T16:05:29-04:00" />
+<meta property="og:updated_time" content="2017-04-12T16:05:29-04:00" />
+<meta property="og:image" content="http://classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-.jpeg" />
+<meta property="og:image:width" content="733" />
+<meta property="og:image:height" content="1100" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="When would students use GarageBand with Spark Video? Check out these easy tips for getting started with two favorite tools!" />
+<meta name="twitter:title" content="How-To Compose Your Own Score for Spark Video with GarageBand - Class Tech Tips" />
+<meta name="twitter:site" content="@classtechtips" />
+<meta name="twitter:image" content="http://classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-.jpeg" />
+<meta name="twitter:creator" content="@classtechtips" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//a.optnmnstr.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Class Tech Tips &raquo; Feed" href="http://classtechtips.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Class Tech Tips &raquo; Comments Feed" href="http://classtechtips.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Class Tech Tips &raquo; How-To Compose Your Own Score for Spark Video with GarageBand Comments Feed" href="http://classtechtips.com/2017/02/07/garageband-with-spark-video/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/classtechtips.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.4"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='layerslider-css'  href='http://classtechtips.com/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.6.8' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://classtechtips.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='go-pricing-styles-css'  href='http://classtechtips.com/wp-content/plugins/go_pricing/assets/css/go_pricing_styles.css?ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tp_twitter_plugin_css-css'  href='http://classtechtips.com/wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://classtechtips.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.5.2' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='tablepress-default-css'  href='http://classtechtips.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-web-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600&#038;ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-main-css'  href='http://classtechtips.com/wp-content/themes/dt-the7/css/main.min.css?ver=3.7.1' type='text/css' media='all' />
+<style id='dt-main-inline-css' type='text/css'>
+body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#load {
+  background-color: rgba(46,221,237,0.96);
+  background: rgba(46,221,237,0.96);
+  background: -webkit-linear-gradient(30deg,rgba(46,221,237,0.96) 0%,rgba(0,132,187,0.96) 100%);
+  background: linear-gradient(30deg,rgba(46,221,237,0.96) 0%,rgba(0,132,187,0.96) 100%);
+}
+.uil-default rect:not(.bk) {
+  fill: #ffffff;
+}
+.uil-ring > path {
+  fill: #ffffff;
+}
+.ring-loader .circle {
+  fill: #ffffff;
+}
+.ring-loader .moving-circle {
+  fill: #ffffff;
+}
+.uil-hourglass .glass {
+  stroke: #ffffff;
+}
+.uil-hourglass .sand {
+  fill: #ffffff;
+}
+.spinner-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg width='75px' height='75px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' class='uil-default'%3E%3Crect x='0' y='0' width='100' height='100' fill='none' class='bk'%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(0 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(30 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.08333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(60 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.16666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(90 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.25s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(120 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.3333333333333333s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(150 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.4166666666666667s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(180 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(210 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5833333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(240 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.6666666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(270 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.75s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(300 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.8333333333333334s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='%23ffffff' transform='rotate(330 50 50) translate(0 -30)'%3E  %3Canimate attributeName='opacity' from='1' to='0' dur='1s' begin='0.9166666666666666s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/svg%3E");
+}
+.ring-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='%23ffffff'%3E   %3Cpath opacity='.25' d='M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4'/%3E   %3Cpath d='M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z'%3E     %3CanimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='0.8s' repeatCount='indefinite' /%3E   %3C/path%3E %3C/svg%3E");
+}
+.hourglass-loader .load-wrap {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='72' height='72' fill='%23ffffff'%3E   %3Cpath transform='translate(2)' d='M0 12 V20 H4 V12z'%3E      %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(8)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.2' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline'  /%3E   %3C/path%3E   %3Cpath transform='translate(14)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.4' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(20)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.6' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E   %3Cpath transform='translate(26)' d='M0 12 V20 H4 V12z'%3E     %3Canimate attributeName='d' values='M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z' dur='1.2s' repeatCount='indefinite' begin='0.8' keytimes='0;.2;.5;1' keySplines='0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8' calcMode='spline' /%3E   %3C/path%3E %3C/svg%3E");
+}
+
+</style>
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='dt-old-ie-css'  href='http://classtechtips.com/wp-content/themes/dt-the7/css/old-ie.css?ver=3.7.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='dt-awsome-fonts-css'  href='http://classtechtips.com/wp-content/themes/dt-the7/fonts/FontAwesome/css/font-awesome.min.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-fontello-css'  href='http://classtechtips.com/wp-content/themes/dt-the7/fonts/fontello/css/fontello.min.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://classtechtips.com/wp-content/themes/dt-the7/style.css?ver=3.7.1' type='text/css' media='all' />
+<style id='style-inline-css' type='text/css'>
+/*breadcrumbs background color*/
+.page-title .breadcrumbs {
+background-color: rgba(0, 0, 0, 0.05);
+}
+.no-avatar{
+display:none;
+}
+img.category-sidebar{
+width: 100%;
+}
+
+</style>
+<link rel='stylesheet' id='the7pt-static-css'  href='http://classtechtips.com/wp-content/themes/dt-the7/css/post-type.css?ver=3.7.1' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='dt-custom-old-ie.less-css'  href='http://classtechtips.com/wp-content/uploads/wp-less/dt-the7/css/custom-old-ie-dc22f9f0e0.css?ver=3.7.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='dt-custom.less-css'  href='http://classtechtips.com/wp-content/uploads/wp-less/dt-the7/css/custom-dc22f9f0e0.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dt-media.less-css'  href='http://classtechtips.com/wp-content/uploads/wp-less/dt-the7/css/media-b620a19034.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='the7pt.less-css'  href='http://classtechtips.com/wp-content/uploads/wp-less/dt-the7/css/post-type-dynamic-b620a19034.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bsf-Defaults-css'  href='http://classtechtips.com/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=4.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://classtechtips.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.2' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.4 - Universal enabled - https://www.monsterinsights.com/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-76142604-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type='text/javascript' src='http://classtechtips.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"5.6.8"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.6.8'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.6.8'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js?ver=3.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jpibfi_options = {"hover":{"siteTitle":"Class Tech Tips","image_selector":".jpibfi_container img","disabled_classes":"nopin;wp-smiley","enabled_classes":"","min_image_height":0,"min_image_height_small":0,"min_image_width":0,"min_image_width_small":0,"show_on":"[single],[home]","disable_on":"","show_button":"hover","button_margin_bottom":20,"button_margin_top":20,"button_margin_left":20,"button_margin_right":20,"button_position":"top-left","description_option":["img_title","img_alt","post_title"],"pinLinkedImages":true,"transparency_value":0.5,"use_custom_image":false,"custom_image_url":"","pinImageWidth":65,"pinImageHeight":41}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/jquery-pin-it-button-for-images/js/jpibfi.client.js?ver=2.0.3'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.5.2'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.5.2'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" src='//a.optnmnstr.com/app/js/api.min.js?ver=1.1.5.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var dtLocal = {"themeUrl":"http:\/\/classtechtips.com\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading..."},"postID":"15946","ajaxurl":"http:\/\/classtechtips.com\/wp-admin\/admin-ajax.php","contactNonce":"8d18ce96c9","ajaxNonce":"36f838196e","pageData":"","themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"gradient","color":["#0ca2e0","#27dde8"]},"floatingHeader":{"showAfter":140,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"http:\/\/classtechtips.com\/wp-content\/uploads\/2016\/05\/ctt-wide-small.png\" srcset=\"http:\/\/classtechtips.com\/wp-content\/uploads\/2016\/05\/ctt-wide-small.png 200w, http:\/\/classtechtips.com\/wp-content\/uploads\/2016\/05\/ctt-wide.png 400w\" width=\"200\" height=\"50\"   sizes=\"200px\" alt=\"Class Tech Tips\" \/>"}},"mobileHeader":{"firstSwitchPoint":1040,"secondSwitchPoint":800},"content":{"responsivenessTreshold":970,"textColor":"#676b6d","headerColor":"#262b2e"},"stripes":{"stripe1":{"textColor":"#676b6d","headerColor":"#262b2e"},"stripe2":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe3":{"textColor":"#262b2e","headerColor":"#262b2e"}}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/themes/dt-the7/js/above-the-fold.min.js?ver=3.7.1'></script>
+<meta name="generator" content="Powered by LayerSlider 5.6.8 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://kreaturamedia.com/layerslider-responsive-wordpress-slider-plugin/ -->
+<link rel='https://api.w.org/' href='http://classtechtips.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://classtechtips.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://classtechtips.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.4" />
+<link rel='shortlink' href='http://wp.me/p42mcK-49c' />
+<link rel="alternate" type="application/json+oembed" href="http://classtechtips.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fclasstechtips.com%2F2017%2F02%2F07%2Fgarageband-with-spark-video%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://classtechtips.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fclasstechtips.com%2F2017%2F02%2F07%2Fgarageband-with-spark-video%2F&#038;format=xml" />
+		<style type="text/css">
+			a.pinit-button {
+                position:absolute;
+                text-indent:-9999em !important;
+				width: 65px !important;
+				height: 41px !important;
+				background: transparent url('http://classtechtips.com/wp-content/plugins/jquery-pin-it-button-for-images/images/pinit-button.png') no-repeat 0 0 !important;
+				background-size: 65px 41px !important;
+			}
+
+			img.pinit-hover {
+				opacity: 0.5 !important;
+				filter:alpha(opacity=50) !important;
+			}
+		</style>
+        
+	   <style type="text/css">
+					.sc_ads_within_short {
+						text-align:center;
+padding: 3px;
+border: 1px dashed #333;
+					}
+					.sc_ads_within_one {
+						float:center;
+					}
+					.sc_ads_within_two {
+						float:left;
+					}
+				 </style>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//s1.wp.com'>
+<link rel='dns-prefetch' href='//s2.wp.com'>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://classtechtips.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://classtechtips.com/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.5.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">
+jQuery(function($) {
+	var $window = $(window),
+		$load = $("#load");
+	
+	$window.removeLoading = setTimeout(function() {
+		$load.addClass("loader-removed").fadeOut(500);
+	}, 500);
+	
+	$window.one("dt.removeLoading", function() {
+		if (!$load.hasClass("loader-removed")) {
+			clearTimeout($window.removeLoading);
+			$("#load").addClass("loader-removed").fadeOut(500);
+		}
+	});
+});
+</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="post-template-default single single-post postid-15946 single-format-standard small-hover-icons overlay-cursor-on accent-gradient srcset-enabled btn-material custom-btn-color custom-btn-hover-color filter-style-ios contact-form-minimal large-fancy-datas accent-bullets bold-icons phantom-fade phantom-shadow-decoration phantom-custom-logo-on floating-mobile-menu-icon top-header first-switch-logo-center first-switch-menu-right second-switch-logo-center second-switch-menu-right layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive semitransparent-portfolio-icons album-minuatures-style-2">
+<div id="load" class="spinner-loader">
+	<div class="load-wrap"></div>
+</div>
+<div id="page">
+
+
+<div class="masthead inline-header justify widgets full-height shadow-decoration dt-parent-menu-clickable show-mobile-logo" role="banner">
+
+			<div class="top-bar line-content">
+			<div class="mini-widgets"><span class="mini-contacts email icon-off show-on-desktop near-logo-first-switch in-menu-second-switch">info@classtechtips.com</span></div>			<div class="mini-widgets"><div class="soc-ico show-on-desktop near-logo-first-switch hide-on-second-switch custom-bg hover-accent-bg"><a title="Facebook" href="https://www.facebook.com/classtechtips" target="_blank" class="facebook"><span class="assistive-text">Facebook</span></a><a title="Twitter" href="https://twitter.com/classtechtips" target="_blank" class="twitter"><span class="assistive-text">Twitter</span></a><a title="Pinterest" href="https://www.pinterest.com/classtechtips" target="_blank" class="pinterest"><span class="assistive-text">Pinterest</span></a></div></div>		</div>
+	<header class="header-bar">
+
+						<div class="branding">
+
+					<a href="http://classtechtips.com/"><img class=" preload-me" src="http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide-small.png" srcset="http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide-small.png 200w, http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide.png 400w" width="200" height="50"   sizes="200px" alt="Class Tech Tips" /><img class="mobile-logo preload-me" src="http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide-small.png" srcset="http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide-small.png 200w, http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide.png 400w" width="200" height="50"   sizes="200px" alt="Class Tech Tips" /></a>
+					<div id="site-title" class="assistive-text">Class Tech Tips</div>
+					<div id="site-description" class="assistive-text">Education Technology Resources and Ideas for PreK-12 Teachers</div>
+
+					
+					
+				</div>
+		<ul class="main-nav underline-decoration upwards-line gradient-hover outside-item-remove-margin" role="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13123 first"><a href='http://classtechtips.com/about-monica/' data-level='1'><span class="menu-item-text"><span class="menu-text">About Monica</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-13159"><a href='http://classtechtips.com/blog/' data-level='1'><span class="menu-item-text"><span class="menu-text">Blog</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13156"><a href='http://classtechtips.com/contact-2/' data-level='1'><span class="menu-item-text"><span class="menu-text">Contact</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13150"><a href='http://classtechtips.com/events-and-workshops/' data-level='1'><span class="menu-item-text"><span class="menu-text">Events and Workshops</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13153"><a href='http://classtechtips.com/books/' data-level='1'><span class="menu-item-text"><span class="menu-text">Books</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13155"><a href='http://classtechtips.com/consulting/' data-level='1'><span class="menu-item-text"><span class="menu-text">EdTech Consulting</span></span></a></li> </ul>
+		
+	</header>
+
+</div><div class='dt-close-mobile-menu-icon'><span></span></div>
+<div class='dt-mobile-header'>
+	<ul class="mobile-main-nav" role="menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13123 first"><a href='http://classtechtips.com/about-monica/' data-level='1'><span class="menu-item-text"><span class="menu-text">About Monica</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-13159"><a href='http://classtechtips.com/blog/' data-level='1'><span class="menu-item-text"><span class="menu-text">Blog</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13156"><a href='http://classtechtips.com/contact-2/' data-level='1'><span class="menu-item-text"><span class="menu-text">Contact</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13150"><a href='http://classtechtips.com/events-and-workshops/' data-level='1'><span class="menu-item-text"><span class="menu-text">Events and Workshops</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13153"><a href='http://classtechtips.com/books/' data-level='1'><span class="menu-item-text"><span class="menu-text">Books</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13155"><a href='http://classtechtips.com/consulting/' data-level='1'><span class="menu-item-text"><span class="menu-text">EdTech Consulting</span></span></a></li> 	</ul>
+	<div class='mobile-mini-widgets-in-menu'></div>
+</div>
+
+		
+	
+		<div class="page-title title-center disabled-bg breadcrumbs-off" style="min-height: 0px;">
+			<div class="wf-wrap">
+				<div class="wf-container-title">
+					<div class="wf-table" style="height: 0px;">
+
+						<div class="wf-td hgroup"><h1 class="h2-size entry-title">How-To Compose Your Own Score for Spark Video with GarageBand</h1></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	
+	<div id="main" class="sidebar-right"><!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
+
+		
+		<div class="main-gradient"></div>
+		<div class="wf-wrap">
+			<div class="wf-container-main">
+
+				<div class="article-top-bar disabled-bg"><div class="wf-wrap"><div class="wf-container-top"><div class="entry-meta"><a href="http://classtechtips.com/2017/02/07/" title="11:44 AM" class="data-link" rel="bookmark"><time class="entry-date updated" datetime="2017-02-07T11:44:41+00:00">February 7, 2017</time></a><a href="http://classtechtips.com/2017/02/07/garageband-with-spark-video/#respond" class="comment-link" >Leave a comment</a><span class="category-link"><a href="http://classtechtips.com/category/chromebook/" >Chromebook</a>, <a href="http://classtechtips.com/category/ela-readingwriting/" >ELA - Reading/Writing</a>, <a href="http://classtechtips.com/category/ipad-apps/" >iPad Apps</a>, <a href="http://classtechtips.com/category/ipadlaptop-use/" >iPad/Laptop Use</a>, <a href="http://classtechtips.com/category/iphone-apps/" >iPhone Apps</a>, <a href="http://classtechtips.com/category/social-studiesscience/" >Social Studies &amp; Science</a></span><a class="author vcard" href="http://classtechtips.com/author/mburns7/" title="View all posts by Monica" rel="author">By <span class="fn">Monica</span></a></div><div class="navigation-inner"><div class="single-navigation-wrap"><a class="prev-post" href="http://classtechtips.com/2017/02/08/websites-for-world-read-aloud-day/" rel="next"></a><a class="next-post" href="http://classtechtips.com/2017/02/06/makerbot-educators-program-for-3d-printing-teachers/" rel="prev"></a></div></div></div></div></div>
+	
+		
+			
+			<!-- !- Content -->
+			<div id="content" class="content" role="main">
+
+				
+<article id="post-15946" class="post-15946 post type-post status-publish format-standard has-post-thumbnail category-chromebook category-ela-readingwriting category-ipad-apps category-ipadlaptop-use category-iphone-apps category-social-studiesscience description-off">
+
+	
+	
+	<a href="http://classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-.jpeg" class="alignnone rollover rollover-zoom dt-single-mfp-popup dt-mfp-item mfp-image layzr-bg"  title="" data-dt-img-description="How-To Compose Your Own Score for Spark Video with GarageBand"><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 733 1100'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-.jpeg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-.jpeg 733w" width="733" height="1100"  title="How-To Compose Your Own Score for Spark Video with GarageBand" alt="" /></a><input class="jpibfi" type="hidden"><p>If your students create movies for a culminating project you’ll love how easy it is to combine two of my very favorite digital tools! I’ve shared lots of reasons why I love Adobe Spark Video. It’s free, easy to use, and works on iPads, iPhones, Chromebooks, or any computer with a web browser. With this awesome tool, students can combine images, music, video clips, icons, text and most importantly their voice. Adobe Spark Video is free! You can access it on the web or find more information about their iPad and iPhone apps by <a href="http://spark.adobe.com/?r=monica-burns" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://spark.adobe.com/?r=monica-burns', 'clicking here');" target="_blank">clicking here</a>.</p>
+<p>Whether students are creating trailers for a favorite book or designing public service announcements with a call to action, Spark Video is a dynamic tool. In Spark Video there are lots of great options for music that you can add to your creation. The music choices are broken down into categories like <em>playful, happy, </em>and <em>relaxed </em>making it easy to pick music that fits with the mood and tone of your story. But what if you want to make your own music and compose your own score for Spark Video?</p>
+<p>GarageBand is an awesome tool for students that lets them record their own music. Your students might record a series of loops, use a microphone to capture their strumming on a guitar, or use the drum set within GarageBand. When students finish recording their song there are a few options to get it from one device to another. I used GarageBand on my iPad to record my music and can share my song file via email or AirDrop.</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter size-medium wp-image-15951" src="http://i1.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-2-300x225.png?fit=300%2C225" alt="" srcset="http://i0.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-2.png?resize=300%2C225 300w, http://i0.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-2.png?resize=768%2C576 768w, http://i0.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-2.png?w=900 900w" sizes="(max-width: 300px) 100vw, 300px" data-jpibfi-post-url="http://classtechtips.com/2017/02/07/garageband-with-spark-video/" data-jpibfi-post-title="How-To Compose Your Own Score for Spark Video with GarageBand"  data-recalc-dims="1"></p>
+<p>When I open up Spark Video on the web browser of my computer I tap Music and the top of the screen and click on the button that says “Add my music.” This option lets me upload music saved to my computer including the audio file I composed with GarageBand. With just a few clicks you can add an original composition from GarageBand to your Spark Video.</p>
+<p><img class="aligncenter size-medium wp-image-15950" src="http://i2.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-3-300x142.png?fit=300%2C142" alt="" srcset="http://i1.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-3.png?resize=300%2C142 300w, http://i1.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-3.png?resize=768%2C364 768w, http://i1.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-3.png?w=900 900w" sizes="(max-width: 300px) 100vw, 300px" data-jpibfi-post-url="http://classtechtips.com/2017/02/07/garageband-with-spark-video/" data-jpibfi-post-title="How-To Compose Your Own Score for Spark Video with GarageBand"  data-recalc-dims="1"></p>
+<p>&nbsp;</p>
+<h2>When would students use GarageBand with Spark Video?</h2>
+<ul>
+<li>Write music to accompany a book trailer, taking into account the mood and tone of a book</li>
+<li>Set the stage for a public service announcement, creating an emotional connection with their audience</li>
+<li>Incorporate instruments from a particular region or culture, connecting to a social studies exploration</li>
+</ul>
+<p>Access Adobe Spark Video on the web or find out more information about their iPad and iPhone apps by <a href="http://spark.adobe.com/?r=monica-burns" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://spark.adobe.com/?r=monica-burns', 'clicking here');" target="_blank">clicking here</a>. Don&#8217;t forget to check out <a href="http://wp.me/p42mcK-43K" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://wp.me/p42mcK-43K', 'Spark Post');" target="_blank" rel="nofollow">Spark Post</a> and <a href="http://wp.me/p42mcK-46Q" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://wp.me/p42mcK-46Q', 'Spark Page');" target="_blank" rel="nofollow">Spark Page</a> too :)</p>
+<p><img class="aligncenter size-medium wp-image-15949" src="http://i0.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-1-300x150.jpeg?fit=300%2C150" alt="" srcset="http://i2.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-1.jpeg?resize=300%2C150 300w, http://i2.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-1.jpeg?resize=768%2C384 768w, http://i2.wp.com/classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-1.jpeg?w=900 900w" sizes="(max-width: 300px) 100vw, 300px" data-jpibfi-post-url="http://classtechtips.com/2017/02/07/garageband-with-spark-video/" data-jpibfi-post-title="How-To Compose Your Own Score for Spark Video with GarageBand"  data-recalc-dims="1"></p>
+<script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script> <div class="ck_form_container ck_slide_up ck_form_v6" data-ck-version="6"> 	<div class="ck_form ck_minimal">   <div class="ck_form_fields">     <h3 class="ck_form_title">Want more FREE tips? Grab an eBook too!</h3>     <div class="ck_description">       <p>Sign up for my weekly newsletter and special messages... and you'll get INSTANT access to my eBooks, freebies and more!</p><p>I can't wait to share my favorite EdTech tips, tools and lesson ideas with you!</p><p>Yours in Learning, Monica :)</p>     </div>      <div id="ck_success_msg"  style="display:none;">       <p>Fantastic, you&#x27;re almost finished! Now check your email to confirm your subscription.</p>     </div>      <!--  Form starts here  -->     <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://forms.convertkit.com/landing_pages/171386/subscribe" data-remote="true">       <input type="hidden" value="{&quot;form_style&quot;:&quot;minimal&quot;,&quot;embed_style&quot;:&quot;slideup&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;50&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;days_no_show&quot;:&quot;15&quot;,&quot;converted_behavior&quot;:&quot;show&quot;}" id="ck_form_options">       <input type="hidden" name="id" value="171386" id="landing_page_id">       <div class="ck_errorArea">         <div id="ck_error_msg" style="display:none">           <p>There was an error submitting your subscription. Please try again.</p>         </div>       </div>       <div class="ck_control_group ck_email_field_group">         <label class="ck_label" for="ck_emailField" style="display: none">Enter your email address...</label>         <input type="email" name="email" class="ck_email_address" id="ck_emailField" placeholder="Enter your email address..." required>       </div>       <div class="ck_control_group ck_captcha2_h_field_group ck-captcha2-h" style="position: absolute !important;left: -999em !important;">         <input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">       </div>          <label class="ck_checkbox" style="display:none;">           <input class="optIn ck_course_opted" name="course_opted" type="checkbox" id="optIn" checked />           <span class="ck_opt_in_prompt">I'd like to receive the free email course.</span>         </label>        <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">         Click | Subscribe       </button>       <span class="ck_guarantee">                    <a href="https://convertkit.com/?utm_campaign=poweredby" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://convertkit.com/?utm_campaign=poweredby', 'Powered by ConvertKit');" class="ck_powered_by">Powered by ConvertKit</a>       </span>     </form>   </div>  </div>  </div>  <style>      .ck_slide_up.ck_form_v6 {       right: 0;     }     .ck_slide_up.ck_form_v6 .ck_close_link {       right: 30px;     }     @media all and (min-width: 600px) {       .ck_slide_up.ck_form_v6 {         padding-right: 25px;       }     }     @media all and (min-width: 600px) and (max-width: 800px) {       .ck_slide_up--lg.ck_form_v6 {         padding-right: 0;       }     }  </style>   <style type="text/css">/* Layout */   .ck_form.ck_minimal {   /* divider image */ 	background: #f9f9f9; 	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; 	line-height: 1.5em; 	overflow: hidden; 	color: #414547; 	font-size: 16px; 	border: solid 1px #d1d1d1; 	-webkit-box-shadow: none; 	-moz-box-shadow: none; 	box-shadow: none; 	clear: both; 	margin: 20px 0px; 	text-align: center; }   .ck_form.ck_minimal h3.ck_form_title { 	text-align: center; 	margin: 0px 0px 10px; 	font-size: 28px; }  .ck_form.ck_minimal h4 { 	text-align: center; 	font-family: 'Open Sans', Helvetica, Arial, sans-serif; 	text-transform: uppercase; 	font-size: 18px; 	font-weight: normal; 	padding-top: 0px; 	margin-top: 0px; }  .ck_form.ck_minimal p { 	padding: 0px; }  .ck_form, .ck_form * { 	-webkit-box-sizing: border-box; 	-moz-box-sizing: border-box; 	box-sizing: border-box; }  .ck_form.ck_minimal .ck_form_fields { 	width: 100%; 	float: left; 	padding: 5%; } /* Form fields */  .ck_errorArea { 	display: none; /* temporary */ }  #ck_success_msg { 	padding: 10px 10px 0px; 	border: solid 1px #ddd; 	background: #eee; }  .ck_form.ck_minimal input[type="text"], .ck_form.ck_minimal input[type="email"] { 	font-size: 18px; 	padding: 10px 8px; 	width: 68%; 	border: 1px solid #d6d6d6; /* stroke */ 	-moz-border-radius: 3px; 	-webkit-border-radius: 3px; 	border-radius: 3px; /* border radius */ 	background-color: #fff; /* layer fill content */ 	margin-bottom: 5px; 	height: auto; 	float: left; 	margin: 0px; 	margin-right: 2%; 	height: 42px; }  .ck_form input[type="text"]:focus, .ck_form input[type="email"]:focus { 	outline: none; 	border-color: #aaa; }  .ck_form.ck_minimal .ck_subscribe_button {     width: 100%;     color: #fff;     margin: 0px;     padding:  11px 0px;     font-size: 18px;     background: #6ec4c0;     -moz-border-radius: 3px;     -webkit-border-radius: 3px;     border-radius: 3px; /* border radius */     cursor: pointer;     border: none;     text-shadow: none;     width: 30%;     float: left;     height: 42px;   }   .ck_form.ck_minimal .ck_guarantee { 	color: #626262; 	font-size: 12px; 	text-align: center; 	padding: 15px 0px 0px; 	display: block; 	clear: both; } .ck_form .ck_powered_by { 	display: block; 	color: #aaa; 	font-size: 12px; }  .ck_form .ck_powered_by:hover { 	display: block; 	color: #444; }  .ck_converted_content {   display: none; 	padding: 5%; 	background: #fff; }  .ck_form.ck_minimal.width400 .ck_subscribe_button, .ck_form.ck_minimal.width400 input[type="email"] { 		width: 100%; 		float: none; 		margin-top: 5px; 	}  .ck_slide_up, .ck_modal, .ck_slide_up .ck_minimal, .ck_modal .ck_minimal  { 	min-width: 400px; }  .page .ck_form.ck_minimal { 	margin: 50px auto; 	max-width: 600px; }   /* v6 */ .ck_slide_up.ck_form_v6, .ck_modal.ck_form_v6, .ck_slide_up.ck_form_v6 .ck_minimal, .ck_modal.ck_form_v6 .ck_minimal {   min-width: 0 !important; }  @media all and (min-width: 801px) {   .ck_modal.ck_form_v6 .ck_form.ck_minimal {     margin-left: -300px;     width: 600px;   } }  .ck_modal.ck_form_v6 .ck_minimal .ck_subscribe_form {   padding-top: 20px; }  .ck_slide_up.ck_form_v6 .ck_minimal .ck_subscribe_form {   padding-top: 10px; }  .ck_form_v6 #ck_success_msg {   margin-top: 15px;   padding: 0px 10px; }  .ck_slide_up.ck_form_v6 .ck_minimal + .ck_close_link {   top: 5px; } .ck_slide_up.ck_form_v6 .ck_minimal h3.ck_form_title {   margin-top: 5px; }   .ck_form_container.ck_slide_up { 	position: fixed; 	bottom: 0px; 	margin-bottom: 0px; 	z-index: 500; 	display: none;   max-width: 400px;   min-width: 300px; }  .ck_form_container.ck_slide_up.visible { 	display:block; }  .ck_form_container.ck_slide_up .ck_form { 	margin: 0px; }  .ck_close_link { 	position: absolute; 	top: -5px; 	right: -5px; 	width: 30px; 	height: 30px; 	background:#fff; 	color: #777; 	-webkit-border-radius: 15x; 	-moz-border-radius: 15px; 	border-radius: 15px; 	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.2); 	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,.2); 	box-shadow: 0px 0px 3px rgba(0,0,0,.2); 	text-align: center; 	line-height: 30px; 	cursor: pointer; 	display: none; }   /* v5 overrides */ .ck_form_container.ck_slide_up.ck_form_v6 {   min-width: 0 !important; }  /* v6 */ .ck_slide_up.ck_form_v6 {   max-width: 100% !important;   width: 360px; }  .ck_slide_up.ck_form_v6 .ck_close_link {   background: transparent;   -webkit-box-shadow: 0 0 0;   box-shadow: 0 0 0;   top: 25px;   transition: all 200ms ease;   opacity: 0.5; }  .ck_slide_up.ck_form_v6 .ck_close_link:hover {   border-color: rgba(0,0,0,.2);   opacity: 1;   transition: all 200ms ease;   transition: all 200ms ease; }  .ck_slide_up--lg {   max-height: 100vh;   overflow: scroll; }  @media all and (max-width: 599px) {   .ck_slide_up.ck_form_v6 .ck_close_link {     right: 5px;   }    .ck_slide_up--lg {     width: 100% !important;   } }  @media all and (min-width: 600px) {   .ck_slide_up--lg {     width: 700px !important;     max-height: 100vh;     overflow: scroll;   } }  @media all and (min-width: 600px) and (max-width: 800px) {   .ck_slide_up--lg .ck_close_link {     right: 5px !important;   } }  @media all and (max-width: 600px) {   .ck_slide_up.ck_form_v6 .ck_close_link {     right: 5px;   } }     </style>  <!-- This is a random-length HTML comment: dcnbufusxvjuzonvyunfgmrwjwgzrpjzvwjjragymmstezbexkrnbytpfwbdvg --><div class="sc_ads_within_one"><script async id="_ck_171390" src="https://forms.convertkit.com/171390?v=6"></script></div>
+	
+	<div class="post-meta wf-mobile-collapsed"><div class="project-share-overlay allways-visible-icons"><a href="#" class="share-button entry-share h5-size">Share this post</a><div class="soc-ico"><a href="//www.facebook.com/sharer.php?m2w&#038;s=100&#038;p%5Burl%5D=http://classtechtips.com/2017/02/07/garageband-with-spark-video/&#038;p%5Bimages%5D%5B0%5D=http://classtechtips.com/wp-content/uploads/2017/02/How-To-Compose-Your-Own-Score-for-Spark-Video-with-GarageBand-.jpeg&#038;p%5Btitle%5D=How-To%20Compose%20Your%20Own%20Score%20for%20Spark%20Video%20with%20GarageBand" class="facebook" target="_blank" title="Facebook"><span class="assistive-text">Facebook</span></a><a href="http://twitter.com/home?status=How-To%20Compose%20Your%20Own%20Score%20for%20Spark%20Video%20with%20GarageBand%20http://classtechtips.com/2017/02/07/garageband-with-spark-video/" class="twitter" target="_blank" title="Twitter"><span class="assistive-text">Twitter</span></a><a href="http://plus.google.com/share?url=http://classtechtips.com/2017/02/07/garageband-with-spark-video/&#038;title=How-To+Compose+Your+Own+Score+for+Spark+Video+with+GarageBand" class="google" target="_blank" title="Google+"><span class="assistive-text">Google+</span></a><a href="//pinterest.com/pin/create/button/" class="pinterest pinit-marklet" target="_blank" title="Pinterest" data-pin-config="above" data-pin-do="buttonBookmark"><span class="assistive-text">Pinterest</span></a><a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http://classtechtips.com/2017/02/07/garageband-with-spark-video/&#038;title=How-To+Compose+Your+Own+Score+for+Spark+Video+with+GarageBand&#038;summary=&#038;source=Class%20Tech%20Tips" class="linkedin" target="_blank" title="LinkedIn"><span class="assistive-text">LinkedIn</span></a></div></div></div>
+	
+		<div class="dt-fancy-separator title-left fancy-author-title">
+			<div class="dt-fancy-title">About the author<span class="separator-holder separator-right"></span></div>
+		</div>
+		<div class="entry-author wf-table">
+			<div class="wf-td entry-author-img"><img alt='' src='http://1.gravatar.com/avatar/7eb61a8eb8e1c559facb6ac50307cf86?s=85&#038;d=http%3A%2F%2Fclasstechtips.com%2Fwp-content%2Fthemes%2Fdt-the7%2Fimages%2Fno-avatar.gif&#038;r=g' srcset='http://1.gravatar.com/avatar/7eb61a8eb8e1c559facb6ac50307cf86?s=170&amp;d=http%3A%2F%2Fclasstechtips.com%2Fwp-content%2Fthemes%2Fdt-the7%2Fimages%2Fno-avatar.gif&amp;r=g 2x' class='alignleft avatar avatar-85 photo' height='85' width='85' /></div>			<div class="wf-td entry-author-info">
+				<p class="h5-size">Monica</p>
+				<p class="text-normal">Monica Burns is an Author, Speaker, Curriculum &amp; EdTech Consultant and Apple Distinguished Educator. Visit her site <a href="http://www.classtechtips.com">ClassTechTips.com</a> for more ideas on how to become a tech-savvy teacher.</p>
+			</div>
+		</div>
+
+	
+	<div class="dt-fancy-separator title-left fancy-posts-title"><div class="dt-fancy-title">Related posts<span class="separator-holder separator-right"></span></div></div><section class="items-grid wf-container"><div class="wf-cell wf-1-2"><div class="borders"><article class="post-format-standard"><div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="http://classtechtips.com/2017/04/30/increase-family-engagement-schoolrunner-student-parent-portal/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 80 60'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/04/Increase-Family-Engagement-with-Schoolrunner-Student-Parent-Portal-6-80x60.jpeg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/04/Increase-Family-Engagement-with-Schoolrunner-Student-Parent-Portal-6-80x60.jpeg 80w, http://classtechtips.com/wp-content/uploads/2017/04/Increase-Family-Engagement-with-Schoolrunner-Student-Parent-Portal-6-160x120.jpeg 160w" width="80" height="60"  alt="Increase Family Engagement with Schoolrunner Student + Parent Portal" /></a></div><div class="post-content"><a href="http://classtechtips.com/2017/04/30/increase-family-engagement-schoolrunner-student-parent-portal/">Increase Family Engagement with Schoolrunner Student + Parent Portal</a><br /><time class="text-secondary" datetime="2017-04-30T14:25:40+00:00">April 30, 2017</time></div></article></div></div><div class="wf-cell wf-1-2"><div class="borders"><article class="post-format-standard"><div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="http://classtechtips.com/2017/04/28/peer-feedback-online-platform-peergrade/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 80 60'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/04/Peergrade-Free-Online-Platform-for-Peer-Feedback-in-Schools-5-80x60.jpg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/04/Peergrade-Free-Online-Platform-for-Peer-Feedback-in-Schools-5-80x60.jpg 80w, http://classtechtips.com/wp-content/uploads/2017/04/Peergrade-Free-Online-Platform-for-Peer-Feedback-in-Schools-5-160x120.jpg 160w" width="80" height="60"  alt="Peergrade, Free Online Platform for Peer Feedback in Schools" /></a></div><div class="post-content"><a href="http://classtechtips.com/2017/04/28/peer-feedback-online-platform-peergrade/">Peergrade, Free Online Platform for Peer Feedback in Schools</a><br /><time class="text-secondary" datetime="2017-04-28T14:25:52+00:00">April 28, 2017</time></div></article></div></div><div class="wf-cell wf-1-2"><div class="borders"><article class="post-format-standard"><div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="http://classtechtips.com/2017/04/27/museum-natural-history-virtual-reality/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 80 60'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/04/360-Video-Spotlight-Museum-of-Natural-History-Virtual-Reality-5-80x60.jpg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/04/360-Video-Spotlight-Museum-of-Natural-History-Virtual-Reality-5-80x60.jpg 80w, http://classtechtips.com/wp-content/uploads/2017/04/360-Video-Spotlight-Museum-of-Natural-History-Virtual-Reality-5-160x120.jpg 160w" width="80" height="60"  alt="360 Video Spotlight Museum of Natural History Virtual Reality 1" /></a></div><div class="post-content"><a href="http://classtechtips.com/2017/04/27/museum-natural-history-virtual-reality/">360 Video Spotlight: Museum of Natural History Virtual Reality</a><br /><time class="text-secondary" datetime="2017-04-27T12:20:59+00:00">April 27, 2017</time></div></article></div></div><div class="wf-cell wf-1-2"><div class="borders"><article class="post-format-standard"><div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="http://classtechtips.com/2017/04/25/stop-motion-kits-for-science-animations-cut-n-learn-kickstarter/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 80 60'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/04/Stop-Motion-Kits-for-Science-Animations-Cut-N-Learn-Kickstarter-4-80x60.jpeg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/04/Stop-Motion-Kits-for-Science-Animations-Cut-N-Learn-Kickstarter-4-80x60.jpeg 80w, http://classtechtips.com/wp-content/uploads/2017/04/Stop-Motion-Kits-for-Science-Animations-Cut-N-Learn-Kickstarter-4-160x120.jpeg 160w" width="80" height="60"  alt="Stop Motion Kits for Science Animations Cut N&#039; Learn Kickstarter 3" /></a></div><div class="post-content"><a href="http://classtechtips.com/2017/04/25/stop-motion-kits-for-science-animations-cut-n-learn-kickstarter/">Stop Motion Kits for Science Animations Cut N&#8217; Learn Kickstarter</a><br /><time class="text-secondary" datetime="2017-04-25T14:25:56+00:00">April 25, 2017</time></div></article></div></div><div class="wf-cell wf-1-2"><div class="borders"><article class="post-format-standard"><div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="http://classtechtips.com/2017/04/24/5-spark-video-chromebook-ipad-activities-english-language-learners/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 80 60'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/04/5-Spark-Video-Chromebook-and-iPad-Activities-for-English-Language-Learners-5-80x60.jpeg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/04/5-Spark-Video-Chromebook-and-iPad-Activities-for-English-Language-Learners-5-80x60.jpeg 80w, http://classtechtips.com/wp-content/uploads/2017/04/5-Spark-Video-Chromebook-and-iPad-Activities-for-English-Language-Learners-5-160x120.jpeg 160w" width="80" height="60"  alt="Spark Video Activities for English Language Learners" /></a></div><div class="post-content"><a href="http://classtechtips.com/2017/04/24/5-spark-video-chromebook-ipad-activities-english-language-learners/">5 Spark Video Chromebook and iPad Activities for English Language Learners</a><br /><time class="text-secondary" datetime="2017-04-24T10:25:09+00:00">April 24, 2017</time></div></article></div></div><div class="wf-cell wf-1-2"><div class="borders"><article class="post-format-standard"><div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="http://classtechtips.com/2017/04/23/studyo-project-manager-for-students/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 80 60'%2F%3E" data-src="http://classtechtips.com/wp-content/uploads/2017/04/Student-Centered-Learning-with-Studyo-Project-Manager-for-Students-80x60.jpeg" data-srcset="http://classtechtips.com/wp-content/uploads/2017/04/Student-Centered-Learning-with-Studyo-Project-Manager-for-Students-80x60.jpeg 80w, http://classtechtips.com/wp-content/uploads/2017/04/Student-Centered-Learning-with-Studyo-Project-Manager-for-Students-160x120.jpeg 160w" width="80" height="60"  alt="" /></a></div><div class="post-content"><a href="http://classtechtips.com/2017/04/23/studyo-project-manager-for-students/">Student-Centered Learning with Studyo Project Manager for Students</a><br /><time class="text-secondary" datetime="2017-04-23T10:25:21+00:00">April 23, 2017</time></div></article></div></div></section>
+	
+	
+</article><!-- #post-15946 -->
+				
+
+	<div id="comments" class="comments-area">
+	
+	
+		
+	
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Share your thoughts! <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2017/02/07/garageband-with-spark-video/#respond" style="display:none;">Cancel reply</a></small></h3>
+			<form id="commentform" class="comment-form">
+				<iframe src="https://jetpack.wordpress.com/jetpack-comment/?blogid=59667358&#038;postid=15946&#038;comment_registration=0&#038;require_name_email=0&#038;stc_enabled=0&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=blank&#038;greeting=Share+your+thoughts%21&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=4.3.2&#038;sig=2b577d96bbfd7af5f74d9e5753b6166f9911a597#parent=http%3A%2F%2Fclasstechtips.com%2F2017%2F02%2F07%2Fgarageband-with-spark-video%2F" allowtransparency="false" style="width:100%; height: 430px;border:0;" frameBorder="0" scrolling="no" name="jetpack_remote_comment" id="jetpack_remote_comment"></iframe>
+			</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		
+	</div><!-- #comments .comments-area -->
+
+			</div><!-- #content .wf-cell -->
+
+			
+				<aside id="sidebar" class="sidebar">
+					<div class="sidebar-content widget-divider-off">
+						<section id="search-3" class="widget widget_search"><div class="widget-title">Search for lesson ideas here:</div>	<form class="searchform" role="search" method="get" action="http://classtechtips.com/">
+		<input type="text" class="field searchform-s" name="s" value="" placeholder="Type and hit enter &hellip;" />
+		<input type="submit" class="assistive-text searchsubmit" value="Go!" />
+		<a href="#go" class="submit"></a>
+	</form></section><section id="text-52" class="widget widget_text">			<div class="textwidget"><center><a href="http://classtechtips.com/category/readingwriting/"><img src="http://classtechtips.com/wp-content/uploads/2016/05/ReadingandWritingEdtech.jpg" class="category-sidebar"></a>
+
+<a href="http://classtechtips.com/category/math-tools-for-teachers/"><img src="http://classtechtips.com/wp-content/uploads/2016/05/MathToolsEdtech.jpg" class="category-sidebar"></a>
+
+<a href="http://classtechtips.com/category/social-studiesscience/"><img src="http://classtechtips.com/wp-content/uploads/2016/05/SocialStudiesScienceEdTech.jpg" class="category-sidebar"></a>
+
+<a href="http://classtechtips.com/category/scannable-virtual-reality/"><img src="http://classtechtips.com/wp-content/uploads/2016/05/ScannableTechEdTech.jpg" class="category-sidebar"></a>
+
+<a href="http://classtechtips.com/category/assessment-lms/"><img src="http://classtechtips.com/wp-content/uploads/2016/05/AssessmentandLMSEdTech.jpg" class="category-sidebar"></a></center>
+</div>
+		</section><section id="text-53" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- New Sidebar low position -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4152476072057261"
+     data-ad-slot="4874802659"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</section><section id="text-54" class="widget widget_text">			<div class="textwidget"><a href="http://www.zipgrade.com/get" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.zipgrade.com/get', '');"><img src="http://classtechtips.com/wp-content/uploads/2016/05/ZipGradeBanner300x100.png"></a></div>
+		</section><section id="text-55" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar4 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4152476072057261"
+     data-ad-slot="2149423858"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</section><section id="text-57" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-4152476072057261"
+     data-ad-slot="3681562255"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</section><section id="text-62" class="widget widget_text">			<div class="textwidget"><div class="alignleft">
+     <script type="text/javascript">
+       	amzn_assoc_ad_type = "banner";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_placement = "assoc_banner_placement_default";
+	amzn_assoc_campaigns = "booksteach";
+	amzn_assoc_banner_type = "category";
+	amzn_assoc_p = "12";
+	amzn_assoc_isresponsive = "false";
+	amzn_assoc_banner_id = "1VXRS1WBD1M7G68TJGR2";
+	amzn_assoc_width = "300";
+	amzn_assoc_height = "250";
+	amzn_assoc_tracking_id = "clatectip02-20";
+	amzn_assoc_linkid = "b408d72b41ce9976ddeba54468e524d3";
+     </script>
+     <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
+    </div></div>
+		</section><section id="text-58" class="widget widget_text">			<div class="textwidget"><div class="alignleft">
+     <script type="text/javascript">
+       	amzn_assoc_ad_type = "banner";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_placement = "assoc_banner_placement_default";
+	amzn_assoc_campaigns = "handmade_bags";
+	amzn_assoc_banner_type = "promotions";
+	amzn_assoc_p = "12";
+	amzn_assoc_banner_id = "1KZC9X01TJJTAHSVJD02";
+	amzn_assoc_width = "300";
+	amzn_assoc_height = "250";
+	amzn_assoc_tracking_id = "clatectip02-20";
+	amzn_assoc_linkid = "a1bbca18b41bdc3e563c47a3d4ff38e8";
+     </script>
+     <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
+    </div></div>
+		</section><section id="text-42" class="widget widget_text">			<div class="textwidget"><div class="alignleft">
+     <script type="text/javascript">
+       	amzn_assoc_ad_type = "banner";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_placement = "assoc_banner_placement_default";
+	amzn_assoc_campaigns = "echo";
+	amzn_assoc_banner_type = "promotions";
+	amzn_assoc_p = "12";
+	amzn_assoc_banner_id = "146870N94VDD8MAPHT02";
+	amzn_assoc_width = "300";
+	amzn_assoc_height = "250";
+	amzn_assoc_tracking_id = "clatectip02-20";
+	amzn_assoc_linkid = "8b79a5b3155b49529a19b50051b8286b";
+     </script>
+     <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
+    </div></div>
+		</section><section id="text-59" class="widget widget_text">			<div class="textwidget"><p>When you need writing help from experts, follow custom essay writing<br />
+service <a href="https://www.essaylib.com" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://www.essaylib.com', 'www.essaylib.com');">www.essaylib.com</a></p>
+<p><a href="http://www.partition-tool.com/download.htm" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.partition-tool.com/download.htm', 'EaseUS Partition Master Download');">EaseUS Partition Master Download</a></p>
+<p>Are you looking for a new <a href="http://ProjectorScreen.com" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://ProjectorScreen.com', 'projector screen');">projector screen</a>  for your school? <a href="http://ProjectorScreen.com" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://ProjectorScreen.com', 'ProjectorScreen.com');">ProjectorScreen.com</a> is here to help!</p>
+<p>Looking for homework help? Our experts at <a href="https://helphomework.net/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://helphomework.net/', 'helphomework.net');">helphomework.net</a> can give you a hand.</p>
+<p>Having troubles with your dissertation writing? We can give you a hand - visit <a href="https://cheapessay.net/cheap-custom-dissertation.html" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://cheapessay.net/cheap-custom-dissertation.html', 'cheapessay.net');">cheapessay.net</a> and get professional dissertation writing help.</p>
+</div>
+		</section><section id="text-63" class="widget widget_text">			<div class="textwidget">Some posts on ClassTechTips.com are sponsored. This site also contains affiliate links. Thank you for supporting ClassTechTips.com.</div>
+		</section><section id="text-64" class="widget widget_text">			<div class="textwidget"><script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '1000l8Ap']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script></div>
+		</section><section id="text-66" class="widget widget_text">			<div class="textwidget"><meta name="p:domain_verify" content="f2bbb5f6e90b540716c819906a0e2f09"/></div>
+		</section>					</div>
+				</aside><!-- #sidebar -->
+
+
+		
+
+
+			</div><!-- .wf-container -->
+		</div><!-- .wf-wrap -->
+	</div><!-- #main -->
+
+	
+	<!-- !Footer -->
+	<footer id="footer" class="footer solid-bg">
+
+		
+			<div class="wf-wrap">
+				<div class="wf-container-footer">
+					<div class="wf-container">
+
+						<section id="text-67" class="widget widget_text wf-cell wf-1-4"><div class="widget-title">About Class Tech Tips</div>			<div class="textwidget">Class Tech Tips is a resource for educators and administrators looking to create engaging and differentiated learning experiences with educational technology. Learn how to implement EdTech in your classroom and find apps and web tools to use with your students.</div>
+		</section><section id="text-68" class="widget widget_text wf-cell wf-1-4"><div class="widget-title">EdTech Books for Teachers</div>			<div class="textwidget">New Release!
+Deeper Learning With QR Codes and Augmented Reality: A Scannable Solution for Your Classroom
+<a href="http://classtechtips.com/books/">Find out more</a></div>
+		</section>		<section id="recent-posts-5" class="widget widget_recent_entries wf-cell wf-1-4">		<div class="widget-title">Recent Posts</div>		<ul>
+					<li>
+				<a href="http://classtechtips.com/2017/05/01/tomorrows-classrooms-today-conference/">Tomorrow&#8217;s Classrooms Today Conference: Book Signing + Special Discount</a>
+						</li>
+					<li>
+				<a href="http://classtechtips.com/2017/04/30/increase-family-engagement-schoolrunner-student-parent-portal/">Increase Family Engagement with Schoolrunner Student + Parent Portal</a>
+						</li>
+					<li>
+				<a href="http://classtechtips.com/2017/04/29/lms-important-childs-education/">Learning Management System: An LMS Can Connect Your School Community</a>
+						</li>
+				</ul>
+		</section>		<section id="text-69" class="widget widget_text wf-cell wf-1-4"><div class="widget-title">Social Media</div>			<div class="textwidget">Find Class Tech Tips on Social Media
+
+<a href= "http://twitter.com/classtechtips">Twitter</a>
+<a href= "http://facebook.com/classtechtips">Facebook</a>
+<a href= "http://pinterest.com/classtechtips">Pinterest</a></div>
+		</section>
+					</div><!-- .wf-container -->
+				</div><!-- .wf-container-footer -->
+			</div><!-- .wf-wrap -->
+
+		
+<!-- !Bottom-bar -->
+<div id="bottom-bar"  role="contentinfo">
+	<div class="wf-wrap">
+		<div class="wf-container-bottom">
+			<div class="wf-table wf-mobile-collapsed">
+
+				<div id="branding-bottom" class="wf-td"><a href="http://classtechtips.com/"><img class=" preload-me" src="http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide-small.png" srcset="http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide-small.png 200w, http://classtechtips.com/wp-content/uploads/2016/05/ctt-wide.png 400w" width="200" height="50"   sizes="200px" alt="Class Tech Tips" /></a></div>
+				<div class="wf-td">
+
+					<div class="mini-nav wf-float-right"><ul><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13123 first"><a href='http://classtechtips.com/about-monica/' data-level='1'><span class="menu-item-text"><span class="menu-text">About Monica</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-13159"><a href='http://classtechtips.com/blog/' data-level='1'><span class="menu-item-text"><span class="menu-text">Blog</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13156"><a href='http://classtechtips.com/contact-2/' data-level='1'><span class="menu-item-text"><span class="menu-text">Contact</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13150"><a href='http://classtechtips.com/events-and-workshops/' data-level='1'><span class="menu-item-text"><span class="menu-text">Events and Workshops</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13153"><a href='http://classtechtips.com/books/' data-level='1'><span class="menu-item-text"><span class="menu-text">Books</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13155"><a href='http://classtechtips.com/consulting/' data-level='1'><span class="menu-item-text"><span class="menu-text">EdTech Consulting</span></span></a></li> </ul><div class="menu-select"><span class="customSelect1"><span class="customSelectInner">CTT Menu</span></span></div></div>
+				</div>
+
+				
+			</div>
+		</div><!-- .wf-container-bottom -->
+	</div><!-- .wf-wrap -->
+</div><!-- #bottom-bar -->
+	</footer><!-- #footer -->
+
+
+
+	<a href="#" class="scroll-top"></a>
+
+</div><!-- #page -->
+	<div style="display:none">
+	<div class="grofile-hash-map-7eb61a8eb8e1c559facb6ac50307cf86">
+	</div>
+	</div>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/akismet/_inc/form.js?ver=3.3'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/themes/dt-the7/js/main.min.js?ver=3.7.1'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/go_pricing/assets/js/go_pricing_scripts.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201718'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Mayaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.4'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-includes/js/comment-reply.min.js?ver=4.7.4'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-content/themes/dt-the7/js/post-type.js?ver=3.7.1'></script>
+<script type='text/javascript' src='http://classtechtips.com/wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+			// window.location.reload() doesn't respect the Hash in IE
+			window.location.hash = window.location.hash;
+		}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			var comm_par_el = document.getElementById( 'comment_parent' ),
+			    comm_par = (comm_par_el && comm_par_el.value) ? comm_par_el.value : '',
+			    frame = document.getElementById( 'jetpack_remote_comment' ),
+			    tellFrameNewParent;
+
+			tellFrameNewParent = function() {
+				if ( comm_par ) {
+					frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=59667358&postid=15946&comment_registration=0&require_name_email=0&stc_enabled=0&stb_enabled=1&show_avatars=1&avatar_default=blank&greeting=Share+your+thoughts%21&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=4.3.2&sig=2b577d96bbfd7af5f74d9e5753b6166f9911a597#parent=http%3A%2F%2Fclasstechtips.com%2F2017%2F02%2F07%2Fgarageband-with-spark-video%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+				} else {
+					frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=59667358&postid=15946&comment_registration=0&require_name_email=0&stc_enabled=0&stb_enabled=1&show_avatars=1&avatar_default=blank&greeting=Share+your+thoughts%21&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=4.3.2&sig=2b577d96bbfd7af5f74d9e5753b6166f9911a597#parent=http%3A%2F%2Fclasstechtips.com%2F2017%2F02%2F07%2Fgarageband-with-spark-video%2F";
+				}
+			};
+
+	
+			if ( 'undefined' !== typeof addComment ) {
+				addComment._Jetpack_moveForm = addComment.moveForm;
+
+				addComment.moveForm = function( commId, parentId, respondId, postId ) {
+					var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ), cancelClick, cancel;
+
+					if ( false === returnValue ) {
+						cancel = document.getElementById( 'cancel-comment-reply-link' );
+						cancelClick = cancel.onclick;
+						cancel.onclick = function() {
+							var cancelReturn = cancelClick.call( this );
+							if ( false !== cancelReturn ) {
+								return cancelReturn;
+							}
+
+							if ( !comm_par ) {
+								return cancelReturn;
+							}
+
+							comm_par = 0;
+
+							tellFrameNewParent();
+
+							return cancelReturn;
+						};
+					}
+
+					if ( comm_par == parentId ) {
+						return returnValue;
+					}
+
+					comm_par = parentId;
+
+					tellFrameNewParent();
+
+					return returnValue;
+				};
+			}
+
+	
+			if ( window.postMessage ) {
+				if ( document.addEventListener ) {
+					window.addEventListener( 'message', function( event ) {
+						if ( "https:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				} else if ( document.attachEvent ) {
+					window.attachEvent( 'message', function( event ) {
+						if ( "https:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				}
+			}
+		</script>
+
+	<script type='text/javascript' src='http://stats.wp.com/e-201718.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'59667358',post:'15946',tz:'-4',srv:'classtechtips.com'} ]);
+	_stq.push([ 'clickTrackerInit', '59667358', '15946' ]);
+</script>
+	    <script type="text/javascript">var omapi_localized = { ajax: 'http://classtechtips.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '04f79f968f' };</script>
+	    </body>
+</html>

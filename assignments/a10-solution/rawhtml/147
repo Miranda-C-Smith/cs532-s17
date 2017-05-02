@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="BERSERK,KOEITECMO,WARRIORS,OMEGAFORCE" />
+  <meta name="description" content="Omega Force’s new project unveiled: the collaboration of the landmark dark fantasy manga series Berserk and Koei Tecmo’s Warriors series!
+  The intense world and frenzied story will unfold for the most lethal Warriors game!" />
+
+  <meta property="og:title" content="BERSERK and the Band of the Hawk" />
+  <meta property="og:type" content="activity" />
+  <meta property="og:description" content="Omega Force’s new project unveiled: the collaboration of the landmark dark fantasy manga series Berserk and Koei Tecmo’s Warriors series!
+The intense world and frenzied story will unfold for the most lethal Warriors game!" />
+  <meta property="og:url" content="http://www.koeitecmoamerica.com/berserk/" />
+  <meta property="og:image" content="http://www.koeitecmoamerica.com/berserk/images/og_img3.jpg" />
+  <meta property="og:site_name" content="BERSERK and the Band of the Hawk" />
+
+  <meta property="fb:app_id" content="1281116838584855" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@KoeiTecmoUS">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/top.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/init.js"></script>
+
+  <title>BERSERK and the Band of the Hawk</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header></header>
+
+      <div id="container" data-responsivImage="images/top/mainvisual.jpg">
+        <main class="clearfix">
+          <img src="images/top/logo_set.png" id="logo_set" usemap="#logoset" alt="" />
+          <map name="logoset">
+            <area shape="rect" coords="364,396,604,458" href="privileges.html" alt="" target="_self" data-category="ORDER-GCSHOP-TOP" />
+          </map>
+
+        </main>
+
+        <div id="content">
+          <div id="content_body">
+            <section id="movie">
+              <iframe src="https://www.youtube.com/embed/bSgOCkFkxRc?wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+            <section class="banners half clearfix">
+              <a href="features.html"><img src="images/top/link_features.jpg"></a>
+              <a href="#about_berserk" id="link_about"><img src="images/top/link_about.jpg"></a>
+            </section>
+
+            <section class="banner full">
+              <a href="preorder.html"><img src="images/top/banner_order.jpg"></a>
+              <a href="http://www.crunchyroll.com/berserk/episode-1-the-dragonslayer-714981?utm_source=koei-tecmo&utm_medium=koei-tecmo&utm_campaign=berserkUS&referrer=community" target="new"><img src="images/top/link_anime.jpg" style="margin-top:5%;"></a>
+            </section>
+
+
+
+            <section id="common_info"></section>
+          </div>
+        </div>
+
+        <div id="footer"></div>
+
+      </div>
+    </div>
+
+
+    <div style="display:none;">
+      <div id="about_berserk">
+        <img src="images/about_berserk/main.png" id="about_main">
+        <p>"Berserk" is one of the most popular and no-doubt one of the darkest fantasy comics, selling more than 40 million copies across the world.<br>
+          The originality of this profound story, told through the lives of fascinating characters and in mind-blowingly complex and detailed drawings has captured the hearts and influenced the lives of many fans not only in Japan, but all over the world as well.<br>
+          The story focuses on the daring and heroic life of Guts, cutting his way through the world of sword, magic and demonic creatures, and contains action, romance, drama and humor - all essential elements of first-class entertainment!<br>
+          <!--2016年7月よりMBSほかアニメイズム枠、WOWOWにてアニメ放送も開始。こちらも乞うご期待！-->
+        </p>
+        <!--section id="banners">
+          <a href="http://www.younganimal.com/berserk/" target="new"><img src="images/about_berserk/banner_official.jpg"></a>
+          <a href="http://www.berserk-anime.com/" target="new"><img src="images/about_berserk/banner_anime.jpg"></a>
+        </section-->
+      </div>
+    </div>
+
+    <script>
+      /*$("#logo_set").attr("src","images/top/" + d + "logo_set.png");
+      $("#container").css("background-image","url('images/top/" + d + "mainvisual.jpg')");*/
+
+
+      $("#link_about").colorbox({
+        inline:true,
+        initialWidth:"10%",
+    		initialHeight:"10%",
+    		width:"85%",
+    		maxWidth:"800px"/*,
+        onOpen:function(){
+          window.location.hash = $(this).attr("href");
+        },
+        onCleanup:function(){
+          window.location.hash = "";
+        }*/
+      });
+    </script>
+  </body>
+</html>

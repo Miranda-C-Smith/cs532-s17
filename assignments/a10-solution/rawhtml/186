@@ -1,0 +1,1032 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dfabe760ea","applicationID":"6805201","transactionName":"cQtWREpXW1gHRkwLUkUXZ1VWTEVdB0dMFl9dEw==","queueTime":0,"applicationTime":1434,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <title>星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで (2017/02/07) 邦楽ニュース | ロッキング・オンの音楽情報サイト RO69</title>
+<meta name="Description" content="音楽情報サイト RO69(アールオーロック)の邦楽ニュース。星野源が雑誌『AERA』で行っている対談連載「音楽の話をしよう」に、ドラマ『逃げるは恥だが役に立つ』を担…" />
+<meta name="Keywords" content="星野 源,ホシノ ゲン,邦楽ニュース,音楽ニュース,音楽情報,音楽情報サイト,ロッキン,ro69,ロッキングオン,アールオーロック" />
+<meta name="Author" content="株式会社ロッキング・オン" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://sp.ro69.jp/news/detail/155835?utm_source=feedburner&amp;utm_medium=twitter&amp;utm_campaign=Feed%3A+ro69%2FGqpJ+%28RO69%29" />
+  <link rel="amphtml" href="http://ro69.jp/news/detail/155835.amp" >
+<meta property="fb:app_id" content="353676854750141" />
+<meta property="og:image" content="http://ro69.jp/img/image00.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://ro69.jp/news/detail/155835?utm_campaign=Feed%3A+ro69%2FGqpJ+%28RO69%29&amp;utm_medium=twitter&amp;utm_source=feedburner" />
+<meta property="og:title" content="星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで (2017/02/07) 邦楽ニュース | ロッキング・オンの音楽情報サイト RO69" />
+<meta property="og:description" content="音楽情報サイト RO69(アールオーロック)の邦楽ニュース。星野源が雑誌『AERA』で行っている対談連載「音楽の話をしよう」に、ドラマ『逃げるは恥だが役に立つ』を担…" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ro69_jp" />
+  <meta name="twitter:url" content="http://ro69.jp/news/detail/155835?utm_campaign=Feed%3A+ro69%2FGqpJ+%28RO69%29&amp;utm_medium=twitter&amp;utm_source=feedburner" />
+  <meta name="twitter:title" content="星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで (2017/02/07) 邦楽ニュース" />
+  <meta name="twitter:description" content="音楽情報サイト RO69(アールオーロック)の邦楽ニュース。星野源が雑誌『AERA』で行っている対談連載「音楽の話をしよう」に、ドラマ『逃げるは恥だが役に立つ』を担…" />
+  <meta name="twitter:image" content="http://ro69.jp/images/entry/640x520/155835/1" />
+
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  
+  <meta name="pubdate" content="20170207" />
+<meta name="music-category" content="hogaku" />
+<meta name="thumbnail" content="http://ro69.jp/images/entry/148x148/155835/1" />
+  <link rel="stylesheet" media="all" href="/assets/frontyard.css" />
+  <link rel="stylesheet" media="all" href="/assets/news_entries.css" />
+
+<!--共通CSS-->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato:400,700,700italic" rel="stylesheet" type="text/css">
+  <link href="/css/CCSS.css" rel="stylesheet" type="text/css">
+  <link href="/css/common2014.css" rel="stylesheet" type="text/css">
+  <link href="/css/tools/jquery.suggest.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/css/matome_201505.css" media="all" rel="stylesheet" />
+  <link href="/css/seo2016.css" media="all" rel="stylesheet" />
+<!--/共通CSS-->
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="NsbymsOi/OafG6aRctAHgtHKam64yF5yhMdEV8cqtzLBJ8Cv8OdXuYrK2Gs4fFvHaj8GANaPPksV2zHD2b5jzw==" />
+
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="52x52" href="/img/apple-touch-icon-52x52.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="52x52" href="/img/apple-touch-icon-52x52.png" />
+
+  <link rel="alternate" type="application/atom+xml" title="新着情報 Atom" href="/rss.xml" />
+  <link rel="contents" href="/" title="RO69" />
+
+
+<!--共通js-->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.suggest.js"></script>
+  <script type="text/javascript" src="/js/keyword_suggest2014.js"></script>
+  <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="/js/ulog.js"></script>
+  <script type="text/javascript" src="/js/CJS.js"></script>
+  <script type="text/javascript" src="/js/common2014.js"></script>
+  <script type="text/javascript" src="/js/header2014.js"></script>
+  <script type="text/javascript" src="/js/rotation_banner.js"></script>
+  <script type="text/javascript" src="/js/product.js"></script>
+  <script type="text/javascript" src="/js/feature_area.js"></script>
+  <script type="text/javascript" src="/js/category_jump.js"></script>
+  <script type="text/javascript" src="/js/imgBorder.js"></script>
+  <script type="text/javascript" src="/js/tabclass_switch.js"></script>
+  <script type="text/javascript" src="/js/pagetop_scroller.js"></script>
+  <script type="text/javascript" src="/js/matome.js"></script>
+<!--/共通js-->
+<!--個別CSS,js-->
+  <link rel="stylesheet" media="all" href="/css/news2014.css" />
+  <link rel="stylesheet" media="all" href="/css/social.css" />
+  <link rel="stylesheet" media="all" href="/css/seo2016.css" />
+  <script src="/js/pageview_topics.js"></script>
+  <script src="/js/feature_big_banner.js"></script>
+<!--/個別CSS,js-->
+  <link rel="alternate" media="handheld" href="http://ro69.jp" />
+  
+</head>
+<body>
+    <div id="link-to-smartphone" class="jump-to-smartphone" style="display: none;">
+      <a href="/smartphone/news/detail/155835">
+        <img src="http://ro69.jp/img/banner/sp_banner.png" alt="スマートフォンサイトへ">
+</a>      </div>
+  <script type="text/javascript">
+    var smartphone_check = 'Android.*Mobile,iPhone,iPod';
+  </script>
+  <script type="text/javascript" src="/js/ro69_spcheck.js"></script>
+
+  <a name="top"></a>
+<div id="header" class="nocontent">
+  <div id="header_inner">
+    <div class="logo"><a href="/"><img src="/img/common/logo.png" width="114" height="67" alt="ロッキング・オンの音楽情報サイト RO69(アールオーロック)"></a></div>
+    <h1 class="site_copy">ロックの最前線とあなたをつなぐ、<br />最強の音楽情報サイト</h1>
+    <p class="ro69_ruby">アールオーロック</p>
+    <div class="banner">
+      <div id="rotation_banner_ja" class="show_only_ja" style="display:none;">
+            </div>
+      <div id="rotation_banner_world" class="show_only_world" style="display:none;">
+            </div>
+    </div>
+    <div class="social_box">
+      <ul class="clearfix">
+        <li><a href="/sns"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="/sns"><i class="fa fa-facebook"></i></a></li>
+      </ul>
+      <p>
+        <a href="/whatday/wptQqW6KlXE=">
+          <span class="lato date">05/02 TUE</span><br />今日の誕生日<i class="fa fa-calendar"></i>
+</a>      </p>
+    </div>
+  </div>
+</div>
+<div id="header_nav" class="nocontent">
+  <div class="nav_inner clearfix">
+    <ul class="gmenu jsSerialNumber">
+      <li><a href="/"><i class="fa fa-home"></i></a></li>
+      <li class="on"><a class="category_jump" href="/news">ニュース</a></li>
+      <li><a class="category_jump" href="/live">ライブレポート</a></li>
+      <li><a class="category_jump" href="/disc">ディスクレビュー</a></li>
+      <li><a href="/blog">ブログ</a></li>
+      <li><a class="category_jump" href="/feat">特集</a></li>
+    </ul>
+    <ul class="smenu jsSerialNumber">
+      <li id="fesmenu_head"><a href="/fes_list" target="_blank">フェス</a>
+        <div class="fes_submenu_head fes_submenu" style="">
+          <ul>
+	<li><a href="http://rijfes.jp/" target="_blank">ROCK IN JAPAN FESTIVAL 公式サイト</a></li>
+	<li><a href="http://countdownjapan.jp/" target="_blank">COUNTDOWN JAPAN 公式サイト</a></li>
+</ul>
+<ul>
+<li><a href="http://manpaku.jp/" target="_blank">まんパク 公式サイト</a></li>
+	<li><a href="http://japanjam.jp/" target="_blank">JAPAN JAM 公式サイト</a></li>
+	<li><a href="http://nonukes2015.jp" target="_blank">NO NUKES 2015 公式サイト</a></li>
+</ul>
+<ul>
+	<li class="fes_title">RIJFクイックレポート</li>
+	<li class="fes_number"><ul>
+		<li><a href="/quick/rijfes2016" target="_blank">2016</a></li>
+		<li><a href="/quick/rijfes2015" target="_blank">2015</a></li>
+		<li><a href="/quick/rijfes2014" target="_blank">2014</a></li>
+		<li><a href="/quick/rijfes2013" target="_blank">2013</a></li>
+		<li><a href="/quick/rijfes2012" target="_blank">2012</a></li>
+		<li><a href="/quick/rijfes2011" target="_blank">2011</a></li>
+		<li><a href="/quick/rijfes2010" target="_blank">2010</a></li>
+		<li><a href="/quick/rijfes09" target="_blank">2009</a></li>
+		<li><a href="/quick/rijfes2008" target="_blank">2008</a></li>
+		<li><a href="/quick/rijfes2007" target="_blank">2007</a></li>
+		<li><a href="/quick/rijfes2006" target="_blank">2006</a></li>
+		<li><a href="/quick/rijfes2005" target="_blank">2005</a></li>
+		<li><a href="/quick/rijfes2004" target="_blank">2004</a></li>
+		<li><a href="/quick/rijfes2003" target="_blank">2003</a></li>
+		<li><a href="/quick/rijfes2002" target="_blank">2002</a></li>
+		<li><a href="/quick/rijfes2001" target="_blank">2001</a></li>
+	</ul></li>
+</ul>
+<ul>
+	<li class="fes_title">CDJクイックレポート</li>
+	<li class="fes_number"><ul>
+		<li><a href="/quick/cdj1516" target="_blank">15/16</a></li>
+		<li><a href="/quick/cdj1415" target="_blank">14/15</a></li>
+		<li><a href="/quick/cdj1314" target="_blank">13/14</a></li>
+		<li><a href="/quick/cdj1213" target="_blank">12/13</a></li>
+		<li><a href="/quick/cdj1112" target="_blank">11/12</a></li>
+		<li><a href="/quick/cdj1011" target="_blank">10/11</a></li>
+		<li><a href="/quick/cdj0910" target="_blank">09/10</a></li>
+		<li><a href="/quick/cdj0809" target="_blank">08/09</a></li>
+		<li><a href="/quick/cdj0809west" target="_blank">08/09 -WEST-</a></li>
+		<li><a href="/quick/cdj0708" target="_blank">07/08</a></li>
+		<li><a href="/quick/cdj0708west" target="_blank">07/08 -WEST-</a></li>
+		<li><a href="/quick/cdj0607" target="_blank">06/07</a></li>
+		<li><a href="/quick/cdj0607west" target="_blank">06/07 -WEST-</a></li>
+		<li><a href="/quick/cdj0506" target="_blank">05/06</a></li>
+		<li><a href="/quick/cdj0405" target="_blank">04/05</a></li>
+		<li><a href="/quick/cdj0304" target="_blank">03/04</a></li>
+	</ul></li>
+</ul>
+
+        </div>
+      </li>
+      <li><a href="http://rojack.jp/" target="_blank">RO JACK</a></li>
+      <li><a href="http://www.rockinon.co.jp/product" target="_blank">出版物</a></li>
+      <li><a href="http://www.rockinonstore.jp" target="_blank">オンラインストア</a></li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Content Starts Here -->
+  <div id="content" style="background:#E7E7E7;">
+    
+<input type="hidden" name="pageview" id="pageview" value="/api/page_views/155835" />
+<input type="hidden" name="popular_pageview" id="popular_pageview" value="/api/popular_page_views/155835" />
+
+<div id="content_inner" class="clearfix">
+  <div class="l">
+    <!-- タブメニュー -->
+    <div class="ttl_tab line_jp clearfix">
+  <h1 class="ttl"><i class="fa  fa-caret-right"></i>ニュース</h1>
+  <ul class="jsTail" data-jsTail="3">
+    <li class="jp on"><h2><a href="/news?category=1">邦楽</a></h2></li>
+    <li class="world"><h2><a href="/news?category=2">洋楽</a></h2></li>
+    <li class="all"><h2><a href="/news?category=0">全て</a></h2></li>
+  </ul>
+</div>
+
+    <!-- タブメニュー ここまで-->
+
+    <div class="article_box">
+      <div class="clearfix article_link_t nocontent">
+      </div>
+      <div class="article_ttl">
+        <p>
+          <span class="date_l lato">2017.02.07</span>
+        </p>
+
+        <ul>
+  <li><iframe src="//www.facebook.com/v2.0/plugins/like.php?href=http%3A%2F%2Fro69.jp%2Fnews%2Fdetail%2F155835%3Futm_source%3Dfeedburner%26utm_medium%3Dtwitter%26utm_campaign%3DFeed%253A%2Bro69%252FGqpJ%2B%2528RO69%2529&amp;send=false&amp;layout=button_count&amp;width=72&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:72px; height:21px;" allowTransparency="true"></iframe></li><li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-url="http://ro69.jp/news/detail/155835?utm_source=feedburner&amp;utm_medium=twitter&amp;utm_campaign=Feed%3A+ro69%2FGqpJ+%28RO69%29?rtw" data-count="none">ツイート</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li><li><a href="http://b.hatena.ne.jp/entry/http://ro69.jp/news/detail/155835?utm_source=feedburner&amp;utm_medium=twitter&amp;utm_campaign=Feed%3A+ro69%2FGqpJ+%28RO69%29" class="hatena-bookmark-button" data-hatena-bookmark-title="RO69(アールオーロック)" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script></li>
+</ul>
+
+
+        <h1 class="ttl_l">星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで</h1>
+      </div>
+
+      <div class="article_box_inner clearfix">
+
+<span class="news_photo jsRollOverAlpha"><a href="/news/photo/155835/1"><span class="imgBorder"><img alt="星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで" src="/images/entry/230x250/155835/1" /></span></a><a href="/news/photo/155835/2"><span class="imgBorder"><img alt="『AERA』2017年2月13日号　発売中" src="/images/entry/230x250/155835/2" /></span></a><p>『AERA』2017年2月13日号　発売中</p></span>星野源が雑誌『AERA』で行っている対談連載「音楽の話をしよう」に、ドラマ『逃げるは恥だが役に立つ』を担当した脚本家の野木亜紀子が登場している。<br /><br />対談の模様は、同誌の2017年2月6日発売号（2月13 日号）から 4週にわたって掲載。対談では、ドラマの裏話から演技について、脚本家の醍醐味、作品への思い、そして音楽の話などについて語られる。<br /><br />雑誌情報は以下の通り。<br /><br />●雑誌情報<br />朝日新聞出版『AERA』2017年2月13日号<br />発売中<br />定価：390円（税込）<br />表紙：ジェフ・ミルズ（DJ・作曲家・プロデューサー）<br />【野木亜紀子ゲスト回の発売日】<br />2/6（1話）、2/13（2話）、2/20（3話）、2/27（4話）<br />※一部地域では発売日が異なります。<br />商品紹介ページ：<a target="_blank" href="http://publications.asahi.com/ecs/detail/?item_id=18817">http://publications.asahi.com/ecs/detail/?item_id=18817</a>
+      </div>
+
+      
+
+        <div class="relation_list nocontent">
+    <h2 class="ttl_black c_mb5">関連記事</h2>
+    <ul class="relation_list_d">
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p>
+            <span class="icon_category">ニュース</span>
+            <a title="先週の邦楽人気記事 トップ10（4月24日（月）〜4月30日（日））" onclick="_gaq.push(['_trackEvent', 'KanrenArticle', 'KanrenArticle00', '先週の邦楽人気記事 トップ10（4月24日（月）〜4月30日（日））',]);" href="/news/detail/159862">先週の邦楽人気記事 トップ10（4月24日（月）〜4月30日（日））</a>
+            <span class="date">[2017.05.01]</span>
+          </p>
+        </li>
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p>
+            <span class="icon_category">ニュース</span>
+            <a title="NHK『おげんさんといっしょ』星野源の家族に細野晴臣、高畑充希、藤井隆" onclick="_gaq.push(['_trackEvent', 'KanrenArticle', 'KanrenArticle01', 'NHK『おげんさんといっしょ』星野源の家族に細野晴臣、高畑充希、藤井隆',]);" href="/news/detail/159831">NHK『おげんさんといっしょ』星野源の家族に細野晴臣、高畑充希、藤井隆</a>
+            <span class="date">[2017.05.01]</span>
+          </p>
+        </li>
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p>
+            <span class="icon_category">ブログ</span>
+            <a title="星野源“恋”、現在、未来――今思うことのすべてを語る (ROCKIN&#39;ON JAPAN 編集部日記)" onclick="_gaq.push(['_trackEvent', 'KanrenArticle', 'KanrenArticle02', '星野源“恋”、現在、未来――今思うことのすべてを語る (ROCKIN’ON JAPAN 編集部日記)',]);" href="/blog/japan/159750">星野源“恋”、現在、未来――今思うことのすべてを語る (ROCKIN&#39;ON JAPAN 編集部日記)</a>
+            <span class="date">[2017.04.28]</span>
+          </p>
+        </li>
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p>
+            <span class="icon_category">ニュース</span>
+            <a title="ねずみの中の人は宮野真守だった！ 『おげんさんといっしょ』新動画2本公開" onclick="_gaq.push(['_trackEvent', 'KanrenArticle', 'KanrenArticle03', 'ねずみの中の人は宮野真守だった！ 『おげんさんといっしょ』新動画2本公開',]);" href="/news/detail/159744">ねずみの中の人は宮野真守だった！ 『おげんさんといっしょ』新動画2本公開</a>
+            <span class="date">[2017.04.28]</span>
+          </p>
+        </li>
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p>
+            <span class="icon_category">ニュース</span>
+            <a title="星野源、初MV集のトレーラー公開。メイキングやゲストとのトークをチラ見せ" onclick="_gaq.push(['_trackEvent', 'KanrenArticle', 'KanrenArticle04', '星野源、初MV集のトレーラー公開。メイキングやゲストとのトークをチラ見せ',]);" href="/news/detail/159742">星野源、初MV集のトレーラー公開。メイキングやゲストとのトークをチラ見せ</a>
+            <span class="date">[2017.04.28]</span>
+          </p>
+        </li>
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p>
+            <span class="icon_category">ニュース</span>
+            <a title="星野源、ギャラクシー賞において『ANN』初の「DJパーソナリティ賞」を受賞" onclick="_gaq.push(['_trackEvent', 'KanrenArticle', 'KanrenArticle05', '星野源、ギャラクシー賞において『ANN』初の「DJパーソナリティ賞」を受賞',]);" href="/news/detail/159734">星野源、ギャラクシー賞において『ANN』初の「DJパーソナリティ賞」を受賞</a>
+            <span class="date">[2017.04.28]</span>
+          </p>
+        </li>
+    </ul>
+    <div class="btn">
+      <a title="星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで" class="btn_black" href="/related_entries/index/155835"><i class="fa fa-angle-right"></i>関連記事をもっと見る</a>
+    </div>
+  </div>
+
+        <div class="relation_list_2column nocontent">
+    <h2 class="ttl_black c_mb5">関連アーティストの記事まとめ</h2>
+      <ul class="relation_list_2column_a clearfix">
+        <li>
+          <a onclick="_gaq.push(['_trackEvent', 'KanrenArtist', 'KanrenArtist00', '星野 源',]);" href="/artist/5236">星野 源　（ホシノ ゲン）</a>
+        </li>
+    </ul>
+  </div>
+
+        <div class="relation_list nocontent">
+    <h2 class="ttl_black c_mb5">関連サイト</h2>
+    <ul class="relation_list_d">
+        <li>
+          <i class="fa fa-caret-right"></i>
+          <p><a target="_blank" title="星野源　オフィシャルサイト" href="http://www.hoshinogen.com/">星野源　オフィシャルサイト</a></p>
+        </li>
+    </ul>
+  </div>
+
+
+      
+<div class="show_only_ja">
+    <div class="nocontent">
+    <h3 class="ttl_black c_mb10">特集<span class="lato">Feature articles</span><span style="float:right;padding-right:10px;font-size:13px;color:#999999;">PR</span></h3>
+    <div class="feature_inner c_mb20">
+      <div id="feature_big_banner_ja">
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/scott-and-rivers_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159703/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/scott-and-rivers_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う',]);">スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う</a></h4>
+              <p><a href="/feat/scott-and-rivers_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/plenty_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159681/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/plenty_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから',]);">plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから</a></h4>
+              <p><a href="/feat/plenty_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/wanima_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159615/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/wanima_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！',]);">WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！</a></h4>
+              <p><a href="/feat/wanima_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/yonezukenshi_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159625/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/yonezukenshi_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー',]);">米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー</a></h4>
+              <p><a href="/feat/yonezukenshi_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/yuzu_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ゆず デビュー20周年！ ふたりと語り合うこの「10曲」超ロングインタビュー！',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159565/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/yuzu_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ゆず デビュー20周年！ ふたりと語り合うこの「10曲」超ロングインタビュー！',]);">ゆず デビュー20周年！ ふたりと語り合うこの「10曲」超ロングインタビュー！</a></h4>
+              <p><a href="/feat/yuzu_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ゆず デビュー20周年！ ふたりと語り合うこの「10曲」超ロングインタビュー！',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/aimyong_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'あいみょん、「男性の女々しさ」を歌った究極のリアルソング『愛を伝えたいだとか』インタビュー',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159527/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/aimyong_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'あいみょん、「男性の女々しさ」を歌った究極のリアルソング『愛を伝えたいだとか』インタビュー',]);">あいみょん、「男性の女々しさ」を歌った究極のリアルソング『愛を伝えたいだとか』インタビュー</a></h4>
+              <p><a href="/feat/aimyong_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'あいみょん、「男性の女々しさ」を歌った究極のリアルソング『愛を伝えたいだとか』インタビュー',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/hoshinogen_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '“恋”、現在、未来――星野 源が今思うことのすべて',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159491/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/hoshinogen_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '“恋”、現在、未来――星野 源が今思うことのすべて',]);">“恋”、現在、未来――星野 源が今思うことのすべて</a></h4>
+              <p><a href="/feat/hoshinogen_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '“恋”、現在、未来――星野 源が今思うことのすべて',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/anly_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '「ギターは私にとって兄弟みたいなもの」 シンガーソングライター・Anly、音楽との出会いと初のアルバム『anly one』を語る',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159037/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/anly_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '「ギターは私にとって兄弟みたいなもの」 シンガーソングライター・Anly、音楽との出会いと初のアルバム『anly one』を語る',]);">「ギターは私にとって兄弟みたいなもの」 シンガーソングライター・Anly、音楽との出会いと初のアルバム『anly one』を語る</a></h4>
+              <p><a href="/feat/anly_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '「ギターは私にとって兄弟みたいなもの」 シンガーソングライター・Anly、音楽との出会いと初のアルバム『anly one』を語る',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/backdropcinderella_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'フェスに出たいバックドロップシンデレラ・豊島×フェスを主催するアルカラ・稲村　スペシャル対談',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/158982/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/backdropcinderella_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'フェスに出たいバックドロップシンデレラ・豊島×フェスを主催するアルカラ・稲村　スペシャル対談',]);">フェスに出たいバックドロップシンデレラ・豊島×フェスを主催するアルカラ・稲村　スペシャル対談</a></h4>
+              <p><a href="/feat/backdropcinderella_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'フェスに出たいバックドロップシンデレラ・豊島×フェスを主催するアルカラ・稲村　スペシャル対談',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/pan_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '波なら自分たちで起こせ！ PAN、「自由」と新作『PANJOY!!!』を語る',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/158888/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/pan_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '波なら自分たちで起こせ！ PAN、「自由」と新作『PANJOY!!!』を語る',]);">波なら自分たちで起こせ！ PAN、「自由」と新作『PANJOY!!!』を語る</a></h4>
+              <p><a href="/feat/pan_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', '波なら自分たちで起こせ！ PAN、「自由」と新作『PANJOY!!!』を語る',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/reVisionofsence_livekidsaruarunakanohito_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ライブハウスシーンに一石を投じるReVision of Sence×ライブキッズあるある中の人 新世代対談',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/158709/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/reVisionofsence_livekidsaruarunakanohito_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ライブハウスシーンに一石を投じるReVision of Sence×ライブキッズあるある中の人 新世代対談',]);">ライブハウスシーンに一石を投じるReVision of Sence×ライブキッズあるある中の人 新世代対談</a></h4>
+              <p><a href="/feat/reVisionofsence_livekidsaruarunakanohito_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ライブハウスシーンに一石を投じるReVision of Sence×ライブキッズあるある中の人 新世代対談',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/maisonbookgirl_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ニューエイジ・ポップ・ユニット「Maison book girl」、アルバム『image』を語り尽くす！',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/158642/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/maisonbookgirl_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ニューエイジ・ポップ・ユニット「Maison book girl」、アルバム『image』を語り尽くす！',]);">ニューエイジ・ポップ・ユニット「Maison book girl」、アルバム『image』を語り尽くす！</a></h4>
+              <p><a href="/feat/maisonbookgirl_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterBig_PC', 'ニューエイジ・ポップ・ユニット「Maison book girl」、アルバム『image』を語り尽くす！',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+      </div>
+      <ul class="feature_list jsTail" data-jsTail="4">
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/scott-and-rivers_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', 'スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う',]);"><span class="imgBorder"><img src="/images/entry/151x104/159703/1" /></span></a></dt>
+              <dd><a href="/feat/scott-and-rivers_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', 'スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う',]);">スコット＆リバース、「和」と「わびさび」を極める新作『ニマイメ』のすべてを語り合う</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/plenty_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', 'plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから',]);"><span class="imgBorder"><img src="/images/entry/151x104/159681/1" /></span></a></dt>
+              <dd><a href="/feat/plenty_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', 'plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから',]);">plentyはなぜ、その歩みを止めるのか？ 江沼が語る解散の真実、そしてこれから</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/wanima_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', 'WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！',]);"><span class="imgBorder"><img src="/images/entry/151x104/159615/1" /></span></a></dt>
+              <dd><a href="/feat/wanima_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', 'WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！',]);">WANIMA、たまアリ大成功！ そして、ニューシングルまですべてを語る！</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/yonezukenshi_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', '米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー',]);"><span class="imgBorder"><img src="/images/entry/151x104/159625/1" /></span></a></dt>
+              <dd><a href="/feat/yonezukenshi_201704" onClick="_gaq.push(['_trackEvent', 'FeatHogaku', 'FooterSmall_PC', '米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー',]);">米津玄師、ロックでポップなアニソンに振り切った新曲“ピースサイン”に迫る最速インタビュー</a></dd>
+            </dl>
+          </li>
+      </ul>
+    <div class="f_btn"><a href="/feat?category=1" class="btn_black"><i class="fa fa-angle-right"></i>邦楽特集一覧</a></div>
+  </div>
+</div>
+
+</div>
+<div class="show_only_world">
+    <div class="nocontent">
+    <h3 class="ttl_black c_mb10">特集<span class="lato">Feature articles</span><span style="float:right;padding-right:10px;font-size:13px;color:#999999;">PR</span></h3>
+    <div class="feature_inner c_mb20">
+      <div id="feature_big_banner_world">
+          <div class="feature_topix" style="display:none;">
+            <div class="banner jsRollOverAlpha">
+              <a href="/feat/zedd_double_zero_201704" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterBig_PC', 'ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤',]);"><span class="imgBorder imgBorder_g"><img src="/images/entry/width:480/159732/2" /></span></a>
+            </div>
+            <div>
+              <div></div>
+              <h4 class="ttl_l"><a href="/feat/zedd_double_zero_201704" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterBig_PC', 'ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤',]);">ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤</a></h4>
+              <p><a href="/feat/zedd_double_zero_201704" class="btn_gray" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterBig_PC', 'ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤',]);"><i class="fa fa-angle-right"></i>特集を見る</a></p>
+            </div>
+          </div>
+      </div>
+      <ul class="feature_list jsTail" data-jsTail="4">
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/zedd_double_zero_201704" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', 'ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤',]);"><span class="imgBorder"><img src="/images/entry/151x104/159732/1" /></span></a></dt>
+              <dd><a href="/feat/zedd_double_zero_201704" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', 'ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤',]);">ZEDD（ゼッド）プロデュース高解像度ヘッドフォンで聴く6の名盤</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/manicstreetpreachers_201610" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', 'マニック・ストリート・プリーチャーズ UK屈指の名盤『エヴリシング・マスト・ゴー』完全再現ライブに今、行くべき理由',]);"><span class="imgBorder"><img src="/images/entry/151x104/150250/1" /></span></a></dt>
+              <dd><a href="/feat/manicstreetpreachers_201610" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', 'マニック・ストリート・プリーチャーズ UK屈指の名盤『エヴリシング・マスト・ゴー』完全再現ライブに今、行くべき理由',]);">マニック・ストリート・プリーチャーズ UK屈指の名盤『エヴリシング・マスト・ゴー』完全再現ライブに今、行くべき理由</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/rollingstones_201609" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', 'ザ・ローリング・ストーンズ、60年代の黄金の10曲！',]);"><span class="imgBorder"><img src="/images/entry/151x104/149226/1" /></span></a></dt>
+              <dd><a href="/feat/rollingstones_201609" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', 'ザ・ローリング・ストーンズ、60年代の黄金の10曲！',]);">ザ・ローリング・ストーンズ、60年代の黄金の10曲！</a></dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt class="jsRollOverAlpha"><a href="/feat/redbull_201609" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', '今年の夏フェス、ここが凄かった！フェスの思い出5選をレッドブルTVで振り返る',]);"><span class="imgBorder"><img alt="(C)Flemming Bo Jensen / Red Bull Content Pool" src="/images/entry/151x104/148609/1" /></span></a></dt>
+              <dd><a href="/feat/redbull_201609" onClick="_gaq.push(['_trackEvent', 'FeatYogaku', 'FooterSmall_PC', '今年の夏フェス、ここが凄かった！フェスの思い出5選をレッドブルTVで振り返る',]);">今年の夏フェス、ここが凄かった！フェスの思い出5選をレッドブルTVで振り返る</a></dd>
+            </dl>
+          </li>
+      </ul>
+    <div class="f_btn"><a href="/feat?category=2" class="btn_black"><i class="fa fa-angle-right"></i>洋楽特集一覧</a></div>
+  </div>
+</div>
+
+</div>
+
+
+      <div class="clearfix article_link_b nocontent">
+      </div>
+
+      <div class="article_btn_c">
+        <a class="btn_back" href="/news?category=1">
+          <i class="fa fa-angle-double-left"></i>ニュース一覧へ戻る
+</a>      </div>
+      <div class="article_twitter">
+  <p><i class="fa fa-twitter"></i>RO69公式Twitterアカウントを好みに合わせていますぐフォロー！</p>
+  <ul>
+    <li>
+      <dl>
+        <dt>すべての音楽情報</dt>
+        <dd><i class="fa fa-arrow-down"></i></dd>
+        <dd><a href="https://twitter.com/ro69_jp" class="twitter-follow-button" id="tw_follow_all" data-lang="ja" data-show-count="false" data-screen-name="ro69_jp" data-show-screen-name="true" data-size="m" onclick="_gaq.push(['_trackEvent', 'SNS', 'PC_bottom', '総合',]);return false"></a></dd>
+      </dl>
+    </li>
+    <li>
+      <dl>
+        <dt>邦楽のみ</dt>
+        <dd><i class="fa fa-arrow-down"></i></dd>
+        <dd><a href="https://twitter.com/ro69_hogaku" class="twitter-follow-button" id="tw_follow_hogaku" data-lang="ja" data-show-count="false" data-screen-name="ro69_hogaku" data-show-screen-name="true" data-size="m" onclick="_gaq.push(['_trackEvent', 'SNS', 'PC_bottom', '邦楽',]);return false"></a></dd>
+      </dl>
+    </li>
+    <li>
+      <dl>
+        <dt>洋楽のみ</dt>
+        <dd><i class="fa fa-arrow-down"></i></dd>
+        <dd><a href="https://twitter.com/ro69_yogaku" class="twitter-follow-button" id="tw_follow_yogaku" data-lang="ja" data-show-count="false" data-screen-name="ro69_yogaku" data-show-screen-name="true" data-size="m" onclick="_gaq.push(['_trackEvent', 'SNS', 'PC_bottom', '洋楽',]);return false"></a></dd>
+      </dl>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+
+      <div class="article_twitter">
+  <a href="/contents/app/">
+    <span class="imgBorder"><img src="/img/appli/banner_pc.jpg" width="674" height="170" alt="ロッキング・オン公式 音楽ニュースアプリ" /></span>
+  </a>
+</div>
+
+    </div>
+
+    <div class="about_ro69">
+  <h3 class="ttl_black">RO69のご紹介</h3>
+  <div class="about_ro69_inner c_mb20">
+    <p>
+        RO69(アールオーロック)は、ロッキング・オンが提供する音楽ニュースサイトです。<br>
+        RO69では、ロッキング・オン独自の情報ネットワークが収集した邦楽の最新音楽ニュースをお届けしています。
+    </p>
+  </div>
+</div>
+
+
+    <div class="pagetop"><a href="#">ページ先頭へ<i class="fa  fa-caret-square-o-up"></i></a></div>
+
+  </div>
+  <div class="r nocontent">
+  <div class="r_search">
+    <form class="gsc-search-box" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input class="r_search_input suggest" type="text" autocomplete="off" size="10" name="keyword" maxlength="50" title="検索" value="" />
+      <input type="hidden" name="search_cat" value="all" />
+      <input type="submit" value="検索" class="r_search_button" title="検索" />
+</form>  </div>
+
+  <div class="r_artistlist_btn nocontent show_only_ja">
+    <a href="/artist/list/hogaku">
+      <i class="fa fa-angle-right"></i>アーティスト名から探す
+</a>  </div>
+  <div class="r_artistlist_btn nocontent show_only_world">
+    <a href="/artist/list/yogaku">
+      <i class="fa fa-angle-right"></i>アーティスト名から探す
+</a>  </div>
+
+
+  <div class="r_list jp_topics show_only_ja nocontent">
+    <div class="r_ttl">
+      <h2>人気の記事</h2>
+      <a class="btn_black" href="/popular?category=1">
+        <i class="fa fa-angle-right"></i>一覧
+</a>    </div>
+    <ul>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan01', 'BUMP OF CHICKEN、新曲“リボン”を…',]);" title="BUMP OF CHICKEN、新曲“リボン”を本日配信リリース＆MV公開。9月からアリーナツアー開催" href="/news/detail/159815">BUMP OF CHICKEN、新曲“リボン”を…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan02', '「音楽と髭達」にクロマニヨンズ、…',]);" title="「音楽と髭達」にクロマニヨンズ、ゆず、ホルモン、back number、WANIMA、Suchmosら" href="/news/detail/159781">「音楽と髭達」にクロマニヨンズ、…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan03', 'SEKAI NO OWARI、14万人動員の「Twi…',]);" title="SEKAI NO OWARI、14万人動員の「TwilightCity」を2時間放送" href="/news/detail/159790">SEKAI NO OWARI、14万人動員の「Twi…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan04', '【10リスト】私たちの心を揺らしたb…',]);" title="【10リスト】私たちの心を揺らしたback numberの名歌詞10" href="/news/detail/159882">【10リスト】私たちの心を揺らしたb…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan05', '聴くたびに『銀魂』愛が溢れ出す、…',]);" title="聴くたびに『銀魂』愛が溢れ出す、究極のアニメOP&amp;EDテーマ10曲" href="/news/detail/159805">聴くたびに『銀魂』愛が溢れ出す、…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan06', '最近の「ロック」の取り扱われ方に…',]);" title="最近の「ロック」の取り扱われ方について書きました（コラム激刊！山崎より転載）" href="/blog/yamazaki/159797">最近の「ロック」の取り扱われ方に…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan07', 'サマソニにUVERworld、クリープハイ…',]);" title="サマソニにUVERworld、クリープハイプら追加。ステージ別ラインナップも発表" href="/news/detail/159865">サマソニにUVERworld、クリープハイ…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan08', 'ホルモン、ベビメタ、X JAPAN、海外…',]);" title="ホルモン、ベビメタ、X JAPAN、海外メタル系サイトが「日本の最強メタルバンド10」を選出" href="/news/detail/159872">ホルモン、ベビメタ、X JAPAN、海外…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan09', 'BABYMETAL×レッチリ、再びコラボ。…',]);" title="BABYMETAL×レッチリ、再びコラボ。チャド、フリー、ジョシュがコープスメイクで登場" href="/news/detail/159829">BABYMETAL×レッチリ、再びコラボ。…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan10', 'マキシマム ザ ホルモン、ツアーの…',]);" title="マキシマム ザ ホルモン、ツアーの追加公演決定。ゲストにHEY-SMITH" href="/news/detail/159836">マキシマム ザ ホルモン、ツアーの…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan11', '「いい曲だったで終わりたくない」M…',]);" title="「いい曲だったで終わりたくない」Mrs. GREEN APPLE、強力作『どこかで日は昇る』を語る" href="/news/detail/159813">「いい曲だったで終わりたくない」M…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan12', '無料野外フェス「FREEDOM NAGOYA」…',]);" title="無料野外フェス「FREEDOM NAGOYA」第4弾でヤバT、DJライブキッズあるあるら12組" href="/news/detail/159852">無料野外フェス「FREEDOM NAGOYA」…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan13', '『ユーリ!!! on ICE』劇場版制作決…',]);" title="『ユーリ!!! on ICE』劇場版制作決定！ 「ユーリ!!! on STAGE」イベントレポート" href="/news/detail/159807">『ユーリ!!! on ICE』劇場版制作決…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan14', '5/12放送の『Mステ』出演者はこちら…',]);" title="5/12放送の『Mステ』出演者はこちら！" href="/news/detail/159779">5/12放送の『Mステ』出演者はこちら…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsJapan', 'RecommendedNewsJapan15', '長野オリンピック聖地で初の夏フェ…',]);" title="長野オリンピック聖地で初の夏フェス開催。スチャ、水カン、SALU出演決定" href="/news/detail/159783">長野オリンピック聖地で初の夏フェ…</a></li>
+    </ul>
+  </div>
+  <div class="r_list world_topics show_only_world nocontent">
+    <div class="r_ttl">
+      <h2>人気の記事</h2>
+      <a class="btn_black" href="/popular?category=1">
+        <i class="fa fa-angle-right"></i>一覧
+</a>    </div>
+    <ul>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld01', 'レッチリ×BABYMETAL、再びコラボ。…',]);" title="レッチリ×BABYMETAL、再びコラボ。チャド、フリー、ジョシュがコープスメイクで登場" href="/news/detail/159835">レッチリ×BABYMETAL、再びコラボ。…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld02', 'ホルモン、ベビメタ、X JAPAN、海外…',]);" title="ホルモン、ベビメタ、X JAPAN、海外メタル系サイトが「日本の最強メタルバンド10」を選出" href="/news/detail/159879">ホルモン、ベビメタ、X JAPAN、海外…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld03', 'リアム・ギャラガー、「次にデーモ…',]);" title="リアム・ギャラガー、「次にデーモン・アルバーンに会った時には戦争だ」と語る" href="/news/detail/159849">リアム・ギャラガー、「次にデーモ…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld04', 'EDMの巨大フェス、EDCが遂に日本初…',]);" title="EDMの巨大フェス、EDCが遂に日本初上陸。黒船感満載で凄かった。" href="/blog/shibuya/159821">EDMの巨大フェス、EDCが遂に日本初…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld05', '今週の一枚　ゴリラズ『ヒューマン…',]);" title="今週の一枚　ゴリラズ『ヒューマンズ』" href="/blog/ro69plus/159809">今週の一枚　ゴリラズ『ヒューマン…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld06', 'ロバート・フリップとデヴィッド・…',]);" title="ロバート・フリップとデヴィッド・ボウイ　キング・クリムゾン版『ヒーローズ』によせて" href="/blog/rockinon/159816">ロバート・フリップとデヴィッド・…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld07', 'サマソニにカサビアン、UVERworldら…',]);" title="サマソニにカサビアン、UVERworldら追加。ステージ別ラインナップも発表" href="/news/detail/159870">サマソニにカサビアン、UVERworldら…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld08', 'EDC Japan 2017、想像を超えてまし…',]);" title="EDC Japan 2017、想像を超えてました" href="/blog/yamazaki/159811">EDC Japan 2017、想像を超えてまし…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld09', '【知りたい】ストーン・ローゼズ、…',]);" title="【知りたい】ストーン・ローゼズ、今こそ振り返る5回の来日ライブ" href="/news/detail/159855">【知りたい】ストーン・ローゼズ、…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld10', 'レディオヘッド、謎の映像を公開。…',]);" title="レディオヘッド、謎の映像を公開。『OK Computer』20周年を祝う序曲の始まりか" href="/blog/miyazaki/159884">レディオヘッド、謎の映像を公開。…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld11', 'EDC Japan 2017、２日目開幕！',]);" title="EDC Japan 2017、２日目開幕！" href="/blog/ro69plus/159808">EDC Japan 2017、２日目開幕！</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld12', 'EDC Japan 2017（1日目）＠ ZOZOマ…',]);" title="EDC Japan 2017（1日目）＠ ZOZOマリンスタジアム＆幕張海浜公園EDC特設会場" href="/live/detail/159877">EDC Japan 2017（1日目）＠ ZOZOマ…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld13', '【来日ラッシュ】2017年5月～7月の…',]);" title="【来日ラッシュ】2017年5月～7月のライブ・スケジュールをまとめてチェック" href="/news/detail/159204">【来日ラッシュ】2017年5月～7月の…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld14', 'ドゥービー・ブラザーズ、武道館に…',]);" title="ドゥービー・ブラザーズ、武道館に轟く" href="/blog/shibuya/159785">ドゥービー・ブラザーズ、武道館に…</a></li>
+      <li><i class="fa fa-caret-right"></i><a onClick="_gaq.push(['_trackEvent', 'RecommendedNewsWorld', 'RecommendedNewsWorld15', 'ポール・マッカートニー @ 日本武道…',]);" title="ポール・マッカートニー @ 日本武道館" href="/live/detail/159632">ポール・マッカートニー @ 日本武道…</a></li>
+    </ul>
+  </div>
+
+            <ul class="r_banner jsRollOverAlpha" id="sp-unvisible">
+                <li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'rockin'on.com',]);" href="http://ro69.jp/news/detail/159551" target="_blank"><img src="/img/com_banner_20170426.jpg" alt="rockin'on.com" class="imgBorder"></a></li>
+            </ul>
+
+            <div class="r_ttl c_mb10">
+                <h2>フェス/イベント</h2>
+                <a href="http://ro69.jp/fes_list" class="btn_black" target="_blank"><i class="fa fa-angle-right"></i>一覧</a>
+            </div>
+            <ul class="r_banner jsRollOverAlpha">
+
+
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'JAPAN JAM 2017',]);" href="http://japanjam.jp" target="_blank"><img src="/img/banner/japanjam2017_20170426.gif" alt="JAPAN JAM 2017" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'JAPANS NEXT vol17',]);" href="http://japansnext.jp" target="_blank"><img src="/img/banner/japansnext_vol17_417_black.gif" alt="JAPANS NEXT vol17" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'JAPAN CIRCUIT vol56',]);" href="http://japancircuit.jp/" target="_blank"><img src="/img/banner/japancircuit_56_20170411.gif" alt="JAPAN CIRCUIT vol56" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'ROCK IN JAPAN FESTIVAL 2017',]);" href="http://rijfes.jp/" target="_blank"><img src="/img/banner/rijf2017_20170414.gif" alt="ROCK IN JAPAN FESTIVAL 2017" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'まんパク 2017',]);" href="http://manpaku.jp" target="_blank"><img src="/img/banner/manpaku_20161219.jpg" alt="まんパク 2017" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'RO JACK for ROCK IN JAPAN FESTIVAL 2017',]);" href="http://rojack.jp" target="_blank"><img src="/img/banner/2017/right_banner_20170428.jpg" alt="フェス出演を目指すアマチュア・アーティストのためのコンテスト RO JACK for ROCK IN JAPAN FESTIVAL 2017" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'NO NUKES 2017',]);" href="http://nonukes2017.jp/" target="_blank"><img src="/img/banner/nonukes2017_20161219.gif" alt="NO NUKES 2017" class="imgBorder"></a></li>
+
+                <li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'rockin'star',]);" href="http://rockinstar.jp/" target="_blank"><img src="/img/banner/rockinstar_20150528.gif" alt="キャラクターとROCKのコラボレーションブランドrockin'star" class="imgBorder"></a></li>
+
+                <li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'store',]);" href="https://www.rockinonstore.jp/" target="_blank"><img src="/img/banner/rockinonstore_20131212_2.jpg" alt="rockin'on storeオープン" class="imgBorder"></a></li>
+
+                <li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', '音楽文.com',]);" href="http://ongakubun.com/" target="_blank"><img src="/img/banner/ongakubuncom_20170227.png" alt="音楽文.com" class="imgBorder"></a></li>
+
+
+</ul>
+
+  <div class="r_img_m jp_cd show_only_ja nocontent">
+    <div class="r_ttl clearfix">
+      <h2>今週の一枚</h2>
+      <a class="btn_black" href="/blog/disc-of-the-week?category=1"><i class="fa fa-angle-right"></i>一覧</a>
+    </div>
+    <div class="r_img_m_inner clearfix">
+      <div class="img_n jsRollOverAlpha">
+        <div class="thumbnail" style="float: none;">
+          <a class="imgBorder" onClick="_gaq.push(['_trackEvent', 'RightColumn', 'Contents', '今週の一枚 ゆず『ゆずイロハ 1997-2017』',]);" href="/blog/ro69plus/159370">
+            <span class="imgBorder"><img alt="今週の一枚 ゆず『ゆずイロハ 1997-2017』" width="98" height="91" src="/images/entry/110x110/159370/1" /></span>
+</a>        </div>
+      </div>
+      <dl>
+        <dt><a href="/blog/ro69plus/159370">今週の一枚 ゆず『ゆずイロハ 1997-2017』</a></dt>
+      </dl>
+    </div>
+  </div>
+  <div class="r_img_m world_cd show_only_world nocontent">
+    <div class="r_ttl clearfix">
+      <h2>今週の一枚</h2>
+      <a class="btn_black" href="/blog/disc-of-the-week?category=2"><i class="fa fa-angle-right"></i>一覧</a>
+    </div>
+    <div class="r_img_m_inner clearfix">
+      <div class="img_n jsRollOverAlpha">
+        <div class="thumbnail" style="float: none;">
+          <a class="imgBorder" onClick="_gaq.push(['_trackEvent', 'RightColumn', 'Contents', '今週の一枚　ゴリラズ『ヒューマンズ』',]);" href="/blog/ro69plus/159809">
+            <span class="imgBorder"><img alt="今週の一枚　ゴリラズ『ヒューマンズ』" width="98" height="98" src="/images/entry/110x110/159809/1" /></span>
+</a>        </div>
+      </div>
+      <dl>
+        <dt><a href="/blog/ro69plus/159809">今週の一枚　ゴリラズ『ヒューマンズ』</a></dt>
+      </dl>
+    </div>
+  </div>
+
+
+  <div class="r_blog nocontent">
+    <div class="r_ttl clearfix">
+      <h2>ブログ</h2>
+      <a onClick="_gaq.push(['_trackEvent', 'TopMore', 'TopMoreBlog', 'ブログ一覧',]);" class="btn_black" href="/blog"><i class="fa fa-angle-right"></i>一覧</a>
+    </div>
+    <ul>
+        <li style="border-left:3px solid #FF4300">
+          <span class="icon_new lato_bold_italic">NEW</span>
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【宮嵜】Jay Z主催の9月フェスMade In AmericaにJ.Cole、Solange、The Chainsmokers',]);" title="宮嵜広司の「明るい洋楽」" href="/blog/miyazaki">宮嵜広司の「明るい洋楽」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【宮嵜】Jay Z主催の9月フェスMade In AmericaにJ.Cole、Solange、The Chainsmokers',]);" title="Jay Z主催の9月フェスMade In AmericaにJ.Cole、Solange、The Chainsmokers" href="/blog/miyazaki/159886">Jay Z主催の9月フェスMade In Ameri…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #0066cc">
+          <span class="icon_new lato_bold_italic">NEW</span>
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【渋谷】SNS革命か？プログラム公開、広告なし、利用者が支える「マストドン」が急拡大。',]);" title="渋谷陽一の「社長はつらいよ」" href="/blog/shibuya">渋谷陽一の「社長はつらいよ」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【渋谷】SNS革命か？プログラム公開、広告なし、利用者が支える「マストドン」が急拡大。',]);" title="SNS革命か？プログラム公開、広告なし、利用者が支える「マストドン」が急拡大。" href="/blog/shibuya/159887">SNS革命か？プログラム公開、広告な…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #927F4A">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【RO】ジョン・ライドンが半生を語りおろした超・決定版インタヴュー、ロッキング・オン最新号が今日発売された！',]);" title="rockin&#39;on 編集部日記" href="/blog/rockinon">rockin&#39;on 編集部日記</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【RO】ジョン・ライドンが半生を語りおろした超・決定版インタヴュー、ロッキング・オン最新号が今日発売された！',]);" title="ジョン・ライドンが半生を語りおろした超・決定版インタヴュー、ロッキング・オン最新号が今日発売された！" href="/blog/rockinon/159871">ジョン・ライドンが半生を語りおろ…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #1E4A9E">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【児島】ジョン・ライドン＝異種格闘技の名手／Leftfield and Lydon”Open Up&quot;2017年版リミックスが公開♪',]);" title="児島由紀子の「ロンドン通信」" href="/blog/kojima">児島由紀子の「ロンドン通信」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【児島】ジョン・ライドン＝異種格闘技の名手／Leftfield and Lydon”Open Up&quot;2017年版リミックスが公開♪',]);" title="ジョン・ライドン＝異種格闘技の名手／Leftfield and Lydon”Open Up&quot;2017年版リミックスが公開♪" href="/blog/kojima/159867">ジョン・ライドン＝異種格闘技の名…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #E10000">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【JAPAN】plenty、解散――。 江沼が語る解散の真実、そしてこれから',]);" title="ROCKIN&#39;ON JAPAN 編集部日記" href="/blog/japan">ROCKIN&#39;ON JAPAN 編集部日記</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【JAPAN】plenty、解散――。 江沼が語る解散の真実、そしてこれから',]);" title="plenty、解散――。 江沼が語る解散の真実、そしてこれから" href="/blog/japan/159854">plenty、解散――。 江沼が語る解散…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #64932A">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【ﾌｪｽ】JAPAN JAM 2017、設営6日目！',]);" title="JAPANフェス通信" href="/blog/rofes">JAPANフェス通信</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【ﾌｪｽ】JAPAN JAM 2017、設営6日目！',]);" title="JAPAN JAM 2017、設営6日目！" href="/blog/rofes/159845">JAPAN JAM 2017、設営6日目！</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #ddd000">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【山崎】EDC Japan 2017、想像を超えてました',]);" title="山崎洋一郎の「総編集長日記」" href="/blog/yamazaki">山崎洋一郎の「総編集長日記」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【山崎】EDC Japan 2017、想像を超えてました',]);" title="EDC Japan 2017、想像を超えてました" href="/blog/yamazaki/159811">EDC Japan 2017、想像を超えてまし…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #60c300">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【RO69+】今週の一枚　ゴリラズ『ヒューマンズ』',]);" title="RO69+（プラス）" href="/blog/ro69plus">RO69+（プラス）</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【RO69+】今週の一枚　ゴリラズ『ヒューマンズ』',]);" title="今週の一枚　ゴリラズ『ヒューマンズ』" href="/blog/ro69plus/159809">今週の一枚　ゴリラズ『ヒューマン…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #d63d37">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【羽鳥】ZEDDが来日中！自身プロデュースの高解像度リスニングヘッドフォン ミート&amp;グリートにやってきた！',]);" title="羽鳥麻美の「POP郊外散歩」" href="/blog/hatori">羽鳥麻美の「POP郊外散歩」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【羽鳥】ZEDDが来日中！自身プロデュースの高解像度リスニングヘッドフォン ミート&amp;グリートにやってきた！',]);" title="ZEDDが来日中！自身プロデュースの高解像度リスニングヘッドフォン ミート&amp;グリートにやってきた！" href="/blog/hatori/159759">ZEDDが来日中！自身プロデュースの…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #FF00B8">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【中村】フーファイ、デイヴ・グロールの母が「ロックスターの母たち」にインタビューした本を出版。デイヴが母とTV出演。',]);" title="中村明美の「ニューヨーク通信」" href="/blog/nakamura">中村明美の「ニューヨーク通信」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【中村】フーファイ、デイヴ・グロールの母が「ロックスターの母たち」にインタビューした本を出版。デイヴが母とTV出演。',]);" title="フーファイ、デイヴ・グロールの母が「ロックスターの母たち」にインタビューした本を出版。デイヴが母とTV出演。" href="/blog/nakamura/159741">フーファイ、デイヴ・グロールの母…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #601986">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【小栁】星野源は今回、作品についてではなく、こんなテーマについて話してくれました',]);" title="小栁大輔の「にこにこちゅーんず」" href="/blog/koyanagi">小栁大輔の「にこにこちゅーんず」</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【小栁】星野源は今回、作品についてではなく、こんなテーマについて話してくれました',]);" title="星野源は今回、作品についてではなく、こんなテーマについて話してくれました" href="/blog/koyanagi/159499">星野源は今回、作品についてではな…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #ecde01">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【CUT】恐るべし、吉岡里帆。彼女は、他の若手女優と何が違う？',]);" title="Cut 編集部日記" href="/blog/cut">Cut 編集部日記</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【CUT】恐るべし、吉岡里帆。彼女は、他の若手女優と何が違う？',]);" title="恐るべし、吉岡里帆。彼女は、他の若手女優と何が違う？" href="/blog/cut/159457">恐るべし、吉岡里帆。彼女は、他の…</a></dd>
+          </dl>
+        </li>
+        <li style="border-left:3px solid #fa1604">
+          
+          <dl>
+            <dt><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogTop', '【まんﾊﾟｸ】まんパク2017、全出店メニュー発表！',]);" title="まんパクブログ" href="/blog/manpaku">まんパクブログ</a></dt>
+            <dd><a onClick="_gaq.push(['_trackEvent', 'RightBlog', 'BlogArticle', '【まんﾊﾟｸ】まんパク2017、全出店メニュー発表！',]);" title="まんパク2017、全出店メニュー発表！" href="/blog/manpaku/159368">まんパク2017、全出店メニュー発表…</a></dd>
+          </dl>
+        </li>
+    </ul>
+  </div>
+
+
+  <div class="r_list nocontent">
+    <div class="r_ttl clearfix">
+      <h2>RO69からのお知らせ</h2>
+      <a class="btn_black" href="/info"><i class="fa fa-angle-right"></i>一覧</a>
+    </div>
+    <ul>
+        <li><i class="fa fa-caret-right"></i><a href="/info/detail/144611">【RO69邦楽ライター募集】ニュース、コラム、ライブレポートなどのライターを募集します</a></li>
+        <li><i class="fa fa-caret-right"></i><a href="/info/detail/119708">【RO69洋楽ライター募集】ニュース、特集ページなどのライターを募集します</a></li>
+    </ul>
+  </div>
+
+   <ul class="r_banner jsRollOverAlpha">
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Contents', 'フェスマップ',]);" href="/feat/fesmap/" style="opacity: 1;"><img src="/img/banner/fesmap1617_side_banner.jpg" alt="フェスマップ1617" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', '東北地方太平洋沖地震の被害に対する支援について',]);" href="http://www.rockinon.co.jp/info/info20110317" target="_blank"><img src="/img/banner/shien_20120326_2.png" alt="東北地方太平洋沖地震の被害に対する支援について" class="imgBorder"></a></li>
+
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'JACKMAN RECORDS',]);" href="http://jackmanrecords.ro69.jp/" target="_blank"><img src="/img/banner/jackman_records20160308.jpg" alt="JACKMAN RECORDS" class="imgBorder"></a></li>
+
+<li><a onclick="_gaq.push(['_trackEvent', 'RightColumn', 'Banner', 'オンライン・Tシャツ ショップ 「8569(ハチゴーロック) Online Shop」',]);" href="http://8569.jp/" target="_blank"><img src="/img/banner/8569_20120326_2.png" alt="オンライン・Tシャツ ショップ 「8569(ハチゴーロック) Online Shop」" class="imgBorder"></a></li>
+
+</ul>
+
+</div>
+
+</div>
+<script type="text/javascript">
+  var page_mode_class_id = 1
+</script>
+
+  </div>
+  <!-- Content Ends -->
+
+    <!-- Pankuzu Starts Here -->
+  <ul class="pankuzu clearfix">
+    <li><a href="/"><i class="fa fa-home"></i></a></li>
+    <li><i class="fa fa-angle-right"></i>
+      <a href="/artist/list/hogaku">邦楽アーティスト</a>
+    </li>
+    <li><i class="fa fa-angle-right"></i>
+      <a href="/artist/5236">星野 源　（ホシノ ゲン）</a>
+    </li>
+    <li><i class="fa fa-angle-right"></i>
+      <a href="/news?category=1">ニュース</a>
+    </li>
+    <li><i class="fa fa-angle-right"></i>星野源と『逃げ恥』脚本家・野木亜紀子が語り合う。ドラマ裏話から演技論まで</li>
+  </ul>
+  <!-- Pankuzu Ends -->
+
+
+  <!-- Footer Starts Here -->
+<div id="footer_nav">
+  <div class="nav_inner clearfix">
+    <ul class="gmenu jsSerialNumber">
+      <li><a href="/"><i class="fa fa-home"></i></a></li>
+      <li class="on"><a class="category_jump" href="/news">ニュース</a></li>
+      <li><a class="category_jump" href="/live">ライブレポート</a></li>
+      <li><a class="category_jump" href="/disc">ディスクレビュー</a></li>
+      <li><a href="/blog">ブログ</a></li>
+      <li><a class="category_jump" href="/feat">特集</a></li>
+    </ul>
+    <ul class="smenu jsSerialNumber">
+      <li id="fesmenu_foot"><a href="/fes_list" target="_blank">フェス</a>
+        <div class="fes_submenu_foot fes_submenu">
+          <ul>
+	<li><a href="http://rijfes.jp/" target="_blank">ROCK IN JAPAN FESTIVAL 公式サイト</a></li>
+	<li><a href="http://countdownjapan.jp/" target="_blank">COUNTDOWN JAPAN 公式サイト</a></li>
+</ul>
+<ul>
+<li><a href="http://manpaku.jp/" target="_blank">まんパク 公式サイト</a></li>
+	<li><a href="http://japanjam.jp/" target="_blank">JAPAN JAM 公式サイト</a></li>
+	<li><a href="http://nonukes2015.jp" target="_blank">NO NUKES 2015 公式サイト</a></li>
+</ul>
+<ul>
+	<li class="fes_title">RIJFクイックレポート</li>
+	<li class="fes_number"><ul>
+		<li><a href="/quick/rijfes2016" target="_blank">2016</a></li>
+		<li><a href="/quick/rijfes2015" target="_blank">2015</a></li>
+		<li><a href="/quick/rijfes2014" target="_blank">2014</a></li>
+		<li><a href="/quick/rijfes2013" target="_blank">2013</a></li>
+		<li><a href="/quick/rijfes2012" target="_blank">2012</a></li>
+		<li><a href="/quick/rijfes2011" target="_blank">2011</a></li>
+		<li><a href="/quick/rijfes2010" target="_blank">2010</a></li>
+		<li><a href="/quick/rijfes09" target="_blank">2009</a></li>
+		<li><a href="/quick/rijfes2008" target="_blank">2008</a></li>
+		<li><a href="/quick/rijfes2007" target="_blank">2007</a></li>
+		<li><a href="/quick/rijfes2006" target="_blank">2006</a></li>
+		<li><a href="/quick/rijfes2005" target="_blank">2005</a></li>
+		<li><a href="/quick/rijfes2004" target="_blank">2004</a></li>
+		<li><a href="/quick/rijfes2003" target="_blank">2003</a></li>
+		<li><a href="/quick/rijfes2002" target="_blank">2002</a></li>
+		<li><a href="/quick/rijfes2001" target="_blank">2001</a></li>
+	</ul></li>
+</ul>
+<ul>
+	<li class="fes_title">CDJクイックレポート</li>
+	<li class="fes_number"><ul>
+		<li><a href="/quick/cdj1516" target="_blank">15/16</a></li>
+		<li><a href="/quick/cdj1415" target="_blank">14/15</a></li>
+		<li><a href="/quick/cdj1314" target="_blank">13/14</a></li>
+		<li><a href="/quick/cdj1213" target="_blank">12/13</a></li>
+		<li><a href="/quick/cdj1112" target="_blank">11/12</a></li>
+		<li><a href="/quick/cdj1011" target="_blank">10/11</a></li>
+		<li><a href="/quick/cdj0910" target="_blank">09/10</a></li>
+		<li><a href="/quick/cdj0809" target="_blank">08/09</a></li>
+		<li><a href="/quick/cdj0809west" target="_blank">08/09 -WEST-</a></li>
+		<li><a href="/quick/cdj0708" target="_blank">07/08</a></li>
+		<li><a href="/quick/cdj0708west" target="_blank">07/08 -WEST-</a></li>
+		<li><a href="/quick/cdj0607" target="_blank">06/07</a></li>
+		<li><a href="/quick/cdj0607west" target="_blank">06/07 -WEST-</a></li>
+		<li><a href="/quick/cdj0506" target="_blank">05/06</a></li>
+		<li><a href="/quick/cdj0405" target="_blank">04/05</a></li>
+		<li><a href="/quick/cdj0304" target="_blank">03/04</a></li>
+	</ul></li>
+</ul>
+
+        </div>
+      </li>
+      <li><a href="http://rojack.jp/" target="_blank">RO JACK</a></li>
+      <li><a href="http://www.rockinon.co.jp/product" target="_blank">出版物</a></li>
+      <li><a href="http://www.rockinonstore.jp" target="_blank">オンラインストア</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer">
+  <div id="footer_inner">
+    <ul class="clearfix">
+      <li>
+        <dl>
+          <dt>RO69</dt>
+          <dd><i class="fa fa-caret-right"></i><a href="/about">RO69とは</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="/termsofuse">利用規約</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="/privacy">プライバシーポリシー</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="/contact">お問い合わせ</a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>フェス/イベント</dt>
+          <dd><i class="fa fa-caret-right"></i><a href="http://rijfes.jp/" target="_blank">ROCK IN JAPAN FESTIVAL</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://countdownjapan.jp/" target="_blank">COUNTDOWN JAPAN</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://japanjam.jp/" target="_blank">JAPAN JAM BEACH</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://manpaku.jp/" target="_blank">まんパク</a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>出版物</dt>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=rockinon" target="_blank">rockin'on</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=rockinon-japan" target="_blank">ROCKIN'ON JAPAN</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=cut" target="_blank">CUT</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=bridge" target="_blank">BRIDGE</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=sight" target="_blank">SIGHT</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=sight-art" target="_blank">SIGHT ART</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/product/magazine?genre=h" target="_blank">H</a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>関連サイト</dt>
+          <dd><i class="fa fa-caret-right"></i><a href="http://www.rockinon.co.jp/" target="_blank">運営会社</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://rojack.jp/" target="_blank">RO JACK</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://jackmanrecords.ro69.jp/" target="_blank">JACKMAN RECORDS</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://8569.jp/" target="_blank">8569</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="http://rockinstar.jp/" target="_blank">rockin'star★</a></dd>
+          <dd><i class="fa fa-caret-right"></i><a href="https://www.rockinonstore.jp/rs/" target="_blank">rockin'on store</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <div style="padding:20px 0 0;">
+      <a href="http://www.rockinon.co.jp/" target="_blank">
+        <img src="/img/common/rockinon_ci.png" width="114" height="114" alt="ロッキング・オン">
+      </a>
+    </div>
+    <p>copyright (c) rockin'on holdings inc. all rights reserved.</p>
+  </div>
+</div>
+<!-- Footer Ends -->
+
+<!--analytics-->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-6144841-2', 'auto');
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6144841-2']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['pc._setAccount', 'UA-6144841-23']);
+  _gaq.push(['pc._trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--/analytics-->
+
+
+</body>
+</html>

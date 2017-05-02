@@ -1,0 +1,1636 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" id="masterChannel-ait"><head>
+<meta http-equiv="content-type" content="text/html;charset=shift_jis">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script>var swspv = '(none)';var cms_summary_flag = '0';</script>
+<script src="/js/spv/movePC2SP.js"></script>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<!-- FIX DMOZ -->
+
+	<!-- masterType = not top -->
+
+
+	<!-- masterType == article -->
+	<!-- SET SERIES FLAG -->
+	
+		
+		<meta name="TMP_SeriesID" id="TMP_SeriesID" content="">
+	
+	<!-- SET AUTHOR FLAG -->
+	
+		
+		<meta name="TMP_JointWriterID" id="TMP_JointWriterID" content="">
+	
+	<!-- SET CANONICAL FLAG -->
+	
+		
+		<link rel="canonical" href="http://www.atmarkit.co.jp/ait/articles/1702/07/news080.html">
+	
+
+
+
+
+<meta name="itmid:series" content="">
+<meta name="build" content="2017年02月07日 11時00分">
+<meta name="keywords" content=",Database Expert">
+<meta name="description" content="マイクロソフトが「Microsoft Azureの仮想マシン（Azure VM）上に構築したSQL Server 2016システム」向けの自動バックアップ機能を大幅に改良。バックアップをきめ細かく管理できるようにした。">
+<meta name="extraid" content="	at-news	ao-db	kw-databaseexpert	">
+<meta name="writer" content="<b>＠IT</b>">
+<meta name="dispatch" content="国内">
+<meta name="adpath" content="root/ITmedia/ait/article/db">
+<meta name="rcid" content="">
+<meta name="rcid_filename" content="">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.atmarkit.co.jp/ait/spv/1702/07/news080.html">
+
+<meta property="og:title" content="マイクロソフト、Azure VM上のSQL Server 2016向けバックアップ管理機能を強化">
+<meta property="og:description" content="マイクロソフトが「Microsoft Azureの仮想マシン（Azure VM）上に構築したSQL Server 2016システム」向けの自動バックアップ機能を大幅に改良。バックアップをきめ細かく管理できるようにした。">
+<title> バックアップをきめ細かく管理可能に：マイクロソフト、Azure VM上のSQL Server 2016向けバックアップ管理機能を強化 - ＠IT</title>
+
+<meta name="robots" content="noodp">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@atmark_it">
+<meta name="twitter:creator" content="@atmark_it">
+<meta property="fb:app_id" content="1724827814406155">
+<meta property="og:site_name" content="＠IT">
+<meta property="og:url" content="http://www.atmarkit.co.jp/ait/articles/1702/07/news080.html">
+<meta property="og:type" content="article">
+
+	<meta property="og:image" content="http://image.itmedia.co.jp/ait/articles/1702/07/240_news080.jpg">
+
+
+
+<!--EDIT START-->
+<!--EDIT END-->
+
+<!-- ITIKW -->
+
+	<!-- masterType = article -->
+	
+		<!-- CMSKW NOT JIBUN ITIKW -->
+			<script src="http://cgi.itmedia.co.jp/keywords/ait/articles/1702/07/news080.html"></script>
+		
+	
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/ad.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/article.css" type="text/css" media="all">
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" charset="UTF-8"></script>
+<script>jQuery.noConflict();</script>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<script src="/js/scAccount.js"></script>
+<script src="/js/dlvRequest.js"></script>
+<script src="/js/scRequest.js"></script>
+<!-- Get user segments, normal use, with sync load of cx.js -->
+<script>document.write('<scr'+'ipt type="text/javascript" src="http'+(location.protocol==='https:'?'s://s':'://')+'cdn.cxense.com/cx.js"></scr'+'ipt>');</script>
+<script>
+var cx_segments = '';
+cx_segments = cX.getUserSegmentIds({persistedQueryId:'32780b6d6fb51c7b1fefeb67a7e3305b165e5c6a'});
+</script>
+<script src="/js/ait/ex_adRequest.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/ad.js"></script>
+<script type="text/javascript" src="/js/article.js"></script>
+<script type="text/javascript" src="/js/ait/base.js"></script>
+<script type="text/javascript" src="/js/ait/ad.js"></script>
+<script type="text/javascript" src="/js/ait/article.js"></script>
+<script>
+(function(){
+var d = document,h = location.hash,u = 'http://cx.api.itmedia.co.jp/v1.js';
+if(h.match(/^#[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/)) u += '?ip=' + h.replace('#','');
+d.write('<script src="' + u + '"><\/script>');
+})();
+</script>
+<script src="/js/lib/cx_v2.js"></script>
+<script>
+// Cxense script begin
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cx_push_iitt(); // iitt Cookie を push
+cX.callQueue.push(['setSiteId','1127153793923352357']);
+
+
+
+
+
+
+
+
+var cx_k_param = cx_api_itm('ad');
+
+cx_push_cxapi('7afa26d5cf882cbdf1133ef0a74bc60ab5581d17'); // cx.api 連携後に sendPageViewEvent push
+cX.callQueue.push(['sync','frk']); // fout ait only
+(function(){try{var scriptEl = document.createElement('script');scriptEl.type = 'text/javascript';scriptEl.async = 'async';
+scriptEl.src = ('https:' == location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+var targetEl = document.getElementsByTagName('script')[0];targetEl.parentNode.insertBefore(scriptEl,targetEl);}catch(e){};}());
+// Cxense script end
+
+cx_click_map('1141827478709654509'); // cx fix dlv area tag
+window.addEventListener('DOMContentLoaded',function(){
+	cx_add_meta(); // CMS META を cx META として add
+	cx_push_readable('7afa26d5cf882cbdf1133ef0a74bc60ab5581d17'); // beforeunload 時に本文読了率を push（ex persistedQueryId）
+},false);
+</script>
+<!-- Cxense script end -->
+
+</head><body id="masterType-article">
+<script type="text/javascript">
+var dcl_start = new Date();
+attachBodyClass();
+function masterChannel(){return 'ait';}
+function masterType(){return 'article';}
+function prFlag(){return '';}
+function spFlag(){return '';}
+(function(){
+if(getUrl()['domain'].match(/(preview|localhost)/)) document.write('<div id="PATHDEBUG">masterChannel = <strong>' + masterChannel() + '</strong> / masterType = <strong>' + masterType() + '</strong> / smartPhone = <strong>' + spFlag() + '</strong></div>');
+return true;
+})();
+</script>
+<!--ITWS-->
+
+	
+		<div id="ITWS"><script>adRequest({'position':'ITWS'});</script></div>
+	
+
+<!--/ITWS-->
+
+
+<div id="T"><script>adRequest({'position':'T'});</script></div>
+
+
+<!--ITWL-->
+
+	
+		<script>adRequest({'position':'ITWL'});</script>
+	
+
+<!--/ITWL-->
+
+<!--ITASB-->
+
+<!--/ITASB-->
+
+<!-- G -->
+
+
+<!--COIDP-->
+
+	
+		<div id="COIDP"><div class="COIDP-in">
+		<script>adRequest({'position':'COIDP1','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<div class="COIDP-Member">
+		<script>adRequest({'position':'COIDP2','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<script>adRequest({'position':'COIDP3','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		</div></div></div>
+		<script>
+		(function(){
+			var coidp = document.getElementById('COIDP');
+			if(coidp.innerHTML.match('st=noad.*pos=')){
+				coidp.style.display = 'none';
+				return false;
+			}
+			return true;
+		})();
+		</script>
+	
+
+<!--/COIDP-->
+
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<div id="masterNavigation">
+
+<div id="globalNavigationGroup4">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn1"><a href="http://www.atmarkit.co.jp/">TOP</a></div>
+<div class="gnavBtn gnavBtn10"><a href="http://www.atmarkit.co.jp/ait/series/search/">連載一覧</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.atmarkit.co.jp/ait/subtop/features/special/">＠IT Special</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://www.atmarkit.co.jp/ait/subtop/features/seminar/">＠ITセミナー</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://www.atmarkit.co.jp/ait/kw/atmarkit_ebook.html">eBook一覧</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://qa.atmarkit.co.jp/">QA＠IT</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://jibun.atmarkit.co.jp/scenter/ittrain/">ITトレメ</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://el.jibun.atmarkit.co.jp/">ブログ</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://job.atmarkit.co.jp/">転職</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.atmarkit.co.jp/job/jt/aud/index.php">派遣</a></div>
+</div></div></div>
+</div>
+
+</div>
+
+<div id="masterBodyOuter"><!----><div id="masterBodyInner">
+<div id="masterHeader">
+	
+
+	<div id="colBoxGlobalSearch">
+		<div class="colBoxOuter" id="globalSearchBox">
+			<!-- Google searchBox Begin -->
+			<script>
+  (function() {
+    var cx = 'partner-pub-2201843946232317:3599924245';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+<style type="text/css">
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+	border-color:#D9D9D9;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+	border-color:#2F5BB7;
+	background-color:#357AE8;
+	background-image:none;
+	filter:none;
+}
+</style>
+
+<style type="text/css"><!--
+#cmsBody .cmsBodyItmidSeriesButtonRegist a {
+	width:590px;
+	height:62px;
+	background:url(http://image.itmedia.co.jp/ait/images/rensai_alert_bg1309_2.gif) no-repeat 0 0;
+}
+#cmsBody .cmsBodyItmidSeriesButtonRegist a:hover {
+	opacity:0.65;
+	background:url(http://image.itmedia.co.jp/ait/images/rensai_alert_bg1309_2.gif) no-repeat 0 0;
+}
+#newzia_connect_atmarkit ul {
+	margin-bottom:0;
+	font-size:13px;
+	line-height:1.6;
+}
+#newzia_connect_atmarkit .title {
+	font-size:12px;
+	line-height:18px;
+	margin-bottom:11px;
+	border-left:3px solid #389839;
+	padding:0 0 0 4px;
+	color:#000;
+}
+--></style>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('.cmsBodyItmidSeriesButtonRegist').addClass('testbutton'); // 連載アラート
+});
+</script>
+
+<script>
+jQuery(document).ready(function(){
+	jQuery('a').click(function(){
+		var pos = jQuery(this).parents('.colBox').attr('class');
+		if (!pos) pos = jQuery(this).parents('.endlink').attr('class');
+		if (!pos) pos = jQuery(this).parents('#lnavMain').attr('id');
+		if (!pos) pos = jQuery(this).parents('#lnavSub').attr('id');
+		if (!pos) pos = jQuery(this).parents('.tmplArticle').attr('class');
+		if (!pos) pos = jQuery(this).parents('#globalNavigation').attr('id');
+		if (!pos) pos = jQuery(this).parents('#masterFooter').attr('id');
+		if (!pos) pos = jQuery(this).parents('#globalLogo').attr('id');
+		s.prop14 = 'boxCount = ' + s.hier3 + ' ' + pos;
+//		s.tl(this,'o',pos);
+//		s_objectid = 'boxCount = ' + s.hier3 + ' ' + pos;
+		s_objectID = 'boxCount = ' + s.hier3 + ' ' + pos;
+	});
+	var relBox = jQuery('.endlink2column');
+	var ctlBox = jQuery('.ctrl');
+	if (relBox.length == 1) {
+		if (ctlBox.length == 1) {
+			jQuery('.ctrl').eq(0).after(jQuery('.endlink2column'))
+		} else {
+			jQuery('.ctrl').eq(1).after(jQuery('.endlink2column'))
+		}
+	} else {
+		//
+	};
+});
+</script>
+			<!-- Google searchBox End -->
+		</div>
+	</div>
+
+	<div id="globalHeader">
+		<div id="globalHeaderTop">
+		<div id="globalHeaderTopInner">
+
+			<div id="globalLogo">
+			
+				<div class="logoArea"><a href="http://www.atmarkit.co.jp/" title="＠IT - アットマーク・アイティ">＠IT - アットマーク・アイティ</a></div>
+			
+				<div id="globalTagline"></div>
+			</div>
+			
+<div id="localNavigation"><div class="lnavOut"><div class="lnavIn">
+<div id="lnavMain"><div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/win/" title="Windows Server" onClick="designCnt('lnavMain',this.href);">Windows Server</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/dotnet/" title=".NET" onClick="designCnt('lnavMain',this.href);">.NET</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/server/" title="Server & Storage" onClick="designCnt('lnavMain',this.href);">Server & Storage</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/ux/" title="HTML5 + UX" onClick="designCnt('lnavMain',this.href);">HTML5 + UX</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/smart/" title="Smart & Social" onClick="designCnt('lnavMain',this.href);">Smart & Social</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/coding/" title="Coding Edge" onClick="designCnt('lnavMain',this.href);">Coding Edge</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/java/" title="Java" onClick="designCnt('lnavMain',this.href);">Java</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/db/" title="Database" onClick="designCnt('lnavMain',this.href);">Database</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/linux/" title="Linux ＆ OSS" onClick="designCnt('lnavMain',this.href);">Linux ＆ OSS</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/network/" title="Network" onClick="designCnt('lnavMain',this.href);">Network</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/security/" title="Security" onClick="designCnt('lnavMain',this.href);">Security</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/systemdesign/" title="System Design" onClick="designCnt('lnavMain',this.href);">System Design</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/testtools/" title="Test & Tools" onClick="designCnt('lnavMain',this.href);">Test & Tools</a></div>
+<div class="lnavBtn lnavBtnMainLast"><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/" title="自分戦略研究所" onClick="designCnt('lnavMain',this.href);">自分戦略研究所</a></div>
+</div>
+<div id="lnavSub"><div class="lnavBtn lnavBtnspecialcolor"><a href="http://www.atmarkit.co.jp/ait/subtop/features/systemdesign/iot_catalog.html" title="特別企画：IoT" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 特別企画：IoT</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/devops.html" title="DevOps" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> DevOps</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/security/secmap2017.html" title="セキュリティマップ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> セキュリティマップ</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/server/hci.html" title="ハイパーコンバージド" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ハイパーコンバージド</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/theme/index.html" title="その他の特集" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> その他の特集</a></div>
+</div>
+</div></div></div>
+<script type="text/javascript">
+</script>
+
+			<div class="colBoxClear"></div>
+		</div><!-- /#globalHeaderTopInner -->
+		</div><!-- /#globalHeaderTop -->
+
+		<div id="globalHeaderMiddle">
+		<!-- ITN -->
+		<!-- masterType = not 404 -->
+		
+			<!-- masterType = not 404 && not noad -->
+			<div id="ITN"><script>adRequest({'position':'ITN'});</script></div>
+		
+		</div>
+
+		<div id="globalHeaderBottom">
+		<div id="globalHeaderBottomInner">
+
+			
+				<div id="localPankuzu" itemscope itemtype="http://schema.org/BreadcrumbList">
+				<div class="lpanOut"><div class="lpanIn">
+					
+<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.atmarkit.co.jp/"><span itemprop="name">＠IT</span></a><meta itemprop="position" content="1" /></span> &gt;
+
+<!--ao-db--><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.atmarkit.co.jp/ait/subtop/db/">Database Expert</a><meta itemprop="position" content="2" /></span> &gt;
+
+
+<script type="text/javascript">
+var str = document.title.replace(/\<\!\-\-EDIT START\-\-\>/g,'').replace(/\<\!\-\-EDIT END\-\-\>/g,'').replace(' - ＠IT','');
+str = cutString(str,60);
+document.write(str);
+</script>
+
+				</div></div>
+				</div>
+			
+
+		</div>
+		</div>
+
+	</div><!-- /#globalHeader -->
+
+
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+
+
+<div id="tmplNews" class="tmplArticle"><div id="tmplNewsIn" class="tmplArticleIn">
+<!--EDIT START-->
+<script type="text/javascript" src="/json/ait/parts_article_imagesHeader.json"></script>
+<!--EDIT END-->
+
+<div id="cmsType"><div class="inner">ニュース</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsDate"><div class="inner"><span class="arrow">&raquo;</span> <span id="update">2017年02月07日 11時00分 UPDATE</span></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsTitle"><div class="inner"><h1><small>バックアップをきめ細かく管理可能に：</small><big>マイクロソフト、Azure VM上のSQL Server 2016向けバックアップ管理機能を強化</big></h1></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsAbstract"><div class="inner"><h2>マイクロソフトが「Microsoft Azureの仮想マシン（Azure VM）上に構築したSQL Server 2016システム」向けの自動バックアップ機能を大幅に改良。バックアップをきめ細かく管理できるようにした。</h2></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsByline"><div class="inner" id="byline"><b>[＠IT]</b></div></div>
+<!--EDIT START--><!--EDIT END-->
+<div id="cmsBody"><div class="inner">
+<!--EDIT START-->
+<!-- SET AUTHOR INDEX LINK -->
+<script>
+jQuery(document).ready(function(){
+
+var d = document;
+
+// 著者 META と著者 DOM のチェック
+if(!d.getElementById('byline') || !d.getElementById('TMP_JointWriterID')) return false;
+
+// 著者 META の取得
+var authorID = d.getElementById('TMP_JointWriterID').content;
+
+// 著者 META content のチェック
+if(authorID == '') return false;
+
+// 著者 META を配列にする
+var authorIDs = authorID.split(',');
+
+// 著者 DOM の取得
+var authorDOM = d.getElementById('byline');
+
+// 著者 HTML の取得
+var authorHTML = authorDOM.innerHTML;
+
+// 著者 HTML の分解
+// [0] = <b>[</b>著者名1, 著者名2，<b>シグネチャ</b>
+// [1] = <b>[</b>
+// [2] = 著者名1, 著者名2
+// [3] = ，<b>シグネチャ</b>
+var authorHTMLs = authorHTML.match(/^(<b>\[<\/b>)(.+)(，<b>.+<\/b>)$/);
+
+// 正しく分解できているかチェック
+if(authorHTMLs == null) return false;
+if(authorHTMLs.length != 4) return false;
+
+// 著者名を配列にする
+var authorTXTs = authorHTMLs[2].split(', ');
+
+// 著者名を著者インデックスへのリンク付きに変換
+var rep_authorTXTs = [];
+for(var i = 0; i < authorTXTs.length; i++){
+	rep_authorTXTs.push('<a href="http://www.itmedia.co.jp/author/' + authorIDs[i] + '/">' + authorTXTs[i] + '</a>');
+}
+
+// リンク付き著者名をオリジナルと入れ替える
+authorHTMLs[2] = rep_authorTXTs.join(', ');
+
+// 著者 DOM 内に HTML を戻す
+authorDOM.innerHTML = authorHTMLs[1] + authorHTMLs[2] + authorHTMLs[3];
+
+return true;
+});
+</script>
+
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id; js.async = true;
+	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/socialbutton.css">
+<script>
+var msbBtnLoadScript = [];
+</script>
+<script src="/js/socialbutton.js"></script>
+<div id="masterSocialbuttonTop" class="masterSocialbutton"><div class="msbOut" id="msbTopOut"></div></div>
+
+
+	<!-- ait -->
+	<script>
+	msbBtn({
+	'pos':'top',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'base_class':'minimal',
+	'line':[
+	[
+		{'name':'印刷／PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'メールで通知','id':'itmid','data':[
+			{'name':'この連載の新着をメールで通知','id':'alertseries'},
+			{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{}]},
+		{'name':'ツイート','id':'tweetbutton_minimal'},
+		{'name':'シェア','id':'sharebutton_minimal'},
+		{'name':'はてなブックマーク','id':'hatenabookmark_minimal'},
+		{'name':'Pocket Button','id':'pocket_minimal'},
+		{'name':'Google+','id':'googleplusshare_minimal'},
+	{}],
+	[]]
+	});
+	</script>
+
+
+
+<div class="colBoxClear"></div>
+<!-- DMP Body -->
+<div id="dmp">
+<div id="insertAdSpaceBeforeThis_0000000161e4c1f6" style="display:none"></div>
+<script type="text/javascript"> (function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async'; scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js'; var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {}; })(); </script> <script type="text/javascript"> var cX = cX || {}; cX.callQueue = cX.callQueue || []; cX.callQueue.push(['insertAdSpace', { adSpaceId:'0000000161e4c1f6', width:500, height:60, initialHorizontalAdUnits:1, initialVerticalAdUnits:1, resizeToContentSize: true, renderTemplateUrl: 'http://www.atmarkit.co.jp/ait/files/20150815/rendertemplate.html',k:cx_k_param } ]); </script>
+</div>
+<!-- /DMP Body -->
+<div class="colBoxClear h10px"></div>
+
+	<div id="TABLETAD"><script>adRequest({'position':'TABLETAD'});</script></div>
+
+
+<!--EDIT END-->
+<!-- cxenseparse_start -->
+<div id="cmsMark"><!-- null for itmedia-->
+</div>
+<p>　米マイクロソフトは2017年2月2日（米国時間）、「Microsoft Azure（以下、Azure）の仮想マシン（Azure VM）上に構築したSQL Server 2016システム」向けの自動バックアップ機能を大幅に改良。バックアップをきめ細かく管理できるようになった。</p>
+<!--CAP-->
+<div id="col500">
+<a name="l_si_azuresqlserver-03.jpg"></a><a href="http://image.itmedia.co.jp/l/im/ait/articles/1702/07/l_si_azuresqlserver-03.jpg"><img src="http://image.itmedia.co.jp/ait/articles/1702/07/si_azuresqlserver-03.jpg" width="490" height="310" alt="photo"></a>
+<small><A HREF="https://azure.microsoft.com/ja-jp/services/virtual-machines/sql-server/" target="_blank">Azure VM上に構築するSQL Serverサービス</A></small></div>
+<!--CAPEND-->
+<p>　自動バックアップは、Azure上にあるSQL Serverインスタンスの全データベースを、ストレージアカウントのいずれかに自動でバックアップできるようにする機能。常に一貫したバックアップチェーンを保証することで、任意の時点にデータベースをリカバリーできる。また、バックアップの保持期間を指定することも可能だ。</p>
+<p>　自動バックアップの新機能では、ユーザーデータベースに加えて、システムデータベースのバックアップもスケジューリングできるようになった。このオプションを有効にすると、システムデータベースとそのインスタンスレベルの重要なオブジェクトも、ユーザーデータベースと同じスケジュールでバックアップされる。</p>
+<p>　この他、バックアップ処理がパフォーマンスに影響しないように、フルバックアップを行う時間帯と頻度（1日1回または週1回）のスケジューリングにも対応。ログのバックアップを取る頻度も指定できるようになった。</p>
+<p>　なお、DR（Disaster Recovery：災害復旧）やコンプライアンス確保の目的においては、バックアップ先に「Geoレプリケーション」（地理的に離れたリージョンにレプリケーションする設定）を使うようにマイクロソフトは勧めている。この場合は、保存先のストレージアカウントで読み取り可能とすることが望ましいという。リモートAzureリージョンでもバックアップが使用可能になるからだ。</p>
+<p>　自動バックアップ機能の有効化と構成は、以下のように行う。</p>
+<h4>新しいSQL Serverインスタンスを作成する場合</h4>
+<p>　Azureポータルでのインスタンス作成時に、SQL Serverの幾つかの構成オプションが用意された画面が表示されるようになる。そこで自動バックアップ機能を有効にできる。</p>
+<!--CAP-->
+<div id="col500">
+<a name="l_si_azuresqlserver-01.jpg"></a><a href="http://image.itmedia.co.jp/l/im/ait/articles/1702/07/l_si_azuresqlserver-01.jpg"><img src="http://image.itmedia.co.jp/ait/articles/1702/07/si_azuresqlserver-01.jpg" width="490" height="243" alt="photo"></a>
+<small>SQL Serverインスタンスの作成時に自動バックアップ機能を有効にできる</small></div>
+<!--CAPEND-->
+<h4>既存のSQL Serverインスタンスで有効にする場合</h4>
+<p>　既にSQL Server 2016インスタンスを運用している場合は、AzureポータルまたはAzure PowerShellのコマンド操作で自動バックアップを有効にする。Azureポータルでは、目的のSQL Serverインスタンスの管理ページを開き、左ペインのSQL Server構成を選択すると、自動バックアップの構成オプションにアクセスできる。</p>
+<!--CAP-->
+<div id="col500">
+<a name="l_si_azuresqlserver-02.jpg"></a><a href="http://image.itmedia.co.jp/l/im/ait/articles/1702/07/l_si_azuresqlserver-02.jpg"><img src="http://image.itmedia.co.jp/ait/articles/1702/07/si_azuresqlserver-02.jpg" width="490" height="386" alt="photo"></a>
+<small>Azureポータルから自動バックアップを有効にする</small></div>
+<!--CAPEND-->
+<div class="endlink" id="endlinkConnection">
+<h4>関連記事</h4>
+<ul id="art">
+<li class="endlink-art" id="endlink-art1"><a href="http://www.atmarkit.co.jp/ait/articles/1406/30/news066.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/ait/articles/1406/30/news066.png" width="80" height="60" alt="Azureの「SQLデータベース」とSQL Serverは何が違う？／Pivotal HD 2.0" align="left">Azureの「SQLデータベース」とSQL Serverは何が違う？／Pivotal HD 2.0</a><br>
+Microsoft Azureで利用できるサービスの一つ「SQLデータベース」。Azure上でSQL Serverインスタンスを利用する場合と比較して、性能・料金体系はどう違う？ SQL on Hadoopを実現するPivotal HDのHAWQとは？</li>
+<li class="endlink-art" id="endlink-art2"><a href="http://www.atmarkit.co.jp/ait/articles/1605/31/news062.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/ait/articles/1605/31/news062.jpg" width="80" height="60" alt="SQL Serverの既存ライセンス、「Azure VM」での再利用が簡単に" align="left">SQL Serverの既存ライセンス、「Azure VM」での再利用が簡単に</a><br>
+マイクロソフトは、EA契約でのSQL Serverの既存ライセンスを「Azure VM」で再利用できるようにした。SQL Serverワークロードを長期間実行するような使い方の顧客も、クラウド移行によるコスト削減効果が期待できるという。</li>
+<li class="endlink-art" id="endlink-art3"><a href="http://www.atmarkit.co.jp/ait/articles/1605/18/news071.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/ait/articles/1605/18/news071.jpg" width="80" height="60" alt="マイクロソフト、Azure SQL Databaseの新機能「Performance Dashboard」「Database Advisor」を披露" align="left">マイクロソフト、Azure SQL Databaseの新機能「Performance Dashboard」「Database Advisor」を披露</a><br>
+マイクロソフトは、クラウドデータベース「Azure SQL Database」の新機能である「Performance Dashboard」と「Database Advisor」の最新情報を公式ブログで紹介した。</li>
+<li class="endlink-art" id="endlink-art4"><a href="http://www.atmarkit.co.jp/ait/articles/1608/03/news044.html" onclick="designCnt('lart', s.hier3);"><img src="http://image.itmedia.co.jp/ait/articles/1608/03/news044.jpg" width="80" height="60" alt="SQL Serverが正しく再起動しなくなってしまった（起動トラブル）" align="left">SQL Serverが正しく再起動しなくなってしまった（起動トラブル）</a><br>
+本連載は、「Microsoft SQL Server」で発生するトラブルを「どんな方法で」「どのように」解決していくか、正しい対処のためのノウハウを紹介します。今回は「SQL Serverが正しく再起動しなくなった場合の対処方法」を解説します。</li>
+</ul>
+<h4>関連リンク</h4>
+<ul id="lnk">
+<li class="endlink-lnk" id="endlink-lnk1"><a href="https://azure.microsoft.com/en-us/blog/auto-backup-for-sql-server-2016-azure-virtual-machine/" onclick="designCnt('llnk', s.hier3);">Enhanced Automated Backup for SQL Server 2016 in Azure Virtual Machines（Microsoft Azureブログ）</a></li>
+</ul>
+</div>
+
+<div id="cmsCopyright">
+<p><span style="font-size:65%;font-family:Arial,Helvetica,sans-serif;line-height:135%;color:#555555;">
+Copyright&copy; 2017 ITmedia, Inc. All Rights Reserved.</span></p>
+</div>
+<!-- cxenseparse_end -->
+
+<div id="ITIR"><script>adRequest({'position':'ITIR'});</script></div>
+<script>
+(function(){
+var d = document;
+var ITIR = d.getElementById('ITIR');
+var target_node;
+ITIR.style.margin = '20px 0';
+if(d.getElementById('cmsSeriesList')){
+	target_node = d.getElementById('cmsSeriesList');
+}else if(d.getElementById('endlinkConnection')){
+	target_node = d.getElementById('endlinkConnection');
+}else{
+	target_node = d.getElementById('cmsCopyright');
+}
+window.addEventListener('DOMContentLoaded',function(){
+	target_node.parentNode.insertBefore(ITIR,target_node);
+},false);
+})();
+</script>
+<div class="colBoxClear h20px"></div>
+
+
+</div></div> 
+<!--EDIT START-->
+
+
+	<div id="ITKB"><script>adRequest({'position':'ITKB'});</script></div>
+
+<!-- googlePlus -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+{lang:'ja',parsetags:'explicit'}
+</script>
+<script type="text/javascript">gapi.plusone.go();</script>
+<!-- /googlePlus -->
+
+	<div id="ISALC">
+<div class="ISALCHead"><p>＠IT Special</p><span class="ISALCHeadSubtxt">- PR -</span></div>
+<div class="colBoxClear"></div>
+<div class="ISALCInnerLeft">
+<div id="ISALC1"><script>adRequest({'position':'10ISALC1'});</script></div>
+<div id="ISALC3"><script>adRequest({'position':'10ISALC3'});</script></div>
+<div id="ISALC4"><script>adRequest({'position':'10ISALC4'});</script></div>
+</div>
+<div class="ISALCInnerRight">
+<div id="ISALC2"><script>adRequest({'position':'10ISALC2'});</script></div>
+<div id="ISALC5"><script>adRequest({'position':'10ISALC5'});</script></div>
+<div id="ISALC6"><script>adRequest({'position':'10ISALC6'});</script></div>
+</div><div class="colBoxClear"></div>
+</div>
+
+
+<div class="colBoxClear"></div>
+<div class="colBox"><div class="colBoxOuter"><div class="colBoxInner">
+
+	<div class="colBoxL50"><div id="ITSB"><script>adRequest({'position':'ITSB'});</script></div></div>
+	<div class="colBoxR50"><div id="ITSB2"><script>adRequest({'position':'ITSB2'});</script></div></div>
+
+<div class="colBoxClear"></div>
+</div></div></div>
+<div class="colBoxClear"></div>
+<div class="newziaBox newzia_article">
+<div class="colBoxHead"><p>TechTargetジャパン</p></div>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/182/script.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/181/script.js" type="text/javascript"></script>
+</div>
+<div class="colBoxClear"></div>
+<div id="itikw2km_ait" class="colBox"></div>
+<script src="/js/ait/itikw2km_ait.js" defer></script>
+<div class="colBoxClear h10px"></div>
+<!-- ＠IT記事下オススメ記事枠（新） -->
+<style>.newzia_copyright {display:none;}</style>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/447/script.js" type="text/javascript"></script>
+<script src="/js/ds_ab.js"></script>
+<style>
+#cmsBody h4.testHeading {
+	font-weight:bold;
+	font-size:16px;
+	line-height:24px;
+	margin-bottom: 8px;
+	border-bottom: 3px solid rgb(64,140,179);
+}
+</style>
+<div id="cx_recommend_rm40192">
+	<h4 class="testHeading" id="cx_recommend_rm40192_heading" style="display:none;"></h4>
+	<!-- Cxense content widget: ＠IT PCV 記事下（文脈） x 5 -->
+	<div id="cx_ed4c086a70c26b9f0ecf875da1fe0f7fc9f770b8" style="display:none"></div>
+</div>
+<div id="cx_recommend_rm42673">
+	<!-- Cxense content widget: ＠IT PCV 記事下（文脈） AD のみ （20160907 開始） -->
+	<div id="cx_d305c3304a4d31f5767494e57ab6d3eafd6ce5c1" style="display:none"></div>
+</div>
+<script>
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+(function(){
+	var w = window;
+	var d = document;
+	var div = d.createElement('div');
+	var rcm; // DOM レコメンド
+	var rcm_head = d.getElementById('cx_recommend_rm40192_heading'); // DOM レコメンド見出し
+	var flag_rel = false; // bool 関連記事ありなし
+	var flag_lnk = false; // bool 関連リンクありなし
+	var flag_series = false; // bool 連載リストありなし
+	var flag_widget= false; // bool ウィジェットコール判定
+	var headingTxt = 'チェックしておきたい人気記事'; // string 関連記事見出し
+	var ISALC = d.getElementById('ISALC');
+	var ISALC_y = getElementXY(ISALC)['y'];
+	var scroll_y = 0; // num 縦スクロール量
+	var browser_h = getBrowserWH()['h']; // num ブラウザ高さ
+	var threshold_y = (ISALC_y - browser_h) - 200;
+	var cxInsertWidget;
+	div.className = 'colBoxClear h15px';
+	// console.log('ISALC : ' + ISALC_y);
+	// console.log('ブラウザ高さ : ' + browser_h);
+	// console.log('しきい値 : ' + threshold_y);
+
+	if(d.getElementById('endlink-art1')){ // 関連記事あり
+		flag_rel = true;
+	}
+	if(d.getElementById('endlink-lnk1')){ // 関連リンクあり
+		flag_lnk = true;
+	}
+
+	// DOM 移動関数
+	var move_dom = function(e,rcm,beforeafter){
+		if(beforeafter == 'before'){
+			e.parentNode.insertBefore(rcm,e);
+		}else if(beforeafter == 'after'){
+			e.parentNode.insertBefore(rcm,e.nextElementSibling);
+		}
+	};
+
+	// スクロールイベント
+	var evt_scroll = function(){
+		scroll_y = (function(){
+			return d.documentElement.scrollTop || d.body.scrollTop;
+		})();
+		if(scroll_y > threshold_y && !flag_widget){
+			flag_widget = true;
+			console.log('レコメンド表示');
+			w.removeEventListener('scroll',evt_scroll,false);
+			cxInsertWidget();
+		}
+		// console.log(scroll_y);
+	};
+
+	// 関連記事あり処理
+	var evt_rel = function(){
+		// 関連記事 5 本目以降消す処理
+		var hide_rel5 = function(){
+			console.log('関連記事 5 本目以降非表示');
+			var art = d.getElementById('art');
+			var lis = art.getElementsByTagName('li');
+			console.log('関連記事 ' + lis.length + ' 本');
+			for(var i = 4; i < lis.length; i++){
+				lis[i].style.display = 'none';
+			}
+		};
+
+		// 関連記事 5 本目チェック
+		if(d.getElementById('endlink-art5')){
+			console.log('関連記事 5 本目あり');
+			hide_rel5();
+		}
+
+		// DOM レコメンド
+		rcm = d.getElementById('cx_recommend_rm42673');
+
+		// レコメンド発火関数
+		cxInsertWidget = function(){
+			cX.callQueue.push(['insertWidget', {
+			widgetId: 'd305c3304a4d31f5767494e57ab6d3eafd6ce5c1',
+			insertBeforeElementId: 'cx_d305c3304a4d31f5767494e57ab6d3eafd6ce5c1',
+			width: 640, height: 88, renderTemplateUrl: 'auto'
+			}]);
+		};
+		d.getElementById('endlinkConnection').getElementsByTagName('h4')[0].innerHTML = headingTxt; // 関連記事見出し書き換え
+
+		w.addEventListener('DOMContentLoaded',function(){
+			console.log('レコメンドを関連記事の最後に移動する');
+			rcm.style.marginTop = '-20px';
+			move_dom(d.getElementById('art'),rcm,'after');
+			move_dom(rcm,div,'after');
+			evt_scroll();
+			if(!flag_widget) w.addEventListener('scroll',evt_scroll,false);
+		},false);
+	};
+
+	// 関連記事なし処理
+	var evt_norel = function(){
+
+		// DOM レコメンド
+		rcm = d.getElementById('cx_recommend_rm40192');
+
+		// レコメンド発火関数
+		cxInsertWidget = function(){
+			cX.callQueue.push(['insertWidget',{
+				widgetId: 'ed4c086a70c26b9f0ecf875da1fe0f7fc9f770b8',
+				insertBeforeElementId: 'cx_ed4c086a70c26b9f0ecf875da1fe0f7fc9f770b8',
+				width: 640, height: 435, renderTemplateUrl: 'auto'
+			}]);
+		};
+
+		var main = function(){
+
+			if(d.getElementById('cmsSeriesList')){
+				if(d.getElementById('cmsSeriesList').innerHTML != ''){
+					flag_series = true;
+				}
+			}
+
+			// レコメンド見出し FIX
+			rcm_head.innerHTML = headingTxt;
+			rcm_head.style.display = 'block';
+			
+			// レコメンドを連載リストの次に移動する
+			if(flag_series){
+				console.log('レコメンドを連載リストの次に移動する');
+				move_dom(d.getElementById('cmsSeriesList'),rcm,'after');
+
+			// レコメンドを関連リンクの前に移動する
+			}else if(flag_lnk){
+				console.log('レコメンドを関連記事／リンクの前に移動する');
+				move_dom(d.getElementById('endlinkConnection'),rcm,'before');
+
+			// レコメンドをコピーライトの前に移動する
+			}else{
+				console.log('レコメンドをコピーライトの前に移動する');
+				move_dom(d.getElementById('cmsCopyright'),rcm,'before');
+
+			}
+
+			move_dom(rcm,div,'after');
+			evt_scroll();
+			if(!flag_widget) w.addEventListener('scroll',evt_scroll,false);
+		};
+		w.addEventListener('load',main,false);
+	};
+
+	// 関連記事あり
+	if(flag_rel){
+		console.log('関連記事あり');
+		evt_rel();
+
+	// 関連記事なし
+	}else{
+		console.log('関連記事なし');
+		evt_norel();
+	}
+
+})();
+</script>
+<div class="colBoxClear h15px"></div>
+<div id="masterSocialbuttonBtm" class="masterSocialbutton"><div class="msbOut" id="msbBtmOut"></div></div>
+
+
+	<!-- ait -->
+	<script>
+	msbBtn({
+	'pos':'btm',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'base_class':'minimal',
+	'line':[
+	[
+		{'name':'印刷／PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'メールで通知','id':'itmid','data':[
+			{'name':'この連載の新着をメールで通知','id':'alertseries'},
+			{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{}]},
+		{'name':'ツイート','id':'tweetbutton_minimal'},
+		{'name':'シェア','id':'sharebutton_minimal'},
+		{'name':'はてなブックマーク','id':'hatenabookmark_minimal'},
+		{'name':'Pocket Button','id':'pocket_minimal'},
+		{'name':'Google+','id':'googleplusshare_minimal'},
+	{}],
+	[]]
+	});
+	</script>
+
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'ja'}
+</script>
+
+<div class="colBoxClear h10px"></div>
+
+<div class="colBoxClear"></div>
+<!-- Side Buttons : Print / Alert / QA_Layer -->
+<script id="qa_widget" src="http://qa.atmarkit.co.jp/assets/atmarkit2.js"></script>
+<div id="colBoxSideButtons"><div id="colBoxSideButtonsInner">
+<div id="colBoxSideButtonsPrint"></div>
+<div id="colBoxSideButtonsAlert"></div>
+</div></div>
+<script>
+(function(){
+	var d = document,
+			ticket = 'rm44811',
+			socialBtn = d.getElementById('masterSocialbuttonTop'),
+			socialBtn_print = d.getElementById('msbBtnPrintbuttonTop').getElementsByTagName('a')[0],
+			socialBtn_alert = d.getElementById('msbBtnAlertbuttonTop').getElementsByTagName('a')[0],
+			socialBtn_series,
+			sideBtn = d.getElementById('colBoxSideButtons'),
+			sideBtnPrint = d.getElementById('colBoxSideButtonsPrint'),
+			sideBtnAlert = d.getElementById('colBoxSideButtonsAlert'),
+			sideBtn_print,
+			sideBtn_alert,
+			sideBtn_series,
+			qaBtn,
+			qaExist = false;
+	/* ゲート有無確認＆class付与 */
+	if (d.getElementById('ITWL')) {
+		d.body.className += ' exist-ITWL';
+	}
+	/* クリック時の処理 */
+	function cx_click_test(test_id){
+		cX.setEventAttributes({origin:'itm-website',persistedQueryId:'7afa26d5cf882cbdf1133ef0a74bc60ab5581d17'});
+		cX.sendEvent('click',{'itm_test_id':test_id});
+		console.log(test_id);
+	};
+	var clickCount = function(){
+		if(this.id == 'colBoxSideButtonsPrintBtn') {
+			cx_click_test(ticket + '_sideBtn_print');
+		} else if (this.id == 'colBoxSideButtonsAlertBtn') {
+			cx_click_test(ticket + '_sideBtn_alert');
+		} else if (this.id == 'colBoxSideButtonsAlertSeriesBtn') {
+			cx_click_test(ticket + '_sideBtn_series');
+		} else if (this.parentNode.id == 'msbBtnPrintbuttonTop') {
+			cx_click_test(ticket + '_socialBtn_print');
+		} else if (this.parentNode.id == 'msbBtnAlertbuttonTop') {
+			cx_click_test(ticket + '_socialBtn_alert');
+		} else if (this.parentNode.id == 'msbBtnAlertseriesTop') {
+			cx_click_test(ticket + '_socialBtn_series');
+		}
+	};
+	/* プリントボタン生成 */
+	sideBtn_print = socialBtn_print.cloneNode(true);
+	sideBtn_print.id = 'colBoxSideButtonsPrintBtn';
+	appendEventListener(sideBtn_print,'click',clickCount,false);
+	appendEventListener(socialBtn_print,'click',clickCount,false);
+	sideBtnPrint.appendChild(sideBtn_print);
+	/* 連載アラートボタン生成 */
+	if (d.getElementById('msbBtnAlertseriesTop').getElementsByTagName('a').length != 0) {
+		socialBtn_series = d.getElementById('msbBtnAlertseriesTop').getElementsByTagName('a')[0];
+		sideBtn_series = socialBtn_series.cloneNode(true);
+		sideBtn_series.id = 'colBoxSideButtonsAlertSeriesBtn';
+		appendEventListener(sideBtn_series,'click',clickCount,false);
+		appendEventListener(socialBtn_series,'click',clickCount,false);
+		sideBtnAlert.appendChild(sideBtn_series);
+	}
+	/* 記事アラートボタン生成 */
+	sideBtn_alert = socialBtn_alert.cloneNode(true);
+	sideBtn_alert.id = 'colBoxSideButtonsAlertBtn';
+	appendEventListener(sideBtn_alert,'click',clickCount,false);
+	appendEventListener(socialBtn_alert,'click',clickCount,false);
+	sideBtnAlert.appendChild(sideBtn_alert);
+	/* スクロール時の処理 */
+	var browserH = getBrowserWH()['h']; // ブラウザ高さ
+	var scrollY = 0;
+	var scrolling = function(){
+		var socialBtnY = getElementXY(socialBtn)['y']; // ソーシャルボタン Y 位置
+		var socialBtnH = socialBtn.clientHeight; // ソーシャルボタン 高さ
+		scrollY = getBrowserScrollXY()['y']; // スクロール量
+		if(socialBtnY+socialBtnH < scrollY){
+			sideBtn.style.opacity = 1;
+			sideBtn.style.visibility =  'visible';
+		} else {
+			sideBtn.style.opacity = 0;
+			sideBtn.style.visibility =  'hidden';
+		}
+		if (qaExist && qaBtn !== undefined) { 
+			if(socialBtnY+socialBtnH < scrollY){
+				qaBtn.style.opacity = 1;
+				qaBtn.style.visibility =  'visible';
+			} else {
+				qaBtn.style.opacity = 0;
+				qaBtn.style.visibility =  'hidden';
+			}
+		}
+	}
+	appendEventListener(window,'scroll',scrolling,false); // スクロールイベント
+	var checkQA = setInterval(function(){
+		if(d.getElementById('qa_float_frame')) {
+			qaExist = true;
+			qaBtn = d.getElementById('qa_float_frame');
+			qaBtn.className += ' sideButtonsQA';
+			d.getElementById('qa_float_outer').style.bottom = '15px';
+			d.getElementById('qa_float_inner').style.left = '-60px';
+			scrolling();
+			clearInterval(checkQA);
+		}
+	},1000);
+})();
+</script>
+<!-- /Side Buttons -->
+<!-- "/include/ait/index_article_newArticle.html" -->
+
+<script>
+(function(){
+var d = document;
+var head = document.getElementsByTagName('head')[0];
+var js = d.createElement('script');
+if(typeof(itmidMembersEnquete) == "undefined"){
+	// 通常のマスク記事
+	js.src = '/js/mask.js';
+	head.appendChild(js);
+	js.addEventListener('load',function(){
+	ISLOGIN({
+		'isLoginURL':'http://status.atmarkit.co.jp/isLoginAIT.cgi',
+		'sc':'0c1c43111448b131d65b3b380041de26f2edd6264ee1c371184f54d26ab53365',
+		'lc':'7d7179c146d0d6af4ebd304ab799a718fe949a8dcd660cd6d12fb97915f9ab0a',
+		'bc':2,
+		'heading':'続きを読むには、<strong style="color:#F90;">会員登録（無料）</strong> が必須です',
+		'description':'［続きを読む］ボタンを押して会員登録あるいはログインしてください。',
+		'eVer':'26',
+		'eVerStr':'id_ait_article-mask'
+	});
+	},false);
+} else {
+	// 簡易リードジェン
+	var css = d.createElement('link');
+	css.rel = 'stylesheet';
+	css.type = 'text/css';
+	css.href = '/css/members.css';
+	head.appendChild(css);
+	js.src = '/js/mask_enq.js';
+	head.appendChild(js);
+	js.addEventListener('load',function(){
+	ISLOGIN({
+		'isLoginURL':'http://status.atmarkit.co.jp/isLoginAIT.cgi',
+		'sc':'00037f39cf870a1f49129f9c82d935665d352ffd25ea3296208f6f7b16fd654f',
+		'lc':'02abf8fa7d9c4db035df33acba2dcd495ae9af91152ea9a135533cb747eb3afc',
+		'bc':2,
+		'heading':'続きを見るには、<strong style="color:#F90;">会員登録（無料）</strong> が必須です',
+		'description':'［続きを見る］ボタンを押して会員登録あるいはログインしてください。',
+		'button_text':'続きを見る',
+		'eVer':'26',
+		'eVerStr':'id_ait_article-mask'
+	});
+	},false);
+}
+})();
+</script>
+<!--EDIT END-->
+<div id="cmsPrcredit"><div class="inner"></div></div>
+<!--EDIT START-->
+<!-- cmsSeriesList -->
+
+	<!-- SeriesID_Flag == 0 -->
+
+
+<script type="text/javascript">
+(function () {
+	if(!document.getElementById('endlinkConnection')) return false;
+	if(!document.getElementById('endlink-art1')) return false;
+	if(!document.getElementById('prev') || !document.getElementById('numb') || !document.getElementById('next') || document.getElementById('end')) {
+		var endlinks = document.getElementById('endlink-art1').parentNode.getElementsByTagName('li');
+		for(var i = 0; i < endlinks.length; i++){
+		endlinks[i].innerHTML = endlinks[i].innerHTML.replace(/<(br|BR)>(\n)?.+/,'');
+		}
+		return false;
+	} else {
+		return false;
+	}
+})()
+</script>
+
+
+<!--EDIT END-->
+</div></div>
+
+<script>endlinkAll();</script>
+
+
+</div>
+
+	<div id="masterSub">
+	
+	<!--編集記事-->
+	
+		<div id="LOGOAD"><script>adRequest({'position':'10LOGOAD'});</script></div>
+		<div id="ITTN"><script>adRequest({'position':'2ITTN'});</script></div>
+		
+		<div id="ITR"><script>adRequest({'position':'ITR'});</script></div><!-- レクタングル -->
+		
+		<div id="ITTI"><script>adRequest({'position':'2ITTI'});</script></div><!-- スポンサーからのお知らせ -->
+		<div id="MSITTI">
+			<div class="colBox colBoxMSITTI"><div class="colBoxOuter"><div class="colBoxInner"><div class="colBoxIndex"><div class="colBoxUlist"><ul>
+				<script>adRequest({'position':'2MSITTI'});</script>
+			</ul></div></div></div></div></div>
+		</div>
+	
+	
+		<div id="cxensereRectangle">
+		<div id="insertAdSpaceBeforeThis_000000016223692d" style="display:none"></div>
+		<script type="text/javascript"> (function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async'; scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js'; var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {}; })(); </script>
+		<script type="text/javascript"> var cX = cX || {}; cX.callQueue = cX.callQueue || []; cX.callQueue.push(['insertAdSpace', { adSpaceId:'000000016223692d', width:300, height:320, initialHorizontalAdUnits:1, initialVerticalAdUnits:1, 'lf-am': '0 0 15px 0', resizeToContentSize: true, renderTemplateUrl: '/ait/files/20150815/rendertemplate_ver_right.html',k:cx_k_param } ]); </script>
+		</div><!-- cxensere -->
+		
+			<div id="ISALR"><script>adRequest({'position':'30ISALR'});</script></div><!-- チャンネルリンク -->
+		
+	
+	<div class="colBoxClear"></div>
+	<!-- htmlgen -->
+<!-- /htmlgen -->
+<!-- 特別誘導枠 -->
+	<div class="colBox colBoxArticleRanking" id="colBoxArticleRanking"></div><!-- フォーラムランキング -->
+
+	<div id="specialInduction"></div>
+	<script src="/include/ait/parts_specialinduction.js"></script>
+	<script src="/include/ait/parts_specialinductiondata.js" defer></script>
+
+	<!-- ホワイトペーパー/ -->
+	<div class="colBox colBoxWP"><div class="colBoxOuter">
+	<div class="colBoxHead"><p>この記事に関連するホワイトペーパー</p></div>
+	<div class="colBoxInner">
+	<script charset="utf-8" src="http://connect.newzia.jp/channels/179/script.js" type="text/javascript"></script>
+	<script charset="utf-8" src="http://connect.newzia.jp/channels/180/script.js" type="text/javascript"></script>
+	</div>
+	</div></div>
+	<!-- /ホワイトペーパー -->
+	<div id="teemasiteBanner">
+<script defer>
+(function(){
+	var data = {
+		'name':'注目のテーマ',
+		'list':[
+				{'url':'http://www.atmarkit.co.jp/ait/subtop/features/coding/soe.html','img':'/ait/images/htmlgen/rc_teemasitebanner_1_1485519674.jpg','forum':'top,databaseexpert,linuxandoss,javaagile'},
+				{'url':'/ait/subtop/features/systemdesign/iot_catalog.html','img':'/ait/images/htmlgen/rc_teemasitebanner_1_1480931707.jpg','forum':'top,smartandsocial,designhack,html5plusux,serverandstorage,windowsserverinsider,businessappinsider,insiderdotnet,systeminsider,railshub,codingedge,javaagile,databaseexpert,linuxandoss,masterofipnetwork,securityandtrust,systemdesign,testandtools'},
+				{'url':'/ait/subtop/features/kwd/auto.html','img':'/ait/images/htmlgen/rc_teemasitebanner_8_1480558496.jpg','forum':'top,systemdesign,serverandstorage,masterofipnetwork'},
+				{'url':'/ait/subtop/features/systemdesign/engineer.html','img':'/ait/articles/1609/16/hu_300ai.jpg','forum':'top,systemdesign,linuxandoss,javaagile'},
+				{'url':'/ait/subtop/features/jibun/uistyle.html','img':'/ait/images/htmlgen/rc_teemasitebanner_1_1467346196.jpg','forum':'top,ljibun,lcareer,lskill,jibun'},
+		{}
+		]
+	};
+	var list = data.list;
+	if(list.length <=1) return false;
+	var bannerList = document.getElementById('teemasiteBanner');
+	if(!bannerList) return false;
+	var html = '';
+	var listhtml = '';
+	var extraid = '';
+	var adpath = '';
+	if(getMETA('extraid')){
+		extraid = getMETA('extraid').getAttribute('content');
+	} else {
+		extraid = '	at-news	ao-db	kw-databaseexpert	';
+	}
+	if(getMETA('adpath')){
+		adpath = getMETA('adpath').getAttribute('content');
+	}
+	for(var i=0;i<list.length-1;i++) {
+		if(!list[i]['forum']) continue;
+		var forumtest = list[i]['forum'].split(',');
+		for(var j=0;j<forumtest.length;j++) {
+			if(!forumtest[j]) continue;
+			if((forumtest[j] == 'top') && (adpath == 'root/ITmedia/ait/top')) {
+				listhtml += '<div class="colBoxIndex"><div class="colBoxBanner"><a href="' + list[i]['url'] + '"><img src="' + imgSrv() + list[i]['img'] + '"></a></div></div>\n';
+			} else if(!extraid) {
+				continue;
+			} else if(extraid.match('kw-' + forumtest[j])) {
+				listhtml += '<div class="colBoxIndex"><div class="colBoxBanner"><a href="' + list[i]['url'] + '"><img src="' + imgSrv() + list[i]['img'] + '"></a></div></div>\n';
+				break;
+			} else {
+				continue;
+			}
+		}
+	}
+	if(!listhtml) return false;
+	html += '<div class="colBox colBoxteemasitebanner"><div class="colBoxOuter">';
+	html += '<div class="colBoxHead"><p>' + data['name'] + '</p></div>';
+	html += '<div class="colBoxInner">';
+	html += listhtml;
+	html += '</div>';
+	html += '</div></div>';
+	html += '<div class="colBoxClear"></div>';
+	bannerList.innerHTML = html;
+})();
+</script>
+</div>
+<!-- 注目のテーマ -->
+	
+<!-- htmlgen -->
+<!-- htmlgen -->
+<!-- 注目のテーマ PR -->
+	<!-- htmlgen -->
+<!-- /htmlgen -->
+
+	
+<div id="hnaviList"></div>
+<script type="text/javascript">
+(function(){
+	var data = {
+		'name':'システム開発ノウハウ 【発注ナビ】',
+		'displayed':'3',
+		'list':[
+
+{'url':'http://tr.adgocoo.com/cl/otdqiixo','title':'機能要件とは？システムの品質向上にかかわる非機能要件との違い','ngforum':'jibun,ljibun,lcareer,lskill','icon':'/ait/images/htmlgen/parts_hnavilisticon_1.jpg'},
+{'url':'http://tr.adgocoo.com/cl/83bgefen','title':'オンプレミスとクラウドのメリットを比較！自社に合うのはどっち？','ngforum':'jibun,ljibun,lcareer,lskill','icon':'/ait/images/htmlgen/parts_hnavilisticon_2_1493601095.jpg'},
+{'url':'http://tr.adgocoo.com/cl/a3sfbgvp','title':'ARとは？スマホの普及で身近になった拡張現実は何に使われている？','ngforum':'jibun,ljibun,lcareer,lskill','icon':'/ait/images/htmlgen/parts_hnavilisticon_3_1493601095.jpg'},
+{'url':'http://tr.adgocoo.com/cl/tz5bsw9e','title':'O2Oの特徴とは？導入のメリットや成功事例から今後の課題まで','ngforum':'jibun,ljibun,lcareer,lskill','icon':'/ait/images/htmlgen/parts_hnavilisticon_4_1493604937.jpg'},
+{'url':'http://tr.adgocoo.com/cl/1za04ger','title':'http://hnavi.co.jp/knowledge/blog/160117/','ngforum':'jibun,ljibun,lcareer,lskill','icon':'/ait/images/htmlgen/parts_hnavilisticon_5_1493604937.jpg'},
+{'url':'http://tr.adgocoo.com/cl/s6b1j03s','title':'データベースで情報をまとめて格納！エクセルにはないDBMSの優れた機能','ngforum':'jibun,ljibun,lcareer,lskill','icon':'/ait/images/htmlgen/parts_hnavilisticon_6_1493604937.jpg'},
+// data
+
+		{}
+		]
+	};
+	var list = data.list;
+	if(list.length <=1) return false;
+	var hnaviList = document.getElementById('hnaviList');
+	if(!hnaviList) return false;
+	var html = '';
+	var listhtml = '';
+	var extraid = '';
+	var count = data.displayed;
+	var listcount = 1;
+	if(getMETA('extraid')){
+		extraid = getMETA('extraid').getAttribute('content').split('\t');
+	}
+	for (var i=list.length-2;i>=0;i--) {
+		var listshuffle = Math.floor((i+1)*Math.random());
+		var liststorage = list[i];
+		list[i] = list[listshuffle];
+		list[listshuffle] = liststorage;
+	}
+	for(var i=0;i<count;i++) {
+		if(i+1 > list.length-1) break;
+		if((list[i]['ngforum'])&&(extraid)) {
+			var extraidcheck = '';
+			var ngforumcheck = -1;
+			var ngforum = list[i]['ngforum'].split(',')
+			for(var j=0;j<ngforum.length;j++) {
+				extraidcheck = 'kw-' + ngforum[j];
+				ngforumcheck = jQuery.inArray(extraidcheck, extraid);
+				if(ngforumcheck > -1) break;
+			}
+		}
+		if(ngforumcheck > -1) {
+			count++;
+			ngforumcheck = -1;
+		} else {
+			listhtml += '<div class="colBoxIndex listnum' + i + '">\n';
+			if(list[i]['icon']) {
+				listhtml += '<div class="colBoxIcon"><a href="' + list[i]['url'] + '" target="_blank"><img src="' + imgSrv() + list[i]['icon'] + '" style="width:60px;height:45px;"></a></div>\n';
+			}
+			listhtml += '<div class="colBoxTitle"><p><a href="' + list[i]['url'] + '" target="_blank">' + list[i]['title'] + '</a></p></div>\n';
+			listhtml += '<div class="colBoxClear"></div>\n';
+			listhtml += '</div>\n';
+			listcount++;
+		}
+	}
+	if(!listhtml) return false;
+	html += '<div class="colBox colBoxhnavi"><div class="colBoxOuter">';
+	html += '<div class="colBoxHead"><p>' + data['name'] + '</p>';
+	html += '<span class="colBoxHeadSubtxt">- PR -</span></div>';
+	html += '<div class="colBoxInner">';
+	html += listhtml;
+	html += '</div>';
+	html += '</div></div>';
+	html += '<div class="colBoxClear h10px"></div>';
+	hnaviList.innerHTML = html;
+})();
+</script>
+<!-- 発注ナビ誘導枠 -->
+	
+		<div id="ITTO"><script>adRequest({'position':'5ITTO'});</script></div><!-- お勧め求人情報 -->
+		<div id="ITR3"><script>adRequest({'position':'ITR3'});</script></div><!-- サードレクタングル -->
+	
+	
+<!-- htmlgen -->
+<!-- 今月の特集 -->
+	<script type="text/javascript">setForumRankingMonthAndDay();</script>
+	
+	<div class="fb-page" data-href="https://www.facebook.com/atmarkit/" data-tabs="timeline" data-width="300" data-height="280" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/atmarkit/"><a href="https://www.facebook.com/atmarkit/">＠IT</a></blockquote></div></div><!-- Facebook PagePlugin -->
+	<div class="colBoxClear h30px"></div>
+	
+	
+<div class="colBox colBoxTensyoku" id="colBoxTensyoku">
+<div class="colBoxOuter">
+<div class="colBoxHead"><p>転職／派遣情報を探す</p></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://job.atmarkit.co.jp/" title="年収６００万円！エンジニア向けの求人満載。転職希望者必見"><IMG SRC="http://image.itmedia.co.jp/ait/images/htmlgen/top_dokusyacolumn_icon1_1_1456451890.png"></a></div>
+<div class="colBoxTitle"><p><a href="http://job.atmarkit.co.jp/" title="年収６００万円！エンジニア向けの求人満載。転職希望者必見">年収６００万円！エンジニア向けの求人満載。転職希望者必見</a></p></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/job/jt/aud/index.php?action_aud_Portal=true" title="月収４０万円／派遣エンジニアのお仕事情報を毎日更新中！"><IMG SRC="http://image.itmedia.co.jp/ait/images/htmlgen/top_dokusyacolumn_icon2_1_1456451890.png"></a></div>
+<div class="colBoxTitle"><p><a href="http://www.atmarkit.co.jp/job/jt/aud/index.php?action_aud_Portal=true" title="月収４０万円／派遣エンジニアのお仕事情報を毎日更新中！">月収４０万円／派遣エンジニアのお仕事情報を毎日更新中！</a></p></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div>
+<!-- 転職／派遣情報を探す -->
+	<!-- 編集部からのおしらせ -->
+	
+</div>
+
+<div class="colBoxClear"></div>
+</div></div>
+<div id="mediaFooter">
+<div id="mediaFooterBgArea"></div>
+<div class="mediaFooterMediaList">
+
+<div class="colBoxIndex colBoxAit">
+<div class="colBoxTitle"><p>@ITについて</p></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.atmarkit.co.jp/aboutus/contact_us/contact_us.html" title="お問い合わせ">お問い合わせ</a></li>
+<li><a href="http://corp.itmedia.co.jp/corp/privacy/" title="プライバシーポリシー">プライバシーポリシー</a></li>
+<li><a href="http://www.atmarkit.co.jp/aboutus/termofuse/termofuse.html" title="利用規約">利用規約</a></li>
+<li><a href="http://www.atmarkit.co.jp/aboutus/copyright/copyright.html" title="著作権・リンク・免責事項">著作権・リンク・免責事項</a></li>
+<li><a href="http://www.atmarkit.co.jp/info/sitemap/sitemap.html" title="サイトマップ">サイトマップ</a></li>
+<li><a href="http://corp.itmedia.co.jp/ad/" title="広告案内">広告案内</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxRSS">
+<div class="colBoxTitle"><p>RSSについて</p></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/info/rss/atmarkit.html" title="＠ITのRSS一覧">＠ITのRSS一覧</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxID">
+<div class="colBoxTitle"><p>アイティメディアIDについて</p></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://id.itmedia.jp/info/campaign/all_id.html" title="アイティメディアIDとは">アイティメディアIDとは</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+
+<div id="_popIn_recommend"></div>
+<script type="text/javascript">
+(function() {
+var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.charset = "utf-8"; pa.async = true;
+pa.src = window.location.protocol + "//api.popin.cc/searchbox/atmarkit.js";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+})(); 
+</script>
+
+<!-- メディアフッター -->
+<div class="colBoxIndex colBoxMailmagazine">
+<div class="colBoxTitle"><p>メールマガジン登録</p></div>
+<div class="colBoxDescription"><p>
+＠ITのメールマガジンは、 もちろん、すべて無料です。ぜひメールマガジンをご購読ください。
+</p>
+<div id="registerButton">
+<a href="http://www.atmarkit.co.jp/ait/subtop/info/lp/ait_new.html">申し込みページへ</a>
+</div>
+</div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+
+
+
+<div id="masterFooter">
+	<div id="globalFooter">
+		<div id="footerBgArea"></div>
+<!-- GLOBALFOOTER -->
+
+<!-- masterChannel == ait|mn|ee|edn -->
+
+<div id="globalFooterCorp">
+	<div id="globalFooterCorpIn">
+		<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif" width="170" height="28"></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+		<p id="globalFooterCorpLink"><a href="http://corp.itmedia.co.jp/">運営会社</a> | <a href="http://corp.itmedia.co.jp/pr/">プレスリリース</a> | <a href="http://corp.itmedia.co.jp/ir/">IR情報</a> | <a href="http://corp.itmedia.co.jp/recruit/">採用情報</a> | <a href="http://id.itmedia.jp/info/campaign/all_id.html">アイティメディアID</a> | <a href="http://www.itmedia.co.jp/info/rss/">RSS</a> | <a href="http://www.itmedia.co.jp/info/twitter/">Twitter</a> | <a href="http://www.itmedia.co.jp/info/fb/">Facebook</a> | <a href="http://www.itmedia.co.jp/info/mailmag/">メルマガ</a> | <a href="http://www.itmedia.co.jp/info/virtualevent/">バーチャルイベント</a></p>
+	</div>
+</div><!-- /#globalFooterCorp -->
+
+	</div>
+</div>
+
+
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script src="/js/masterBodyEnd.js"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+
+    
+	    <div id="BEACON"><div id="N">
+			<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+
+// 旧 AIT とドメインパスを一致させる
+// meta adpath
+var adpath = getMetaContent({'keywords':'adpath','encode':'no'}).split('/');
+adpath[3] = adpath[3].replace('article','articles');
+if(adpath[4]) adpath[4] = adpath[4].replace(/^win$/,'windows').replace(/^sys$/,'system').replace(/^ux$/,'wcr');
+var dp = [];
+dp.push('root');
+dp.push('atmarkit');
+dp.push('atit');
+for(var i = 4; i < adpath.length; i++){
+	dp.push(adpath[i]);
+}
+dp.push('cont');
+dp.push(adpath[3]);
+
+var path = {};
+path['hier1'] = dp.join(',');
+path['hier2'] = dp.join(',').replace(dp[0] + ',','');
+path['hier3'] = dp.join(',').replace(dp[0] + ',','').replace(dp[1] + ',','');
+
+var channelname = '＠IT';
+
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.atmarkit.co.jp"
+s.channel=channelname + ' ' + dp[3]
+s.pageType=""
+s.hier1=path['hier1']
+s.hier2=path['hier2']
+s.hier3=path['hier3']
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2=path['hier1']
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6=dp[2]
+s.prop7=dp[2] + ',' + dp[3]
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20=channelname
+/*=========================*/
+// FB AD
+if(location.hash.indexOf('#FB_') != -1){
+	s.prop41 = location.hash.replace('#','');
+}
+/*=========================*/
+s.prop58= (typeof dcl_start === 'undefined')? "": resTime();
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+
+			<!-- itmdp start -->
+			<script src="/js/itmdp_code.js"></script>
+			<script>
+			itmdp.sc2itmdp();
+			var itm_pageview = itmdp.pageview();
+			</script>
+			<!-- itmdp end -->
+		</div></div>
+    
+
+<!--/BEACON-->
+
+
+<!-- User Insight PCDF Code Start : itmedia.co.jp -->
+<script type="text/javascript">
+var _uic = _uic ||{};
+var _uih = _uih ||{};
+	
+_uih['id'] = 52351; // 技術
+	
+_uih['lg_id'] = (function(cookie_name){
+	var str = '';
+	var val = '';
+	var cookies = '';
+	if(cookie_name){
+		cookies = document.cookie.split('; ');
+		for(var i = 0; i < cookies.length; i++){
+			val = cookies[i].split('=');
+			if(val[0] != cookie_name) continue;
+			str = unescape(val[1].slice(0,40));
+		}
+	}
+	return str;
+})('iitt');
+_uih['fb_id'] = '';
+_uih['tw_id'] = '';
+_uih['uigr_1'] = s.prop2;
+_uih['uigr_2'] = s.prop4;
+if(s.prop23){
+	_uih['uigr_3'] = s.prop23;
+}else{
+	_uih['uigr_3'] = '';
+}
+_uih['uigr_4'] = '';
+_uih['uigr_5'] = '';
+_uih['uigr_6'] = '';
+_uih['uigr_7'] = '';
+_uih['uigr_8'] = '';
+_uih['uigr_9'] = '';
+_uih['uigr_10'] = '';
+
+/* DO NOT ALTER BELOW THIS LINE */
+/* WITH FIRST PARTY COOKIE */
+(function() {
+var bi = document.createElement('script');bi.type = 'text/javascript'; bi.async = true;
+bi.src = '//cs.nakanohito.jp/b3/bi.js';
+var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi, s);
+})();
+</script>
+<!-- User Insight PCDF Code End : itmedia.co.jp -->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '185005748502834');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=185005748502834&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- FreakOut DMP code -->
+
+	<!-- prFlag ne PR -->
+	
+		<!-- masterChannel == ait -->
+		<script type="text/javascript">
+		// CX Segment 3rd Party
+		var cx_3rd_segments = cX.getUserSegmentIds({persistedQueryId:'8b5a5e7f2de4247858bf30431c9972d3cdf7682e'});
+		// CX Segment ID を FreakOut DMP に送る
+		var _itm_fout_params = function(){
+			var d = document;
+			var params = {};
+			for(var i = 0; i < cx_segments.length; i++){
+				params[cx_segments[i]] = 'true';
+			}
+			for(var i = 0; i < cx_3rd_segments.length; i++){
+				params[cx_3rd_segments[i]] = 'true';
+			}
+			// console.log(params);
+			return params;
+		};
+		var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+		if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+		_fout_queue.segment.queue.push({
+		  'user_id': 13961,
+		  'params':_itm_fout_params()
+		});
+		(function() {
+		  var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+		  el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+		})();
+		</script>
+	
+
+<!-- End FreakOut DMP code -->
+
+<!-- Pardot -->
+
+<!-- masterChannel == top|news|business|enterprise|executive|mm|ait|tt|tf -->
+<script>
+piAId = '292242';
+piCId = '1454';
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+<!-- /Pardot -->
+
+</body></html>

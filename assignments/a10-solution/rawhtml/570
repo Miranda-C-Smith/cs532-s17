@@ -1,0 +1,998 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgECUlFTGwoBUFRQAQY="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];n.exports=u;var y=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(m,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+    <title>Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show</title>
+    <meta http-equiv="Content-Language" content="en_US" />
+    <meta name="description" content="Spoiler alert: She&rsquo;s pumped!" />
+    <meta name="keywords" content="beyonce,beyonce coachella,ellen degeneres,vanessa hudgens" />
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:title" content="Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.etonline.com/news/209668_vanessa_hudgens_the_queen_of_coachella_gushes_about_pregnant_beyonce_headlining_the_show/" />
+    <meta property="og:image" content="http://www.etonline.com/media/video/2017/02/24306951/hudgens_vidpic_020717_1280Copy.jpg" />
+    <meta property="og:description" content="Spoiler alert: She&rsquo;s pumped!" />
+    <meta property="og:site_name" content="Entertainment Tonight" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:admins" content="3111204" />
+    <meta property="fb:app_id" content="145337045558621" />
+    <link href="https://plus.google.com/105621479350227756827" rel="publisher"/>
+    <meta property="twitter:account_id" content="23603092" />
+    <meta name="twitter:site" content="@etnow" />
+    <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:creator" content="Rachel McRady">
+        <meta name="twitter:url" content="http://www.etonline.com/news/209668_vanessa_hudgens_the_queen_of_coachella_gushes_about_pregnant_beyonce_headlining_the_show/" />
+    <meta name="twitter:title" content="Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show" />
+    <meta name="twitter:description" content="Spoiler alert: She&rsquo;s pumped!" />
+    <meta name="twitter:image" content="http://www.etonline.com/media/video/2017/02/24306951/hudgens_vidpic_020717_1280Copy.jpg" />
+    <link rel="shortcut icon" href="http://www.etonline.com/favicon.ico" />
+            <link rel="amphtml" href="/news/209668_vanessa_hudgens_the_queen_of_coachella_gushes_about_pregnant_beyonce_headlining_the_show/ampdoc.html">
+        <link rel="image_src" href="http://www.etonline.com/media/video/2017/02/24306951/hudgens_vidpic_020717_1280Copy.jpg" />
+    <link rel="canonical" href="http://www.etonline.com/news/209668_vanessa_hudgens_the_queen_of_coachella_gushes_about_pregnant_beyonce_headlining_the_show/" />
+            <link type='text/css' rel='stylesheet' href='/global/public/css/reset.min.css'>
+<link type='text/css' rel='stylesheet' href='/global/public/css/main.min.css'>
+<link type='text/css' rel="stylesheet" href='/global/public/css/bootstrap.min.css'>
+<link type='text/css' rel='stylesheet' href='/global/public/css/livefyre.min.css'>
+				<link rel='stylesheet' href='/global/public/css/story.min.css' type='text/css' >
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<script type="text/javascript" src="/global/public/js/site.js"></script>
+<script type="text/javascript">
+	site['pagetype'] = "article";
+	site['node'] = "209668";
+	site['category'] = "news";
+</script>
+<script type="text/javascript" src="//js.indexww.com/ht/headertag-cbstv.js"></script>
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    window.Headertag_pretag_queue = window.Headertag_pretag_queue || [];
+    window.Headertag_defer_queue = window.Headertag_defer_queue || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+<script type="text/javascript">
+    // Saftey timer just in case our CDN breaks for any reason
+    window.setTimeout(function() {
+        for (var i = 0; i < window.Headertag_defer_queue.length; i++) {
+            var qf = window.Headertag_defer_queue[i];
+            if (typeof qf === 'function') {
+                qf();
+            }
+        }
+        window.Headertag_defer_queue = {};
+        window.Headertag_defer_queue.push = function(foo) {
+            if (typeof foo === 'function') foo();
+        };
+    }, 500);
+</script>
+<script type="text/javascript">
+ /* GPT responsive ad builds
+	*  Determines ad sizes according to breakpoints and defines the correct ad size according to position and breakpoint.
+	*
+	*  Sizes:
+	*  1600,0
+	*  1024, 800
+	*  1024,0
+	*  768,0
+	*  300,0
+	*  0,0
+	*
+	*/
+
+	googletag.cmd.push(function () {
+
+		/////////////
+		// Headers
+
+		// Define above the fold leaderboard sizes
+		// Homepage, hub pages, article pages, gallery landing pages
+		//
+		var a_header_atf = googletag.sizeMapping().
+			addSize([1600, 0], [[970, 90], [728, 90], [970, 250]]).
+			addSize([1100, 800], [[970, 90], [728, 90], [970, 250]]).
+			addSize([1100, 0], [[970, 250], [970, 90], [728,  90]]).
+			addSize([768, 0], [728,  90]).
+			addSize([300, 0], [[300, 50], [320, 50]]).
+			addSize([0, 0], []).
+			build();
+
+		// Define above the fold leaderboard sizes
+		// Gallery slideshow pages
+		//
+		var b_header_atf = googletag.sizeMapping().
+			addSize([1600, 0], [[970, 90], [728, 90]]).
+			addSize([1100, 800], [[970, 90], [728, 90]]).
+			addSize([1100, 0], [[970, 90], [728, 90]]).
+			addSize([768, 0], [728,  90]).
+			addSize([300, 0], [[300, 50], [320, 50]]).
+			addSize([0, 0], []).
+			build();
+
+		/////////////
+		// Anchors
+
+		// Define below the fold leaderboard sizes
+		// Video pages, hub pages, article pages, gallery landing pages, gallery slideshow pages
+		//
+		var a_anchor_btf = googletag.sizeMapping().
+			addSize([1600, 0], [728,  90]).
+			addSize([1100, 800], [728,  90]).
+			addSize([1100, 0], [728,  90]).
+			addSize([768, 0], [728,  90]).
+			addSize([300, 0], [[300, 50], [320, 50]]).
+			addSize([0, 0], []).
+			build();
+
+		// Define below the fold leaderboard sizes
+		// Homepage
+		//
+		var b_anchor_btf = googletag.sizeMapping().
+			addSize([1600, 0], [728, 90]).
+			addSize([1100, 800],[728, 90]).
+			addSize([1100, 0], [728, 90]).
+			addSize([768, 0], [728, 90]).
+			addSize([300, 0], [[300, 50], [320, 50]]).
+			addSize([0, 0], [[300, 50], [320, 50]]).
+			build();
+
+		/////////////
+		// Medium ATF
+
+		// Define above the fold medium rectangle sizes
+		// Video pages
+		//
+		var a_medium_atf = googletag.sizeMapping().
+			addSize([1600, 0], [[300, 600], [300, 250]]).
+			addSize([1100, 800], [[300, 600], [300, 250]]).
+			addSize([1100, 0], [[300, 600], [300, 250]]).
+			addSize([768, 0], [300, 250]).
+			addSize([300, 0], [300, 250]).
+			addSize([0, 0], []).
+			build();
+
+		// Define above the fold medium rectangle sizes
+		// Homepage, hub pages
+		//
+		var b_medium_atf = googletag.sizeMapping().
+			addSize([1600, 0], [[300, 600], [300, 250]]).
+			addSize([1100, 800], [[300, 600], [300, 250]]).
+			addSize([1100, 0], [[300, 600], [300, 250]]).
+			addSize([768, 0], [300, 250]).
+			addSize([300, 0], [300, 250]).
+			addSize([0, 0], []).
+			build();
+
+		// Define above the fold medium rectangle sizes
+		// Article and gallery landing pages
+		//
+		var c_medium_atf = googletag.sizeMapping().
+			addSize([1600, 0], [[300, 1050], [300, 600], [300, 250]]).
+			addSize([1100, 800], [[300, 1050], [300, 600], [300, 250]]).
+			addSize([1100, 0], [300, 250]).
+			addSize([768, 0], [[300, 600], [300, 250]]).
+			addSize([300, 0], [300, 250]).
+			addSize([0, 0], []).
+			build();
+
+		// Define above the fold medium rectangle sizes
+		// Gallery slideshow pages
+		//
+		var d_medium_atf = googletag.sizeMapping().
+			addSize([1600, 0], [[300, 600], [300, 250]]).
+			addSize([1100, 800], [[300, 600], [300, 250]]).
+			addSize([1100, 0], [300, 250]).
+			addSize([768, 0], [[300, 250], [320, 250]]).
+			addSize([300, 0], [[300, 250], [320, 250]]).
+			addSize([0, 0], []).
+			build();
+
+		/////////////
+		// Medium BTF
+
+		// Define first below the fold medium rectangle sizes
+		// Video pages, hub pages, article pages, gallery landing, gallery slideshow
+		//
+		var a_medium_btf = googletag.sizeMapping().
+			addSize([1600, 0], [300, 250]).
+			addSize([1100, 800], [300, 250]).
+			addSize([1100, 0], [300, 250]).
+			addSize([768, 0], [300, 250]).
+			addSize([300, 0], [300, 250]).
+			addSize([0, 0], []).
+			build();
+
+		// Define first below the fold medium rectangle sizes
+		// Homepage, hub pages, article pages, gallery landing pages, gallery slideshow pages
+		//
+		var b_medium_btf = googletag.sizeMapping().
+			addSize([1600, 0], [300, 250]).
+			addSize([1100, 800], [300, 250]).
+			addSize([1100, 0], [300, 250]).
+			addSize([768, 0], [300, 250]).
+			addSize([300, 0], [[300, 250], [320, 250]]).
+			addSize([0, 0], []).
+			build();
+
+		// Define above the below medium rectangle sizes
+		// Homepage 2nd & 3rd btf
+		//
+		var x_medium_btf = googletag.sizeMapping().
+			addSize([1600, 0], [300, 250]).
+			addSize([1100, 800], [300, 250]).
+			addSize([1100, 0], [300, 250]).
+			addSize([768, 0], [300, 250]).
+			addSize([300, 0], [[300, 250], [320, 250]]).
+			addSize([0, 0], []).
+			build();
+
+		// Define page skin sizes
+		// All pages
+		//
+		var page_skin = googletag.sizeMapping().
+			addSize([1600, 0], [1,1]).
+			addSize([1100, 800], [1,2]).
+			addSize([1100, 0], [1,2]).
+			addSize([768, 0], [1,3]).
+			addSize([300, 0], [1,4]).
+			addSize([0, 0], []).
+			build();
+
+		/* GPT setting ad slots by position
+		* Assigns the ad to slot according to the above build definitions
+		*
+		*  Slots:
+		*  0 - skin - 857262748
+		*  1 - leaderboard atf - 392701254
+		*  2 - medium atf - 620363872
+		*  3 - medium btf - 222786677
+		*  6 - medium btf 2 - 664844754
+		*  8 - medium btf 3 - 870347650
+		*  4 - leaderboard btf - 863797748
+		*
+		*/
+
+
+		/*
+	* skin slot defined
+	*/
+
+    window.slot1 = googletag.defineSlot('/4840/etonline.com/news/article', [1, 1], 'div-gpt-ad-etonline-857262748-0')
+            .defineSizeMapping(page_skin)
+            .addService(googletag.pubads())
+            .setTargeting("pos",["skin"]);
+        
+		/*
+	* leaderboard atf slot defined
+	*/
+
+    window.slot2 = googletag.defineSlot('/4840/etonline.com/news/article', [[970, 90], [728, 90],[970, 250]], 'div-gpt-ad-etonline-392701254-1')
+            .defineSizeMapping(a_header_atf)
+            .addService(googletag.pubads())
+            .setTargeting("pos",["atf", "header"]);
+        
+		/*
+	* medrec atf slot defined
+	*/
+
+    window.slot3 = googletag.defineSlot('/4840/etonline.com/news/article', [[300, 1050], [300, 600], [300, 250]], 'div-gpt-ad-etonline-620363872-2')
+            .defineSizeMapping(c_medium_atf)
+            .addService(googletag.pubads())
+            .setTargeting("pos",["atf", "a"]);
+        
+		/*
+	* medrec btf slot defined
+	*/
+
+    window.slot4 = googletag.defineSlot('/4840/etonline.com/news/article', [300, 250], 'div-gpt-ad-etonline-222786677-3')
+            .defineSizeMapping(b_medium_btf)
+            .addService(googletag.pubads())
+            .setTargeting("pos",["btf", "b"]);
+        
+		/*
+	* leaderboard btf slot defined
+	*/
+
+    window.slot5 = googletag.defineSlot('/4840/etonline.com/news/article', [728, 90], 'div-gpt-ad-etonline-863797748-4')
+            .defineSizeMapping(a_anchor_btf)
+            .addService(googletag.pubads())
+            .setTargeting("pos",["btf","anchor"]);
+        
+    googletag.defineOutOfPageSlot('/4840/etonline.com', 'div-gpt-ad-1476376122792-oop')
+            .addService(googletag.pubads());
+
+	// Start ad fetching
+	googletag.pubads().set("page_url", "http://www.etonline.com/news/209668_vanessa_hudgens_the_queen_of_coachella_gushes_about_pregnant_beyonce_headlining_the_show/");
+	googletag.pubads().collapseEmptyDivs(true,true);
+	googletag.pubads().setTargeting("node","209668");
+	googletag.pubads().setTargeting("tag",["beyonce","beyonce coachella","ellen degeneres","vanessa hudgens"]);
+	googletag.pubads().setTargeting("kw",["beyonce","beyonce coachella","ellen degeneres","vanessa hudgens"]);
+	googletag.pubads().setTargeting("category",["News"]);
+	googletag.pubads().setTargeting("page_type","Article");
+	googletag.pubads().setTargeting("vguid",site.viewguid);
+if (site.campaign !== false) {
+	googletag.pubads().setTargeting("ftag",site.campaign);
+}
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+	Headertag_pretag_queue.push(function() { headertag.retrieve_demand() });
+});
+</script>
+
+<script type="text/javascript" src="//native.sharethrough.com/assets/sfp.js"></script>
+
+<!-- Sharethis footer script -->
+	<script type="text/javascript">
+		var switchTo5x=true;
+		(function() {
+			var stscr = document.createElement('script'); stscr.type = 'text/javascript'; stscr.async = true;
+			stscr.src ="http://w.sharethis.com/button/buttons.js";
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(stscr, s);
+			stscr.onload=stCB;
+			stscr.onreadystatechange=function(){if(stscr.readyState=='loaded'){stCB();}};})();
+		function stCB(){
+			stLight.options({
+				publisher: "ab4e7516-48e4-4103-93e0-88d13f006887",
+				popup:true,
+				servicePopup: true,
+				doNotHash: true,
+				doNotCopy: false,
+				shorten:false,
+				hashAddressBar: false
+			});
+		}
+	</script>
+<!-- Sharethis footer script -->
+
+        <script type="application/ld+json">
+{"@context":"http:\/\/schema.org","datePublished":"2017-02-07 06:24:00","dateModified":"2017-02-07 11:00:31","headline":"Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show","alternativeHeadline":"Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show","description":"Spoiler alert: She&rsquo;s pumped!","publisher":{"@type":"Organization","name":"ETOnline","logo":{"@type":"ImageObject","url":"http:\/\/www.etonline.com\/global\/public\/images\/etlogo.png","width":60,"height":60}},"mainEntityOfPage":{"@type":"WebPage"},"keywords":["beyonce","beyonce coachella","ellen degeneres","vanessa hudgens"],"@type":"NewsArticle","author":{"@type":"Person","name":"Rachel McRady"},"image":{"@type":"ImageObject","url":"http:\/\/www.etonline.com\/media\/video\/2017\/02\/24306951\/hudgens_vidpic_020717_1280Copy.jpg","height":720,"width":1280},"articleSection":"News","url":"http:\/\/www.etonline.com\/news\/209668_vanessa_hudgens_the_queen_of_coachella_gushes_about_pregnant_beyonce_headlining_the_show\/","articleBody":"No one loves Coachella more than Vanessa Hudgens! The Powerless star, 28, has been named the \u201cQueen of Coachella\u201d by fans obsessed with her boho-chic ensembles at the annual music festival. \r\nWATCH: EXCLUSIVE: Beyonce to Perform at 2017 GRAMMY Awards After Announcing She's Pregnant With Twins\r\n\u201cThey\u2019re not outrageous. They\u2019re bohemian,\u201d Hudgens insisted to Ellen DeGeneres during Tuesday\u2019s show. \u201cI mean, like, that I couldn\u2019t wear to the grocery store, which is why I love Coachella because it gives you an excuse to wear things you wouldn\u2019t normally wear.\u201d In addition to her fashion opportunities, Hudgens is also excited to see the big names performing at this year\u2019s show. While she \u201cloves\u201d Radiohead, the Disney alum is most looking forward to Beyonce. \r\n\u201cI\u2019m really stoked for all the headliners,\u201d she said. \u201cI\u2019m excited to see how Beyonce\u2019s going to perform with twins. I mean, she\u2019ll kill it, because she\u2019s Beyonce. So her, [I\u2019m] very excited for that.\u201d\r\nBeyonce announced last week that she is pregnant with twins, but has not clarified what this will mean for the April festival. WATCH: Vanessa Hudgens and Jimmy Fallon Celebrate NBC's Thursday Nights With a 'Friends' Duet \r\nOne performance that is definitely on the lineup is Bey\u2019s GRAMMY appearance. ET exclusively revealed that the pregnant \u201cFormation\u201d singer will return to the GRAMMY stage. She is nominated for nine GRAMMYs this year for her album, Lemonade. \r\nFor more on Beyonce\u2019s pregnancy news, watch the clip below! "}</script></head>
+<body class="story-page">
+<!-- Declare Tealium Analytics -->
+<script type="text/javascript">
+
+var viewGuid = utag_data={
+    pageViewGuid: site.viewguid
+};
+
+(function(a,b,c,d){
+    b=document;c="script";d=b.createElement(c);d.src="//tags.tiqcdn.com/utag/cbsi/"+a+"/prod/utag.js";
+    d.type="text/java"+c;d.async=!!c;c=b.getElementsByTagName(c)[0];c.parentNode.insertBefore(d,c);
+})("etonlinesite");
+
+</script>
+<div class="ad_oop">
+    <div id="div-gpt-ad-etonline-857262748-0">
+    </div>
+    <div id='div-gpt-ad-1476376122792-oop'>
+    </div></div>
+<div id="fb-root"></div>
+
+    <script>
+        window.MegaNav = window.MegaNav || {};
+        var json = '{"latestStories":{"category":{"GALLERY":{"story":[{"imgSrc":"\/gallery\/2017\/05\/24328321\/300_ryan_reynolds_blake_lively_GettyImages-675604996.jpg","post_url":"\/gallery\/216458_2017_met_gala_red_carpet_arrivals\/","type":"g","headline":"2017 Met Gala: Red Carpet Arrivals"},{"imgSrc":"\/photo\/2017\/05\/24328024\/elle_susan_naomi_300_675283.jpg","post_url":"\/gallery\/214251_star_sightings_april_2017\/","type":"g","headline":"Star Sightings: April 2017"},{"imgSrc":"\/photo\/2017\/04\/24327741\/family_matters_300.jpg","post_url":"\/gallery\/201803_cue_the_nostalgia_favorite_tv_reunions\/","type":"g","headline":"Cue the Nostalgia! Favorite TV Reunions"},{"imgSrc":"\/photo\/2017\/04\/24327382\/300_kobe_bryant_baby_bianka_instagram.jpg","post_url":"\/gallery\/211137_cutest_celeb_kids_2017\/","type":"g","headline":"Celebs Share Pics of Their Cute Kids"},{"imgSrc":"\/photo\/2017\/04\/24327373\/300_eva_longoria_ricky_martin_instagram.jpg","post_url":"\/gallery\/150597_star_shots_what_on_instagram\/","type":"g","headline":"Star Shots: What&apos;s On Instagram and Snapchat?"}]},"AWARDS":{"story":[{"imgSrc":"\/photo\/2017\/05\/24328203\/300_celine_dion_drake_bruno_mars_split_getty.jpg","post_url":"\/awards\/216463_celine_dion_drake_bruno_mars_and_more_to_perform_at_the_2017_billboard_music_awards\/","type":"a","headline":"Celine Dion, Drake, Bruno Mars and More to Perform at the 2017 Billboard Music Awards"},{"imgSrc":"\/media\/video\/2017\/04\/24327963\/nickjobrobro_300.jpg","post_url":"\/awards\/216400_nick_jonas_honored_at_2017_radio_disney_music_awards_shares_inspirational_speech_about_being_a_hero\/","type":"v","headline":"Nick Jonas Honored at 2017 Radio Disney Music Awards, Shares Inspirational Speech About Being a Hero"},{"imgSrc":"\/photo\/2017\/05\/24328038\/nancy_kevin_300_675316088.jpg","post_url":"\/awards\/216296_entertainment_tonight_wins_its_3rd_daytime_emmy_award\/","type":"a","headline":"&apos;Entertainment Tonight&apos; Wins Its 3rd Daytime Emmy Award!"},{"imgSrc":"\/media\/video\/2017\/04\/24328004\/et_043017_MaryHartAward300.png","post_url":"\/awards\/216295_mary_hart_receives_lifetime_achievement_award\/","type":"v","headline":"Mary Hart Receives Lifetime Achievement Award at the 2017 Daytime Emmys!"},{"imgSrc":"\/photo\/2017\/04\/24327899\/300_britney_spears_Getty674954176.png","post_url":"\/awards\/216358_2017_radio_disney_music_awards_the_compete_winners_list\/","type":"a","headline":"2017 Radio Disney Music Awards: The Complete Winners List"}]},"MUSIC":{"story":[{"imgSrc":"\/photo\/2017\/05\/24328203\/300_celine_dion_drake_bruno_mars_split_getty.jpg","post_url":"\/awards\/216463_celine_dion_drake_bruno_mars_and_more_to_perform_at_the_2017_billboard_music_awards\/","type":"a","headline":"Celine Dion, Drake, Bruno Mars and More to Perform at the 2017 Billboard Music Awards"},{"imgSrc":"\/media\/video\/2017\/04\/24326339\/glamma_300.jpg","post_url":"\/fashion\/216441_tina_knowles_shares_adorable_snap_of_blue_ivy_and_solange_showing_texas_love\/","type":"v","headline":"Tina Knowles Shares Adorable Snap of Blue Ivy and Solange Showing Texas Love -- See the Cute Pic!"},{"imgSrc":"\/photo\/2017\/04\/24327899\/300_britney_spears_Getty674954176.png","post_url":"\/awards\/216358_2017_radio_disney_music_awards_the_compete_winners_list\/","type":"a","headline":"2017 Radio Disney Music Awards: The Complete Winners List"},{"imgSrc":"\/media\/video\/2017\/04\/24327940\/sosoravenone_300.jpg","post_url":"\/news\/216355_exclusive_raven_symone_says_she_still_keeps_in_touch_with_her_former_view_co_stars_it_bittersweet\/","type":"v","headline":"EXCLUSIVE: Raven-Symone Says She Still Keeps In Touch With Her Former &apos;View&apos; Co-Stars: &apos;It&apos;s Bittersweet&apos;"},{"imgSrc":"\/media\/video\/2017\/04\/24327974\/et_043017_ThatsSoRaven300.png","post_url":"\/awards\/216346_raven_symone_hits_the_radio_disney_music_awards_red_carpet_with_the_cast_of_raven_home\/","type":"v","headline":"Raven-Symone Hits the Radio Disney Music Awards Red Carpet With the Cast of &apos;Raven&apos;s Home&apos;"}]},"TV":{"story":[{"imgSrc":"\/media\/video\/2017\/05\/24328222\/et_CameronINTV_050117_300.jpg","post_url":"\/tv\/216460_exclusive_southern_charm_landon_clements_on_thomas_ravenel_relationship\/","type":"v","headline":"EXCLUSIVE: \u2018Southern Charm\u2019 Star Landon Clements Addresses Thomas Ravenel Romance Rumors -- Are They Dating?"},{"imgSrc":"\/media\/video\/2017\/04\/24327189\/kevin_vidpic_042617_300.jpg","post_url":"\/tv\/216457_exclusive_leah_remini_and_kevin_james_reunite_for_kevin_can_wait\/","type":"v","headline":"EXCLUSIVE: Kevin James and Leah Remini Talk &apos;King of Queens&apos; Reunion on &apos;Kevin Can Wait&apos;"},{"imgSrc":"\/photo\/2017\/05\/24328020\/kelly_ripa_ryan_seacrest_30.jpg","post_url":"\/tv\/216443_kelly_ripa_live_guest_co_hosts_react_to_ryan_seacrest_news\/","type":"a","headline":"Kelly Ripa&apos;s &apos;Live!&apos; Guest Co-Hosts React to Ryan Seacrest News"},{"imgSrc":"\/photo\/2016\/11\/24285062\/megyn_kelly_300_519451682.jpg","post_url":"\/tv\/216442_megyn_kelly_set_to_go_up_against_kelly_ripa_with_new_morning_show\/","type":"a","headline":"Megyn Kelly Set to Go Up Against Kelly Ripa With New Morning Show -- See Her First Day at NBC!"},{"imgSrc":"\/media\/video\/2017\/05\/24328164\/et_KellyRyanPresser_050117_300.jpg","post_url":"\/tv\/216434_kelly_ripa_reveals_she_talked_to_ryan_seacrest_about_hosting_live_almost_a_decade_ago\/","type":"v","headline":"Kelly Ripa Reveals She Talked to Ryan Seacrest About Hosting &apos;Live!&apos; Almost a Decade Ago: &apos;There&apos;s Nobody Better&apos;"}]},"VIDEO":{"story":[{"imgSrc":"\/media\/video\/2017\/05\/24328214\/300_a07_metgala_050117.jpg","post_url":"\/media\/video\/met_gala_2017_stars_nyc_prep_for_fashion_biggest_night-216454\/","type":"v","headline":"Met Gala 2017: Stars in NYC Prep for Fashion&apos;s Biggest Night"},{"imgSrc":"\/media\/video\/2017\/05\/24328226\/300_et_intv_lavernecox_050117.png","post_url":"\/media\/video\/exclusive_laverne_cox_teases_fear_and_mourning_oitnb_season_5_chaos_ensues-216461\/","type":"v","headline":"EXCLUSIVE: Laverne Cox Teases &apos;Fear and Mourning&apos; in &apos;OITNB&apos; Season 5: &apos;Chaos Ensues&apos; "},{"imgSrc":"\/media\/video\/2017\/05\/24328185\/300_c04_kateupton_050117.jpg","post_url":"\/media\/video\/exclusive_kate_upton_reveals_just_how_sexy_her_wedding_dress_will_be-216451\/","type":"v","headline":"EXCLUSIVE: Kate Upton Reveals Just How Sexy Her Wedding Dress Will Be"},{"imgSrc":"\/media\/video\/2017\/05\/24328193\/300_c02_juliannehough_050117.jpg","post_url":"\/media\/video\/exclusive_julianne_hough_shares_her_3_wedding_must_haves-216452\/","type":"v","headline":"EXCLUSIVE: Julianne Hough Shares Her 3 Wedding Must-Haves"},{"imgSrc":"\/media\/video\/2017\/05\/24328206\/300_a09_britney_050117.jpg","post_url":"\/media\/video\/britney_spears_gets_a_major_surprise_during_radio_disney_icon_award_tribute-216453\/","type":"v","headline":"Britney Spears Gets a Major Surprise During Radio Disney Icon Award Tribute"}]},"MOVIES":{"story":[{"imgSrc":"\/news\/2017\/01\/24297611\/300_Amy_Schumer_Goldie_Hawn.jpg","post_url":"\/news\/216432_amy_schumer_shares_how_goldie_hawn_didn_t_recognize_her_after_a_flight_together\/","type":"a","headline":"Amy Schumer Shares How Goldie Hawn Didn\u2019t Recognize Her After a Flight Together!"},{"imgSrc":"\/news\/2017\/05\/24328111\/300_brie_larson_academy_awards_2016.jpg","post_url":"\/news\/216430_exclusive_brie_larson_on_free_fire_life_as_an_oscar_winner\/","type":"a","headline":"EXCLUSIVE: Brie Larson Will Use Her Powers for Good: On Life as an Oscar Winner and Embracing Intersectionality"},{"imgSrc":"\/media\/video\/2017\/04\/24325166\/et_intv_john_boyega_swc_041717_3001.jpg","post_url":"\/movies\/216323_john_boyega_got_dumped_because_of_star_wars\/","type":"v","headline":"John Boyega Says &apos;Star Wars&apos; Ruined a Potential Relationship: &apos;I Blocked Her on My Phone&apos;"},{"imgSrc":"\/media\/video\/2016\/06\/24248696\/et_ff_showclip_062216_300.jpg","post_url":"\/movies\/216224_fast_and_furious_to_receive_generation_award_mtv_movie_and_tv_awards\/","type":"v","headline":"&apos;Fast & Furious&apos; Franchise to Receive Generation Award at 2017 MTV Movie & TV Awards"},{"imgSrc":"\/movies\/2017\/04\/24327512\/300_SCARJO_GRANDMA_SPLIT.jpg","post_url":"\/movies\/216221_scarlett_johansson_blown_away_by_lookalike_grandma_invites_her_out_for_drinks\/","type":"a","headline":"Scarlett Johansson Blown Away by Look-Alike Grandma, Invites Her Out for Drinks"}]},"FEATURES":{"story":[{"imgSrc":"\/features\/2017\/04\/24327720\/300_fullfrontal_tbs.jpg","post_url":"\/features\/216294_the_necessary_urgency_of_full_frontal_with_samantha_bee\/","type":"a","headline":"EXCLUSIVE: The Necessary Urgency of \u2018Full Frontal With Samantha Bee\u2019"},{"imgSrc":"\/features\/2017\/04\/24327717\/300_ricky_whittle_getty.jpg","post_url":"\/features\/216293_ricky_whittle_on_the_100_drama_and_karma_on_american_gods\/","type":"a","headline":"EXCLUSIVE: How \u2018American Gods\u2019 Star Ricky Whittle Found Karma Following Drama on \u2018The 100\u2019 Set"},{"imgSrc":"\/media\/video\/2017\/04\/24327293\/300_ellen_flashback_042617.jpg","post_url":"\/features\/216195_ellen_degeneres_on_impact_of_the_ellen_coming_out_episode\/","type":"v","headline":"FLASHBACK: Ellen DeGeneres on Impact of the \u2018Ellen\u2019 Coming Out Episode"},{"imgSrc":"\/features\/2017\/04\/24327444\/300_eugineo_derbez_features_getty.jpg","post_url":"\/features\/216192_eugenio_derbez_talks_how_to_be_a_latin_lover_and_hollywood_breakthrough\/","type":"a","headline":"EXCLUSIVE: How Eugenio Derbez Is Becoming a Hollywood Power Player"},{"imgSrc":"\/media\/video\/2017\/04\/24326351\/300_et_returnofthemac_042117.png","post_url":"\/features\/215684_exclusive_joey_mcintyre_on_burying_the_hatchet_with_donnie_wahlberg_wishing_he_was_joey_fatone\/","type":"v","headline":"EXCLUSIVE: Joey McIntyre on Burying the Hatchet With Donnie Wahlberg & Wishing He Was Joey Fatone"}]},"NEWS":{"story":[{"imgSrc":"\/photo\/2017\/05\/24328315\/300_Selena_Gomez-TheWeeknd_GettyImages-675603550.jpg","post_url":"\/news\/216476_selena_gomez_the_weeknd_met_gala\/","type":"a","headline":"Selena Gomez and The Weeknd Look Crazy in Love While Making Red Carpet Debut at Met Gala - See the Pics! "},{"imgSrc":"\/photo\/2017\/05\/24328296\/300_kendall_jenner_GettyImages-675600056.jpg","post_url":"\/fashion\/216477_kendall_jenner_shows_off_bare_butt_sheer_dress_at_the_met_gala_see_the_pics\/","type":"a","headline":"Kendall Jenner Shows Off Bare Butt in Sheer Dress at the Met Gala -- See the Pics!"},{"imgSrc":"\/media\/photo\/2017\/05\/24328283\/set_priyanka_chopra_JuneCover_square.jpg","post_url":"\/news\/216475_priyanka_chopra_says_she_once_left_the_us_for_india_because_of_bullying_she_made_my_life_hell\/","type":"a","headline":"Priyanka Chopra Says She Once Left the U.S. for India Because of Bullying: &apos;She Made My Life Hell&apos;"},{"imgSrc":"\/photo\/2017\/05\/24328260\/300_kylie_jenner_getty_675591264.jpg","post_url":"\/fashion\/216472_kylie_jenner_rocks_short_blonde_bob_rose_gold_dress_at_2017_met_gala\/","type":"a","headline":"Kylie Jenner Rocks Short Blonde Bob, Rose Gold Dress at 2017 Met Gala - See the Dazzling Look!"},{"imgSrc":"\/photo\/2017\/05\/24328265\/300_jaden_smith_GettyImages-675591406.jpg","post_url":"\/fashion\/216473_jaden_smith_carries_a_handful_of_his_own_dreadlocks_on_the_met_gala_red_carpet\/","type":"a","headline":"Jaden Smith Carries a Handful of His Own Dreadlocks on the Met Gala Red Carpet"}]},"FASHION":{"story":[{"imgSrc":"\/photo\/2017\/05\/24328306\/300_jennifer_lopez_alex_rodriguez_getty675600656.jpg","post_url":"\/fashion\/216478_jennifer_lopez_and_alex_rodriguez_make_red_carpet_debut_as_a_couple_at_2017_met_gala\/","type":"a","headline":"Jennifer Lopez & Alex Rodriguez Make Red Carpet Debut as a Couple at Met Gala, Singer Slays in &apos;60s Glam Look"},{"imgSrc":"\/photo\/2017\/05\/24328296\/300_kendall_jenner_GettyImages-675600056.jpg","post_url":"\/fashion\/216477_kendall_jenner_shows_off_bare_butt_sheer_dress_at_the_met_gala_see_the_pics\/","type":"a","headline":"Kendall Jenner Shows Off Bare Butt in Sheer Dress at the Met Gala -- See the Pics!"},{"imgSrc":"\/photo\/2017\/05\/24328260\/300_kylie_jenner_getty_675591264.jpg","post_url":"\/fashion\/216472_kylie_jenner_rocks_short_blonde_bob_rose_gold_dress_at_2017_met_gala\/","type":"a","headline":"Kylie Jenner Rocks Short Blonde Bob, Rose Gold Dress at 2017 Met Gala - See the Dazzling Look!"},{"imgSrc":"\/photo\/2017\/05\/24328265\/300_jaden_smith_GettyImages-675591406.jpg","post_url":"\/fashion\/216473_jaden_smith_carries_a_handful_of_his_own_dreadlocks_on_the_met_gala_red_carpet\/","type":"a","headline":"Jaden Smith Carries a Handful of His Own Dreadlocks on the Met Gala Red Carpet"},{"imgSrc":"\/photo\/2017\/05\/24328253\/300_priyanka_chopra_nick_jonas_Getty675589670.jpg","post_url":"\/fashion\/216471_priyanka_chopra_wears_show_stopping_trench_coat_to_the_met_gala\/","type":"a","headline":"Priyanka Chopra Wears Show-Stopping Trench Coat to the Met Gala, Poses With Nick Jonas on the Red Carpet"}]}}}}';
+        window.MegaNav.json = json;
+    </script>
+    <nav id="nav">
+        <div class="container-fluid no-padding">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <button type="button" id="mobile-menu" class="navbar-toggle collapsed pull-left" data-target=".navHeaderCollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span id="toggle-menu" class="icon-menu-light"></span>
+                    </button>
+                    <a href="#" id="close-btn" class="icon-close-X"></a>
+                    <a class="brand" href="/">
+                        <img src="/global/public/images/ETLogo.svg" alt="logo">
+                    </a>
+                    <ul class="mobile-nav social-links slide-in-fade">
+                        <li>
+                            <span class="st_facebook_large icon-facebook social-img" displaytext="Facebook"></span>
+                        </li>
+                        <li> 
+                            <span class="st_twitter_large icon-twitter social-img" st_via="etnow" displaytext="Twitter"></span>
+                        </li>
+                        <li>
+                            <span class="st_whatsapp_large icon-whatsapp social-img" displaytext="WhatsApp"></span>
+                        </li>
+                        <li>
+                            <span class="st_email_large icon-email20 social-img" displaytext="Email"></span>
+                        </li>
+                    </ul>
+                    <div id="collapsed-search-nav" class="navbar-toggle collapsed pull-right search-trigger">
+                        <div class="search-slide" style="width: initial;">
+                            <div id="search-collapsed" class="search">
+                                <form action="/search/" method="GET" id="cse-search-box" class="navbar-form navbar-left" role="search">
+                                    <input class="search-input" placeholder="Search" type="text" value="" name="q" id="search" maxlength="50">
+                                    <input class="search-submit" type="submit" value="">
+                                    <span class="icon-search"> 
+                                        <span id="collapsed-search" class="icon-magnifying-glass2"></span>
+                                    </span>
+                                </form>
+                            </div>
+                        </div><!-- /search-slide -->
+                    </div><!--/collapsed-search-nav -->
+                </div><!-- /navbar header -->
+                <div id="nav-content" class="navbar-collapse collapse navHeaderCollapse no-transition">
+                    <ul id="mobile-dropdown" class="nav navbar-nav navbar-left visible-nav-xs">
+						<li class="mobile-dd"><a href="/" class="mobile-dd-link">HOME</a></li>
+                        <li class="mobile-dd"><a href="/news" class="mobile-dd-link">NEWS</a></li>
+                        <li class="mobile-dd"><a href="/video" class="mobile-dd-link">VIDEO</a></li>
+						<li class="mobile-dd"><a href="/gallery" class="mobile-dd-link">PHOTOS</a></li>
+						<li class="mobile-dd"><a href="/tv" class="mobile-dd-link">TV</a></li>
+						<li class="mobile-dd"><a href="/movies" class="mobile-dd-link">MOVIES</a></li>
+						<li class="mobile-dd"><a href="/music" class="mobile-dd-link">MUSIC</a></li>
+						<li class="mobile-dd"><a href="/fashion" class="mobile-dd-link">FASHION</a></li>                        
+                        <li class="mobile-dd"><a href="/awards" class="mobile-dd-link">AWARDS</a></li>
+                        <li class="mobile-dd"><a href="/tag/celebs/" class="mobile-dd-link">CELEBS</a></li>                        					
+						<li class="watch-et">
+                            <a href="/showfinder" class="watch-et-link">
+                                <span class="icon-tv"></span>
+                                <span id="watch-rach-txt">WATCH ET</span>
+                            </a>
+									<div class="mobile-dd social-icon socialnavdisp tumblr">
+										<a href="http://entertainmenttonight.tumblr.com/" class="social-icon-link" title="Tumble" target="_blank"><span class="icon-tumblr18"></span></a>
+									</div>
+									<div class="mobile-dd social-icon socialnavdisp twitter">
+										<a href="https://twitter.com/etnow" class="social-icon-link" title="Twitter" target="_blank"><span class="icon-twitter"></span></a>
+									</div>									
+									<div class="mobile-dd social-icon socialnavdisp">
+										<a href="http://instagram.com/entertainmenttonight" class="social-icon-link" title="Instagram" target="_blank"><span class="icon-instagram"></span></a>
+									</div>
+									<div class="mobile-dd social-icon socialnavdisp">
+										<a href="http://www.facebook.com/EntertainmentTonight" class="social-icon-link" title="Facebook" target="_blank"><span class="icon-facebook"></span></a>
+									</div>									
+                            </li>
+							<li class="mobile-dd social-icon fb hidden-xs">
+								<a href="http://www.facebook.com/EntertainmentTonight" class="social-icon-link" title="Facebook" target="_blank"><span class="icon-facebook"></span></a>
+							</li>
+							<li class="mobile-dd social-icon hidden-xs">
+								<a href="http://instagram.com/etonline" class="social-icon-link" title="Instagram" target="_blank"><span class="icon-instagram"></span></a>
+							</li>
+							<li class="mobile-dd social-icon hidden-xs">
+								<a href="https://twitter.com/etnow" class="social-icon-link" title="Twitter" target="_blank"><span class="icon-twitter"></span></a>
+							</li>
+							<li class="mobile-dd social-icon hidden-xs">
+								<a href="http://entertainmenttonight.tumblr.com/" class="social-icon-link" title="Tumble" target="_blank"><span class="icon-tumblr18"></span></a>
+							</li>
+                    </ul>
+                    <div id="nav-skinny" class="clearfix hidden-nav-xs">
+                        <ul id="skinny-list" class="nav navbar-nav hidden-nav-xs">
+                            <li id="sections-menu" class="dropdown br">
+                                <a href="#" id="mega-nav-open" class="dropdown-toggle link">
+                                    SECTIONS
+                                </a>
+                                <nav id="mega-nav" class="dropdown-menu mega">
+                                    <div id="mega-nav-wrapper">
+                                        <a href="#" class="mega-nav-close"><span class="icon-Desktop-close-button"></span></a>
+                                        <ul id="mega-list">
+                                            <li class="mega-item"><a href="/news" class="mega-link" data-category="NEWS">NEWS</a></li>
+                                            <li class="mega-item"><a href="/video" class="mega-link" data-category="VIDEO">VIDEO</a></li>
+                                            <li class="mega-item"><a href="/gallery" class="mega-link" data-category="GALLERY">PHOTOS</a></li>
+                                            <li class="mega-item"><a href="/tv" class="mega-link" data-category="TV">TV</a></li>
+                                            <li class="mega-item"><a href="/movies" class="mega-link" data-category="MOVIES">MOVIES</a></li>
+                                            <li class="mega-item"><a href="/music" class="mega-link" data-category="MUSIC">MUSIC</a></li>
+                                            <li class="mega-item"><a href="/fashion" class="mega-link" data-category="FASHION">FASHION</a></li>
+                                            <li class="mega-item"><a href="/awards" class="mega-link" data-category="AWARDS">AWARDS</a></li>
+                                            <li class="mega-item"><a href="/tag/celebs/" class="mega-link" data-category="CELEBS">CELEBS</a></li>
+                                        </ul>
+                                        <div id="story-feed" class="hidden-sm">
+                                            <!-- Handlebars template:-->
+                                            <script id="latestNews-template" type="text/x-handlebars-template"></script>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </li>
+                            <li class="skinny-item showlink"><a href="/news" class="link">NEWS</a></li>
+                            <li class="skinny-item showlink"><a href="/video" class="link">VIDEO</a></li>
+                            <li class="skinny-item showlink"><a href="/gallery" class="link">PHOTOS</a></li>
+                            <li class="skinny-item showlinkmore"><a href="/tv" class="link">TV</a></li>
+                            <li class="skinny-item showlinkmore"><a href="/movies" class="link">MOVIES</a></li>
+                            <li class="skinny-item showlinkmore"><a href="/music" class="link">MUSIC</a></li>
+                        </ul>
+                        <ul id="skinny-list-aux" class="nav navbar-nav pull-right hidden-xs">
+                            <li id="skinny-search" class="skinny-item-aux">
+                               <div class="search-slide" style="width: initial;">
+                                <div id="search-full" class="search">
+                                    <form action="/search/" id="cse-search-box" method="GET" class="navbar-form navbar-left" role="search">
+                                        <input class="search-input" placeholder="Search" type="text" value="" name="q" id="search" maxlength="49">
+                                        <input class="search-submit" type="submit" value="SUBMIT">
+                                        <span class="icon-search"> 
+                                            <span id="collapsed-search" class="icon-magnifying-glass2"></span>
+                                        </span>
+                                    </form>
+                                </div><!-- /search-full -->
+                            </div><!-- /search-slide -->
+                            </li>
+                            <li id="watch-et" class="skinny-item-aux br bl">
+                                <a href="/showfinder" class="link">
+                                    <span class="icon-tv"></span><span id="watch-et-txt"> WATCH ET</span>
+                                </a>
+                            </li>
+                            <li class="social-icon skinny-item-aux fb">
+                                <a href="http://www.facebook.com/EntertainmentTonight" class="social-icon-link facebook" title="Facebook" target="_blank"><span class="icon-facebook"></span></a>
+                            </li>
+                            <li class="social-icon skinny-item-aux">
+                                <a href="http://instagram.com/entertainmenttonight" class="social-icon-link instagram" title="Instagram" target="_blank"><span class="icon-instagram"></span></a>
+                            </li>
+                            <li class="social-icon skinny-item-aux">
+                                <a href="https://twitter.com/etnow" class="social-icon-link twitter" title="Twitter" target="_blank"><span class="icon-twitter"></span></a>
+                            </li>
+                            <li class="social-icon skinny-item-aux">
+                                <a href="http://entertainmenttonight.tumblr.com/" class="social-icon-link tumblr" title="Tumblr" target="_blank"><span class="icon-tumblr18"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul id="trending" class="hidden-nav-xs">
+                       <li class="trending-item heading fade-in">
+                            <span class="icon-trending-flag"></span>
+                            <span class="txt">TRENDING</span>
+                        </li>
+                  
+                        <li class="trending-item fade-in fade0">
+                            <a href="http://www.etonline.com/news/216297_chris_soules_wasnt_drunk_at_scene_of_fatal_car_crash_sources_claim_allegedly_left_with_relative/" class="link">
+                                Chris Soules                            </a>
+                        </li>
+                  
+                        <li class="trending-item fade-in fade1">
+                            <a href="http://www.etonline.com/tv/216300_roseanne_is_being_revived_with_roseanne_barr_john_goodman_and_sara_gilbert/" class="link">
+                                &apos;Roseanne&apos;                            </a>
+                        </li>
+                  
+                        <li class="trending-item fade-in fade2">
+                            <a href="http://www.etonline.com/news/216215_exclusive_janet_jackson_is_back_control_after_split_from_husband_wissam_al_mana_what_went_wrong/" class="link">
+                                Janet Jackson                            </a>
+                        </li>
+                  
+                        <li class="trending-item fade-in fade3">
+                            <a href="http://www.etonline.com/news/216316_rashad_jennings_excited_dwts_fans_are_getting_to_know_man_behind_the_helmet/" class="link">
+                                &apos;DWTS&apos;                            </a>
+                        </li>
+                  
+                        <li class="trending-item fade-in fade4">
+                            <a href="http://www.etonline.com/news/216267_exclusive_jennifer_lopez_says_alex_rodriguez_loves_her_new_music/" class="link">
+                                J-Rod                            </a>
+                        </li>
+                    </ul>
+                </div><!-- nav-content -->
+            </div><!-- /navbar-wrapper -->
+        </div><!-- /container-fluid -->
+            </nav>
+        <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '145337045558621',
+            xfbml      : true,
+            version    : 'v2.4'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script><div id="container" class="type-Article">
+                <div class="container-fluid leaderboardAd">
+            <div class="row">
+                <div class="col-xs-12 no-padding">
+                    <div class="ad-wrapper leaderboard top">
+                        <div id="div-gpt-ad-etonline-392701254-1" class="ad top leaderboard">
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="">
+        <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 no-padding">
+            <header>
+                                <a href="/news/">
+                    <span class="page-category">NEWS</span>
+                </a>
+                                <h1 class="heading">Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show</h1>
+                <div class="date" datetime="2017-02-07">
+                    by <span class="author">Rachel McRady</span>
+                     6:24 AM PST, February 07, 2017                </div>
+            </header>
+        </div>
+    </div>
+    <!-- /row -->
+</div>
+<!-- /container-fluid-->
+<div class="container-fluid">
+    <div class="article-aside row">
+        <article>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="content-wrapper">
+                        <div class="side-social-links-wrapper sticky">
+                            <ul class="side-social-links">
+                                <li>
+                                    <span class="st_facebook_large icon-facebook social-img" displaytext="Facebook"></span>
+                                </li>
+                                <li>
+                                    <span class="st_tumblr_large icon-tumblr18 social-img" displaytext="Tumblr"></span>
+                                </li>
+                                <li>
+                                    <span class="st_twitter_large icon-twitter social-img" st_url="http://et.tv/2ljLZMK" st_via="etnow" displaytext="Twitter"></span>
+                                </li>
+                                <li>
+                                    <span class="st_googleplus_large icon-googleplus social-img" displaytext="Google+"></span>
+                                </li>
+                                <li>
+                                    <span class="st_pinterest_large icon-pinterest social-img" displaytext="Pintrest"></span>
+                                </li>
+                                <li>
+                                    <span class="st_email_large icon-email20 social-img" displaytext="Email"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sticky-gutter">
+                                                            <div id="main_vid_wrapper">
+                                    <div class="main_vid_box stickyOff">
+                                        <div id="vid_box">
+                                            <div class="outer-container">
+                                                <div id="hero_video" data-video-target="hero_video">
+                                                    <script>
+                                                        site.brightcove("hero_video", "title_209690", "title_Article", "hero", true);
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="videoTitle"> <span class="playing">Playing</span>
+                                            Vanessa Hudgens, the Queen of Coachella, Gushes About Pregnant Beyonce Headlining the Show                                        </div>
+                                    </div>
+                                </div>
+                                                        <div id='Story_Content'>
+                                                        
+                                                                        <p class="story-txt">
+                                            No one loves Coachella more than Vanessa Hudgens! The <em>Powerless</em> star, 28, has been named the “Queen of Coachella” by fans obsessed with her boho-chic ensembles at the annual music festival. <br /><br /><strong><a href="http://www.etonline.com/awards/209290_beyonce_to_perform_at_grammy_awards_exclusive/" target="_blank">
+WATCH: EXCLUSIVE: Beyonce to Perform at 2017 GRAMMY Awards After Announcing She's Pregnant With Twins</a></strong><br /><br />
+“They’re not outrageous. They’re bohemian,” Hudgens insisted to Ellen DeGeneres during Tuesday’s show. “I mean, like, that I couldn’t wear to the grocery store, which is why I love Coachella because it gives you an excuse to wear things you wouldn’t normally wear.”                                        </p>
+                                                                                                <!-- Ad Medium Rectangle Above the Fold-->
+                                                <div id="medrec_atf1" class='ad-wrapper sidebar medrec_atf'>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 no-padding">
+                                                            <div id="div-gpt-ad-etonline-620363872-2" class="ad medium rectangle">
+    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                                
+                                                                                                
+                                                                    
+                                                                        <div class="twtr">
+                                            <iframe width="575" height="324" src="//widgets.ellentube.com/videos/0-5mh1ktys/" frameborder="0" allowfullscreen></iframe>                                        </div>
+                                                                        
+                                                                        <p class="story-txt">
+                                            In addition to her fashion opportunities, Hudgens is also excited to see the big names performing at this year’s show. While she “loves” Radiohead, the Disney alum is most looking forward to Beyonce. <br /><br />
+“I’m really stoked for all the headliners,” she said. “I’m excited to see how Beyonce’s going to perform with twins. I mean, she’ll kill it, because she’s Beyonce. So her, [I’m] very excited for that.”<br /><br />
+Beyonce announced last week that she is pregnant with twins, but has not clarified what this will mean for the April festival.                                        </p>
+                                                                                                
+                                                                                                                                                  <div data-str-native-key="4c1cea7d" style="display: none;"></div>
+                                                
+                                                                    
+                                                                        <p class="story-txt">
+                                            <strong><a href="http://www.etonline.com/news/209026_vanessa_hudgens_and_jimmy_fallon_celebrate_nbc_thursday_nights_with_a_friends_duet/" target="_blank">WATCH: Vanessa Hudgens and Jimmy Fallon Celebrate NBC's Thursday Nights With a 'Friends' Duet <br /></a></strong><br />
+One performance that is definitely on the lineup is Bey’s GRAMMY appearance. ET <a href="http://www.etonline.com/awards/209290_beyonce_to_perform_at_grammy_awards_exclusive/" target="_blank">exclusively revealed</a> that the pregnant “Formation” singer will return to the GRAMMY stage. She is nominated for nine GRAMMYs this year for her album, <em>Lemonade</em>. <br /><br />
+For more on Beyonce’s pregnancy news, watch the clip below!                                        </p>
+                                                                                                
+                                                                                                
+                                                                    
+                                                                        <div class="related legacy enlarge" id="video_209312">
+                                            <div id="vid_box">
+                                                <div class="outer-container">
+                                                    <div id="legacy_video_209312" data-video-target="legacy_video_209312">
+                                                        <script>
+                                                            site.brightcove("legacy_video_209312", "title_209312", "Article", "related", true);
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                        
+                                                                        <div class="related slideshow">
+                                            <span class="heading">RELATED SLIDESHOW</span>
+                                            <a href="/gallery/164014_beyonce_most_revealing_fashions/index.html" class="url-wrap">
+                                                <div class="media-container landscape">
+                                                                                                        <picture class="media landscape">
+                                                        <source media="print" srcset="/fashion/2015/05/24149681/640_beyonce_472206048.jpg">
+                                                        <source media="(max-width: 360px)" srcset="/fashion/2015/05/24149681/640_beyonce_472206048.jpg">
+                                                        <source media="(max-width: 768px)" srcset="/fashion/2015/05/24149681/640_beyonce_472206048.jpg">
+                                                        <source media="(max-width: 1023px)" srcset="/fashion/2015/05/24149681/640_beyonce_472206048.jpg">
+                                                        <source media="(max-width:  1599px)" srcset="/fashion/2015/05/24149681/640_beyonce_472206048.jpg">
+                                                        <img src="/fashion/2015/05/24149681/640_beyonce_472206048.jpg">
+                                                    </picture>
+                                                    <div class="info">
+                                                        Flawless: Beyonce's Most Revealing Fashions <i class="icon icon-arrow"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                                                                                                                        <ul id="topic-tag-holder">
+                                                                                                                    <li class="tag-list">
+                                            <a href="/celebs/vanessa_hudgens/index.html" class="topic-tag">
+                                                Vanessa Hudgens                                            </a>
+                                        </li>
+                                                                                <li class="tag-list">
+                                            <a href="/celebs/ellen_degeneres/index.html" class="topic-tag">
+                                                Ellen Degeneres                                            </a>
+                                        </li>
+                                                                                <li class="tag-list">
+                                            <a href="/celebs/beyonce/index.html" class="topic-tag">
+                                                Beyonce                                            </a>
+                                        </li>
+                                                                                                            </ul>
+                                <div class="medrec_btf_marker_mobile"></div>
+
+                                <div id="medrec_btf1" class="livefyre-ad medrec_btf">
+                                    <div id="div-gpt-ad-etonline-222786677-3" class="ad medium rectangle">
+    </div>                                </div>
+                                <div id="social-share">
+                                    <span class="st_facebook_large">
+                                      <span class='socLg'>SHARE ON FACEBOOK</span>
+                                    <span class='socSm'>SHARE</span>
+                                    </span>
+                                    <span class="st_twitter_large">
+                                      <span class='socLg'>SHARE ON TWITTER</span>
+                                    <span class='socSm'>TWEET</span>
+                                    </span>
+                                    <div class="comment-jump">
+                                        <a class="link" href="#">JUMP TO COMMENTS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content wrapper -->
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- /container-->
+        </article>
+        <!-- /article -->
+        <aside class="col-md-4 col-lg-2" id="sidebar">
+    <div id="sticky_aside">
+                    
+<div id="feed-stories" class="latestNews widget hidden-xs">
+    <div class="heading">LATEST <span>NEWS</span>  </div>
+        <a class="entry-link " href="/news/216476_selena_gomez_the_weeknd_met_gala/" >
+        <div class="entry-thumb">
+            <img src="http://www.etonline.com/photo/2017/05/24328315/300_Selena_Gomez-TheWeeknd_GettyImages-675603550.jpg">
+            </div>
+        <p class="sub-title">Selena Gomez and The Weeknd Look Crazy in Love While Making Red Carpet Debut...</p>
+    </a>
+        <a class="entry-link last" href="/fashion/216477_kendall_jenner_shows_off_bare_butt_sheer_dress_at_the_met_gala_see_the_pics/" >
+        <div class="entry-thumb">
+            <img src="http://www.etonline.com/photo/2017/05/24328296/300_kendall_jenner_GettyImages-675600056.jpg">
+            </div>
+        <p class="sub-title">Kendall Jenner Shows Off Bare Butt in Sheer Dress at the Met Gala -- See the...</p>
+    </a>
+</div>
+                <div id="newsletter" class="sidebar hidden-xs">
+    <span class="header">GET THE <b>LATEST</b> NEWS</span>
+    <div class="email-holder">
+        <i class="icon-email21 icon"></i>
+        <input id="email_input1" name="email_input1" class="email-input" type="email" placeholder="Your E-Mail Address">
+    </div>
+    <input type="submit" value="SUBMIT" class="btn" onclick="processEmailOptin('sidebar')">
+    <p class="terms">By signing up, you agree to our <a href="https://legalterms.cbsinteractive.com/terms-of-use" class="link" target="_blank">Terms of Use</a> and <a href="https://legalterms.cbsinteractive.com/privacy" class="link" target="_blank">Privacy Policy</a></p>
+    <div id="signup_form1" style="display: none;"></div>
+    <div id="df_thanks1" style="display:none;" class="nlwarning">
+        <p>THANK YOU</p>
+    </div>
+    <div id="df_error1" style="display:none;" class="nlwarning"></div>
+    <div id="email_results1" style="display:none;" class="nlwarning"></div>
+</div>    </div>
+</aside>        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container-fluid -->
+    
+<div class="container-fluid" id="middle-column">
+  <div class="revcontent" data-revcontent-target="revcontent_middle"></div>
+  <div id="comments" class="article-detail">
+    <div class="livefyre-comment-col">
+        <div id="livefyre"></div>
+        <div id="powered_by_livefyre_new"><a href="http://livefyre.com" target="_blank" sl-processed="1">Powered by Livefyre</a></div>
+    </div>
+    <div class="livefyre-ad-col">
+                            <div class="medrec_btf_marker_desktop"></div>
+                </div>
+</div><!-- /comments -->
+</div>
+    </div><!-- #main -->
+    <div class="container-fluid leaderboardAd footer">
+        <div class="row">
+            <div class="col-xs-12 no-padding">
+                <div class="ad-wrapper leaderboard">
+                    <div id="div-gpt-ad-etonline-863797748-4" class="ad bottom leaderboard">
+    </div>                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- container -->
+    <footer id="footer">
+            <div class="footer-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-lg-3 footer-list-container">
+                            <ul class="footer-list">
+                                <li class="footer-item header"><span class="footer-link">BROWSE ETONLINE</span></li>
+                                <li class="footer-item"><a href="/news" class="footer-link">News</a></li>
+                                <li class="footer-item"><a href="/tv" class="footer-link">TV</a></li>
+                                <li class="footer-item"><a href="/movies" class="footer-link">Movies</a></li>
+                                <li class="footer-item"><a href="/awards" class="footer-link">Awards</a></li>
+                                <li class="footer-item"><a href="/fashion" class="footer-link">Fashion</a></li>
+                                <li class="footer-item"><a href="/music" class="footer-link">Music</a></li>
+                                <li class="footer-item"><a href="/gallery" class="footer-link">Photos</a></li>
+                                <li class="footer-item"><a href="/video/index.html" class="footer-link">Video</a></li>
+                                <li class="footer-item"><a href="/giveaways" class="footer-link">Giveaways</a></li>
+								<li class="footer-item"><a href="/newsletters" class="footer-link">Newsletters</a></li>
+                            </ul>
+                        </div><!-- /col-->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 footer-list-container">
+                            <ul class="footer-list">
+                                <li class="footer-item header"><span class="footer-link">CONNECT WITH ET</span></li>
+                                <li class="footer-item"><a href="http://www.facebook.com/EntertainmentTonight" target="_blank" class="footer-link">Facebook</a></li>
+                                <li class="footer-item"><a href="https://twitter.com/#!/etnow" target="_blank" class="footer-link">Twitter</a></li>
+                                <li class="footer-item"><a href="http://instagram.com/entertainmenttonight" target="_blank" class="footer-link">Instagram</a></li>
+                                <li class="footer-item"><a href="http://entertainmenttonight.tumblr.com/" target="_blank" class="footer-link">Tumblr</a></li>
+                                <li class="footer-item"><a href="https://plus.google.com/+entertainmenttonight/posts" target="_blank" class="footer-link">Google+</a></li>
+                                <li class="footer-item"><a href="http://www.youtube.com/entertainmenttonight" target="_blank" class="footer-link">YouTube</a></li>
+                                <li class="footer-item"><a href="/rss" class="footer-link">RSS</a></li>
+                                <li class="footer-item"><a href="/etmobile" class="footer-link">Mobile</a></li>
+                                <li class="footer-item"><a href="/showfinder" class="footer-link">ET on TV</a></li>
+                                <li class="footer-item"><a href="http://www.cbsinteractive.com/advertise/" target="_blank" class="footer-link">Advertise with Us</a></li>
+                                <li class="footer-item"><a href="http://www.etonline.com/contact/" target="_blank" class="footer-link">Contact Us</a></li>
+								<li class="footer-item"><a href="https://cbs.avature.net/cbstvdcareers" target="_blank" class="footer-link">Careers</a></li>
+                            </ul>
+                        </div><!-- /col-->
+                        <div class="col-xs-12 col-sm-4 col-lg-3 footer-list-container">
+                            <ul class="footer-list">
+                                <li class="footer-item header"><span class="footer-link">SITES WE LOVE</span></li>
+                                <li class="footer-item"><a href="http://www.cbsnews.com/" target="_blank" class="footer-link">CBS News</a></li>
+                                <li class="footer-item"><a href="http://www.tvguide.com/" target="_blank" class="footer-link">TV Guide</a></li>
+                                <li class="footer-item"><a href="http://www.rachaelrayshow.com/" target="_blank" class="footer-link">Rachael Ray Show</a></li>
+                                <li class="footer-item"><a href="http://www.insideedition.com/" target="_blank" class="footer-link">Inside Edition</a></li>
+                                <li class="footer-item"><a href="http://www.chow.com/" target="_blank" class="footer-link">Chow</a></li>
+                                <li class="footer-item"><a href="http://www.last.fm/" target="_blank" class="footer-link">last.fm</a></li>
+                                <li class="footer-item"><a href="http://www.metacritic.com/" target="_blank" class="footer-link">Metacritic</a></li>
+                                <li class="footer-item"><a href="http://www.metrolyrics.com/" target="_blank" class="footer-link">Metrolyrics</a></li>
+                                <li class="footer-item"><a href="http://www.tv.com/" target="_blank" class="footer-link">TV.com</a></li>
+                                <li class="footer-item"><a href="http://www.startswithyou.com/" target="_blank" class="footer-link">Starts With You</a></li>
+                            </ul>
+                        </div><!-- /col-->
+                        <div class="col-xs-12 col-sm-12 col-lg-3 footer-list-container">
+    <div id="newsletter" class="footer">
+    <span class="header">NEWSLETTER SIGN UP</span>
+    <div class="email-holder">
+        <i class="icon-email21 icon"></i>
+        <input id="footer_newsletter" name="footer_newsletter" type="email" class="email-input" placeholder="Your E-Mail Address">
+    </div>
+<button type="submit" class="btn newsletter" onclick="processEmailOptin('footer')">Sign Up</button>
+<p class="terms">By signing up, you agree to our <a href="https://legalterms.cbsinteractive.com/terms-of-use" target="_blank" class="link">Terms of Use</a> and <a href="https://legalterms.cbsinteractive.com/privacy" target="_blank" class="link">Privacy Policy</a></p>
+</div>
+<div id="signup_form2" style="display: none;"></div>
+<div id="df_thanks2" style="display:none;"  class="nlwarning1">
+    <p>THANK YOU</p>
+</div>
+<!-- <div id="df_error2" style="display:none;"  class="nlwarning1"></div> -->
+<div id="footer_newsletter_msg" class="nlwarning"></div>
+</div>
+                    </div><!-- /row -->
+                </div><!-- /container-fluid -->
+            </div><!-- /footer-wrapper -->
+
+            <div class="footer bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul id="footer-social">
+                                <li class="footer-social-item first"><a href="http://www.facebook.com/EntertainmentTonight" target="_blank" class="footer-social-icon icon-facebook"></a></li>
+                                <li class="footer-social-item"><a href="http://instagram.com/entertainmenttonight" target="_blank" class="footer-social-icon icon-instagram"></a></li>
+                                <li class="footer-social-item"><a href="https://twitter.com/etnow" target="_blank" class="footer-social-icon icon-twitter"></a></li>
+                                <li class="footer-social-item"><a href="http://www.youtube.com/entertainmenttonight" target="_blank" class="footer-social-icon icon-youtube"></a></li>
+                                <li class="footer-social-item"><a href="http://www.pinterest.com/etonline" target="_blank" class="footer-social-icon icon-pinterest"></a></li>
+                                <li class="footer-social-item"><a href="http://www.etonline.com/rss/" target="_blank" class="footer-social-icon icon-feed2"></a></li>
+                                <li class="footer-social-item"><a href="http://www.stumbleupon.com/channel/ETonline" target="_blank" class="footer-social-icon icon-stumbleupon2"></a></li>
+                            </ul>
+                            <div class="legal-print">
+                                <p class="legal-txt">CBS Television Distribution &copy; 2017 CBS Studios Inc. All Rights Reserved</p>
+                                <ul class="legal-list">
+                                    <li class="legal-item"><a href="https://legalterms.cbsinteractive.com/terms-of-use" target="_blank" class="link">Terms of Use</a></li>
+                                    <li class="legal-item"><a href="https://legalterms.cbsinteractive.com/privacy" target="_blank" class="link">Privacy Policy</a></li>
+                                    <li class="legal-item"><a href="https://legalterms.cbsinteractive.com/eula" target="_blank" class="link">Mobile User Agreement</a></li>
+                                    <li class="legal-item"><a href="/newsdesk/tips2013.php" target="_blank" class="link">Submit a Tip</a></li>
+                                    <li class="legal-item"><a href="http://www.cbsinteractive.com/advertise/" target="_blank" class="link">Advertise with Us</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- /col-->
+                    </div><!-- /row -->
+                </div><!-- /container-fluid -->
+            </div><!-- footer-wrapper bottom-->
+        </footer><script src="/global/public/js/bootstrap-3.3.5.js"></script>
+<script type="text/javascript">
+	var global = global || {};
+	global['output_channel'] = "HTML";
+	global['story_type'] = "Article";
+	global['userplatform'] = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop";
+</script>
+<script type="text/javascript" src="/global/public/js/revContent.min.js"></script>
+	<script src="/global/public/js/handlebars.min.js"></script>
+				<script src="/global/public/js/article.min.js" async></script>
+			<script>window.twttr=function(t,e,r){var n,i=t.getElementsByTagName(e)[0],w=window.twttr||{};return t.getElementById(r)?w:(n=t.createElement(e),n.id=r,n.src="https://platform.twitter.com/widgets.js",i.parentNode.insertBefore(n,i),w._e=[],w.ready=function(t){w._e.push(t)},w)}(document,"script","twitter-wjs");</script>
+			<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+			<script async src="//platform.vine.co/static/scripts/embed.js"></script>
+				<script src='//cdn.livefyre.com/Livefyre.js'></script>
+	<script type='text/JavaScript' src='http://etonline.ep.livefyre.com/media/ZXRvbmxpbmUuZXAubGl2ZWZ5cmUuY29t/javascripts/customprofiles.js'></script>
+
+	<script type="text/javascript">
+	livefyre(209668);
+	function livefyre(id){
+		var networkConfig = {
+			network: 'cbstvdistribution.fyre.co'
+		};
+
+		var convConfig = {
+			siteId: 372080,
+			intialNumVisibile: 10,
+			articleId: id,
+			el: 'livefyre',
+			checksum: 'bb6815922d92af6bb3c28405cffd7e4a',
+			collectionMeta: 'eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IlZhbmVzc2EgSHVkZ2VucywgdGhlIFF1ZWVuIG9mIENvYWNoZWxsYSwgR3VzaGVzIEFib3V0IFByZWduYW50IEJleW9uY2UgSGVhZGxpbmluZyB0aGUgU2hvdyIsInVybCI6Imh0dHA6XC9cL3d3dy5ldG9ubGluZS5jb21cL25ld3NcLzIwOTY2OF92YW5lc3NhX2h1ZGdlbnNfdGhlX3F1ZWVuX29mX2NvYWNoZWxsYV9ndXNoZXNfYWJvdXRfcHJlZ25hbnRfYmV5b25jZV9oZWFkbGluaW5nX3RoZV9zaG93XC8iLCJhcnRpY2xlSWQiOiIyMDk2NjgiLCJ0eXBlIjoibGl2ZWNvbW1lbnRzIn0.uBhXPpz8WXY7z0GTms0JdwkdJOoulYUdpUAoceTgdEo'
+		};
+
+			// Legacy configuration
+		Livefyre.require(['fyre.conv#3', 'auth', 'lfep-auth-delegate#0'], function (Conv, auth, LFEPAuthDelegate) {
+			new Conv(networkConfig, [convConfig], function (commentsWidget) {}());
+			var authDelegate = new LFEPAuthDelegate({
+					engageOpts: {
+							app: 'cbstv.auth.fyre.co'
+					}
+			});
+			auth.delegate(authDelegate);
+		});
+		};
+	</script>
+				<script src="/global/public/js/global-nav.min.js" async></script>
+	<script src="/global/public/js/search.min.js" async></script>
+	<script src="/global/public/js/search-slide.min.js" async></script>
+	<script src="/global/public/js/helpers.min.js" async></script>
+	<script src="/global/public/js/newsletter.min.js" async></script>
+<script src="/global/public/js/bootstrap-hover-dropdown.min.js"></script>
+<!-- Apple iTunes auto link maker -->
+<!-- makes all apple links into affiliate link -->
+<script type='text/javascript'>
+  var _merchantSettings=_merchantSettings||[];_merchantSettings.push(["AT","1010l3go"]);
+  (function(){
+      var autolink=document.createElement("script");
+      autolink.type="text/javascript";
+      autolink.async=true;
+      autolink.src=("https:"==document.location.protocol)?"https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js":"http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js";
+      var s=document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(autolink,s);
+  })();
+</script>
+<!-- Apple iTunes auto link maker -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7925dc8d76","applicationID":"9145267","transactionName":"bwMAYhdUXUJSVUxZV1ZJN0QMGl1UREUXAggBUFQOOkNSX1ZFS1FnUBMGUQBbQG5HXl1vSU0DB1g6WlVuUFlZU1BdCg5XOlJGQltTS29ZWgkXQjpFQVRUWFleTGcEB08KW1BUbF5dUVxUDwxfC1JsRVtTZ0NQVxFNXwtRVkkdXkxdVA==","queueTime":0,"applicationTime":34,"atts":"Q0QDFF9OTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

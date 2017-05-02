@@ -1,0 +1,384 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /><title>101 on Service Integration and Management (SIAM) » - Linkis.com</title>
+    <style>
+        html, body {margin:0;padding:0;height:100%;}
+        body {overflow:hidden;}
+        .show-panel,.social-panel,.slidedown-popup,#big-popup,.modal-popup,.global-modal-popup,.autoposting-bar,.show-visitors-tooltip,.theme-cta2-minimize,.theme19-xmaspic,.reauthorize {display:none;}
+                
+.iframe-holder{position:absolute;top:0;bottom:0;left:0;right:201px;z-index:0;}
+            </style>
+
+    <meta property="og:url" content="http://linkis.com/cloudtweaks.com/2017/if6zf" />
+<meta property="og:image" content="http://linkis.com/images/logo-560х281.png" />
+<meta property="og:description" content="Service Integration and Management - Enterprise IT architecture has evolved from the earlier monolithic" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Service Integration and Management - Enterprise IT architecture has evolved from the earlier monolithic" /><link href="https://cloudtweaks.com/wp-content/uploads/2015/10/cropped-logo-cloud-180x180.png" rel="apple-touch-icon-precomposed" />
+<link href="http://linkis.com/cloudtweaks.com/101_on_Service_Integ.html" rel="canonical" />
+<link href="https://cloudtweaks.com/wp-content/uploads/2015/10/cropped-logo-cloud-32x32.png" rel="icon" type="" />
+<link href="https://cloudtweaks.com/wp-content/uploads/32/10/cropped-logo-cloud-32x32.png" rel="icon" type="" />
+    <script type="text/javascript">
+        var LNG = {};
+        var customAuthRedirect = null;
+            </script>
+
+    
+    <script type="text/javascript">
+
+
+    function __log(val){}
+
+    function hihit(id) {
+        if (id) {
+            var url = "http://stat.linkis.com/log.php?id=" + id + "&r=" + Math.round(100000 * Math.random());
+            var im = new Image();
+            im.src = url;
+        }
+    }
+
+
+function refreshPage()
+{
+    location.href = location.href.split('#')[0];
+    setTimeout(function(){
+        if (window.hihit) hihit(2580);
+    }, 10000);
+}
+function redirectPage(url)
+{
+    location.href = url;
+}
+function restoreUserAvatar(img, uid)
+{
+    img.onerror = null;
+    img.setAttribute('data-orig-image', img.src);
+    img.src = '/index/restore-avatar/uid/' + uid;
+
+}
+/**
+ *
+ * @param action
+ * @param label
+ * @param category
+ * @param params
+ *     - {int} [theme] - force set theme
+ */
+function lnEvent(action, label, category, params)
+{
+    
+    if(action && action.push) {
+        var hash   = lnEventGenerateHash((action[0][0] || '') + (action[0][1] || '') + (action[0][2] || ''));
+            action = JSON.stringify(action);
+    } else {
+        var hash = lnEventGenerateHash((action || '') + (label || '') + (category || ''));
+    }
+
+    var path = ['', 'index', 'ln-event'].join('/');
+    var e = function(str){ return str ? encodeURIComponent(str) : ''; };
+
+    if(typeof(params) != 'undefined' && typeof(params.theme) != 'undefined'){
+        var theme = params.theme;
+    }else{
+        var theme = window.LinkData ? LinkData.curTheme : 0;
+    }
+
+    if(typeof(params) != 'undefined' && typeof(params.version) != 'undefined'){
+        var version = params.version;
+    }else{
+        var version = window.LinkData ? LinkData.themeVersion : '';
+    }
+
+    var is_author = window.LinkData ? LinkData.is_author : 0;
+
+    params = params || {};
+
+    (new Image()).src = path +
+        '?c=' + e(category) +
+        '&a=' + e(action) +
+        '&l=' + e(label) +
+        '&t=' + e(theme) +
+        '&h='  + hash +
+        '&v='  + e(version) +
+        '&isa='  + e(is_author) +
+        '&p='  + e(JSON.stringify(params)) +
+        '&r=' + Math.random();
+}
+
+function lnEventGenerateHash(str) {
+    var hash = '';
+    var length = str.length;
+    var step = (length < 5) ? 2 : Math.floor(length / 5);
+
+    var codeSumFunction = function(codeSum) {
+        var num = 0;
+        for(var j = 0; j < codeSum.toString().length; j++) {
+            num += parseInt(codeSum.toString().substr(j, 1), 10);
+        }
+
+        return num;
+    };
+
+    var codeSum = 0;
+    for(var i = 0; i < length; i++) {
+        var char = str.substr(i, 1);
+
+        if(i % step == 0 && char != ' ') {
+            var num = codeSumFunction(codeSum);
+            hash += num + '' + char;
+            codeSum = 0;
+        } else {
+            codeSum += str.charCodeAt(i);
+        }
+    }
+
+    if(codeSum) hash += codeSumFunction(codeSum);
+
+    return hash;
+}
+
+</script>
+    
+<script type="text/javascript">
+window.NL_APP_DATA = {
+    user:{
+        isLogged: false,
+        type: 'tw',
+        hasTw: true
+    },
+    redirect_after_auth: '/',
+    controller: 'index',
+    action: 'show',
+    cookies:{
+        notification_enabled: 'notification_enabled'
+    },
+    show_welcome_popup: 0,
+
+        
+    show_comeback_popup: 0,
+    stat_id: null,
+    nopopups: 0,
+    addThisSrc: 'http://s7.addthis.com/js/300/addthis_widget.js#async=1&pubid=',
+    addThisId: 'ra-513082ca32a826c6',
+    referrer_link: '',
+    referrer_name: '',
+    referrer_type: 0,
+    cookie_domain: '.linkis.com',
+	sessCookieName: 'LNSESS',
+    popupsHtml: {},
+    fbAppId: 318962828183539,
+    isMobile: 0,
+    dhSyncEnabled: 1,
+    dhSyncHost: 'ln.is',
+    dhSyncCookies: ["LNSESS","t6_show_auth_popup","dg-fill-email-remind-later"]};
+
+window.onerror = function(msg, url, line, col, error_obj)
+{
+    hihit(3282);
+
+    var path  = ['', 'index', 'js-error'].join('/');
+    var page  = 'index/show';
+    var theme = window.LinkData ? LinkData.curTheme : 0;
+
+    (new Image()).src = path +
+        '?m=' + encodeURIComponent(msg) +
+        '&u=' + encodeURIComponent(url) +
+        '&l=' + encodeURIComponent(line) +
+        '&c=' + encodeURIComponent(col) +
+        '&o=' + encodeURIComponent(error_obj) +
+        '&p=' + encodeURIComponent(page) +
+        '&t=' + encodeURIComponent(theme) +
+        '&r=' + Math.random();
+}
+
+</script>
+
+</head>
+<body
+    data-controller="index"
+    data-action="show"
+    data-fb-app-id="318962828183539"
+    class="show guest lang-en"    >
+
+
+<script type="text/javascript">
+    var LinkData = {"id":375426361,"shortUrl":"if6zf","longUrl":"https:\/\/cloudtweaks.com\/2017\/01\/101-service-integration-and-management-siam\/?utm_source=dlvr.it&utm_medium=twitter","fullShortPath":"\/cloudtweaks.com\/2017\/if6zf","baseAliasLink":"http:\/\/ln.is\/cloudtweaks.com\/2017\/if6zf","baseShortAliasLink":"http:\/\/ln.is\/cloudtweaks.com\/2017\/if6zf","caption":"101 on Service Integration and Management (SIAM)","author_id":944932,"isTwitterLogged":true,"curTheme":12,"parentTheme":12,"originalTitle":"101 on Service Integration and Management (SIAM) »","show_aw_popup":1,"popupTimer":3000,"saveClientStat":true,"showSilentPopup":1,"linkSrcType":2,"srcTypeLabel":"auto wrap","splitCtaThemeVersion":1,"showVtwAw":1,"authorLinkLocale":"en","localeCurrentUser":"en","dgAuthWelcomeVersion":2,"udgGuestVersion":2};
+</script><script type="text/javascript">
+
+    /** @var Themes */
+    var Themes = {
+        THEME_11: 11,
+        THEME_12: 12,
+        THEME_13: 13,
+        THEME_14: 14,
+        THEME_15: 15,
+        THEME_16: 16,
+        THEME_17: 17,
+        THEME_18: 18,
+        THEME_19: 19,
+        THEME_20: 20
+    };
+
+    var LNG = LNG || {};
+    LNG['caption'] = "Caption";
+    LNG['show.empty_caption'] = "Empty caption";
+    LNG['js.tools.blocker'] = "Please disable your pop-up blocker and redo your last action";
+
+
+    var AUTH_PARAMS = {};
+    var THEME_AUTH_PARAMS = {};
+
+
+    var TWITTER_ENABLED = true;
+</script>
+
+    <!-- Interstitial banner desktop -->
+    
+    <div class="iframe-holder">
+        <iframe id="source_site" src="http://dlvr.it/NJbMpj" data-short="if6zf" border="0" frameborder="0" hspace="0" vspace="0" width="100%" height="100%" marginheight="0" marginwidth="0" ></iframe>    <script type="text/javascript">
+        var Ga = Ga || [];
+        Ga.push(['_trackPageview', '/theme/12']);
+    </script>
+    </div>
+
+
+
+<div class="show-panel right-panel with-skin white-skin">
+        <div class="right-panel-holder js-right-panel-holder">
+
+                    <a class="close-panel js-close-panel" href="#">Close</a>
+        
+        <div class="orig-url">
+
+                            <p>Original URL</p>
+                <p><a class="js-source-link" href="/url/go/?url=http%3A%2F%2Fdlvr.it%2FNJbMpj" rel="nofollow" target="_blank">dlvr.it/NJbMpj</a></p>
+            
+            <div class="likes-holder js-like-box">
+
+                                    <span class="page-data views">
+                            3 views                        </span>
+                
+                <!-- Share block -->
+                <div class="js-share-stat-block">
+
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_20x20_style" addthis:title="101 on Service Integration and Management (SIAM) »" addthis:url="http://ln.is/cloudtweaks.com/2017/if6zf">
+        <a class="addthis_button_compact soc-icon"></a>
+    </div>
+    <!-- AddThis Button END -->
+</div>                <a href="#" class="thumb-up js-like green-like">
+                        <span class="js-like-value">Like                </a>
+            </div>
+        </div>
+                    <div class="rest-texts">
+                <p class="user-name">Ian Moyse - FInstSMM</p>
+                <p class="user-acc">
+                    <a href="https://twitter.com/imoyse" class="twitter-name" target="_blank">@imoyse</a>
+                </p>
+            </div>
+            <a href="https://twitter.com/imoyse" target="_blank"><img class="user-avatar" src="http://ec2linkis.s3.amazonaws.com/user_photos/2015-11/944932/avatar_big?9944" onerror="restoreUserAvatar(this, 944932)" /></a>
+                            <div class="social-scroll scrollbox js-soc-data js-social-scroll">
+                                    <div class="caption">
+                        @ISMM_UK Sales Dir. Year, Board Member @EuroCloudUK &amp; @UK_CIF , @talkin_cloud Top200 cloud  expert, @smbnation Top150 Channel Influencer, #1 Cloud Influencer 2017, 2016 &amp; 2015  (Onalytica) , #18 IOT Influencer 2016 (Onalytica)                    </div>
+                                                    <p class="find-me">Find  me here</p>
+                    <div>
+                                                                                                                    <div class="dropdown-item">
+                                    <a href="http://twitter.com/imoyse" title="twitter.com/imoyse" target="_blank" data-type="twitter" rel="nofollow">
+                                                                                    <span class="favi twitter"></span>
+                                                                                <span>twitter.com/imoyse</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="https://www.facebook.com/ian.moyse" title="facebook.com/ian.moyse" target="_blank" data-type="fb" rel="nofollow">
+                                                                                    <span class="favi facebook"></span>
+                                                                                <span>facebook.com/ian.moyse</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="https://www.linkedin.com/in/ianmoyse" title="linkedin.com/in/ianmoyse" target="_blank" data-type="linkedin" rel="nofollow">
+                                                                                    <span class="favi linkedin"></span>
+                                                                                <span>linkedin.com/in/ianmoyse</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="https://plus.google.com/+IanMoyse1" title="plus.google.com/+IanMoyse1" target="_blank" data-type="google_plus" rel="nofollow">
+                                                                                    <span class="favi googleplus"></span>
+                                                                                <span>plus.google.com/+IanMoyse1</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="https://www.instagram.com/ian_moyse/" title="instagram.com/ian_moyse/" target="_blank" data-type="instagram" rel="nofollow">
+                                                                                    <span class="favi instagram"></span>
+                                                                                <span>instagram.com/ian_moyse/</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="https://www.youtube.com/user/lifetomax" title="youtube.com/user/lifetomax" target="_blank" data-type="youtube" rel="nofollow">
+                                                                                    <span class="favi youtube"></span>
+                                                                                <span>youtube.com/user/lifetomax</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="http://about.me/imoyse" title="about.me/imoyse" target="_blank" data-type="other" rel="nofollow">
+                                                                                    <img class="favi" src="https://d2ed0w4q03gsmw.cloudfront.net/s3/assets/623932d/images/icons/favicon.ico" onerror="this.src='/images/settings/icon-globe.png'">
+                                                                                <span>about.me/imoyse</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="http://www.ianmoyse.co.uk" title="ianmoyse.co.uk" target="_blank" data-type="other" rel="nofollow">
+                                                                                    <img class="favi" src="/images/settings/icon-globe.png" onerror="this.src='/images/settings/icon-globe.png'">
+                                                                                <span>ianmoyse.co.uk</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="http://www.cloudmatters.cloud" title="cloudmatters.cloud" target="_blank" data-type="other" rel="nofollow">
+                                                                                    <img class="favi" src="https://s2.wp.com/i/favicon.ico" onerror="this.src='/images/settings/icon-globe.png'">
+                                                                                <span>cloudmatters.cloud</span>
+                                    </a>
+                                </div>
+                                                                                                                                                <div class="dropdown-item">
+                                    <a href="http://www.ianmoyse.cloud" title="ianmoyse.cloud" target="_blank" data-type="other" rel="nofollow">
+                                                                                    <img class="favi" src="http://abs.twimg.com/favicons/favicon.ico" onerror="this.src='/images/settings/icon-globe.png'">
+                                                                                <span>ianmoyse.cloud</span>
+                                    </a>
+                                </div>
+                                                                        </div>
+                            </div>
+                <div class="bottommer js-bottommer">
+            <a class="bottomer-logo js-theme-logo" href="/">Linkis</a>
+                            <a class="twitter-login js-btn-signin-tw js-login-with-theme-panel" href="javascript:void(0);">Login</a>
+                    </div>
+    </div>
+</div>
+
+
+    
+    <!-- POPUPS -->
+    
+
+
+    
+<!-- New popups Template -->
+<div class="global-modal-popup js-modal-popup-container">
+    <div class="popup-overlay"></div>
+    <div class="popup-holder">
+        <a href="javascript:void(0);" class="popup-close icon-close js-popup-close-default"></a>
+
+        <div class="js-popups-container popup-container">
+                    </div>
+
+    </div>
+</div>
+    
+
+<link href="/css_prod/production_theme_12.css?v=76c6" media="all" rel="stylesheet" type="text/css" id="theme_css" />
+
+    <script type="text/javascript" src="/js/prod/themes/all.js?v=76c6"></script>
+
+
+
+<div class="advert_block"></div>
+</body>
+</html>

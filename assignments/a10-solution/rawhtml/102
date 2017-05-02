@@ -1,0 +1,641 @@
+<!DOCTYPE html><html lang="en"><head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"72af208eee","applicationID":"8570787","transactionName":"dgwMFhNXWFkHQhdJVFIGEU0SUFtC","queueTime":0,"applicationTime":63,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYOVFNUCBAIUVZSAAkA"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];n.exports=u;var y=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(m,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script><title>Amazon: Stop investing in hate.</title><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="SumOfUs is a global movement of consumers, investors, and workers all around the world, standing together to hold corporations accountable for their actions and forge a new, sustainable and just path for our global economy. It&#39;s not going to be fast or easy. But if enough of us come together, we can make a real difference." name="description" /><meta content="514456635236116" property="fb:app_id" /><link rel="stylesheet" media="screen" href="https://d210i8t551lxm.cloudfront.net/assets/member-facing-bd31a4151ef08a0748ab92f4696e42a862bf7759534ef6dad2729ee36fa86216.css" /><link rel="stylesheet" media="screen" href="https://d210i8t551lxm.cloudfront.net/webpack/static/css/members.c413a7bb.css" /><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="r/mYrAYlM3IarWUU2snTfPiKOXjyy/RVN/XFE12GYSfuPNpKcet3zXTRLAJGozpplnoQ5vp+FgjoKgAgXG73Vw==" /><link rel="shortcut icon" type="image/x-icon" href="https://d210i8t551lxm.cloudfront.net/assets/images/favicon-55923a2fd4a62f0cfa8bd1619ca435aa4c546f030c0d829ae8551265399092e9.ico" /><meta name="optimization_tags" content="*petition, @global, #anti_racism, #sexism, womens_rights, emmap, %eh, thermometer, petition" />
+<meta property="og:site_name" content="SumOfUs" />
+<meta property="og:title" content="Amazon is refusing to pull its advertising from the website that helped elect this guy." />
+<meta property="og:description" content="Over 930 companies have ditched Breitbart, now it&#39;s Amazon&#39;s turn." />
+<meta property="og:url" content="https://actions.sumofus.org/a/amazon-stop-investing-in-hate" />
+<meta property="og:type" content="website" />
+<meta property="og:article:publisher" content="https://www.facebook.com/SumOfUs-181924628560212/" />
+<meta property="og:image" content="https://d210i8t551lxm.cloudfront.net/images/contents/000/003/871/original/trump.jpg?1482190460" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:domain" content="http://sumofus.org" />
+<meta name="twitter:site" content="@sumofus" />
+<meta name="twitter:creator" content="@sumofus" />
+<meta name="twitter:title" content="Amazon is refusing to pull its advertising from the website that helped elect this guy." />
+<meta name="twitter:description" content="Over 930 companies have ditched Breitbart, now it&#39;s Amazon&#39;s turn." />
+<meta name="twitter:image" content="https://d210i8t551lxm.cloudfront.net/images/contents/000/003/871/original/trump.jpg?1482190460" /><link href="https://actions.sumofus.org/a/amazon-stop-investing-in-hate" rel="canonical" /><script src="https://d210i8t551lxm.cloudfront.net/assets/dependencies-c2b1eb8d0f8478c0aa0aaf925d5957a8f95d36a8d511b866b8b4dd11f4c42e8f.js"></script><script src="//cdn.optimizely.com/js/117352208.js"></script></head><body>
+
+
+<div class="header-logo header-logo--dark checks-top checks-top--at-top">
+  <div class="header-logo__left-constraint">
+      <a href="https://sumofus.org/">
+      <div class="header-logo__logo sumofus-logo--negative"></div>
+    </a>
+    <div class="header-logo__tagline sumofus-logo--tagline">Fighting for people over profits</div>
+  </div>
+</div>
+
+<div class="cover-photo--small" style="background-image: url(https://d210i8t551lxm.cloudfront.net/images/contents/000/003/870/large/amazon3.image/jpeg?1482196899)">
+  <div class="cover-photo__overlay">
+
+    <div class="cover-photo__titles">
+      <div class="center-content__one-column">
+        <!-- one line to be able to check :empty  -->
+        <h3 class="cover-photo__target typography__highlight--dark typography__highlight--simple">Amazon</h3>
+        <div class="typography__highlight-wrapper">
+          <h1 class="cover-photo__title typography__highlight">
+            <span>Amazon: Stop investing in hate.</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-title">
+  <div class="center-content__one-column">
+    <h1 class="cover-photo__title">Amazon: Stop investing in hate.</h1>
+  </div>
+</div>
+
+
+
+<div class="center-content center-content--accomodates-stuck-footer">
+  <div class="center-content__big-column">
+    <div class="mobile-show pre-main-bar">
+  <!-- this partial will be cached, so the javascript replaces the
+       values for signature, remaining, and thermometer width -->
+  <div class='thermometer'>
+    <div class="thermometer__stats">
+      <div class='thermometer__signatures'>
+        552,548 signatures
+      </div>
+      <div class="thermometer__remaining">
+        197 signatures until 750k
+      </div>
+    </div>
+    <div class="thermometer__bg">
+      <div class="thermometer__mercury" style="width: 73.67306666666667%"></div>
+    </div>
+  </div>
+</div>
+
+    <div class="body-text main-feature  ">
+  <div><i>Update: February 5 2017:&nbsp;We’ve just learned that Amazon employees are piling pressure on the company to immediately ditch Breitbart — and the company is feeling the heat. </i><i>Amazon’s ad team has had to clarify that it is looking into a “longer term solution to use a 3rd party brand safety which may block amazon ads from showing up on certain pages on sites like Breitbart in the future.”&nbsp;</i><i>Our pressure is working. Let’s work together with Amazon employees and make sure Amazon ditches Breitbart.&nbsp;</i></div><div><br></div><div><i>Update: January 27 2017:&nbsp;Breitbart's advertisers are dropping like flies. In the last 24 hours alone, three corporations and three universities agreed to drop the extreme far right website thanks to our pressure.&nbsp;</i><i>This is the perfect moment to double down on Amazon and convince it that Breitbart's brand of bigotry is bad for business.</i></div><hr><div><br></div><div>Breitbart News, the extreme far right website that helped elect Donald Trump, is trying to fast-track a global expansion, starting with France, Germany and Italy in time for key elections in early 2017.<br></div><div><br></div><div><b>But Breitbart can only go ahead with its global expansion if it has the money to do it.</b></div><div><br></div><div>Here's where we come in: People power has already forced <b>BMW, </b><b>&nbsp;T-Mobile and Kelloggs and hundreds of other corporations to drop Breitbart — and now, we are going to force Amazon to follow suit.</b></div><div><br></div><div>Amazon is receiving loads of pressure already, and if we add our voices from across the planet together now, we can make sure Amazon can't ignore us anymore.&nbsp;</div><div><br></div><div><b><u>Tell Amazon: stop investing in hate. Pull your advertising from Breitbart.&nbsp;</u></b></div><div>&nbsp;</div><div>Breitbart spits the most hateful stuff you’ve ever heard — everything from attacks on LGBTQ+ folks to claiming that contraception makes women "sluts”.</div><div><br></div><div>And Breitbart's hatred may directly violate Amazon's own principles around acceptable advertising. Amazon's own policy: it will not tolerate "<b>[c]ontent that is threatening, abusive, harassing, hateful, or that incites violence or intolerance, or that advocates or discriminates against a protected group, whether based on race, color, national origin, religion, disability, sex, sexual orientation, disability, age or other category."</b></div><div>&nbsp;&nbsp;</div><div>A powerful grassroots campaign is gaining traction through social media and is pushing companies to pull advertising from Breitbart. And it’s working. <b>Already over 1,750 companies have pulled out of Breitbart, and the list is growing by the day.</b> And together, we can add Amazon to that list.&nbsp;</div><div><br></div><div>SumOfUs members are fighting hatred and discrimination worldwide. With massive public pressure, we’re going to force corporations to take responsibility for how they advertise, and are going to keep fighting Breitbart’s global expansion.&nbsp;</div><div>&nbsp;</div><div><b>Let's come together to make Amazon stop advertising with Breitbart, and show the world that people power trumps hate.</b></div><div>&nbsp;</div><div><b><u>Join us in demanding Amazon pull its advertising Breitbart.<br></u></b></div>
+
+  
+    <hr class="stubby-hr" />
+    <h3>More information</h3>
+    
+  <div class="page-link">
+    <a href="http://www.independent.co.uk/news/world/americas/breitbart-advertising-activists-campaign-petition-milo-yiannopoulos-a7559441.html" target="_blank">Breitbart loses advertising deals with 935 companies due to grassroots campaign</a>
+    
+      <br />
+    
+    
+      The Independent.
+    
+    
+      2 February 2017.
+    
+  </div>
+
+  <div class="page-link">
+    <a href="http://www.theglobeandmail.com/news/national/canadian-universities-pull-ads-from-us-alt-right-news-outlet-breitbart/article33792445/" target="_blank">Canadian universities pull ads from hard-right news outlet Breitbart</a>
+    
+      <br />
+    
+    
+      The Globe and Mail.
+    
+    
+      27 January 2017.
+    
+  </div>
+
+  <div class="page-link">
+    <a href="http://www.economist.com/news/business-and-finance/21711265-readership-surging-stephen-bannons-alt-right-news-outfit-about-launch-french-and" target="_blank">Breitbart News pushes deeper into Europe</a>
+    
+      <br />
+    
+    
+      The Economist.
+    
+    
+      10 December 2016.
+    
+  </div>
+
+  <div class="page-link">
+    <a href="https://twitter.com/slpng_giants" target="_blank">Sleeping Giants Twitter Page</a>
+    
+    
+    
+  </div>
+
+  <div class="page-link">
+    <a href="https://advertising.amazon.com/ad-specs/en/policy/creative-acceptance" target="_blank">Creative Acceptance Policy</a>
+    
+      <br />
+    
+    
+      Amazon Advertising.
+    
+    
+  </div>
+
+  <div class="page-link">
+    <a href="http://www.latimes.com/business/hollywood/la-fi-ct-breitbart-bmw-deutsche-telekom-20161207-story.html" target="_blank">Breitbart News prompts more advertisers, including BMW and T-Mobile parent, to yank ads</a>
+    
+      <br />
+    
+    
+      LA Times .
+    
+    
+      7 December 2016.
+    
+  </div>
+
+
+
+  
+</div>
+
+  </div>
+  <div class="center-content__fixed-right center-content--push-down">
+    
+  <div class="petition-bar sidebar overlay-toggle desktop-sticky stuck-right not-sticky">
+    <div class="overlay-toggle__mobile-view overlay-toggle__mobile-view--closed">
+      <div class="petition-bar__content">
+        <div class="petition-bar__top">
+          <div class="overlay-toggle__mobile-ui">
+            <a class="overlay-toggle__close-button">&#x2715;</a>
+          </div>
+          <div class="petition-bar__title-bar">
+            <h2 class="petition-bar__title">Sign the Petition</h2>
+          </div>
+          <div class="petition-bar__target">
+            
+              TO: Amazon
+            
+          </div>
+          <p class="petition-bar__petition-text">
+            Stop investing in hate. Stop advertising with Breitbart. 
+          </p>
+        </div>
+        <div class="petition-bar__main">
+          <div class="mobile-hide">
+            
+  <!-- this partial will be cached, so the javascript replaces the
+       values for signature, remaining, and thermometer width -->
+  <div class='thermometer'>
+    <div class="thermometer__stats">
+      <div class='thermometer__signatures'>
+        552,548 signatures
+      </div>
+      <div class="thermometer__remaining">
+        197 signatures until 750k
+      </div>
+    </div>
+    <div class="thermometer__bg">
+      <div class="thermometer__mercury" style="width: 73.67306666666667%"></div>
+    </div>
+  </div>
+
+          </div>
+          <noscript class="noscript-notice">
+  Thanks for coming to learn about this issue! Unfortunately, you can't take action while Javascript is disabled in your browser. Please enable Javascript or return in a browser with Javascript enabled to take action.
+  <style type="text/css">
+    .script-dependent {
+      display: none;
+    }
+    .script-dependent__for-height {
+      height: auto !important;
+    }
+  </style>
+</noscript>
+
+          <div class="script-dependent">
+            <form action='/api/pages/1649/actions' data-remote='true' method='post' class='form--big action-form'>
+  <div class="action-form__welcome-text hidden-irrelevant">
+    <i class="fa fa-check-square-o fundraiser-bar__user-icon"></i>
+    <span class="action-form__welcome-name"></span> <br />
+    <a href="javascript:;" class=" action-form__clear-form">Sign out</a>
+  </div>
+  <input type='hidden' name='form_id' value='2595' />
+    
+      <div class="form__group action-form__field-container">
+        
+          <div class="sweet-placeholder">
+            <label class="sweet-placeholder__label">Full Name</label>
+            <input type="text" name="name" class="form__content sweet-placeholder__field" maxlength="249" value="" />
+          </div>
+        
+      </div>
+    
+      <div class="form__group action-form__field-container">
+        
+          <div class="sweet-placeholder">
+            <label class="sweet-placeholder__label">Email Address</label>
+            <input type="email" name="email" class="form__content sweet-placeholder__field" value="" />
+          </div>
+        
+      </div>
+    
+      <div class="form__group action-form__field-container">
+        
+          <div class="sweet-placeholder">
+            <label class="sweet-placeholder__label">Postal/ZIP code</label>
+            <input type="text" name="postal" class="form__content sweet-placeholder__field" maxlength="249" value="" />
+          </div>
+        
+      </div>
+    
+      <div class="form__group action-form__field-container">
+        
+          <div class="sweet-placeholder">
+            <label class="sweet-placeholder__label">Country</label>
+            <select name="country" class="action-form__dropdown form__content sweet-placeholder__field selectize">
+              <option></option>
+              
+                <option value='AF' >Afghanistan</option>
+<option value='AL' >Albania</option>
+<option value='DZ' >Algeria</option>
+<option value='AS' >American Samoa</option>
+<option value='AD' >Andorra</option>
+<option value='AO' >Angola</option>
+<option value='AI' >Anguilla</option>
+<option value='AQ' >Antarctica</option>
+<option value='AG' >Antigua and Barbuda</option>
+<option value='AR' >Argentina</option>
+<option value='AM' >Armenia</option>
+<option value='AW' >Aruba</option>
+<option value='AU' >Australia</option>
+<option value='AT' >Austria</option>
+<option value='AZ' >Azerbaijan</option>
+<option value='BS' >Bahamas</option>
+<option value='BH' >Bahrain</option>
+<option value='BD' >Bangladesh</option>
+<option value='BB' >Barbados</option>
+<option value='BY' >Belarus</option>
+<option value='BE' >Belgium</option>
+<option value='BZ' >Belize</option>
+<option value='BJ' >Benin</option>
+<option value='BM' >Bermuda</option>
+<option value='BT' >Bhutan</option>
+<option value='BO' >Bolivia</option>
+<option value='BQ' >Bonaire, Sint Eustatius and Saba</option>
+<option value='BA' >Bosnia and Herzegovina</option>
+<option value='BW' >Botswana</option>
+<option value='BV' >Bouvet Island</option>
+<option value='BR' >Brazil</option>
+<option value='IO' >British Indian Ocean Territory</option>
+<option value='VG' >British Virgin Islands</option>
+<option value='BN' >Brunei</option>
+<option value='BG' >Bulgaria</option>
+<option value='BF' >Burkina Faso</option>
+<option value='BI' >Burundi</option>
+<option value='KH' >Cambodia</option>
+<option value='CM' >Cameroon</option>
+<option value='CA' >Canada</option>
+<option value='CV' >Cape Verde</option>
+<option value='KY' >Cayman Islands</option>
+<option value='CF' >Central African Republic</option>
+<option value='TD' >Chad</option>
+<option value='CL' >Chile</option>
+<option value='CN' >China</option>
+<option value='CX' >Christmas Island</option>
+<option value='CC' >Cocos (Keeling) Islands</option>
+<option value='CO' >Colombia</option>
+<option value='KM' >Comoros</option>
+<option value='CD' >Congo, DPR</option>
+<option value='CG' >Congo, PR</option>
+<option value='CK' >Cook Islands</option>
+<option value='CR' >Costa Rica</option>
+<option value='CI' >Cote d'Ivoire</option>
+<option value='HR' >Croatia</option>
+<option value='CU' >Cuba</option>
+<option value='CW' >Curaçao</option>
+<option value='CY' >Cyprus</option>
+<option value='CZ' >Czech Republic</option>
+<option value='DK' >Denmark</option>
+<option value='DJ' >Djibouti</option>
+<option value='DM' >Dominica</option>
+<option value='DO' >Dominican Republic</option>
+<option value='TL' >East Timor</option>
+<option value='EC' >Ecuador</option>
+<option value='EG' >Egypt</option>
+<option value='SV' >El Salvador</option>
+<option value='GQ' >Equatorial Guinea</option>
+<option value='ER' >Eritrea</option>
+<option value='EE' >Estonia</option>
+<option value='ET' >Ethiopia</option>
+<option value='FK' >Falkland Islands</option>
+<option value='FO' >Faroe Islands</option>
+<option value='FJ' >Fiji</option>
+<option value='FI' >Finland</option>
+<option value='FR' >France</option>
+<option value='GF' >French Guiana</option>
+<option value='PF' >French Polynesia</option>
+<option value='TF' >French Southern Territories</option>
+<option value='GA' >Gabon</option>
+<option value='GM' >Gambia</option>
+<option value='GE' >Georgia</option>
+<option value='DE' >Germany</option>
+<option value='GH' >Ghana</option>
+<option value='GI' >Gibraltar</option>
+<option value='GR' >Greece</option>
+<option value='GL' >Greenland</option>
+<option value='GD' >Grenada</option>
+<option value='GP' >Guadeloupe</option>
+<option value='GU' >Guam</option>
+<option value='GT' >Guatemala</option>
+<option value='GG' >Guernsey</option>
+<option value='GN' >Guinea</option>
+<option value='GW' >Guinea-Bissau</option>
+<option value='GY' >Guyana</option>
+<option value='HT' >Haiti</option>
+<option value='HM' >Heard Island and McDonald Islands</option>
+<option value='HN' >Honduras</option>
+<option value='HK' >Hong Kong</option>
+<option value='HU' >Hungary</option>
+<option value='IS' >Iceland</option>
+<option value='IN' >India</option>
+<option value='ID' >Indonesia</option>
+<option value='IR' >Iran</option>
+<option value='IQ' >Iraq</option>
+<option value='IE' >Ireland</option>
+<option value='IM' >Isle of Man</option>
+<option value='IL' >Israel</option>
+<option value='IT' >Italy</option>
+<option value='JM' >Jamaica</option>
+<option value='JP' >Japan</option>
+<option value='JE' >Jersey</option>
+<option value='JO' >Jordan</option>
+<option value='KZ' >Kazakhstan</option>
+<option value='KE' >Kenya</option>
+<option value='KI' >Kiribati</option>
+<option value='KW' >Kuwait</option>
+<option value='KG' >Kyrgyzstan</option>
+<option value='LA' >Laos</option>
+<option value='LV' >Latvia</option>
+<option value='LB' >Lebanon</option>
+<option value='LS' >Lesotho</option>
+<option value='LR' >Liberia</option>
+<option value='LY' >Libya</option>
+<option value='LI' >Liechtenstein</option>
+<option value='LT' >Lithuania</option>
+<option value='LU' >Luxembourg</option>
+<option value='MO' >Macau</option>
+<option value='MK' >Macedonia</option>
+<option value='MG' >Madagascar</option>
+<option value='MW' >Malawi</option>
+<option value='MY' >Malaysia</option>
+<option value='MV' >Maldives</option>
+<option value='ML' >Mali</option>
+<option value='MT' >Malta</option>
+<option value='MH' >Marshall Islands</option>
+<option value='MQ' >Martinique</option>
+<option value='MR' >Mauritania</option>
+<option value='MU' >Mauritius</option>
+<option value='YT' >Mayotte</option>
+<option value='MX' >Mexico</option>
+<option value='FM' >Micronesia</option>
+<option value='MD' >Moldova</option>
+<option value='MC' >Monaco</option>
+<option value='MN' >Mongolia</option>
+<option value='ME' >Montenegro</option>
+<option value='MS' >Montserrat</option>
+<option value='MA' >Morocco</option>
+<option value='MZ' >Mozambique</option>
+<option value='MM' >Myanmar</option>
+<option value='NA' >Namibia</option>
+<option value='NR' >Nauru</option>
+<option value='NP' >Nepal</option>
+<option value='NL' >Netherlands</option>
+<option value='AN' >Netherlands Antilles</option>
+<option value='NC' >New Caledonia</option>
+<option value='NZ' >New Zealand</option>
+<option value='NI' >Nicaragua</option>
+<option value='NE' >Niger</option>
+<option value='NG' >Nigeria</option>
+<option value='NU' >Niue</option>
+<option value='NF' >Norfolk Island</option>
+<option value='KP' >North Korea</option>
+<option value='MP' >Northern Mariana Islands</option>
+<option value='NO' >Norway</option>
+<option value='OM' >Oman</option>
+<option value='PK' >Pakistan</option>
+<option value='PW' >Palau</option>
+<option value='PS' >Palestine</option>
+<option value='PA' >Panama</option>
+<option value='PG' >Papua New Guinea</option>
+<option value='PY' >Paraguay</option>
+<option value='PE' >Peru</option>
+<option value='PH' >Philippines</option>
+<option value='PN' >Pitcairn</option>
+<option value='PL' >Poland</option>
+<option value='PT' >Portugal</option>
+<option value='PR' >Puerto Rico</option>
+<option value='QA' >Qatar</option>
+<option value='RO' >Romania</option>
+<option value='RU' >Russia</option>
+<option value='RW' >Rwanda</option>
+<option value='RE' >Réunion</option>
+<option value='BL' >Saint Barthélemy</option>
+<option value='KN' >Saint Kitts and Nevis</option>
+<option value='LC' >Saint Lucia</option>
+<option value='MF' >Saint Martin</option>
+<option value='PM' >Saint Pierre and Miquelon</option>
+<option value='VC' >Saint Vincent and the Grenadines</option>
+<option value='WS' >Samoa</option>
+<option value='SM' >San Marino</option>
+<option value='ST' >Sao Tome and Principe</option>
+<option value='SA' >Saudi Arabia</option>
+<option value='SN' >Senegal</option>
+<option value='RS' >Serbia</option>
+<option value='SC' >Seychelles</option>
+<option value='SL' >Sierra Leone</option>
+<option value='SG' >Singapore</option>
+<option value='SX' >Sint Maarten</option>
+<option value='SK' >Slovakia</option>
+<option value='SI' >Slovenia</option>
+<option value='SB' >Solomon Islands</option>
+<option value='SO' >Somalia</option>
+<option value='ZA' >South Africa</option>
+<option value='GS' >South Georgia and the South Sandwich Islands</option>
+<option value='KR' >South Korea</option>
+<option value='SS' >South Sudan</option>
+<option value='ES' >Spain</option>
+<option value='LK' >Sri Lanka</option>
+<option value='SH' >St. Helena</option>
+<option value='SD' >Sudan</option>
+<option value='SR' >Suriname</option>
+<option value='SJ' >Svalbard and Jan Mayen</option>
+<option value='SZ' >Swaziland</option>
+<option value='SE' >Sweden</option>
+<option value='CH' >Switzerland</option>
+<option value='SY' >Syria</option>
+<option value='TW' >Taiwan</option>
+<option value='TJ' >Tajikistan</option>
+<option value='TZ' >Tanzania</option>
+<option value='TH' >Thailand</option>
+<option value='TG' >Togo</option>
+<option value='TK' >Tokelau</option>
+<option value='TO' >Tonga</option>
+<option value='TT' >Trinidad and Tobago</option>
+<option value='TN' >Tunisia</option>
+<option value='TR' >Turkey</option>
+<option value='TM' >Turkmenistan</option>
+<option value='TC' >Turks and Caicos Islands</option>
+<option value='TV' >Tuvalu</option>
+<option value='UG' >Uganda</option>
+<option value='UA' >Ukraine</option>
+<option value='AE' >United Arab Emirates</option>
+<option value='GB' >United Kingdom</option>
+<option value='US' >United States</option>
+<option value='UM' >United States Minor Outlying Islands</option>
+<option value='UY' >Uruguay</option>
+<option value='UZ' >Uzbekistan</option>
+<option value='VU' >Vanuatu</option>
+<option value='VA' >Vatican</option>
+<option value='VE' >Venezuela</option>
+<option value='VN' >Vietnam</option>
+<option value='VI' >Virgin Islands, U.S.</option>
+<option value='WF' >Wallis and Futuna</option>
+<option value='EH' >Western Sahara</option>
+<option value='YE' >Yemen</option>
+<option value='ZM' >Zambia</option>
+<option value='ZW' >Zimbabwe</option>
+<option value='AX' >Åland Islands</option>
+              
+            </select>
+          </div>
+        
+      </div>
+    
+      <div class="form__group action-form__field-container">
+        
+          
+          <label class="checkbox-label">
+            <input name="action_box_amazon_customer" type="hidden" value="0" />
+            <input type="checkbox" name="action_box_amazon_customer" class="form__content" value="1" /> I'm an Amazon customer
+          </label>
+        
+      </div>
+    
+      <div class="form__group action-form__field-container">
+        
+          
+          <label class="checkbox-label">
+            <input name="action_box_amazon_employee" type="hidden" value="0" />
+            <input type="checkbox" name="action_box_amazon_employee" class="form__content" value="1" /> I'm an Amazon employee
+          </label>
+        
+      </div>
+    
+
+    <button type="submit" class="button action-form__submit-button">Sign the Petition</button>
+</form>
+<script type="text/javascript">
+  $(document).ready(function(){
+    new window.champaign.SweetPlaceholder();
+  });
+</script>
+
+
+            <div class="petition-bar__fine-print">
+              SumOfUs will protect <a href='https://sumofus.org/privacy'>your privacy</a>, and keep you updated about this and similar campaigns.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var chmp = window.champaign; // convenience binding
+        chmp.myActionForm  = new chmp.ActionForm({
+          member:           chmp.personalization.member,
+          outstandingFields:chmp.personalization.outstandingFields,
+          location:         chmp.personalization.location,
+          akid:             chmp.personalization.urlParams.akid,
+          source:           chmp.personalization.urlParams.source,
+          referrer_id:      chmp.personalization.urlParams.referrer_id,
+          referring_akid:   chmp.personalization.urlParams.referring_akid,
+          bucket:           chmp.personalization.urlParams.bucket,
+          prefill:          true
+        });
+
+        chmp.myPetition      = new chmp.Petition({followUpUrl: "/a/amazon-stop-investing-in-hate/follow-up"});
+        chmp.myOverlayToggle = new chmp.OverlayToggle();
+        chmp.myThermometer   = new chmp.Thermometer(window.champaign.personalization.thermometer);
+        chmp.mySidebar       = new chmp.Sidebar({petitionTextMinHeight: 120, baseClass: 'petition-bar'});
+        
+        window.sumofus.mySticky = new window.sumofus.DesktopSticky({extra_class: 'petition'});
+      });
+    </script>
+  </div>
+
+
+  </div>
+</div>
+
+<div class="overlay-toggle__mobile-ui ">
+  <div class="overlay-toggle__mobile-ui__bottom-bar petition-bar__mobile_ui__bottom_bar">
+    <button class="button overlay-toggle__open-button">Sign the Petition</button>
+  </div>
+</div>
+
+<div class="simple-footer simple-footer--stuck-to-bottom">
+  <div class="center-content">
+    <div class="center-content__big-column">
+      <div class="simple-footer__logo sumofus-logo--negative"></div>
+      <div class="simple-footer__tagline sumofus-logo--tagline">
+        Fighting for people over profits
+      </div>
+      <div class="simple-footer__links--stuck-to-bottom">
+        <a href="https://sumofus.org/" class="simple-footer__link">Home</a>
+        <a href="https://sumofus.org/about" class="simple-footer__link">About</a>
+        <a href="https://sumofus.org/privacy" class="simple-footer__link">Privacy Policy</a>
+        <a href="https://sumofus.org/contact" class="simple-footer__link">Contact</a>
+      </div>
+      <div class="simple-footer__license simple-footer__license--left">
+        &copy; 2016 SumOfUs, Creative Commons Attribution 3.0 Unported License.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style type="text/css">
+  .cover-photo__overlay {
+    display: none;
+  }
+  .mobile-title {
+    display: block !important;
+  }
+</style>
+<script>window.champaign = window.champaign || {};
+window.champaign.personalization = {
+  outstandingFields: ["name","email","country"],
+  showDirectDebit: false,
+  paymentMethods: [],
+  donationBands: {},
+  actionCount: 388981,
+  thermometer: {"id":1881,"title":null,"offset":0,"page_id":1649,"active":true,"created_at":"2016-12-12T20:01:44.633Z","updated_at":"2017-01-27T19:21:42.668Z","ref":"","percentage":73.6736,"remaining":"197,448","signatures":"552,552","goal_k":"750k"},
+  formValues: {},
+  callTool: {},
+  emailTarget: {},
+  urlParams: {"controller":"pages","action":"show","id":"amazon-stop-investing-in-hate"},
+  location: {"ip":"128.82.4.182","country_code":"US","country_name":"United States","region_code":"VA","region_name":"Virginia","city":"Norfolk","zip_code":"23529","time_zone":"America/New_York","latitude":36.9312,"longitude":-76.2397,"metro_code":544,"currency":"USD","country":"US"},
+  member: {},
+  paymentMethods: [],
+  mixpanel_token: ""
+}</script><script>$(document).ready(function() {
+  
+});</script><div class="mobile-indicator"></div><script src="https://d210i8t551lxm.cloudfront.net/assets/member-facing-566da1197e15cdeb342b5498ddf87dc851be83c06d102f348dfd37caaa7e8f4b.js"></script><script type="text/javascript">
+  I18n.locale = "en";
+  I18n.fallbacks = true;
+</script>
+<script>champaign.page = {"id":1649,"language_id":1,"campaign_id":31,"title":"Amazon: Stop investing in hate.","slug":"amazon-stop-investing-in-hate","created_at":"2016-12-12T20:01:44.308Z","updated_at":"2017-04-18T11:18:38.648Z","status":"failed","featured":true,"follow_up_liquid_layout_id":3,"action_count":388981,"primary_image_id":3870,"ak_petition_resource_uri":"https://act.sumofus.org/rest/v1/petitionpage/17179/","ak_donation_resource_uri":"https://act.sumofus.org/rest/v1/donationpage/17178/","follow_up_plan":"with_liquid","follow_up_page_id":242,"publish_status":"published","optimizely_status":"optimizely_enabled","canonical_url":"","allow_duplicate_actions":false,"enforce_styles":false,"notes":"","publish_actions":"secure"}</script><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', "938117079582809");
+fbq('track', 'PageView');</script><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en,Intl.~locale.de,Intl.~locale.es,Intl.~locale.fr"></script><script src="https://d210i8t551lxm.cloudfront.net/webpack/static/js/members.571df3e9.js"></script><script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-26370633-3', 'auto'); ga('send', 'pageview');</script><script async="" charset="utf-8" src="//c.shpg.org/99/sp.js" type="text/javascript"></script></body></html>
